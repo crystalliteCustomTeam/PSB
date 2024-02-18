@@ -11,13 +11,25 @@ import Script from "next/script";
 export default function App({ Component, pageProps }) {
   const [scriptLoaded, setScriptLoaded] = useState(false);
 
-  const handleMouseEnter = () => {
-    if (!scriptLoaded) {
-      console.log("DONE");
-      setScriptLoaded(true); // This will trigger the script to load
-    }
-  };
+  const loadScriptManually = () => {
+    if (scriptLoaded) return; // If the script is already loaded, do nothing
 
+    const script = document.createElement('script');
+    script.src = "https://static.zdassets.com/ekr/snippet.js?key=0b817d63-4ced-4290-829c-a9889a9d1780";
+    script.async = true;
+    script.id = "ze-snippet";
+
+    document.body.appendChild(script); // Append the script to the body
+
+    script.onload = () => {
+      console.log('Script loaded successfully');
+      setScriptLoaded(true); // Update the state to indicate the script has loaded
+    };
+
+    script.onerror = (error) => {
+      console.error('Script failed to load', error);
+    };
+  };
 
   // const handleLoaded = () => {
   //   zE('webWidget:on', 'open', function () {
@@ -31,16 +43,9 @@ export default function App({ Component, pageProps }) {
         <Component {...pageProps} />
         <Footer1 />
       </main>
-      <div onMouseEnter={handleMouseEnter}>
+      <div onMouseEnter={loadScriptManually}>
       
-      {scriptLoaded && (
-        <Script
-          src="https://static.zdassets.com/ekr/snippet.js?key=0b817d63-4ced-4290-829c-a9889a9d1780"
-          id="ze-snippet"
-          strategy="afterInteractive"
-        />
-      )}
-    </div>
+      </div>
     </>
   );
 }
