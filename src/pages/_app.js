@@ -13,6 +13,7 @@ export default function App({ Component, pageProps }) {
 
   const handleMouseEnter = () => {
     if (!scriptLoaded) {
+      console.log("DONE");
       setScriptLoaded(true); // This will trigger the script to load
     }
   };
