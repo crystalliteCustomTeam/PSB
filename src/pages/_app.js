@@ -9,21 +9,21 @@ import Script from "next/script";
 // const ZENDESK_KEY = "325da280-f4f0-4c80-997f-ea4de45eb2f1";
 
 export default function App({ Component, pageProps }) {
-  useEffect(() => {
-    // Create script element
-    const script = document.createElement('script');
-    script.id = 'ze-snippet';
-    script.src = 'https://static.zdassets.com/ekr/snippet.js?key=0b817d63-4ced-4290-829c-a9889a9d1780';
-    script.async = true;
+  // useEffect(() => {
+  //   // Create script element
+  //   const script = document.createElement('script');
+  //   script.id = 'ze-snippet';
+  //   script.src = 'https://static.zdassets.com/ekr/snippet.js?key=0b817d63-4ced-4290-829c-a9889a9d1780';
+  //   script.async = true;
 
-    // Append script to the body
-    document.body.appendChild(script);
+  //   // Append script to the body
+  //   document.body.appendChild(script);
 
-    // Clean up script when component unmounts
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
+  //   // Clean up script when component unmounts
+  //   return () => {
+  //     document.body.removeChild(script);
+  //   };
+  // }, []);
 
   // const handleLoaded = () => {
   //   zE('webWidget:on', 'open', function () {
@@ -37,7 +37,11 @@ export default function App({ Component, pageProps }) {
         <Component {...pageProps} />
         <Footer1 />
       </main>
-      
+      <Script
+        src="https://static.zdassets.com/ekr/snippet.js?key=0b817d63-4ced-4290-829c-a9889a9d1780"
+        id="ze-snippet"
+        strategy="afterInteractive" // Loads the script immediately after the page becomes interactive
+      />
     </>
   );
 }
