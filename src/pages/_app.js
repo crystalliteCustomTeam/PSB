@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import "@/styles/custom.css"
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+
 import Headernew from "../component/Headernew";
 import Footer1 from "../component/Footer1";
 import { SfProDisplay, primary } from "@/configs/fonts";
