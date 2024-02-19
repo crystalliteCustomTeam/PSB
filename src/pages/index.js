@@ -97,8 +97,8 @@ const amazonpublishing = () => {
 
       {/*========= Tradition fold =========*/}
       <Tradition
-        title="Tradition Publishing House"
-        desc="Our Publishing Experts Can Help You"
+        title="Explore Our Recent Publishing Successes"
+        desc="Discover How Our Expert Publishing Team Can Elevate Your Work"
       />
       <Audience />
       {/*========= Enlisted fold =========*/}
