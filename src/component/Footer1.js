@@ -109,11 +109,7 @@ const NewFooter = () => {
                                                 Book Publishing
                                             </Link>
                                         </li>
-                                        <li>
-                                            <Link href="/ebook-marketing-services" className='text-[13px] font-[400] font-secondary xl:leading-[25px] leading-[15px]'>
-                                                Ebook Publishing
-                                            </Link>
-                                        </li>
+                                    
                                         <li>
                                             <Link href="/digital-book-publishing-fa" className='text-[13px] font-[400] font-secondary xl:leading-[25px] leading-[15px]'>
                                                 Digital Book Publishing
