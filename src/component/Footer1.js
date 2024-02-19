@@ -95,7 +95,7 @@ const NewFooter = () => {
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href="/aboutus" className='text-[13px] font-[400] font-secondary xl:leading-[25px] leading-[15px]'>
+                                            <Link href="/about-us" className='text-[13px] font-[400] font-secondary xl:leading-[25px] leading-[15px]'>
                                                 About
                                             </Link>
                                         </li>
