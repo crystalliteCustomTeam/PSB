@@ -65,7 +65,7 @@ const demandingSpecilaist = () => {
                         <h6 className='text-[30px] font-primary text-[#40BEE2] mb-2 font-semibold'>Let Us Help You</h6>
                         <h2 className='text-[50px] font-primary font-bold xs:leading-tight'>What Sets Us Apart?</h2>
                         <p className='max-w-[80%] mx-auto mt-3 mb-5 text-[#05193c] xs:text-justify sm:text-justify sm:max-w-[80%] xs:max-w-[90%]'>
-                            Barnett Ghostwriting is a well-known international ghostwriting and editing firm that has been operating for over a decade. Our experts create well-versed writing that demonstrates true professionalism while exhibiting creativity. Our services are not only economical but also ensure that both the needs of the authors and the preferences of their target audience are adequately met. Some of our platform’s distinguishing traits are as follows:
+                             Best Selling Publisher Ghostwriting is a well-known international ghostwriting and editing firm that has been operating for over a decade. Our experts create well-versed writing that demonstrates true professionalism while exhibiting creativity. Our services are not only economical but also ensure that both the needs of the authors and the preferences of their target audience are adequately met. Some of our platform’s distinguishing traits are as follows:
                         </p>
                     </div>
                     <div className={`${isLargeScreen ? '' : 'hidden'} grid md:grid-cols-2 grid-cols-4 gap-4 mt-10 items-stretch justify-stretch xs:grid-cols-1 xs:px-5 md:px-5`}>

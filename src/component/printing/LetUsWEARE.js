@@ -17,7 +17,7 @@ const demandingSpecilaist = () => {
                                     Our book publishing experts will work to fine tune your book
                                 </h1>
                                 <p className='xs:w-[90%]'>
-                                    Welcome to our Book Publishing Services. We are your partners in turning your literary vision into reality. Our team of experienced ghostwriters and publishing experts is here to guide you through the entire process of publishing your book. Here at Barnett ghostwriting, we understand that publishing a book is a journey. We offer a comprehensive range of services to ensure your book receives the attention and care it deserves:
+                                    Welcome to our Book Publishing Services. We are your partners in turning your literary vision into reality. Our team of experienced ghostwriters and publishing experts is here to guide you through the entire process of publishing your book. Here at  Best Selling Publisher Ghostwriting, we understand that publishing a book is a journey. We offer a comprehensive range of services to ensure your book receives the attention and care it deserves:
                                 </p>
                                 <ul className="grid grid-cols-2 xs:grid-cols-1 md:w-[100%] xs:w-[100%] md:mb-10">
                                     <li className='border-b-2 border-solid border-[#707070] py-3 mr-10 xs:mr-0 md:mr-5'>
