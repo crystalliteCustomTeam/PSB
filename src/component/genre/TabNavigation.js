@@ -98,6 +98,15 @@ const TabNavigation = ({ activeTab, setActiveTab }) => {
 const ParentComponent = () => {
   const [activeTab, setActiveTab] = useState('s1');
 
+
+  const openLiveChat = (e) => {
+    e.preventDefault();
+    if (window.LiveChatWidget) {
+      window.LiveChatWidget.call('maximize');
+    }
+  };
+
+
   return (
     <div>
       <TabNavigation activeTab={activeTab} setActiveTab={setActiveTab} />
@@ -114,7 +123,7 @@ const ParentComponent = () => {
               <p>For this genre of compelling stories, engaging character dialogue, and emotional story beats, getting a professional story writer becomes a necessity. Our writers excel at bringing your story to life through expert storytelling elements, including careful word-building, persuasive character motivations, and intense and unpredictable plot development. This proficiency frequently results in our clients achieving best-selling author status.</p>
               <div className='w-[60%] grid grid-cols-2 grid-rows-1 gap-x-5 py-5 md:w-[100%] sm:w-[90%] xs:w-[90%]'>
                 <button className='bg-[#00C0E4] py-2 text-white hover:bg-[#fff] hover:text-[#00c0e4] hover:border-[1px] hover:border-solid hover:border-[#00c0e4]'>Get Started</button>
-                <button className='bg-transparent py-2 border-solid border-[1px] border-[#1d1d1f] text-[#1d1d1f] hover:bg-[#1d1d1f] hover:text-white'>Live Chat</button>
+                <button className='bg-transparent py-2 border-solid border-[1px] border-[#1d1d1f] text-[#1d1d1f] hover:bg-[#1d1d1f] hover:text-white' onClick={openLiveChat}>Live Chat</button>
               </div>
             </div>
             <div>
@@ -134,7 +143,7 @@ const ParentComponent = () => {
               <p>For this genre of compelling stories, engaging character dialogue and emotional story beats. You require the services of a Non fiction ghostwriter for hire. Our writers are adept at making the worlds of your stories come to life with the usage of story telling elements such as intensive world building, fascinating character motivations, intriguing plotting. This leads to our clients often times becoming best selling authors.</p>
               <div className='w-[60%] grid grid-cols-2 grid-rows-1 gap-x-5 py-5 md:w-[100%] sm:w-[90%] xs:w-[90%]'>
                 <button className='bg-[#00C0E4] py-2 text-white hover:bg-[#fff] hover:text-[#00c0e4] hover:border-[1px] hover:border-solid hover:border-[#00c0e4]'>Get Started</button>
-                <button className='bg-transparent py-2 border-solid border-[1px] border-[#1d1d1f] text-[#1d1d1f] hover:bg-[#1d1d1f] hover:text-white'>Live Chat</button>
+                <button className='bg-transparent py-2 border-solid border-[1px] border-[#1d1d1f] text-[#1d1d1f] hover:bg-[#1d1d1f] hover:text-white' onClick={openLiveChat}>Live Chat</button>
               </div>
             </div>
             <div>
@@ -154,7 +163,7 @@ const ParentComponent = () => {
               <p>For this genre of compelling stories, engaging character dialogue and emotional story beats. You require the services of a Biography ghostwriter for hire. Our writers are adept at making the worlds of your stories come to life with the usage of story telling elements such as intensive world building, fascinating character motivations, intriguing plotting. This leads to our clients often times becoming best selling authors.</p>
               <div className='w-[60%] grid grid-cols-2 grid-rows-1 gap-x-5 py-5 md:w-[100%] sm:w-[90%] xs:w-[90%]'>
                 <button className='bg-[#00C0E4] py-2 text-white hover:bg-[#fff] hover:text-[#00c0e4] hover:border-[1px] hover:border-solid hover:border-[#00c0e4]'>Get Started</button>
-                <button className='bg-transparent py-2 border-solid border-[1px] border-[#1d1d1f] text-[#1d1d1f] hover:bg-[#1d1d1f] hover:text-white'>Live Chat</button>
+                <button className='bg-transparent py-2 border-solid border-[1px] border-[#1d1d1f] text-[#1d1d1f] hover:bg-[#1d1d1f] hover:text-white' onClick={openLiveChat}>Live Chat</button>
               </div>
             </div>
             <div>
@@ -174,7 +183,7 @@ const ParentComponent = () => {
               <p>For this genre of compelling stories, engaging character dialogue and emotional story beats. You require the services of a Informative ghostwriter for hire. Our writers are adept at making the worlds of your stories come to life with the usage of story telling elements such as intensive world building, fascinating character motivations, intriguing plotting. This leads to our clients often times becoming best selling authors.</p>
               <div className='w-[60%] grid grid-cols-2 grid-rows-1 gap-x-5 py-5 md:w-[100%] sm:w-[90%] xs:w-[90%]'>
                 <button className='bg-[#00C0E4] py-2 text-white hover:bg-[#fff] hover:text-[#00c0e4] hover:border-[1px] hover:border-solid hover:border-[#00c0e4]'>Get Started</button>
-                <button className='bg-transparent py-2 border-solid border-[1px] border-[#1d1d1f] text-[#1d1d1f] hover:bg-[#1d1d1f] hover:text-white'>Live Chat</button>
+                <button className='bg-transparent py-2 border-solid border-[1px] border-[#1d1d1f] text-[#1d1d1f] hover:bg-[#1d1d1f] hover:text-white' onClick={openLiveChat}>Live Chat</button>
               </div>
             </div>
             <div>
@@ -194,7 +203,7 @@ const ParentComponent = () => {
               <p>For this genre of compelling stories, engaging character dialogue and emotional story beats. You require the services of a Autobiography ghostwriter for hire. Our writers are adept at making the worlds of your stories come to life with the usage of story telling elements such as intensive world building, fascinating character motivations, intriguing plotting. This leads to our clients often times becoming best selling authors.</p>
               <div className='w-[60%] grid grid-cols-2 grid-rows-1 gap-x-5 py-5 md:w-[100%] sm:w-[90%] xs:w-[90%]'>
                 <button className='bg-[#00C0E4] py-2 text-white hover:bg-[#fff] hover:text-[#00c0e4] hover:border-[1px] hover:border-solid hover:border-[#00c0e4]'>Get Started</button>
-                <button className='bg-transparent py-2 border-solid border-[1px] border-[#1d1d1f] text-[#1d1d1f] hover:bg-[#1d1d1f] hover:text-white'>Live Chat</button>
+                <button className='bg-transparent py-2 border-solid border-[1px] border-[#1d1d1f] text-[#1d1d1f] hover:bg-[#1d1d1f] hover:text-white' onClick={openLiveChat}>Live Chat</button>
               </div>
             </div>
             <div>
@@ -214,7 +223,7 @@ const ParentComponent = () => {
               <p>For this genre of compelling stories, engaging character dialogue and emotional story beats. You require the services of a Memoir ghostwriter for hire. Our writers are adept at making the worlds of your stories come to life with the usage of story telling elements such as intensive world building, fascinating character motivations, intriguing plotting. This leads to our clients often times becoming best selling authors.</p>
               <div className='w-[60%] grid grid-cols-2 grid-rows-1 gap-x-5 py-5 md:w-[100%] sm:w-[90%] xs:w-[90%]'>
                 <button className='bg-[#00C0E4] py-2 text-white hover:bg-[#fff] hover:text-[#00c0e4] hover:border-[1px] hover:border-solid hover:border-[#00c0e4]'>Get Started</button>
-                <button className='bg-transparent py-2 border-solid border-[1px] border-[#1d1d1f] text-[#1d1d1f] hover:bg-[#1d1d1f] hover:text-white'>Live Chat</button>
+                <button className='bg-transparent py-2 border-solid border-[1px] border-[#1d1d1f] text-[#1d1d1f] hover:bg-[#1d1d1f] hover:text-white' onClick={openLiveChat}>Live Chat</button>
               </div>
             </div>
             <div>
@@ -234,7 +243,7 @@ const ParentComponent = () => {
               <p>For this genre of compelling stories, engaging character dialogue and emotional story beats. You require the services of a Children Book ghostwriter for hire. Our writers are adept at making the worlds of your stories come to life with the usage of story telling elements such as intensive world building, fascinating character motivations, intriguing plotting. This leads to our clients often times becoming best selling authors.</p>
               <div className='w-[60%] grid grid-cols-2 grid-rows-1 gap-x-5 py-5 md:w-[100%] sm:w-[90%] xs:w-[90%]'>
                 <button className='bg-[#00C0E4] py-2 text-white hover:bg-[#fff] hover:text-[#00c0e4] hover:border-[1px] hover:border-solid hover:border-[#00c0e4]'>Get Started</button>
-                <button className='bg-transparent py-2 border-solid border-[1px] border-[#1d1d1f] text-[#1d1d1f] hover:bg-[#1d1d1f] hover:text-white'>Live Chat</button>
+                <button className='bg-transparent py-2 border-solid border-[1px] border-[#1d1d1f] text-[#1d1d1f] hover:bg-[#1d1d1f] hover:text-white' onClick={openLiveChat}>Live Chat</button>
               </div>
             </div>
             <div>

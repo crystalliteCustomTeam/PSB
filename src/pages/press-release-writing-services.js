@@ -36,7 +36,7 @@ const Ghostwriting = () => {
             <button className='bg-[#00C0E4] py-2 text-white hover:border-solid hover:border-2 hover:text-[#1d1d1f]'>Get Started</button>
           </>}
           href2={<>
-            <button className='bg-[#1d1d1f] py-2 text-white hover:border-solid hover:border-2 hover:text-[#00c0e4]'>Live Chat</button>
+            <button onClick={openLiveChat} className='bg-[#1d1d1f] py-2 text-white hover:border-solid hover:border-2 hover:text-[#00c0e4]'>Live Chat</button>
           </>}
         />
         <LogoSliders />

@@ -7,6 +7,14 @@ function VerticalNavTabs() {
     setActiveTab(tabNumber);
   };
 
+
+  const openLiveChat = (e) => {
+    e.preventDefault();
+    if (window.LiveChatWidget) {
+      window.LiveChatWidget.call('maximize');
+    }
+  };
+
   return (
     <div className="tab-vertical md:max-w-2xl md:mx-auto flex xs:flex-wrap font-secondary max-h-[490px] " >
       <div className="w-1/4 xs:basis-[40%] text-[#1d1d1f] items-stretch  h-[500px] overflow-y-scroll xs:h-[500px] " id='style-2'>
@@ -132,7 +140,7 @@ function VerticalNavTabs() {
           <p>We offer dedicated marketing assistants to facilitate the promotion, management, and execution of comprehensive promotional campaigns for your book launch across diverse online and offline channels. Tailoring their services to meet your specific requirements they ensure optimal support for your success.</p>
           <div className='w-[40%] text-center grid grid-cols-2 grid-rows-1 gap-2 py-5 sm:w-[70%] xs:w-[100%]'>
             <a href="tel:800-781-9093" className='bg-[#00C0E4] py-1 text-white hover:bg-transparent hover:border-solid hover:border-[1px] hover:border-[#1d1d1f] hover:text-[#1d1d1f] hover:transition-all hover:transform-gpu flex items-center justify-center text-center h-[40px]'>Get Started</a>
-            <a href="javascript:$zopim.livechat.window.show()" className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
+            <a href="#" onClick={openLiveChat} className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
           </div>
         </div>}
         {activeTab === 2 && <div>
@@ -141,7 +149,7 @@ function VerticalNavTabs() {
           <p>We will provide personal marketing assistants who help promote, manage and run promotional campaigns for your book launch through various online and offline channels They will proide you fits your needs!</p>
           <div className='w-[50%] grid grid-cols-2 grid-rows-1 gap-2 py-5 sm:w-[70%] xs:w-[100%]'>
             <a href="tel:800-781-9093" className='bg-[#00C0E4] py-1 text-white hover:bg-transparent hover:border-solid hover:border-[1px] hover:border-[#1d1d1f] hover:text-[#1d1d1f] hover:transition-all hover:transform-gpu flex items-center justify-center text-center h-[40px]'>Get Started</a>
-            <a href="javascript:$zopim.livechat.window.show()" className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
+            <a href="#" onClick={openLiveChat} className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
           </div>
         </div>}
         {activeTab === 3 && <div>
@@ -150,7 +158,7 @@ function VerticalNavTabs() {
           <p>We will provide personal marketing assistants who help promote, manage and run promotional campaigns for your book launch through various online and offline channels They will proide you fits your needs!</p>
           <div className='w-[50%] grid grid-cols-2 grid-rows-1 gap-2 py-5 sm:w-[70%] xs:w-[100%]'>
             <a href="tel:800-781-9093" className='bg-[#00C0E4] py-1 text-white hover:bg-transparent hover:border-solid hover:border-[1px] hover:border-[#1d1d1f] hover:text-[#1d1d1f] hover:transition-all hover:transform-gpu flex items-center justify-center text-center h-[40px]'>Get Started</a>
-            <a href="javascript:$zopim.livechat.window.show()" className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
+            <a href="#" onClick={openLiveChat} className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
           </div>
         </div>}
         {activeTab === 4 && <div>
@@ -159,7 +167,7 @@ function VerticalNavTabs() {
           <p>We will provide Digital Postcards who help promote, manage and run promotional campaigns for your book launch through various online and offline channels They will proide you fits your needs!</p>
           <div className='w-[50%] grid grid-cols-2 grid-rows-1 gap-2 py-5 sm:w-[70%] xs:w-[100%]'>
             <a href="tel:800-781-9093" className='bg-[#00C0E4] py-1 text-white hover:bg-transparent hover:border-solid hover:border-[1px] hover:border-[#1d1d1f] hover:text-[#1d1d1f] hover:transition-all hover:transform-gpu flex items-center justify-center text-center h-[40px]'>Get Started</a>
-            <a href="javascript:$zopim.livechat.window.show()" className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
+            <a href="#" onClick={openLiveChat} className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
           </div>
         </div>}
         {activeTab === 5 && <div>
@@ -168,7 +176,7 @@ function VerticalNavTabs() {
           <p>We will provide personal marketing assistants who help promote, manage and run promotional campaigns for your book launch through various online and offline channels They will proide you fits your needs!</p>
           <div className='w-[50%] grid grid-cols-2 grid-rows-1 gap-2 py-5 sm:w-[70%] xs:w-[100%]'>
             <a href="tel:800-781-9093" className='bg-[#00C0E4] py-1 text-white hover:bg-transparent hover:border-solid hover:border-[1px] hover:border-[#1d1d1f] hover:text-[#1d1d1f] hover:transition-all hover:transform-gpu flex items-center justify-center text-center h-[40px]'>Get Started</a>
-            <a href="javascript:$zopim.livechat.window.show()" className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
+            <a href="#" onClick={openLiveChat} className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
           </div>
         </div>}
         {activeTab === 6 && <div>
@@ -177,7 +185,7 @@ function VerticalNavTabs() {
           <p>We will provide personal marketing assistants who help promote, manage and run promotional campaigns for your book launch through various online and offline channels They will proide you fits your needs!</p>
           <div className='w-[50%] grid grid-cols-2 grid-rows-1 gap-2 py-5 sm:w-[70%] xs:w-[100%]'>
             <a href="tel:800-781-9093" className='bg-[#00C0E4] py-1 text-white hover:bg-transparent hover:border-solid hover:border-[1px] hover:border-[#1d1d1f] hover:text-[#1d1d1f] hover:transition-all hover:transform-gpu flex items-center justify-center text-center h-[40px]'>Get Started</a>
-            <a href="javascript:$zopim.livechat.window.show()" className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
+            <a href="#" onClick={openLiveChat} className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
           </div>
         </div>}
         {activeTab === 7 && <div>
@@ -186,7 +194,7 @@ function VerticalNavTabs() {
           <p>We will provide personal marketing assistants who help promote, manage and run promotional campaigns for your book launch through various online and offline channels They will proide you fits your needs!</p>
           <div className='w-[50%] grid grid-cols-2 grid-rows-1 gap-2 py-5 sm:w-[70%]  xs:w-[100%]'>
             <a href="tel:800-781-9093" className='bg-[#00C0E4] py-1 text-white hover:bg-transparent hover:border-solid hover:border-[1px] hover:border-[#1d1d1f] hover:text-[#1d1d1f] hover:transition-all hover:transform-gpu flex items-center justify-center text-center h-[40px]'>Get Started</a>
-            <a href="javascript:$zopim.livechat.window.show()" className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
+            <a href="#" onClick={openLiveChat} className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
           </div>
         </div>}
         {activeTab === 8 && <div>
@@ -195,7 +203,7 @@ function VerticalNavTabs() {
           <p>We will provide personal marketing assistants who help promote, manage and run promotional campaigns for your book launch through various online and offline channels They will proide you fits your needs!</p>
           <div className='w-[50%] grid grid-cols-2 grid-rows-1 gap-2 py-5 sm:w-[70%] xs:w-[100%]'>
             <a href="tel:800-781-9093" className='bg-[#00C0E4] py-1 text-white hover:bg-transparent hover:border-solid hover:border-[1px] hover:border-[#1d1d1f] hover:text-[#1d1d1f] hover:transition-all hover:transform-gpu flex items-center justify-center text-center h-[40px]'>Get Started</a>
-            <a href="javascript:$zopim.livechat.window.show()" className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
+            <a href="#" onClick={openLiveChat} className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
           </div>
         </div>}
         {activeTab === 9 && <div>
@@ -204,7 +212,7 @@ function VerticalNavTabs() {
           <p>We will provide personal marketing assistants who help promote, manage and run promotional campaigns for your book launch through various online and offline channels They will proide you fits your needs!</p>
           <div className='w-[50%] grid grid-cols-2 grid-rows-1 gap-2 py-5 sm:w-[70%] xs:w-[100%]'>
             <a href="tel:800-781-9093" className='bg-[#00C0E4] py-1 text-white hover:bg-transparent hover:border-solid hover:border-[1px] hover:border-[#1d1d1f] hover:text-[#1d1d1f] hover:transition-all hover:transform-gpu flex items-center justify-center text-center h-[40px]'>Get Started</a>
-            <a href="javascript:$zopim.livechat.window.show()" className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
+            <a href="#" onClick={openLiveChat} className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
           </div>
         </div>}
         {activeTab === 10 && <div>
@@ -213,7 +221,7 @@ function VerticalNavTabs() {
           <p>We will provide personal marketing assistants who help promote, manage and run promotional campaigns for your book launch through various online and offline channels They will proide you fits your needs!</p>
           <div className='w-[50%] grid grid-cols-2 grid-rows-1 gap-2 py-5 sm:w-[70%] xs:w-[100%]'>
             <a href="tel:800-781-9093" className='bg-[#00C0E4] py-1 text-white hover:bg-transparent hover:border-solid hover:border-[1px] hover:border-[#1d1d1f] hover:text-[#1d1d1f] hover:transition-all hover:transform-gpu flex items-center justify-center text-center h-[40px]'>Get Started</a>
-            <a href="javascript:$zopim.livechat.window.show()" className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
+            <a href="#" onClick={openLiveChat} className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
           </div>
         </div>}
         {activeTab === 11 && <div>
@@ -222,7 +230,7 @@ function VerticalNavTabs() {
           <p>We will provide personal marketing assistants who help promote, manage and run promotional campaigns for your book launch through various online and offline channels They will proide you fits your needs!</p>
           <div className='w-[50%] grid grid-cols-2 grid-rows-1 gap-2 py-5 sm:w-[70%] xs:w-[100%]'>
             <a href="tel:800-781-9093" className='bg-[#00C0E4] py-1 text-white hover:bg-transparent hover:border-solid hover:border-[1px] hover:border-[#1d1d1f] hover:text-[#1d1d1f] hover:transition-all hover:transform-gpu flex items-center justify-center text-center h-[40px]'>Get Started</a>
-            <a href="javascript:$zopim.livechat.window.show()" className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
+            <a href="#" onClick={openLiveChat} className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
           </div>
         </div>}
         {activeTab === 12 && <div>
@@ -231,7 +239,7 @@ function VerticalNavTabs() {
           <p>We will provide personal marketing assistants who help promote, manage and run promotional campaigns for your book launch through various online and offline channels They will proide you fits your needs!</p>
           <div className='w-[50%] grid grid-cols-2 grid-rows-1 gap-2 py-5 sm:w-[70%] xs:w-[100%]'>
             <a href="tel:800-781-9093" className='bg-[#00C0E4] py-1 text-white hover:bg-transparent hover:border-solid hover:border-[1px] hover:border-[#1d1d1f] hover:text-[#1d1d1f] hover:transition-all hover:transform-gpu flex items-center justify-center text-center h-[40px]'>Get Started</a>
-            <a href="javascript:$zopim.livechat.window.show()" className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
+            <a href="#" onClick={openLiveChat} className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
           </div>
         </div>}
         {activeTab === 13 && <div>
@@ -240,7 +248,7 @@ function VerticalNavTabs() {
           <p>We will provide personal marketing assistants who help promote, manage and run promotional campaigns for your book launch through various online and offline channels They will proide you fits your needs!</p>
           <div className='w-[50%] grid grid-cols-2 grid-rows-1 gap-2 py-5 sm:w-[70%] xs:w-[100%]'>
             <a href="tel:800-781-9093" className='bg-[#00C0E4] py-1 text-white hover:bg-transparent hover:border-solid hover:border-[1px] hover:border-[#1d1d1f] hover:text-[#1d1d1f] hover:transition-all hover:transform-gpu flex items-center justify-center text-center h-[40px]'>Get Started</a>
-            <a href="javascript:$zopim.livechat.window.show()" className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
+            <a href="#" onClick={openLiveChat} className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
           </div>
         </div>}
         {activeTab === 14 && <div>
@@ -249,7 +257,7 @@ function VerticalNavTabs() {
           <p>We will provide personal marketing assistants who help promote, manage and run promotional campaigns for your book launch through various online and offline channels They will proide you fits your needs!</p>
           <div className='w-[50%] grid grid-cols-2 grid-rows-1 gap-2 py-5 sm:w-[70%] xs:w-[100%]'>
             <a href="tel:800-781-9093" className='bg-[#00C0E4] py-1 text-white hover:bg-transparent hover:border-solid hover:border-[1px] hover:border-[#1d1d1f] hover:text-[#1d1d1f] hover:transition-all hover:transform-gpu flex items-center justify-center text-center h-[40px]'>Get Started</a>
-            <a href="javascript:$zopim.livechat.window.show()" className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
+            <a href="#" onClick={openLiveChat} className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
           </div>
         </div>}
         {activeTab === 15 && <div>
@@ -258,7 +266,7 @@ function VerticalNavTabs() {
           <p>We will provide personal marketing assistants who help promote, manage and run promotional campaigns for your book launch through various online and offline channels They will proide you fits your needs!</p>
           <div className='w-[50%] grid grid-cols-2 grid-rows-1 gap-2 py-5 sm:w-[70%] xs:w-[100%]'>
             <a href="tel:800-781-9093" className='bg-[#00C0E4] py-1 text-white hover:bg-transparent hover:border-solid hover:border-[1px] hover:border-[#1d1d1f] hover:text-[#1d1d1f] hover:transition-all hover:transform-gpu flex items-center justify-center text-center h-[40px]'>Get Started</a>
-            <a href="javascript:$zopim.livechat.window.show()" className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
+            <a href="#" onClick={openLiveChat} className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
           </div>
         </div>}
         {activeTab === 16 && <div>
@@ -267,7 +275,7 @@ function VerticalNavTabs() {
           <p>We will provide personal marketing assistants who help promote, manage and run promotional campaigns for your book launch through various online and offline channels They will proide you fits your needs!</p>
           <div className='w-[50%] grid grid-cols-2 grid-rows-1 gap-2 py-5 sm:w-[70%] xs:w-[100%]'>
             <a href="tel:800-781-9093" className='bg-[#00C0E4] py-1 text-white hover:bg-transparent hover:border-solid hover:border-[1px] hover:border-[#1d1d1f] hover:text-[#1d1d1f] hover:transition-all hover:transform-gpu flex items-center justify-center text-center h-[40px]'>Get Started</a>
-            <a href="javascript:$zopim.livechat.window.show()" className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
+            <a href="#" onClick={openLiveChat} className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
           </div>
         </div>}
       </div>

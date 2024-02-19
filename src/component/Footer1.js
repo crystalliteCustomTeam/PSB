@@ -52,7 +52,7 @@ const NewFooter = () => {
                         <div className='xs:col-span-12 md:col-span-12 lg:col-span-4 col-span-4 pb-4 lg:pb-14'>
                             <div className="logo">
                                 <Link href="/">
-                                    <Image src={Logo} alt='Amazon Book Publishing' />
+                                    <Image src={Logo} width={180} height={50} alt='Amazon Book Publishing' />
                                 </Link>
                                 <p className='text-[13px] leading-[17px] font-[400] font-secondary pt-4 pb-5 md:w-full  w-11/12'>Best Selling Publishers offer a wide range of professional book publishing services to give life to your words. Let your words be of fine quality with our publishing services, contact us today!</p>
                                 <ul className='flex items-center gap-x-5'>

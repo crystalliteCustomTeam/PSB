@@ -36,7 +36,7 @@ const amazonpublishing = () => {
       <Head>
 
         <title>Best Book Publishing Company - Best Selling Publisher - Amazon Publishing Services</title>
-        <link rel="icon" href="/images/favicon.png" />
+        <link rel="icon" href="/images/favicon.svg" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 
         {/* <Helmet>

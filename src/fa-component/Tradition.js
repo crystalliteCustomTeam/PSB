@@ -7,11 +7,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 // images
-import mock1 from 'media/images/book-mockup/1.png'
-import mock2 from 'media/images/book-mockup/2.png'
-import mock3 from 'media/images/book-mockup/3.png'
-import mock4 from 'media/images/book-mockup/4.png'
-import mock5 from 'media/images/book-mockup/1.png'
+import mock1 from 'media/images/book-mockup/1.jpg'
+import mock2 from 'media/images/book-mockup/2.jpg'
+import mock3 from 'media/images/book-mockup/3.jpg'
+import mock4 from 'media/images/book-mockup/4.jpg'
+import mock5 from 'media/images/book-mockup/5.jpg'
 
 
 import before from 'media/images/flods/tradition-before.png'
