@@ -62,7 +62,7 @@ const Header = () => {
                               <ul className="mt-3 text-[15px]">
                               
                                 <li>
-                                  <Link href="/affordable-ghostwriting-services" className="flex justify-start align-middle items-center p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600">
+                                  <Link href="/ghostwriting" className="flex justify-start align-middle items-center p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600">
 
                                     <span>
                                       <Image quality={95} className='filter brightness-50 mr-2' src="/assets/images/newimg/ghostwriting.png" width={40} height={40} alt='ghost writing' />
@@ -165,11 +165,11 @@ const Header = () => {
                     </div>
                   </li>
                   <li><Link href="/genre" className={`list text-black md:text-white text-[15px] font-[300]`}>Genre</Link></li>
-                  <li><Link href="/ebook-marketing-services" className={`list text-black md:text-white text-[15px] font-[300]`}>Marketing</Link></li>
-                  <li><Link href="/book-publishing-services" className={`list text-black md:text-white text-[15px] font-[300]`}>Publication</Link></li>
-                  <li><Link href="/hardcover-book-printing-services" className={`list text-black md:text-white text-[15px] font-[300]`}>Printing</Link></li>
-                  <li><Link href="/book-cover-design-services" className={`list text-black md:text-white text-[15px] font-[300]`}>Cover Design</Link></li>
-                  <li><Link href="/professional-book-editing-services" className={`list text-black md:text-white text-[15px] font-[300]`}>Editing</Link></li>
+                  <li><Link href="/book-marketing" className={`list text-black md:text-white text-[15px] font-[300]`}>Marketing</Link></li>
+                  <li><Link href="/book-publishing" className={`list text-black md:text-white text-[15px] font-[300]`}>Publication</Link></li>
+                  <li><Link href="/book-printing" className={`list text-black md:text-white text-[15px] font-[300]`}>Printing</Link></li>
+                  <li><Link href="/book-cover-design" className={`list text-black md:text-white text-[15px] font-[300]`}>Cover Design</Link></li>
+                  <li><Link href="/book-editing" className={`list text-black md:text-white text-[15px] font-[300]`}>Editing</Link></li>
                   <li><Link href="/contact-us" className={`list text-black md:text-white text-[15px] font-[300]`}>Contact Us</Link></li>
                   <li>
                     <Link href="tel:800-781-9093" className={`text-[15px] font-secondary text-[#40BEE2] flex items-center gap-x-3 font-[500]`}>

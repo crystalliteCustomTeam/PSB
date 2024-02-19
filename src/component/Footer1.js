@@ -105,7 +105,7 @@ const NewFooter = () => {
                                     <p className='text-[16px] font-medium font-secondary pb-3'>Our Services</p>
                                     <ul>
                                         <li>
-                                            <Link href="/book-publishing-services" className='text-[13px] font-[400] font-secondary xl:leading-[25px] leading-[15px]'>
+                                            <Link href="/book-publishing" className='text-[13px] font-[400] font-secondary xl:leading-[25px] leading-[15px]'>
                                                 Book Publishing
                                             </Link>
                                         </li>
@@ -115,7 +115,7 @@ const NewFooter = () => {
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href="javascript:;" className='text-[13px] font-[400] font-secondary xl:leading-[25px] leading-[15px]'>
+                                            <Link href="/digital-book-publishing-fa" className='text-[13px] font-[400] font-secondary xl:leading-[25px] leading-[15px]'>
                                                 Digital Book Publishing
                                             </Link>
                                         </li>
@@ -125,8 +125,13 @@ const NewFooter = () => {
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href="javascript:;" className='text-[13px] font-[400] font-secondary xl:leading-[25px] leading-[15px]'>
+                                            <Link href="/self-publishing-fa" className='text-[13px] font-[400] font-secondary xl:leading-[25px] leading-[15px]'>
                                                 Self Publishing
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="/children-Illustration-fa" className='text-[13px] font-[400] font-secondary xl:leading-[25px] leading-[15px]'>
+                                            Children Illustration
                                             </Link>
                                         </li>
                                     </ul>
