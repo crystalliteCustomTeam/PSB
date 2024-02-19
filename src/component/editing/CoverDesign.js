@@ -16,7 +16,7 @@ const PublishingWorkMode = () => {
                             Editing Tailored to Your Needs
                         </h2>
                         <p className='w-[80%] md:text-center mx-auto md:w-[90%] sm:w-[90%] xs:w-[90%]'>
-                            We create the ideal editing workflow to suit all your editing needs. Our editors are the best at creating an ideal environment for refining your manuscripts and producing the highest quality. Our outstanding results are a testament to the hard work of affordable book editing services the people at Barnett ghostwriting provide.
+                            We create the ideal editing workflow to suit all your editing needs. Our editors are the best at creating an ideal environment for refining your manuscripts and producing the highest quality. Our outstanding results are a testament to the hard work of affordable book editing services the people at  Best Selling Publisher Ghostwriting provide.
                         </p>
                     </div>
 

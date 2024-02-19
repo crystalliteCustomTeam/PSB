@@ -17,7 +17,7 @@ const marketBook1 = () => {
                             <h6 className='font-semibold text-[30px] font-primary text-[#40BEE2] mb-3 leading-tight'>Market your book</h6>
                             <h2 className='text-[40px] font-primary font-semibold mb-3 leading-tight'>In the best possible way!
                             </h2>
-                            <p className='text-[16px] leading-normal'>When selecting Barnett Ghostwriting, be assured that you have opted for a highly professional company serving as the definitive one-stop solution for all your marketing requirements.</p>
+                            <p className='text-[16px] leading-normal'>When selecting  Best Selling Publisher Ghostwriting, be assured that you have opted for a highly professional company serving as the definitive one-stop solution for all your marketing requirements.</p>
                         </div>
                         <div className='md:mt-[0px] xs:mt-[30px] relative z-auto pt-5' >
                             <div className="container-xl max-w-7xl lg:max-w-6xl justify-center md:gap-10 mx-auto md:pr-0 md:ml-0 ">

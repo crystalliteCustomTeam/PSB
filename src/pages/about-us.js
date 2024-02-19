@@ -42,7 +42,7 @@ const about = () => {
         <BW1
           title='Getting Your Book Written By The Top Industry Experts?'
           desc={'Your million-dollar story is worth bringing alive. And for that, our ghostwriters are dedicated to the execution of your book and work tirelessly to mold the story into the form of a picture-perfect book. We guarantee that the services you take from us are unmatchable and will meet your desired results.'}
-          descs={'To give our customers a high-end result, we have hired professional experts with years of experience who are highly sought after. Therefore, don’t worry while choosing Barnett Ghostwriting for your service because working with us means getting the best.'}
+          descs={'To give our customers a high-end result, we have hired professional experts with years of experience who are highly sought after. Therefore, don’t worry while choosing  Best Selling Publisher Ghostwriting for your service because working with us means getting the best.'}
         />
 
         <CTA />

@@ -30,7 +30,7 @@ const Header = () => {
             <div className="items-center justify-between flex grid-cols-2 grid-rows-1">
               <div className="flex-shrink-0">
                 <Link href="/" className="text-xl font-bold text-indigo-500">
-                  <Image quality={95} src={Logo} alt="Barnett ghostwriting logo" width={180} height={50} />
+                  <Image quality={95} src={Logo} alt=" Best Selling Publisher Ghostwriting logo" width={180} height={50} />
                 </Link>
               </div>
               <nav className="flex space-x-4 text-[16px]   text-[#1d1d1f] font-medium">

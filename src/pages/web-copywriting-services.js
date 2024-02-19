@@ -20,7 +20,7 @@ const WebCopywritingServices = () => {
         <FEATURED
           banneraffordable='article'
           title='Develop Your Business with the Outstanding Skills and Expertise of Our Web Copywriters'
-          dec={` Welcome to Barnett Ghostwriting. We offer professional web copywriting services, taking your website to the next level with the help of our expert copywriters.`}
+          dec={` Welcome to  Best Selling Publisher Ghostwriting. We offer professional web copywriting services, taking your website to the next level with the help of our expert copywriters.`}
           href1={<> <Link href=" " data-fancybox="" data-src="#popupform" className="btn btn-green">
             Get Started <i className="fas fa-caret-right ml-1"></i>
           </Link> </>}

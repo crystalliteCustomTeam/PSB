@@ -16,7 +16,7 @@ const publishing = () => {
                                     We Offer You a Chance to Expand Your Book’s Reputation on a Global Level
                                 </h1>
                                 <p className='xs:w-[100%]'>
-                                    We are a premium ghostwriting services company founded to provide excellent writing services. At Barnett Ghostwriting, we take a customer-centric approach to assist you in establishing yourself as a professional writer by providing high-quality content copies, guaranteeing outstanding results and a massive online reach.
+                                    We are a premium ghostwriting services company founded to provide excellent writing services. At  Best Selling Publisher Ghostwriting, we take a customer-centric approach to assist you in establishing yourself as a professional writer by providing high-quality content copies, guaranteeing outstanding results and a massive online reach.
                                 </p>
                             </div>
                         </div>

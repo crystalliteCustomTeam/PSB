@@ -64,7 +64,7 @@ const LetUsHelpArticle = () => {
                         <h6 className='text-xl mb-4 font-semibold'>Let Us Help You</h6>
                         <h2 className='text-[40px] font-semibold xs:text-4xl'>What Sets Us Apart?</h2>
                         <p className='max-w-[80%] mx-auto my-5  xs:text-justify sm:text-justify sm:max-w-[90%] xs:max-w-[90%]'>
-                            Barnett Ghostwriting is a well-known international ghostwriting and editing firm operating for over a decade. Our experts create well-versed writing that demonstrates true professionalism while exhibiting creativity. Our services are not only economical but also ensure that both the needs of the authors and the preferences of their target audience are adequately met. Some of our platform's distinguishing traits are as follows:
+                             Best Selling Publisher Ghostwriting is a well-known international ghostwriting and editing firm operating for over a decade. Our experts create well-versed writing that demonstrates true professionalism while exhibiting creativity. Our services are not only economical but also ensure that both the needs of the authors and the preferences of their target audience are adequately met. Some of our platform's distinguishing traits are as follows:
                         </p>
                     </div>
                     <div className={`grid w-[85%] mx-auto ${isLargeScreen ? '' : 'hidden'} grid-cols-3 md:grid-cols-2 gap-4 mt-12 items-stretch justify-stretch`}>

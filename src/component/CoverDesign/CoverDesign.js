@@ -28,7 +28,7 @@ const PublishingWorkMode = () => {
                                     <h4 className='text-[20px] py-3 font-primary text-[#242424] font-semibold leading-6 m-0 transition-[.5s all]'>
                                         Concept Development: </h4>
                                     <p className='text-sm'>
-                                        Our team at Barnett Ghostwriting is among the best in developing concepts. We work closely with authors to understand their book’s theme, genre, and essence. From this foundation, we develop unique and captivating concepts for the book cover that resonate with the story’s core. This eventually leads to our creative designers working on making an ideal cover that fits the book’s theme.
+                                        Our team at  Best Selling Publisher Ghostwriting is among the best in developing concepts. We work closely with authors to understand their book’s theme, genre, and essence. From this foundation, we develop unique and captivating concepts for the book cover that resonate with the story’s core. This eventually leads to our creative designers working on making an ideal cover that fits the book’s theme.
                                     </p>
 
                                 </div>

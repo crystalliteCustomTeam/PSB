@@ -8,37 +8,37 @@ import { Container, Row, Col } from 'react-bootstrap'
 const data = [
     {
       heading: "Amazon Publishing",
-      para: "Uncover the unparalleled excellence of our publishing services, where each word is meticulously crafted to captivate and inspire. Explore the realm of literary mastery with our team and discover the epitome of quality in every page turned.",
+      para: "Amazon Publishing is a self publishing service from Amazon that allows authors to publish and distribute their books worldwide. It's a fast, easy and affordable way to get your book into the hands of readers looking for new titles to enjoy.",
       path: "/images/flods/amazon_publishing.png",
       alt: "Amazon Publishing"
     },
     {
       heading: "Book Publishing",
-      para: "Uncover the unparalleled excellence of our publishing services, where each word is meticulously crafted to captivate and inspire. Explore the realm of literary mastery with our team and discover the epitome of quality in every page turned.",
+      para: "Book publishing services provide support and guidance to authors who wish to self-publish their books. These services can include editing, book design, formatting, printing, and distribution.",
       path: "/images/flods/book_publishing.png",
       alt: "Book Publishing"
     },
     {
       heading: "Digital Book Publishing",
-      para: "Uncover the unparalleled excellence of our publishing services, where each word is meticulously crafted to captivate and inspire. Explore the realm of literary mastery with our team and discover the epitome of quality in every page turned.",
+      para: "we offer a variety of digital book publishing services to help authors self-publish their work. We can assist with everything from book publishing and formatting to distribution and marketing.",
       path: "/images/flods/digital_book_publishing.png",
       alt: "Digital Book Publishing"
     },
     {
       heading: "eBook Publishing",
-      para: "Uncover the unparalleled excellence of our publishing services, where each word is meticulously crafted to captivate and inspire. Explore the realm of literary mastery with our team and discover the epitome of quality in every page turned.",
+      para: "we provide high-quality eBook publishing services to help our clients reach their target audiences. We have a team of experienced professionals knowledgeable in the latest eBook publishing trends and technologies.",
       path: "/images/flods/ebook_publishing.png",
       alt: "eBook Publishing"
     },
     {
       heading: "Self Publishing",
-      para: "Uncover the unparalleled excellence of our publishing services, where each word is meticulously crafted to captivate and inspire. Explore the realm of literary mastery with our team and discover the epitome of quality in every page turned.",
+      para: "Self publishing has never been easier with Best Selling Publisher's wide range of self publishing services. We can help you publish your books, eBooks, and even print books on demand.",
       path: "/images/flods/self_publishing.png",
       alt: "Self Publishing"
     },
     {
       heading: "Book Marketing",
-      para: "Uncover the unparalleled excellence of our publishing services, where each word is meticulously crafted to captivate and inspire. Explore the realm of literary mastery with our team and discover the epitome of quality in every page turned.",
+      para: "An exceptional book can be let down with no or less marketing. After availing book writing services, marketing becomes a must in today’s competitive world.",
       path: "/images/flods/book_marketing.png",
       alt: "Book Marketing"
     }
@@ -71,7 +71,7 @@ const Exceptional = ({
                                     <h3 className='font-32 fw-700 font-primary txt-secondary1 pb-2'>{e.heading}</h3>
                                     <Row>
                                         <Col lg={7} md={7} sm={7} xs={6}>
-                                            <p className='font-15 font-medium font-secondary txt-secondary mt-3 '>{e.para}</p>
+                                            <p className='font-15 font-medium font-secondary txt-secondary '>{e.para}</p>
                                         </Col>
                                         <Col lg={5} md={5} sm={5} xs={6}>
                                             <Image src={e.path} alt={e.alt} quality={100} loading="lazy" width={200} height={100} className='img-fluid block my-auto' />
