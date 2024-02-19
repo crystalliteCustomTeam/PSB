@@ -89,7 +89,7 @@ const Formdata = () => {
         });
         const { pathname } = router;
         if (pathname == pathname) {
-            window.location.href = '/thankyou';
+            window.location.href = '/ThankYou';
         }
 
     }
