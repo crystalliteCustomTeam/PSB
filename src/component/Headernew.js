@@ -43,7 +43,7 @@ const Header = () => {
                   <li>
                     <Link href="/" className={`list text-black md:text-white text-[15px] font-bold`}>Home</Link>
                   </li>
-                  <li><Link href="/aboutus" className={`list text-black md:text-white text-[15px] font-[300]`}>About</Link></li>
+                  <li><Link href="/about-us" className={`list text-black md:text-white text-[15px] font-[300]`}>About</Link></li>
                   <li className="relative group py-0 hover:text-[#00C0E4] text-[15px] z-50">
                     <button className="hover:opacity-50 cursor-default text-black md:text-white font-[300]" aria-haspopup="true">Writing Services
                       <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 ml-2 -mr-1 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor" >
