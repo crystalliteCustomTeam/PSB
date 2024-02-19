@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import "@/styles/custom.css"
 import { useState, useEffect } from 'react';
+import Head from 'next/head'
 
 import Headernew from "../component/Headernew";
 import Footer1 from "../component/Footer1";
@@ -69,6 +70,12 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
+
+
+<Head>
+<link rel="icon" href="/images/favicon.svg" />
+</Head>
+
       <main className={`${primary.className} ${SfProDisplay.variable}`}>
         <Headernew />
         <Component {...pageProps} />
