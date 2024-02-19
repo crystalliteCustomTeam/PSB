@@ -85,6 +85,10 @@
 
 
 /* conpoentcss */
+.newtown:hover h5{
+   color: #40BEE2;
+}
+
 .newdata .newbanner {
    position: relative;
    top: -45px;

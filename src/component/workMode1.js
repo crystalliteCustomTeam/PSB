@@ -79,9 +79,9 @@ const workMode = () => {
 
                     <div className={`grid grid-cols-4 grid-rows-1 ${isLargeScreen ? '' : 'hidden'}  gap-4 md:grid-cols-2 md:w-[90%] mx-auto`}>
                         <div className="col-md hover:-translate-y-1 hover:scale-105 duration-300 ">
-                            <div className="box rounded-2xl bg-white text-left text-[#1d1d1f] hover:text-white h-[100%] py-16 px-4 border-0 border-solid transition-[.5s] hover:bg-[#00c0e4] hover:border-white">
-                                <h5 className='text-[#d9d9d9] text-xl font-semibold mb-3'>Step 01</h5>
-                                <p className='text-[25px] font-primary text-[#242424] font-semibold leading-tight m-0 mb-3 transition-[.5s all]'>
+                            <div className="box rounded-2xl bg-white text-left text-[#1d1d1f] hover:text-white h-[100%] py-16 px-4 border-0 border-solid transition-[.5s] hover:bg-[#000000] hover:border-white group">
+                                <h5 className='text-[#40bee2]  text-xl font-semibold mb-3'>Step 01</h5>
+                                <p className='text-[20px]  font-primary text-[#242424] font-semibold leading-tight m-0 mb-3 transition-[.5s all]'>
                                 Submit Your Manuscript
                                     <span className='block text-[16px] leading-5 mt-3'>
                                     Send us your manuscript to get started.
@@ -90,9 +90,9 @@ const workMode = () => {
                             </div>
                         </div>
                         <div className="col-md hover:-translate-y-1 hover:scale-105 duration-300">
-                            <div className="box rounded-2xl bg-white text-left text-[#1d1d1f] hover:text-white h-[100%] py-16 px-4 border-0 border-solid transition-[.5s] hover:bg-[#00c0e4] hover:border-white">
-                                <h5 className='text-[#d9d9d9] text-xl font-semibold mb-3'>Step 02</h5>
-                                <p className='text-[25px] font-primary text-[#242424] font-semibold leading-tight m-0 transition-[.5s all]'>
+                            <div className="box rounded-2xl bg-white text-left text-[#1d1d1f] hover:text-white h-[100%] py-16 px-4 border-0 border-solid transition-[.5s] hover:bg-[#000000] hover:border-white group">
+                                <h5 className='text-[#40bee2]  text-xl font-semibold mb-3'>Step 02</h5>
+                                <p className='text-[20px] font-primary text-[#242424] font-semibold leading-tight m-0 transition-[.5s all]'>
                                 Edit & Design
                                     <span className='block text-[16px] leading-5 mt-3'>
                                     We refine your text and design your book's cover.
@@ -101,9 +101,9 @@ const workMode = () => {
                             </div>
                         </div>
                         <div className="col-md hover:-translate-y-1 hover:scale-105 duration-300">
-                            <div className="box rounded-2xl bg-white text-left text-[#1d1d1f] hover:text-white h-[100%] py-16 px-4 border-0 border-solid transition-[.5s] hover:bg-[#00c0e4] hover:border-white">
-                                <h5 className='text-[#d9d9d9] text-xl font-semibold mb-3'>Step 03</h5>
-                                <p className='text-[25px] font-primary text-[#242424] font-semibold leading-tight m-0 transition-[.5s all]'>
+                            <div className="box rounded-2xl bg-white text-left text-[#1d1d1f] hover:text-white h-[100%] py-16 px-4 border-0 border-solid transition-[.5s] hover:bg-[#000000] hover:border-white group">
+                                <h5 className='text-[#40bee2]  text-xl font-semibold mb-3'>Step 03</h5>
+                                <p className='text-[20px] font-primary text-[#242424] font-semibold leading-tight m-0 transition-[.5s all]'>
                                 Review & Approve
                                     <span className='block text-[16px] leading-5 mt-3'>
                                     You review our work and give the green light.
@@ -112,9 +112,9 @@ const workMode = () => {
                             </div>
                         </div>
                         <div className="col-md hover:-translate-y-1 hover:scale-105 duration-300">
-                            <div className="box rounded-2xl bg-white text-left text-[#1d1d1f] hover:text-white h-[100%] py-16 px-4 border-0 border-solid transition-[.5s] hover:bg-[#00c0e4] hover:border-white">
-                                <h5 className='text-[#d9d9d9] text-xl font-semibold mb-3'>Step 04</h5>
-                                <p className='text-[25px] font-primary text-[#242424] font-semibold leading-tight m-0 transition-[.5s all]'>
+                            <div className="box rounded-2xl bg-white text-left text-[#1d1d1f] hover:text-white h-[100%] py-16 px-4 border-0 border-solid transition-[.5s] hover:bg-[#000000] hover:border-white group newtown">
+                                <h5 className='text-[#40bee2]  text-xl font-semibold mb-3'>Step 04</h5>
+                                <p className='text-[20px] font-primary text-[#242424] font-semibold leading-tight m-0 transition-[.5s all]'>
                                 Publish & Distribute
                                     <span className='block text-[16px] leading-5 mt-3'>
                                     Your book is published and distributed on schedule.
@@ -129,7 +129,7 @@ const workMode = () => {
                         <Slider {...settings}>
                             <div className="col-md h-[340px] hover:-translate-y-1 hover:scale-95 duration-300 ">
                                 <div className="box rounded-2xl bg-white text-left text-[#1d1d1f] hover:text-white h-[100%] py-24 px-7 md:py-24 md:px-10 border-0 border-solid transition-[.5s] hover:bg-[#00c0e4] hover:border-white">
-                                    <h5 className='text-[#d9d9d9] hover:text-[#00C0E4] text-xl font-semibold mb-3'>Step 01</h5>
+                                    <h5 className='text-[#40bee2] hover:text-[#00C0E4] text-xl font-semibold mb-3'>Step 01</h5>
                                     <p className='text-[19px] text-[#242424] font-semibold leading-6 m-0 mb-3 transition-[.5s all]'>
                                         Place Your Order
 
@@ -141,7 +141,7 @@ const workMode = () => {
                             </div>
                             <div className="col-md h-[340px] hover:-translate-y-1 hover:scale-95 duration-300">
                                 <div className="box rounded-2xl bg-white text-left text-[#1d1d1f] hover:text-white h-[100%] py-24 px-7 md:py-24 md:px-10 border-0 border-solid transition-[.5s] hover:bg-[#00c0e4] hover:border-white">
-                                    <h5 className='text-[#d9d9d9] hover:text-[#00C0E4] text-xl font-semibold mb-3'>Step 02</h5>
+                                    <h5 className='text-[#40bee2] hover:text-[#00C0E4] text-xl font-semibold mb-3'>Step 02</h5>
                                     <p className='text-[19px] text-[#242424] font-semibold leading-6 m-0 transition-[.5s all]'>
 
                                         Drafting Outline
@@ -153,7 +153,7 @@ const workMode = () => {
                             </div>
                             <div className="col-md h-[340px] hover:-translate-y-1 hover:scale-95 duration-300">
                                 <div className="box rounded-2xl bg-white text-left text-[#1d1d1f] hover:text-white h-[100%] py-24 px-7 md:py-24 md:px-10 border-0 border-solid transition-[.5s] hover:bg-[#00c0e4] hover:border-white">
-                                    <h5 className='text-[#d9d9d9] hover:text-[#00C0E4] text-xl font-semibold mb-3'>Step 03</h5>
+                                    <h5 className='text-[#40bee2] hover:text-[#00C0E4] text-xl font-semibold mb-3'>Step 03</h5>
                                     <p className='text-[19px] text-[#242424] font-semibold leading-6 m-0 transition-[.5s all]'>
                                         Seeking Your Approval
                                         <span className='block text-[16px] leading-5 mt-3'>
@@ -165,7 +165,7 @@ const workMode = () => {
                             </div>
                             <div className="col-md h-[340px] hover:-translate-y-1 hover:scale-95 duration-300">
                                 <div className="box rounded-2xl bg-white text-left text-[#1d1d1f] hover:text-white h-[100%] py-24 px-7 md:py-24 md:px-10 border-0 border-solid transition-[.5s] hover:bg-[#00c0e4] hover:border-white">
-                                    <h5 className='text-[#d9d9d9] hover:text-[#00C0E4] text-xl font-semibold mb-3'>Step 04</h5>
+                                    <h5 className='text-[#40bee2] hover:text-[#00C0E4] text-xl font-semibold mb-3'>Step 04</h5>
                                     <p className='text-[19px] text-[#242424] font-semibold leading-6 m-0 transition-[.5s all]'>
                                         Timely Deliverance Of Work
                                         <span className='block text-[16px] leading-5 mt-3'>
