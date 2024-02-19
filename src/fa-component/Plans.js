@@ -9,6 +9,14 @@ import project from 'media/images/icons/project.png'
 import stamp from 'media/images/icons/stamp.png'
 // mport { Fade } from "react-awesome-reveal";
 const Plans = () => {
+
+    const openLiveChat = (e) => {
+        e.preventDefault();
+        if (window.LiveChatWidget) {
+          window.LiveChatWidget.call('maximize');
+        }
+      };
+
     return (
         <>
             <section className={`${styles.plansFlod} bg-prime`}>

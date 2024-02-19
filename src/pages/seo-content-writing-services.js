@@ -14,7 +14,12 @@ import SwiperComponents from '../component/SwiperComponent'
 
 import LogoSliders from '../component/bottomLogosNEW'
 
-
+const openLiveChat = (e) => {
+  e.preventDefault();
+  if (window.LiveChatWidget) {
+    window.LiveChatWidget.call('maximize');
+  }
+};
 const Ghostwriting = () => {
   return (
     <>
@@ -28,7 +33,7 @@ const Ghostwriting = () => {
             Get Started <i className="fas fa-caret-right ml-1"></i>
           </Link> </>}
           href2={<>
-            <Link href="javascript:$zopim.livechat.window.show()" className="chat btn btn-white-border ml-4">
+            <Link href="#" onClick={openLiveChat} className="chat btn btn-white-border ml-4">
               Live Chat
             </Link>
           </>}

@@ -11,8 +11,7 @@ import mock1 from 'media/images/book-mockup/1.png'
 import mock2 from 'media/images/book-mockup/2.png'
 import mock3 from 'media/images/book-mockup/3.png'
 import mock4 from 'media/images/book-mockup/4.png'
-import mock5 from 'media/images/book-mockup/9.png'
-import mock6 from 'media/images/book-mockup/10.png'
+import mock5 from 'media/images/book-mockup/1.png'
 
 
 import before from 'media/images/flods/tradition-before.png'
@@ -55,6 +54,14 @@ const Tradition = ({
         ]
     };
 
+    const openLiveChat = (e) => {
+        e.preventDefault();
+        if (window.LiveChatWidget) {
+          window.LiveChatWidget.call('maximize');
+        }
+      };
+
+
     return (
         <>
             <section className={styles.traditionFold}>
@@ -77,7 +84,7 @@ const Tradition = ({
 
 
                         <Col lg={12}>
-                            <div className='mt-5 trade'>
+                            <div className='trade'>
                                 <Slider {...traditionslider}>
                                     <div>
                                         <Image quality={80} loading="lazy" className='img-fluid'
@@ -104,23 +111,17 @@ const Tradition = ({
                                         />
                                     </div>
                                     <div>
-                                        <Image quality={100} width={150} height={150} loading="lazy" className='img-fluid'
+                                        <Image quality={80} loading="lazy" className='img-fluid'
                                             src={mock5}
                                             alt='Best_Publisher'
                                         />
                                     </div>
-                                    <div>
-                                        <Image quality={100} width={150} height={150} loading="lazy" className='img-fluid'
-                                            src={mock6}
-                                            alt='Best_Publisher'
-                                        />
-                                    </div>
-
+                                  
 
                                 </Slider>
                             </div>
                             <div className={`${Bookshelf.bttns} d-flex mt-5 justify-content-center`}>
-                                <Link className='btns btnPrimary' href="javascript:$zopim.livechat.window.show()">Let's discuss</Link>
+                                <Link className='btns btnPrimary' onClick={openLiveChat} href="#">Let's discuss</Link>
                                 <Link className='btns btnSecondary' href="tel:800-781-9093">800-781-9093</Link>
                             </div>
                         </Col>

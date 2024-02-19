@@ -46,49 +46,56 @@ const TestimonialsSlider = () => {
   const slides = [
     {
       avatar: "/assets/images/newimg/stars.png",
-      name: "- Michael P.",
+      polit: "/assets/images/newimg/trust.png",
+      name: "- Isaac Freeman",
       title: "CTO, Cybertech Solutions",
       quote:
-        "I'm so grateful for the amazing book they crafted for me. Truly exceptional work!",
+        "I was amazed by the swift and efficient process at Best Selling Publisher. Their team’s expertise in Amazon book publishing services made a significant difference in my book's online presence. A five-star service all around",
     },
     {
       avatar: "/assets/images/newimg/stars.png",
-      name: "- Sarah W.",
+      polit: "/assets/images/newimg/stars.png",
+      name: "Matthew Feller",
+      title: "CTO, Cybertech Solutions",
+      quote:
+        "From manuscript to masterpiece, the journey was seamless with Book Selling Publisher. Their attention to detail and commitment to quality is unmatched. My book’s success speaks volumes of their dedication.",
+    },
+    {
+      avatar: "/assets/images/newimg/stars.png",
+      polit: "/assets/images/newimg/stars.png",
+      name: "- Casey F.",
+      title: "CTO, Cybertech Solutions",
+      quote:
+        "The professionalism and personalized support I received from Book Selling Publisher were exceptional. They turned the daunting task of publishing into a rewarding experience. My book is now a bestseller, thanks to their expert marketing strategies",
+    },
+    {
+      avatar: "/assets/images/newimg/stars.png",
+      polit: "/assets/images/newimg/stars.png",
+      name: "Noah Howard",
+      title: "CTO, Cybertech Solutions",
+      quote:
+        "As a first-time author, the process of book publishing felt like a daunting maze with no clear path. That's when I reached out to The Book Selling Publishers company, and I must say they have offered me the right solution. They answered my questions swiftly, took care of every problem, and kept me informed all along the publishing process.",
+    },
+    {
+      avatar: "/assets/images/newimg/stars.png",
+      polit: "/assets/images/newimg/stars.png",
+      name: "Gabriel M.",
       title: "CTO, Cybertech Solutions",
       quote:
         "Working with this book writing company was a game-changer for me. Their expertise is unmatched!",
     },
     {
       avatar: "/assets/images/newimg/stars.png",
-      name: "- John D.",
-      title: "CTO, Cybertech Solutions",
-      quote:
-        "I can’t believe the incredible quality of the book they wrote for me. It exceeded all my expectations!",
-    },
-    {
-      avatar: "/assets/images/newimg/stars.png",
-      name: "- Michael P.",
-      title: "CTO, Cybertech Solutions",
-      quote:
-        "I'm so grateful for the amazing book they crafted for me. Truly exceptional work!",
-    },
-    {
-      avatar: "/assets/images/newimg/stars.png",
-      name: "- Sarah W.",
-      title: "CTO, Cybertech Solutions",
-      quote:
-        "Working with this book writing company was a game-changer for me. Their expertise is unmatched!",
-    },
-    {
-      avatar: "/assets/images/newimg/stars.png",
-      name: "- John D.",
+      polit: "/assets/images/newimg/stars.png",
+      name: "Cormac M.",
       title: "CTO, Cybertech Solutions",
       quote:
         "I can't believe the incredible quality of the book they wrote for me. It exceeded all my expectations!",
     },
     {
       avatar: "/assets/images/newimg/stars.png",
-      name: "- John D.",
+      polit: "/assets/images/newimg/stars.png",
+      name: "J.D.Salinger.",
       title: "CTO, Cybertech Solutions",
       quote:
         "I can't believe the incredible quality of the book they wrote for me. It exceeded all my expectations!",
@@ -129,6 +136,12 @@ const TestimonialsSlider = () => {
                 <div>
                   <div className="w-[90%] m-auto py-10">
                     <div className="card testimonialscard">
+                    <Image quality={95}
+                         src="../../images/newimg/trust.png"
+                        width={80}
+                        height={80}
+                        className="mb-2"
+                      />
                       <Image quality={95}
                         src={testimonial.avatar}
                         alt={testimonial.name}
@@ -139,7 +152,7 @@ const TestimonialsSlider = () => {
                         <h1 className="name">{testimonial.name}</h1>
                       </div>
                       <div className="quote-container">
-                        <p className="quote text-[12px]">{testimonial.quote}</p>
+                        <p className="quote text-[9px]">{testimonial.quote}</p>
                       </div>
                     </div>
                   </div>

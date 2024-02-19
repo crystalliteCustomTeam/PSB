@@ -8,6 +8,14 @@ import { Container, Row, Col } from 'react-bootstrap'
 import audience from 'media/images/flods/audience1.png'
 
 const Audience = () => {
+
+    const openLiveChat = (e) => {
+        e.preventDefault();
+        if (window.LiveChatWidget) {
+          window.LiveChatWidget.call('maximize');
+        }
+      };
+
     return (
         <>
             <section className={`${styles.audienceFlod} bg-prime`}>
@@ -19,7 +27,7 @@ const Audience = () => {
                                     Effectively with Our Digital  <span className='bg-black txt-white mt-2 w-75 p-1 font-50 fw-500 d-block'>Publishing Services</span></h2>
                                 <p className='font-15 font-secondary txt-white mb-5'>Best Selling Publisher brings your dream of book writing to life.</p>
                                 <div className={`${styles.bttns} mt-4 mb-5 mb-md-0`}>
-                                    <Link className='btns btnBlack' href="javascript:$zopim.livechat.window.show()">Let's discuss</Link>
+                                    <Link onClick={openLiveChat} className='btns btnBlack' href="#">Let's discuss</Link>
                                     <Link className='btns btnTransprnt' href="tel:800-781-9093">800-781-9093</Link>
                                 </div>
                             </div>

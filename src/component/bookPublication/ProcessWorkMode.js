@@ -7,21 +7,19 @@ const ProcessWorkMode = () => {
             <section className="our-process w-full">
                 <div className="container max-w-7xl lg:max-6xl py-24 sm:py-10 xs:py-10 text-[#1d1d1f]">
                     <div className="text-center mb-10 justify-center">
-                        <h6 className='text-[30px] text-[#40BEE2] font-primary font-semibold'>
-                            Bringing you fame
-                        </h6>
+                       
                         <h2 className='text-[40px] font-primary font-semibold leading-10 my-5 sm:text-4xl xs:text-3xl xs:my-2 '>
                             Why Publish With Us?
                         </h2>
                         <p className='w-[70%] mx-auto md:w-[90%] sm:w-[95%] xs:w-[100%]'>
-                            Our marketing team is adept at changing situations within the market, as well as being capable of utilizing the best practices that lead to the most attention and attraction towards your product, whatever it might be. Below is a summary of how we get you recognition and fame with the help of our marketing services.
+                        Choosing us for your publishing needs means partnering with a team deeply committed to bringing your literary vision to life. Our dedicated approach ensures your book not only reaches but captivates a global audience. Here's why you should publish with us:
                         </p>
                     </div>
 
                     <div className=' grid grid-cols-3 gap-4 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-1 md:w-[95%] sm:px-5 mx-auto xs:w-[90%]'>
                         <div className="col-md hover:-translate-y-1 hover:scale-105 duration-300 h-[250px]">
                             <div className="box rounded-2xl bg-[#f2f2f2] text-left text-[#1d1d1f] hover:text-white h-[100%] py-10 px-5 border-2 border-solid transition-[.5s] hover:bg-[#1d1d1f] hover:border-white">
-                                <h5 className='text-[#d9d9d9] hover:text-[#00C0E4] text-xl font-semibold'>Step 01</h5>
+                                <h5 className='text-[#40bee2] hover:text-[#00C0E4] text-xl font-semibold'>Step 01</h5>
                                 <p className='text-[20px] text-[#242424] font-semibold leading-6 m-0 transition-[.5s all]'>
 
                                     Professionalism
@@ -34,7 +32,7 @@ const ProcessWorkMode = () => {
                         </div>
                         <div className="col-md hover:-translate-y-1 hover:scale-105 duration-300 h-[250px]">
                             <div className="box rounded-2xl bg-[#f2f2f2] text-left text-[#1d1d1f] hover:text-white h-[100%] py-10 px-5 border-2 border-solid transition-[.5s] hover:bg-[#1d1d1f] hover:border-white">
-                                <h5 className='text-[#d9d9d9] hover:text-[#00C0E4] text-xl font-semibold'>Step 02</h5>
+                                <h5 className='text-[#40bee2] hover:text-[#00C0E4] text-xl font-semibold'>Step 02</h5>
                                 <p className='text-[20px] text-[#242424] font-semibold leading-6 m-0 transition-[.5s all]'>
 
                                     Experience
@@ -45,7 +43,7 @@ const ProcessWorkMode = () => {
                         </div>
                         <div className="col-md hover:-translate-y-1 hover:scale-105 duration-300 h-[250px]">
                             <div className="box rounded-2xl bg-[#f2f2f2] text-left text-[#1d1d1f] hover:text-white h-[100%] py-10 px-5 border-2 border-solid transition-[.5s] hover:bg-[#1d1d1f] hover:border-white">
-                                <h5 className='text-[#d9d9d9] hover:text-[#00C0E4] text-xl font-semibold'>Step 03</h5>
+                                <h5 className='text-[#40bee2] hover:text-[#00C0E4] text-xl font-semibold'>Step 03</h5>
                                 <p className='text-[20px] text-[#242424] font-semibold leading-6 m-0 transition-[.5s all]'>
                                     Customization
                                     <span className='block font-normal text-[13px] leading-5 mt-2'>
@@ -55,7 +53,7 @@ const ProcessWorkMode = () => {
                         </div>
                         <div className="col-md hover:-translate-y-1 hover:scale-105 duration-300 h-[250px]">
                             <div className="box rounded-2xl bg-[#f2f2f2] text-left text-[#1d1d1f] hover:text-white h-[100%] py-10 px-5 border-2 border-solid transition-[.5s] hover:bg-[#1d1d1f] hover:border-white">
-                                <h5 className='text-[#d9d9d9] hover:text-[#00C0E4] text-xl font-semibold'>Step 04</h5>
+                                <h5 className='text-[#40bee2] hover:text-[#00C0E4] text-xl font-semibold'>Step 04</h5>
                                 <p className='text-[20px] text-[#242424] font-semibold leading-6 m-0 transition-[.5s all]'>
 
                                     Affordability
@@ -67,7 +65,7 @@ const ProcessWorkMode = () => {
                         </div>
                         <div className="col-md hover:-translate-y-1 hover:scale-105 duration-300 h-[250px]">
                             <div className="box rounded-2xl bg-[#f2f2f2] text-left text-[#1d1d1f] hover:text-white h-[100%] py-10 px-5 border-2 border-solid transition-[.5s] hover:bg-[#1d1d1f] hover:border-white">
-                                <h5 className='text-[#d9d9d9] hover:text-[#00C0E4] text-xl font-semibold'>Step 05</h5>
+                                <h5 className='text-[#40bee2] hover:text-[#00C0E4] text-xl font-semibold'>Step 05</h5>
                                 <p className='text-[20px] text-[#242424] font-semibold leading-6 m-0 transition-[.5s all]'>
 
                                     Confidentiality
@@ -79,7 +77,7 @@ const ProcessWorkMode = () => {
                         </div>
                         <div className="col-md hover:-translate-y-1 hover:scale-105 duration-300 h-[250px]">
                             <div className="box rounded-2xl bg-[#f2f2f2] text-left text-[#1d1d1f] hover:text-white h-[100%] py-10 px-5 border-2 border-solid transition-[.5s] hover:bg-[#1d1d1f] hover:border-white">
-                                <h5 className='text-[#d9d9d9] hover:text-[#00C0E4] text-xl font-semibold'>Step 06</h5>
+                                <h5 className='text-[#40bee2] hover:text-[#00C0E4] text-xl font-semibold'>Step 06</h5>
                                 <p className='text-[20px] text-[#242424] font-semibold leading-6 m-0 transition-[.5s all]'>
 
                                     Submitting it for review

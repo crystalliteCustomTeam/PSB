@@ -48,6 +48,16 @@ const Exceptional = ({
     title,
     subtitle,
 }) => {
+
+
+    const openLiveChat = (e) => {
+        e.preventDefault();
+        if (window.LiveChatWidget) {
+          window.LiveChatWidget.call('maximize');
+        }
+      };
+
+
     return (
         <>
             <section className={styles.dreamsFlod}>
@@ -82,7 +92,7 @@ const Exceptional = ({
                             </Col>
                         ))}
                         <div className={`${Bookshelf.bttns} dislpay-flex mt-5 justify-content-center`}>
-                            <Link className='btns btnPrimary' href="javascript:$zopim.livechat.window.show()">Let's discuss</Link>
+                            <Link className='btns btnPrimary' onClick={openLiveChat} href="#">Let's discuss</Link>
                             <Link className='btns btnSecondary' href="tel:800-781-9093">800-781-9093</Link>
                         </div>
                     </Row>

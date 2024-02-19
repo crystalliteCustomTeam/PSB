@@ -3,7 +3,12 @@
 import React from 'react';
 import Image from 'next/image';
 const GhostwritingBanner = (props) => {
-
+  const openLiveChat = (e) => {
+    e.preventDefault();
+    if (window.LiveChatWidget) {
+      window.LiveChatWidget.call('maximize');
+    }
+  };
 
 
 
@@ -26,7 +31,7 @@ const GhostwritingBanner = (props) => {
             </p>
             <div className='w-[40%] grid grid-cols-2 grid-rows-1 gap-5 py-5 md:mx-auto xs:mx-auto sm:w-[80%] sm:mx-auto xs:w-[100%]'>
             <a href="tel:800-781-9093" className='bg-[#00C0E4] py-1 text-white hover:bg-transparent hover:border-solid hover:border-[1px] hover:border-[#1d1d1f] hover:text-[#1d1d1f] hover:transition-all hover:transform-gpu flex items-center justify-center text-center h-[40px]'>Get Started</a>
-                  <a href="javascript:$zopim.livechat.window.show()" className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
+                  <a onClick={openLiveChat} href="#" className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
             </div>
           </div>
 

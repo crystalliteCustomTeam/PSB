@@ -22,10 +22,12 @@ const about = () => {
       <main>
         <FEATURED
           banneraffordable='aboutus'
-          title='We Will Swiftly Publish Your Amazingly Written Book and Aid You in Bringing About Success'
-          dec={`Writing is only half the battle of building a great novel; the other half involves every other aspect that goes into the literary creation.`}
+          title= { <> Transform Your Manuscript Into  <br></br>
+            A Bestseller With Premier Book <br></br>
+             Publishing Services </> }
+          dec={`Welcome to Best Selling Publisher, where your publishing dreams turn into reality. As a leading book publishing company, we specialize in bringing authors' visions to life and catapulting their works onto bestseller lists, including Amazon's coveted ranks.With our comprehensive book publishing services, from meticulous editing to bespoke marketing strategies, we're here to guide you every step of the way. Partner with us and see your book shine across the globe.`}
           href1={<> <Link href=" " data-fancybox="" data-src="#popupform" className="btn btn-green">
-            Get Started <i className="fas fa-caret-right ml-1"></i>
+            Start Your Publishing Journey Today <i className="fas fa-caret-right ml-1"></i>
           </Link> </>}
           href2={<>
             <Link href=" " className="chat btn btn-white-border ml-4">

@@ -6,6 +6,16 @@ import Formdata from '@/fa-component/Formdata';
 // // mport { Fade } from "react-awesome-reveal";
 
 const Bookshelf = () => {
+
+
+    const openLiveChat = (e) => {
+        e.preventDefault();
+        if (window.LiveChatWidget) {
+          window.LiveChatWidget.call('maximize');
+        }
+      };
+
+
     return (
         <>
             <section className={styles.bookshelfFlod}>
@@ -20,7 +30,7 @@ const Bookshelf = () => {
 
                                     <p className='font-15 font-secondary txt-secondary'>Best Selling Publisher is a cutting-edge books publisher that offers a suite of services designed to help authors navigate the ever-changing world of publishing. Our book publishing services are tailored to meet the needs of today's authors. From providing guidance on self-publishing to offering and publishing support, we are committed to helping authors succeed in an increasingly competitive marketplace. What sets Best Selling Publisher apart from other publishers is our commitment to quality. We work with each author on an individual basis, providing the personalized attention that is so essential to success in today's publishing landscape.</p>
                                     <div className={`${styles.bttns} mt-5`}>
-                                        <Link className='btns btnPrimary' href="javascript:$zopim.livechat.window.show()">Let's discuss</Link>
+                                        <Link className='btns btnPrimary' onClick={openLiveChat} href="#">Let's discuss</Link>
                                         <Link className='btns btnSecondary' href="tel:800-781-9093">800-781-9093</Link>
                                     </div>
                                 </div>

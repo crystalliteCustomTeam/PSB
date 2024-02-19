@@ -83,6 +83,26 @@
    }
 }
 
+
+/* conpoentcss */
+.newdata .newbanner {
+   position: relative;
+   top: -45px;
+}
+.underlin {
+   position: relative;
+}
+.underlin::after{
+   position: absolute;
+   content: "";
+   background-color: #40bee2;
+   width: 269px;
+   height: 1px;
+   bottom: 0;
+   left: 0;
+}
+
+
 .circles {
    mix-blend-mode: screen;
 

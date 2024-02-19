@@ -16,6 +16,15 @@ import LogoSliders from '../component/bottomLogosNEW'
 
 
 const Ghostwriting = () => {
+
+
+  const openLiveChat = (e) => {
+    e.preventDefault();
+    if (window.LiveChatWidget) {
+      window.LiveChatWidget.call('maximize');
+    }
+  };
+
   return (
     <>
       <main>
@@ -28,7 +37,7 @@ const Ghostwriting = () => {
             Get Started <i className="fas fa-caret-right ml-1"></i>
           </Link> </>}
           href2={<>
-            <Link href=" " className="chat btn btn-white-border ml-4">
+            <Link onClick={openLiveChat} href="#" className="chat btn btn-white-border ml-4">
               Live Chat
             </Link>
           </>}

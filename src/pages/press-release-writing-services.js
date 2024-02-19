@@ -16,6 +16,14 @@ import LogoSliders from '../component/bottomLogosNEW'
 
 
 const Ghostwriting = () => {
+
+  const openLiveChat = (e) => {
+    e.preventDefault();
+    if (window.LiveChatWidget) {
+      window.LiveChatWidget.call('maximize');
+    }
+  };
+
   return (
     <>
       <main>
