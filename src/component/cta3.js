@@ -2,6 +2,18 @@ import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import Image from 'next/image';
+import Mockup1 from '../../public/images/book-mockup/1.jpg'
+import Mockup2 from '../../public/images/book-mockup/2.jpg'
+import Mockup3 from '../../public/images/book-mockup/3.jpg'
+import Mockup4 from '../../public/images/book-mockup/4.jpg'
+import Mockup5 from '../../public/images/book-mockup/5.jpg'
+import Mockup6 from '../../public/images/book-mockup/6.jpg'
+import Mockup7 from '../../public/images/book-mockup/7.jpg'
+import Mockup8 from '../../public/images/book-mockup/8.jpg'
+import Mockup9 from '../../public/images/book-mockup/9.jpg'
+import Mockup10 from '../../public/images/book-mockup/10.jpg'
+import Mockup11 from '../../public/images/book-mockup/11.jpg'
+import Mockup12 from '../../public/images/book-mockup/12.jpg'
 
 const YourComponent = () => {
 
@@ -100,44 +112,44 @@ const YourComponent = () => {
               <div className="gallery z-0 overflow-hidden absolute lg:pr-20 sm:hidden" >
                 <div className="col">
                   <div className="image">
-                    <Image quality={95} width={200} height={300} alt="Call of action" className='' src='/assets/images/newimg/06.png' />
+                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup1} />
                   </div>
                   <div className="image">
-                    <Image quality={95} width={200} height={300} alt="Call of action" className='' src='/assets/images/newimg/03.png' />
+                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup2} />
                   </div>
                   <div className="image">
-                    <Image quality={95} width={200} height={300} alt="Call of action" className='' src='/assets/images/newimg/02.png' />
+                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup4} />
                   </div>
                   <div className="image">
-                    <Image quality={95} width={200} height={300} alt="Call of action" className='' src='/assets/images/newimg/11.png' />
-                  </div>
-                </div>
-                <div className="col">
-                  <div className="image">
-                    <Image quality={95} width={200} height={300} alt="Call of action" className='' src='/assets/images/newimg/12.png' />
-                  </div>
-                  <div className="image">
-                    <Image quality={95} width={200} height={300} alt="Call of action" className='' src='/assets/images/newimg/08.png' />
-                  </div>
-                  <div className="image">
-                    <Image quality={95} width={200} height={300} alt="Call of action" className='' src='/assets/images/newimg/07.png' />
-                  </div>
-                  <div className="image">
-                    <Image quality={95} width={200} height={300} alt="Call of action" className='' src='/assets/images/newimg/10.png' />
+                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup4} />
                   </div>
                 </div>
                 <div className="col">
                   <div className="image">
-                    <Image quality={95} width={200} height={300} alt="Call of action" className='' src='/assets/images/newimg/04.png' />
+                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup5} />
                   </div>
                   <div className="image">
-                    <Image quality={95} width={200} height={300} alt="Call of action" className='' src='/assets/images/newimg/05.png' />
+                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup6} />
                   </div>
                   <div className="image">
-                    <Image quality={95} width={200} height={300} alt="Call of action" className='' src='/assets/images/newimg/09.png' />
+                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup7} />
                   </div>
                   <div className="image">
-                    <Image quality={95} width={200} height={300} alt="Call of action" className='' src='/assets/images/newimg/01.png' />
+                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup8} />
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="image">
+                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup9} />
+                  </div>
+                  <div className="image">
+                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup10} />
+                  </div>
+                  <div className="image">
+                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup11} />
+                  </div>
+                  <div className="image">
+                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup12} />
                   </div>
                 </div>
               </div>
