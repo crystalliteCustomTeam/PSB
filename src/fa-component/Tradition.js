@@ -7,11 +7,13 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 // images
-import mock1 from 'media/images/book-mockup/1.jpg'
-import mock2 from 'media/images/book-mockup/2.jpg'
-import mock3 from 'media/images/book-mockup/3.jpg'
-import mock4 from 'media/images/book-mockup/4.jpg'
-import mock5 from 'media/images/book-mockup/5.jpg'
+import mock1 from 'media/images/book-mockup/1.png'
+import mock2 from 'media/images/book-mockup/2.png'
+import mock3 from 'media/images/book-mockup/3.png'
+import mock4 from 'media/images/book-mockup/4.png'
+import mock5 from 'media/images/book-mockup/5.png'
+import mock6 from 'media/images/book-mockup/6.png'
+import mock7 from 'media/images/book-mockup/7.png'
 
 
 import before from 'media/images/flods/tradition-before.png'
@@ -87,32 +89,44 @@ const Tradition = ({
                             <div className='trade'>
                                 <Slider {...traditionslider}>
                                     <div>
-                                        <Image quality={80} loading="lazy" className='img-fluid'
+                                        <Image quality={80} loading="lazy" className='hoverCss img-fluid'
                                             src={mock1}
                                             alt='Best_Publisher'
                                         />
                                     </div>
                                     <div>
-                                        <Image quality={80} loading="lazy" className='img-fluid'
+                                        <Image quality={80} loading="lazy" className='hoverCss img-fluid'
                                             src={mock2}
                                             alt='Best_Publisher'
                                         />
                                     </div>
                                     <div>
-                                        <Image quality={80} loading="lazy" className='img-fluid'
+                                        <Image quality={80} loading="lazy" className='hoverCss img-fluid'
                                             src={mock3}
                                             alt='Best_Publisher'
                                         />
                                     </div>
                                     <div>
-                                        <Image quality={80} loading="lazy" className='img-fluid'
+                                        <Image quality={80} loading="lazy" className='hoverCss img-fluid'
                                             src={mock4}
                                             alt='Best_Publisher'
                                         />
                                     </div>
                                     <div>
-                                        <Image quality={80} loading="lazy" className='img-fluid'
+                                        <Image quality={80} loading="lazy" className='hoverCss img-fluid'
                                             src={mock5}
+                                            alt='Best_Publisher'
+                                        />
+                                    </div>
+                                    <div>
+                                        <Image quality={80} loading="lazy" className=' hoverCss img-fluid'
+                                            src={mock6}
+                                            alt='Best_Publisher'
+                                        />
+                                    </div>
+                                    <div>
+                                        <Image quality={80} loading="lazy" className=' hoverCss img-fluid'
+                                            src={mock7}
                                             alt='Best_Publisher'
                                         />
                                     </div>

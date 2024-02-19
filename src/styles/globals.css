@@ -550,7 +550,15 @@ input[type=number] {
 
 .trade .slick-slider img {
    margin: auto;
-   width: 60%;
+   width: 80%;
+
+}
+
+.hoverCss:hover{
+   scale: 0.9;
+}
+.hoverCss{
+   transition: 0.3s all ease-in;
 }
 
 .marginright {
