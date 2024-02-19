@@ -5,7 +5,12 @@ import React from 'react';
 const PressRelease = (props) => {
 
 
-
+  const openLiveChat = (e) => {
+    e.preventDefault();
+    if (window.LiveChatWidget) {
+      window.LiveChatWidget.call('maximize');
+    }
+  };
   return (
     <>
       <section className='w-full text-[#1d1d1f] pt-10 pb-32 md:pb-0 sm:pb-0 xs:pb-0 font-secondary'>
@@ -27,7 +32,7 @@ const PressRelease = (props) => {
               </p>
               <div className='w-[50%] grid grid-cols-2 grid-rows-1 gap-x-5 py-5 sm:w-[70%] xs:w-[100%] md:mx-auto xs:mx-auto sm:mx-auto'>
               <a href="tel:800-781-9093" className='bg-[#00C0E4] py-1 text-white hover:bg-transparent hover:border-solid hover:border-[1px] hover:border-[#1d1d1f] hover:text-[#1d1d1f] hover:transition-all hover:transform-gpu flex items-center justify-center text-center h-[40px]'>Get Started</a>
-                  <a href="javascript:$zopim.livechat.window.show()" className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
+                  <a href="#" onClick={openLiveChat} className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
               </div>
             </div>
           </div>

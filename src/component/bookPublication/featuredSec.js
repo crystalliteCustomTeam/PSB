@@ -1,8 +1,22 @@
 import React from 'react';
 import Image from 'next/image';
+import styles from '@/styles/Banner.module.css'
+import { Container, Row, Col } from 'react-bootstrap'
+import alignicon from 'media/images/icons/align.png'
+import authoricon from 'media/images/icons/author.png'
+import cupicon from 'media/images/icons/cup.png'
+
+import img2 from 'media/images/banner/img2.png'
+
 const GhostwritingBanner = (props) => {
   
 
+  const openLiveChat = (e) => {
+    e.preventDefault();
+    if (window.LiveChatWidget) {
+      window.LiveChatWidget.call('maximize');
+    }
+  };
 
 
   return (
@@ -18,8 +32,9 @@ const GhostwritingBanner = (props) => {
                 {props.dec}
               </p>
               <div className='w-[100%] gap-x-5 grid grid-cols-2 grid-rows-1 py-5 md:w-[60%] md:mx-auto sm:mx-auto sm:w-[70%] xs:w-[100%]'>
-              <a href="tel:800-781-9093" className='bg-[#00C0E4] py-1 text-white hover:bg-transparent hover:border-solid hover:border-[1px] hover:border-[#1d1d1f] hover:text-[#1d1d1f] hover:transition-all hover:transform-gpu flex items-center justify-center text-center h-[40px]'>Start Your Publishing Journey Today</a>
-                 
+              <a href="#" onClick={openLiveChat} className='bg-[#00C0E4] py-1 text-white hover:bg-transparent hover:border-solid hover:border-[1px] hover:border-[#1d1d1f] hover:text-[#1d1d1f] hover:transition-all hover:transform-gpu flex items-center justify-center text-center h-[40px]'>Start Your Publishing Journey Today</a>
+           
+                                  
               </div>
             </div>
             <div className='basis-[40%] ml-28 sm:ml-5 xs:ml-5 text-center  xs:w-[90%] xs:pb-0 ' >
