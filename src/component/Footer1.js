@@ -134,6 +134,16 @@ const NewFooter = () => {
                                             Children Illustration
                                             </Link>
                                         </li>
+                                        <li>
+                                            <Link href="/amazon-book-publishing" className='text-[13px] font-[400] font-secondary xl:leading-[25px] leading-[15px]'>
+                                            Amazon Book Publishing
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="/ebook-publishing" className='text-[13px] font-[400] font-secondary xl:leading-[25px] leading-[15px]'>
+                                            Ebook Publishing
+                                            </Link>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div className="xs:col-span-12 col-span-4 items">
