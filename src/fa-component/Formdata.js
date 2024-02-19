@@ -82,15 +82,15 @@ const Formdata = () => {
 
         });
 
-        // await fetch("https://sheetdb.io/api/v1/1ownp6p7a9xpi", {
-        //     method: "POST",
-        //     body: bodyContent,
-        //     headers: headersList
-        // });
-        // const { pathname } = router;
-        // if (pathname == pathname) {
-        //     window.location.href = '/thankyou';
-        // }
+        await fetch("https://sheetdb.io/api/v1/1ownp6p7a9xpi", {
+            method: "POST",
+            body: bodyContent,
+            headers: headersList
+        });
+        const { pathname } = router;
+        if (pathname == pathname) {
+            window.location.href = '/thankyou';
+        }
 
     }
     
