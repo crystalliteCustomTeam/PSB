@@ -24,43 +24,47 @@ const Header = () => {
 
     <>
       {/* <TOPHEADER1 /> */}
-      <div className='w-full font-secondary pt-4'>
+      <div className='font-secondary px-0 sm:!px-2 xs:!px-2 pt-4'>
         <header className="bg-white relative z-30">
-          <div className="sm:px-5 md:container px-14">
-            <div className="items-center justify-between flex grid-cols-2 grid-rows-1">
+          <div className="mr-container">
+            <div className="items-center justify-between gap-x-4 flex grid-cols-2 grid-rows-1">
               <div className="flex-shrink-0">
                 <Link href="/" className="text-xl font-bold text-indigo-500">
                   <Image quality={95} src={Logo} alt=" Best Selling Publisher Ghostwriting logo" width={180} height={50} />
                 </Link>
               </div>
               <nav className="flex space-x-4 text-[16px]   text-[#1d1d1f] font-medium">
-                <ul id="menu" className={`${menuOpen ? 'transform translate-x-0 md:hidden xs:hidden sm:hidden' : 'flex transition-transform duration-500  ease-in-out translate-x-0 md:translate-x-0 right-0 xs:text-white sm:text-white md:text-white md:bg-[#00c0e4] sm:bg-[#00c0e4] md:z-50 sm:z-50 md:text-[18px] xs:text-[18px] sm:text-[18px] md:block xs:block sm:block xs:fixed sm:fixed md:fixed xs:top-0 sm:top-0 md:top-0 sm:py-16 md:py-16 md:w-[70%] md:h-full xs:w-[320px] xs:h-full sm:w-[300px] sm:h-full xs:right-0 md:right-0 xs:px-10 leading-9 xs:py-16 xs:bg-[#00c0e4] xs:z-50 text-[#1d1d1f] '} flex gap-x-5 text-[#1d1d1f] cursor-default `}>
+                <ul id="menu" className={`${menuOpen ? 'transform translate-x-0 md:hidden xs:hidden sm:hidden' : 'flex transition-transform duration-500  ease-in-out translate-x-0 md:translate-x-0 right-0 xs:text-white sm:text-white md:text-white md:bg-[#00c0e4] sm:bg-[#00c0e4] md:z-50 sm:z-50 md:text-[18px] xs:text-[18px] sm:text-[18px] md:block xs:block sm:block xs:fixed sm:fixed md:fixed xs:top-0 sm:top-0 md:top-0 sm:py-16 md:py-16 md:w-[70%] md:h-full xs:w-[320px] xs:h-full sm:w-[300px] sm:h-full xs:right-0 md:right-0 xs:px-10 leading-9 xs:!p-5 xs:bg-[#2d2d2d] xs:z-50 text-[#1d1d1f] '} flex 2xl:gap-x-5 xl:gap-x-5 lg:gap-x-3 gap-x-3 text-[#1d1d1f] cursor-default overflow-x-hidden overflow-y-scroll `}>
                   <li className="xl:hidden lg:hidden sm:z-90 xs:z-90 fixed top-4 right-6">
                     <Link href="javascript:void(0)" className="text-right text-white text-4xl" onClick={toggleMenu}>
                       &times;
                     </Link>
                   </li>
-                  <li>
-                    <Link href="/" className={`list text-black md:text-white text-[15px] font-bold`}>Home</Link>
-                  </li>
-                  <li><Link href="/about-us" className={`list text-black md:text-white text-[15px] font-[300]`}>About</Link></li>
-                  <li className="relative group py-0 hover:text-[#00C0E4] text-[15px] z-50">
-                    <button className="hover:opacity-50 cursor-default text-black md:text-white font-[300]" aria-haspopup="true">Writing Services
+                  {[
+                    ['Home', '/'],
+                    ['About', '/about-us'],
+                  ].map(([title, url]) => (
+                    <li className='xs:mb-3'>
+                      <Link href={url} className={`list text-black xs:!text-white text-[15px] xs:text-[20px] font-[300]`}>{title}</Link>
+                    </li>
+                  ))}
+                  <li className="relative xs:mb-3 group py-0 hover:text-[#00C0E4] text-[15px] xs:text-[20px] z-50">
+                    <button className="hover:opacity-50 cursor-default text-black  xs:text-white font-[300]" aria-haspopup="true">Writing Services
                       <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 ml-2 -mr-1 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor" >
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" ></path>
                       </svg>
                     </button>
                     <div className="absolute lg:-left-48 top-0 transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 group-hover:transform z-50 min-w-[560px] xs:min-w-[350px] sm:min-w-[350px]">
                       <div className="relative left-[-30px] md:left-[20px] top-4 p-6 bg-white rounded-xl shadow-xl w-full md:max-w-[400px] xs:max-w-[300px] sm:max-w-[300px] transform xs:mb-10" >
-                        <div className="w-10 h-10 bg-white transform rotate-45 absolute top-0 translate-x-0 transition-transform group-hover:translate-x-[12rem] duration-500 ease-in-out rounded-sm"></div>
+                        <div className="w-10 h-10 bg-white transform rotate-45 absolute top-0 translate-x-0 transition-transform group-hover:translate-x-[12rem] duration-500 ease-in-out xs:left-[-180px] rounded-sm"></div>
                         <div className="relative z-50">
                           <div className="grid grid-cols-2 gap-6 md:grid-cols-1 sm:grid-cols-1 xs:grid-cols-1">
                             <div>
                               <p className="uppercase tracking-wider text-gray-500 font-medium text-[13px]" >
                                 The Suite
                               </p>
-                              <ul className="mt-3 text-[15px]">
-                              
+                              <ul className="mt-3 text-[15px] xs:text-[20px]">
+
                                 <li>
                                   <Link href="/ghostwriting" className="flex justify-start align-middle items-center p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600">
 
@@ -114,7 +118,7 @@ const Header = () => {
                               <p className="uppercase tracking-wider text-gray-500 font-medium text-[13px]">
                                 Extensions
                               </p>
-                              <ul className="mt-4 text-[15px]">
+                              <ul className="mt-4 text-[15px] xs:text-[20px]">
                                 <li>
                                   <Link
                                     href="/web-copywriting-services"
@@ -164,15 +168,21 @@ const Header = () => {
                       </div>
                     </div>
                   </li>
-                  <li><Link href="/genre" className={`list text-black md:text-white text-[15px] font-[300]`}>Genre</Link></li>
-                  <li><Link href="/book-marketing" className={`list text-black md:text-white text-[15px] font-[300]`}>Marketing</Link></li>
-                  <li><Link href="/book-publishing" className={`list text-black md:text-white text-[15px] font-[300]`}>Publication</Link></li>
-                  <li><Link href="/book-printing" className={`list text-black md:text-white text-[15px] font-[300]`}>Printing</Link></li>
-                  <li><Link href="/book-cover-design" className={`list text-black md:text-white text-[15px] font-[300]`}>Cover Design</Link></li>
-                  <li><Link href="/book-editing" className={`list text-black md:text-white text-[15px] font-[300]`}>Editing</Link></li>
-                  <li><Link href="/contact-us" className={`list text-black md:text-white text-[15px] font-[300]`}>Contact Us</Link></li>
-                  <li>
-                    <Link href="tel:800-781-9093" className={`text-[15px] font-secondary text-[#40BEE2] flex items-center gap-x-3 font-[500]`}>
+                  {[
+                    ['Genre', '/genre'],
+                    ['Marketing', '/book-marketing'],
+                    ['Publication', '/book-publishing'],
+                    ['Printing', '/book-printing'],
+                    ['Cover Design', '/book-cover-design'],
+                    ['Editing', '/book-editing'],
+                    ['Contact Us', '/contact-us'],
+                  ].map(([title, url]) => (
+                    <li className='xs:mb-3'>
+                      <Link href={url} className={`list text-black xs:!text-white text-[15px] xs:text-[20px] font-[300]`}>{title}</Link>
+                    </li>
+                  ))}
+                  <li className='xs:mb-3'>
+                    <Link href="tel:800-781-9093" className={`text-[15px] xs:text-[20px] font-secondary text-[#40BEE2] flex items-center gap-x-3 font-[500]`}>
                       <Image src={TelIcon} width={15} height={15} alt='Amazon Book Publishing' />
                       <span className='border-l border-[#40BEE2] pl-[10px]'>800-781-9093</span>
                     </Link>

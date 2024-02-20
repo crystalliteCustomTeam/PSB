@@ -2,6 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+   .mr-container {
+      padding: 0 0.5rem;
+      margin: auto;
+   }
+
+   @media (max-width: 575px) {
+      .mr-container {
+         max-width: 575px;
+      }
+   }
+
+   @media (min-width: 576px) {
+      .mr-container {
+         max-width: 576px;
+      }
+   }
+
+   @media (min-width: 768px) {
+      .mr-container {
+         max-width: 768px;
+      }
+   }
+
+   @media (min-width: 992px) {
+      .mr-container {
+         max-width: 992px;
+      }
+   }
+
+   @media (min-width: 1200px) {
+      .mr-container {
+         max-width: 1200px;
+      }
+   }
+
+   @media (min-width: 1400px) {
+      .mr-container {
+         max-width: 1400px;
+      }
+   }
+}
 
 @keyframes float {
    0% {
@@ -85,7 +127,7 @@
 
 
 /* conpoentcss */
-.newtown:hover h5{
+.newtown:hover h5 {
    color: #40BEE2;
 }
 
@@ -94,7 +136,8 @@
    position: relative;
    margin-bottom: 3%;
 }
-.underlin::after{
+
+.underlin::after {
    position: absolute;
    content: "";
    background-color: #40bee2;
@@ -181,6 +224,7 @@ p {
    margin-bottom: 0px !important;
    line-height: 1.7;
 }
+
 ul {
    list-style-type: none;
 }
@@ -554,10 +598,11 @@ input[type=number] {
 
 }
 
-.hoverCss:hover{
+.hoverCss:hover {
    scale: 0.9;
 }
-.hoverCss{
+
+.hoverCss {
    transition: 0.3s all ease-in;
 }
 

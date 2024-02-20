@@ -27,7 +27,12 @@ module.exports = {
         'md': { 'min': '768px', 'max': '1023px' },
         'sm': { 'min': '640px', 'max': '767px' },
         'xs': { 'min': '300px', 'max': '639.5px' },
-
+        "mr-xs": { "max": "575px" },
+        "mr-sm": "576px",
+        "mr-md": "768px",
+        "mr-lg": "992px",
+        "mr-xl": "1200px",
+        "mr-2xl": "1400px",
       },
       container: {
         center: true,
