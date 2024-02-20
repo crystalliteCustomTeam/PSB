@@ -33,8 +33,8 @@ const Header = () => {
                   <Image quality={95} src={Logo} alt=" Best Selling Publisher Ghostwriting logo" width={180} height={50} />
                 </Link>
               </div>
-              <nav className="flex space-x-4 text-[16px]   text-[#1d1d1f] font-medium">
-                <ul id="menu" className={`${menuOpen ? 'transform translate-x-0 md:hidden xs:hidden sm:hidden' : 'flex transition-transform duration-500  ease-in-out translate-x-0 md:translate-x-0 right-0 xs:text-white sm:text-white md:text-white md:bg-[#00c0e4] sm:bg-[#00c0e4] md:z-50 sm:z-50 md:text-[18px] xs:text-[18px] sm:text-[18px] md:block xs:block sm:block xs:fixed sm:fixed md:fixed xs:top-0 sm:top-0 md:top-0 sm:py-16 md:py-16 md:w-[70%] md:h-full xs:w-[320px] xs:h-full sm:w-[300px] sm:h-full xs:right-0 md:right-0 xs:px-10 leading-9 xs:!p-5 xs:bg-[#2d2d2d] xs:z-50 text-[#1d1d1f] '} flex 2xl:gap-x-5 xl:gap-x-5 lg:gap-x-3 gap-x-3 text-[#1d1d1f] cursor-default overflow-x-hidden overflow-y-scroll `}>
+              <nav className="flex space-x-4 text-[16px] text-[#1d1d1f] font-medium">
+                <ul id="menu" className={`${menuOpen ? 'transform translate-x-0 md:hidden xs:hidden sm:hidden' : 'flex items-center transition-transform duration-500  ease-in-out translate-x-0 md:translate-x-0 right-0 xs:text-white sm:text-white md:text-white md:bg-[#00c0e4] sm:bg-[#00c0e4] md:z-50 sm:z-50 md:text-[18px] xs:text-[18px] sm:text-[18px] md:block xs:block sm:block xs:fixed sm:fixed md:fixed xs:top-0 sm:top-0 md:top-0 sm:py-16 md:py-16 md:w-[70%] md:h-full xs:w-[320px] xs:h-full sm:w-[300px] sm:h-full xs:right-0 md:right-0 xs:px-10 leading-9 xs:!p-5 xs:bg-[#2d2d2d] xs:z-50 text-[#1d1d1f] '} flex items-center 2xl:gap-x-5 xl:gap-x-5 lg:gap-x-4 gap-x-3 text-[#1d1d1f] cursor-default overflow-visible sm:!overflow-hidden xs:!overflow-hidden sm:!overflow-y-scroll xs:!overflow-y-scroll `}>
                   <li className="xl:hidden lg:hidden sm:z-90 xs:z-90 fixed top-4 right-6">
                     <Link href="javascript:void(0)" className="text-right text-white text-4xl" onClick={toggleMenu}>
                       &times;
@@ -45,31 +45,31 @@ const Header = () => {
                     ['About', '/about-us'],
                   ].map(([title, url]) => (
                     <li className='xs:mb-3'>
-                      <Link href={url} className={`list text-black xs:!text-white text-[15px] xs:text-[20px] font-[300]`}>{title}</Link>
+                      <Link href={url} className={`list text-black xs:!text-white text-[15px] xs:text-[20px] font-[400]`}>{title}</Link>
                     </li>
                   ))}
-                  <li className="relative xs:mb-3 group py-0 hover:text-[#00C0E4] text-[15px] xs:text-[20px] z-50">
-                    <button className="hover:opacity-50 cursor-default text-black  xs:text-white font-[300]" aria-haspopup="true">Writing Services
+                  <li className="relative xs:mb-3 group py-0 hover:text-[#00C0E4] text-[15px] xs:text-[20px] font-[400] z-50">
+                    <button className="hover:opacity-50 cursor-default text-black md:!text-white sm:!text-white xs:!text-white font-[400]" aria-haspopup="true">Writing Services
                       <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 ml-2 -mr-1 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor" >
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" ></path>
                       </svg>
                     </button>
-                    <div className="absolute lg:-left-48 top-0 transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 group-hover:transform z-50 min-w-[560px] xs:min-w-[350px] sm:min-w-[350px]">
-                      <div className="relative left-[-30px] md:left-[20px] top-4 p-6 bg-white rounded-xl shadow-xl w-full md:max-w-[400px] xs:max-w-[300px] sm:max-w-[300px] transform xs:mb-10" >
-                        <div className="w-10 h-10 bg-white transform rotate-45 absolute top-0 translate-x-0 transition-transform group-hover:translate-x-[12rem] duration-500 ease-in-out xs:left-[-180px] rounded-sm"></div>
+                    <div className="absolute lg:-left-48 top-2 transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 group-hover:transform z-50 min-w-[560px] xs:min-w-[350px] sm:min-w-[350px]">
+                      <div className="relative mr-2xl:left-[50px] lg:left-[200px] md:left-[20px] xs:left-0 xs:w-[80%] top-4 p-6 bg-white rounded-xl shadow-xl w-full md:max-w-[400px] xs:max-w-[300px] sm:max-w-[300px] transform xs:mb-10" >
+                        <div className="w-10 h-10 left-[-170px] bg-white transform rotate-45 absolute top-0 translate-x-0 transition-transform group-hover:translate-x-[12rem] duration-500 ease-in-out rounded-sm"></div>
                         <div className="relative z-50">
                           <div className="grid grid-cols-2 gap-6 md:grid-cols-1 sm:grid-cols-1 xs:grid-cols-1">
                             <div>
                               <p className="uppercase tracking-wider text-gray-500 font-medium text-[13px]" >
                                 The Suite
                               </p>
-                              <ul className="mt-3 text-[15px] xs:text-[20px]">
+                              <ul className="mt-3 text-[15px]">
 
                                 <li>
                                   <Link href="/ghostwriting" className="flex justify-start align-middle items-center p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600">
 
                                     <span>
-                                      <Image quality={95} className='filter brightness-50 mr-2' src="/assets/images/newimg/ghostwriting.png" width={40} height={40} alt='ghost writing' />
+                                      <Image quality={95} className='filter brightness-50 mr-2 block sm:hidden xs:hidden' src="/assets/images/newimg/ghostwriting.png" width={40} height={40} alt='ghost writing' />
                                     </span>
                                     <span>
                                       Ghostwriting
@@ -80,7 +80,7 @@ const Header = () => {
                                   <Link
                                     href="/seo-content-writing-services"
                                     className="flex justify-start align-middle items-center p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600">                   <span>
-                                      <Image quality={95} className='filter brightness-50 mr-2' src="/assets/images/newimg/SEO-Writing.png" width={40} height={40} alt='SEO writing' />
+                                      <Image quality={95} className='filter brightness-50 mr-2 block sm:hidden xs:hidden' src="/assets/images/newimg/SEO-Writing.png" width={40} height={40} alt='SEO writing' />
                                     </span>
                                     <span>
                                       SEO Writing
@@ -92,7 +92,7 @@ const Header = () => {
                                     href="/article-writing-services"
                                     className="flex justify-start align-middle items-center p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600">
                                     <span>
-                                      <Image quality={95} className='filter brightness-50 mr-2' src="/assets/images/newimg/Article-Writing.png" width={40} height={40} alt='Article writing' />
+                                      <Image quality={95} className='filter brightness-50 mr-2 block sm:hidden xs:hidden' src="/assets/images/newimg/Article-Writing.png" width={40} height={40} alt='Article writing' />
                                     </span>
                                     <span>
                                       Article Writing
@@ -105,7 +105,7 @@ const Header = () => {
                                     href="/magazine-writing"
                                     className="flex justify-start align-middle items-center p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600">
                                     <span>
-                                      <Image quality={95} className='filter brightness-50 mr-2' src="/assets/images/newimg/magazine-writing.png" width={40} height={40} alt='magazine writing' />
+                                      <Image quality={95} className='filter brightness-50 mr-2 block sm:hidden xs:hidden' src="/assets/images/newimg/magazine-writing.png" width={40} height={40} alt='magazine writing' />
                                     </span>
                                     <span>
                                       Magazine Writing
@@ -118,13 +118,13 @@ const Header = () => {
                               <p className="uppercase tracking-wider text-gray-500 font-medium text-[13px]">
                                 Extensions
                               </p>
-                              <ul className="mt-4 text-[15px] xs:text-[20px]">
+                              <ul className="mt-4 text-[15px]">
                                 <li>
                                   <Link
                                     href="/web-copywriting-services"
                                     className="flex justify-start align-middle items-center p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600">
                                     <span>
-                                      <Image quality={95} className='filter brightness-50 mr-2' src="/assets/images/newimg/Web-Copy-Writing.png" width={40} height={40} alt='Web copy writing' />
+                                      <Image quality={95} className='filter brightness-50 mr-2 block sm:hidden xs:hidden' src="/assets/images/newimg/Web-Copy-Writing.png" width={40} height={40} alt='Web copy writing' />
                                     </span>
                                     <span>
                                       Web Copy Writing
@@ -137,7 +137,7 @@ const Header = () => {
                                     href="/press-release-writing-services"
                                     className="flex justify-start align-middle items-center p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600">
                                     <span>
-                                      <Image quality={95} className='filter brightness-50 mr-2' src="/assets/images/newimg/Press-Release.png" width={40} height={40} alt='press release' />
+                                      <Image quality={95} className='filter brightness-50 mr-2 block sm:hidden xs:hidden' src="/assets/images/newimg/Press-Release.png" width={40} height={40} alt='press release' />
                                     </span>
                                     <span>
                                       Press Release
@@ -150,13 +150,10 @@ const Header = () => {
                                     href="/script-writing-services"
                                     className="flex justify-start align-middle items-center p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600">
                                     <span>
-                                      <Image quality={95} className='filter brightness-50 mr-2' src="/assets/images/newimg/Script-Writing.png" width={40} height={40} alt='script writing' />
+                                      <Image quality={95} className='filter brightness-50 mr-2 block sm:hidden xs:hidden' src="/assets/images/newimg/Script-Writing.png" width={40} height={40} alt='script writing' />
                                     </span>
                                     <span>
                                       Script Writing
-                                      {/* <p className="text-gray-500 font-normal">
-                                      Generate content for socials
-                                    </p> */}
                                     </span>
                                   </Link>
                                 </li>
@@ -178,13 +175,13 @@ const Header = () => {
                     ['Contact Us', '/contact-us'],
                   ].map(([title, url]) => (
                     <li className='xs:mb-3'>
-                      <Link href={url} className={`list text-black xs:!text-white text-[15px] xs:text-[20px] font-[300]`}>{title}</Link>
+                      <Link href={url} className={`list text-black xs:!text-white text-[15px] xs:text-[20px] font-[400]`}>{title}</Link>
                     </li>
                   ))}
-                  <li className='xs:mb-3'>
-                    <Link href="tel:800-781-9093" className={`text-[15px] xs:text-[20px] font-secondary text-[#40BEE2] flex items-center gap-x-3 font-[500]`}>
-                      <Image src={TelIcon} width={15} height={15} alt='Amazon Book Publishing' />
-                      <span className='border-l border-[#40BEE2] pl-[10px]'>800-781-9093</span>
+                  <li className='xs:mb-3 block sm:hidden xs:hidden'>
+                    <Link href="tel:800-781-9093" className={`text-[15px] transition-all ease-in-out duration-300 group xs:text-[20px] font-secondary border-2 border-[#40BEE2] bg-[#40BEE2] py-1 px-2 text-[#40BEE2] flex items-center gap-x-3 font-[500] hover:bg-transparent `}>
+                      <Image src={TelIcon} width={15} height={15} alt='Amazon Book Publishing' className='transition-all ease-in-out duration-300 brightness-0 invert group-hover:brightness-100 group-hover:invert-0' />
+                      <span className='transition-all ease-in-out duration-300 text-white group-hover:!text-black'>800-781-9093</span>
                     </Link>
                   </li>
                 </ul>
