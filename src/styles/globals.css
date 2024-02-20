@@ -205,8 +205,8 @@
 :root {
    --primary-color: #40BEE2;
    --secondary-color: #000000;
-   --primary-fonts: 'Playfair Display', serif;
-   --secondary-fonts: 'Mulish', sans-serif;
+   --primary-fonts: var(--font-sfprodisplay), 'sans-serif';
+   --secondary-fonts: var(--font-sfprodisplay), 'sans-serif';
 }
 
 * {

@@ -34,6 +34,10 @@ module.exports = {
         "mr-xl": "1200px",
         "mr-2xl": "1400px",
       },
+      colors: {
+        "primary": { 100: "#40BEE2" },
+        "secondary": { 100: "#2d2d2d", 200: "#000000" }
+      },
       container: {
         center: true,
         xs: '320px',

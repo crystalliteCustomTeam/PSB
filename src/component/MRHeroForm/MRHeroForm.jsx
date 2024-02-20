@@ -1,7 +1,7 @@
 import React from "react"
-import styles from "./bookform.module.css"
+import styles from "./MRHeroForm.module.css"
 
-const BookForm = () => {
+const MRHeroForm = () => {
     return (
         <div className={`${styles.leadforms}`}>
             <h3 className="font-primary font-bold text-[40px] leading-normal text-center mb-3">Get A Free Quote</h3>
@@ -30,4 +30,4 @@ const BookForm = () => {
     )
 }
 
-export default BookForm
+export default MRHeroForm
