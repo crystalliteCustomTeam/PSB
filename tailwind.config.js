@@ -34,7 +34,7 @@ module.exports = {
         xs: '320px',
       },
       fontFamily: {
-        'sans': ['var(--font-primary)', 'sans-serif'],
+        'sans': ['var(--font-sfprodisplay)', 'sans-serif'],
         'secondary': ['var(--font-sfprodisplay)', 'sans-serif'],
       },
       backgroundPosition: {
