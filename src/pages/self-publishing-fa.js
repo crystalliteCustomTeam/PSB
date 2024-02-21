@@ -97,9 +97,7 @@ const amazonpublishing = () => {
 
       {/*========= Exceptional fold =========*/}
       <Exceptional
-        title="We Are The Best Book Publishing Company
-        <br/>
-        You Will Ever Find!"
+        title="We Are The Best Book Publishing <br/> Company You Will Ever Find!"
         subtitle="We offer a wide range of services to help you self-publish your book, including editing, cover design, printing, and distribution. Best Selling <br/> Publisher has a long history of working with authors to self-publish their books. We've helped many authors achieve success with their self-<br/>published books. Here’s what we bring to the table.  "
       />
 
