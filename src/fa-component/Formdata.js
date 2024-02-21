@@ -113,7 +113,7 @@ const Formdata = () => {
 
                     <Form.Group className="mb-4" controlId="phone">
                         <Form.Label className='font-13 font-secondary' name="phone">Phone *</Form.Label>
-                        <Form.Control type="number" required placeholder="(123)-456-789" />
+                        <Form.Control type="tel" minLength="10" maxLength="13" pattern="[0-9]*" placeholder="(123)-456-789" />
                     </Form.Group>
 
                     <Form.Group className="mb-4" controlId="comments">

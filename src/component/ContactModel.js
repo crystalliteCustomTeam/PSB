@@ -75,12 +75,12 @@ const Bloginner = () => {
                   required
                 />
                 <input
-                  type="number"
+                  type="tel" minLength="10" maxLength="13" pattern="[0-9]*"
                   id="phone"
                   name="phone"
                   className="p-3 bg-[#ededed] text-[#989898] border-b-2 border-[#fff] pb-2"
                   placeholder="Phone"
-                  required
+                  
                 />
               </div>
               <div className="w-full mb-3">

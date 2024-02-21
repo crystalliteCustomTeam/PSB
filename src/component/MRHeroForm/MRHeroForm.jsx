@@ -42,15 +42,15 @@ const MRHeroForm = () => {
             <form onSubmit={handleSubmit}>
                 <div>
                     <label>Full Name<sup>*</sup></label>
-                    <input type="text" name="name" placeholder="Your name..." onkeypress="return /[a-z]/i.test(event.key)" />
+                    <input type="text" required  name="name" placeholder="Your name..." onkeypress="return /[a-z]/i.test(event.key)" />
                 </div>
                 <div>
                     <label>Email Address<sup>*</sup></label>
-                    <input type="email" name="email" placeholder="Type Email Address" />
+                    <input type="email" required name="email" placeholder="Type Email Address" />
                 </div>
                 <div>
                     <label>Phone<sup>*</sup></label>
-                    <input type="phone" name="phone" placeholder="(123)-456-789" onkeypress="return /[0-9]/i.test(event.key)" />
+                    <input type="tel" minLength="10" maxLength="13" pattern="[0-9]*"  name="phone" placeholder="(123)-456-789"  />
                 </div>
                 <div>
                     <label>Comments</label>
