@@ -8,6 +8,7 @@ const MRCTAGroup = ({
             <MRCTA
                 text="LET'S DISCUSS"
                 classes="hover:bg-secondary-100"
+                handle="onclick='parent.LC_API.open_chat_window();return false;'"
             />
             <MRCTA
                 text="800-781-9093"
