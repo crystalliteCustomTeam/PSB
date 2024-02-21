@@ -9,6 +9,7 @@ import CTA from '../component/cta3';
 import BTM from '../component/bottomLogos';
 import SwiperComponents from '../component/SwiperComponent'
 import LogoSliders from '../component/bottomLogosNEW'
+import { MRHero } from '@/component';
 
 
 
@@ -27,7 +28,7 @@ const Ghostwriting = () => {
     <>
       <main>
 
-        <FEATURED
+        {/* <FEATURED
           banneraffordable='ScriptWriting'
           title='Professional High-Quality Script by Expert Writers'
           dec={`Streamline your content needs with our high-quality script writing service, which educates your audience about your brand and helps elevate you.`}
@@ -39,6 +40,12 @@ const Ghostwriting = () => {
               Live Chat
             </Link>
           </>}
+        /> */}
+        <MRHero
+          title="Professional High-Quality <br /> Script by Expert Writers"
+          desc="Streamline your content needs with our high-quality script writing service, which educates your audience about your brand and helps elevate you."
+          logos="images/banner/img2.png"
+          counter={true}
         />
         <LogoSliders />
         <LHScript />

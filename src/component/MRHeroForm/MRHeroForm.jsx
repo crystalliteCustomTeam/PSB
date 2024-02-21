@@ -3,8 +3,10 @@ import styles from "./MRHeroForm.module.css"
 
 const MRHeroForm = () => {
     return (
-        <div className={`${styles.leadforms}`}>
-            <h3 className="font-primary font-bold text-[40px] leading-normal text-center mb-3">Get A Free Quote</h3>
+        <div className={`${styles.leadforms} !p-5 mr-lg:!p-8`}>
+            <h3 className="font-primary font-bold text-[30px] xl:text-[40px] leading-normal text-center mb-3 text-secondary-100">
+                Get A Free Quote
+            </h3>
             <form>
                 <div>
                     <label>Full Name<sup>*</sup></label>

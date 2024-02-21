@@ -7,7 +7,7 @@ const MRCTA = ({
     border = "border-transparent"
 }) => {
     return (
-        <div dangerouslySetInnerHTML={{ __html: `<a href="${link}" class="w-max h-[50px] ${bg} ${color} flex items-center px-5 font-sans font-semibold border-2 transition-all ${border} ${classes}">${text}</a>` }} />
+        <div dangerouslySetInnerHTML={{ __html: `<a href="${link}" class="mr-sm:w-max h-[50px] ${bg} ${color} flex items-center !px-10 font-sans font-semibold justify-center border-2 transition-all ${border} ${classes}">${text}</a>` }} />
     )
 }
 

@@ -754,11 +754,11 @@ header a:hover {
    }
 }
 
-@media screen and (max-width: 1360px) {
+/* @media screen and (max-width: 1360px) {
    br {
       display: none;
    }
-}
+} */
 
 @media screen and (max-width: 1280px) {
    .contact {

@@ -11,6 +11,7 @@ import CTA from '../component/cta3';
 import BTM from '../component/bottomLogos';
 import SwiperComponents from '../component/SwiperComponent'
 import LogoSliders from '../component/bottomLogosNEW'
+import { MRHero } from '@/component'
 
 
 const Ghostwriting = () => {
@@ -18,7 +19,7 @@ const Ghostwriting = () => {
     <>
       <main>
 
-        <FEATURED
+        {/* <FEATURED
           banneraffordable='affo'
           title='The Best Affordable and Professional Ghostwriting Services Agency'
           dec={` We’ve helped thousands of authors express themselves eloquently; you can be next! Hire our top-tier expert writers today and imprint your words in your readers’ minds forever.`}
@@ -30,7 +31,13 @@ const Ghostwriting = () => {
               Live Chat
             </Link>
           </>}
-        />
+        /> */}
+        <MRHero
+        title="The Best Affordable And <br /> Professional Ghostwriting <br /> Services Agency"
+        desc="We’ve helped thousands of authors express themselves eloquently; you can be next! Hire our top-tier expert writers today and imprint your words in your readers’ minds forever."
+        logos="images/banner/img2.png"
+        counter={true}
+      />
         <LogoSliders />
         <LETUSHELP
           title='What Sets Us Apart?'

@@ -13,6 +13,7 @@ import BTM from '../component/bottomLogos';
 import SwiperComponents from '../component/SwiperComponent'
 
 import LogoSliders from '../component/bottomLogosNEW'
+import { MRHero } from '@/component';
 
 const openLiveChat = (e) => {
   e.preventDefault();
@@ -25,7 +26,7 @@ const Ghostwriting = () => {
     <>
       <main>
 
-        <FEATURED
+        {/* <FEATURED
           banneraffordable='seo'
           title='Amplify Your Brand Image Through SEO Content Writing'
           dec={` Create SEO-optimized content that converts and attracts more organic search traffic to boost your online visibility and credibility.`}
@@ -37,11 +38,17 @@ const Ghostwriting = () => {
               Live Chat
             </Link>
           </>}
+        /> */}
+        <MRHero
+          title="Amplify Your Brand <br /> Image Through SEO <br /> Content Writing"
+          desc="Create SEO-optimized content that converts and attracts more organic search traffic to boost your online visibility and credibility"
+          logos="images/banner/img2.png"
+          counter={true}
         />
         <LogoSliders></LogoSliders>
         <LETUSHELPSEO />
         <GhostWriting serviceTitle="SEO Content Writing Services"
-        serviceDesc="We have a vast pool of ghostwriters and will work with you to find the best match for your needs. You will receive a PR and media campaign, an audiobook with a professional voice actor, and high-quality studio production. Finally, distribution and retailer accounts will be established in your name, ensuring you own all rights and royalties.
+          serviceDesc="We have a vast pool of ghostwriters and will work with you to find the best match for your needs. You will receive a PR and media campaign, an audiobook with a professional voice actor, and high-quality studio production. Finally, distribution and retailer accounts will be established in your name, ensuring you own all rights and royalties.
         "/>
         <CREATIVEGHOSTWRITERS />
         <CTA3 />

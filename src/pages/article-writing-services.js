@@ -12,6 +12,7 @@ import CTA from '../component/cta3';
 import BTM from '../component/bottomLogos';
 import SwiperComponents from '../component/SwiperComponent'
 import LogoSliders from '../component/bottomLogosNEW'
+import { MRHero } from '@/component';
 
 
 
@@ -29,7 +30,7 @@ const Ghostwriting = () => {
     <>
       <main>
 
-        <FEATURED
+        {/* <FEATURED
           banneraffordable='article'
           title='Result-Driven Article-Writing Services That Boost Your Online '
           dec={` Drive more customers, convert the existing ones into loyal customers, and create compelling articles that speak to what matters most to your target audience.`}
@@ -41,11 +42,17 @@ const Ghostwriting = () => {
               Live Chat
             </Link>
           </>}
+        /> */}
+        <MRHero
+          title="Result-Driven Article-<br />Writing Services That <br /> Boost Your Online"
+          desc="Drive more customers, convert the existing ones into loyal customers, and create compelling articles that speak to what matters most to your target audience."
+          logos="images/banner/img2.png"
+          counter={true}
         />
         <LogoSliders />
         <LHArticle />
         <GhostWriting serviceTitle="Article Writing Services"
-        serviceDesc="We have a vast pool of ghostwriters and will work with you to find the best match for your needs. You will receive a PR and media campaign, an audiobook with a professional voice actor, and high-quality studio production. Finally, distribution and retailer accounts will be established in your name, ensuring you own all rights and royalties.
+          serviceDesc="We have a vast pool of ghostwriters and will work with you to find the best match for your needs. You will receive a PR and media campaign, an audiobook with a professional voice actor, and high-quality studio production. Finally, distribution and retailer accounts will be established in your name, ensuring you own all rights and royalties.
         " />
         <CREATIVEGHOSTWRITERS />
         <CTA />

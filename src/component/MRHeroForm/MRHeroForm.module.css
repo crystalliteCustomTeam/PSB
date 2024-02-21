@@ -1,17 +1,18 @@
 .leadforms {
-    background: url(https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/61ab660f-8334-4042-bf67-f6b764d1cb00/public) no-repeat;
-    padding: 2rem 3rem 2rem 6rem;
+    /* background: url(https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/97d6765a-41db-4514-ac0f-cfc9da970700/public) no-repeat; */
+    background-color: #e4e4e4;
     z-index: 1;
-    width: max-content;
+    width: 70%;
     margin: auto;
     box-shadow:
         7.9px 8.6px 10px rgba(111, 111, 111, 0.03),
         63px 69px 80px rgba(0, 0, 0, 0.06);
+    border-radius: 10px
 }
 
 .leadforms input,
 .leadforms textarea {
-    color: #707070;
+    color: #000;
     font-size: 14px !important;
     font-weight: 500 !important;
     padding: 10px 0;
@@ -23,9 +24,20 @@
     margin: 0 0 15px;
     transition: all .3s;
     background: rgba(0, 0, 0, 0);
-    border-bottom: 1px solid #A6A6A6;
+    border-bottom: 1px solid #000;
     display: block;
     width: 100%;
+    font-family: var(--font-sfprodisplay), 'sans-serif';
+}
+
+.leadforms input::placeholder,
+.leadforms textarea::placeholder {
+    color: grey;
+}
+
+.leadforms label {
+    color: #000;
+    font-family: var(--font-sfprodisplay), 'sans-serif';
 }
 
 .leadforms textarea {
@@ -41,6 +53,7 @@
     background: #00C0E4;
     color: #fff;
     padding: 0.8rem;
+    font-family: var(--font-sfprodisplay), 'sans-serif';
 }
 
 .leadforms button:hover {
@@ -50,15 +63,9 @@
     border: 1px solid #00C0E4;
     padding: 0.8rem;
 }
-@media screen and (max-width:767px){
+
+@media (max-width: 1199px) {
     .leadforms {
-        background: rgb(226, 226, 226);
-        padding: 2rem 1rem 2rem 1rem;
-        z-index: 1;
         width: 100%;
-        margin: auto;
-        box-shadow:
-            7.9px 8.6px 10px rgba(111, 111, 111, 0.03),
-            63px 69px 80px rgba(0, 0, 0, 0.06);
     }
 }

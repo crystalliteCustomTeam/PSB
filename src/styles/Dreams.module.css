@@ -4,12 +4,14 @@
   align-items: center;
   justify-content: center;
 }
+
 .dreams1Flod {
   padding: 0px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .dreamsCard {
   height: 390px;
   margin: auto;
@@ -20,12 +22,22 @@
 .dreamsCard h3 {
   border-bottom: 2px solid #b6b6b6;
 }
+
 .ExceptionalCard {
   height: auto;
   margin: auto;
-  padding: 20px;
-  border-radius: 0px;
+  padding: 3rem 1.5rem;
+  border-radius: 20px;
+  min-height: 280px;
+  margin-top: 2rem;
+  background-color: #fff;
+  box-shadow:
+  3.7px 3.7px 5.3px rgba(0, 0, 0, 0.024),
+  12.5px 12.5px 17.9px rgba(0, 0, 0, 0.036),
+  56px 56px 80px rgba(0, 0, 0, 0.06)
+;
 }
+
 .ExceptionalCard:hover {
   background: #40BEE2 !important;
 }
@@ -33,7 +45,9 @@
 .ExceptionalCard h3 {
   border-bottom: none;
 }
-.ExceptionalCard:hover h3, .ExceptionalCard:hover p {
+
+.ExceptionalCard:hover h3,
+.ExceptionalCard:hover p {
   color: #fff !important;
 }
 

@@ -13,6 +13,7 @@ import CTA from '../component/cta3';
 import BTM from '../component/bottomLogos';
 import SwiperComponents from '../component/SwiperComponent'
 import LogoSliders from '../component/bottomLogosNEW'
+import { MRHero } from '@/component';
 
 
 
@@ -30,7 +31,7 @@ const MagazineWriting = () => {
     <>
       <main>
 
-        <FEATURED
+        {/* <FEATURED
           banneraffordable='MagazineWriting1'
           title='Our Magazine Writers Bring It All Altogether'
           dec={` Attracting the reader at the first step can be tricky, but our expert writers effortlessly bring all the content together, instantly hooking your readers from the very first sentence.`}
@@ -42,11 +43,17 @@ const MagazineWriting = () => {
               Live Chat
             </Link>
           </>}
+        /> */}
+        <MRHero
+          title="Our Magazine Writers <br /> Bring It All Altogether"
+          desc="Attracting the reader at the first step can be tricky, but our expert writers effortlessly bring all the content together, instantly hooking your readers from the very first sentence."
+          logos="images/banner/img2.png"
+          counter={true}
         />
         <LogoSliders />
         <LHMagazine />
-        <GhostWriting  serviceTitle="Magazine Writting Services"
-        serviceDesc="We have a vast pool of ghostwriters and will work with you to find the best match for your needs. You will receive a PR and media campaign, an audiobook with a professional voice actor, and high-quality studio production. Finally, distribution and retailer accounts will be established in your name, ensuring you own all rights and royalties.
+        <GhostWriting serviceTitle="Magazine Writting Services"
+          serviceDesc="We have a vast pool of ghostwriters and will work with you to find the best match for your needs. You will receive a PR and media campaign, an audiobook with a professional voice actor, and high-quality studio production. Finally, distribution and retailer accounts will be established in your name, ensuring you own all rights and royalties.
         "/>
         <CREATIVEGHOSTWRITERS />
         <CTA />

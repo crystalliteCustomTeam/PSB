@@ -92,7 +92,7 @@ const amazonpublishing = () => {
       />
       {/*========= Exceptional fold =========*/}
       <Exceptional
-        title="Discover What Exceptional Writing Services We Offer"
+        title="Discover What Exceptional Writing <br /> Services We Offer"
         subtitle="Uncover the unparalleled excellence of our publishing services, where each word is meticulously crafted to captivate and inspire. <br/> Explore the realm of literary mastery with our team and discover the epitome of quality in every page turned."
       />
       <Dreams />

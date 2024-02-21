@@ -4,7 +4,7 @@ const MRCTAGroup = ({
     classes = ""
 }) => {
     return (
-        <div className={`flex gap-3 ${classes}`}>
+        <div className={`grid grid-cols-1 mr-sm:flex gap-3 ${classes}`}>
             <MRCTA
                 text="LET'S DISCUSS"
                 classes="hover:bg-secondary-100"

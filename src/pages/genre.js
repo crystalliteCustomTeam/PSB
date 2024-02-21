@@ -10,6 +10,7 @@ import BTM from '../component/bottomLogos';
 import CTA from '../component/cta3';
 import SwiperComponents from '../component/SwiperComponent'
 import LogoSliders from '../component/bottomLogosNEW'
+import { MRHero } from '@/component';
 
 
 
@@ -28,7 +29,7 @@ const about = () => {
   return (
     <>
       <main>
-        <FEATURED
+        {/* <FEATURED
           banneraffordable='aboutus'
           title='We Are the Gatekeepers of Literary Success'
           dec={`Our mission as a company is to bring you literary success. How we go about achieving that is our ghostwriter’s magic. We offer great content for every book genre, whether you need fiction, autobiography, memoirs, or children’s books.`}
@@ -40,6 +41,12 @@ const about = () => {
               Live Chat
             </Link>
           </>}
+        /> */}
+        <MRHero
+          title="We Are the Gatekeepers <br/> of Literary Success"
+          desc="Our mission as a company is to bring you literary success. How we go about achieving that is our ghostwriter’s magic. We offer great content for every book genre, whether you need fiction, autobiography, memoirs, or children’s books."
+          logos="images/banner/img2.png"
+          counter={true}
         />
         <LogoSliders />
         <WEARE />
