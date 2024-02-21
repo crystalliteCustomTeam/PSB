@@ -17,6 +17,7 @@ import SwiperTestimonial from '@/fa-component/swiperComponent'
 import bannerImg from 'media/ahsan/bookpublishingbanner.png'
 import img2 from 'media/images/banner/img2.png'
 import broader from 'media/ahsan/bookpublishingbroder.png'
+import { MRHero } from '@/component'
 
 const amazonpublishing = () => {
   const newSpan = <h1 className='font-50 fw-700 font-primary txt-secondary mt-3 leading-tight'>Amazon Publishing <br /> Services Company To Make <br /> Your Book Available To <br /> Millions Of Readers!</h1>;
@@ -72,7 +73,7 @@ const amazonpublishing = () => {
       </Head>
 
       {/*========= Banner =========*/}
-      {bannertext.map((item, i) =>
+      {/* {bannertext.map((item, i) =>
         <Banner key={i}
           title={item.title}
           discuss={item.discuss}
@@ -81,7 +82,12 @@ const amazonpublishing = () => {
           imageban={item.imageban}
           img2={item.img2}
         />
-      )}
+      )} */}
+      <MRHero
+          title="Amazon Publishing Services Company To Make Your Book Available To Millions Of Readers!"
+          logos="images/banner/img2.png"
+          counter={true}
+        />
 
 
       {/*========= Clients fold =========*/}

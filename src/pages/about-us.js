@@ -9,6 +9,7 @@ import SwiperComponents from '../component/SwiperComponent'
 import LogoSliders from '../component/LogoSlider'
 import DM1 from '../component/demandingSpecilaist1'
 import BW1 from '../component/bookWriting1';
+import { MRHero } from '@/component';
 
 
 
@@ -24,7 +25,7 @@ const about = () => {
   return (
     <>
       <main>
-        <FEATURED
+        {/* <FEATURED
           banneraffordable='aboutus'
           title='About US'
           dec={`Shape your idea into the form of a best-selling book and spread your work to the masses. `}
@@ -36,7 +37,15 @@ const about = () => {
               Live Chat
             </Link>
           </>}
-        />
+        /> */}
+        <MRHero
+        // subTitle="Awarded #1 Book Publishing Services"
+        title="About US"
+        desc="Shape your idea into the form of a best-selling book and spread your work to the masses."
+        fullImg="mr-lg:bg-[url('../../public/assets/images/newimg/editing-banner.png')]"
+        classes="bg-right bg-center mr-lg:!py-[200px]"
+        form={false}
+      />
         <LogoSliders></LogoSliders>
 
         <IM

@@ -9,11 +9,12 @@ import CTA from '../component/cta3';
 import SwiperComponents from '../component/SwiperComponent'
 
 import ContactModel from '../component/ContactModel'
+import { MRHero } from '@/component';
 const blog = () => {
   return (
     <>
       <main>
-        <FEATURED
+        {/* <FEATURED
           banneraffordable='aboutus'
           title='Witness Excellence by Working with the Top Industry Specialists'
           dec={`Your dream of becoming a successful author is our mission. So, don’t hold back; get ahold of us today.`}
@@ -25,6 +26,14 @@ const blog = () => {
               Live Chat
             </Link>
           </>}
+        /> */}
+         <MRHero
+          title="Witness Excellence By <br /> Working With The Top <br /> Industry Specialists"
+          desc="Your dream of becoming a successful author is our mission. So, don’t hold back; get ahold of us today."
+          containImg="images/newimg/contact-banner.png"
+          logos="images/banner/img2.png"
+          form={false}
+          counter={true}
         />
         <ContactModel></ContactModel>
         <CTA />

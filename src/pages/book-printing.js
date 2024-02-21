@@ -11,6 +11,7 @@ import BTM from '../component/bottomLogos';
 import CTA from '../component/cta3';
 import SwiperComponents from '../component/SwiperComponent'
 import LogoSliders from '../component/bottomLogosNEW'
+import { MRHero } from '@/component';
 
 
 
@@ -27,7 +28,7 @@ const about = () => {
   return (
     <>
       <main>
-        <FEATURED
+        {/* <FEATURED
           banneraffordable='aboutus'
           title='Take Your Book Where Your Audience Is'
           dec={`With thousands of publishing options to consider, our team helps you identify the right platform for your book. `}
@@ -39,6 +40,12 @@ const about = () => {
               Live Chat
             </Link>
           </>}
+        /> */}
+        <MRHero
+          title="Take Your Book Where <br/> Your Audience Is"
+          desc="With thousands of publishing options to consider, our team helps you identify the right platform for your book."
+          logos="images/banner/img2.png"
+          counter={true}
         />
         <LogoSliders></LogoSliders>
         <PWMODE />

@@ -10,6 +10,7 @@ import SwiperComponents from '../component/SwiperComponent'
 import HeaderContactForm from '../component/headerContactformNew';
 import WMODE from '../component/workMode1'
 import LogoSliders from '../component/bottomLogosNEW'
+import { MRHero } from '@/component';
 
 
 const WebCopywritingServices = () => {
@@ -25,7 +26,7 @@ const WebCopywritingServices = () => {
     <>
       <main>
 
-        <FEATURED
+        {/* <FEATURED
           banneraffordable='article'
           title='Develop Your Business with the Outstanding Skills and Expertise of Our Web Copywriters'
           dec={` Welcome to  Best Selling Publisher Ghostwriting. We offer professional web copywriting services, taking your website to the next level with the help of our expert copywriters.`}
@@ -37,6 +38,12 @@ const WebCopywritingServices = () => {
               Live Chat
             </Link>
           </>}
+        /> */}
+        <MRHero
+          title="Develop Your Business With The Outstanding Skills And  Expertise of Our Web Copywriters"
+          desc="Welcome to Best Selling Publisher Ghostwriting. We offer professional web copywriting services, taking your website to the next level with the help of our expert copywriters."
+          logos="images/banner/img2.png"
+          counter={true}
         />
         <LogoSliders />
         <LHArticle />

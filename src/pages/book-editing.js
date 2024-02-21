@@ -9,6 +9,7 @@ import BTM from '../component/bottomLogos';
 import CTA from '../component/cta3';
 import SwiperComponents from '../component/SwiperComponent'
 import LogoSliders from '../component/bottomLogosNEW'
+import { MRHero } from '@/component';
 
 
 
@@ -27,7 +28,7 @@ const editing = () => {
   return (
     <>
       <main>
-        <FEATURED
+        {/* <FEATURED
           banneraffordable='aboutus'
           title='An Editing Process that Leads to Perfection on Every Page'
           dec={`An ideal editing process that creates perfect work, editing is an important aspect of writing and crafting an amazing book. Our editors are well-trained in the art of perfecting a novel or a book.`}
@@ -39,6 +40,12 @@ const editing = () => {
               Live Chat
             </Link>
           </>}
+        /> */}
+        <MRHero
+          title="An Editing Process that <br/> Leads to Perfection on Every Page"
+          desc="An ideal editing process that creates perfect work, editing is an important aspect of writing and crafting an amazing book. Our editors are well-trained in the art of perfecting a novel or a book."
+          logos="images/banner/img2.png"
+          counter={true}
         />
         <LogoSliders />
         <WEARE />

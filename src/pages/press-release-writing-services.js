@@ -11,6 +11,7 @@ import BTM from '../component/bottomLogos';
 import SwiperComponents from '../component/SwiperComponent'
 
 import LogoSliders from '../component/bottomLogosNEW'
+import { MRHero } from '@/component'
 
 
 
@@ -28,7 +29,7 @@ const Ghostwriting = () => {
     <>
       <main>
 
-        <FEATURED
+        {/* <FEATURED
           banneraffordable='PressRelease'
           title='Get Your Press Releases Covered By the Right Sites'
           dec={` Send your work to a larger target audience that increases your brand visibility and makes your services known to the masses.`}
@@ -38,6 +39,12 @@ const Ghostwriting = () => {
           href2={<>
             <button onClick={openLiveChat} className='bg-[#1d1d1f] py-2 text-white hover:border-solid hover:border-2 hover:text-[#00c0e4]'>Live Chat</button>
           </>}
+        /> */}
+        <MRHero
+          title="Get Your Press Releases <br /> Covered By the Right Sites"
+          desc="Send your work to a larger target audience that increases your brand visibility and makes your services known to the masses."
+          logos="images/banner/img2.png"
+          counter={true}
         />
         <LogoSliders />
         <LHPress />

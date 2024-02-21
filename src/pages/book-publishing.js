@@ -11,6 +11,7 @@ import BTM from '../component/bottomLogos';
 import CTA from '../component/cta3';
 import SwiperComponents from '../component/SwiperComponent'
 import LogoSliders from '../component/bottomLogosNEW'
+import { MRHero } from '@/component';
 
 
 const about = () => {
@@ -25,7 +26,7 @@ const about = () => {
   return (
     <>
       <main>
-        <FEATURED
+        {/* <FEATURED
           banneraffordable='aboutus'
           title={<> Transform Your Manuscript Into  <br />
             A Bestseller With Premier Book <br />
@@ -39,6 +40,14 @@ const about = () => {
               Live Chat
             </Link>
           </>}
+        /> */}
+        <MRHero
+          subTitle="Awarded #1 Book Publishing Services"
+          title="Transform Your Manuscript Into  A Bestseller With Premier Book Publishing Services"
+          desc="Welcome to Best Selling Publisher, where your publishing dreams turn into reality. As a leading book publishing company, we specialize in bringing authors' visions to life and catapulting their works onto bestseller lists, including Amazon's coveted ranks.With our comprehensive book publishing services, from meticulous editing to bespoke marketing strategies, we're here to guide you every step of the way. Partner with us and see your book shine across the globe."
+          logos="images/banner/img2.png"
+          counter={true}
+          groupCTA={false}
         />
         <LogoSliders />
         <WEARE />

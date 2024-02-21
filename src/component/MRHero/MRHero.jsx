@@ -1,0 +1,50 @@
+import { MRCTA, MRCTAGroup, MRHeroCounter, MRHeroForm } from "@/component"
+import { Image } from "react-bootstrap"
+
+const MRHero = ({
+    subTitle,
+    title,
+    desc,
+    form = true,
+    containImg,
+    fullImg = "",
+    logos,
+    counter = false,
+    classes = "",
+    groupCTA = true
+}) => {
+    return (
+        <section>
+            <div className={`relative py-[50px] mr-xl:py-[80px] ${fullImg} bg-no-repeat ${classes}`}>
+                <div className="mr-container">
+                    <div className="grid grid-cols-1 mr-md:grid-cols-12 items-center gap-y-5 mr-md:gap-y-0 mr-md:gap-x-4">
+                        <div className="mr-md:col-span-7 mr-lg:col-span-6">
+                            {subTitle && <h1 className="text-[18px] uppercase leading-none font-sans font-semibold border-[3px] border-primary-100 text-secondary-100 w-max p-2 !mb-4">{subTitle}</h1>}
+                            {title && subTitle ? <h2 className="text-[30px] mr-lg:text-[35px] mr-xl:text-[40px] font-sans font-extrabold leading-tight text-secondary-200 mb-4" dangerouslySetInnerHTML={{ __html: title }} /> : <h1 className="text-[30px] mr-lg:text-[35px] mr-xl:text-[40px] font-sans font-extrabold leading-tight text-secondary-200 mb-4" dangerouslySetInnerHTML={{ __html: title }} />}
+                            {desc && <p className="text-[16px] font-sans font-normal leading-normal !mb-4">{desc}</p>}
+                            {
+                                groupCTA ?
+                                    <MRCTAGroup /> :
+                                    <MRCTA
+                                        text="Start Your Publishing Journey Today"
+                                        classes="hover:bg-secondary-100"
+                                        handle="onclick='parent.LC_API.open_chat_window();return false;'"
+                                    />
+                            }
+                            {counter && <MRHeroCounter />}
+                            {logos && <Image src={logos} className="!mt-4" alt="bestsellingpublisher" />}
+                        </div>
+                        {containImg && <div className="mr-md:col-span-5 mr-lg:col-span-6">
+                            <Image src={containImg} className="block m-auto" alt="bestsellingpublisher" />
+                        </div>}
+                        {form && <div className="mr-md:col-span-5 mr-lg:col-span-6">
+                            <MRHeroForm />
+                        </div>}
+                    </div>
+                </div>
+            </div>
+        </section>
+    )
+}
+
+export default MRHero

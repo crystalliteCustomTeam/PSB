@@ -10,6 +10,7 @@ import BTM from '../component/bottomLogos';
 import CTA from '../component/cta3';
 import SwiperComponents from '../component/SwiperComponent'
 import LogoSliders from '../component/bottomLogosNEW'
+import { MRHero } from '@/component';
 
 
 
@@ -29,7 +30,7 @@ const about = () => {
   return (
     <>
       <main>
-        <FEATURED
+        {/* <FEATURED
           banneraffordable='aboutus'
           title='Providing Professional Online Book Marketing Services'
           dec={`We will strategically promote your books online to optimize sales and secure the well-deserved exposure your work deserves.`}
@@ -41,6 +42,12 @@ const about = () => {
               Live Chat
             </Link>
           </>}
+        /> */}
+        <MRHero
+          title="Providing Professional Online Book Marketing Services"
+          desc="We will strategically promote your books online to optimize sales and secure the well-deserved exposure your work deserves."
+          logos="images/banner/img2.png"
+          counter={true}
         />
         <LogoSliders />
         <WEARE />

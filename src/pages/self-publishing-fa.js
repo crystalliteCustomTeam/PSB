@@ -17,6 +17,7 @@ import SwiperTestimonial from '@/fa-component/swiperComponent'
 import bannerImg from 'media/ahsan/self-publishing-banner.png'
 import img2 from 'media/images/banner/img2.png'
 import broader from 'media/ahsan/self-publishing-broder.png'
+import { MRHero } from '@/component'
 
 const amazonpublishing = () => {
   const newSpan = <h1 className='font-50 fw-700 font-primary txt-secondary mt-3 leading-tight'>Best Self Publishing Services <br /> - Your One-Stop Solution<br /> For Self Publishing Success!</h1>
@@ -46,7 +47,7 @@ const amazonpublishing = () => {
       </Head>
 
       {/*========= Banner =========*/}
-      {bannertext.map((item, i) =>
+      {/* {bannertext.map((item, i) =>
         <Banner key={i}
           title={item.title}
           discuss={item.discuss}
@@ -55,7 +56,12 @@ const amazonpublishing = () => {
           imageban={item.imageban}
           img2={item.img2}
         />
-      )}
+      )} */}
+      <MRHero
+        title="Best Self Publishing Services - <br /> Your One-Stop Solution For <br /> Self Publishing Success!"
+        logos="images/banner/img2.png"
+        counter={true}
+      />
 
 
       {/*========= Clients fold =========*/}
@@ -91,9 +97,7 @@ const amazonpublishing = () => {
 
       {/*========= Exceptional fold =========*/}
       <Exceptional
-        title="We Are The Best Book Publishing Company
-        <br/>
-        You Will Ever Find!"
+        title="We Are The Best Book Publishing <br/> Company You Will Ever Find!"
         subtitle="We offer a wide range of services to help you self-publish your book, including editing, cover design, printing, and distribution. Best Selling <br/> Publisher has a long history of working with authors to self-publish their books. We've helped many authors achieve success with their self-<br/>published books. Here’s what we bring to the table.  "
       />
 

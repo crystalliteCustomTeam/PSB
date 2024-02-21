@@ -19,20 +19,9 @@ import SwiperTestimonial from '@/fa-component/swiperComponent'
 import bannerImg from 'media/ahsan/home-banner.png'
 import img2 from 'media/images/banner/img2.png'
 import broader from 'media/ahsan/children-broder.png'
+import { MRHero } from '@/component'
 
 const amazonpublishing = () => {
-  const newSpan = <h1 className='font-50 fw-700 font-primary txt-secondary mt-3 leading-tight'>Best Book Publishing<br /> Company – The Home Of <br /> Quality Publishing!</h1>;
-
-  const bannertext = [
-    {
-      title: newSpan,
-      discuss: `LET'S DISCUSS`,
-      homebannernum: '800-781-9093',
-      bannercounter: 'counter',
-      imageban: bannerImg,
-      img2: img2,
-    }
-  ]
   const paratitles = [
     {
       para: 1,
@@ -65,29 +54,23 @@ const amazonpublishing = () => {
   return (
     <>
       <Head>
-
         <title>Best Book Publishing Company - Best Selling Publisher - Amazon Publishing Services</title>
         <link rel="icon" href="/images/favicon.svg" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-        {/* <Helmet>
-  <script type="application/ld+json">
-    {JSON.stringify(schema)}
-  </script>
- </Helmet> */}
       </Head>
 
-      {/*========= Banner =========*/}
-      {bannertext.map((item, i) =>
-        <Banner key={i}
-          title={item.title}
-          discuss={item.discuss}
-          homebannernum={item.homebannernum}
-          bannercounter={item.bannercounter}
-          imageban={item.imageban}
-          img2={item.img2}
-        />
-      )}
+
+      <MRHero
+        // subTitle="Awarded #1 Book Publishing Services"
+        title="Best Book Publishing <br /> Company – The Home Of <br /> Quality Publishing!"
+        // desc="Welcome to Best Selling Publisher, where your publishing dreams turn into reality. As a leading book publishing company, we specialize in bringing authors' visions to life and catapulting their works onto bestseller lists, including Amazon's coveted ranks.With our comprehensive book publishing services, from meticulous editing to bespoke marketing strategies, we're here to guide you every step of the way. Partner with us and see your book shine across the globe."
+        containImg="ahsan/home-banner-new.png"
+        // fullImg="bg-[url('../../public/assets/images/newimg/man-working-printing-house-with-paper-paints.png')]"
+        // classes="bg-right bg-center"
+        logos="images/banner/img2.png"
+        form={false}
+        counter={true}
+      />
 
 
       {/*========= Clients fold =========*/}
@@ -109,7 +92,7 @@ const amazonpublishing = () => {
       />
       {/*========= Exceptional fold =========*/}
       <Exceptional
-        title="Discover What Exceptional Writing Services We Offer"
+        title="Discover What Exceptional Writing <br /> Services We Offer"
         subtitle="Uncover the unparalleled excellence of our publishing services, where each word is meticulously crafted to captivate and inspire. <br/> Explore the realm of literary mastery with our team and discover the epitome of quality in every page turned."
       />
       <Dreams />

@@ -14,6 +14,7 @@ import TAbNAVIGATION from '../component/CoverDesign/TabNavigateCovers'
 import WORKON from '../component/CoverDesign/ProcessWorkMode'
 import SwiperComponents from '../component/SwiperComponent'
 import LogoSliders from '../component/bottomLogosNEW'
+import { MRHero } from '@/component';
 
 
 const about = () => {
@@ -29,7 +30,7 @@ const about = () => {
   return (
     <>
       <main>
-        <FEATURED
+        {/* <FEATURED
           banneraffordable='aboutus'
           title='The Most Attractive Cover Designs to Gain the Attention of Potential Readers'
           dec={`Our creative designers understand the importance of crafting eye-catching designs that compel potential readers to purchase them.`}
@@ -41,6 +42,12 @@ const about = () => {
               Live Chat
             </Link>
           </>}
+        /> */}
+        <MRHero
+          title="The Most Attractive Cover Designs to Gain the Attention of Potential Readers"
+          desc="Our creative designers understand the importance of crafting eye-catching designs that compel potential readers to purchase them."
+          logos="images/banner/img2.png"
+          counter={true}
         />
         <LogoSliders />
         <WEARE />

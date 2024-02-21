@@ -90,9 +90,9 @@ const NewFooter = () => {
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href="/blog" className='text-[13px] font-[400] font-secondary xl:leading-[25px] leading-[15px]'>
+                                            <a href="javascript:;" className='text-[13px] font-[400] font-secondary xl:leading-[25px] leading-[15px]'>
                                                 Blogs
-                                            </Link>
+                                            </a>
                                         </li>
                                         <li>
                                             <Link href="/about-us" className='text-[13px] font-[400] font-secondary xl:leading-[25px] leading-[15px]'>
