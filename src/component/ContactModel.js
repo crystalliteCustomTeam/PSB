@@ -16,8 +16,6 @@ const Bloginner = () => {
   const [score, setScore] = useState("Submit Form");
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-
     const data = {
       name: e.target.name.value,
       email: e.target.email.value,
@@ -28,7 +26,7 @@ const Bloginner = () => {
     const JSONdata = JSON.stringify(data);
     console.log(JSONdata);
     setScore('Sending Data');
-    fetch('../api/email/route', {
+    fetch('/api/email/route', {
       method: 'POST',
       headers: {
         'Accept': 'application/json, text/plain, */*',
