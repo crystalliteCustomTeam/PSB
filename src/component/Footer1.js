@@ -47,7 +47,7 @@ const NewFooter = () => {
     return (
         <>
             <footer className='xs:py-[40px] py-[90px] bg-[#F3F3F3]'>
-                <div className="sm:px-5 md:container px-14">
+                <div className="mr-container sm:px-5">
                     <div className="grid grid-cols-12">
                         <div className='xs:col-span-12 md:col-span-12 lg:col-span-4 col-span-4 pb-4 lg:pb-14'>
                             <div className="logo">

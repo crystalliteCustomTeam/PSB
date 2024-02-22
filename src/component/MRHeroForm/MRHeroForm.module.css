@@ -1,6 +1,6 @@
 .leadforms {
     /* background: url(https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/97d6765a-41db-4514-ac0f-cfc9da970700/public) no-repeat; */
-    background-color: #e4e4e4;
+    background-color: #40BEE2;
     z-index: 1;
     width: 70%;
     margin: auto;
@@ -15,16 +15,16 @@
     color: #000;
     font-size: 14px !important;
     font-weight: 500 !important;
-    padding: 10px 0;
+    padding: 12px 10px;
     line-height: 1.5;
     border: none;
-    border-radius: 0;
+    border-radius: 5px;
     box-sizing: border-box;
     outline: 0;
     margin: 0 0 15px;
     transition: all .3s;
-    background: rgba(0, 0, 0, 0);
-    border-bottom: 1px solid #000;
+    background: #fff;
+    /* border-bottom: 1px solid #000; */
     display: block;
     width: 100%;
     font-family: var(--font-sfprodisplay), 'sans-serif';
@@ -32,7 +32,7 @@
 
 .leadforms input::placeholder,
 .leadforms textarea::placeholder {
-    color: grey;
+    color: #D5D5D5;
 }
 
 .leadforms label {
@@ -41,7 +41,7 @@
 }
 
 .leadforms textarea {
-    height: 70px;
+    height: 120px;
 }
 
 .leadforms sup {
@@ -49,18 +49,19 @@
 }
 
 .leadforms button {
-    width: 100%;
-    background: #00C0E4;
+    width: 50%;
+    background: #000;
     color: #fff;
     padding: 0.8rem;
+    border-radius: 8px;
     font-family: var(--font-sfprodisplay), 'sans-serif';
 }
 
 .leadforms button:hover {
-    width: 100%;
-    background: #000;
+    width: 50%;
+    background: transparent;
     color: #fff;
-    border: 1px solid #00C0E4;
+    border: 1px solid #fff;
     padding: 0.8rem;
 }
 

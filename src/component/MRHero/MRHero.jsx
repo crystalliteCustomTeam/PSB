@@ -11,14 +11,16 @@ const MRHero = ({
     logos,
     counter = false,
     classes = "",
-    groupCTA = true
+    groupCTA = true,
+    bgformImg = "",
+    formClass= ""
 }) => {
     return (
         <section>
-            <div className={`relative py-[50px] mr-xl:py-[80px] ${fullImg} bg-no-repeat ${classes}`}>
+            <div className={`relative py-[80px] ${fullImg} bg-no-repeat ${classes} !border-b-[#00c4e4] border-solid border-[1px]`}>
                 <div className="mr-container">
                     <div className="grid grid-cols-1 mr-md:grid-cols-12 items-center gap-y-5 mr-md:gap-y-0 mr-md:gap-x-4">
-                        <div className="mr-md:col-span-7 mr-lg:col-span-6">
+                        <div className={`mr-md:col-span-7 mr-lg:col-span-6`}>
                             {subTitle && <h1 className="text-[18px] uppercase leading-none font-sans font-semibold border-[3px] border-primary-100 text-secondary-100 w-max p-2 !mb-4">{subTitle}</h1>}
                             {title && subTitle ? <h2 className="text-[30px] mr-lg:text-[35px] mr-xl:text-[40px] font-sans font-extrabold leading-tight text-secondary-200 mb-4" dangerouslySetInnerHTML={{ __html: title }} /> : <h1 className="text-[30px] mr-lg:text-[35px] mr-xl:text-[40px] font-sans font-extrabold leading-tight text-secondary-200 mb-4" dangerouslySetInnerHTML={{ __html: title }} />}
                             {desc && <p className="text-[16px] font-sans font-normal leading-normal !mb-4">{desc}</p>}
@@ -37,7 +39,7 @@ const MRHero = ({
                         {containImg && <div className="mr-md:col-span-5 mr-lg:col-span-6">
                             <Image src={containImg} className="block m-auto" alt="bestsellingpublisher" />
                         </div>}
-                        {form && <div className="mr-md:col-span-5 mr-lg:col-span-6">
+                        {form && <div className={`mr-md:col-span-5 mr-xs:mt-5 mr-sm:mt-5 mr-lg:col-span-6 ${bgformImg} bg-no-repeat ${formClass}`}>
                             <MRHeroForm />
                         </div>}
                     </div>
