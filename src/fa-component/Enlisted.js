@@ -97,16 +97,16 @@ const Enlisted = ({
 
 
             <section className={styles.enlistedSlide}>
-                <Container fluid className='px-md-5'>
+                <Container className='px-md-5'>
                     <Row className='justify-content-center'>
-                        <Col lg={8}>
+                        <Col lg={10}>
                             <div className={`${styles.enlistedHead} text-center`}>
                                 <h4 className='font-30 font-primary color-white'>Enlist Yourself with the All-Time Best  </h4>
-                                <h2 className='font-50 fw-500 font-primary color-white mb-3'>Your book deserves only the <span className='bg-black color-white p-1 mt-2 d-block house'> Best Selling Publishers.</span></h2>
+                                <h2 className='font-50 fw-500 font-primary color-white mb-3'>Your book deserves only the <span className='bg-primary-100 color-white p-1 mt-2 d-block house'> Best Selling Publishers.</span></h2>
                             </div>
 
                             <div className="bttns1black mt-4 mb-5 mb-md-0">
-                                <Link className="btns btnBlack" onClick={openLiveChat} href="#">Get Onboard </Link>
+                                <Link className="btns btnBlack !bg-primary-100" onClick={openLiveChat} href="#">Get Onboard </Link>
                                 <Link className="btns btnTransprnt" href="tel:800-781-9093">(800) 781-9093</Link>
                             </div>
                         </Col>
