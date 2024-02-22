@@ -19,7 +19,7 @@ const Advice = () => {
     return (
         <>
             <section className={styles.adviceFlod}>
-                <Container fluid className='p-0'>
+                <Container className='py-10 px-md-4'>
                     <Row className={`${styles.adviceRow} justify-content-center align-items-center`}>
                         <Col lg={6}>
 

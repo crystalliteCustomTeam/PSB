@@ -31,7 +31,7 @@ const Enlisted = ({
         <>
 
             <section className={styles.enlistedFlod}>
-                <Container fluid className='px-md-5'>
+                <Container className='px-md-5'>
                     <Row className='justify-content-center'>
                         <Col lg={12}>
 
@@ -41,7 +41,7 @@ const Enlisted = ({
                             </div>
 
                         </Col>
-                        <Col lg={10}>
+                        <Col lg={12}>
                             <div className={`${styles.enlisContnt} text-center mt-3`}>
                                 <div className={styles.enlisImg}>
                                     <Image quality={100} loading="lazy" className='img-fluid'
