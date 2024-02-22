@@ -49,8 +49,8 @@ const about = () => {
           logos="images/banner/img2.png"
           counter={true}
           groupCTA={false}
-          fullImg="mr-xl:bg-[url('../../public/ahsan/fullimg_background.png')]"
-          classes="bg-right !py-[80px]"
+          classes="bg-right bg-center !py-[80px]"
+          beforeImg="before:bg-[url('../../public/imageAR/bookstore-with-bookshelf.png')]"
         />
         <LogoSliders />
         <WEARE />

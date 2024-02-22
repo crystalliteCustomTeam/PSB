@@ -35,7 +35,7 @@ const MRHeroForm = () => {
 
     }
     return (
-        <div className={`${styles.leadforms} !p-5 mr-lg:!p-8 mr-xl:!py-10`}>
+        <div className={`${styles.leadforms} relative z-10 !p-5 mr-lg:!p-8 mr-xl:!py-10`}>
             <h3 className="font-primary font-semibold text-[30px] mr-xl:text-[30px] leading-normal text-left mb-3 text-white">
                 Fill your Registration
             </h3>
