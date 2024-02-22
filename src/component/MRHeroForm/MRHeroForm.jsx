@@ -2,7 +2,7 @@ import { useState } from "react";
 import styles from "./MRHeroForm.module.css"
 import Router from "next/router";
 const MRHeroForm = () => {
-    const [score, setScore] = useState("Submit Form");
+    const [score, setScore] = useState("APPLY FOR IT");
     const handleSubmit = async (e) => {
         e.preventDefault();
         const data = {
@@ -35,26 +35,26 @@ const MRHeroForm = () => {
 
     }
     return (
-        <div className={`${styles.leadforms} !p-5 mr-lg:!p-8`}>
-            <h3 className="font-primary font-bold text-[30px] xl:text-[40px] leading-normal text-center mb-3 text-secondary-100">
-                Get A Free Quote
+        <div className={`${styles.leadforms} !p-5 mr-lg:!p-8 mr-xl:!py-10`}>
+            <h3 className="font-primary font-semibold text-[30px] mr-xl:text-[30px] leading-normal text-left mb-3 text-white">
+                Fill your Registration
             </h3>
             <form onSubmit={handleSubmit}>
                 <div>
-                    <label>Full Name<sup>*</sup></label>
-                    <input type="text" required  name="name" placeholder="Your name..." onkeypress="return /[a-z]/i.test(event.key)" />
+                    {/* <label>Full Name<sup>*</sup></label> */}
+                    <input type="text" required  name="name" placeholder="Your Name" onkeypress="return /[a-z]/i.test(event.key)" />
                 </div>
                 <div>
-                    <label>Email Address<sup>*</sup></label>
-                    <input type="email" required name="email" placeholder="Type Email Address" />
+                    {/* <label>Email Address<sup>*</sup></label> */}
+                    <input type="email" required name="email" placeholder="Email Address" />
                 </div>
                 <div>
-                    <label>Phone<sup>*</sup></label>
-                    <input type="tel" minLength="10" maxLength="13" pattern="[0-9]*"  name="phone" placeholder="(123)-456-789"  />
+                    {/* <label>Phone<sup>*</sup></label> */}
+                    <input type="tel" minLength="10" maxLength="13" pattern="[0-9]*"  name="phone" placeholder="Phone"  />
                 </div>
                 <div>
-                    <label>Comments</label>
-                    <textarea id="message" name="comments" placeholder="Message.."></textarea>
+                    {/* <label>Comments</label> */}
+                    <textarea className="resize-none" id="message" name="comments" placeholder="Comments.."></textarea>
                 </div>
                 <div>
                     <button type="submit">{score}</button>

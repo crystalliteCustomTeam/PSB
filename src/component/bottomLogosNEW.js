@@ -42,8 +42,8 @@ const bottomLogos = () => {
   };
   return (
     <>
-      <div className='bg-[#fff] w-full py-6'>
-        <div className='container max-w-7xl'>
+      <div className='bg-[#fff] w-full py-0'>
+        <div className='mr-container'>
           <div className='relative z-20'>
             <div
               className="absolute sm:hidden xs:hidden top-0 -left-10 w-[250px] h-[90px] lg:h-[60px] bg-no-repeat bg-cover md:bg-center"
@@ -55,7 +55,7 @@ const bottomLogos = () => {
           ></div>
           </div>
           <div>
-            <ul className='relative max-w-7xl mx-auto items-center justify-center py-10 lg:py-2 sm:py-2 xs:max-w-[100%]'>
+            <ul className='relative mx-auto items-center justify-center py-5 lg:py-2 sm:py-2 xs:max-w-[100%]'>
 
               <Slider {...settings}>
                 <div><Image quality={95} src='/assets/images/newimg/amazon.png' width={120} height={45} alt="amazon" /></div>

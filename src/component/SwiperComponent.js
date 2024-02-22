@@ -10,7 +10,7 @@ const TestimonialsSlider = () => {
   useEffect(() => {
     register();
     const params = {
-      slidesPerView: 5,
+      slidesPerView: 3,
       injectStyles: [
         `.swiper-pagination-bullet {
           width: 10px;
@@ -24,11 +24,9 @@ const TestimonialsSlider = () => {
       breakpoints: {
         300: {
           slidesPerView: 1,
-          spaceBetween: 10,
         },
         640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
+          slidesPerView: 1,
         },
         768: {
           slidesPerView: 2,
@@ -110,7 +108,7 @@ const TestimonialsSlider = () => {
             <h6 className="font-semibold text-[#40BEE2] font-primary text-[30px] mb-3">
               Hear The Words Of
             </h6>
-            <h2 className="text-4xl font-bold mb-5 font-primary">
+            <h2 className="mr-xl:text-[45px] font-bold mb-5 font-primary">
               Appreciation from Our Clients
             </h2>
             <p className="text-lg mb-3 mx-auto text-[16px] xs:text-[15px]">
