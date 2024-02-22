@@ -35,9 +35,9 @@ const MRHeroForm = () => {
 
     }
     return (
-        <div className={`${styles.leadforms} relative z-10 !p-5 mr-lg:!p-8 mr-xl:!py-10`}>
-            <h3 className="font-primary font-semibold text-[30px] mr-xl:text-[30px] leading-normal text-left mb-3 text-white">
-                Fill your Registration
+        <div className={`${styles.leadforms} relative z-10 !p-5 mr-lg:!p-8 mr-xl:!py-10 w-[80%] mr-md:w-[100%] mr-lg:w-[70%]`}>
+            <h3 className="font-primary font-semibold text-[25px] mr-lg:text-[30px] mr-xl:text-[30px] leading-normal text-center mb-3 text-white">
+                Fill Your  Registration
             </h3>
             <form onSubmit={handleSubmit}>
                 <div>

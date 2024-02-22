@@ -14,7 +14,7 @@ import Mockup9 from '../../public/images/book-mockup/9.jpg'
 import Mockup10 from '../../public/images/book-mockup/10.jpg'
 import Mockup11 from '../../public/images/book-mockup/11.jpg'
 import Mockup12 from '../../public/images/book-mockup/12.jpg'
-
+import Logoss from '../../public/ahsan/logoss.png'
 const YourComponent = () => {
 
   const openLiveChat = (e) => {
@@ -93,9 +93,9 @@ const YourComponent = () => {
     <>
       <section className='section-container11 relative w-full overflow-hidden focus:scroll-auto '>
         <div className='w-full font-secondary bg-[#40BEE2]'>
-          <div className='mr-container grid mr-xl:grid-cols-2 mr-lg:grid-cols-2 mr-lg:text-left text-center justify-center text-white md:py-12 xs:py-12'>
+          <div className='mr-container grid mr-xl:grid-cols-2 mr-lg:grid-cols-2 mr-lg:text-left text-center justify-center text-white md:py-[50px] xs:py-[30px] sm:py-[30px]'>
             <div className='items-center relative mr-xl:py-[150px] mr-lg:py-[150px]'>
-              <span className='mr-lg:text-[45px] px-2 py-1 bg-black text-white mr-xs:text-center font-primary font-bold mr-md:text-[30px] leading-normal mb-3'>Don’t Hesitate To Contact Us!</span>
+              <span className='mr-lg:text-[45px] px-2 py-1 bg-black text-white mr-xs:text-center font-primary font-bold mr-md:text-[35px] mr-sm:text-[35px] mr-xs:text-[35px] leading-normal mb-3'>Don’t Hesitate To Contact Us!</span>
               <h3 className='text-[40px] xs:text-center font-primary font-bold xs:text-[30px] leading-normal mb-3'>Start Your Bestseller <br /> Journey—Publish with Us Today!"</h3>
               <p className='xs:!text-center m-auto md:px-10 mr-xl:px-0'>
                 For personalized support or inquiries, our dedicated team is available to assist you during business hours. We warmly invite you to connect with us; your questions and needs are always our priority. Don't hesitate to reach out.

@@ -50,17 +50,17 @@ const about = () => {
           counter={true}
           groupCTA={false}
           classes="bg-right bg-center !py-[80px]"
-          beforeImg="before:bg-[url('../../public/imageAR/bookstore-with-bookshelf.png')]"
+          beforeImg="mr-md:before:bg-[url('../../public/imageAR/bookstore-with-bookshelf.png')]"
         />
         <LogoSliders />
         <WEARE />
         <PUBLISHING />
         <PWMODE />
-        <CTA />
         <BTM />
+        <CTA />
         <WMODE />
-        <StoryPlot/>
         <SwiperComponents />
+        <StoryPlot/>
       </main>
     </>
   )

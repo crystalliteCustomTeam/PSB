@@ -12,7 +12,7 @@ import CTA from '../component/cta3';
 import SwiperComponents from '../component/SwiperComponent'
 import LogoSliders from '../component/bottomLogosNEW'
 import { MRHero } from '@/component';
-
+import StoryPlot from '@/fa-component/StoryPlot';
 
 
 const about = () => {
@@ -46,15 +46,17 @@ const about = () => {
           desc="With thousands of publishing options to consider, our team helps you identify the right platform for your book."
           logos="images/banner/img2.png"
           counter={true}
-          classes='bg-[#FEFEFE]'
+          classes='bg-right bg-center !py-[80px]'
+          beforeImg="mr-md:before:bg-[url('../../public/imageAR/bookstore-with-bookshelf.png')]"
         />
         <LogoSliders></LogoSliders>
         <PWMODE />
         <PUBLISHING />
-        <CTA />
         <BTM />
+        <CTA />
         <WMODE />
         <SwiperComponents />
+        <StoryPlot/>
       </main>
     </>
   )
