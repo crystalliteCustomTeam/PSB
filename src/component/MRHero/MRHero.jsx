@@ -12,8 +12,6 @@ const MRHero = ({
     counter = false,
     classes = "",
     groupCTA = true,
-    bgformImg = "",
-    formClass= ""
 }) => {
     return (
         <section>
@@ -39,7 +37,7 @@ const MRHero = ({
                         {containImg && <div className="mr-md:col-span-5 mr-lg:col-span-6">
                             <Image src={containImg} className="block m-auto" alt="bestsellingpublisher" />
                         </div>}
-                        {form && <div className={`mr-md:col-span-5 mr-xs:mt-5 mr-sm:mt-5 mr-lg:col-span-6 ${bgformImg} bg-no-repeat ${formClass}`}>
+                        {form && <div className="mr-md:col-span-5 mr-xs:mt-5 mr-sm:mt-5 mr-lg:col-span-6 bg-no-repeat ">
                             <MRHeroForm />
                         </div>}
                     </div>
