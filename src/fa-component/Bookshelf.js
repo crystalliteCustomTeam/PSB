@@ -19,7 +19,7 @@ const Bookshelf = () => {
     return (
         <>
             <section className={styles.bookshelfFlod}>
-                <Container fluid className='px-md-5'>
+                <Container className='px-md-4'>
                     <Row className={`${styles.bookshelfRow} justify-content-between`}>
                         <Col xl={6}>
                                 <div className={styles.bookshelfTxt}>

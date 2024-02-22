@@ -44,7 +44,7 @@ const Plans = () => {
     return (
         <>
             <section className={`${styles.plansFlod} bg-prime`}>
-                <Container fluid className='px-md-5'>
+                <Container className=''>
                     <Row className={`${styles.plansRow} justify-content-center align-items-center text-center`}>
                         <Slider {...planslider}>
                             <Col lg={3}>

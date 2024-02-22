@@ -52,7 +52,7 @@ const about = () => {
           //bgformImg="bg-[url('../../public/ahsan/bookstore-with-bookshelf.png')]"
           //formClass="bg-center bg-cover mr-xl:py-{80px}"
           fullImg="mr-xl:bg-[url('../../public/ahsan/fullimg_background.png')]"
-          classes="bg-right bg-center"
+          classes="bg-right bg-center !py-[80px]"
           // containImg="ahsan/home-banner-new.png"
         />
         <LogoSliders />

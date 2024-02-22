@@ -16,7 +16,7 @@ const Dreams = () => {
     return (
         <>
             <section className={styles.dreamsFlod}>
-                <Container fluid className='px-md-5 pb-3'>
+                <Container className='pb-3 px-md-4'>
                     <Row className='justify-content-center'>
                         <Col lg={10}>
                             <div className={`${styles.dreamsHead} text-center`}>
@@ -24,7 +24,7 @@ const Dreams = () => {
                                 <p className='font-15 font-secondary txt-secondary mb-5'>Every idea, every story, and plot are brilliant, but they need to be refined for success. Excellence doesn’t guarantee anything—it’s the right professionals who will help you find your way through our solutions. Whether you are a new author or a seasoned veteran, Best Selling Publisher makes it easy to get started in the wonderful world of publishing. We provide everything you need to write the perfect book – all in one place.</p>
                             </div>
                         </Col>
-                        <Col lg={12}>
+                        <Col lg={12} className='px-md-4'>
                             <Row className={`${styles.dreamsRow} justify-content-center pt-5`}>
                                 <Col lg={4}>
                                     <div className={`${styles.dreamsCard} bg-gray text-center`}>

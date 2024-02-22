@@ -15,7 +15,7 @@ const MRHero = ({
 }) => {
     return (
         <section>
-            <div className={`relative py-[80px] ${fullImg} bg-no-repeat ${classes} !border-b-[#00c4e4] border-solid border-b-[1px]`}>
+            <div className={`relative pt-[80px] ${fullImg} bg-no-repeat ${classes} !border-b-[#00c4e4] border-solid border-b-[1px]`}>
                 <div className="mr-container">
                     <div className="grid grid-cols-1 mr-md:grid-cols-12 items-center gap-y-5 mr-md:gap-y-0 mr-md:gap-x-4">
                         <div className={`mr-md:col-span-7 mr-lg:col-span-6`}>

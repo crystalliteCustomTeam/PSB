@@ -61,7 +61,7 @@ const Exceptional = ({
     return (
         <>
             <section className={`${styles.dreams1Flod} py-5`}>
-                <div className="mr-container">
+                <div className="mr-container px-md-3">
                 <div className={`${styles.dreamsHead} text-center`}>
                                 <h2 className='font-50 fw-700 font-primary txt-secondary mb-3' dangerouslySetInnerHTML={{ __html: title }} />
                                 <p className='font-15 font-secondary txt-secondary mb-5' dangerouslySetInnerHTML={{ __html: subtitle }} />

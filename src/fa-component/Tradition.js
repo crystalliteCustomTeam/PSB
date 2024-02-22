@@ -67,7 +67,7 @@ const Tradition = ({
     return (
         <>
             <section className={styles.traditionFold}>
-                <Container fluid className='px-md-5'>
+                <Container className='px-md-5'>
                     <Row className='justify-content-center'>
 
                         <Col lg={12}>
