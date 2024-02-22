@@ -5,7 +5,8 @@ import FEATURED from '../component/printing/featuredSec'
 
 import HeaderContactForm from '../component/headerContactformNew';
 import WMODE from '../component/workMode1'
-import PWMODE from '../component/printing/PublishingWorkMode'
+import PWMODE from '../component/PublishingWorkMode'
+import PUBLISHINGHome from '../component/publishing'
 import PUBLISHING from '../component/printing/publishing'
 import BTM from '../component/bottomLogos';
 import CTA from '../component/cta3';
@@ -13,6 +14,7 @@ import SwiperComponents from '../component/SwiperComponent'
 import LogoSliders from '../component/bottomLogosNEW'
 import { MRHero } from '@/component';
 import StoryPlot from '@/fa-component/StoryPlot';
+import PublishingNewComponent from '@/fa-component/PublishingNewComponent';
 
 
 const about = () => {
@@ -50,13 +52,17 @@ const about = () => {
           beforeImg="mr-md:before:bg-[url('../../public/imageAR/bookstore-with-bookshelf.png')]"
         />
         <LogoSliders></LogoSliders>
-        <PWMODE />
+        <PWMODE
+          subTitle="Our Comprehensive Publishing Services"
+          title="Are Streamlined To Help Our Clients Bring <br/> Their Ideas Onto Paper"
+          desc="Our excellence stems from our unique and client-centric approach. We have catered to projects of various genres, formats, and platforms. <br/> Let us do the walking and talking on your behalf and see the exceptional results yourself."
+        />
         <PUBLISHING />
+        <PublishingNewComponent/>
         <BTM />
         <CTA />
-        <WMODE />
         <SwiperComponents />
-        <StoryPlot/>
+        <StoryPlot />
       </main>
     </>
   )

@@ -6,7 +6,7 @@ import WEARE from '../component/bookPublication/LetUsWEARE'
 import HeaderContactForm from '../component/headerContactformNew';
 import WMODE from '../component/workMode1'
 import PWMODE from '../component/bookPublication/ProcessWorkMode'
-import PUBLISHING from '../component/bookPublication/publishing'
+import PUBLISHING from '../component/publishing'
 import BTM from '../component/bottomLogos';
 import CTA from '../component/cta3';
 import SwiperComponents from '../component/SwiperComponent'

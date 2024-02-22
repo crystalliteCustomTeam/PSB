@@ -3,7 +3,10 @@ import React from 'react'
 import Image from 'next/image';
 
 
-const publishing = () => {
+const publishing = ({
+    bgImg = "",
+    classes = ""
+}) => {
 
     const openLiveChat = (e) => {
         e.preventDefault();
@@ -14,7 +17,7 @@ const publishing = () => {
 
     return (
         <>
-            <section className="py-[80px] mr-md:bg-[url('../../public/ahsan/bg_black.png')] bg-no-repeat bg-cover bg-black md:py-20 md:px-5 sm:py-20 sm:px-5 xs:py-20 xs:px-5">
+            <section className={`py-[80px] ${bgImg} bg-no-repeat bg-cover ${classes} md:py-20 md:px-5 sm:py-20 sm:px-5 xs:py-20 xs:px-5`}>
                 <div className='mr-container'>
                     <div className='grid mr-xl:grid-cols-12 gap-5 items-center'>
                         <div className='mr-xl:col-span-6'>

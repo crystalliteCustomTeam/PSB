@@ -51,8 +51,17 @@
   padding: 50px 0;
   /* background: var(--primary-color); */
   background: url("../../public/ahsan/bg_black.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+.enlistedSlideWhite {
+  padding: 50px 0;
+  /* background: var(--primary-color); */
+  background: url("../../public/ahsan/WhiteBG.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 
+}
 .enlistedLogo img {
   width: 160px;
 }
