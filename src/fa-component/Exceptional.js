@@ -7,38 +7,50 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 const data = [
     {
-        heading: "Amazon Publishing",
-        para: "Amazon Publishing is a self publishing service from Amazon that allows authors to publish and distribute their books worldwide. It's a fast, easy and affordable way to get your book into the hands of readers looking for new titles to enjoy.",
+        heading: "Book Editing",
+        para: "Once your ideas are on paper, you need an expert’s eye to look for the red flags. Book editing can be a tiresome and redundant process for which we have experts running the show. Book Writing Expert enhances your book’s vocabulary and sentence formations, in order to provide your readers a refined product.",
         path: "/images/flods/amazon_publishing.png",
-        alt: "Amazon Publishing"
+        alt: "Book Editing"
     },
     {
-        heading: "Book Publishing",
-        para: "Book publishing services provide support and guidance to authors who wish to self-publish their books. These services can include editing, book design, formatting, printing, and distribution.",
+        heading: "Book Writing",
+        para: "From our writing approach to phrasing selection, we're all about creating riveting stories of any length or type. Let us handle your project from beginning to end with absolute finesse since, when you have professionals like us on your team, no responsibility is too huge.",
         path: "/images/flods/book_publishing.png",
-        alt: "Book Publishing"
+        alt: "Book Writing"
     },
     {
-        heading: "Digital Book Publishing",
-        para: "we offer a variety of digital book publishing services to help authors self-publish their work. We can assist with everything from book publishing and formatting to distribution and marketing.",
+        heading: "Book Publishing Services",
+        para: "Content creation has always been an automated process to us. Writing blogs and Articles and publishing them is an easy task for us. Our job doesn’t end once we’re done publishing, we also share it on multiple online platforms in order to gain traction to your content.",
         path: "/images/flods/digital_book_publishing.png",
-        alt: "Digital Book Publishing"
+        alt: "Book Publishing Services"
     },
     {
-        heading: "eBook Publishing",
-        para: "we provide high-quality eBook publishing services to help our clients reach their target audiences. We have a team of experienced professionals knowledgeable in the latest eBook publishing trends and technologies.",
+        heading: "Article Publication",
+        para: "we provide high-quality Article Publication services to help our clients reach their target audiences. We have a team of experienced professionals knowledgeable in the latest Article Publication trends and technologies.",
         path: "/images/flods/ebook_publishing.png",
-        alt: "eBook Publishing"
+        alt: "Article Publication"
     },
     {
-        heading: "Self Publishing",
-        para: "Self publishing has never been easier with Best Selling Publisher's wide range of self publishing services. We can help you publish your books, eBooks, and even print books on demand.",
+        heading: "Children’s Book Publication",
+        para: "Publishing children's books is no easy undertaking. Even though the book is only a little over 100 pages long, not everything appeals to these tiny beings. It takes several rewrites and re-drafts to concisely express an idea with a clear message, and we are here to assist.",
         path: "/images/flods/self_publishing.png",
-        alt: "Self Publishing"
+        alt: "Children’s Book Publication"
+    },
+    {
+        heading: "E-Book Writing",
+        para: "Professional eBook writing increases traffic, and our experienced authors are aware of the best practices for retaining readers through compelling word choice. When it comes to custom eBook writing services, we are the best choice. Try collaborating with us! You won't regret doing it!",
+        path: "/images/flods/book_marketing.png",
+        alt: "E-Book Writing"
+    },
+    {
+        heading: "Children's Book Illustrations",
+        para: "Kids can be picky and direct in their choices, but that doesn't make them impartial. When giving them books, make sure the illustrations and designs catch their interest, creating a reading experience they'll want to revisit.",
+        path: "/images/flods/self_publishing.png",
+        alt: "Children's Book Illustrations"
     },
     {
         heading: "Book Marketing",
-        para: "An exceptional book can be let down with no or less marketing. After availing book writing services, marketing becomes a must in today’s competitive world.",
+        para: "Stop getting lost in the mix with our remarkable book marketing services! We advertise and promote your book in the most efficient way possible, taking it from the back of the shelf to the top of the bestseller list. We are the marketing & promotion specialists for the books you require.",
         path: "/images/flods/book_marketing.png",
         alt: "Book Marketing"
     }
@@ -61,14 +73,14 @@ const Exceptional = ({
     return (
         <>
             <section className={`${styles.dreams1Flod} py-5`}>
-                <div className="mr-container px-md-3">
+                <div className="mr-container px-3">
                 <div className={`${styles.dreamsHead} text-center`}>
                                 <h2 className='font-50 fw-700 font-primary txt-secondary mb-3' dangerouslySetInnerHTML={{ __html: title }} />
                                 <p className='font-15 font-secondary txt-secondary mb-5' dangerouslySetInnerHTML={{ __html: subtitle }} />
                             </div>
-                    <Row className={`${styles.dreamsRow} justify-content-center pt-4 pb-5 gy-4 gx-4`}>
+                    <Row className={`${styles.dreamsRow} justify-content-center pt-4 pb-5 gy-4 gx-4 mr-xs:mx-3`}>
                         {data?.map((e, i) => (
-                            <Col key={i} lg={4} >
+                            <Col key={i} xl={4} lg={4} md={6} xxl={3} >
                                 <div className={`${styles.ExceptionalCard} bg-white text-left position-relative`}>
                                     <div style={{
                                         position: "absolute",

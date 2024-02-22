@@ -29,7 +29,7 @@ const demandingSpecilaist = () => {
                                 <p className='xs:w-[90%] m-auto mb-5'>
                                     At Best Selling Publisher, we specialize in comprehensive book publishing services designed to bring your manuscript to life and get it into the hands of eager readers we're dedicated to crafting legacies. Here’s why countless authors have trusted us to navigate their publishing journey:
                                 </p>
-                                <ul className="grid grid-cols-2 list-[square] list-outside gap-x-5 xs:grid-cols-1 md:w-[100%] md:p-5 xs:w-[100%] md:mb-10 px-8">
+                                <ul className="grid grid-cols-2 list-[square] list-inside indent-0.5 gap-x-5 xs:grid-cols-1 md:w-[100%] md:p-5 xs:w-[100%] md:mb-10 px-8">
                                     <li className='border-b-2 border-solid items-center border-[#707070] py-3'>
                                         <span className='text-[#00c0e4] font-bold'>Expertise Across Genres:  </span>Whether your masterpiece is fiction, non-fiction, or anything in between, our team of seasoned editors, designers, and marketing strategists bring your story to life, ensuring it resonates with your target audience.
                                     </li>

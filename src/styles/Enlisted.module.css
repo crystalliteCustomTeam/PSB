@@ -50,7 +50,7 @@
 .enlistedSlide {
   padding: 50px 0;
   /* background: var(--primary-color); */
-  background-color: #000;
+  background: url("../../public/ahsan/bg_black.png");
 }
 
 .enlistedLogo img {

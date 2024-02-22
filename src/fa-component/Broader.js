@@ -28,10 +28,10 @@ const Broader = ({
                         <Col lg={6}>
 
                             <div className={`${styles.broaderTxt} marginleft`}>
-                                <h4 className='font-30 font-primary txt-primary'><em>{subtitle}</em></h4>
-                                <h2 className='font-50 fw-500 font-primary txt-secondary mb-4'>{title}</h2>
+                                <h4 className='font-30 fw-500 font-primary txt-primary'>{subtitle}</h4>
+                                <h2 className='font-50 fw-600 font-primary txt-secondary mb-4'>{title}</h2>
                                 <p className='font-15 font-secondary txt-secondary mb-4'>{desc}</p>
-                                <h4 className='font-30 font-primary txt-secondary mb-4'><em>Our Package Include</em></h4>
+                                <h4 className='font-30 fw-500 font-primary txt-secondary mb-4'>Our Package Include</h4>
                                 <Row className={styles.listRow}>
                                     <Col md={6}>
                                         <ul className={`${styles.broaderList} p-0 mb-0`}>
