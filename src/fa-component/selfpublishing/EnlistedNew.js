@@ -54,7 +54,7 @@ const Enlisted = ({
                                 <h2 className='font-50 fw-700 font-primary txt-secondary mb-3' dangerouslySetInnerHTML={{ __html: title }}>
                                 </h2>
                                 <h2 className='font-50 fw-500 text-justify font-primary txt-secondary mb-3 w-75' dangerouslySetInnerHTML={{ __html: desc2 }}/>
-                                <p>{paragraph}</p>
+                                <p/>
                             </div>
                         </Col>
                         <Col lg={8}>

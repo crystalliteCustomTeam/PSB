@@ -11,15 +11,15 @@ const PublishingNewComponent = ({
     title,
     desc,
     bgImage,
-    classes="",
+    classes = "",
     textBG
 }) => {
     const openLiveChat = (e) => {
         e.preventDefault();
         if (window.LiveChatWidget) {
-          window.LiveChatWidget.call('maximize');
+            window.LiveChatWidget.call('maximize');
         }
-      };
+    };
     return (
         <>
             <section className={`${styles.enlistedSlideWhite} ${bgImage} ${classes} `}>
@@ -28,7 +28,7 @@ const PublishingNewComponent = ({
                         <Col lg={10}>
                             <div className={`${styles.enlistedHead} text-center`}>
                                 <h4 className='font-30 font-primary text-white'> {subtitle}  </h4>
-                                <h2 className='font-50 fw-500 font-primary text-white mb-3'>{title}<br/> <span className={`${textBG} color-white p-1 mt-2 d-block house`}> {desc}</span></h2>
+                                <h2 className='font-50 fw-500 font-primary text-white mb-3'>{title}<br /> <span className={`${textBG} color-white p-1 mt-2 d-block house`}> {desc}</span></h2>
                             </div>
 
                             <div className="bttns1black mt-4 mb-5 mb-md-0">
