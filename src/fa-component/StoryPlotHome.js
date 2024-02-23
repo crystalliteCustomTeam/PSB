@@ -23,7 +23,7 @@ const Bookshelf = () => {
             <section className='relative bg-white mr-lg:h-[650px] mr-xl:mb-[80px] '>
                 <div className="before:bg-[url('../../public/ahsan/students-working-study-group.png')] before:bg-no-repeat before:bg-cover before:mr-lg:h-[600px] before:z-auto before:mr-lg:block before:mr-xl:block before:sm:hidden before:xs:hidden">
                     <div className='mr-container -!top-0'>
-                        <div className="storyplot grid mr-lg:grid-cols-2 mr-lg:-mt-[450px]">
+                        <div className="storyplot grid mr-lg:grid-cols-2 mr-lg:-mt-[400px]">
                             <div className=''>
                                 <div className="md:text-center sm:text-center xs:text-center">
                                     <h4 className='text-[16px] font-bold font-primary text-primary mb-3 mr-lg:!text-white text-black'>Whether Bookshelf or Amazon Book Publishing</h4>
