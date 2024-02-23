@@ -86,13 +86,13 @@ const workMode = () => {
     return (
         <>
             <section className="our-process">
-                <div className="mr-container text-[#1d1d1f] mr-xl:!py-[80px]">
+                <div className="mr-container text-[#1d1d1f] mr-lg:!py-[80px] mr-md:!py-[60px] !py-[40px]">
                     <div className="text-center mb-14 justify-center">
                         <h6 className='text-[30px] text-[#40BEE2] font-primary font-semibold mb-2'>
                             Carrying out
                         </h6>
                         <h2 className='mr-xl:text-[45px] font-bold font-primary leading-tight mt-3 mb-3 sm:text-[30px] xs:text-[30px]'>
-                            The Fastest Work Mode, Get Your<br /> Work in 4 Easy Steps
+                            The Fastest Work Mode, Get Your <br className='mr-lg:block hidden' /> Work in 4 Easy Steps
                         </h2>
                         <p className='w-[54%] mx-auto md:w-[90%] sm:w-[80%] xs:w-[100%] xs:px-5'>
                             Working with us gives you prompt delivery of work because we have set up everything systematically. Here is our 4 step process, which keeps us streamlined from the beginning.

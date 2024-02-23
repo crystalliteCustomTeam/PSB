@@ -3,7 +3,7 @@ import React from 'react'
 const manuscript = () => {
     return (
         <>
-            <section className='bg-[#f2f2f2]'>
+            <section className=''>
                 <div className='container max-w-7xl lg:max-w-6xl mx-auto py-28 font-secondary md:px-5 xs:py-10 xs:px-5 sm:px-5'>
                     <div className='grid grid-cols-2 gap-x-20 grid-rows-1 justify-between sm:grid-cols-1 xs:grid-cols-1 sm:gap-10 xs:justify-normal xs:gap-10 '>
                         <div>

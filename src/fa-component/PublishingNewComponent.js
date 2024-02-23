@@ -1,9 +1,6 @@
 import React from 'react'
 import styles from '@/styles/Enlisted.module.css'
 import { Container, Row, Col } from 'react-bootstrap'
-import before from 'media/images/flods/enlisted-before.png'
-import after from 'media/images/flods/enlisted-after.png'
-import mid from 'media/images/flods/enlisted-mid.png'
 import Link from 'next/link';
 const PublishingNewComponent = () => {
     const openLiveChat = (e) => {

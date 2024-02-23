@@ -16,9 +16,9 @@ const creativeGhostWriters = () => {
         <>
             <section className="py-[100px] font-secondary sm:py-8 xs:py-16">
                 <div className='container max-w-7xl lg:max-w-6xl md:max-w-2xl'>
-                    <div className='flex gap-10 xs:grid sm:grid sm:grid-cols-1 xs:grid-cols-1'>
+                    <div className='flex items-center justify-between gap-10 xs:grid sm:grid sm:grid-cols-1 xs:grid-cols-1'>
                         <div className='basis-[40%] md:py-12 xs:hidden md:hidden sm:px-10'>
-                            <Image quality={95} width={1000} height={200} className=' hover:-translate-y-1 hover:scale-105 sm:w-[70%] sm:mx-auto' src='/assets/images/newimg/press-newspapers-magazines.png' alt='press-newspapers-magazines' />
+                            <Image quality={95} width={1000} height={200} className=' hover:-translate-y-1 hover:scale-105 sm:w-[70%] sm:mx-auto' src='/imageAR/bold.png' alt='press-newspapers-magazines' />
                         </div>
                         <div className='basis-[55%] md:basis-[100%] sm:w-[100%] sm:mx-auto xs:w-[90%] xs:mx-auto md:mx-auto '>
                             <div className='sm:px-10 xs:py-5'>

@@ -1,17 +1,17 @@
 import React from 'react'
 import Image from 'next/image';
-
+import Woman from "../../../public/imageAR/woman-writing-.png"
 const openLiveChat = (e) => {
     e.preventDefault();
     if (window.LiveChatWidget) {
-      window.LiveChatWidget.call('maximize');
+        window.LiveChatWidget.call('maximize');
     }
-  };
+};
 const creativeGhostWriters = () => {
     return (
         <>
-            <section className="our-bringing6 py-24">
-                <div className="container mx-auto max-w-7xl lg:max-w-6xl font-secondary">
+            <section className="our-bringing6 mr-xl:py-24 mr-lg:py-20 mr-md:py-14 py-10">
+                <div className="mr-container mx-auto font-secondary">
                     <div className="text-center mb-5 heading">
                         <h6 className="text-[30px] font-primary text-[#40BEE2] font-semibold">
                             Our Creative Ghostwriters,
@@ -20,10 +20,10 @@ const creativeGhostWriters = () => {
                             Bringing Your Imagination To Life.
                         </h2>
                         <p className="mt-2 max-w-[70%] mx-auto sm:text-justify sm:max-w-[88%] xs:max-w-[95%]">
-                        You may have an idea for the next best-seller, but you may not have the time or expertise to write it yourself. Our platform meets all of the requirements and offers a diverse range of writing styles, including:
+                            You may have an idea for the next best-seller, but you may not have the time or expertise to write it yourself. Our platform meets all of the requirements and offers a diverse range of writing styles, including:
                         </p>
                     </div>
-                    <div className="grid grid-cols-2 px-auto md:grid-cols-1 sm:grid-cols-1 sm:px-5 sm:text-justify xs:text-justify xs:grid-cols-1 ">
+                    <div className="grid grid-cols-2 items-center px-auto md:grid-cols-1 sm:grid-cols-1 sm:px-5 sm:text-justify xs:text-justify xs:grid-cols-1 ">
                         <div className='px-4 '>
                             <ul className=" items-center pt-5">
                                 <li className="mb-4">
@@ -82,8 +82,8 @@ const creativeGhostWriters = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="py-10 pl-5 xs:px-4 md:px-4 xs:justify-center xs:items-center">
-                            <Image quality={95} src="/assets/images/newimg/bringing-your-imagination.png" alt="fiction ghostwriting services" width={1000} height={1000} />
+                        <div className="pt-10 pl-5 xs:justify-center xs:items-center">
+                            <Image quality={95} src={Woman} alt="fiction ghostwriting services" width={1000} height={1000} />
                         </div>
 
                     </div>
@@ -91,13 +91,6 @@ const creativeGhostWriters = () => {
                 </div>
 
             </section>
-            {/* <section className="compose bg-[#e1b433] py-[30px]">
-                <div className="container max-w-7xl mx-auto text-left">
-                    <p className="text-lg font-medium">
-                        Call us or send us an email, and our experts will walk you through the entire process, requirements, and packages for ghostwriting services for your book! Please contact us by phone or start a live chat. <span><Link href="tel:+1 (855) 469-7509" className="hover:text-black font-bold">+1 (855) 469-7509</Link>, or start a <Link href="#" className="hover:text-black font-bold">live chat.</Link></span>
-                    </p>
-                </div>
-            </section> */}
 
         </>
     )

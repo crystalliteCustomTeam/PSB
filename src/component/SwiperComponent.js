@@ -19,6 +19,9 @@ const TestimonialsSlider = () => {
         .swiper-pagination-bullet-active {
           background: #00c0e4;
         }
+        .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+          bottom: var(--swiper-pagination-bottom, -6px);
+      }
       `,
       ],
       breakpoints: {
@@ -101,8 +104,8 @@ const TestimonialsSlider = () => {
   ];
 
   return (
-    <section className="py-28 xs:py-10">
-      <div className="container sm:container xs:container">
+    <section className="mr-xl:py-[100px] mr-lg:!py-[80px] mr-md:!py-[60px] !py-[40px]">
+      <div className="mr-container">
         <div>
           <div className="text-center">
             <h6 className="font-semibold text-[#40BEE2] font-primary text-[30px] mb-3">
@@ -113,7 +116,7 @@ const TestimonialsSlider = () => {
             </h2>
             <p className="text-lg mb-3 mx-auto text-[16px] xs:text-[15px]">
               The appreciation from our clients is what keeps us going. Have a
-              sneak peek of <br /> what our satisfied clients have to say about
+              sneak peek of <br className="mr-lg:block hidden" /> what our satisfied clients have to say about
               our work.
             </p>
 
@@ -127,15 +130,16 @@ const TestimonialsSlider = () => {
           loop="true"
           pagination="true"
           pagination-clickable="true"
+          autoHeight="true"
         >
           {slides &&
             slides.map((testimonial, index) => (
               <swiper-slide key={index}>
                 <div>
-                  <div className="w-[90%] m-auto py-10">
+                  <div className="w-[90%] m-auto pt-10">
                     <div className="card testimonialscard">
-                    <Image quality={95}
-                         src="../../images/newimg/trust.png"
+                      <Image quality={95}
+                        src="../../images/newimg/trust.png"
                         width={80}
                         height={80}
                         className="mb-2"

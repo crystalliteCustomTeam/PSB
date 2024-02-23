@@ -11,8 +11,8 @@ const TabNavigationGenre = () => {
                 <div className="container max-w-7xl lg:max-w-6xl">
                     <div className="text-center justify-content-center ">
                         <h6 className='text-[30px] text-[#40BEE2] capitalize font-primary font-semibold'>Why we are exceptional </h6>
-                        <h2 className='text-[40px] font-semibold font-primary mb-2 lg:text-5xl py-3 md:text-4xl sm:text-3xl xs:text-4xl sm:py-5'>The Greatness of Our Team Cannot Be Understated</h2>
-                        <p className='w-[80%] mx-auto lg:w-[95%] md:w-[90%] sm:w-[90%] sm:text-justify xs:w-[90%] xs:text-justify'>
+                        <h2 className='text-[40px] font-bold font-primary mb-2 lg:text-5xl py-3 md:text-4xl sm:text-3xl xs:text-4xl sm:py-5'>The Greatness of Our Team Cannot Be Understated</h2>
+                        <p className="mr-2xl:w-[80%] mr-lg:w-[90%] mx-auto mr-md:text-center text-justify">
                             We hate to brag, but we’ve worked on every single genre in existence and even helped create custom-tailored genres that are not easy to fit in one box. Our team’s adaptability, persistence, and perseverance make all of your literary dreams possible. Our international best-seller ghostwriters have compelled people to turn their stories into movies and shows based on their stories. Our writers are a tight-knit team of strong-minded and accomplished people who know how to bring about great results in any time frame, depending on the project’s scope.</p>
                     </div>
                 </div>
