@@ -11,29 +11,30 @@ import after from 'media/images/flods/enlisted-after.png'
 import mid from 'media/images/flods/enlisted-mid.png'
 import Link from 'next/link';
 import { faParagraph } from '@fortawesome/free-solid-svg-icons'
+import { MRCTAGroup } from '@/component'
 // import { Slide } from "react-awesome-reveal";
 const data = [
     {
-      para: 1,
-      paraTitle: "You'll Save Time:",
-      paraSubTitle: "A professional book publishing service will handle all the technical aspects of creating and formatting your book, so you can focus on writing."
+        para: 1,
+        paraTitle: "You'll Save Time:",
+        paraSubTitle: "A professional book publishing service will handle all the technical aspects of creating and formatting your book, so you can focus on writing."
     },
     {
-      para: 2,
-      paraTitle: "You'll Get Expert Help: ",
-      paraSubTitle: "A good digital book publishing service will have a team of experienced editors, designers, and marketers who can help make your book the best it can be."
+        para: 2,
+        paraTitle: "You'll Get Expert Help: ",
+        paraSubTitle: "A good digital book publishing service will have a team of experienced editors, designers, and marketers who can help make your book the best it can be."
     },
     {
-      para: 3,
-      paraTitle: "You'll Reach A Wider Audience: ",
-      paraSubTitle: "With the help of a digital book publishing service , your book will be available to readers all over the world. "
+        para: 3,
+        paraTitle: "You'll Reach A Wider Audience: ",
+        paraSubTitle: "With the help of a digital book publishing service , your book will be available to readers all over the world. "
     },
     {
-      para: 4,
-      paraTitle: "You'll Make More Money: ",
-      paraSubTitle: "A professional book publishing service will ensure your book is priced correctly and marketed effectively, so you can earn more royalties. "
+        para: 4,
+        paraTitle: "You'll Make More Money: ",
+        paraSubTitle: "A professional book publishing service will ensure your book is priced correctly and marketed effectively, so you can earn more royalties. "
     }
-  ]
+]
 
 const Enlisted = ({
     subtitle,
@@ -42,23 +43,22 @@ const Enlisted = ({
     desc2,
     paragraph
 }) => {
-   
+
     return (
         <>
             <section className={styles.enlistedFlod}>
-                <Container fluid className='px-md-5'>
-                    <Row className='justify-content-left'>
-                        <Col lg={8} sm={12}>
-                            <div className={`${styles.enlistedHead} text-left`}>
+                <div className='mr-container px-md-5'>
+                    <Row className='justify-content-center'>
+                        <Col xxl={12} lg={12} sm={12}>
+                            <div className={`${styles.enlistedHead} text-center items-center`}>
                                 <h4 className='font-30 font-primary txt-primary'>{subtitle}</h4>
-                                <h2 className='font-50 fw-500 font-primary txt-secondary mb-3' dangerouslySetInnerHTML={{ __html: title }}>
+                                <h2 className='font-45 fw-700 font-primary txt-secondary mb-3' dangerouslySetInnerHTML={{ __html: title }}>
                                 </h2>
-                                <span className='bg-black txt-white mt-2 w-75 p-1 font-50 fw-500 d-block'>{desc}</span>
-                                <h2 className='font-50 fw-500 font-primary txt-secondary mb-3 w-75' dangerouslySetInnerHTML={{ __html: desc2 }}/>
-                                <p>{paragraph}</p>
+                                <h2 className='font-50 fw-500 font-primary txt-secondary mb-3 w-75' dangerouslySetInnerHTML={{ __html: desc2 }} />
+                                <p className='mr-lg::w-75 m-auto'>{paragraph}</p>
                             </div>
                         </Col>
-                        <Col lg={8} sm={0}>
+                        <Col xxl={10} lg={10} sm={0}>
                             <div className={`${styles.enlisContnt} text-center mt-3`}>
                                 <div className={styles.enlisImg}>
                                     <Image quality={100} loading="lazy" className='img-fluid'
@@ -77,7 +77,7 @@ const Enlisted = ({
                                             src={mid}
                                             alt='Best_Publisher'
                                         />
-                                        <div className='pb-5 '>
+                                        <div className='pb-5 w-75'>
                                             {data?.map((e, i) => (
                                                 <div key={i}>
                                                     <p className='font-30 font-primary txt-secondary mt-5' dangerouslySetInnerHTML={{ __html: e.paraTitle }} />
@@ -93,17 +93,11 @@ const Enlisted = ({
                                     />
                                 </div>
                             </div>
-                            <div className='justify-content-center w-75 mx-auto'>
-                                <p className='py-3'>Best Selling Publisher brings your dream of book writing to life.</p>
-                                <div className={`${Bookshelf.bttns} dislpay-flex`}>
-                                    <Link className='btns btnBlack' href="javascript:$zopim.livechat.window.show()">Let's discuss</Link>
-                                    <Link className='btns btnTransprnt text-black' href="tel:800-781-9093">800-781-9093</Link>
-                                </div>
-                            </div>
-
+                            
                         </Col>
+                        <MRCTAGroup classes='justify-center mt-5' />
                     </Row>
-                </Container>
+                </div>
             </section>
 
 

@@ -4,14 +4,15 @@ import Banner from '@/fa-component/Banner'
 import Tradition from '@/fa-component/Tradition'
 // import Climax from '@/fa-component/Climax'
 import EnlistedNew from '@/fa-component/ebookpublishing/EnlistedNew'
-import Audience from '@/fa-component/Audience'
-import BroaderNew from '@/fa-component/BroaderNew'
-import Plans from '@/fa-component/Plans'
-import Bookshelf from '@/fa-component/Bookshelf'
-import Enlistedlogo from '@/fa-component/Enlistedlogo'
-import Exceptional from '@/fa-component/Exceptional'
-import SwiperTestimonial from '@/fa-component/swiperComponent'
 
+import BroaderNew from '@/fa-component/BroaderNew'
+
+import Enlistedlogo from '@/fa-component/Enlistedlogo'
+import SwiperComponent from '@/component/SwiperComponent'
+import BTM from '../component/bottomLogos';
+import CTA from '../component/cta3';
+import StoryPlot from '@/fa-component/StoryPlot';
+import PublishingNewComponent from '@/fa-component/PublishingNewComponent'
 // import { Helmet } from 'react-helmet'
 // images
 import bannerImg from 'media/ahsan/ebook-banner.png'
@@ -62,6 +63,8 @@ const amazonpublishing = () => {
         title="Create The Best-Selling <br /> Ebooks With Our Ebook <br /> Publishing Services!"
         logos="images/banner/img2.png"
         counter={true}
+        classes="bg-right bg-center !py-[80px]"
+        beforeImg="mr-md:before:bg-[url('../../public/ahsan/woman-reading-book-side-view.png')]"
       />
 
 
@@ -79,11 +82,17 @@ const amazonpublishing = () => {
 
       {/*========= Enlisted fold =========*/}
       <EnlistedNew
-        subtitle=""
-        title="Why Does E book Publishing"
-        desc=" Gain A Lot of Momentum? "
-        desc2=""
+        subtitle="Be a Part of the Best Sellers’ Fraternity"
+        title="Why Does E Book Publishing Gain A Lot Of Momentum? "
         paragraph="Ebook publishing has gained a lot of momentum in recent years. This is because it is a very efficient way to publish and distribute content. There are many advantages to using eBooks over traditional print books. Here are some of the most important benefits:"
+      />
+      <PublishingNewComponent
+        subtitle="Enlist Yourself with the All-Time Best "
+        title="Your Book Deserves Only The"
+        desc="Best Selling Publishers."
+        bgImage="bg-[url('../../public/ahsan/bg_black.png')]"
+        classes="bg-cover bg-no-repeat"
+        textBG="bg-primary-100"
       />
       {/*========= Broader fold =========*/}
       <BroaderNew
@@ -94,23 +103,15 @@ const amazonpublishing = () => {
         image={broader}
       />
       {/*========= Audience fold =========*/}
-      <Audience />
-
-      {/*========= Exceptional fold =========*/}
-      <Exceptional
-        title="Our eBook Publishing House Prices Its Services <br/>
-        At The Most Accessible Rates!"
-        subtitle="Are you looking for affordable eBook publishing services? Look no further than us! We offer some of the most competitive prices in the industry without <br/> compromising on quality or service. Our team of professionals will work with you to ensure that your eBook is designed and formatted correctly. We are committed <br/> to providing our customers with the best possible experience, and our affordable eBook publishing services are just one way to do this.  "
-      />
+      {/*========= CTA fold =========*/}
+      <BTM />
+      <CTA />
 
       {/*========= swiperComponent fold =========*/}
-      <SwiperTestimonial />
-
-      {/*========= Plans fold =========*/}
-      <Plans />
+      <SwiperComponent />
 
       {/*========= Bookshelf fold =========*/}
-      <Bookshelf />
+      <StoryPlot />
     </>
   )
 }

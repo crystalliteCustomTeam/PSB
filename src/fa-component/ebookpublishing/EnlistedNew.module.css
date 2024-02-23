@@ -40,13 +40,13 @@
 }
 
 .para6 {
-  margin-top: 105px;
+  margin-top: 80px;
 }
 .para7 {
   margin-top: 80px;
 }
 .para8 {
-  margin-top: 150px;
+  margin-top: 80px;
 }
 
 /* ========================== */
@@ -56,7 +56,7 @@
 .enlistedFlod::after{
   content: "";
   position: absolute;
-  background: url('/images/afterEnlist.png');
+  /* background: url('/images/afterEnlist.png'); */
   background-repeat: no-repeat;
   top: 20%;
   right: 0;
@@ -122,6 +122,13 @@
   }
 
   .para6 {
+    display: none;
+  }
+  .para7 {
+    display: none;
+  }
+
+  .para8 {
     display: none;
   }
   .font-30{
