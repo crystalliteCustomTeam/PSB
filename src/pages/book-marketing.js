@@ -11,6 +11,7 @@ import CTA from '../component/cta3';
 import SwiperComponents from '../component/SwiperComponent'
 import LogoSliders from '../component/bottomLogosNEW'
 import { MRHero } from '@/component';
+import OptimalMarketing from '@/component/OptimalMarketing';
 
 
 
@@ -48,12 +49,15 @@ const about = () => {
           desc="We will strategically promote your books online to optimize sales and secure the well-deserved exposure your work deserves."
           logos="images/banner/img2.png"
           counter={true}
+          classes='bg-right bg-center !py-[80px]'
+          beforeImg="mr-md:before:bg-[url('../../public/ahsan/young-beautifulimg.png')]"
         />
         <LogoSliders />
         <WEARE />
         <PWMODE />
-        <CTA />
         <BTM />
+        <CTA />
+        
         <WMODE />
         <SwiperComponents />
       </main>
