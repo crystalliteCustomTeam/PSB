@@ -29,25 +29,13 @@ const Ghostwriting = () => {
   return (
     <>
       <main>
-
-        {/* <FEATURED
-          banneraffordable='article'
-          title='Result-Driven Article-Writing Services That Boost Your Online '
-          dec={` Drive more customers, convert the existing ones into loyal customers, and create compelling articles that speak to what matters most to your target audience.`}
-          href1={<> <Link href=" " data-fancybox="" data-src="#popupform" className="btn btn-green">
-            Get Started <i className="fas fa-caret-right ml-1"></i>
-          </Link> </>}
-          href2={<>
-            <Link onClick={openLiveChat} href="#" className="chat btn btn-white-border ml-4">
-              Live Chat
-            </Link>
-          </>}
-        /> */}
         <MRHero
-          title="Result-Driven Article-<br />Writing Services That <br /> Boost Your Online"
+          title={`Result-Driven Article-Writing <br class="mr-2xl:block !hidden" /> Services That Boost Your <br class="mr-2xl:block !hidden" /> Online`}
           desc="Drive more customers, convert the existing ones into loyal customers, and create compelling articles that speak to what matters most to your target audience."
           logos="images/banner/img2.png"
           counter={true}
+          classes='!py-[80px]'
+          beforeImg="before:bg-[url('../../public/imageAR/business-woman-working.png')]"
         />
         <LogoSliders />
         <LHArticle />
