@@ -105,7 +105,7 @@ const swiperComponent = () => {
     return (
         <>
             <section className={styles.enlistedFlod}>
-                <Container fluid className=''>
+                <div fluid className='mr-container px-4'>
                     <Row className='justify-content-center'>
                         <Col lg={12}>
                             <div>
@@ -160,7 +160,7 @@ const swiperComponent = () => {
                             </swiper-container>
                         </Col>
                     </Row>
-                </Container>
+                </div>
             </section>
         </>
     )

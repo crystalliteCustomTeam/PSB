@@ -16,7 +16,7 @@ const Dreams = () => {
     return (
         <>
             <section className={styles.dreamsFlod}>
-                <Container className='pb-3 px-md-4'>
+                <div className='mr-container pb-3 px-md-4'>
                     <Row className='justify-content-center'>
                         <Col lg={10}>
                             <div className={`${styles.dreamsHead} text-center`}>
@@ -54,7 +54,7 @@ const Dreams = () => {
                             </Row>
                         </Col>
                     </Row>
-                </Container>
+                </div>
             </section>
         </>
     )

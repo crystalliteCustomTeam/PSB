@@ -23,7 +23,7 @@ const Broader = ({
     return (
         <>
             <section className={styles.broaderFlod}>
-                <Container className='px-md-4'>
+                <div className='mr-container px-md-4'>
                     <Row className={`${styles.broaderRow} justify-content-center`}>
                         <Col lg={6}>
 
@@ -69,7 +69,7 @@ const Broader = ({
 
                         </Col>
                     </Row>
-                </Container>
+                </div>
             </section>
         </>
     )

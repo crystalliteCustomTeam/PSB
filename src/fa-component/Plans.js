@@ -22,35 +22,23 @@ const Plans = () => {
         slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 992,
+                breakpoint: 991,
                 settings: {
                     slidesToShow: 2,
                 }
             },
             {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 2,
-                }
-            },
-            {
-                breakpoint: 575,
-                settings: {
-                    slidesToShow: 2,
-                }
-            },
-            {
-                breakpoint: 300,
+                breakpoint: 767,
                 settings: {
                     slidesToShow: 1,
                 }
-            }
+            },
         ]
     };
     return (
         <>
             <section className={`${styles.plansFlod} bg-black`}>
-                <Container className=''>
+                <div className='mr-container px-5'>
                     <Row className='align-items-center'>
                         <Col lg={12} className='m-auto'>
                             <Row className={`${styles.plansRow} justify-content-between align-items-center`}>
@@ -104,7 +92,7 @@ const Plans = () => {
                         </Col>
                     </Row>
 
-                </Container>
+                </div>
             </section>
         </>
     )

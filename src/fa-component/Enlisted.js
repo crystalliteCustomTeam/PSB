@@ -31,7 +31,7 @@ const Enlisted = ({
         <>
 
             <section className={styles.enlistedFlod}>
-                <Container className='px-md-5'>
+                <div className='mr-container px-md-5'>
                     <Row className='justify-content-center'>
                         <Col lg={12}>
 
@@ -91,13 +91,13 @@ const Enlisted = ({
                             </div>
                         </Col>
                     </Row>
-                </Container>
+                </div>
             </section>
 
 
 
             <section className={styles.enlistedSlide}>
-                <Container className='px-md-5'>
+                <div className='mr-container px-md-5'>
                     <Row className='justify-content-center'>
                         <Col lg={10}>
                             <div className={`${styles.enlistedHead} text-center`}>
@@ -112,7 +112,7 @@ const Enlisted = ({
                         </Col>
 
                     </Row>
-                </Container>
+                </div>
             </section>
 
         </>

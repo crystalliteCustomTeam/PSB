@@ -1,6 +1,6 @@
 .broaderFlod {
   padding: 50px 0;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
 }
@@ -51,5 +51,8 @@
 @media screen and (max-width: 767px) {
   .listRow {
     gap: 15px;
+  }
+  .broaderImg img {
+    display: none;
   }
 }

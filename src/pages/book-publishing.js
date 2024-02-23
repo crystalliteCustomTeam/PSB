@@ -48,6 +48,8 @@ const about = () => {
           logos="images/banner/img2.png"
           counter={true}
           groupCTA={false}
+          classes="bg-right bg-center !py-[80px]"
+          beforeImg="mr-md:before:bg-[url('../../public/imageAR/bookstore-with-bookshelf.png')]"
         />
         <LogoSliders />
         <WEARE />

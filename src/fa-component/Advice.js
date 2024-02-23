@@ -19,7 +19,7 @@ const Advice = () => {
     return (
         <>
             <section className={styles.adviceFlod}>
-                <Container className='py-10 px-md-4'>
+                <div className='mr-container mr-md:py-10 mr-xs:py-5 px-4'>
                     <Row className={`${styles.adviceRow} justify-content-center align-items-center`}>
                         <Col lg={6}>
 
@@ -44,7 +44,7 @@ const Advice = () => {
                             </div>
                         </Col>
                     </Row>
-                </Container>
+                </div>
             </section>
         </>
     )

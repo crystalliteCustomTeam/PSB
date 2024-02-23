@@ -19,7 +19,7 @@ const Audience = () => {
     return (
         <>
             <section className={`${styles.audienceFlod} bg-prime`}>
-                <Container className='px-md-4'>
+                <div className='mr-container px-md-4'>
                     <Row className={`${styles.audienceRow} justify-content-center align-items-center`}>
                         <Col lg={6} sm={12}>
                             <div className={styles.audienceTxt}>
@@ -41,7 +41,7 @@ const Audience = () => {
                             </div>
                         </Col>
                     </Row>
-                </Container>
+                </div>
             </section>
         </>
     )

@@ -40,7 +40,6 @@ module.exports = {
       },
       container: {
         center: true,
-        xs: '320px',
       },
       fontFamily: {
         'sans': ['var(--font-sfprodisplay)', 'sans-serif'],

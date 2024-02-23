@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 
 const publishing = ({
-    bgImg = "",
+    bgImg = "bg-[url('../../public/ahsan/bg_black.png')]",
     classes = ""
 }) => {
 

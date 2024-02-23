@@ -51,7 +51,7 @@ const about = () => {
           logos="images/banner/img2.png"
           counter={true}
           classes='bg-right bg-center !py-[80px]'
-          beforeImg="mr-md:before:bg-[url('../../public/ahsan/young-beautifulimg.png')]"
+          beforeImg="mr-md:before:bg-[url('../../public/ahsan/young-beautiful-woman.png')]"
         />
         <LogoSliders />
         <WEARE />
