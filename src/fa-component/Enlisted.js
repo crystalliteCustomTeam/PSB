@@ -10,6 +10,7 @@ import before from 'media/images/flods/enlisted-before.png'
 import after from 'media/images/flods/enlisted-after.png'
 import mid from 'media/images/flods/enlisted-mid.png'
 import Link from 'next/link';
+import PublishingNewComponent from './PublishingNewComponent'
 // import { Slide } from "react-awesome-reveal";
 
 
@@ -96,8 +97,8 @@ const Enlisted = ({
 
 
 
-            <section className={styles.enlistedSlide}>
-                <div className='mr-container px-md-5'>
+            {/* <section className={styles.enlistedSlide}>
+                <Container className='px-md-5'>
                     <Row className='justify-content-center'>
                         <Col lg={10}>
                             <div className={`${styles.enlistedHead} text-center`}>
@@ -112,8 +113,9 @@ const Enlisted = ({
                         </Col>
 
                     </Row>
-                </div>
-            </section>
+                </Container>
+            </section> */}
+            <PublishingNewComponent/>
 
         </>
     )

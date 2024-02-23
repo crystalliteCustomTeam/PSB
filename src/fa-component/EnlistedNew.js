@@ -10,6 +10,7 @@ import before from 'media/images/flods/enlisted-before.png'
 import after from 'media/images/flods/enlisted-after.png'
 import mid from 'media/images/flods/enlisted-mid.png'
 import Link from 'next/link';
+import { MRCTAGroup } from '@/component'
 // import { Slide } from "react-awesome-reveal";
 
 
@@ -20,22 +21,28 @@ const Enlisted = ({
     desc2,
     data
 }) => {
+    const openLiveChat = (e) => {
+        e.preventDefault();
+        if (window.LiveChatWidget) {
+          window.LiveChatWidget.call('maximize');
+        }
+      };
+
     return (
         <>
             <section className={styles.enlistedFlod}>
-                <Container fluid className='px-md-5'>
-                    <Row className='justify-content-left'>
-                        <Col lg={10} sm={12}>
-                            <div className={`${styles.enlistedHead} text-left`}>
-                                <h4 className='font-30 font-primary txt-primary'>{subtitle}</h4>
-                                <h2 className='font-50 fw-500 font-primary txt-secondary mb-3' dangerouslySetInnerHTML={{ __html: title }}>
-                                
+                <div className='mr-container px-md-5'>
+                    <Row className='justify-center'>
+                        <Col xxl={10} lg={12} sm={12}>
+                            <div className={`${styles.enlistedHead} text-center justify-center`}>
+                                <h4 className='font-30 fw_500 font-semibold font-primary txt-primary'>{subtitle}</h4>
+                                <h2 className='font-45 fw_700 font-bold fw-500 font-primary txt-secondary mb-3' dangerouslySetInnerHTML={{ __html: title }}>
                                 </h2>
-                                <span className='bg-black txt-white mt-2 p-1 font-50 fw-500'>{desc}</span>
-                                <h2 className='font-50 fw-500 font-primary txt-secondary mb-3 w-75' dangerouslySetInnerHTML={{ __html: desc2 }} />
+                                {/* <span className='bg-black txt-white mt-2 p-1 text-[45px] fw-500'>{desc}</span> */}
+                                <h2 className='text-[45px] fw-500 font-primary txt-secondary mb-3 w-75' dangerouslySetInnerHTML={{ __html: desc2 }} />
                             </div>
                         </Col>
-                        <Col lg={8} sm={0}>
+                        <Col xxl={10} lg={8} sm={0}>
                             <div className={`${styles.enlisContnt} text-center mt-3`}>
                                 <div className={styles.enlisImg}>
                                     <Image quality={100} loading="lazy" className='img-fluid'
@@ -55,7 +62,7 @@ const Enlisted = ({
                                             src={mid}
                                             alt='Best_Publisher'
                                         />
-                                        <div className='pb-5 '>
+                                        <div className='pb-5 w-75'>
                                             {data?.map((e, i) => (
                                                 <div key={i}>
                                                     <p className='font-30 font-primary txt-secondary mt-5' dangerouslySetInnerHTML={{ __html: e.paraTitle }} />
@@ -71,40 +78,19 @@ const Enlisted = ({
                                     />
                                 </div>
                             </div>
-                            <div className='justify-content-center w-75 mx-auto'>
+                            <MRCTAGroup classes='justify-center mt-5'/>
+                            {/* <div className='justify-content-center w-75 mx-auto'>
                                 <p className='py-3'>Best Selling Publisher brings your dream of book writing to life.</p>
                                 <div className={`${Bookshelf.bttns} dislpay-flex`}>
                                     <Link className='btns btnBlack' href="javascript:$zopim.livechat.window.show()">Let's discuss</Link>
                                     <Link className='btns btnTransprnt text-black' href="tel:800-781-9093">800-781-9093</Link>
                                 </div>
-                            </div>
+                            </div> */}
 
                         </Col>
                     </Row>
-                </Container>
+                </div>
             </section>
-
-
-
-            {/* <section className={styles.enlistedSlide}>
-                <Container fluid className='px-md-5'>
-                    <Row className='justify-content-center'>
-                        <Col lg={8}>
-                            <div className={`${styles.enlistedHead} text-center`}>
-                                <h4 className='font-30 font-primary color-white'>Enlist Yourself with the All-Time Best  </h4>
-                                <h2 className='font-50 fw-500 font-primary color-white mb-3'>Your book deserves only the <span className='bg-black color-white p-1 mt-2 d-block house'> Best Selling Publishers.</span></h2>
-                            </div>
-
-                            <div className="bttns1black mt-4 mb-5 mb-md-0">
-                                <Link className="btns btnBlack" href="/#">Get Onboard </Link>
-                                <Link className="btns btnTransprnt" href="tel:800-781-9093">(800) 781-9093</Link>
-                            </div>
-                        </Col>
-
-                    </Row>
-                </Container>
-            </section> */}
-
         </>
     )
 }

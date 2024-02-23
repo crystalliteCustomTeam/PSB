@@ -23,16 +23,16 @@
 }
 
 .para2 {
-  margin-top: 125px;
+  margin-top: 100px;
 }
 
 .para3 {
-  margin-top: 150px;
+  margin-top: 100px;
 
 }
 
 .para4 {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .para5 {
@@ -50,7 +50,7 @@
 .enlistedFlod::after{
   content: "";
   position: absolute;
-  background: url('../../public/images/afterEnlist.png');
+  /* background: url('../../public/images/afterEnlist.png'); */
   background-repeat: no-repeat;
   top: 20%;
   right: 0;
@@ -124,7 +124,7 @@
   }
 }
 
-@media (min-width:390px) and (max-width: 640px) {
+/* @media (min-width:390px) and (max-width: 640px) {
   .para2 {
     margin-top: 102px;
   }
@@ -157,7 +157,7 @@
     font-weight: 600;
   }
 
-}
+} */
 @media screen and (max-width: 991px) {
   .midImg {
     margin-left: 0px;

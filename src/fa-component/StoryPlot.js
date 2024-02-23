@@ -20,18 +20,18 @@ const Bookshelf = () => {
 
     return (
         <>
-            <section className='relative bg-white mr-xl:h-[650px] mr-xl:mb-[80px] '>
-                <div className="before:bg-[url('../../public/ahsan/students-working-study-group.png')] before:bg-no-repeat before:bg-cover before:h-[600px] before:z-auto before:mr-lg:block before:mr-xl:block before:sm:hidden before:xs:hidden">
+            <section className='relative bg-white mr-xl:h-[600px] mr-xl:mb-[80px] '>
+                <div className="before:bg-[url('../../public/ahsan/students-working-study-group.png')] before:bg-no-repeat before:bg-cover before:h-[500px] before:z-auto before:mr-lg:block before:mr-xl:block before:sm:hidden before:xs:hidden">
                     <div className='mr-container -!top-0'>
-                        <div className="storyplot grid mr-xl:grid-cols-2 mr-xl:-mt-[400px]">
-                            <div>
+                        <div className="storyplot grid mr-md:grid-cols-2 mr-2xl:mt-[-400px] mr-lg:mt-[-430px]">
+                            <div className='border-b-[1px] border-solid border-[#707070] mr-lg:pb-5 border-[80%]'>
                                 <div className="md:text-center sm:text-center xs:text-center">
                                     <h4 className='text-[16px] font-bold font-primary text-primary mb-3 mr-lg:!text-white text-black'>Discuss Your Ideas</h4>
                                     <h2 className='text-[45px] font-bold font-primary text-secondary leading-normal mr-lg:!text-white mb-5 text-black'>Do You Have A Story Plot <br /> In Mind? Tell Us About It!</h2>
                                     <p className='text-[18px] font-secondary txt-secondary mb-5 mr-lg:!text-white text-black'>We value your time and energy, which is why we're here to help you transform your
                                         narrative into a beautifully written book.</p>
                                 </div>
-                                <div className='flex mr-lg:mt-44 mr-xl:mt-44 gap-5 items-center w-[80%] md:m-auto md:w-[70%] sm:w-[100%] xs:w-[100%]'>
+                                <div className='flex mr-lg:mt-44 mr-2xl:mt-32 gap-5 items-center w-[80%] md:m-auto md:w-[70%] sm:w-[100%] xs:w-[100%]'>
                                     <Image
                                         src={image1}
                                         qualit={95}

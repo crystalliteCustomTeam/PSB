@@ -102,7 +102,7 @@ const TestimonialsSlider = () => {
 
   return (
     <section className="py-28 xs:py-10">
-      <div className="container sm:container xs:container">
+      <div className="mr-container">
         <div>
           <div className="text-center">
             <h6 className="font-semibold text-[#40BEE2] font-primary text-[30px] mb-3">

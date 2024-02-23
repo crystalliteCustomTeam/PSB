@@ -20,17 +20,17 @@ const Bookshelf = () => {
 
     return (
         <>
-            <section className='relative bg-white mr-lg:h-[650px] mr-xl:mb-[80px] '>
-                <div className="before:bg-[url('../../public/ahsan/students-working-study-group.png')] before:bg-no-repeat before:bg-cover before:mr-lg:h-[600px] before:z-auto before:mr-lg:block before:mr-xl:block before:sm:hidden before:xs:hidden">
-                    <div className='mr-container -!top-0'>
-                        <div className="storyplot grid mr-lg:grid-cols-2 mr-lg:-mt-[400px]">
-                            <div className=''>
-                                <div className="md:text-left sm:text-left xs:text-left">
+            <section className='relative bg-white mr-lg:h-[600px] mr-lg:mb-[80px] '>
+                <div className="before:bg-[url('../../public/ahsan/students-working-study-group.png')] before:bg-no-repeat before:bg-cover before:mr-lg:h-[520px] before:z-auto before:mr-lg:block before:mr-xl:block before:sm:hidden before:xs:hidden before:backdrop-blur-md">
+                    <div className='mr-container -!top-0 z-50 relative'>
+                        <div className="storyplot grid mr-lg:grid-cols-2 mr-2xl:mt-[-400px] mr-lg:mt-[-430px]">
+                            <div className='border-b-[1px] border-solid border-[#707070] mr-lg:pb-5 border-[80%]'>
+                                <div className="md:text-left sm:text-left xs:text-left z-10">
                                     <h4 className='text-[16px] font-bold font-primary text-primary mb-3 mr-lg:!text-white text-black'>Whether Bookshelf or Amazon Book Publishing</h4>
-                                    <h2 className='text-[45px] font-bold font-primary text-secondary leading-normal mr-lg:!text-white mb-2 text-black'>First-Class Book Publishers </h2>
-                                    <p className='text-[14px] font-secondary txt-secondary mr-lg:!text-white text-black'>Best Selling Publisher offers a wide range of traditional publishing services for businesses of all sizes and authors of all genres. We have a team of experienced professionals who can help you through every step of the publishing process, from editing and formatting to publication and distribution. We also offer a variety of custom publishing options to fit your specific needs, such as digital publishing services and Amazon publishing services. </p>
+                                    <h2 className='mr-xl:text-[45px] mr-lg:text-[35px] font-bold font-primary text-secondary leading-normal mr-lg:!text-white mb-2 text-black'>First-Class Book Publishers </h2>
+                                    <p className='mr-xl:text-[14px] mr-lg:text-[13px] font-secondary txt-secondary mr-lg:!text-white text-black'>Best Selling Publisher offers a wide range of traditional publishing services for businesses of all sizes and authors of all genres. We have a team of experienced professionals who can help you through every step of the publishing process, from editing and formatting to publication and distribution. We also offer a variety of custom publishing options to fit your specific needs, such as digital publishing services and Amazon publishing services. </p>
                                     <br className='mr-md:block'/>
-                                    <p className='text-[14px] font-secondary txt-secondary mr-lg:!text-white text-black'> Best Selling Publisher is a cutting-edge books publisher that offers a suite of services designed to help authors navigate the ever-changing world of publishing. Our book publishing services are tailored to meet the needs of today's authors. From providing guidance on self-publishing to offering and publishing support, we are committed to helping authors succeed in an increasingly competitive marketplace. What sets Best Selling Publisher apart from other publishers is our commitment to quality. We work with each author on an individual basis, providing the personalized attention that is so essential to success in today's publishing landscape.
+                                    <p className='mr-xl:text-[14px] mr-lg:text-[13px]  font-secondary txt-secondary mr-lg:!text-white text-black'> Best Selling Publisher is a cutting-edge books publisher that offers a suite of services designed to help authors navigate the ever-changing world of publishing. Our book publishing services are tailored to meet the needs of today's authors. From providing guidance on self-publishing to offering and publishing support, we are committed to helping authors succeed in an increasingly competitive marketplace. What sets Best Selling Publisher apart from other publishers is our commitment to quality. We work with each author on an individual basis, providing the personalized attention that is so essential to success in today's publishing landscape.
                                     </p>
                                 </div>
                                 <div className='flex mr-lg:mt-10 mr-xl:mt-10 mr-md:gap-5 mr-xs:gap-2 items-center w-[80%] md:m-auto md:w-[70%] sm:w-[100%] xs:w-[100%] mr-xs:mt-3'>

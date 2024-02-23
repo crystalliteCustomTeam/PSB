@@ -2,22 +2,22 @@ import Head from 'next/head'
 // components
 import Banner from '@/fa-component/Banner'
 import Tradition from '@/fa-component/Tradition'
-// import Climax from '@/fa-component/Climax'
 import EnlistedNew from '@/fa-component/EnlistedNew'
-import Audience from '@/fa-component/Audience'
 import BroaderNew from '@/fa-component/BroaderNew'
-import Plans from '@/fa-component/Plans'
-import Bookshelf from '@/fa-component/Bookshelf'
 import Enlistedlogo from '@/fa-component/Enlistedlogo'
 import Exceptional from '@/fa-component/Exceptional'
-import SwiperTestimonial from '@/fa-component/swiperComponent'
+import SwiperComponent from '@/component/SwiperComponent'
+import BTM from '../component/bottomLogos';
+import CTA from '../component/cta3';
+import StoryPlot from '@/fa-component/StoryPlot';
+import PublishingNewComponent from '@/fa-component/PublishingNewComponent'
+import { MRHero } from '@/component'
 
-// import { Helmet } from 'react-helmet'
-// images
 import bannerImg from 'media/images/banner/amazonbanner.png'
 import img2 from 'media/images/banner/img2.png'
 import broader from 'media/images/flods/amazonpublishingbroder.png'
-import { MRHero } from '@/component'
+
+
 
 const amazonpublishing = () => {
   const newSpan = <h1 className='font-50 fw-700 font-primary txt-secondary mt-3 leading-tight'>Amazon Publishing Services Company To Make Your Book Available To Millions Of Readers!</h1>;
@@ -91,6 +91,8 @@ const amazonpublishing = () => {
         title="Amazon Publishing Services Company To Make Your Book Available To Millions Of Readers!"
         logos="images/banner/img2.png"
         counter={true}
+        classes="bg-right bg-center !py-[80px]"
+        beforeImg="mr-md:before:bg-[url('../../public/ahsan/amazon-publishing-banner.png')]"
       />
 
 
@@ -100,17 +102,24 @@ const amazonpublishing = () => {
       <Enlistedlogo />
 
       {/*========= Tradition fold =========*/}
-      <Tradition 
-      title="Top-Notch Amazon Self Publishing Services"
-      desc="Let our publishing pros make your books rock on amazon!"
+      <Tradition
+        title="Top-Notch Amazon Self Publishing Services"
+        desc="Let our publishing pros make your books rock on amazon!"
       />
 
       {/*========= Enlisted fold =========*/}
       <EnlistedNew
-        subtitle=""
-        title={"Some Questions Whirling Around Your <br/> Mind About Amazon KDP Publishing <br/> "}
-        desc="Have Answers Over Here!"
+        subtitle="Be a Part of the Best Sellers’ Fraternity"
+        title={"Some Questions Whirling Around Your Mind About <br/> Amazon KDP Publishing Have Answers Over Here!"}
         data={paratitles}
+      />
+      <PublishingNewComponent
+        subtitle="Enlist Yourself with the All-Time Best "
+        title="Your Book Deserves Only The"
+        desc="Best Selling Publishers."
+        bgImage="bg-[url('../../public/ahsan/bg_black.png')]"
+        classes="bg-cover bg-no-repeat"
+        textBG="bg-primary-100"
       />
       {/*========= Broader fold =========*/}
       <BroaderNew
@@ -118,23 +127,16 @@ const amazonpublishing = () => {
         desc="Amazon eBook publishing is a great way to get your work out without spending much money. If you're looking for a company that can help you publish your Amazon eBook, look no further than us! We have the experience and expertise to get your book onto Kindle and into the hands of readers worldwide. We know the ins and outs of the Amazon digital book publishing process and can help you navigate it successfully. We'll work with you to format and convert your book, design a professional cover, and create an engaging description. We'll also help you price your book competitively and promote it effectively. And, of course, we'll take care of all the technical details involved in getting your book published on Amazon. If you're ready to take your eBook publishing dreams to the next level, contact us today! We'll be happy to answer any of your questions and get you started on the path to Amazon success owing to our amazon publishing services!"
         image={broader}
       />
-      {/*========= Audience fold =========*/}
-      <Audience />
 
-      {/*========= Exceptional fold =========*/}
-      <Exceptional
-        title="KDP Amazon Self Publishing, A Reason for the <br/> Massive Success of Your Book!"
-        subtitle="At Best Selling Publisher, we offer professional KDP amazon self publishing services to help you publish your book. We have a team of experienced <br/> professionals who will guide you through the entire process, from editing and designing your book to marketing and selling it. Our books publisher also <br/> offers a wide range of other services, such as self publishing, eBook conversion, and book printing."
-      />
-
+      {/*========= CTA fold =========*/}
+      <BTM />
+      <CTA />
+  
       {/*========= swiperComponent fold =========*/}
-      <SwiperTestimonial />
-
-      {/*========= Plans fold =========*/}
-      <Plans />
+      <SwiperComponent />
 
       {/*========= Bookshelf fold =========*/}
-      <Bookshelf />
+      <StoryPlot />
     </>
   )
 }

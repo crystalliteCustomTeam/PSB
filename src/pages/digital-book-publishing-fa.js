@@ -6,12 +6,12 @@ import Tradition from '@/fa-component/Tradition'
 import EnlistedNew from '@/fa-component/digitalbookpublishing/EnlistedNew'
 import Audience from '@/fa-component/Audience'
 import BroaderNew from '@/fa-component/BroaderNew'
-import Plans from '@/fa-component/Plans'
-import Bookshelf from '@/fa-component/Bookshelf'
+import SwiperComponent from '@/component/SwiperComponent'
 import Enlistedlogo from '@/fa-component/Enlistedlogo'
-import Exceptional from '@/fa-component/Exceptional'
-import SwiperTestimonial from '@/fa-component/swiperComponent'
-
+import BTM from '../component/bottomLogos';
+import CTA from '../component/cta3';
+import StoryPlot from '@/fa-component/StoryPlot';
+import PublishingNewComponent from '@/fa-component/PublishingNewComponent'
 // import { Helmet } from 'react-helmet'
 // images
 import bannerImg from 'media/ahsan/digital-book-banner.png'
@@ -21,7 +21,7 @@ import { MRHero } from '@/component'
 
 const amazonpublishing = () => {
   const newSpan = <h1 className='font-50 fw-700 font-primary txt-secondary mt-3 leading-tight'>Digital Book Publishing<br /> Services To Help You Get <br /> Your Book Into The Hands <br />  Of Interested Readers!</h1>;
-    
+
   const bannertext = [
     {
       title: newSpan,
@@ -62,6 +62,8 @@ const amazonpublishing = () => {
         title="Digital Book Publishing Services To Help You Get Your Book Into The Hands Of Interested Readers!"
         logos="images/banner/img2.png"
         counter={true}
+        classes="bg-right bg-center !py-[80px]"
+        beforeImg="mr-md:before:bg-[url('../../public/ahsan/front-view-beutiful-woman-working.png')]"
       />
 
 
@@ -71,18 +73,24 @@ const amazonpublishing = () => {
       <Enlistedlogo />
 
       {/*========= Tradition fold =========*/}
-      <Tradition 
-      title="Our Best Seller Publishing Services"
-      desc="Let us help you make an impact through your words!"
+      <Tradition
+        title="Our Best Seller Publishing Services"
+        desc="Let us help you make an impact through your words!"
       />
 
       {/*========= Enlisted fold =========*/}
       <EnlistedNew
-        subtitle=""
-        title="Why Should You Hire Us,"
-        desc="The Digital Book Publishers?"
-        desc2=""
+        subtitle="Be a Part of the Best Sellers’ Fraternity"
+        title="Why Should You Hire Us, The Digital Book Publishers?"
         paragraph="Amazon KDP is a self publishing service from Amazon that allows authors to publish and distribute their books worldwide. It's a fast, easy and affordable way to get your book into the hands of readers looking for new titles to enjoy."
+      />
+      <PublishingNewComponent
+        subtitle="Enlist Yourself with the All-Time Best "
+        title="Your Book Deserves Only The"
+        desc="Best Selling Publishers."
+        bgImage="bg-[url('../../public/ahsan/bg_black.png')]"
+        classes="bg-cover bg-no-repeat"
+        textBG="bg-primary-100"
       />
       {/*========= Broader fold =========*/}
       <BroaderNew
@@ -92,24 +100,16 @@ const amazonpublishing = () => {
         "
         image={broader}
       />
-      {/*========= Audience fold =========*/}
-      <Audience />
-
-      {/*========= Exceptional fold =========*/}
-      <Exceptional
-        title="We Are TheBest Digital Book Publishers Bringing <br/>
-        A Plethora Of Services To Your Doorstep!"
-        subtitle="Our best digital book publishers bring sheer expertise in publishing to the table, ensuring you get the perfect publication of your asset. Our <br/> publishing packages don't create holes in your pocket, so rest assured you get the best results at accessible price points. "
-      />
+      {/*========= CTA fold =========*/}
+      <BTM />
+      <CTA />
 
       {/*========= swiperComponent fold =========*/}
-      <SwiperTestimonial />
-
-      {/*========= Plans fold =========*/}
-      <Plans />
+      <SwiperComponent />
 
       {/*========= Bookshelf fold =========*/}
-      <Bookshelf />
+      <StoryPlot />
+
     </>
   )
 }
