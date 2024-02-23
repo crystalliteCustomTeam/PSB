@@ -12,6 +12,7 @@ import SwiperComponents from '../component/SwiperComponent'
 import LogoSliders from '../component/bottomLogosNEW'
 import { MRHero } from '@/component';
 import OptimalMarketing from '@/component/OptimalMarketing';
+import StoryPlot from '@/fa-component/StoryPlot';
 
 
 
@@ -57,9 +58,9 @@ const about = () => {
         <PWMODE />
         <BTM />
         <CTA />
-        
         <WMODE />
         <SwiperComponents />
+        <StoryPlot />
       </main>
     </>
   )

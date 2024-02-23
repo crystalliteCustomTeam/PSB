@@ -13,7 +13,8 @@ import Bookshelf from '@/fa-component/Bookshelf'
 import Enlistedlogo from '@/fa-component/Enlistedlogo'
 import Exceptional from '@/fa-component/Exceptional'
 import SwiperTestimonial from '@/fa-component/swiperComponent'
-
+import SwiperComponents from '../component/SwiperComponent'
+import StoryPlotHome from '@/fa-component/StoryPlotHome';
 // import { Helmet } from 'react-helmet'
 // images
 import bannerImg from 'media/ahsan/home-banner.png'
@@ -113,9 +114,10 @@ const amazonpublishing = () => {
       <Advice />
       {/*========= Plans fold =========*/}
       <Plans />
-
+      <SwiperComponents />
+      <StoryPlotHome/>
       {/*========= Bookshelf fold =========*/}
-      <Bookshelf />
+      {/* <Bookshelf /> */}
     </>
   )
 }
