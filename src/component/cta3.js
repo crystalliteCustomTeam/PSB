@@ -93,7 +93,7 @@ const YourComponent = () => {
     <>
       <section className='section-container11 relative w-full overflow-hidden focus:scroll-auto '>
         <div className='w-full font-secondary bg-[#40BEE2]'>
-          <div className='mr-container grid mr-xl:grid-cols-2 mr-lg:grid-cols-2 mr-lg:text-left text-center justify-center text-white md:py-[50px] xs:py-[30px] sm:py-[30px]'>
+          <div className='mr-container grid mr-xl:grid-cols-2 mr-lg:grid-cols-2 mr-lg:!text-left text-center justify-center text-white md:py-[50px] xs:py-[30px] sm:py-[30px]'>
             <div className='items-center relative mr-xl:py-[150px] mr-lg:py-[150px]'>
               <span className='mr-2xl:text-[45px] mr-xl:text-[40px] px-2 py-1 bg-black text-white mr-xs:text-center font-primary font-bold mr-md:text-[35px] mr-sm:text-[35px] mr-xs:text-[25px] leading-normal mb-3'>Don’t Hesitate To Contact Us!</span>
               <h3 className='mr-2xl:text-[45px] mr-xl:text-[40px] xs:text-center font-primary font-bold mr-md:text-[35px] mr-sm:text-[30px] mr-xs:text-[25px] leading-normal mb-3'>Start Your Bestseller Journey—Publish with Us Today!"</h3>

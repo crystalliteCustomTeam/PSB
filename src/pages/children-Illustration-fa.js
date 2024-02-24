@@ -1,16 +1,14 @@
 import Head from 'next/head'
 // components
-import Banner from '@/fa-component/Banner'
 import Tradition from '@/fa-component/Tradition'
-// import Climax from '@/fa-component/Climax'
 import EnlistedNew from '@/fa-component/childrenIllustration/EnlistedNew'
-import Audience from '@/fa-component/Audience'
 import BroaderNew from '@/fa-component/BroaderNew'
-import Plans from '@/fa-component/Plans'
-import Bookshelf from '@/fa-component/Bookshelf'
 import Enlistedlogo from '@/fa-component/Enlistedlogo'
-import Exceptional from '@/fa-component/Exceptional'
-import SwiperTestimonial from '@/fa-component/swiperComponent'
+import SwiperComponent from '@/component/SwiperComponent'
+import BTM from '../component/bottomLogos';
+import CTA from '../component/cta3';
+import StoryPlot from '@/fa-component/StoryPlot';
+import PublishingNewComponent from '@/fa-component/PublishingNewComponent'
 
 // import { Helmet } from 'react-helmet'
 // images
@@ -21,7 +19,7 @@ import { MRHero } from '@/component'
 
 const amazonpublishing = () => {
   const newSpan = <h1 className='font-50 fw-700 font-primary txt-secondary mt-3 leading-tight'>Pinnacle Publishing For<br /> Children's Illustration<br />Book</h1>
-   
+
   const bannertext = [
     {
       title: newSpan,
@@ -62,6 +60,8 @@ const amazonpublishing = () => {
         title="Pinnacle Publishing For <br /> Children's Illustration Book"
         logos="images/banner/img2.png"
         counter={true}
+        classes="bg-right bg-center !py-[80px]"
+        beforeImg="mr-md:before:bg-[url('../../public/ahsan/rendering-cartoon-fantasy-scene-illustration.png')]"
       />
 
 
@@ -78,12 +78,20 @@ const amazonpublishing = () => {
 
       {/*========= Enlisted fold =========*/}
       <EnlistedNew
-        subtitle=""
-        title="How Best Self Publishing Services <br/> Companies Can Help You Succeed"
-        desc=" As A Published Author? "
-        desc2=""
+        subtitle="Be a Part of the Best Sellers’ Fraternity"
+        title="How Best Self Publishing Services Companies Can Help You Succeed As A Published Author? "
         paragraph="As an author, you have a lot of control over the success of your book. But did you know that there are companies out there whose sole purpose is to help you self-publish your book and make it a success? These are called self publishing book services companies, and they can provide everything from writing and editing to marketing and distribution.  "
       />
+
+      <PublishingNewComponent
+        subtitle="Enlist Yourself with the All-Time Best "
+        title="Your Book Deserves Only The"
+        desc="Best Selling Publishers."
+        bgImage="bg-[url('../../public/ahsan/bg_black.png')]"
+        classes="bg-cover bg-no-repeat"
+        textBG="bg-primary-100"
+      />
+
       {/*========= Broader fold =========*/}
       <BroaderNew
         subtitle=""
@@ -93,25 +101,15 @@ const amazonpublishing = () => {
         "
         image={broader}
       />
-      {/*========= Audience fold =========*/}
-      <Audience />
-
-      {/*========= Exceptional fold =========*/}
-      <Exceptional
-        title="We Are The Best Children's Illustration Book
-        <br/>
-        Publishing Company You Will Ever Find!"
-        subtitle="We offer a wide range of services to help you self-publish your book, including editing, cover design, printing, and distribution. Best Selling <br/> Publisher has a long history of working with authors to self-publish their books. We've helped many authors achieve success with their self-<br/>published books. Here’s what we bring to the table. "
-      />
+      {/*========= CTA fold =========*/}
+      <BTM />
+      <CTA />
 
       {/*========= swiperComponent fold =========*/}
-      <SwiperTestimonial />
-
-      {/*========= Plans fold =========*/}
-      <Plans />
+      <SwiperComponent />
 
       {/*========= Bookshelf fold =========*/}
-      <Bookshelf />
+      <StoryPlot />
     </>
   )
 }

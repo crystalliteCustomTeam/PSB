@@ -58,7 +58,6 @@ const about = () => {
         <PWMODE />
         <BTM />
         <CTA />
-        <WMODE />
         <SwiperComponents />
         <StoryPlot />
       </main>

@@ -49,7 +49,7 @@ const Enlisted = ({
             <section className={styles.enlistedFlod}>
                 <div className='mr-container px-md-5'>
                     <Row className='justify-content-center'>
-                        <Col xxl={12} lg={12} sm={12}>
+                        <Col xxl={10} lg={10} sm={12}>
                             <div className={`${styles.enlistedHead} text-center items-center`}>
                                 <h4 className='font-30 font-primary txt-primary'>{subtitle}</h4>
                                 <h2 className='font-45 fw-700 font-primary txt-secondary mb-3' dangerouslySetInnerHTML={{ __html: title }}>

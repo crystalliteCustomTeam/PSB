@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import styles from '@/styles/EnlistedNew.module.css'
+import styles from './EnlistedNew.module.css'
 import Bookshelf from '@/styles/Bookshelf.module.css'
 import { Container, Row, Col } from 'react-bootstrap'
 import "slick-carousel/slick/slick.css";
@@ -11,6 +11,7 @@ import after from 'media/images/flods/enlisted-after.png'
 import mid from 'media/images/flods/enlisted-mid.png'
 import Link from 'next/link';
 import { faParagraph } from '@fortawesome/free-solid-svg-icons'
+import { MRCTAGroup } from '@/component'
 // import { Slide } from "react-awesome-reveal";
 const data = [
     {
@@ -48,16 +49,16 @@ const Enlisted = ({
             <section className={styles.enlistedFlod}>
                 <div className='mr-container px-md-5'>
                     <Row className='justify-content-center'>
-                        <Col lg={12} sm={12}>
+                        <Col lg={10} sm={12}>
                             <div className={`${styles.enlistedHead} text-center`}>
                                 <h4 className='font-30 font-primary txt-primary'>{subtitle}</h4>
                                 <h2 className='font-50 fw-700 font-primary txt-secondary mb-3' dangerouslySetInnerHTML={{ __html: title }}>
                                 </h2>
                                 <h2 className='font-50 fw-500 text-justify font-primary txt-secondary mb-3 w-75' dangerouslySetInnerHTML={{ __html: desc2 }}/>
-                                <p/>
+                                <p dangerouslySetInnerHTML={{__html: paragraph}}/>
                             </div>
                         </Col>
-                        <Col lg={8}>
+                        <Col xxl={8} lg={8}>
                             <div className={`${styles.enlisContnt} text-center mt-3`}>
                                 <div className={styles.enlisImg}>
                                     <Image quality={100} loading="lazy" className='img-fluid'
@@ -79,7 +80,7 @@ const Enlisted = ({
                                         <div className='pb-5 '>
                                             {data?.map((e, i) => (
                                                 <div key={i}>
-                                                    <p className='font-30 font-primary txt-secondary mt-5' dangerouslySetInnerHTML={{ __html: e.paraTitle }} />
+                                                    <p className='font-30 font-primary txt-secondary mt-[25px]' dangerouslySetInnerHTML={{ __html: e.paraTitle }} />
                                                     <p className='font-15 font-secondary txt-secondary ' dangerouslySetInnerHTML={{ __html: e.paraSubTitle }} />
                                                 </div>
                                             ))}
@@ -92,15 +93,8 @@ const Enlisted = ({
                                     />
                                 </div>
                             </div>
-                            <div className='justify-content-center w-75 mx-auto'>
-                                <p className='py-3'>Best Selling Publisher brings your dream of book writing to life.</p>
-                                <div className={`${Bookshelf.bttns} dislpay-flex`}>
-                                    <Link className='btns btnBlack' href="javascript:$zopim.livechat.window.show()">Let's discuss</Link>
-                                    <Link className='btns btnTransprnt text-black' href="tel:800-781-9093">800-781-9093</Link>
-                                </div>
-                            </div>
-
                         </Col>
+                        <MRCTAGroup classes='justify-center mt-5' />
                     </Row>
                 </div>
             </section>

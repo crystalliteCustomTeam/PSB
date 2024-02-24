@@ -2,6 +2,7 @@ import React from 'react'
 import styles from '@/styles/Enlisted.module.css'
 import { Container, Row, Col } from 'react-bootstrap'
 import Link from 'next/link';
+import { faParagraph } from '@fortawesome/free-solid-svg-icons';
 
 const PublishingNewComponent = ({
     subtitle,

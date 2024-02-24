@@ -23,16 +23,16 @@
 }
 
 .para2 {
-  margin-top: 80px;
+  margin-top: 110px;
 }
 
 .para3 {
-  margin-top: 80px;
+  margin-top: 130px;
 
 }
 
 .para4 {
-  margin-top: 100px;
+  margin-top: 120px;
 }
 
 .para5 {
@@ -112,7 +112,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .midImg {
     margin-left: 0px;
   }
@@ -165,7 +165,7 @@
   }
 }
 
-@media (min-width:390px) and (max-width: 640px) {
+@media screen and (max-width: 992px) {
   .para2 {
     margin-top: 102px;
   }

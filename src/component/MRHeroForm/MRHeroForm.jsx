@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./MRHeroForm.module.css"
 import Router from "next/router";
-const MRHeroForm = () => {
+const MRHeroForm = ({classes = ""}) => {
     const [score, setScore] = useState("APPLY FOR IT");
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -35,7 +35,7 @@ const MRHeroForm = () => {
 
     }
     return (
-        <div className={`${styles.leadforms} relative !p-5 mr-lg:!p-8 mr-xl:!py-10 w-[80%] mr-md:w-[100%] mr-lg:w-[70%]`}>
+        <div className={`${styles.leadforms} relative !p-5 mr-lg:!p-8 mr-xl:!py-10 w-[80%] mr-md:w-[100%] mr-lg:w-[70%] ${classes}`}>
             <h3 className="font-primary font-semibold text-[25px] mr-lg:text-[30px] mr-xl:text-[30px] leading-normal text-center mb-3 text-white">
                 Fill Your  Registration
             </h3>

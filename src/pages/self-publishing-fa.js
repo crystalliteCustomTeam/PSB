@@ -78,10 +78,10 @@ const amazonpublishing = () => {
       {/*========= Enlisted fold =========*/}
       <EnlistedNew
         subtitle="Be a Part of the Best Sellers’ Fraternity"
-        title="How Best Self Publishing Services Companies Can <br className='mr-md:block hidden'/> Help You Succeed As A Published Author? "
+        title="How Best Self Publishing Services Companies Can Help You Succeed As A Published Author? "
         desc=""
         desc2=""
-        paragraph="As an author, you have a lot of control over the success of your book. But did you know that there are companies out there whose sole purpose is to help you self-publish your <br/> book and make it a success? These are called self publishing book services companies, and they can provide everything from writing and editing to marketing and distribution. "
+        paragraph="As an author, you have a lot of control over the success of your book. But did you know that there are companies out there whose sole purpose is to help you self-publish your book and make it a success? These are called self publishing book services companies, and they can provide everything from writing and editing to marketing and distribution. "
       />
       <PublishingNewComponent
         subtitle="Enlist Yourself with the All-Time Best "

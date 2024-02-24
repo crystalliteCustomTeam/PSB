@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import styles from '@/styles/EnlistedNew.module.css'
+import styles from './EnlistedNew.module.css'
 import Bookshelf from '@/styles/Bookshelf.module.css'
 import { Container, Row, Col } from 'react-bootstrap'
 import "slick-carousel/slick/slick.css";
@@ -10,6 +10,7 @@ import before from 'media/images/flods/enlisted-before.png'
 import after from 'media/images/flods/enlisted-after.png'
 import mid from 'media/images/flods/enlisted-mid.png'
 import Link from 'next/link';
+import { MRCTAGroup } from '@/component'
 // import { Slide } from "react-awesome-reveal";
 
 const data = [
@@ -44,14 +45,13 @@ const Enlisted = ({
     return (
         <>
              <section className={styles.enlistedFlod}>
-                <Container fluid className='px-md-5'>
-                    <Row className='justify-content-left'>
-                        <Col lg={8} sm={12}>
-                            <div className={`${styles.enlistedHead} text-left`}>
+                <div className='mr-container px-md-5'>
+                    <Row className='justify-content-center'>
+                        <Col lg={10} sm={12}>
+                            <div className={`${styles.enlistedHead} text-center`}>
                                 <h4 className='font-30 font-primary txt-primary'>{subtitle}</h4>
                                 <h2 className='font-50 fw-500 font-primary txt-secondary mb-3' dangerouslySetInnerHTML={{ __html: title }}>
                                 </h2>
-                                <span className='bg-black txt-white mt-2 w-75 p-1 font-50 fw-500 d-block'>{desc}</span>
                                 <h2 className='font-50 fw-500 font-primary txt-secondary mb-3 w-75' dangerouslySetInnerHTML={{ __html: desc2 }} />
                             </div>
                         </Col>
@@ -90,17 +90,10 @@ const Enlisted = ({
                                     />
                                 </div>
                             </div>
-                            <div className='justify-content-center w-75 mx-auto'>
-                                <p className='py-3'>Best Selling Publisher brings your dream of book writing to life.</p>
-                                <div className={`${Bookshelf.bttns} dislpay-flex`}>
-                                    <Link className='btns btnBlack' href="javascript:$zopim.livechat.window.show()">Let's discuss</Link>
-                                    <Link className='btns btnTransprnt text-black' href="tel:800-781-9093">800-781-9093</Link>
-                                </div>
-                            </div>
-
                         </Col>
+                        <MRCTAGroup classes='justify-center mt-5' />
                     </Row>
-                </Container>
+                </div>
             </section>
 
 

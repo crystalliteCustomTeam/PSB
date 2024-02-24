@@ -20,6 +20,7 @@ import before from 'media/images/flods/tradition-before.png'
 
 // mport { Fade } from "react-awesome-reveal";
 import Link from 'next/link'
+import { MRCTAGroup } from '@/component'
 
 const Tradition = ({
     title,
@@ -59,9 +60,9 @@ const Tradition = ({
     const openLiveChat = (e) => {
         e.preventDefault();
         if (window.LiveChatWidget) {
-          window.LiveChatWidget.call('maximize');
+            window.LiveChatWidget.call('maximize');
         }
-      };
+    };
 
 
     return (
@@ -130,16 +131,12 @@ const Tradition = ({
                                             alt='Best_Publisher'
                                         />
                                     </div>
-                                  
+
 
                                 </Slider>
                             </div>
-                            <div className={`${Bookshelf.bttns} d-flex mt-5 justify-content-center`}>
-                                <Link className='btns btnPrimary' onClick={openLiveChat} href="#">Let's discuss</Link>
-                                <Link className='btns btnSecondary' href="tel:800-781-9093">800-781-9093</Link>
-                            </div>
                         </Col>
-
+                        <MRCTAGroup classes='justify-center !mt-[40px]' />
                     </Row>
                 </div>
             </section>
