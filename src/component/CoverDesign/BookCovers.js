@@ -7,15 +7,13 @@ import React from 'react';
 
 const PublishingSlider = () => {
     var settings = {
-        dots: true,
+        dots: false,
         spacing: 50,
-        infinite: true,
+        infinite: false,
         speed: 500,
         slidesToShow: 5,
-        autoplay: true,
-        slidesToScroll: 5,
-        nextArrow: <Image quality={95} src={'/assets/images/newimg/right-arrow.png'} className='img-fluid' width={500} height={500}  alt='slider-arrow'/>,
-        prevArrow: <Image quality={95} src={'/assets/images/newimg/prev-arrow.png'} className='img-fluid' width={500} height={500} alt='slider-arrow'/>,
+        autoplay: false,
+        slidesToScroll: 1,
         responsive: [
             {
                 breakpoint: 991,
@@ -47,12 +45,12 @@ const PublishingSlider = () => {
             <section className='publishing-slider font-secondary py-10 md:py-0 xs:py-0'>
                 <div className='container max-w-7xl lg:max-w-6xl justify-center mt-10 testimonial mx-auto mb-20 testimonial md:px-5 xs:px-7'>
                     <div className='py-10 text-center xs:py-5'>
-                        <h6 className='text-[30px] leading-tight font-primary text-[#40BEE2] font-semibold sm:text-base xs:text-base'>Book cover</h6>
-                        <h3 className='font-bold font-primary text-4xl py-2'>Types of cover designs</h3>
+                        <h6 className='text-[30px] leading-tight font-primary text-[#40BEE2] font-semibold sm:text-base xs:text-base'>Book Cover</h6>
+                        <h3 className='font-bold font-primary text-4xl py-2'>Types Of Cover Designs</h3>
                         {/* <p className='w-[62%] mx-auto xs:w-[100%]'>At , we provide a variety of book trim size options, cover styles, bookbinding kinds, and other elevated possibilities. We can do whatever you can think of.</p> */}
                     </div>
                     <div className='justify-center  grid grid-rows-1 grid-cols-1 gap-4 space-x-5 items-center space-y-10 sm:px-14 '>
-                        <Slider {...settings}>
+                        <Slider {...settings} className='__slides'>
                             <div className='mx-auto px-2'>
                                 <div className='relative'>
                                     <Image quality={95} src='/assets/images/newimg/bold-typography.png' width={240} height={240} alt="bold-typography" />
@@ -64,7 +62,7 @@ const PublishingSlider = () => {
                             </div>
                             <div className='publishing relative  px-2'>
                                 <div className='relative'>
-                                    <Image quality={95} src='/assets/images/newimg/Illustrations.png'  width={240} height={240} alt="Illustrations" />
+                                    <Image quality={95} src='/assets/images/newimg/Illustrations.png' width={240} height={240} alt="Illustrations" />
                                     <div >
                                         <Image quality={95} src='/assets/images/newimg/rectangle11.png' width={240} height={240} alt="before-image" className='absolute top-0 right-0 bottom-0 left-0' />
                                         <h6 className='absolute right-0 bottom-[20px] text-center text-white left-0'>Illustrations</h6>
@@ -73,7 +71,7 @@ const PublishingSlider = () => {
                             </div>
                             <div className='publishing relative  px-2'>
                                 <div className='relative'>
-                                    <Image quality={95} src='/assets/images/newimg/Retro.png' width={240} height={240}  alt="Retro" />
+                                    <Image quality={95} src='/assets/images/newimg/Retro.png' width={240} height={240} alt="Retro" />
                                     <div >
                                         <Image quality={95} src='/assets/images/newimg/rectangle11.png' width={240} height={240} alt="before-image" className='absolute top-0 right-0 bottom-0 left-0' />
                                         <h6 className='absolute right-0 bottom-[20px] text-center text-white left-0'>Retro</h6>

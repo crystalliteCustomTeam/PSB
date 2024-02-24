@@ -78,7 +78,7 @@ const ParentComponent = () => {
               </div>
             </div>
             <div>
-              <Image quality={95} src='/assets/images/newimg/dust-cover.png' className='mx-auto' width={500} height={600} alt='Tablist Images' />
+              <Image quality={95} src='/imageAR/cover-design3.png' className='block mx-auto' width={500} height={600} alt='Tablist Images' />
             </div>
 
           </div>

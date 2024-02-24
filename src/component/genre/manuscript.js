@@ -4,11 +4,11 @@ const manuscript = () => {
     return (
         <>
             <section className=''>
-                <div className='container max-w-7xl lg:max-w-6xl mx-auto py-28 font-secondary md:px-5 xs:py-10 xs:px-5 sm:px-5'>
+                <div className='mr-container mr-xl:!py-28 mr-lg:py-20 mr-md:py-14 py-10 font-secondary'>
                     <div className='grid grid-cols-2 gap-x-20 grid-rows-1 justify-between sm:grid-cols-1 xs:grid-cols-1 sm:gap-10 xs:justify-normal xs:gap-10 '>
                         <div>
                             <h6 className='text-[30px] text-[#40BEE2] capitalize font-primary font-semibold md:w-[80%]'>Our outstanding approach to writing</h6>
-                            <h3 className='font-primary w-[85%] leading-[50px] lg:py-5 font-bold text-[40px] xs:w-[100%] sm:text-3xl sm:py-5 xs:text-3xl md:leading-[45px] md:py-3 xs:py-5'>We Will Create a Manuscript Free of Errors</h3>
+                            <h3 className='font-primary leading-[50px] lg:py-5 font-bold text-[40px] sm:text-3xl sm:py-5 xs:text-3xl md:leading-[45px] md:py-3 xs:py-5'>We Will Create a Manuscript <br className='mr-xl:block hidden'/> Free of Errors</h3>
                             <p className='text-base text-justify'>Our writers work tirelessly to produce a manuscript that is not only devoid of errors but also reads well and requires much less micromanagement in the form of revisions.</p>
                         </div>
                         <div>

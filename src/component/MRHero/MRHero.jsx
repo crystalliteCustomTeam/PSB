@@ -16,9 +16,9 @@ const MRHero = ({
 }) => {
     return (
         <section>
-            <div className={`relative pt-[80px] ${fullImg} bg-no-repeat ${classes} !border-b-[#00c4e4] border-solid border-b-[1px]`}>
+            <div className={`relative pt-[80px] ${fullImg} bg-[10% 10%] bg-no-repeat ${classes} !border-b-[#00c4e4] border-solid border-b-[1px]`}>
                 <div className="mr-container">
-                    <div className="grid grid-cols-1 mr-md:grid-cols-12 items-center ${beforeImg} gap-y-5 mr-md:gap-y-0 mr-md:gap-x-4 ">
+                    <div className="grid grid-cols-1 mr-md:grid-cols-12 items-center gap-y-5 mr-md:gap-y-0 mr-md:gap-x-4 ">
                         <div className={`mr-md:col-span-7 mr-lg:col-span-6`}>
                             {subTitle && <h1 className="text-[18px] uppercase leading-none font-sans font-semibold border-[3px] border-primary-100 text-secondary-100 w-max p-2 !mb-4">{subTitle}</h1>}
                             {title && subTitle ? <h2 className="text-[30px] mr-lg:text-[35px] mr-xl:text-[40px] font-sans font-extrabold leading-tight text-secondary-200 mb-4" dangerouslySetInnerHTML={{ __html: title }} /> : <h1 className="text-[30px] mr-lg:text-[35px] mr-xl:text-[40px] font-sans font-extrabold leading-tight text-secondary-200 mb-4" dangerouslySetInnerHTML={{ __html: title }} />}

@@ -66,7 +66,7 @@ const ProcessWorkMode = () => {
 
     return (
         <>
-            <section className="w-full pb-20 md:pb-20 xs:pb-5 font-secondary">
+            <section className="w-full py-20 md:py-20 xs:py-5 font-secondary">
                 <div className="container max-w-7xl py-5 text-[#1d1d1f] xs:py-16">
                     <div className="text-center mb-20 md:mb-10 xs:mb-5 justify-center">
                         <h6 className='text-[30px] font-primary text-[#40BEE2] font-semibold'>

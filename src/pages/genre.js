@@ -7,10 +7,8 @@ import CTA from '../component/cta3';
 import SwiperComponents from '../component/SwiperComponent'
 import LogoSliders from '../component/bottomLogosNEW'
 import { MRHero } from '@/component';
-
-
-
-
+import PublishingNewComponent from "@/fa-component/PublishingNewComponent"
+import StoryPlot from "@/fa-component/StoryPlot"
 
 const about = () => {
 
@@ -35,11 +33,20 @@ const about = () => {
         />
         <LogoSliders />
         <WEARE />
+        <PublishingNewComponent
+        subtitle="Enlist Yourself with the All-Time Best "
+        title="Your Book Deserves Only The"
+        desc="Best Selling Publishers."
+        bgImage="bg-[url('../../public/ahsan/bg_black.png')]"
+        classes="bg-cover bg-no-repeat"
+        textBG="bg-primary-100"
+      />
         <MANUSCRIPT />
-        <CTA />
         <BTM />
+        <CTA />
         <WMODE />
         <SwiperComponents />
+        <StoryPlot/>
       </main>
     </>
   )
