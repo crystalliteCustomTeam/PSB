@@ -10,7 +10,7 @@ import CTA from '../component/cta3';
 import BroaderNew from '@/fa-component/BroaderNew'
 import StoryPlot from '@/fa-component/StoryPlot';
 import PublishingNewComponent from '@/fa-component/PublishingNewComponent'
-import LogoSliders from '../component/bottomLogosNEW'
+import Enlistedlogo from '@/fa-component/Enlistedlogo'
 import { MRHero } from '@/component';
 import broader from 'media/ahsan/spacious-bookstore.png'
 import Head from 'next/head';
@@ -64,7 +64,7 @@ const about = () => {
           classes="bg-right bg-center !py-[80px]"
           beforeImg="mr-md:before:bg-[url('../../public/ahsan/handsome-guy-study-library.png')]"
         />
-        <LogoSliders />
+        <Enlistedlogo />
         <Tradition
           title="Top-Notch Children's Illustration Services "
           desc="Our Skilled Publishing Experts Can Guide You Through The Publishing Process"
