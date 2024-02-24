@@ -16,9 +16,9 @@ const demandingSpecilaist = () => {
         <>
             <section className="py-[80px] font-secondary">
                 <div className='container max-w-7xl lg:max-w-6xl'>
-                    <div className='flex gap-5 md:grid sm:grid sm:grid-cols-1 xs:grid xs:grid-cols-1 md:px-10'>
+                    <div className='flex gap-5 md:grid sm:grid sm:grid-cols-1 xs:grid items-center xs:grid-cols-1 md:px-10'>
                         <div className='basis-[40%] items-center md:hidden sm:hidden xs:hidden'>
-                            <Image quality={95} src='/imageAR/book-editing.png' width={600} height={300} alt='Low Upfront Cost' className=' hover:-translate-y-1 hover:scale-110' />
+                            <Image quality={95} src='/imageAR/book-editing2.png' width={600} height={300} alt='Low Upfront Cost' className=' hover:-translate-y-1 hover:scale-110' />
                         </div>
                         <div className='basis-[60%] xs:basis-[100%] sm:px-10 '>
                             <div className='w-[90%] md:w-[100%]  xs:py-5 xs:px-5 sm:w-[100%] xs:w-[100%]'>

@@ -11,6 +11,11 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import Router from "next/router";
 import Link from "next/link";
+import Image from "next/image";
+import Facebook from "../../public/imageAR/facebook.png"
+import Insta from "../../public/imageAR/insta.png"
+import Twitter from "../../public/imageAR/twitter.png"
+import LinkedIn from "../../public/imageAR/linkedIn.png"
 
 const Bloginner = () => {
   const [score, setScore] = useState("Submit Form");
@@ -106,7 +111,7 @@ const Bloginner = () => {
               <div className="basis-[30%] mb-4 flex items-center space-x-2 justify-center">
                 <button
                   type="submit"
-                  className="w-full bg-[#ededed] text-[#00c0e4] px-10 py-2 hover:bg-[#00c0e4] hover:text-[#1d1d1f]"
+                  className="w-full bg-[black] text-[#00c0e4] font-semibold px-10 py-2 hover:bg-[#00c0e4] hover:text-[#1d1d1f]"
                 >
                   {score}
                 </button>
@@ -119,27 +124,29 @@ const Bloginner = () => {
                 Contact details
               </h4>
               <ul className="text-sm text-white">
-                <li className="mb-4 border-b-2 border-[#f9f9f9]">
-                  <FontAwesomeIcon icon={faEnvelope} className="px-2" /> info@educationlogo.com
+                <li className="mb-4 border-b-2 flex items-center gap-x-1 border-[#f9f9f9]">
+                  <FontAwesomeIcon icon={faEnvelope} width={30} height={30} className="px-2" /> <span className="block">
+                  info@educationlogo.com
+                  </span>
                 </li>
-                <li className="mb-4 border-b-2 border-[#ffffff]">
-                  <FontAwesomeIcon icon={faPhone} className="px-2" />
-                  +123-456-7890
+                <li className="mb-4 border-b-2 flex items-center gap-x-1 border-[#ffffff]">
+                  <FontAwesomeIcon icon={faPhone}  width={30} height={30} className="px-2" />
+                  <span className="block">+123-456-7890</span>
                 </li>
               </ul>
               <h3 className=" text-[20px] font-bold mt-3 text-white">Follow Us:</h3>
               <div className="flex space-x-2 basis-8/12 items-center text-[12px] xs:text-center xs:mx-auto">
                 <Link href="https://www.facebook.com/Best-Selling-Publisher-103021665842266/?ref=page_internal">
-                  <FontAwesomeIcon icon={faFacebookF} className="rounded-[50%] text-[#fff] border-2 p-1 h-3 w-3" />
+                <Image src={Facebook} alt="Icons" width={7} height={13} className="p-1 h-4 w-2" />
                 </Link>
                 <Link href="https://twitter.com/bspublisher">
-                  <FontAwesomeIcon icon={faTwitter} className="rounded-[50%] text-[#fff] border-2 p-1 h-3 w-3" />
+                  <Image src={Insta} alt="Icons" width={7} height={13} className="p-1 h-4 w-2" />
                 </Link>
                 <Link href="javascript:;" target="_blank">
-                  <FontAwesomeIcon icon={faInstagram} className="rounded-[50%] text-[#fff] border-2 p-1 h-3 w-3" />
+                  <Image src={Twitter} alt="Icons" width={7} height={13} className="p-1 h-4 w-2" />
                 </Link>
                 <Link href="javascript:;" target="_blank" >
-                  <FontAwesomeIcon icon={faLinkedinIn} className="rounded-[50%] text-[#fff] border-2 p-1 h-3 w-3" />
+                  <Image src={LinkedIn} alt="Icons" width={7} height={13} className="p-1 h-4 w-2" />
                 </Link>
               </div>
             </div>

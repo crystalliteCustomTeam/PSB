@@ -30,14 +30,16 @@ const blog = () => {
          <MRHero
           title="Witness Excellence By <br /> Working With The Top <br /> Industry Specialists"
           desc="Your dream of becoming a successful author is our mission. So, don’t hold back; get ahold of us today."
-          containImg="images/newimg/contact-banner.png"
+          // containImg="images/newimg/contact-banner.png"
           logos="images/banner/img2.png"
           form={false}
           counter={true}
+          classes='!py-[80px] bg-[#fefefe] bg-right bg-center'
+          fullImg="bg-[url('../../public/imageAR/portrait-woman-customer-service-worker.png')]"
         />
         <ContactModel></ContactModel>
-        <CTA />
         <BTM />
+        <CTA />
         <WMODE />
         <SwiperComponents />
 

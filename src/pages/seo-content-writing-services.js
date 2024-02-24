@@ -1,9 +1,4 @@
 import React from 'react'
-import Link from 'next/link';
-
-
-import FEATURED from '../component/SeoContentWriting/featuredSec'
-import HEADERCONTACTNEW from '../component/headerContactformNew'
 import LETUSHELPSEO from '../component/SeoContentWriting/LetUsHelpSEO'
 import GhostWriting from '@/component/ghostWritingServices/ghostWriting'
 import CREATIVEGHOSTWRITERS from '../component/ghostWritingServices/creativeGhostWriters'
@@ -11,7 +6,7 @@ import WMODE from '../component/workMode1'
 import CTA3 from '../component/cta3';
 import BTM from '../component/bottomLogos';
 import SwiperComponents from '../component/SwiperComponent'
-
+import StoryPlot from "@/fa-component/StoryPlot"
 import LogoSliders from '../component/bottomLogosNEW'
 import { MRHero } from '@/component';
 
@@ -40,9 +35,11 @@ const Ghostwriting = () => {
           </>}
         /> */}
         <MRHero
-          title="Amplify Your Brand <br /> Image Through SEO <br /> Content Writing"
+          title="Amplify Your Brand Image  <br /> Through SEO Content Writing"
           desc="Create SEO-optimized content that converts and attracts more organic search traffic to boost your online visibility and credibility"
           logos="images/banner/img2.png"
+          classes='bg-[#fefefe] !py-[80px]'
+          beforeImg="mr-md:before:bg-[url('../../public/imageAR/seo-search-engine.png')]"
           counter={true}
         />
         <LogoSliders></LogoSliders>
@@ -55,7 +52,7 @@ const Ghostwriting = () => {
         <BTM />
         <WMODE />
         <SwiperComponents />
-
+        <StoryPlot/>
       </main>
     </>
   )
