@@ -3,6 +3,7 @@ import styles from '@/styles/Enlisted.module.css'
 import { Container, Row, Col } from 'react-bootstrap'
 import Link from 'next/link';
 import { faParagraph } from '@fortawesome/free-solid-svg-icons';
+import { MRCTAGroup } from '@/component';
 
 const PublishingNewComponent = ({
     subtitle,
@@ -10,7 +11,8 @@ const PublishingNewComponent = ({
     desc,
     bgImage,
     classes = "",
-    textBG
+    textBG,
+    txtBlK
 }) => {
     const openLiveChat = (e) => {
         e.preventDefault();
@@ -25,14 +27,14 @@ const PublishingNewComponent = ({
                     <Row className='justify-content-center'>
                         <Col lg={10}>
                             <div className={`${styles.enlistedHead} text-center`}>
-                                <h4 className='font-30 font-primary text-white'> {subtitle}  </h4>
-                                <h2 className='font-50 fw-500 font-primary text-white mb-3'>{title}<br /> <span className={`${textBG} color-white p-1 mt-2 d-block house`}> {desc}</span></h2>
+                                <h4 className={`font-30 font-primary ${txtBlK} text-white`}> {subtitle}  </h4>
+                                <h2 className={`font-50 fw-500 font-primary ${txtBlK} text-white mb-3`}>{title}<br /> <span className={`${textBG}  color-white p-1 mt-2 d-block house`}> {desc}</span></h2>
                             </div>
-
-                            <div className="bttns1black mt-4 mb-5 mb-md-0">
+                            <MRCTAGroup classes='justify-center mt-4' />
+                            {/* <div className="bttns1black mt-4 mb-5 mb-md-0">
                                 <Link className="btns btnBlack !bg-primary-100" onClick={openLiveChat} href="#">Get Onboard </Link>
                                 <Link className="btns btnTransprnt !text-white !border-[#fff]" href="tel:800-781-9093">(800) 781-9093</Link>
-                            </div>
+                            </div> */}
                         </Col>
 
                     </Row>

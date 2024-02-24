@@ -92,9 +92,10 @@ const Enlisted = ({
                                         alt='Best_Publisher'
                                     />
                                 </div>
-                            </div>
+                            </div>  
+                            <MRCTAGroup classes='justify-center mt-5' />
                         </Col>
-                        <MRCTAGroup classes='justify-center mt-5' />
+                      
                     </Row>
                 </div>
             </section>

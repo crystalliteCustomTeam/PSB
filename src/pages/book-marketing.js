@@ -9,7 +9,7 @@ import PWMODE from '../component/marketing/ProcessWorkMode'
 import BTM from '../component/bottomLogos';
 import CTA from '../component/cta3';
 import SwiperComponents from '../component/SwiperComponent'
-import LogoSliders from '../component/bottomLogosNEW'
+import Enlistedlogo from '@/fa-component/Enlistedlogo'
 import { MRHero } from '@/component';
 import OptimalMarketing from '@/component/OptimalMarketing';
 import StoryPlot from '@/fa-component/StoryPlot';
@@ -53,7 +53,7 @@ const about = () => {
           classes='bg-right bg-center !py-[80px]'
           beforeImg="mr-md:before:bg-[url('../../public/ahsan/young-beautiful-woman.png')]"
         />
-        <LogoSliders />
+        <Enlistedlogo />
         <WEARE />
         <PWMODE />
         <BTM />

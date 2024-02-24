@@ -11,7 +11,7 @@ import PUBLISHING from '../component/printing/publishing'
 import BTM from '../component/bottomLogos';
 import CTA from '../component/cta3';
 import SwiperComponents from '../component/SwiperComponent'
-import LogoSliders from '../component/bottomLogosNEW'
+import Enlistedlogo from '@/fa-component/Enlistedlogo'
 import { MRHero } from '@/component';
 import StoryPlot from '@/fa-component/StoryPlot';
 import PublishingNewComponent from '@/fa-component/PublishingNewComponent';
@@ -51,14 +51,22 @@ const about = () => {
           classes='bg-right bg-center !py-[80px]'
           beforeImg="mr-md:before:bg-[url('../../public/imageAR/bookstore-with-bookshelf.png')]"
         />
-        <LogoSliders></LogoSliders>
+        <Enlistedlogo/>
         <PWMODE
           subTitle="Our Comprehensive Publishing Services"
           title="Are Streamlined To Help Our Clients Bring <br/> Their Ideas Onto Paper"
           desc="Our excellence stems from our unique and client-centric approach. We have catered to projects of various genres, formats, and platforms. <br/> Let us do the walking and talking on your behalf and see the exceptional results yourself."
         />
         <PUBLISHING />
-        <PublishingNewComponent/>
+        <PublishingNewComponent
+          subtitle="Enlist Yourself with the All-Time Best "
+          title="Your Book Deserves Only The"
+          desc="Best Selling Publishers."
+          bgImage="bg-[url('../../public/ahsan/WhiteBG.png')]"
+          classes="bg-cover bg-no-repeat"
+          textBG="bg-black"
+          txtBlK="!text-black"
+        />
         <BTM />
         <CTA />
         <SwiperComponents />

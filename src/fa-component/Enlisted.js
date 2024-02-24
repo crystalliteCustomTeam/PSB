@@ -11,6 +11,7 @@ import after from 'media/images/flods/enlisted-after.png'
 import mid from 'media/images/flods/enlisted-mid.png'
 import Link from 'next/link';
 import PublishingNewComponent from './PublishingNewComponent'
+import { MRCTAGroup } from '@/component'
 // import { Slide } from "react-awesome-reveal";
 
 
@@ -24,9 +25,9 @@ const Enlisted = ({
     const openLiveChat = (e) => {
         e.preventDefault();
         if (window.LiveChatWidget) {
-          window.LiveChatWidget.call('maximize');
+            window.LiveChatWidget.call('maximize');
         }
-      };
+    };
 
     return (
         <>
@@ -70,9 +71,9 @@ const Enlisted = ({
                                             <p className='font-30 font-primary txt-secondary mt-5'>Industry Experts</p>
                                             <p className='font-15 font-secondary txt-secondary'>Our best seller publishing team is composed of industry experts.</p>
                                             <p className='font-30 font-primary txt-secondary mt-5'>Range of Services</p>
-                                            <p className='font-15 font-secondary txt-secondary'>We offer a wide range of book publishing services, including manuscript <br/> editing, formatting, and publishing consultation.</p>
+                                            <p className='font-15 font-secondary txt-secondary'>We offer a wide range of book publishing services, including manuscript <br /> editing, formatting, and publishing consultation.</p>
                                             <p className='font-30 font-primary txt-secondary mt-5'>Goal-Driven</p>
-                                            <p className='font-15 font-secondary txt-secondary'>We have a proven track record of success in helping our  authors<br/> achieve their publishing goals.</p>
+                                            <p className='font-15 font-secondary txt-secondary'>We have a proven track record of success in helping our  authors<br /> achieve their publishing goals.</p>
                                             <p className='font-30 font-primary txt-secondary mt-5'>Affordable Packages</p>
                                             <p className='font-15 font-secondary txt-secondary'>We offer competitive pricing and terms that are favorable to our authors.</p>
                                             <p className='font-30 font-primary txt-secondary mt-5'>Passion and Creativity</p>
@@ -86,36 +87,21 @@ const Enlisted = ({
                                     />
                                 </div>
                             </div>
-                            <div className={`${Bookshelf.bttns} dislpay-flex mt-5 justify-content-center`}>
-                                <Link className='btns btnPrimary' onClick={openLiveChat} href="#">Let's discuss</Link>
-                                <Link className='btns btnSecondary' href="tel:800-781-9093">800-781-9093</Link>
-                            </div>
+                            <MRCTAGroup classes='justify-center mt-5' />
                         </Col>
+
                     </Row>
                 </div>
             </section>
-
-
-
-            {/* <section className={styles.enlistedSlide}>
-                <Container className='px-md-5'>
-                    <Row className='justify-content-center'>
-                        <Col lg={10}>
-                            <div className={`${styles.enlistedHead} text-center`}>
-                                <h4 className='font-30 font-primary color-white'>Enlist Yourself with the All-Time Best  </h4>
-                                <h2 className='font-50 fw-500 font-primary color-white mb-3'>Your book deserves only the <span className='bg-primary-100 color-white p-1 mt-2 d-block house'> Best Selling Publishers.</span></h2>
-                            </div>
-
-                            <div className="bttns1black mt-4 mb-5 mb-md-0">
-                                <Link className="btns btnBlack !bg-primary-100" onClick={openLiveChat} href="#">Get Onboard </Link>
-                                <Link className="btns btnTransprnt" href="tel:800-781-9093">(800) 781-9093</Link>
-                            </div>
-                        </Col>
-
-                    </Row>
-                </Container>
-            </section> */}
-            <PublishingNewComponent/>
+            <PublishingNewComponent
+                subtitle="Enlist Yourself with the All-Time Best "
+                title="Your Book Deserves Only The"
+                desc="Best Selling Publishers."
+                bgImage="bg-[url('../../public/ahsan/bg_black.png')]"
+                classes="bg-cover bg-no-repeat"
+                textBG="bg-primary-100"
+                txtBlK="!text-white"
+            />
 
         </>
     )

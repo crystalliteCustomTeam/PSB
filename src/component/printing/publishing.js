@@ -117,8 +117,6 @@ const PublishingSlider = () => {
                     </div>
                 </div>
             </section>
-
-
         </>
 
     )

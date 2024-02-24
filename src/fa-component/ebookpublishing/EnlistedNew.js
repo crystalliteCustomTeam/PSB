@@ -117,10 +117,10 @@ const Enlisted = ({
                                     />
                                 </div>
                             </div>
-                            
+                            <MRCTAGroup classes='justify-center mt-5' />
 
                         </Col>
-                        <MRCTAGroup classes='justify-center mt-5' />
+                        
                     </Row>
                 </div>
             </section>
