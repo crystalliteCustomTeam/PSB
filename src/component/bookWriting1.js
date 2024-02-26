@@ -1,52 +1,51 @@
 import React from 'react'
 
 import Image from 'next/image'
+import { MRCTAGroup } from '.'
 
 const bookWriting = (props) => {
     return (
         <>
-          <section className=" py-20 sm:py-0 xs:py-10 text-[#1d1d1f] font-secondary">
-                <div className="justify-center items-center z-20 relative py-20 md:pt-5 md:pb-[500px] xs:py-5 md:z-20 md:relative" >
-                    <div className='max-w-7xl lg:max-w-6xl container mx-auto flex items-center justify-center sm:grid sm:grid-cols-1 sm:px-10 xs:grid-cols-1 md:py-0 md:px-5 xs:px-4 xs:w-[100%]'>
-                        <div className='basis-[50%] md:basis-[100%] sm:basis-[100%] xs:basis-[100%]'>
-                            <div className="">
-                                <h6 className='text-[30px] font-primary text-[#40BEE2] font-semibold mb-3'>
-                                    Are you in pursuit of
-                                </h6>
-                                <h2 className='text-[40px] font-primary font-semibold xs:font-semibold xs:text-[40px] capitalize leading-tight mb-3'>
-                                    {props.title}
-                                </h2>
-                            </div>
-                            <p className=' text-[16px] text-[#000] mb-2 leading-6 pb-2'>
+            <section className=" py-20 text-[#1d1d1f] font-primary">
+                <div className='mr-container'>
+                    <div className='grid grid-cols-12 items-center'>
+                        <div className=" mr-lg:col-span-5 mr-md:col-span-6">
+                            <h6 className='text-[30px] font-primary text-[#40BEE2] font-semibold mb-3'>
+                                Are you in pursuit of
+                            </h6>
+                            <h2 className='mr-xl:text-[40px] mr-lg:text-[35px] mr-md:text-[30px] font-primary font-bold leading-normal mb-3'>
+                                {props.title}
+                            </h2>
+                            <p className=' mr-xl:text-[16px] mr-md:text-[12px] text-[#000] mb-2 leading-6 pb-2'>
                                 {props.desc}
                             </p>
 
-                            <p className=' text-[16px] text-[#000] mb-4 leading-6 pb-2'>
+                            <p className=' mr-xl:text-[16px] mr-md:text-[12px] text-[#000] mb-4 leading-6 pb-2'>
                                 {props.descs}
                             </p>
-                            <ul className='space-y-3 mt-4 lg:w-[90%] w-full'>
+                            <ul className='space-y-3 mt-4 mr-lg:w-[70%]'>
                                 <li className='flex space-x-4 items-center border-b border-[#40BEE2] pb-2'>
                                     <Image quality={95} src="/assets/images/newimg/color-check2.png" alt="color-check" width={9} height={9} className='h-[9px] w-[9px]' />
-                                    <h5 className='font-medium text-[18px] xs:text-[14px]'>
+                                    <h5 className='mr-xl:text-[16px] mr-md:text-[12px]'>
                                         Being Published On All Online Platforms, Such As Kindle.
                                     </h5>
                                 </li>
                                 <li className='flex space-x-4 items-center border-b border-[#40BEE2] pb-2'>
                                     <Image quality={95} src="/assets/images/newimg/color-check2.png" alt="color-check" width={9} height={9} className='h-[9px] w-[9px]' />
-                                    <h5 className='font-medium text-[18px] xs:text-[14px]'>Fast and affordable self-publishing.</h5>
+                                    <h5 className='mr-xl:text-[16px] mr-md:text-[12px]'>Fast and affordable self-publishing.</h5>
                                 </li>
                                 <li className='flex space-x-4 items-center border-b border-[#40BEE2] pb-2'>
                                     <Image quality={95} src="/assets/images/newimg/color-check2.png" alt="color-check" width={9} height={9} className='h-[9px] w-[9px]' />
-                                    <h5 className='font-medium text-[18px] xs:text-[14px]'>Additions, revisions, and re-editions!</h5>
+                                    <h5 className='mr-xl:text-[16px] mr-md:text-[12px]'>Additions, revisions, and re-editions!</h5>
                                 </li>
                             </ul>
+                            <MRCTAGroup classes='mt-5' />
                         </div>
-                        <div className="basis-[60%] xs:hidden md:hidden">
-                            <Image quality={95} width={1500} height={700} alt='' src="/assets/images/newimg/industry-section.png" className=" top-10 right-0 xs:relative xs:float-none xs:w-[100%] xs:left-0" />
+
+                        <div className="mr-lg:col-span-7 mr-md:col-span-6 hidden mr-md:block">
+                            <Image quality={95} width={1500} height={700} alt='' src="/assets/images/newimg/industry-section.png" className="img-fluid m-auto" />
                         </div>
                     </div>
-
-
                 </div>
             </section>
         </>
