@@ -7,7 +7,9 @@ import Formdata from '@/fa-component/Formdata';
 import { MRHeroForm } from '@/component';
 // // mport { Fade } from "react-awesome-reveal";
 import image1 from '../../public/ahsan/image1.png'
-const Bookshelf = () => {
+const Bookshelf = ({
+    BGimage=""
+}) => {
 
 
     const openLiveChat = (e) => {
@@ -21,7 +23,7 @@ const Bookshelf = () => {
     return (
         <>
             <section className='relative bg-white mr-xl:h-[600px] mr-xl:mb-[80px] '>
-                <div className="before:bg-[url('../../public/ahsan/students-working-study-group.png')] before:bg-no-repeat before:bg-cover before:h-[500px] before:z-auto before:mr-lg:block before:mr-xl:block before:mr-md:block before:sm:hidden before:xs:hidden">
+                <div className={`${BGimage} before:bg-[url('../../public/ahsan/students-working-study-group.png')]   before:bg-no-repeat before:bg-cover before:h-[500px] before:z-auto before:mr-lg:block before:mr-xl:block before:mr-md:block before:sm:hidden before:xs:hidden`}>
                     <div className='mr-container'>
                         <div className="storyplot grid mr-md:grid-cols-2 mr-2xl:mt-[-360px] mr-lg:mt-[-400px] mr-md:mt-[-400px]">
                             <div className='mr-md:border-b-[1px] border-solid border-[#707070] mr-lg:pb-5 mr-sm:pb-5 mr-xs:pb-5 border-[80%]'>

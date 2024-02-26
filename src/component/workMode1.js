@@ -6,31 +6,14 @@ import "slick-carousel/slick/slick-theme.css";
 import React, { useState, useEffect } from 'react';
 
 
-const StoryPlotData = [
-    {
-        steps: "Step 01",
-        heading: "Submit Your Manuscript",
-        desc: "After making up your mind about working with us, you place your order."
-    },
-    {
-        steps: "Step 02",
-        heading: "Edit & Design",
-        desc: "We refine your text and design your book's cover."
-    },
-    {
-        steps: "Step 03",
-        heading: "Review & Approve",
-        desc: "You review our work and give the green light."
-    },
-    {
-        steps: "Step 04",
-        heading: "Publish & Distribute",
-        desc: "Your book is published and distributed on schedule."
-    }
-]
 
-
-const workMode = () => {
+const workMode = ({
+    subtitle,
+    title,
+    desc,
+    StoryPlotData,
+    GridCols
+}) => {
     var settings = {
         infinite: true,
         speed: 500,
@@ -89,24 +72,21 @@ const workMode = () => {
                 <div className="mr-container text-[#1d1d1f] mr-lg:!py-[80px] mr-md:!py-[60px] !py-[40px]">
                     <div className="text-center mb-14 justify-center">
                         <h6 className='text-[30px] text-[#40BEE2] font-primary font-semibold mb-2'>
-                            Carrying out
+                           {subtitle}
                         </h6>
-                        <h2 className='mr-xl:text-[45px] font-bold font-primary leading-tight mt-3 mb-3 sm:text-[30px] xs:text-[30px]'>
-                            The Fastest Work Mode, Get Your <br className='mr-lg:block hidden' /> Work in 4 Easy Steps
-                        </h2>
+                        <h2 className='mr-xl:text-[45px] font-bold font-primary leading-tight mt-3 mb-3 sm:text-[30px] xs:text-[30px]' dangerouslySetInnerHTML={{__html:title}}/>
                         <p className='w-[54%] mx-auto md:w-[90%] sm:w-[80%] xs:w-[100%] xs:px-5'>
-                            Working with us gives you prompt delivery of work because we have set up everything systematically. Here is our 4 step process, which keeps us streamlined from the beginning.
+                           {desc}
                         </p>
                     </div>
 
-                    <div className={`grid grid-cols-4 grid-rows-1 ${isLargeScreen ? '' : 'hidden'} gap-4 md:grid-cols-2 md:w-[90%] mx-auto`}>
+                    <div className={`grid ${GridCols} grid-rows-1 ${isLargeScreen ? '' : 'hidden'} gap-4 md:grid-cols-2 md:w-[90%] mx-auto`}>
                         {StoryPlotData.map((e, i) => (
                             <div className="col-md hover:-translate-y-1 hover:scale-105 duration-300 shadow-gray-300 rounded-xl shadow-lg">
                                 <div className="box rounded-2xl bg-white text-left text-[#1d1d1f] hover:text-white h-[100%] py-16 px-4 border-0 border-solid transition-[.5s] hover:bg-[#000000] hover:border-white group">
                                     <h5 className='text-[#40bee2]  text-xl font-semibold mb-3'>{e.steps}</h5>
-                                    <p className='text-[20px]  font-primary text-[#40bee2] font-semibold leading-tight m-0 mb-3 transition-[.5s all]'>
-                                        {e.heading}
-                                    </p>
+                                    <p className='text-[20px]  font-primary text-[#40bee2] font-semibold leading-tight m-0 mb-3 transition-[.5s all]' dangerouslySetInnerHTML={{__html:e.heading}}/>
+                                       
                                     <span className='block text-[16px] leading-5 mt-3'>
                                         {e.desc}
                                     </span>

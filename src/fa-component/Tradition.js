@@ -20,13 +20,16 @@ import before from 'media/images/flods/tradition-before.png'
 
 // mport { Fade } from "react-awesome-reveal";
 import Link from 'next/link'
-import { MRCTAGroup } from '@/component'
+import { MRCTA } from '@/component'
 
 const Tradition = ({
     subtitle,
     title,
     desc,
-    background=""
+    background = "",
+    txtColor = "",
+    classes,
+    BGclasses
 }) => {
 
     let traditionslider = {
@@ -69,15 +72,15 @@ const Tradition = ({
 
     return (
         <>
-            <section className={`${styles.traditionFold} ${background}`}>
+            <section className={`${styles.traditionFold} ${background} bg-no-repeat bg-cover ${BGclasses}`}>
                 <div className='mr-container px-md-5'>
                     <Row className='justify-content-center'>
 
                         <Col lg={12}>
                             <div className={`${styles.mockupsHead} text-center mb-5`}>
-                            <h6 className='text-[30px] text-[#40BEE2] font-semibold mb-3 sm:text-base xs:text-base font-primary'>{subtitle}</h6>
-                                <h2 className='text-[45px] font-bold font-primary txt-secondary mb-3' dangerouslySetInnerHTML={{__html: title}}/>
-                                <p className='text-[15px] font-secondary txt-secondary'>{desc}</p>
+                                <h6 className='text-[30px] text-[#40BEE2] font-semibold mb-3 sm:text-base xs:text-base font-primary'>{subtitle}</h6>
+                                <h2 className={`text-[45px] font-bold font-primary text-black mb-3 ${classes}`} dangerouslySetInnerHTML={{ __html: title }} />
+                                <p className={`text-[15px] font-secondary text-black ${classes}`}>{desc}</p>
                                 <div className='m-auto justify-content-center'>
                                     <Image quality={100} loading="lazy" className='img-fluid justify-content-center'
                                         src={before}
@@ -139,7 +142,20 @@ const Tradition = ({
                                 </Slider>
                             </div>
                         </Col>
-                        <MRCTAGroup classes='justify-center !mt-[40px]' />
+                        <div className={`grid grid-cols-1 mr-sm:flex gap-3 justify-center mt-5`}>
+                            <MRCTA
+                                text="LET'S DISCUSS"
+                                classes="hover:bg-transparent hover:border-secondary-100 rounded-sm bg-secondary-100"
+                                handle="onclick='parent.LC_API.open_chat_window();return false;'"
+                            />
+                            <MRCTA
+                                text="800-781-9093"
+                                link="tel:8007819093"
+                                bg="bg-transparent"
+                                color="text-primary-100"
+                                border="border-secondary-100 hover:!bg-white hover:border-secodary hover:text-black rounded-sm text-secondary-100"
+                            />
+                        </div>
                     </Row>
                 </div>
             </section>
