@@ -10,38 +10,54 @@ import MBOOK1 from '../component/marketBook1'
 import CTA3 from '../component/cta3';
 import CTA4 from '../component/cta4';
 import SwiperComponents from '../component/SwiperComponent'
+import { MRHero } from '@/component';
+import Enlistedlogo from '@/fa-component/Enlistedlogo';
+import Tradition from '@/fa-component/Tradition';
 // import TSlider from '../component/testimonialslider';
 export default function Home() {
   return (
 
     <>
-      <div className='mx-auto font-secondary'>
-        <Slider1 />
-        <BTM />
+      <MRHero
+        title="Your Source For Superior Book Writing!"
+        desc="Which book writing service is your need? You will find everything you are looking for, from professional writers to top marketers"
+        logos="images/banner/img2.png"
+        counter={true}
+        classes="bg-right bg-center !py-[80px]"
+        beforeImg="mr-md:before:bg-[url('../../public/ahsan/barnett-ghostwriting.png')]"
+      />
+      <Enlistedlogo />
 
-        <WS />
-        <DS1
-          title='Working With The Most Demanded Specialists'
-          desc={'Have a story in mind? Share it with the world because we truly believe every story is worth sharing. To showcase your narrative in the best possible way, our ghostwriters are well-suited for the task. Achieving excellence requires dedication and hard work, qualities our company proudly possesses. Our team works tirelessly to bring your vision to life, transforming your ideas and story into a masterpiece with beautiful words.'}
-        />
-        <IM1
-          title='From Rough Draft to Successful Publishing We Have Made It Possible'
-          desc={'We make it possible for you to make your book the next big read for the readers. Bring us your rough drafts, and let our team work magnificently on their execution.'}
-        />
-        <BW1
-          title='Getting Your Book Written By The Top Industry Experts?'
-          desc={'Your million-dollar story is worth bringing alive. And for that, our ghostwriters are dedicated to the execution of your book and work tirelessly to mold the story into the form of a picture-perfect book. We guarantee that the services you take from us are unmatchable and will meet your desired results.'}
-          descs={'To give our customers a high-end result, we have hired professional experts with years of experience that are the most demanded. Therefore, don’t worry while choosing  Best Selling Publisher Ghostwriting for your service because working with us means getting the best.'}
-        />
-        <CTA3 />
-        <BTM />
-        <WMODE1 />
-        <MBOOK1 />
-        <CTA4 />
-        <SwiperComponents />
-        {/* <TSlider/> */}
+      <WS />
+      <DS1
+        title='Working With The Most Demanded Specialists'
+        desc={'Have a story in mind? Share it with the world because we truly believe every story is worth sharing. To showcase your narrative in the best possible way, our ghostwriters are well-suited for the task. Achieving excellence requires dedication and hard work, qualities our company proudly possesses. Our team works tirelessly to bring your vision to life, transforming your ideas and story into a masterpiece with beautiful words.'}
+      />
+      <Tradition
+        subtitle="Our Impressive Work"
+        title="From Rough Draft To Successful <br/> Publishing We Have Made It Possible"
+        desc="We make it possible for you to make your book the next big read for the readers. Bring us your rough drafts, and let our team work magnificently on their execution."
+        background="bg-[url('../../public/ahsan/bgBlack2.png')]"
+        classes="bg-no-repeat bg-cover"
+      />
+      <IM1
+        title='From Rough Draft to Successful Publishing We Have Made It Possible'
+        desc={'We make it possible for you to make your book the next big read for the readers. Bring us your rough drafts, and let our team work magnificently on their execution.'}
+      />
+      <BW1
+        title='Getting Your Book Written By The Top Industry Experts?'
+        desc={'Your million-dollar story is worth bringing alive. And for that, our ghostwriters are dedicated to the execution of your book and work tirelessly to mold the story into the form of a picture-perfect book. We guarantee that the services you take from us are unmatchable and will meet your desired results.'}
+        descs={'To give our customers a high-end result, we have hired professional experts with years of experience that are the most demanded. Therefore, don’t worry while choosing  Best Selling Publisher Ghostwriting for your service because working with us means getting the best.'}
+      />
+      <CTA3 />
+      <BTM />
+      <WMODE1 />
+      <MBOOK1 />
+      <CTA4 />
+      <SwiperComponents />
 
-      </div>
+
+
 
 
 

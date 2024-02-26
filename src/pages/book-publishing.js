@@ -10,7 +10,7 @@ import PUBLISHING from '../component/publishing'
 import BTM from '../component/bottomLogos';
 import CTA from '../component/cta3';
 import SwiperComponents from '../component/SwiperComponent'
-import LogoSliders from '../component/bottomLogosNEW'
+import Enlistedlogo from '@/fa-component/Enlistedlogo'
 import { MRHero } from '@/component';
 import StoryPlot from '@/fa-component/StoryPlot';
 
@@ -26,6 +26,18 @@ const about = () => {
 
   return (
     <>
+      <Head>
+
+        <title>Ebook Publishing Company - Best Selling Publisher - Amazon Publishing Services</title>
+        <link rel="icon" href="/images/favicon.svg" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+        {/* <Helmet>
+        <script type="application/ld+json">
+        {JSON.stringify(schema)}
+        </script>
+        </Helmet> */}
+      </Head>
       <main>
         {/* <FEATURED
           banneraffordable='aboutus'
@@ -52,18 +64,18 @@ const about = () => {
           classes="bg-right bg-center !py-[80px]"
           beforeImg="mr-md:before:bg-[url('../../public/imageAR/bookstore-with-bookshelf.png')]"
         />
-        <LogoSliders />
+        <Enlistedlogo />
         <WEARE />
         <PUBLISHING
-        bgImg="mr-md:bg-[url('../../public/ahsan/bg_black.png')]"
-        classes="bg-black"
-         />
+          bgImg="mr-md:bg-[url('../../public/ahsan/bg_black.png')]"
+          classes="bg-black"
+        />
         <PWMODE />
         <BTM />
         <CTA />
-        <WMODE />
+        {/* <WMODE /> */}
         <SwiperComponents />
-        <StoryPlot/>
+        <StoryPlot />
       </main>
     </>
   )

@@ -1,5 +1,6 @@
 import { useState } from 'react';
-
+import Image from 'next/image';
+import PMS from 'media/ahsan/pms.png'
 const tabsList = [
   ["Personal Marketing Assistants", 1],
   ["Social Media Set-Up", 2],
@@ -44,7 +45,7 @@ function VerticalNavTabs() {
               className={`py-2 px-4 w-[95%] m-auto rounded-[5px] text-left cursor-pointer flex items-center gap-3 ${activeTab == id ? 'bg-[#fff] text-[#000] ' : ''}`}
               onClick={() => handleTabClick(id)}
             >
-              <span className={`block w-[10px] h-[10px] rounded-full border-2 border-black ${activeTab == id ?"bg-[#40BEE2]":""}`}></span>
+              <span className={`block w-[10px] h-[10px] rounded-full border-2 border-black ${activeTab == id ? "bg-[#40BEE2]" : ""}`}></span>
               {text}
             </button>
           ))}
@@ -52,7 +53,10 @@ function VerticalNavTabs() {
       </div>
       <div className="col-span-6  bg-transparent items-center pl-32 py-24 lg:pl-16 xs:pl-5 sm:pl-5 xs:py-3 md:pl-10 md:py-14 text-white mr-md:mt-0 mt-10">
         {activeTab === 1 && <div>
-          <h6 className='text-[30px] font-primary font-semibold text-[#40BEE2]'>Publishing</h6>
+
+          <h6 className='text-[30px] font-primary font-semibold text-[#40BEE2]'>
+            <Image src={PMS} quality={95} className="img-fluid mr-auto mb-3" />
+            Publishing</h6>
           <h3 className='text-[40px] font-primary leading-[60px] gap-10 font-semibold sm:text-4xl xs:text-3xl xs:py-3 sm:py-3'>Personal <span className='text-primary-100'>Marketing</span> Assistants:</h3>
           <p>We offer dedicated marketing assistants to facilitate the promotion, management, and execution of comprehensive promotional campaigns for your book launch across diverse online and offline channels. Tailoring their services to meet your specific requirements they ensure optimal support for your success.</p>
           <div className='w-[40%] text-center grid grid-cols-2 grid-rows-1 gap-2 py-5 sm:w-[70%] xs:w-[100%]'>
@@ -61,7 +65,7 @@ function VerticalNavTabs() {
           </div>
         </div>}
         {activeTab === 2 && <div>
-          <h6 className='text-[30px] font-primary font-semibold text-[#40BEE2]'>Publishing</h6>
+          <h6 className='text-[30px] font-primary font-semibold text-[#40BEE2]'><Image src={PMS} quality={95} className="img-fluid mr-auto mb-3" />Publishing</h6>
           <h3 className='text-[40px] font-primary leading-[60px] gap-10 font-semibold sm:text-4xl xs:text-3xl xs:py-3 sm:py-3'>Social <span className='text-primary-100'> Media</span> Set-Up:</h3>
           <p>We will provide personal marketing assistants who help promote, manage and run promotional campaigns for your book launch through various online and offline channels They will proide you fits your needs!</p>
           <div className='w-[50%] grid grid-cols-2 grid-rows-1 gap-2 py-5 sm:w-[70%] xs:w-[100%]'>
@@ -70,7 +74,7 @@ function VerticalNavTabs() {
           </div>
         </div>}
         {activeTab === 3 && <div>
-          <h6 className='text-[30px] font-primary font-semibold text-[#40BEE2]'>Publishing</h6>
+          <h6 className='text-[30px] font-primary font-semibold text-[#40BEE2]'><Image src={PMS} quality={95} className="img-fluid mr-auto mb-3" />Publishing</h6>
           <h3 className='text-[40px] font-primary leading-[60px] gap-10 font-semibold sm:text-4xl xs:text-3xl xs:py-3 sm:py-3'>Creative and <span className='text-primary-100'>Appealing</span>  Bookmarks:</h3>
           <p>We will provide personal marketing assistants who help promote, manage and run promotional campaigns for your book launch through various online and offline channels They will proide you fits your needs!</p>
           <div className='w-[50%] grid grid-cols-2 grid-rows-1 gap-2 py-5 sm:w-[70%] xs:w-[100%]'>
@@ -79,7 +83,7 @@ function VerticalNavTabs() {
           </div>
         </div>}
         {activeTab === 4 && <div>
-          <h6 className='text-[30px] font-primary font-semibold text-[#40BEE2]'>Publishing</h6>
+          <h6 className='text-[30px] font-primary font-semibold text-[#40BEE2]'><Image src={PMS} quality={95} className="img-fluid mr-auto mb-3" />Publishing</h6>
           <h3 className='text-[40px] font-primary leading-[60px] gap-10 font-semibold sm:text-4xl xs:text-3xl xs:py-3 sm:py-3'><span className='text-primary-100'>Digital</span> Postcards:</h3>
           <p>We will provide Digital Postcards who help promote, manage and run promotional campaigns for your book launch through various online and offline channels They will proide you fits your needs!</p>
           <div className='w-[50%] grid grid-cols-2 grid-rows-1 gap-2 py-5 sm:w-[70%] xs:w-[100%]'>
@@ -88,7 +92,7 @@ function VerticalNavTabs() {
           </div>
         </div>}
         {activeTab === 5 && <div>
-          <h6 className='text-[30px] font-primary font-semibold text-[#40BEE2]'>Publishing</h6>
+          <h6 className='text-[30px] font-primary font-semibold text-[#40BEE2]'><Image src={PMS} quality={95} className="img-fluid mr-auto mb-3" />Publishing</h6>
           <h3 className='text-[40px] font-primary leading-[60px] gap-10 font-semibold sm:text-4xl xs:text-3xl xs:py-3 sm:py-3'><span className='text-primary-100'> Business </span> Cards:</h3>
           <p>We will provide personal marketing assistants who help promote, manage and run promotional campaigns for your book launch through various online and offline channels They will proide you fits your needs!</p>
           <div className='w-[50%] grid grid-cols-2 grid-rows-1 gap-2 py-5 sm:w-[70%] xs:w-[100%]'>

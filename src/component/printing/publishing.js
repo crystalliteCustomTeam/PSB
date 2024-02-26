@@ -100,16 +100,16 @@ const PublishingSlider = () => {
                 <div className='container justify-center mt-10 testimonial mx-auto mb-20 testimonial md:px-5 xs:px-7'>
                     <div className='py-10 text-center xs:py-5 text-white'>
                         <h6 className='text-[30px] leading-tight font-primary text-[#40BEE2] font-semibold xs:text-base'>Custom high-quality</h6>
-                        <h3 className='font-bold font-primary text-4xl py-2'>Book Printing Service</h3>
+                        <h3 className='font-bold font-primary text-[45px] py-2'>Book Printing Service</h3>
                         <p className='m-auto xs:w-[100%]'>We provide various book trim size options, cover styles, bookbinding kinds, and other elevated possibilities. <br/> We can do whatever you can think of.</p>
                     </div>
                     <div className='justify-center grid grid-cols-4 sm:grid-cols-2 xs:grid-cols-1 gap-4 items-center'>
                         {data?.map((e, i) => (
                             <div key={i} className=''>
                                 <div className='relative'>
-                                    <Image quality={95} width={240} height={240} src={e.imagePath} alt={e.alt} className='img-fluid m-auto' />
+                                    <Image quality={95} width={500} height={240} src={e.imagePath} alt={e.alt} className='img-fluid m-auto' />
                                     <div>
-                                        <h6 className='text-[15px] mt-2 text-center text-white font-bold' dangerouslySetInnerHTML={{__html:e.title}} />
+                                        <h6 className='mr-2xl:text-[18px] mr-xl:text-[16px] mr-lg:text-[15px] mt-2 text-center text-white font-bold' dangerouslySetInnerHTML={{__html:e.title}} />
                                     </div>
                                 </div>
                             </div>

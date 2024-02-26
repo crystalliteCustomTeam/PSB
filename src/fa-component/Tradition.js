@@ -23,8 +23,10 @@ import Link from 'next/link'
 import { MRCTAGroup } from '@/component'
 
 const Tradition = ({
+    subtitle,
     title,
-    desc
+    desc,
+    background=""
 }) => {
 
     let traditionslider = {
@@ -67,14 +69,15 @@ const Tradition = ({
 
     return (
         <>
-            <section className={styles.traditionFold}>
+            <section className={`${styles.traditionFold} ${background}`}>
                 <div className='mr-container px-md-5'>
                     <Row className='justify-content-center'>
 
                         <Col lg={12}>
                             <div className={`${styles.mockupsHead} text-center mb-5`}>
-                                <h2 className='font-50 fw-700 font-primary txt-secondary mb-3'>{title}</h2>
-                                <p className='font-15 font-secondary txt-secondary'>{desc}</p>
+                            <h6 className='text-[30px] text-[#40BEE2] font-semibold mb-3 sm:text-base xs:text-base font-primary'>{subtitle}</h6>
+                                <h2 className='text-[45px] font-bold font-primary txt-secondary mb-3' dangerouslySetInnerHTML={{__html: title}}/>
+                                <p className='text-[15px] font-secondary txt-secondary'>{desc}</p>
                                 <div className='m-auto justify-content-center'>
                                     <Image quality={100} loading="lazy" className='img-fluid justify-content-center'
                                         src={before}

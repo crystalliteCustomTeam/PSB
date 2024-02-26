@@ -45,17 +45,6 @@ const amazonpublishing = () => {
  </Helmet> */}
       </Head>
 
-      {/*========= Banner =========*/}
-      {/* {bannertext.map((item, i) =>
-        <Banner key={i}
-          title={item.title}
-          discuss={item.discuss}
-          homebannernum={item.homebannernum}
-          bannercounter={item.bannercounter}
-          imageban={item.imageban}
-          img2={item.img2}
-        />
-      )} */}
       <MRHero
         title="Pinnacle Publishing For <br /> Children's Illustration Book"
         logos="images/banner/img2.png"

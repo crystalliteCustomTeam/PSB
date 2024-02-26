@@ -22,7 +22,7 @@ const publishing = ({
                     <div className='grid mr-xl:grid-cols-12 gap-5 items-center'>
                         <div className='mr-xl:col-span-6'>
                             <div className=' xs:py-5'>
-                                <h2 className='mb-3 font-primary text-white font-bold leading-normal text-[38px] md:text-[35px] sm:text-4xl sm:w-[100%] xs:text-3xl xs:w-[100%] '>
+                                <h2 className='mb-3 font-primary text-white font-bold leading-normal text-[45px] md:text-[35px] sm:text-4xl sm:w-[100%] xs:text-3xl xs:w-[100%] '>
                                     Maximize Your Book's Impact with Our Publishing Services
                                 </h2>
                                 <h3 className='text-[25px] font-primary text-[#40BEE2] font-semibold sm:text-base xs:text-base mb-3'>Global Publishing Excellence Awaits Your Book</h3>

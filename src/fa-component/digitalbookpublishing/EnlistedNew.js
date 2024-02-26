@@ -49,13 +49,13 @@ const Enlisted = ({
             <section className={styles.enlistedFlod}>
                 <div className='mr-container px-md-5'>
                     <Row className='justify-content-center'>
-                        <Col xxl={10} lg={10} sm={12}>
+                        <Col xxl={12} lg={10} sm={12}>
                             <div className={`${styles.enlistedHead} text-center items-center`}>
-                                <h4 className='font-30 font-primary txt-primary'>{subtitle}</h4>
-                                <h2 className='font-45 fw-700 font-primary txt-secondary mb-3' dangerouslySetInnerHTML={{ __html: title }}>
+                                <h4 className='text-[30px] font-primary txt-primary'>{subtitle}</h4>
+                                <h2 className='text-[45px] font-bold font-primary txt-secondary mb-3' dangerouslySetInnerHTML={{ __html: title }}>
                                 </h2>
-                                <h2 className='font-50 fw-500 font-primary txt-secondary mb-3 w-75' dangerouslySetInnerHTML={{ __html: desc2 }} />
-                                <p className='mr-lg::w-75 m-auto'>{paragraph}</p>
+                                <h2 className='font-50 fw-500 font-primary txt-secondary mb-3 w-[75%]' dangerouslySetInnerHTML={{ __html: desc2 }} />
+                                <p className='mr-2xl:w-[75%] mr-lg:w-[75%] m-auto'>{paragraph}</p>
                             </div>
                         </Col>
                         <Col xxl={10} lg={10} sm={0}>
@@ -68,10 +68,10 @@ const Enlisted = ({
 
                                     <div className={styles.midImg}>
                                         <div>
-                                            <p className={`${styles.para1} font-30 font-primary txt-secondary mt-5 mb-5`}>1.</p>
-                                            <p className={`${styles.para2} font-30 font-primary txt-secondary mb-5`}>2.</p>
-                                            <p className={`${styles.para3} font-30 font-primary txt-secondary mb-5`}>3.</p>
-                                            <p className={`${styles.para4} font-30 font-primary txt-secondary mb-5`}>4.</p>
+                                            <p className={`${styles.para1} text-[30px] font-primary txt-secondary mt-5 mb-5`}>1.</p>
+                                            <p className={`${styles.para2} text-[30px] font-primary txt-secondary mb-5`}>2.</p>
+                                            <p className={`${styles.para3} text-[30px] font-primary txt-secondary mb-5`}>3.</p>
+                                            <p className={`${styles.para4} text-[30px] font-primary txt-secondary mb-5`}>4.</p>
                                         </div>
                                         <Image quality={100} loading="lazy" className='img-fluid'
                                             src={mid}
@@ -80,8 +80,8 @@ const Enlisted = ({
                                         <div className='pb-5 w-75'>
                                             {data?.map((e, i) => (
                                                 <div key={i}>
-                                                    <p className='font-30 font-primary txt-secondary mt-5' dangerouslySetInnerHTML={{ __html: e.paraTitle }} />
-                                                    <p className='font-15 font-secondary txt-secondary ' dangerouslySetInnerHTML={{ __html: e.paraSubTitle }} />
+                                                    <p className='text-[30px] font-semibold font-primary txt-secondary mt-5' dangerouslySetInnerHTML={{ __html: e.paraTitle }} />
+                                                    <p className='text-[15px] font-secondary txt-secondary ' dangerouslySetInnerHTML={{ __html: e.paraSubTitle }} />
                                                 </div>
                                             ))}
                                         </div>
@@ -107,7 +107,7 @@ const Enlisted = ({
                     <Row className='justify-content-center'>
                         <Col lg={8}>
                             <div className={`${styles.enlistedHead} text-center`}>
-                                <h4 className='font-30 font-primary color-white'>Enlist Yourself with the All-Time Best  </h4>
+                                <h4 className='text-[30px] font-primary color-white'>Enlist Yourself with the All-Time Best  </h4>
                                 <h2 className='font-50 fw-500 font-primary color-white mb-3'>Your book deserves only the <span className='bg-black color-white p-1 mt-2 d-block house'> Best Selling Publishers.</span></h2>
                             </div>
 

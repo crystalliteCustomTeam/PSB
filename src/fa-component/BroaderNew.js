@@ -34,7 +34,7 @@ const Broader = ({
                                 <Image
                                     quality={100}
                                     loading="lazy"
-                                    width={800}
+                                    width={1000}
                                     height={1000}
                                     className='img-fluid m-auto'
                                     src={image}

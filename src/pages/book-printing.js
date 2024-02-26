@@ -44,7 +44,7 @@ const about = () => {
           </>}
         /> */}
         <MRHero
-          title="Take Your Book Where <br/> Your Audience Is"
+          title="Take Your Book Where Your Audience Is"
           desc="With thousands of publishing options to consider, our team helps you identify the right platform for your book."
           logos="images/banner/img2.png"
           counter={true}

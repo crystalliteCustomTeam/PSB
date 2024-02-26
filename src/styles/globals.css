@@ -1017,3 +1017,6 @@ header .group:hover .group-hover\:visible {
   .__slides .slick-next::before{
    content: url(../../public/imageAR/rightActive.png);
   }
+  .ImgSliderWS.slick-slider img {
+   margin: 0 !important;
+}

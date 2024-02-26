@@ -49,16 +49,16 @@ const Enlisted = ({
             <section className={styles.enlistedFlod}>
                 <div className='mr-container px-md-5'>
                     <Row className='justify-content-center'>
-                        <Col lg={10} sm={12}>
+                        <Col lg={12} sm={12}>
                             <div className={`${styles.enlistedHead} text-center`}>
                                 <h4 className='font-30 font-primary txt-primary'>{subtitle}</h4>
                                 <h2 className='font-50 fw-700 font-primary txt-secondary mb-3' dangerouslySetInnerHTML={{ __html: title }}>
                                 </h2>
-                                <h2 className='font-50 fw-500 text-justify font-primary txt-secondary mb-3 w-75' dangerouslySetInnerHTML={{ __html: desc2 }}/>
+                                <h2 className='font-50 fw-500 text-justify font-primary txt-secondary mb-3 mr-lg:w-[75%]' dangerouslySetInnerHTML={{ __html: desc2 }}/>
                                 <p dangerouslySetInnerHTML={{__html: paragraph}}/>
                             </div>
                         </Col>
-                        <Col xxl={8} lg={8}>
+                        <Col xxl={10} lg={10} sm={12} xs={12} className='m-auto'>
                             <div className={`${styles.enlisContnt} text-center mt-3`}>
                                 <div className={styles.enlisImg}>
                                     <Image quality={100} loading="lazy" className='img-fluid'
@@ -77,7 +77,7 @@ const Enlisted = ({
                                             src={mid}
                                             alt='Best_Publisher'
                                         />
-                                        <div className='pb-5 '>
+                                        <div className='pb-5 w-[75%]'>
                                             {data?.map((e, i) => (
                                                 <div key={i}>
                                                     <p className='font-30 font-primary txt-secondary mt-[25px]' dangerouslySetInnerHTML={{ __html: e.paraTitle }} />

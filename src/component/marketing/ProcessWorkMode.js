@@ -5,11 +5,40 @@ import "slick-carousel/slick/slick-theme.css";
 import React, { useState, useEffect } from 'react';
 import { MRCTAGroup } from '..';
 
+const PWMode = [
+    {
+        step: "Step 01",
+        heading: "Sign Up",
+        desc: "You first sign up for our marketing services, be it book promotion, author marketing, or eBook marketing services. You answer these questions in a questionnaire. Once this is done, you will get aligned with one of our sales people who assigns your project to a particular department suited to your needs."
+    },
+    {
+        step: "Step 02",
+        heading: "Marketing Review",
+        desc: "Our marketing experts then review a marketing strategy to utilize for your goals. This is based on the nature and scope of your project. Everything that follows will vary accordingly. A large project requires more investment and a larger team to cater to your needs.."
+    },
+    {
+        step: "Step 03",
+        heading: "Research",
+        desc: " We then begin research on the subjects and topics that people are interested in. What are common traits within these topics, such as the covers, titles, and book descriptions? What are the things they try to avoid? These are the questions that we answer during our research phase."
+    },
+    {
+        step: "Step 04",
+        heading: "Target audience selection",
+        desc: "Here, we decide who the target audience or demographic will be for your book, the type of product they might like, and how to meet or exceed their expectations."
+    },
+    {
+        step: "Step 05",
+        heading: "Making it look good",
+        desc: " Now is the time to work on the book cover. Your cover is the most important piece of marketing of your book, and our cover designers understand this better than anyone else."
+    },
+    {
+        step: "Step 06",
+        heading: "Submitting it for review",
+        desc: "Now this is the final stage of the process when we submit it for review and ensure that all the tasks are completed and that your design is perfected. Our team will ensure your success."
+    }
+]
 
 const workMode = () => {
-
-
-
 
     var settings = {
         infinite: true,
@@ -64,11 +93,6 @@ const workMode = () => {
         };
     }, []);
 
-
-
-
-
-
     return (
         <>
             <section className="our-process  w-full font-secondary">
@@ -86,128 +110,30 @@ const workMode = () => {
                     </div>
 
                     <div className={`${isLargeScreen ? '' : 'hidden'} grid grid-cols-3 gap-4 md:grid-cols-2 xs:grid-cols-1 md:w-[90%] mx-auto xs:w-[90%] m-auto`}>
-                        <div className="col-md hover:-translate-y-1 hover:scale-105 duration-300 hover:text-white h-[300px]">
-                            <div className="box rounded-2xl  text-left text-[#1d1d1f] bg-[#f2f2f2] hover:text-white h-[100%] py-10 px-8  transition-[.5s] hover:bg-[#1d1d1f] hover:border-white">
-                                <h5 className='text-[#00C0E4] text-lg font-semibold font-primary'>Step 01</h5>
-                                <h3 className='text-[20px] text-xl my-2 font-semibold font-primary'>Sign Up</h3>
-                                <p className='text-[16px] text-[#242424] leading-5'>
-                                    You first sign up for our marketing services, be it book promotion, author marketing, or eBook marketing services. You answer these questions in a questionnaire. Once this is done, you will get aligned with one of our sales people who assigns your project to a particular department suited to your needs.
-                                </p>
+                        {PWMode?.map((e, i) => (
+                            <div key={i} className="col-md hover:-translate-y-1 hover:scale-105 duration-300 h-[300px]">
+                                <div className="box rounded-2xl  text-left text-[#1d1d1f] bg-[#f2f2f2] hover:text-white h-[100%] py-10 px-8  transition-[.5s] hover:bg-[#1d1d1f] hover:border-white">
+                                    <h5 className='text-[#00C0E4] text-xl font-semibold font-primary'>{e.step}</h5>
+                                    <h3 className='text-[20px] text-xl my-2 font-semibold font-primary'> {e.heading}</h3>
+                                    <p className='text-[16px] text-[#242424] leading-5'>{e.desc}</p>
+                                </div>
                             </div>
-                        </div>
-                        <div className="col-md hover:-translate-y-1 hover:scale-105 duration-300 h-[300px]">
-                            <div className="box rounded-2xl  text-left text-[#1d1d1f] bg-[#f2f2f2] hover:text-white h-[100%] py-10 px-8  transition-[.5s] hover:bg-[#1d1d1f] hover:border-white">
-                                <h5 className='text-[#00C0E4] text-xl font-semibold font-primary'>Step 02</h5>
-                                <h3 className='text-[20px] text-xl my-2 font-semibold font-primary'>Marketing Review</h3>
-                                <p className='text-[16px] text-[#242424] leading-5'>
-                                    Our marketing experts then review a marketing strategy to utilize for your goals. This is based on the nature and scope of your project. Everything that follows will vary accordingly. A large project requires more investment and a larger team to cater to your needs..
-                                </p>
-                            </div>
-                        </div>
-                        <div className="col-md hover:-translate-y-1 hover:scale-105 duration-300 h-[300px]">
-                            <div className="box rounded-2xl  text-left text-[#1d1d1f] bg-[#f2f2f2] hover:text-white h-[100%] py-10 px-8  transition-[.5s] hover:bg-[#1d1d1f] hover:border-white">
-                                <h5 className='text-[#00C0E4] text-xl font-semibold font-primary'>Step 03</h5>
-                                <h3 className='text-[20px] text-xl my-2 font-semibold font-primary'>Research</h3>
-                                <p className='text-[16px] text-[#242424] leading-5'>
-                                    We then begin research on the subjects and topics that people are interested in. What are common traits within these topics, such as the covers, titles, and book descriptions? What are the things they try to avoid? These are the questions that we answer during our research phase.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="col-md hover:-translate-y-1 hover:scale-105 duration-300 h-[300px]">
-                            <div className="box rounded-2xl  text-left text-[#1d1d1f] bg-[#f2f2f2] hover:text-white h-[100%] py-10 px-8  transition-[.5s] hover:bg-[#1d1d1f] hover:border-white">
-                                <h5 className='text-[#00C0E4] text-xl font-semibold font-primary'>Step 04</h5>
-                                <h3 className='text-[20px] text-xl my-2 font-semibold font-primary'>Target audience selection</h3>
-                                <p className='text-[16px] text-[#242424] leading-5'>
-                                    Here, we decide who the target audience or demographic will be for your book, the type of product they might like, and how to meet or exceed their expectations.
-
-                                </p>
-                            </div>
-                        </div>
-                        <div className="col-md hover:-translate-y-1 hover:scale-105 duration-300 h-[300px]">
-                            <div className="box rounded-2xl  text-left text-[#1d1d1f] bg-[#f2f2f2] hover:text-white h-[100%] py-10 px-8  transition-[.5s] hover:bg-[#1d1d1f] hover:border-white">
-                                <h5 className='text-[#00C0E4] text-xl font-semibold font-primary'>Step 05</h5>
-                                <h3 className='text-[20px] text-xl my-2 font-semibold font-primary'>Making it look good</h3>
-                                <p className='text-[16px] text-[#242424] leading-5'>
-                                    Now is the time to work on the book cover. Your cover is the most important piece of marketing of your book, and our cover designers understand this better than anyone else.
-
-                                </p>
-                            </div>
-                        </div>
-                        <div className="col-md hover:-translate-y-1 hover:scale-105 duration-300 h-[300px]">
-                            <div className="box rounded-2xl  text-left text-[#1d1d1f] bg-[#f2f2f2] hover:text-white h-[100%] py-10 px-8  transition-[.5s] hover:bg-[#1d1d1f] hover:border-white">
-                                <h5 className='text-[#00C0E4] text-xl font-semibold font-primary'>Step 06</h5>
-                                <h3 className='text-[20px] text-xl my-2 font-semibold font-primary'> Submitting it for review</h3>
-                                <p className='text-[16px] text-[#242424] leading-5'>
-                                    Now this is the final stage of the process when we submit it for review and ensure that all the tasks are completed and that your design is perfected. Our team will ensure your success.
-
-                                </p>
-                            </div>
-                        </div>
-
-
+                        ))}
                     </div>
 
 
 
                     <div className={`${isLargeScreen ? 'hidden' : ''} grid grid-cols-3 gap-4 md:grid-cols-2 sm:grid-cols-1 sm:items-center xs:items-center xs:grid-cols-1 md:w-[90%] mx-auto sm:px-10 xs:w-[90%]`}>
                         <Slider {...settings}>
-                            <div className="col-md hover:-translate-y-1 hover:scale-95 duration-300 h-[300px] hover:text-white">
-                                <div className="box rounded-2xl  text-left text-[#1d1d1f] bg-[#f2f2f2] hover:text-white h-[100%] py-10 px-8  transition-[.5s] hover:bg-[#1d1d1f] hover:border-white">
-                                    <h5 className='text-[#00C0E4] text-lg font-semibold font-primary'>Step 01</h5>
-                                    <h3 className='text-[20px] text-xl my-2 font-semibold font-primary'>Sign Up</h3>
-                                    <p className='text-[16px] text-[#242424] leading-5'>
-                                        You first sign up for our marketing services, be it book promotion services, author marketing services or eBook marketing services. You answer these questions in a questionnaire. Once this is done you then work with one of our sales people who assigns your project to a particular department suited to your needs.
-                                    </p>
+                            {PWMode?.map((e, i) => (
+                                <div key={i} className="col-md hover:-translate-y-1 hover:scale-105 duration-300 h-[300px]">
+                                    <div className="box rounded-2xl  text-left text-[#1d1d1f] bg-[#f2f2f2] hover:text-white h-[100%] py-10 px-8  transition-[.5s] hover:bg-[#1d1d1f] hover:border-white">
+                                        <h5 className='text-[#00C0E4] text-xl font-semibold font-primary'>{e.step}</h5>
+                                        <h3 className='text-[20px] text-xl my-2 font-semibold font-primary'> {e.heading}</h3>
+                                        <p className='text-[16px] text-[#242424] leading-5'>{e.desc}</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="col-md hover:-translate-y-1 hover:scale-95 duration-300 h-[300px]">
-                                <div className="box rounded-2xl  text-left text-[#1d1d1f] bg-[#f2f2f2] hover:text-white h-[100%] py-10 px-8  transition-[.5s] hover:bg-[#1d1d1f] hover:border-white">
-                                    <h5 className='text-[#00C0E4] text-xl font-semibold font-primary'>Step 02</h5>
-                                    <h3 className='text-[20px] text-xl my-2 font-semibold font-primary'>Marketing Review</h3>
-                                    <p className='text-[16px] text-[#242424] leading-5'>
-                                        Our marketing experts then review a marketing strategy to utilize for your goals, this entirely depends on the nature and scope of your project. Everything that follows through will vary accordingly, a large project might require more investment and a larger team to ensure that your needs are met.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="col-md hover:-translate-y-1 hover:scale-95 duration-300 h-[300px]">
-                                <div className="box rounded-2xl  text-left text-[#1d1d1f] bg-[#f2f2f2] hover:text-white h-[100%] py-10 px-8  transition-[.5s] hover:bg-[#1d1d1f] hover:border-white">
-                                    <h5 className='text-[#00C0E4] text-xl font-semibold font-primary'>Step 03</h5>
-                                    <h3 className='text-[20px] text-xl my-2 font-semibold font-primary'>Research</h3>
-                                    <p className='text-[16px] text-[#242424] leading-5'>
-                                        We then begin research on the subjects and topics that people are interested in, What are common traits within these topics, such as the covers, titles as well as book descriptions. What are the things they try to avoid? These are the questions that we must answer during the research phase.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="col-md hover:-translate-y-1 hover:scale-95 duration-300 h-[300px]">
-                                <div className="box rounded-2xl  text-left text-[#1d1d1f] bg-[#f2f2f2] hover:text-white h-[100%] py-10 px-8  transition-[.5s] hover:bg-[#1d1d1f] hover:border-white">
-                                    <h5 className='text-[#00C0E4] text-xl font-semibold font-primary'>Step 04</h5>
-                                    <h3 className='text-[20px] text-xl my-2 font-semibold font-primary'>Target audience selection</h3>
-                                    <p className='text-[16px] text-[#242424] leading-5'>
-                                        Now we decide who the target audience or demographic will be for your book, the type of product that they might like. And how to meet or exceed their expectations.
-
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="col-md hover:-translate-y-1 hover:scale-95 duration-300 h-[300px]">
-                                <div className="box rounded-2xl  text-left text-[#1d1d1f] bg-[#f2f2f2] hover:text-white h-[100%] py-10 px-8  transition-[.5s] hover:bg-[#1d1d1f] hover:border-white">
-                                    <h5 className='text-[#00C0E4] text-xl font-semibold font-primary'>Step 05</h5>
-                                    <h3 className='text-[20px] text-xl my-2 font-semibold font-primary'>Making it look good</h3>
-                                    <p className='text-[16px] text-[#242424] leading-5'>
-                                        Now is the time to work on the book cover, your cover is the most important piece of marketing in your book and our cover designers understand this better than anyone else ever could.
-
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="col-md hover:-translate-y-1 hover:scale-95 duration-300 h-[300px]">
-                                <div className="box rounded-2xl  text-left text-[#1d1d1f] bg-[#f2f2f2] hover:text-white h-[100%] py-10 px-8  transition-[.5s] hover:bg-[#1d1d1f] hover:border-white">
-                                    <h5 className='text-[#00C0E4] text-xl font-semibold font-primary'>Step 06</h5>
-                                    <h3 className='text-[20px] text-xl my-2 font-semibold font-primary'> Submitting it for review</h3>
-                                    <p className='text-[16px] text-[#242424] leading-5'>
-                                        Now this is the final stage of the process when we submit it for review and ensure that all the tasks are completed and that your design is perfected. Our team will ensure your success.
-
-                                    </p>
-                                </div>
-                            </div>
+                            ))}
                         </Slider>
                     </div>
 

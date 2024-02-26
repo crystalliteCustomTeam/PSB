@@ -33,13 +33,13 @@ const Enlisted = ({
             <section className={styles.enlistedFlod}>
                 <div className='mr-container px-md-5'>
                     <Row className='justify-center'>
-                        <Col xxl={10} lg={12} sm={12}>
+                        <Col xxl={12} lg={12} sm={12}>
                             <div className={`${styles.enlistedHead} text-center justify-center`}>
                                 <h4 className='font-30 fw_500 font-semibold font-primary txt-primary'>{subtitle}</h4>
-                                <h2 className='font-45 fw_700 font-bold fw-500 font-primary txt-secondary mb-3' dangerouslySetInnerHTML={{ __html: title }}>
+                                <h2 className='text-[45px] font-bold font-primary txt-secondary mb-3' dangerouslySetInnerHTML={{ __html: title }}>
                                 </h2>
                                 {/* <span className='bg-black txt-white mt-2 p-1 text-[45px] fw-500'>{desc}</span> */}
-                                <h2 className='text-[45px] fw-500 font-primary txt-secondary mb-3 w-75' dangerouslySetInnerHTML={{ __html: desc2 }} />
+                                <h2 className='text-[45px] font-semibold font-primary txt-secondary mb-3 w-75' dangerouslySetInnerHTML={{ __html: desc2 }} />
                             </div>
                         </Col>
                         <Col xxl={10} lg={8} sm={0}>
@@ -52,11 +52,11 @@ const Enlisted = ({
 
                                     <div className={styles.midImg}>
                                         <div>
-                                            <p className={`${styles.para1} font-30 font-primary txt-secondary mt-5 mb-5`}>1.</p>
-                                            <p className={`${styles.para2} font-30 font-primary txt-secondary mb-5`}>2.</p>
-                                            <p className={`${styles.para3} font-30 font-primary txt-secondary mb-5`}>3.</p>
-                                            <p className={`${styles.para4} font-30 font-primary txt-secondary mb-5`}>4.</p>
-                                            <p className={`${styles.para5} font-30 font-primary txt-secondary`}>5.</p>
+                                            <p className={`${styles.para1} text-[30px] font-primary txt-secondary mt-5 mb-5`}>1.</p>
+                                            <p className={`${styles.para2} text-[30px] font-primary txt-secondary mb-5`}>2.</p>
+                                            <p className={`${styles.para3} text-[30px] font-primary txt-secondary mb-5`}>3.</p>
+                                            <p className={`${styles.para4} text-[30px] font-primary txt-secondary mb-5`}>4.</p>
+                                            <p className={`${styles.para5} text-[30px]  font-primary txt-secondary`}>5.</p>
                                         </div>
                                         <Image quality={100} loading="lazy" className='img-fluid'
                                             src={mid}
@@ -65,8 +65,8 @@ const Enlisted = ({
                                         <div className='pb-5 w-75'>
                                             {data?.map((e, i) => (
                                                 <div key={i}>
-                                                    <p className='font-30 font-primary txt-secondary mt-5' dangerouslySetInnerHTML={{ __html: e.paraTitle }} />
-                                                    <p className='font-15 font-secondary txt-secondary ' dangerouslySetInnerHTML={{ __html: e.paraSubTitle }} />
+                                                    <p className='text-[30px] font-semibold font-primary txt-secondary mt-[32px]' dangerouslySetInnerHTML={{ __html: e.paraTitle }} />
+                                                    <p className='text-[16px] font-secondary txt-secondary ' dangerouslySetInnerHTML={{ __html: e.paraSubTitle }} />
                                                 </div>
                                             ))}
                                         </div>

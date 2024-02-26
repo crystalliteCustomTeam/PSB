@@ -69,7 +69,7 @@ const Enlisted = ({
             <section className={styles.enlistedFlod}>
                 <div className='mr-container px-md-5'>
                     <Row className='justify-content-left'>
-                        <Col lg={10} sm={12}>
+                        <Col lg={12} sm={12}>
                             <div className={`${styles.enlistedHead} text-center`}>
                                 <h4 className='font-30 font-primary txt-primary'>{subtitle}</h4>
                                 <h2 className='font-50 fw-500 font-primary txt-secondary mb-3' dangerouslySetInnerHTML={{ __html: title }}>
@@ -78,7 +78,7 @@ const Enlisted = ({
                                 <p className='w-75 m-auto font-15'>{paragraph}</p>
                             </div>
                         </Col>
-                        <Col lg={8} sm={12} xs={12}>
+                        <Col xxl={10} lg={10} sm={12} xs={12} className='m-auto'>
                             <div className={`${styles.enlisContnt} text-center mt-3`}>
                                 <div className={styles.enlisImg}>
                                     <Image quality={100} loading="lazy" className='img-fluid'
@@ -101,7 +101,7 @@ const Enlisted = ({
                                             src={mid}
                                             alt='Best_Publisher'
                                         />
-                                        <div className='pb-5 '>
+                                        <div className='pb-5 mr-2xl:w-[60%]'>
                                             {data?.map((e, i) => (
                                                 <div key={i}>
                                                     <p className='font-30 leading-normal font-primary txt-secondary mt-[35px]' dangerouslySetInnerHTML={{ __html: e.paraTitle }} />

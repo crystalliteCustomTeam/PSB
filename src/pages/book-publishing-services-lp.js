@@ -66,8 +66,8 @@ const about = () => {
         />
         <Enlistedlogo />
         <Tradition
-          title="Top-Notch Children's Illustration Services "
-          desc="Our Skilled Publishing Experts Can Guide You Through The Publishing Process"
+          title="Proficient Books Publishers Services "
+          desc="We Publish Books That Sell!"
         />
         <EnlistedNew
           subtitle="Be a Part of the Best Sellers’ Fraternity"
@@ -87,8 +87,9 @@ const about = () => {
         {/*========= Broader fold =========*/}
         <BroaderNew
           subtitle=""
-          title="Publishing Children's <br/> Illustration With The Best <br/> Seller Publishin Services!"
-          desc="“Whatever you may have heard, self-publishing is not a shortcut to anything. Except maybe insanity. Self-publishing, like every other kind of publishing, is hard work. You don’t wake up one morning good at it. You have to work for that.” — Zoe Winters <br/> When you're ready to publish your book, you want to ensure you're working with a reputable and reliable self-publishing company. Best Selling Publisher is one of the best in the business, and we're proud to offer our services to authors looking to self-publish. Call us today to become a published author!"
+          title="Where Your Words Could Change The World"
+          desc="“At Best Selling Publisher, we understand that book publishing can be a daunting task for authors. We are here to help you every step of the way, from start to finish. We have years of experience in the industry, and our team of experts is dedicated to helping you reach your publishing goals. We offer a variety of services to choose from, such as eBook publishing services, digital publishing services, and Amazon publishing services, so you can find the perfect fit for your needs. We are here to help you succeed!.<br/><br/>
+          We are the leading book publishers in the industry with the creative flair and dedication that you need. Whether you are looking for children's book publishers or science fiction publishers, we have you covered! We publish your dreams so call us today!"
           image={broader}
         />
         {/*========= CTA fold =========*/}

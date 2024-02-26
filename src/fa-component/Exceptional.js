@@ -19,22 +19,10 @@ const data = [
         alt: "Book Writing"
     },
     {
-        heading: "Book Publishing Services",
-        para: "Content creation has always been an automated process to us. Writing blogs and Articles and publishing them is an easy task for us. Our job doesn’t end once we’re done publishing, we also share it on multiple online platforms in order to gain traction to your content.",
-        path: "/images/flods/digital_book_publishing.png",
-        alt: "Book Publishing Services"
-    },
-    {
         heading: "Article Publication",
         para: "we provide high-quality Article Publication services to help our clients reach their target audiences. We have a team of experienced professionals knowledgeable in the latest Article Publication trends and technologies.",
         path: "/images/flods/ebook_publishing.png",
         alt: "Article Publication"
-    },
-    {
-        heading: "Children’s Book Publication",
-        para: "Publishing children's books is no easy undertaking. Even though the book is only a little over 100 pages long, not everything appeals to these tiny beings. It takes several rewrites and re-drafts to concisely express an idea with a clear message, and we are here to assist.",
-        path: "/images/flods/self_publishing.png",
-        alt: "Children’s Book Publication"
     },
     {
         heading: "E-Book Writing",
@@ -43,16 +31,29 @@ const data = [
         alt: "E-Book Writing"
     },
     {
+        heading: "Book Marketing",
+        para: "Stop getting lost in the mix with our remarkable book marketing services! We advertise and promote your book in the most efficient way possible, taking it from the back of the shelf to the top of the bestseller list. We are the marketing & promotion specialists for the books you require.",
+        path: "/images/flods/book_marketing.png",
+        alt: "Book Marketing"
+    },
+    {
+        heading: "Children’s Book Publication",
+        para: "Publishing children's books is no easy undertaking. Even though the book is only a little over 100 pages long, not everything appeals to these tiny beings. It takes several rewrites and re-drafts to concisely express an idea with a clear message, and we are here to assist.",
+        path: "/images/flods/self_publishing.png",
+        alt: "Children’s Book Publication"
+    },
+
+    {
         heading: "Children's Book Illustrations",
         para: "Kids can be picky and direct in their choices, but that doesn't make them impartial. When giving them books, make sure the illustrations and designs catch their interest, creating a reading experience they'll want to revisit.",
         path: "/images/flods/self_publishing.png",
         alt: "Children's Book Illustrations"
     },
     {
-        heading: "Book Marketing",
-        para: "Stop getting lost in the mix with our remarkable book marketing services! We advertise and promote your book in the most efficient way possible, taking it from the back of the shelf to the top of the bestseller list. We are the marketing & promotion specialists for the books you require.",
-        path: "/images/flods/book_marketing.png",
-        alt: "Book Marketing"
+        heading: "Book Publishing Services",
+        para: "Content creation has always been an automated process to us. Writing blogs and Articles and publishing them is an easy task for us. Our job doesn’t end once we’re done publishing, we also share it on multiple online platforms in order to gain traction to your content.",
+        path: "/images/flods/digital_book_publishing.png",
+        alt: "Book Publishing Services"
     }
 ]
 
@@ -74,10 +75,10 @@ const Exceptional = ({
         <>
             <section className={`${styles.dreams1Flod} py-5`}>
                 <div className="mr-container px-md-3">
-                <div className={`${styles.dreamsHead} text-center`}>
-                                <h2 className='font-50 fw-700 font-primary txt-secondary mb-3' dangerouslySetInnerHTML={{ __html: title }} />
-                                <p className='font-15 font-secondary txt-secondary mb-5' dangerouslySetInnerHTML={{ __html: subtitle }} />
-                            </div>
+                    <div className={`${styles.dreamsHead} text-center`}>
+                        <h2 className='font-50 fw-700 font-primary txt-secondary mb-3' dangerouslySetInnerHTML={{ __html: title }} />
+                        <p className='font-15 font-secondary txt-secondary mb-5' dangerouslySetInnerHTML={{ __html: subtitle }} />
+                    </div>
                     <Row className={`${styles.dreamsRow} justify-content-center pt-4 pb-5 gy-4 gx-4 mr-xs:mx-3`}>
                         {data?.map((e, i) => (
                             <Col key={i} xl={4} lg={4} md={6} xxl={3} >
