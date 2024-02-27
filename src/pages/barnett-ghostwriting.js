@@ -13,7 +13,7 @@ import SwiperComponents from '../component/SwiperComponent'
 import { MRHero } from '@/component';
 import Enlistedlogo from '@/fa-component/Enlistedlogo';
 import Tradition from '@/fa-component/Tradition';
-import StoryPlot from '@/fa-component/StoryPlot';
+import StoryPlot from '@/component';
 import PublishingNewComponent from '@/fa-component/PublishingNewComponent';
 // import TSlider from '../component/testimonialslider';
 export default function Home() {

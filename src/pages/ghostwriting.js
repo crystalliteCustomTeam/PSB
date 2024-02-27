@@ -7,8 +7,8 @@ import CTA from '../component/cta3';
 import BTM from '../component/bottomLogos';
 import SwiperComponents from '../component/SwiperComponent'
 import Enlistedlogo from '@/fa-component/Enlistedlogo'
-import { MRHero } from '@/component'
-import ARcheck from 'media/imageAR/checkmark.png'
+import { MRHero, MRContact } from '@/component'
+
 
 const Ghostwriting = () => {
 
@@ -103,6 +103,7 @@ const Ghostwriting = () => {
           ]}
         />
         <SwiperComponents />
+        <MRContact />
       </main>
     </>
   )

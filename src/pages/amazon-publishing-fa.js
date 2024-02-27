@@ -9,9 +9,8 @@ import Exceptional from '@/fa-component/Exceptional'
 import SwiperComponent from '@/component/SwiperComponent'
 import BTM from '../component/bottomLogos';
 import CTA from '../component/cta3';
-import StoryPlot from '@/fa-component/StoryPlot';
 import PublishingNewComponent from '@/fa-component/PublishingNewComponent'
-import { MRHero } from '@/component'
+import { MRHero, MRContact } from '@/component'
 
 import bannerImg from 'media/images/banner/amazonbanner.png'
 import img2 from 'media/images/banner/img2.png'
@@ -136,7 +135,7 @@ const amazonpublishing = () => {
       <SwiperComponent />
 
       {/*========= Bookshelf fold =========*/}
-      <StoryPlot />
+      <MRContact />
     </>
   )
 }

@@ -41,52 +41,52 @@ const Plans = () => {
                 <div className='mr-container px-5'>
                     <Row className='align-items-center'>
                         <Col lg={12} className='m-auto'>
-                            <Row className={`${styles.plansRow} justify-content-between align-items-center`}>
+                            <Row className={`${styles.plansRow}`}>
                                 <Slider {...planslider}>
-                                    <Col lg={3}>
-                                        <div className={`${styles.plans} flex gap-2 align-items-center`}>
-                                            <Image quality={80} loading="lazy" className='img-fluid d-block mr-auto'
+                                    <div>
+                                        <div className={`${styles.plans} flex gap-2 align-items-center justify-center`}>
+                                            <Image quality={80} loading="lazy" className='img-fluid d-block !m-0'
                                                 src={rating}
                                                 alt='Best_Publisher'
                                             />
-                                            <p className='font-18 fw-500 font-secondary txt-white w-50 line-height1'>
+                                            <p className='font-18 fw-500 font-secondary txt-white w-max line-height1'>
                                                 100% Customer <span className='d-block'>Satisfaction</span>
                                             </p>
                                         </div>
-                                    </Col>
-                                    <Col lg={3}>
-                                       <div className={`${styles.plans} flex gap-2 align-items-center`}>
-                                            <Image quality={80} loading="lazy" className='img-fluid d-block !mr-auto'
+                                    </div>
+                                    <div>
+                                       <div className={`${styles.plans} flex gap-2 align-items-center justify-center`}>
+                                            <Image quality={80} loading="lazy" className='img-fluid d-block !m-0'
                                                 src={globe}
                                                 alt='Best_Publisher'
                                             />
-                                            <p className='font-18 fw-500 font-secondary  txt-white  w-60 line-height1'>
+                                            <p className='font-18 fw-500 font-secondary  txt-white  w-max line-height1'>
                                                 2500+ Customers in <span className='d-block'>51+ Countries</span>
                                             </p>
                                         </div>
-                                    </Col>
-                                    <Col lg={3}>
-                                       <div className={`${styles.plans} flex gap-2 align-items-center`}>
-                                            <Image quality={80} loading="lazy" className='img-fluid !mr-auto d-block'
+                                    </div>
+                                    <div>
+                                       <div className={`${styles.plans} flex gap-2 align-items-center justify-center`}>
+                                            <Image quality={80} loading="lazy" className='img-fluid d-block !m-0'
                                                 src={project}
                                                 alt='Best_Publisher'
                                             />
-                                            <p className='font-18 fw-500 font-secondary  txt-white w-60 line-height1'>
+                                            <p className='font-18 fw-500 font-secondary  txt-white w-max line-height1'>
                                                 Flexible <span className=''>Plans</span>
                                             </p>
                                         </div>
-                                    </Col>
-                                    <Col lg={3}>
-                                       <div className={`${styles.plans} flex gap-2 align-items-center`}>
-                                            <Image quality={80} loading="lazy" className='img-fluid !mr-auto d-block'
+                                    </div>
+                                    <div>
+                                       <div className={`${styles.plans} flex gap-2 align-items-center justify-center`}>
+                                            <Image quality={80} loading="lazy" className='img-fluid d-block !m-0'
                                                 src={stamp}
                                                 alt='Best_Publisher'
                                             />
-                                            <p className='font-18 fw-500 font-secondary  txt-white w-60 line-height1'>
+                                            <p className='font-18 fw-500 font-secondary  txt-white w-max line-height1'>
                                                 All Royalties <span className='d-block'>Belong To You</span>
                                             </p>
                                         </div>
-                                    </Col>
+                                    </div>
                                 </Slider>
                             </Row> 
                         </Col>

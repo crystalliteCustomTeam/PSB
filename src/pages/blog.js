@@ -6,9 +6,8 @@ import WMODE from '../component/workMode1'
 import BTM from '../component/bottomLogos';
 import CTA from '../component/cta3';
 import SwiperComponents from '../component/SwiperComponent'
-import { MRHero } from '@/component';
+import { MRHero, MRContact } from '@/component';
 import Enlistedlogo from '@/fa-component/Enlistedlogo'
-import StoryPlot from "@/fa-component/StoryPlot"
 
 const blog = () => {
   return (
@@ -32,7 +31,7 @@ const blog = () => {
           desc="Our blog is a paradise for writers, authors, and intellectuals alike. Over here we share ideas on design, publishing, marketing and promotion. We discuss the ghostwriting industry and how it works as well as educating readers on what the landscape of the industry is."
           logos="images/banner/img2.png"
           classes='!py-[40px] bg-[#fefefe] bg-right bg-center'
-          fullImg="bg-[url('../../public/imageAR/young-student-working-assignment.png')]"
+          beforeImg="mr-md:before:bg-[url('../../public/imageAR/young-student-working-assignment.png')] before:!opacity-100"
           counter={true}
           form={false}
         />
@@ -42,7 +41,7 @@ const blog = () => {
         <CTA />
         <WMODE />
         <SwiperComponents />
-        <StoryPlot/>
+        <MRContact/>
       </main>
     </>
   )

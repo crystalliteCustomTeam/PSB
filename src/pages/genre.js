@@ -6,9 +6,8 @@ import BTM from '../component/bottomLogos';
 import CTA from '../component/cta3';
 import SwiperComponents from '../component/SwiperComponent'
 import Enlistedlogo from '@/fa-component/Enlistedlogo'
-import { MRHero } from '@/component';
+import { MRHero, MRContact } from '@/component';
 import PublishingNewComponent from "@/fa-component/PublishingNewComponent"
-import StoryPlot from "@/fa-component/StoryPlot"
 
 const about = () => {
 
@@ -46,7 +45,7 @@ const about = () => {
         <CTA />
         {/* <WMODE /> */}
         <SwiperComponents />
-        <StoryPlot/>
+        <MRContact/>
       </main>
     </>
   )

@@ -12,8 +12,7 @@ import BTM from '../component/bottomLogos';
 import CTA from '../component/cta3';
 import SwiperComponents from '../component/SwiperComponent'
 import Enlistedlogo from '@/fa-component/Enlistedlogo'
-import { MRHero } from '@/component';
-import StoryPlot from '@/fa-component/StoryPlot';
+import { MRHero, MRContact } from '@/component';
 import PublishingNewComponent from '@/fa-component/PublishingNewComponent';
 
 
@@ -70,7 +69,7 @@ const about = () => {
         <BTM />
         <CTA />
         <SwiperComponents />
-        <StoryPlot />
+        <MRContact />
       </main>
     </>
   )
