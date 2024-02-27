@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import AuthorGlassImage from 'media/ahsan/spacious-bookstore-interior.png'
+import { MRCTA } from '.'
 // const openZendeskChat = () => {
 //     if (window.zESettings) {
 //         window.zE('webWidget', 'open');
@@ -12,19 +13,19 @@ const marketBook1 = () => {
         <>
             <section className='py-[80px]'>
                 <div className='mr-container m-auto '>
-                    <div className='flex items-center'>
-                        <div className=''>
+                    <div className='grid mr-lg:grid-cols-2 items-center'>
+                        <div className='hidden mr-md:block'>
                             <Image className='img-fluid m-auto' quality={100} alt="Author Glass Reading Books" src={AuthorGlassImage} />
                         </div>
                         <div className='items-center'>
                             <div className=''>
-                                <h6 className='font-semibold text-[30px] font-primary text-[#40BEE2] mb-3 leading-tight'>Market your book</h6>
-                                <h2 className='text-[40px] font-primary font-semibold mb-3 leading-tight'>In the best possible way!
+                                <h6 className='font-semibold mr-lg:!text-[30px] font-primary !text-[20px] text-[#40BEE2] mb-3 leading-tight'>Market your book</h6>
+                                <h2 className='mr-lg:text-[45px] text-[30px] font-primary font-bold mb-3 leading-tight'>In the best possible way!
                                 </h2>
                                 <p className='text-[16px] leading-normal'>When selecting  Best Selling Publisher Ghostwriting, be assured that you have opted for a highly professional company serving as the definitive one-stop solution for all your marketing requirements.</p>
                             </div>
-                            <div className='md:mt-[0px] xs:mt-[30px] relative z-auto pt-5' >
-                                <div className="container-xl max-w-7xl lg:max-w-6xl justify-center md:gap-10 mx-auto md:pr-0 md:ml-0 ">
+                            <div className='relative z-auto pt-5' >
+                                <div className="justify-center md:gap-10 mx-auto md:pr-0 md:ml-0 ">
                                     <div className=" md:w-[100%] md:gap-x-6 sm:w-[100%] xs:w-[100%] space-x-10 py-3 md:px-5 mx-auto xs:space-x-0 xs:px-4 font-semibold">
                                         <ul className='xs:w-[100%] x:block inline-block text-[16px] space-y-3 justify-center items-center xs:text-[14px] '>
                                             <li className='flex space-x-3 border-b-[1px] items-center border-solid border-[#40BEE2] pb-3'>
@@ -46,10 +47,24 @@ const marketBook1 = () => {
                                             <li className='flex space-x-3 border-b-[1px] items-center border-solid border-[#40BEE2] pb-3'><Image src="/assets/images/newimg/color-check2.png" width={9} height={9} className='h-[9px] w-[9px]' alt="Barnes & Noble Nook Edition" /><h5>Barnes & Noble Nook Edition</h5></li>
                                         </ul>
                                     </div>
-                                    <div className='w-[55%] md:w-[60%] sm:w-[90%] xs:w-[100%] grid grid-cols-2 grid-rows-1 gap-x-6 py-5 relative'>
+                                    <div className={`grid grid-cols-1 mr-sm:flex gap-3 mt-5`}>
+                                        <MRCTA
+                                            text="LET'S DISCUSS"
+                                            classes="hover:bg-transparent hover:border-secondary-100 rounded-sm bg-secondary-100"
+                                            handle="onclick='parent.LC_API.open_chat_window();return false;'"
+                                        />
+                                        <MRCTA
+                                            text="800-781-9093"
+                                            link="tel:8007819093"
+                                            bg="bg-transparent"
+                                            color="text-primary-100"
+                                            border="border-secondary-100 hover:!bg-white hover:border-secodary hover:text-black rounded-sm text-secondary-100"
+                                        />
+                                    </div>
+                                    {/* <div className='w-[55%] md:w-[60%] sm:w-[90%] xs:w-[100%] grid grid-cols-2 grid-rows-1 gap-x-6 py-5 relative'>
                                         <a href='tel:800-781-9093' className='bg-[#00C0E4] py-1 text-white hover:bg-white hover:border-solid hover:border-[3px] hover:text-[#1d1d1f] hover:transition-all text-center flex items-center justify-center h-[40px]'>Get started</a>
                                         <a href='javascript:$zopim.livechat.window.show()' className='bg-[#1d1d1f] py-1 text-white border-[#1d1d1f] border-[3px] hover:bg-[#00C0E4] hover:text-[#1d1d1f] hover:border-[2px] hover:border-[#00C0E4] text-center flex items-center justify-center h-[40px]'>Live Chat</a>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>

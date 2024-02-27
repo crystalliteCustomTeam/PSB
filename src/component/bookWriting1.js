@@ -1,15 +1,15 @@
 import React from 'react'
 
 import Image from 'next/image'
-import { MRCTAGroup } from '.'
+import { MRCTA, MRCTAGroup } from '.'
 
 const bookWriting = (props) => {
     return (
         <>
             <section className=" py-20 text-[#1d1d1f] font-primary">
                 <div className='mr-container'>
-                    <div className='grid grid-cols-12 items-center'>
-                        <div className=" mr-lg:col-span-5 mr-md:col-span-6">
+                    <div className='grid mr-lg:grid-cols-12 items-center'>
+                        <div className=" mr-lg:col-span-5">
                             <h6 className='text-[30px] font-primary text-[#40BEE2] font-semibold mb-3'>
                                 Are you in pursuit of
                             </h6>
@@ -39,10 +39,23 @@ const bookWriting = (props) => {
                                     <h5 className='mr-xl:text-[16px] mr-md:text-[12px]'>Additions, revisions, and re-editions!</h5>
                                 </li>
                             </ul>
-                            <MRCTAGroup classes='mt-5' />
+                            <div className={`grid grid-cols-1 mr-sm:flex gap-3  mt-5`}>
+                            <MRCTA
+                                text="LET'S DISCUSS"
+                                classes="hover:bg-transparent hover:border-secondary-100 hover:text-black rounded-sm bg-primary-100"
+                                handle="onclick='parent.LC_API.open_chat_window();return false;'"
+                            />
+                            <MRCTA
+                                text="800-781-9093"
+                                link="tel:8007819093"
+                                bg="bg-transparent"
+                                color="text-primary-100"
+                                border="border-primary-100 hover:!bg-white hover:border-secodary hover:text-black rounded-sm text-secondary-100"
+                            />
+                        </div>
                         </div>
 
-                        <div className="mr-lg:col-span-7 mr-md:col-span-6 hidden mr-md:block">
+                        <div className="mr-lg:col-span-7 hidden mr-lg:block">
                             <Image quality={95} width={1500} height={700} alt='' src="/assets/images/newimg/industry-section.png" className="img-fluid m-auto" />
                         </div>
                     </div>

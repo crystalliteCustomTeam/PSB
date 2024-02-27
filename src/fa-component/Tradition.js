@@ -79,7 +79,7 @@ const Tradition = ({
                         <Col lg={12}>
                             <div className={`${styles.mockupsHead} text-center mb-5`}>
                                 <h6 className='text-[30px] text-[#40BEE2] font-semibold mb-3 sm:text-base xs:text-base font-primary'>{subtitle}</h6>
-                                <h2 className={`text-[45px] font-bold font-primary text-black mb-3 ${classes}`} dangerouslySetInnerHTML={{ __html: title }} />
+                                <h2 className={`mr-lg:text-[45px] text-[30px] font-bold font-primary text-black mb-3 ${classes}`} dangerouslySetInnerHTML={{ __html: title }} />
                                 <p className={`text-[15px] font-secondary text-black ${classes}`}>{desc}</p>
                                 <div className='m-auto justify-content-center'>
                                     <Image quality={100} loading="lazy" className='img-fluid justify-content-center'
@@ -92,7 +92,7 @@ const Tradition = ({
                         </Col>
 
 
-                        <Col lg={12}>
+                        <Col lg={12} className='my-5'>
                             <div className='trade'>
                                 <Slider {...traditionslider}>
                                     <div>

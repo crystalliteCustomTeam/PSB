@@ -101,15 +101,15 @@ const writingservices = () => {
     return (
         <>
 
-            <div className="w-full px-8 py-16 xs:py-8 md:px-2 bg-[#fff] ">
+            <div className="mr-lg:py-[40px] xs:py-8 md:px-2 bg-[#fff] ">
                 <div className='mr-container'>
-                    <div className='grid mr-xl:grid-cols-12 items-center'>
-                        <div className='mr-xl:col-span-4 col-span-12 m-auto mr-xl:mb-0 mb-10'>
-                            <h4 className='mr-2xl:text-[50px] text-[40px] mr-lg:text-[40px] font-primary font-bold md:py-5 mr-xl:!text-left !text-center mr-md:text-[40px] mr-xs:text-[40px] xs:py-3 leading-tight'>Exceptional <br className='mr-2xl:block hidden'/> Book Writing <br className='mr-2xl:block hidden'/> Service!</h4>
-                            <MRCTAGroup classes='mt-4 mr-2xl:flex-nowrap mr-xl:flex-wrap mr-lg:flex-wrap mr-xl:!w-[100%] mr-lg:mx-auto mr-xl:justify-start justify-center' />
+                    <div className='grid mr-xl:grid-cols-12 items-center justify-center'>
+                        <div className='mr-xl:col-span-4 col-span-12 m-auto mr-xl:mb-0 mb-10 items-center'>
+                            <h4 className='mr-2xl:text-[50px] text-[40px] mr-lg:text-[40px] font-primary font-bold mr-md:py-5 mr-xl:!text-left !text-center mr-md:text-[40px] mr-xs:text-[40px] mr-xs:py-3 leading-tight'>Exceptional <br className='mr-2xl:block hidden'/> Book Writing <br className='mr-2xl:block hidden'/> Service!</h4>
+                            <MRCTAGroup classes='mt-4 mr-2xl:flex-nowrap  mr-lg:flex-wrap mr-2xl:w-[100%] mr-xl:!w-[80%] mr-lg:!w-[80%] mr-lg:mr-auto mr-xl:justify-start mb-[30px]' />
                         </div>
 
-                        <div className={`${isLargeScreen ? '' : 'hidden'} flex col-span-8 mr-xl:pl-2`}>
+                        <div className={`${isLargeScreen ? '' : 'hidden'} flex col-span-8 mr-xl:pl-2 items-center`}>
                             {data?.map((e, i) => (
                                 <div key={i} className='m-auto col-span-3'>
                                     <Image quality={100} src={e.ImagePath} className='mr-auto' width={130} height={200} alt={e.alt} />
