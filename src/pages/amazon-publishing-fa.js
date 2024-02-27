@@ -10,7 +10,7 @@ import SwiperComponent from '@/component/SwiperComponent'
 import BTM from '../component/bottomLogos';
 import CTA from '../component/cta3';
 import PublishingNewComponent from '@/fa-component/PublishingNewComponent'
-import { MRHero, MRContact } from '@/component'
+import { MRHero, MRContact, MRQuestioners } from '@/component'
 
 import bannerImg from 'media/images/banner/amazonbanner.png'
 import img2 from 'media/images/banner/img2.png'
@@ -31,31 +31,26 @@ const amazonpublishing = () => {
       img2: img2,
     }
   ]
-  const paratitles = [
+  const MRQuestionersData = [
     {
-      para: 1,
-      paraTitle: "What is Amazon KDP?",
-      paraSubTitle: "Amazon KDP is a self publishing service from Amazon that allows authors to publish  and distribute their books worldwide. It's a fast, easy and affordable way to get your book into the hands of readers looking for new titles to enjoy."
+      title: "What is Amazon KDP?",
+      desc: "Amazon KDP is a self publishing service from Amazon that allows authors to publish  and distribute their books worldwide. It's a fast, easy and affordable way to get your book into the hands of readers looking for new titles to enjoy."
     },
     {
-      para: 2,
-      paraTitle: "How Does Amazon KDP Work?",
-      paraSubTitle: "Amazon KDP works by allowing authors to upload their book files to the Amazon Kindle Store, where they can be sold and downloaded by readers. Authors can also choose to have their books printed and shipped to customers via Amazon's CreateSpace service."
+      title: "How Does Amazon KDP Work?",
+      desc: "Amazon KDP works by allowing authors to upload their book files to the Amazon Kindle Store, where they can be sold and downloaded by readers. Authors can also choose to have their books printed and shipped to customers via Amazon's CreateSpace service."
     },
     {
-      para: 3,
-      paraTitle: "How Much Does It Cost To Publish With Amazon KDP?",
-      paraSubTitle: "It costs nothing to publish your book with Amazon KDP. You will only be charged when your book is sold, and you will receive a 70% royalty on each sale."
+      title: "How Much Does It Cost To Publish With Amazon KDP?",
+      desc: "It costs nothing to publish your book with Amazon KDP. You will only be charged when your book is sold, and you will receive a 70% royalty on each sale."
     },
     {
-      para: 4,
-      paraTitle: "What Are The Requirements For My Book?",
-      paraSubTitle: "Your book must be at least 20 pages long and have a professional cover design. Additionally, your book must be formatted correctly to be accepted into the Amazon Kindle Store."
+      title: "What Are The Requirements For My Book?",
+      desc: "Your book must be at least 20 pages long and have a professional cover design. Additionally, your book must be formatted correctly to be accepted into the Amazon Kindle Store."
     },
     {
-      para: 5,
-      paraTitle: "What Are The Benefits Of Publishing With Amazon KDP?",
-      paraSubTitle: "It costs nothing to publish your book with Amazon KDP. You will only be charged when your book is sold, and you will receive a 70% royalty on each sale."
+      title: "What Are The Benefits Of Publishing With Amazon KDP?",
+      desc: "It costs nothing to publish your book with Amazon KDP. You will only be charged when your book is sold, and you will receive a 70% royalty on each sale."
     }
   ]
 
@@ -107,10 +102,16 @@ const amazonpublishing = () => {
       />
 
       {/*========= Enlisted fold =========*/}
-      <EnlistedNew
+      {/* <EnlistedNew
         subtitle="Be a Part of the Best Sellers’ Fraternity"
         title={"Some Questions Whirling Around Your Mind About <br/> Amazon KDP Publishing Have Answers Over Here!"}
         data={paratitles}
+      /> */}
+      <MRQuestioners
+        subTitle="Be a Part of the Best Sellers’ Fraternity"
+        title="Some Questions Whirling Around Your Mind About <br class='hidden mr-lg:block' /> Amazon KDP Publishing Have Answers Over Here!"
+        desc="As an author, you have a lot of control over the success of your book. But did you know that there are companies out there whose sole purpose is to help you self-publish your book and make it a success? These are called self publishing book services companies, and they can provide everything from writing and editing to marketing and distribution. "
+        data = {MRQuestionersData}
       />
       <PublishingNewComponent
         subtitle="Enlist Yourself with the All-Time Best "
