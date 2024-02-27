@@ -42,13 +42,13 @@ const Tradition = ({
         slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 992,
+                breakpoint: 991,
                 settings: {
                     slidesToShow: 3,
                 }
             },
             {
-                breakpoint: 768,
+                breakpoint: 767,
                 settings: {
                     slidesToShow: 2,
                 }
@@ -56,7 +56,7 @@ const Tradition = ({
             {
                 breakpoint: 575,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                 }
             }
         ]

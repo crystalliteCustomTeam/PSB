@@ -50,7 +50,7 @@ const workMode = ({
 
     // Function to update the screen size state
     const updateScreenSize = () => {
-        setIsLargeScreen(window.innerWidth >= 768); // Customize the breakpoint as needed
+        setIsLargeScreen(window.innerWidth >= 767); // Customize the breakpoint as needed
     };
 
     // Add an event listener to update the screen size state on resize
@@ -85,7 +85,7 @@ const workMode = ({
                     <div className={`grid ${GridCols} grid-rows-1 ${isLargeScreen ? '' : 'hidden'} gap-4 md:grid-cols-2 md:w-[90%] mx-auto`}>
                         {StoryPlotData && StoryPlotData?.map((e, i) => (
                             <div key={i} className="col-md hover:-translate-y-1 hover:scale-105 duration-300 shadow-gray-300 rounded-xl shadow-lg">
-                                <div className="box rounded-2xl bg-white text-left text-[#1d1d1f] hover:text-white h-[100%] py-16 px-4 border-0 border-solid transition-[.5s] hover:bg-[#000] hover:border-white group">
+                                <div className="box rounded-2xl bg-white text-left text-[#1d1d1f] hover:text-white h-[100%] py-16 px-4 border-0 border-solid transition-[.5s] hover:!bg-[#000] hover:border-white group">
                                     <h5 className='text-[#40bee2]  text-xl font-semibold mb-3'>{e.steps}</h5>
                                     <p className='text-[20px]  font-primary text-[#40bee2] font-semibold leading-tight m-0 mb-3 transition-[.5s all]' dangerouslySetInnerHTML={{ __html: e.heading }} />
 
