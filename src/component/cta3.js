@@ -111,7 +111,7 @@ const YourComponent = () => {
               <div className="gallery z-0 overflow-hidden absolute lg:pr-20 sm:hidden" >
                 <div className="col">
                   <div className="image">
-                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup1} />
+                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup4} />
                   </div>
                   <div className="image">
                     <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup2} />
@@ -120,7 +120,7 @@ const YourComponent = () => {
                     <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup4} />
                   </div>
                   <div className="image">
-                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup4} />
+                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup1} />
                   </div>
                 </div>
                 <div className="col">

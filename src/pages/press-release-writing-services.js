@@ -7,7 +7,7 @@ import CTA from '../component/cta3';
 import BTM from '../component/bottomLogos';
 import SwiperComponents from '../component/SwiperComponent'
 import StoryPlot from "@/fa-component/StoryPlot"
-import LogoSliders from '../component/bottomLogosNEW'
+import Enlistedlogo from '@/fa-component/Enlistedlogo'
 import { MRHero } from '@/component'
 
 
@@ -33,7 +33,7 @@ const Ghostwriting = () => {
           counter={true}
           beforeImg="mr-md:before:bg-[url('../../public/imageAR/newspaper-concept.png')]"
         />
-        <LogoSliders />
+        <Enlistedlogo />
         <LHPress />
         <GhostWriting serviceTitle="Press Release Writing Services"
         serviceDesc="We have a vast pool of ghostwriters and will work with you to find the best match for your needs. You will receive a PR and media campaign, an audiobook with a professional voice actor, and high-quality studio production. Finally, distribution and retailer accounts will be established in your name, ensuring you own all rights and royalties."/>

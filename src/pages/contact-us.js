@@ -7,7 +7,7 @@ import WMODE from '../component/workMode1'
 import BTM from '../component/bottomLogos';
 import CTA from '../component/cta3';
 import SwiperComponents from '../component/SwiperComponent'
-
+import Enlistedlogo from '@/fa-component/Enlistedlogo'
 import ContactModel from '../component/ContactModel'
 import { MRHero } from '@/component';
 const blog = () => {
@@ -37,6 +37,7 @@ const blog = () => {
           classes='!py-[80px] bg-[#fefefe] bg-right bg-center'
           fullImg="bg-[url('../../public/imageAR/portrait-woman-customer-service-worker.png')]"
         />
+        <Enlistedlogo/>
         <ContactModel></ContactModel>
         <BTM />
         <CTA />

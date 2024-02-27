@@ -6,7 +6,7 @@ import WMODE from '../component/workMode1'
 import CTA from '../component/cta3';
 import BTM from '../component/bottomLogos';
 import SwiperComponents from '../component/SwiperComponent'
-import LogoSliders from '../component/bottomLogosNEW'
+import Enlistedlogo from '@/fa-component/Enlistedlogo'
 import StoryPlot from "@/fa-component/StoryPlot"
 import { MRHero } from '@/component';
 
@@ -33,7 +33,7 @@ const MagazineWriting = () => {
           beforeImg="mr-md:before:bg-[url('../../public/imageAR/magazine.png')]"
           counter={true}
         />
-        <LogoSliders />
+        <Enlistedlogo />
         <LHMagazine />
         <GhostWriting serviceTitle="Magazine Writting Services"
           serviceDesc="We have a vast pool of ghostwriters and will work with you to find the best match for your needs. You will receive a PR and media campaign, an audiobook with a professional voice actor, and high-quality studio production. Finally, distribution and retailer accounts will be established in your name, ensuring you own all rights and royalties.

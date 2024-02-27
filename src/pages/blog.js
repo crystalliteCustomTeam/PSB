@@ -7,7 +7,7 @@ import BTM from '../component/bottomLogos';
 import CTA from '../component/cta3';
 import SwiperComponents from '../component/SwiperComponent'
 import { MRHero } from '@/component';
-import LogoSliders from '../component/bottomLogosNEW'
+import Enlistedlogo from '@/fa-component/Enlistedlogo'
 import StoryPlot from "@/fa-component/StoryPlot"
 
 const blog = () => {
@@ -36,7 +36,7 @@ const blog = () => {
           counter={true}
           form={false}
         />
-        <LogoSliders />
+        <Enlistedlogo />
         <WEARE />
         <BTM />
         <CTA />

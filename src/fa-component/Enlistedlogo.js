@@ -52,7 +52,7 @@ const Enlistedlogo = () => {
                 <Row className='justify-content-center'>
                     <Col md={12}>
                        
-                            <div className={`${styles.enlistedLogo}`}>
+                            <div className={`${styles.enlistedLogo} py-2`}>
                                 <Slider {...enlistedslider}>
                                     <div>
                                         <Image quality={100}   loading="lazy" className='img-fluid'

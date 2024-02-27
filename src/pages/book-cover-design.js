@@ -8,7 +8,7 @@ import BOOKCOVERS from '../component/CoverDesign/BookCovers'
 import TAbNAVIGATION from '../component/CoverDesign/TabNavigateCovers'
 import WORKON from '../component/CoverDesign/ProcessWorkMode'
 import SwiperComponents from '../component/SwiperComponent'
-import LogoSliders from '../component/bottomLogosNEW'
+import Enlistedlogo from '@/fa-component/Enlistedlogo'
 import { MRHero } from '@/component';
 import OurComprehensive from '@/component/OurComprehensive';
 import PublishingNewComponent from "@/fa-component/PublishingNewComponent"
@@ -36,7 +36,7 @@ const about = () => {
           beforeImg="mr-md:before:bg-[url('../../public/imageAR/world-book-day.png')]"
           counter={true}
         />
-        <LogoSliders />
+        <Enlistedlogo />
         <WEARE />
         <OurComprehensive/>
         {/* <PWMODE /> */}

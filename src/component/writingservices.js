@@ -64,6 +64,13 @@ const writingservices = () => {
                     slidesToShow: 2, // Display 1 column at this breakpoint
                     slidesToScroll: 2, // Scroll 1 column at this breakpoint
                 }
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 1, // Display 1 column at this breakpoint
+                    slidesToScroll: 1, // Scroll 1 column at this breakpoint
+                }
             }
         ]
     };
@@ -97,9 +104,9 @@ const writingservices = () => {
             <div className="w-full px-8 py-16 xs:py-8 md:px-2 bg-[#fff] ">
                 <div className='mr-container'>
                     <div className='grid mr-xl:grid-cols-12 items-center'>
-                        <div className='mr-xl:col-span-4 m-auto'>
-                            <h4 className='mr-2xl:text-[50px] text-[40px] mr-lg:text-[40px] font-primary font-bold md:py-5 md:text-center mr-md:text-[40px] mr-xs:text-[40px] xs:text-center xs:py-3 leading-tight'>Exceptional Book Writing Service!</h4>
-                            <MRCTAGroup classes='mt-4 mr-2xl:flex-nowrap mr-xl:flex-wrap mr-lg:flex-wrap mr-xl:!w-[100%] mr-lg:mx-auto' />
+                        <div className='mr-xl:col-span-4 col-span-12 m-auto mr-xl:mb-0 mb-10'>
+                            <h4 className='mr-2xl:text-[50px] text-[40px] mr-lg:text-[40px] font-primary font-bold md:py-5 mr-xl:!text-left !text-center mr-md:text-[40px] mr-xs:text-[40px] xs:py-3 leading-tight'>Exceptional <br className='mr-2xl:block hidden'/> Book Writing <br className='mr-2xl:block hidden'/> Service!</h4>
+                            <MRCTAGroup classes='mt-4 mr-2xl:flex-nowrap mr-xl:flex-wrap mr-lg:flex-wrap mr-xl:!w-[100%] mr-lg:mx-auto mr-xl:justify-start justify-center' />
                         </div>
 
                         <div className={`${isLargeScreen ? '' : 'hidden'} flex col-span-8 mr-xl:pl-2`}>
@@ -117,7 +124,7 @@ const writingservices = () => {
                         <Slider {...settings} className='ImgSliderWS'>
                             {data?.map((e, i) => (
                                 <div key={i} className='col-span-3 '>
-                                    <Image quality={100} src={e.ImagePath} className='mr-auto' width={130} height={200} alt={e.alt} />
+                                    <Image quality={100} src={e.ImagePath} className='block mr-md:mr-auto mx-auto' width={130} height={200} alt={e.alt} />
                                     <h5 className='text-[25px] font-bold mt-5'>{e.heading}</h5>
                                     <p className='text-base'>{e.desc}</p>
                                 </div>

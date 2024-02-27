@@ -5,7 +5,7 @@ import PWMODE from '../component/editing/CoverDesign'
 import BTM from '../component/bottomLogos';
 import CTA from '../component/cta3';
 import SwiperComponents from '../component/SwiperComponent'
-import LogoSliders from '../component/bottomLogosNEW'
+import Enlistedlogo from '@/fa-component/Enlistedlogo'
 import { MRHero } from '@/component';
 import PublishingNewComponent from "@/fa-component/PublishingNewComponent"
 import StoryPlot from "@/fa-component/StoryPlot"
@@ -30,7 +30,7 @@ const editing = () => {
           classes='bg-[#fefefe] !py-[80px]'
           beforeImg="mr-md:before:bg-[url('../../public/imageAR/night-laptop.png')]"
         />
-        <LogoSliders />
+        <Enlistedlogo />
         <WEARE />
         <PublishingNewComponent
         subtitle="Enlist Yourself with the All-Time Best "

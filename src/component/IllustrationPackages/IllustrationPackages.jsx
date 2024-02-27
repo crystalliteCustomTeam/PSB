@@ -11,7 +11,7 @@ const IllustrationPackages = ({ packagesData }) => {
                     <p className="mr-md:text-base text-sm font-normal">Our vast experience encourages us to offer fast and captivating book illustrations without fail at affordable rates. <br className="mr-lg:block hidden" />
                         Have a look at our comprehensive pricing plans for illustration services.</p>
                 </div>
-                <div className="grid mr-xl:gap-x-5 gap-5 mr-xl:grid-cols-3 mr-lg:grid-cols-2 grid-cols-1 pt-16">
+                <div className="grid mr-xl:!gap-x-4 gap-5 mr-xl:grid-cols-3 mr-lg:grid-cols-2 grid-cols-1 pt-16">
                     {
                         packagesData && packagesData?.map((e, i) => (
                             <div key={i} className="py-5 mr-xl:even:scale-100 mr-xl:scale-90 shadow-[10px_10px_25px_0px_rgba(0,0,0,0.12)] font-secondary text-[#2d2d2d] mr-2xl:px-4 px-3 border-2 border-[#D9D9D9] rounded-xl">
