@@ -10,14 +10,13 @@ import SwiperComponent from '@/component/SwiperComponent'
 import Enlistedlogo from '@/fa-component/Enlistedlogo'
 import BTM from '../component/bottomLogos';
 import CTA from '../component/cta3';
-import StoryPlot from '@/fa-component/StoryPlot';
 import PublishingNewComponent from '@/fa-component/PublishingNewComponent'
 // import { Helmet } from 'react-helmet'
 // images
 import bannerImg from 'media/ahsan/digital-book-banner.png'
 import img2 from 'media/images/banner/img2.png'
 import broader from 'media/ahsan/digital-book-broder.png'
-import { MRHero } from '@/component'
+import { MRHero, MRContact } from '@/component'
 
 const amazonpublishing = () => {
   const newSpan = <h1 className='font-50 fw-700 font-primary txt-secondary mt-3 leading-tight'>Digital Book Publishing<br /> Services To Help You Get <br /> Your Book Into The Hands <br />  Of Interested Readers!</h1>;
@@ -108,7 +107,7 @@ const amazonpublishing = () => {
       <SwiperComponent />
 
       {/*========= Bookshelf fold =========*/}
-      <StoryPlot />
+      <MRContact />
 
     </>
   )

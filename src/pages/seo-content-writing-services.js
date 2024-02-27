@@ -6,9 +6,8 @@ import WMODE from '../component/workMode1'
 import CTA3 from '../component/cta3';
 import BTM from '../component/bottomLogos';
 import SwiperComponents from '../component/SwiperComponent'
-import StoryPlot from "@/fa-component/StoryPlot"
 import Enlistedlogo from '@/fa-component/Enlistedlogo'
-import { MRHero } from '@/component';
+import { MRHero, MRContact } from '@/component';
 
 const openLiveChat = (e) => {
   e.preventDefault();
@@ -52,7 +51,7 @@ const Ghostwriting = () => {
         <BTM />
         <WMODE />
         <SwiperComponents />
-        <StoryPlot/>
+        <MRContact/>
       </main>
     </>
   )

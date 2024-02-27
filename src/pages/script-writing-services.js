@@ -7,8 +7,7 @@ import CTA from '../component/cta3';
 import BTM from '../component/bottomLogos';
 import SwiperComponents from '../component/SwiperComponent'
 import Enlistedlogo from '@/fa-component/Enlistedlogo'
-import StoryPlot from "@/fa-component/StoryPlot"
-import { MRHero } from '@/component';
+import { MRHero, MRContact } from '@/component';
 
 
 
@@ -43,7 +42,7 @@ const Ghostwriting = () => {
         <BTM />
         <WMODE />
         <SwiperComponents />
-        <StoryPlot/>
+        <MRContact/>
       </main>
     </>
   )

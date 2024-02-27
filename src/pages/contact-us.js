@@ -35,7 +35,7 @@ const blog = () => {
           form={false}
           counter={true}
           classes='!py-[80px] bg-[#fefefe] bg-right bg-center'
-          fullImg="bg-[url('../../public/imageAR/portrait-woman-customer-service-worker.png')]"
+          beforeImg="mr-md:before:bg-[url('../../public/imageAR/portrait-woman-customer-service-worker.png')] before:!opacity-100"
         />
         <Enlistedlogo/>
         <ContactModel></ContactModel>

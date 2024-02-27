@@ -7,8 +7,7 @@ import BTM from '../component/bottomLogos';
 import SwiperComponents from '../component/SwiperComponent'
 import WMODE from '../component/workMode1'
 import Enlistedlogo from '@/fa-component/Enlistedlogo'
-import StoryPlot from "@/fa-component/StoryPlot"
-import { MRHero } from '@/component';
+import { MRHero, MRContact } from '@/component';
 
 
 const WebCopywritingServices = () => {
@@ -41,7 +40,7 @@ const WebCopywritingServices = () => {
         <CTA />
         <WMODE />
         <SwiperComponents />
-        <StoryPlot />
+        <MRContact />
       </main>
     </>
   )

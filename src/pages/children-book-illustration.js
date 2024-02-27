@@ -7,7 +7,6 @@ import Enlistedlogo from '@/fa-component/Enlistedlogo'
 import SwiperComponent from '@/component/SwiperComponent'
 import BTM from '../component/bottomLogos';
 import CTA from '../component/cta3';
-import StoryPlot from '@/fa-component/StoryPlot';
 import PublishingNewComponent from '@/fa-component/PublishingNewComponent'
 import MagazineProp from '@/component/MagazineProp'
 
@@ -16,7 +15,7 @@ import MagazineProp from '@/component/MagazineProp'
 import bannerImg from 'media/ahsan/children-banner.png'
 import img2 from 'media/images/banner/img2.png'
 import broader from 'media/ahsan/children-broder.png'
-import { MRHero } from '@/component'
+import { MRHero, MRContact } from '@/component'
 import Sales from 'media/ahsan/sales.png'
 import AudienceOriented from 'media/ahsan/audience-oriented.png'
 import Device from 'media/ahsan/device-compatibility.png'
@@ -199,7 +198,7 @@ const amazonpublishing = () => {
       <SwiperComponent />
 
       {/*========= Bookshelf fold =========*/}
-      <StoryPlot 
+      <MRContact 
       BGimage="before:!bg-[url('../../public/ahsan/childrensBookStoryImage.png')]"
       />
     </>

@@ -14,13 +14,12 @@ import Enlistedlogo from '@/fa-component/Enlistedlogo'
 import Exceptional from '@/fa-component/Exceptional'
 import SwiperTestimonial from '@/fa-component/swiperComponent'
 import SwiperComponents from '../component/SwiperComponent'
-import StoryPlotHome from '@/fa-component/StoryPlotHome';
 // import { Helmet } from 'react-helmet'
 // images
 import bannerImg from 'media/ahsan/home-banner.png'
 import img2 from 'media/images/banner/img2.png'
 import broader from 'media/ahsan/children-broder.png'
-import { MRHero } from '@/component'
+import { MRHero, MRContact } from '@/component'
 
 const amazonpublishing = () => {
   const paratitles = [
@@ -115,7 +114,11 @@ const amazonpublishing = () => {
       {/*========= Plans fold =========*/}
       <Plans />
       <SwiperComponents />
-      <StoryPlotHome/>
+      <MRContact
+        subTitle="Whether Bookshelf or Amazon Book Publishing"
+        title="First-Class Book Publishers"
+        desc="Best Selling Publisher offers a wide range of traditional publishing services for businesses of all sizes and authors of all genres. We have a team of experienced professionals who can help you through every step of the publishing process, from editing and formatting to publication and distribution. We also offer a variety of custom publishing options to fit your specific needs, such as digital publishing services and Amazon publishing services. <br /> <br /> Best Selling Publisher is a cutting-edge books publisher that offers a suite of services designed to help authors navigate the ever-changing world of publishing. Our book publishing services are tailored to meet the needs of today's authors. From providing guidance on self-publishing to offering and publishing support, we are committed to helping authors succeed in an increasingly competitive marketplace. What sets Best Selling Publisher apart from other publishers is our commitment to quality. We work with each author on an individual basis, providing the personalized attention that is so essential to success in today's publishing landscape."
+      />
       {/*========= Bookshelf fold =========*/}
       {/* <Bookshelf /> */}
     </>

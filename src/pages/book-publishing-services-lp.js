@@ -8,10 +8,9 @@ import SwiperComponent from '@/component/SwiperComponent'
 import BTM from '../component/bottomLogos';
 import CTA from '../component/cta3';
 import BroaderNew from '@/fa-component/BroaderNew'
-import StoryPlot from '@/fa-component/StoryPlot';
 import PublishingNewComponent from '@/fa-component/PublishingNewComponent'
 import Enlistedlogo from '@/fa-component/Enlistedlogo'
-import { MRHero } from '@/component';
+import { MRHero, MRContact } from '@/component';
 import broader from 'media/ahsan/spacious-bookstore.png'
 import Head from 'next/head';
 
@@ -100,7 +99,7 @@ const about = () => {
         <SwiperComponent />
 
         {/*========= Bookshelf fold =========*/}
-        <StoryPlot />
+        <MRContact />
       </main>
     </>
   )
