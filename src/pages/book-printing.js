@@ -63,7 +63,7 @@ const about = () => {
           title="Your Book Deserves Only The"
           desc="Best Selling Publishers."
           bgImage="bg-[url('../../public/ahsan/WhiteBG.png')]"
-          classes="bg-cover bg-no-repeat"
+          classes="!bg-cover !bg-no-repeat"
           textBG="bg-black"
           txtBlK="!text-black"
         />

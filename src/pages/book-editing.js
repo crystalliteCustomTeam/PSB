@@ -43,7 +43,7 @@ const editing = () => {
         <PWMODE />
         <BTM />
         <CTA />
-        <WMODE />
+        {/* <WMODE /> */}
         <SwiperComponents />
         <StoryPlot/>
       </main>

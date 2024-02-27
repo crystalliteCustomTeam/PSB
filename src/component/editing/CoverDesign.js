@@ -1,13 +1,16 @@
 import React from 'react'
+import { MRCTA } from '..'
 
 
 
 
-const PublishingWorkMode = () => {
+const PublishingWorkMode = ({
+    classes="justify-center mt-5"
+}) => {
     return (
         <>
-            <section className="w-full font-secondary">
-                <div className="container max-w-7xl lg:max-w-6xl py-24 text-[#1d1d1f]">
+            <section className="mr-lg:py-[50px] py-[40px] font-sans">
+                <div className="mr-container text-[#1d1d1f]">
                     <div className="text-center mb-10 justify-center">
                         <h6 className='text-[30px] leading-tight font-primary text-[#40BEE2] font-semibold'>
                             High quality editing
@@ -20,7 +23,7 @@ const PublishingWorkMode = () => {
                         </p>
                     </div>
 
-                    <div className='w-[80%] grid grid-cols-3 gap-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 md:w-[90%] mx-auto xs:w-[90%]'>
+                    <div className='w-[80%] grid grid-cols-3 gap-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 md:w-[90%] mx-auto xs:w-[90%] mb-5'>
                         <div className="col-md hover:-translate-y-1 hover:scale-105 duration-300 hover:text-[#1d1d1f]">
                             <div className="rounded-2xl bg-white text-left p-2 text-[#1d1d1f] h-[100%] shadow-2xl">
                                 <div className='p-5'>
@@ -60,6 +63,20 @@ const PublishingWorkMode = () => {
 
                             </div>
                         </div>
+                    </div>
+                    <div className={`grid grid-cols-1 mr-sm:flex gap-3 ${classes}`}>
+                        <MRCTA
+                            text="LET'S DISCUSS"
+                            classes="hover:bg-secondary-100 rounded-sm"
+                            handle="onclick='parent.LC_API.open_chat_window();return false;'"
+                        />
+                        <MRCTA
+                            text="800-781-9093"
+                            link="tel:8007819093"
+                            bg="bg-transparent"
+                            color="text-primary-100"
+                            border="border-primary-100 hover:!bg-primary-100 hover:border-transparent hover:text-white rounded-sm"
+                        />
                     </div>
                 </div>
             </section>

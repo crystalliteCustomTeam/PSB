@@ -44,7 +44,7 @@ const about = () => {
         <MANUSCRIPT />
         <BTM />
         <CTA />
-        <WMODE />
+        {/* <WMODE /> */}
         <SwiperComponents />
         <StoryPlot/>
       </main>
