@@ -26,27 +26,27 @@ import PublishingNewComponent from '@/fa-component/PublishingNewComponent'
 const MRQuestionersData = [
   {
     title: "Experience and Quality",
-    desc: "We are a highly experienced and reputable book publishing company."
+    desc: "Our team is stacked with seasoned professionals who’ve got one thing on their minds, top-notch quality and no exceptions. "
   },
   {
     title: "Industry Experts",
-    desc: "Our best seller publishing team is composed of industry experts."
+    desc: "Leading the charge, we’re all about delivering solutions that are not just optimal but downright revolutionary."
   },
   {
     title: "Range of Services",
-    desc: "We offer a wide range of book publishing services, including manuscript editing, formatting, and publishing consultation."
+    desc: "Our services vary from ghostwriting that whispers your story to the world, SEO content that puts you on the map, and articles, magazines, and web copy that speak volumes. Not to mention press releases and scripts that make waves — we've got all your writing needs covered!"
   },
   {
     title: "Goal-Driven",
-    desc: "We have a proven track record of success in helping our  authorschieve their publishing goals."
+    desc: "At Best Selling Publisher, We have our priorities set straight. Our main and ultimate goal is client satisfaction and nothing else."
   },
   {
     title: "Affordable Packages",
-    desc: "We offer competitive pricing and terms that are favorable to our authors."
+    desc: "Don’t you deserve a taste of victory too? We don’t want you to miss out on your literary potential. Let’s make your writing dreams come true with affordable digital publishing. "
   },
   {
     title: "Passion and Creativity",
-    desc: "As a leading book publishing company, we are passionate about helping our authors reach their full potential and bring their vision to life."
+    desc: "Guess what? We’re not afraid to burn the midnight oil regarding passion and creativity. Our passion burns like a candle that can never be snuffed. So what are you waiting for? "
   }
 
 ]
@@ -94,16 +94,16 @@ const amazonpublishing = () => {
       <Audience />
       {/*========= Enlisted fold =========*/}
       <MRQuestioners
-        subTitle="Be a Part of the Best Sellers’ Fraternity"
-        title="What Makes Us the Most Preferred Book Publishers?"
+        subTitle="Time again, folks like you have celebrated our services as nothing short of remarkable. "
+        title="Here’s what sets us apart from all the others"
         // desc="As an author, you have a lot of control over the success of your book. But did you know that there are companies out there whose sole purpose is to help you self-publish your book and make it a success? These are called self publishing book services companies, and they can provide everything from writing and editing to marketing and distribution. "
         data={MRQuestionersData}
       />
 
       {/*========= Publshing Component fold =========*/}
       <PublishingNewComponent
-        subtitle="Enlist Yourself with the All-Time Best "
-        title="Your Book Deserves Only The"
+        subtitle="Becoming the Next Best Seller has"
+        title="Never Been Easier with "
         desc="Best Selling Publishers."
         bgImage="bg-[url('../../public/ahsan/bg_black.png')]"
         classes="bg-cover bg-no-repeat"
