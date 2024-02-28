@@ -5,7 +5,7 @@ import BlogTabs from '../blogsContent'
 const TabNavigationGenre = () => {
     return (
         <>
-            <section className="py-[40px] xs:py-10 font-secondary">
+            <section className="mr-lg:py-[80px] mr-md:py-[60px] py-[40px] xs:py-10 font-secondary">
                 <div className="mr-container relative z-10 ">
                     <div className="text-center justify-content-center ">
                         <h6 className='font-semibold text-[30px] leading-tight font-sans text-[#40BEE2]'>Blogs</h6>

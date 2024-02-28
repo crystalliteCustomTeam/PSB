@@ -1,20 +1,19 @@
-import React from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
-import styles from '@/styles/Audience.module.css'
-import { Container, Row, Col } from 'react-bootstrap'
-// mport { Fade } from "react-awesome-reveal";
+import React from "react"
+import Image from "next/image"
+import styles from "@/styles/Audience.module.css"
+import { Container, Row, Col } from "react-bootstrap"
 // images
-import audience from 'media/images/flods/audience1.png'
+import audience from "media/images/flods/audience1.png"
+import { MRCTA } from "@/component"
 
 const Audience = () => {
 
     const openLiveChat = (e) => {
         e.preventDefault();
         if (window.LiveChatWidget) {
-          window.LiveChatWidget.call('maximize');
+            window.LiveChatWidget.call('maximize');
         }
-      };
+    };
 
     return (
         <>
@@ -24,10 +23,21 @@ const Audience = () => {
                         <Col lg={6} sm={12}>
                             <div className={styles.audienceTxt}>
                                 <h2 className='font-50 fw-300 font-primary txt-white mb-3'><span className='bg-black txt-white mt-2 p-1 font-45 fw-500 d-block'>Digital Publishing Services</span> That Amplifies Your Voice  Publishing Services</h2>
-                                <p className='font-15 font-secondary txt-white mb-5'>Let us transform your written words into global conversations, connecting your stories with every corner of the world.</p>
-                                <div className={`${styles.bttns} mt-4 mb-5 mb-md-0`}>
-                                    <Link onClick={openLiveChat} className='btns btnBlack' href="#">Let's discuss</Link>
-                                    <Link className='btns btnTransprnt' href="tel:800-781-9093">800-781-9093</Link>
+                                <p className='font-15 font-secondary txt-white mb-2'>Let us transform your written words into global conversations, connecting your stories with every corner of the world.</p>
+                                <p className='font-15 font-secondary txt-white mb-2'><strong><em>Your Story Deserves to Shine!</em></strong></p>
+                                <div className="grid grid-cols-1 mr-sm:flex gap-3">
+                                    <MRCTA
+                                        text="Connect with Us!"
+                                        classes="hover:!bg-white hover:!text-black rounded-sm bg-black"
+                                        handle="onclick='parent.LC_API.open_chat_window();return false;'"
+                                    />
+                                    <MRCTA
+                                        text="Call us NOW!"
+                                        link="tel:8007819093"
+                                        bg="bg-transparent"
+                                        color="!text-black"
+                                        border="border-black hover:!bg-black hover:border-transparent rounded-sm hover:!text-white"
+                                    />
                                 </div>
                             </div>
                         </Col>

@@ -7,7 +7,7 @@ const TabNavigation = ({ activeTab, setActiveTab }) => {
     <ul className="flex flex-wrap gap-x-3 m-auto gap-y-1 mr-md:gap-y-6 mr-xs:flex-none mr-xs:flex-nowrap justify-center mr-xs:overflow-x-scroll mb-10" role="tablist">
       <li className="">
         <a
-          className={`py-2 px-10 md:px-2 xs:px-3 cursor-pointer ${activeTab === 's1' ? 'bg-[#00c0e4] text-white border-[2px] border-solid border-[#00c0e4]' : 'bg-transparent border-solid border-[2px] border-[#777777] text-[#8a8a8a] focus:text-white'
+          className={`py-2 px-10 md:px-2 xs:px-3 rounded-md cursor-pointer ${activeTab === 's1' ? 'bg-[#00c0e4] text-white border-[2px] border-solid border-[#00c0e4]' : 'bg-transparent border-solid border-[2px] border-[#000] text-[#8a8a8a] focus:text-white'
             }`}
           onClick={() => setActiveTab('s1')}
           role="tab"
@@ -19,7 +19,7 @@ const TabNavigation = ({ activeTab, setActiveTab }) => {
       </li>
       <li className="">
         <a
-          className={`py-2 px-10 md:px-2 xs:px-3 cursor-pointer ${activeTab === 's2' ? 'bg-[#00c0e4] text-white border-[2px] border-solid border-[#00c0e4]' : 'bg-transparent border-solid border-[2px] border-[#707070] text-[#8a8a8a]'
+          className={`py-2 px-10 md:px-2 xs:px-3 rounded-md cursor-pointer ${activeTab === 's2' ? 'bg-[#00c0e4] text-white border-[2px] border-solid border-[#00c0e4]' : 'bg-transparent border-solid border-[2px] border-[#000] text-[#8a8a8a]'
             }`}
           onClick={() => setActiveTab('s2')}
           role="tab"
@@ -31,7 +31,7 @@ const TabNavigation = ({ activeTab, setActiveTab }) => {
       </li>
       <li className="">
         <a
-          className={`py-2 px-10 md:px-2 xs:px-3 cursor-pointer ${activeTab === 's3' ? 'bg-[#00c0e4] text-white border-[2px] border-solid border-[#00c0e4]' : 'bg-transparent border-solid border-[2px] border-[#777777] text-[#8a8a8a]'
+          className={`py-2 px-10 md:px-2 xs:px-3 rounded-md cursor-pointer ${activeTab === 's3' ? 'bg-[#00c0e4] text-white border-[2px] border-solid border-[#00c0e4]' : 'bg-transparent border-solid border-[2px] border-[#000] text-[#8a8a8a]'
             }`}
           onClick={() => setActiveTab('s3')}
           role="tab"
@@ -43,7 +43,7 @@ const TabNavigation = ({ activeTab, setActiveTab }) => {
       </li>
       <li className="">
         <a
-          className={`py-2 px-10 md:px-2 xs:px-3 cursor-pointer ${activeTab === 's4' ? 'bg-[#00c0e4] text-white border-[2px] border-solid border-[#00c0e4]' : 'bg-transparent border-solid border-[2px] border-[#777777] text-[#8a8a8a]'
+          className={`py-2 px-10 md:px-2 xs:px-3 rounded-md cursor-pointer ${activeTab === 's4' ? 'bg-[#00c0e4] text-white border-[2px] border-solid border-[#00c0e4]' : 'bg-transparent border-solid border-[2px] border-[#000] text-[#8a8a8a]'
             }`}
           onClick={() => setActiveTab('s4')}
           role="tab"
@@ -55,7 +55,7 @@ const TabNavigation = ({ activeTab, setActiveTab }) => {
       </li>
       <li className="">
         <a
-          className={`py-2 px-10 md:px-2 xs:px-3 cursor-pointer ${activeTab === 's5' ? 'bg-[#00c0e4] text-white border-[2px] border-solid border-[#00c0e4]' : 'bg-transparent border-solid border-[2px] border-[#777777] text-[#8a8a8a]'
+          className={`py-2 px-10 md:px-2 xs:px-3 rounded-md cursor-pointer ${activeTab === 's5' ? 'bg-[#00c0e4] text-white border-[2px] border-solid border-[#00c0e4]' : 'bg-transparent border-solid border-[2px] border-[#000] text-[#8a8a8a]'
             }`}
           onClick={() => setActiveTab('s5')}
           role="tab"
@@ -67,7 +67,7 @@ const TabNavigation = ({ activeTab, setActiveTab }) => {
       </li>
       <li className="">
         <a
-          className={`py-2 px-10 md:px-2 xs:px-3 cursor-pointer ${activeTab === 's6' ? 'bg-[#00c0e4] text-white border-[2px] border-solid border-[#00c0e4]' : 'bg-transparent border-solid border-[2px] border-[#777777] text-[#8a8a8a]'
+          className={`py-2 px-10 md:px-2 xs:px-3 rounded-md cursor-pointer ${activeTab === 's6' ? 'bg-[#00c0e4] text-white border-[2px] border-solid border-[#00c0e4]' : 'bg-transparent border-solid border-[2px] border-[#000] text-[#8a8a8a]'
             }`}
           onClick={() => setActiveTab('s6')}
           role="tab"
@@ -79,7 +79,7 @@ const TabNavigation = ({ activeTab, setActiveTab }) => {
       </li>
       <li>
         <a
-          className={`py-2 px-8 md:px-2 xs:px-3 cursor-pointer ${activeTab === 's7' ? 'bg-[#00c0e4] text-white border-[2px] border-solid border-[#00c0e4]' : 'bg-transparent border-solid border-[2px] border-[#777777] text-[#8a8a8a]'
+          className={`py-2 px-8 md:px-2 xs:px-3 rounded-md cursor-pointer ${activeTab === 's7' ? 'bg-[#00c0e4] text-white border-[2px] border-solid border-[#00c0e4]' : 'bg-transparent border-solid border-[2px] border-[#000] text-[#8a8a8a]'
             }`}
           onClick={() => setActiveTab('s7')}
           role="tab"
@@ -91,7 +91,7 @@ const TabNavigation = ({ activeTab, setActiveTab }) => {
       </li>
       <li>
         <a
-          className={`py-2 px-8 md:px-2 xs:px-3 cursor-pointer ${activeTab === 's8' ? 'bg-[#00c0e4] text-white border-[2px] border-solid border-[#00c0e4]' : 'bg-transparent border-solid border-[2px] border-[#777777] text-[#8a8a8a]'
+          className={`py-2 px-8 md:px-2 xs:px-3 rounded-md cursor-pointer ${activeTab === 's8' ? 'bg-[#00c0e4] text-white border-[2px] border-solid border-[#00c0e4]' : 'bg-transparent border-solid border-[2px] border-[#000] text-[#8a8a8a]'
             }`}
           onClick={() => setActiveTab('s8')}
           role="tab"
