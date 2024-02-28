@@ -31,10 +31,6 @@ const PublishingNewComponent = ({
                                 <h2 className={`font-50 fw-500 font-primary ${txtBlK} text-white mb-3`}>{title}<br /> <span className={`${textBG}  color-white p-1 mt-2 d-block house`}> {desc}</span></h2>
                             </div>
                             <MRCTAGroup classes='justify-center mt-4' />
-                            {/* <div className="bttns1black mt-4 mb-5 mb-md-0">
-                                <Link className="btns btnBlack !bg-primary-100" onClick={openLiveChat} href="#">Get Onboard </Link>
-                                <Link className="btns btnTransprnt !text-white !border-[#fff]" href="tel:800-781-9093">(800) 781-9093</Link>
-                            </div> */}
                         </Col>
 
                     </Row>

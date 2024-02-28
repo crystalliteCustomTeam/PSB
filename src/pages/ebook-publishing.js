@@ -3,8 +3,6 @@ import Head from 'next/head'
 import Banner from '@/fa-component/Banner'
 import Tradition from '@/fa-component/Tradition'
 // import Climax from '@/fa-component/Climax'
-import EnlistedNew from '@/fa-component/ebookpublishing/EnlistedNew'
-
 import BroaderNew from '@/fa-component/BroaderNew'
 
 import Enlistedlogo from '@/fa-component/Enlistedlogo'
@@ -17,7 +15,45 @@ import PublishingNewComponent from '@/fa-component/PublishingNewComponent'
 import bannerImg from 'media/ahsan/ebook-banner.png'
 import img2 from 'media/images/banner/img2.png'
 import broader from 'media/ahsan/ebook-broder.png'
-import { MRHero, MRContact } from '@/component'
+import { MRHero, MRContact, MRQuestioners } from '@/component'
+
+
+const MRQuestionersData = [
+  {
+      title: "Ebooks Are Much Cheaper To Produce Than Print Books. ",
+      desc: "You don't have to pay for printing, paper, or shipping costs."
+  },
+  {
+      title: "Ebooks Can Be Published And Distributed Very Quickly.  ",
+      desc: "You can have your eBook available for sale within days or weeks."
+  },
+  {
+      title: "Ebooks Are Very Easy To Update.",
+      desc: "You can make changes to your eBook and distribute the updated version to your readers without having to go through the traditional printing and distribution process. "
+  },
+  {
+      title: "Ebooks Are Very Easy To Distribute.",
+      desc: "You can sell your eBook online or distribute it for free through websites and social media."
+  },
+  {
+      title: "Ebooks Are Very Sustainable.",
+      desc: "They don't require trees to be cut down to be produced, and they can be read on electronic devices that use very little energy."
+  },
+  {
+      title: "Ebooks Can Be An Excellent Marketing Tool.",
+      desc: "You can use your eBook to promote your other products and services."
+  },
+  {
+      title: "Ebooks Can Help You Build A Community Around Your Brand.",
+      desc: "If you distribute your eBook for free, you can attract new readers and followers who will be interested in what you have to say."
+  },
+  {
+      title: "Ebooks Can Be A Great Revenue Stream.",
+      desc: "If you sell your eBook, you can make a significant amount of money from it. There are many more benefits to eBook publishing than we have space to list here. Suffice it to say that if you're thinking about publishing a book, you should seriously consider doing it as an eBook. It's a quick, easy, cost-effective way to get your content out there. And who knows? Your eBook could end up being a bestseller!"
+  }
+]
+
+
 
 const amazonpublishing = () => {
   const newSpan = <h1 className='font-50 fw-700 font-primary txt-secondary mt-3 leading-tight'>Create The Best-Selling<br /> Ebooks With Our Ebook <br /> Publishing Services !</h1>;
@@ -80,10 +116,11 @@ const amazonpublishing = () => {
       />
 
       {/*========= Enlisted fold =========*/}
-      <EnlistedNew
-        subtitle="Be a Part of the Best Sellers’ Fraternity"
+      <MRQuestioners
+        subTitle="Be a Part of the Best Sellers’ Fraternity"
         title="Why Does E Book Publishing Gain A Lot Of Momentum? "
         paragraph="Ebook publishing has gained a lot of momentum in recent years. This is because it is a very efficient way to publish and distribute content. There are many advantages to using eBooks over traditional print books. Here are some of the most important benefits:"
+        data={MRQuestionersData}
       />
       <PublishingNewComponent
         subtitle="Enlist Yourself with the All-Time Best "

@@ -42,7 +42,7 @@ const editing = () => {
         <PWMODE />
         <BTM />
         <CTA />
-        <WMODE />
+        {/* <WMODE /> */}
         <SwiperComponents />
         <MRContact/>
       </main>

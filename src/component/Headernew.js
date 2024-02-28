@@ -167,7 +167,7 @@ const Header = () => {
                   {[
                     ['Genre', '/genre'],
                     ['Marketing', '/book-marketing'],
-                    ['Publication', '/book-publishing'],
+                    ['Publication', '/publication'],
                     ['Printing', '/book-printing'],
                     ['Cover Design', '/book-cover-design'],
                     ['Editing', '/book-editing'],

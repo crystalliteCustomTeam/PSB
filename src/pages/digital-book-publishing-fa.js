@@ -3,7 +3,6 @@ import Head from 'next/head'
 import Banner from '@/fa-component/Banner'
 import Tradition from '@/fa-component/Tradition'
 // import Climax from '@/fa-component/Climax'
-import EnlistedNew from '@/fa-component/digitalbookpublishing/EnlistedNew'
 import Audience from '@/fa-component/Audience'
 import BroaderNew from '@/fa-component/BroaderNew'
 import SwiperComponent from '@/component/SwiperComponent'
@@ -16,7 +15,26 @@ import PublishingNewComponent from '@/fa-component/PublishingNewComponent'
 import bannerImg from 'media/ahsan/digital-book-banner.png'
 import img2 from 'media/images/banner/img2.png'
 import broader from 'media/ahsan/digital-book-broder.png'
-import { MRHero, MRContact } from '@/component'
+import { MRHero, MRContact, MRQuestioners } from '@/component'
+
+const MRQuestionersData = [
+  {
+    title: "You'll Save Time:",
+    desc: "A professional book publishing service will handle all the technical aspects of creating and formatting your book, so you can focus on writing."
+  },
+  {
+    title: "You'll Get Expert Help: ",
+    desc: "A good digital book publishing service will have a team of experienced editors, designers, and marketers who can help make your book the best it can be."
+  },
+  {
+    title: "You'll Reach A Wider Audience: ",
+    desc: "With the help of a digital book publishing service , your book will be available to readers all over the world. "
+  },
+  {
+    title: "You'll Make More Money: ",
+    desc: "A professional book publishing service will ensure your book is priced correctly and marketed effectively, so you can earn more royalties. "
+  }
+]
 
 const amazonpublishing = () => {
   const newSpan = <h1 className='font-50 fw-700 font-primary txt-secondary mt-3 leading-tight'>Digital Book Publishing<br /> Services To Help You Get <br /> Your Book Into The Hands <br />  Of Interested Readers!</h1>;
@@ -78,10 +96,11 @@ const amazonpublishing = () => {
       />
 
       {/*========= Enlisted fold =========*/}
-      <EnlistedNew
-        subtitle="Be a Part of the Best Sellers’ Fraternity"
+      <MRQuestioners
+        subTitle="Be a Part of the Best Sellers’ Fraternity"
         title="Why Should You Hire Us, The Digital Book Publishers?"
-        paragraph="Amazon KDP is a self publishing service from Amazon that allows authors to publish and distribute their books worldwide. It's a fast, easy and affordable way to get your book into the hands of readers looking for new titles to enjoy."
+        desc="Amazon KDP is a self publishing service from Amazon that allows authors to publish and distribute their books worldwide. It's a fast, easy and affordable way to get your book into the hands of readers looking for new titles to enjoy."
+        data={MRQuestionersData}
       />
       <PublishingNewComponent
         subtitle="Enlist Yourself with the All-Time Best "

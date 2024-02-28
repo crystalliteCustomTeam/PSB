@@ -1,5 +1,5 @@
 import Image from "next/image"
-import RedCircle from "../../../public/imageAR/redCircle.png"
+import RedCircle from "media/imageAR/redCircle.png"
 import { MRCTA } from "@/component"
 
 const IllustrationPackages = ({ packagesData }) => {

@@ -11,7 +11,7 @@ const PublishingSlider = () => {
         spacing: 50,
         infinite: false,
         speed: 500,
-        slidesToShow: 5,
+        slidesToShow: 4,
         autoplay: false,
         slidesToScroll: 1,
         responsive: [
@@ -49,7 +49,7 @@ const PublishingSlider = () => {
                         <h3 className='font-bold font-primary text-4xl py-2'>Types Of Cover Designs</h3>
                         {/* <p className='w-[62%] mx-auto xs:w-[100%]'>At , we provide a variety of book trim size options, cover styles, bookbinding kinds, and other elevated possibilities. We can do whatever you can think of.</p> */}
                     </div>
-                    <div className='justify-center  grid grid-rows-1 grid-cols-1 gap-4 space-x-5 items-center space-y-10 sm:px-14 '>
+                    <div className='justify-center mr-lg:w-[80%] m-auto grid grid-cols-1 gap-2 items-center space-y-10 sm:px-14 '>
                         <Slider {...settings} className='__slides'>
                             <div className='mx-auto px-2'>
                                 <div className='relative'>

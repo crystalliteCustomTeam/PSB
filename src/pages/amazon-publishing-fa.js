@@ -110,7 +110,7 @@ const amazonpublishing = () => {
       <MRQuestioners
         subTitle="Be a Part of the Best Sellers’ Fraternity"
         title="Some Questions Whirling Around Your Mind About <br class='hidden mr-lg:block' /> Amazon KDP Publishing Have Answers Over Here!"
-        desc="As an author, you have a lot of control over the success of your book. But did you know that there are companies out there whose sole purpose is to help you self-publish your book and make it a success? These are called self publishing book services companies, and they can provide everything from writing and editing to marketing and distribution. "
+        // desc="As an author, you have a lot of control over the success of your book. But did you know that there are companies out there whose sole purpose is to help you self-publish your book and make it a success? These are called self publishing book services companies, and they can provide everything from writing and editing to marketing and distribution. "
         data = {MRQuestionersData}
       />
       <PublishingNewComponent

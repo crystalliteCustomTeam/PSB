@@ -52,7 +52,7 @@ const about = () => {
         <WORKON />
         <BTM />
         <CTA />
-        <WMODE />
+        {/* <WMODE /> */}
         <SwiperComponents />
         <MRContact/>
       </main>
