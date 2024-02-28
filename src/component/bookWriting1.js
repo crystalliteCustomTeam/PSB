@@ -27,7 +27,7 @@ const bookWriting = (props) => {
                                 <li className='flex space-x-4 items-center border-b border-[#40BEE2] pb-2'>
                                     <Image quality={95} src="/assets/images/newimg/color-check2.png" alt="color-check" width={9} height={9} className='h-[9px] w-[9px]' />
                                     <h5 className='mr-xl:text-[16px] mr-md:text-[12px]'>
-                                        Being Published On All Online Platforms, Such As Kindle.
+                                       Publishing on various online platforms such as Amazon Kindle. 
                                     </h5>
                                 </li>
                                 <li className='flex space-x-4 items-center border-b border-[#40BEE2] pb-2'>
@@ -36,7 +36,7 @@ const bookWriting = (props) => {
                                 </li>
                                 <li className='flex space-x-4 items-center border-b border-[#40BEE2] pb-2'>
                                     <Image quality={95} src="/assets/images/newimg/color-check2.png" alt="color-check" width={9} height={9} className='h-[9px] w-[9px]' />
-                                    <h5 className='mr-xl:text-[16px] mr-md:text-[12px]'>Additions, revisions, and re-editions!</h5>
+                                    <h5 className='mr-xl:text-[16px] mr-md:text-[12px]'>Convenient additions and revisions.</h5>
                                 </li>
                             </ul>
                             <div className={`grid grid-cols-1 mr-sm:flex gap-3  mt-5`}>

@@ -48,58 +48,58 @@ const TestimonialsSlider = () => {
     {
       avatar: "/assets/images/newimg/stars.png",
       polit: "/assets/images/newimg/trust.png",
-      name: "- Isaac Freeman",
+      name: "Tami Pierce",
       title: "CTO, Cybertech Solutions",
       quote:
-        "I was amazed by the swift and efficient process at Best Selling Publisher. Their team’s expertise in Amazon book publishing services made a significant difference in my book's online presence. A five-star service all around",
+        "“I hired Best Selling Publisher for ghostwriting services, and I couldn't be happier with the results! They perfectly captured my voice and brought my ideas to life in a way I never could have on my own. Highly recommend their talented team!”",
     },
     {
       avatar: "/assets/images/newimg/stars.png",
       polit: "/assets/images/newimg/stars.png",
-      name: "Matthew Feller",
+      name: "Lamar Wright",
       title: "CTO, Cybertech Solutions",
       quote:
-        "From manuscript to masterpiece, the journey was seamless with Book Selling Publisher. Their attention to detail and commitment to quality is unmatched. My book’s success speaks volumes of their dedication.",
+        "“Best Selling Publisher’s SEO writing service has significantly boosted our online visibility. Their expertise in keyword optimization and engaging content creation has helped us climb the search engine rankings. We’ve seen a noticeable increase in traffic and leads since partnering with them!”",
     },
     {
       avatar: "/assets/images/newimg/stars.png",
       polit: "/assets/images/newimg/stars.png",
-      name: "- Casey F.",
+      name: "Lucas Garcia",
       title: "CTO, Cybertech Solutions",
       quote:
-        "The professionalism and personalized support I received from Book Selling Publisher were exceptional. They turned the daunting task of publishing into a rewarding experience. My book is now a bestseller, thanks to their expert marketing strategies",
+        "“I’ve used Best Selling Publisher for article writing multiple times, and each time they’ve delivered top-notch content that exceeds my expectations. Their writers are skilled at researching diverse topics and presenting information clearly and engagingly. A fantastic choice for anyone in need of quality articles!”",
     },
     {
       avatar: "/assets/images/newimg/stars.png",
       polit: "/assets/images/newimg/stars.png",
-      name: "Noah Howard",
+      name: "Darnell Patterson",
       title: "CTO, Cybertech Solutions",
       quote:
-        "As a first-time author, the process of book publishing felt like a daunting maze with no clear path. That's when I reached out to The Book Selling Publishers company, and I must say they have offered me the right solution. They answered my questions swiftly, took care of every problem, and kept me informed all along the publishing process.",
+        "“Best Selling Publisher is my go-to for magazine writing projects. Their writers have a knack for crafting captivating stories and articles that resonate with our readers. Their attention to detail and commitment to meeting deadlines make them a pleasure to work with. Highly recommend!”",
     },
     {
       avatar: "/assets/images/newimg/stars.png",
       polit: "/assets/images/newimg/stars.png",
-      name: "Gabriel M.",
+      name: "Ernest Cortez",
       title: "CTO, Cybertech Solutions",
       quote:
-        "Working with this book writing company was a game-changer for me. Their expertise is unmatched!",
+        "“When it comes to web copywriting, Best Selling Publisher is second to none. They understand the importance of compelling copy in driving conversions, and their expertise shines through in every project they undertake. Our website has never looked better thanks to their exceptional work!”",
     },
     {
       avatar: "/assets/images/newimg/stars.png",
       polit: "/assets/images/newimg/stars.png",
-      name: "Cormac M.",
+      name: "Justin Nunez",
       title: "CTO, Cybertech Solutions",
       quote:
-        "I can't believe the incredible quality of the book they wrote for me. It exceeded all my expectations!",
+        "“Best Selling Publisher helped us craft a compelling press release that generated significant media attention for our latest product launch. Their writers have a talent for crafting attention-grabbing headlines and persuasive copy that gets results. We’re thrilled with the exposure their press release garnered for our brand!”",
     },
     {
       avatar: "/assets/images/newimg/stars.png",
       polit: "/assets/images/newimg/stars.png",
-      name: "J.D.Salinger.",
+      name: "Doug Weaver",
       title: "CTO, Cybertech Solutions",
       quote:
-        "I can't believe the incredible quality of the book they wrote for me. It exceeded all my expectations!",
+        "“I recently engaged Best Selling Publisher for script writing services, and I couldn’t be happier with the outcome. Their writers have a gift for storytelling and dialogue that brings scripts to life on screen. Working with them was a seamless and enjoyable experience from start to finish. Highly recommend their services for anyone in need of professional scriptwriting!”",
     },
   ];
 
@@ -109,15 +109,13 @@ const TestimonialsSlider = () => {
         <div>
           <div className="text-center">
             <h6 className="font-semibold text-[#40BEE2] font-primary text-[30px] mb-3">
-              Hear The Words Of
+            Enough from Us
             </h6>
             <h2 className="mr-xl:text-[45px] font-bold mb-5 font-primary">
-              Appreciation from Our Clients
+            See What Our Clients Have to Say
             </h2>
             <p className="text-lg mb-3 mx-auto text-[16px] xs:text-[15px]">
-              The appreciation from our clients is what keeps us going. Have a
-              sneak peek of <br className="mr-lg:block hidden" /> what our satisfied clients have to say about
-              our work.
+            We can go on and on about our services, but if you seek further credibility, then see what our clients have to say about us:
             </p>
 
           </div>

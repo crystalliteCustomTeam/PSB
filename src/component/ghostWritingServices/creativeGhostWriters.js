@@ -19,13 +19,13 @@ const creativeGhostWriters = ({
                 <div className="mr-container mx-auto font-secondary">
                     <div className="text-center mb-5 heading">
                         <h6 className="text-[30px] font-primary text-[#40BEE2] font-semibold">
-                            Our Creative Ghostwriters,
+                        Our Creative Ghostwriters
                         </h6>
                         <h2 className='text-[40px] font-primary sm:text-4xl font-bold py-1'>
-                            Bringing Your Imagination To Life.
+                        Breathe Life into the Mundane
                         </h2>
                         <p className="mt-2 max-w-[70%] mx-auto sm:text-justify sm:max-w-[88%] xs:max-w-[95%]">
-                            You may have an idea for the next best-seller, but you may not have the time or expertise to write it yourself. Our platform meets all of the requirements and offers a diverse range of writing styles, including:
+                        Our ghostwriters accentuate your ideas on a whole different level. Every project that we work on inevitably becomes a page-turner.
                         </p>
                     </div>
                     <div className="grid grid-cols-2 items-center px-auto md:grid-cols-1 sm:grid-cols-1 sm:px-5 sm:text-justify xs:text-justify xs:grid-cols-1 ">
@@ -35,48 +35,48 @@ const creativeGhostWriters = ({
                                     <h4 className="text-[25px] font-semibold font-primary mb-1">
                                         Fiction
                                     </h4>
-                                    <p className="text-[14px]">
-                                        Our fiction ghostwriters will assist you in creatively expressing your ideas into enticing literacy that will captivate your audience. All aspects of a story are considered, particularly the author’s major plot and characters.
+                                    <p className="text-[16px]">
+                                    Our ghostwriters accentuate your ideas on a whole different level. Every project that we work on inevitably becomes a page-turner.
                                     </p>
                                 </li>
                                 <li className="mb-4">
                                     <h4 className="text-[25px] font-semibold font-primary mb-1">
                                         Informative
                                     </h4>
-                                    <p className="text-[14px]">
-                                        Our ghostwriters comprehend the nuance of your text. They ensure their information is reliable and well-acknowledged worldwide, under the available data and facts.
+                                    <p className="text-[16px]">
+                                    In a world brimming with knowledge, informative literature serves as a guiding light, illuminating the path to understanding and enlightenment. From academic textbooks to engaging non-fiction, informative works provide readers with valuable insights and practical wisdom on a myriad of subjects.
                                     </p>
                                 </li>
                                 <li className="mb-4">
                                     <h4 className="text-[25px] font-semibold font-primary mb-1">
                                         Memoir
                                     </h4>
-                                    <p className="text-[14px]">
-                                        Our ghostwriters have been trained to write memoirs, not to confuse them with autobiographies. Furthermore, they cherish your sentiments and emotions and go to great lengths to turn your precious memories into a book.
+                                    <p className="text-[16px]">
+                                    Journey through the world of lived experiences with memoirs, where personal narratives weave tales of triumph, resilience, and self-discovery. Memoirs offer a glimpse into the intimate moments and transformative events that shape a person's life, inviting readers to connect with the raw authenticity of the human experience.
                                     </p>
                                 </li>
                                 <li className="mb-4">
                                     <h4 className="text-[25px] font-semibold font-primary mb-1">
                                         Children's Book
                                     </h4>
-                                    <p className="text-[14px]">
-                                        Our well-trained and experienced writers are well-versed in all aspects of children’s books. They use their ingenuity to write classic subjects that young minds can understand, with vibrant graphics that keep them hooked.
+                                    <p className="text-[16px]">
+                                    Spark the imagination and ignite a love for reading with children's books, where whimsy and wonder abound on every page. From colorful picture books to enchanting fairy tales, children's literature enthralls young minds and fosters a lifelong passion for learning and creativity. 
                                     </p>
                                 </li>
                                 <li className="mb-4">
                                     <h4 className="text-[25px] font-semibold font-primary mb-1">
                                         Self Help Book
                                     </h4>
-                                    <p className="text-[14px]">
-                                        We allow your ideas to reach the right audiences and serve your experiences to be their holy grail in the relevant endeavor.
+                                    <p className="text-[16px]">
+                                    Empower yourself to steer life's challenges and unlock your full potential with self-help books, where personal growth and transformation take center stage. From practical strategies for success to insights on mindfulness and resilience, self-help literature offers valuable tools and guidance for individuals striving to live happier, healthier, and more fulfilling lives.
                                     </p>
                                 </li>
                                 <li className="mb-4">
                                     <h4 className="text-[25px] font-semibold font-primary mb-1">
                                         Biography
                                     </h4>
-                                    <p className="text-[14px]">
-                                        Our expert writers are keenly interested in learning about your subjects’ stories, holding the skills and expertise to provide you with well-written content for whoever you want to write about. They also conduct extensive research through various channels such as newspapers, blogs, and interviews to ensure they use correct facts and figures.
+                                    <p className="text-[16px]">
+                                    Probe into the lives of extraordinary individuals and explore the world of human existence with biographies, where real-life stories unfold with depth and authenticity. From historical figures to modern-day icons, biographies offer a glimpse into the triumphs, tribulations, and defining moments that shape a person's legacy.
                                     </p>
                                 </li>
                             </ul>
