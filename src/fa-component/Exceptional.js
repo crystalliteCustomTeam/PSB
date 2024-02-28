@@ -7,54 +7,39 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 const data = [
     {
-        heading: "Book Editing",
-        para: "Once your ideas are on paper, you need an expert’s eye to look for the red flags. Book editing can be a tiresome and redundant process for which we have experts running the show. Book Writing Expert enhances your book’s vocabulary and sentence formations, in order to provide your readers a refined product.",
+        heading: "Amazon Publishing",
+        para: "With this esteemed collaboration, you can gain access to Amazon's vast distribution network and cutting-edge publishing technology, ensuring their work reaches a global audience. We offer a diverse range of imprints covering various genres, including mystery, romance, science fiction, and non-fiction. You can count on Best Selling Publisher.",
         path: "/images/flods/amazon_publishing.png",
         alt: "Book Editing"
     },
     {
-        heading: "Book Writing",
-        para: "From our writing approach to phrasing selection, we're all about creating riveting stories of any length or type. Let us handle your project from beginning to end with absolute finesse since, when you have professionals like us on your team, no responsibility is too huge.",
-        path: "/images/flods/book_publishing.png",
+        heading: "Book Publishing",
+        para: "Book publishing is the process of bringing your written works to the market for public consumption! Exciting isn’t it? It involves various stages, from acquiring manuscripts or ideas, editing, design, production, and distribution to marketing and sales. Publishers play a crucial role in curating and refining content, ensuring its quality and relevance to target your audience.",
         alt: "Book Writing"
     },
     {
-        heading: "Article Publication",
-        para: "we provide high-quality Article Publication services to help our clients reach their target audiences. We have a team of experienced professionals knowledgeable in the latest Article Publication trends and technologies.",
+        heading: "Digital Book Publishing",
+        para: "You’re probably wondering how book publishing works. Here’s the thing: it leverages digital technologies to offer readers convenient access to a wide range of literary content on various devices. These include e-readers, tablets, and smartphones. Digital book publishing has revolutionized the traditional publishing industry, enabling you to reach global audiences.",
         path: "/images/flods/ebook_publishing.png",
         alt: "Article Publication"
     },
     {
-        heading: "E-Book Writing",
-        para: "Professional eBook writing increases traffic, and our experienced authors are aware of the best practices for retaining readers through compelling word choice. When it comes to custom eBook writing services, we are the best choice. Try collaborating with us! You won't regret doing it!",
+        heading: "E-Book Publishing",
+        para: "eBook publishing, a cornerstone of digital literature, involves the creation, distribution, and consumption of books in electronic format. Unlike traditional print publishing, eBook publishing eliminates the need for you to have physical copies. You can easily reach readers anywhere in the world. ",
         path: "/images/flods/book_marketing.png",
         alt: "E-Book Writing"
     },
     {
-        heading: "Book Marketing",
-        para: "Stop getting lost in the mix with our remarkable book marketing services! We advertise and promote your book in the most efficient way possible, taking it from the back of the shelf to the top of the bestseller list. We are the marketing & promotion specialists for the books you require.",
+        heading: "Self-publishing",
+        para: "Empowered authors like you can bring their literary creations directly to readers without the involvement of traditional publishing houses. This involves the author overseeing all aspects of the publishing process, including editing, formatting, cover design, and distribution.",
         path: "/images/flods/book_marketing.png",
         alt: "Book Marketing"
     },
     {
-        heading: "Children’s Book Publication",
-        para: "Publishing children's books is no easy undertaking. Even though the book is only a little over 100 pages long, not everything appeals to these tiny beings. It takes several rewrites and re-drafts to concisely express an idea with a clear message, and we are here to assist.",
-        path: "/images/flods/self_publishing.png",
+        heading: "Book Marketing",
+        para: "Book marketing encompasses the strategic efforts to promote and sell a book to your target audience. It involves a wide range of activities to increase visibility, generate interest, and ultimately drive sales.",
         alt: "Children’s Book Publication"
     },
-
-    {
-        heading: "Children's Book Illustrations",
-        para: "Kids can be picky and direct in their choices, but that doesn't make them impartial. When giving them books, make sure the illustrations and designs catch their interest, creating a reading experience they'll want to revisit.",
-        path: "/images/flods/self_publishing.png",
-        alt: "Children's Book Illustrations"
-    },
-    {
-        heading: "Book Publishing Services",
-        para: "Content creation has always been an automated process to us. Writing blogs and Articles and publishing them is an easy task for us. Our job doesn’t end once we’re done publishing, we also share it on multiple online platforms in order to gain traction to your content.",
-        path: "/images/flods/digital_book_publishing.png",
-        alt: "Book Publishing Services"
-    }
 ]
 
 const Exceptional = ({

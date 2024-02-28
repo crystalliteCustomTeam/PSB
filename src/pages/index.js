@@ -54,7 +54,10 @@ const amazonpublishing = () => {
   return (
     <>
       <Head>
-        <title>Best Book Publishing Company - Best Selling Publisher - Amazon Publishing Services</title>
+        <title>The Home of Quality Publishing | Best Book Publishing Company</title>
+        <meta name="description" content="Experience the pinnacle of publishing services with the Best Book Publishing Company. With our commitment to quality, we guide every author toward success. Get started today!"></meta>
+         <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
         <link rel="icon" href="/images/favicon.svg" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
       </Head>
@@ -62,7 +65,7 @@ const amazonpublishing = () => {
 
       <MRHero
         // subTitle="Awarded #1 Book Publishing Services"
-        title="Best Book Publishing <br /> Company – The Home Of <br /> Quality Publishing!"
+        title="Craft Legacy Through <br />Words with the Best Book <br /> Publishing Company "
         // desc="Welcome to Best Selling Publisher, where your publishing dreams turn into reality. As a leading book publishing company, we specialize in bringing authors' visions to life and catapulting their works onto bestseller lists, including Amazon's coveted ranks.With our comprehensive book publishing services, from meticulous editing to bespoke marketing strategies, we're here to guide you every step of the way. Partner with us and see your book shine across the globe."
         containImg="ahsan/home-banner-new.png"
         // fullImg="bg-[url('../../public/assets/images/newimg/man-working-printing-house-with-paper-paints.png')]"
@@ -80,8 +83,8 @@ const amazonpublishing = () => {
 
       {/*========= Tradition fold =========*/}
       <Tradition
-        title="Explore Our Recent Publishing Successes"
-        desc="Discover How Our Expert Publishing Team Can Elevate Your Work"
+        title="Celebrating Your Wins"
+        desc="Discover how your publications can be nothing but glorious with Best Selling Publisher."
       />
       <Audience />
       {/*========= Enlisted fold =========*/}
@@ -92,16 +95,16 @@ const amazonpublishing = () => {
       />
       {/*========= Exceptional fold =========*/}
       <Exceptional
-        title="Discover What Exceptional Writing <br /> Services We Offer"
-        subtitle="Uncover the unparalleled excellence of our publishing services, where each word is meticulously crafted to captivate and inspire. <br/> Explore the realm of literary mastery with our team and discover the epitome of quality in every page turned."
+        title="Explore The Best Writing  <br /> Services We Offer"
+        subtitle="Beyond the extraordinary resides an array of services we take immense pride in. That said, It’s time to make your publishing dreams come to life. "
       />
       <Dreams />
 
       {/*========= Broader fold =========*/}
       <Broader
-        subtitle="Engage with a Larger Audience Our"
+        subtitle="Capture the Interest of a Bigger Audience"
         title="Amazon Publishing Services"
-        desc="Best Selling Publisher's Amazon publishing services are among the most popular and well-known in the industry. Our process is simple and straightforward, and we provide a high-quality product that is easy to use and reliable. Additionally, our customer service is excellent, and they offer a wide range of options for writers looking to publish their work."
+        desc="Amazon Publishing Services encompass a range of offerings designed to assist authors in bringing their books to market and maximizing their success on the Amazon platform. These services may include editorial support, cover design, formatting assistance, and marketing guidance. Authors can reach a global audience and optimize their visibility to potential readers through Amazon's vast distribution network and marketing tools."
         image={broader}
       />
 
@@ -115,9 +118,9 @@ const amazonpublishing = () => {
       <Plans />
       <SwiperComponents />
       <MRContact
-        subTitle="Whether Bookshelf or Amazon Book Publishing"
-        title="First-Class Book Publishers"
-        desc="Best Selling Publisher offers a wide range of traditional publishing services for businesses of all sizes and authors of all genres. We have a team of experienced professionals who can help you through every step of the publishing process, from editing and formatting to publication and distribution. We also offer a variety of custom publishing options to fit your specific needs, such as digital publishing services and Amazon publishing services. <br /> <br /> Best Selling Publisher is a cutting-edge books publisher that offers a suite of services designed to help authors navigate the ever-changing world of publishing. Our book publishing services are tailored to meet the needs of today's authors. From providing guidance on self-publishing to offering and publishing support, we are committed to helping authors succeed in an increasingly competitive marketplace. What sets Best Selling Publisher apart from other publishers is our commitment to quality. We work with each author on an individual basis, providing the personalized attention that is so essential to success in today's publishing landscape."
+        subTitle="No Matter What You Pick…"
+        title="We Will Always Be There"
+        desc="The right publishing partner. It can make all the difference between a manuscript collecting dust and a literary masterpiece capturing hearts worldwide. Best Selling Publisher is the unrivaled beacon of excellence in the dominion of publishing services. What sets Best Selling Publisher apart is its unwavering commitment to author success. With a team of seasoned professionals dedicated to every facet of the publishing process, from scrupulous editing to fascinating cover design and strategic marketing, Best Selling Publisher ensures that each book receives the royal treatment it deserves. <br /> <br /> Best Selling Publisher's innovative approach leverages cutting-edge technology and data-driven insights to maximize a book's visibility and reach across various platforms, including the formidable Amazon marketplace. Authors partnering with Best Selling Publisher gain access to a wealth of resources and expertise and benefit from personalized support every step of the way."
       />
       {/*========= Bookshelf fold =========*/}
       {/* <Bookshelf /> */}

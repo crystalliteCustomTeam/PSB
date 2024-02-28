@@ -15,7 +15,7 @@ const impressiveWorks = (props) => {
             <div className='py-20 xs:py-10'>
               <div className="text-center">
                 <h6 className='text-[30px] text-[#40BEE2] font-semibold mb-3 sm:text-base xs:text-base xs:mb-1 font-primary'>
-                  Our impressive work
+                Our Creative Vault
                 </h6>
                 <h2 className='mx-auto font-primary w-[70%] sm:w-[90%] text-[50px] leading-tight font-bold text-[#1d1d1f] md:text-[30px] sm:text-[34px] xs:text-[30px] pb-3 xs:w-[100%]'>
                   {props.title}

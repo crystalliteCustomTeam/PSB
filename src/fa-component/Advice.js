@@ -35,11 +35,11 @@ const Advice = () => {
                         <Col lg={6}>
 
                             <div className={`${styles.adviceTxt} marginright`}>
-                                <h4 className='font-30 font-primary txt-primary mb-3'><em>Here’s a friendly piece of advice:</em></h4>
-                                <h2 className='font-50 fw-500 font-primary txt-secondary'>Your Job is half done when you have a Best Selling Publisher Take Charge!</h2>
+                                <h4 className='font-30 font-primary txt-primary mb-3'><em>Would you like to know a secret?</em></h4>
+                                <h2 className='font-50 fw-500 font-primary txt-secondary'>Less Is Never More for Us – It Can Be If You Want It to Be!</h2>
                             </div>
                             <div className={`${Bookshelf.bttns} mt-5`}>
-                                <Link className='btns btnPrimary' onClick={openLiveChat} href="#">Let's discuss</Link>
+                                <Link className='btns btnPrimary' onClick={openLiveChat} href="#">Let's Start!</Link>
                                 <Link className='btns btnSecondary' href="tel:800-781-9093">800-781-9093</Link>
                             </div>
                         </Col>

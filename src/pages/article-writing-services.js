@@ -8,6 +8,7 @@ import BTM from '../component/bottomLogos';
 import SwiperComponents from '../component/SwiperComponent'
 import Enlistedlogo from '@/fa-component/Enlistedlogo'
 import { MRHero, MRContact } from '@/component';
+import Head from 'next/head'
 
 const Ghostwriting = () => {
 
@@ -21,10 +22,16 @@ const Ghostwriting = () => {
 
   return (
     <>
+    <Head>
+      <title>Best Selling Publisher | Exceptional Article Writing Services</title>
+      <meta name="description" content="At Best Selling Publisher, we take pride in our exceptional article writing services. Connect with us to start your publishing journey today!" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+    </Head>
       <main>
         <MRHero
-          title={`Result-Driven Article-Writing <br class="mr-2xl:block !hidden" /> Services That Boost Your <br class="mr-2xl:block !hidden" /> Online`}
-          desc="Drive more customers, convert the existing ones into loyal customers, and create compelling articles that speak to what matters most to your target audience."
+          title={`Craft Your Narrative with Our Help — Premier Article Writing Excellencee`}
+          desc="Ever pondered the diverse essence of an article? It's more than words. It's a fusion of informative prowess, persuasive elegance, and illuminative depth. Ready to explore where words hold the power to captivate?"
           logos="images/banner/img2.png"
           counter={true}
           classes='!py-[80px] bg-[#FEFEFE]'
@@ -33,7 +40,7 @@ const Ghostwriting = () => {
         <Enlistedlogo />
         <LHArticle />
         <GhostWriting serviceTitle="Article Writing Services"
-          serviceDesc="We have a vast pool of ghostwriters and will work with you to find the best match for your needs. You will receive a PR and media campaign, an audiobook with a professional voice actor, and high-quality studio production. Finally, distribution and retailer accounts will be established in your name, ensuring you own all rights and royalties.
+          serviceDesc="At Best Selling Publisher, we take pride in exceptional article-writing services that consistently exceed expectations. With our dedicated team of experienced writers, we deliver compelling and well-researched articles tailored to meet your unique needs. Our commitment to excellence shines through in every piece. 
         " />
         <CREATIVEGHOSTWRITERS />
         <BTM />

@@ -8,12 +8,19 @@ import BTM from '../component/bottomLogos';
 import SwiperComponents from '../component/SwiperComponent'
 import Enlistedlogo from '@/fa-component/Enlistedlogo'
 import { MRHero, MRContact } from '@/component'
+import Head from 'next/head'
 
 
 const Ghostwriting = () => {
-  
+
   return (
     <>
+      <Head>
+        <title>Professional Ghostwriting Services | Best Selling Publisher</title>
+        <meta name="description" content="Best Selling Publisher offers professional ghostwriting services tailored to your needs. Start your publishing journey today and see why we're the premier choice for authors." />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+      </Head>
       <main>
 
         {/* <FEATURED
@@ -30,51 +37,49 @@ const Ghostwriting = () => {
           </>}
         /> */}
         <MRHero
-          title="The Best Affordable And <br /> Professional Ghostwriting <br /> Services Agency"
-          desc="We’ve helped thousands of authors express themselves eloquently; you can be next! Hire our top-tier expert writers today and imprint your words in your readers’ minds forever."
+          title="Affordable and Professional  <br /> Ghostwriting Services"
+          desc="Do you know how to make your content incredible? You team up with the experts! Over the years, we have assisted innumerable authors who aspired to become the next best sellers. If you plan to be one of them, we are here for you."
           logos="images/banner/img2.png"
           counter={true}
           classes='!py-[80px] bg-[#fefefe]'
           beforeImg="mr-md:before:bg-[url('../../public/imageAR/serious-man.png')]"
         />
-         <Enlistedlogo />
-        <LETUSHELP
-          title='What Sets Us Apart?'
-          desc={' Best Selling Publisher Ghostwriting is a well-known international ghostwriting and editing firm that has been operating for over a decade. Our experts create well-versed writing that demonstrates true professionalism while exhibiting creativity. Our services are not only economical but also ensure that both the needs of the authors and the preferences of their target audience are adequately met. Some of our platform’s distinguishing traits are as follows: '}
-        />
-        <GhostWriting serviceTitle="Ghostwriting Services"
-          serviceDesc="We have a vast pool of ghostwriters and will work with you to find the best match for your needs. You will receive a PR and media campaign, an audiobook with a professional voice actor, and high-quality studio production. Finally, distribution and retailer accounts will be established in your name, ensuring you own all rights and royalties.
-        "/>
+        <Enlistedlogo />
+        <LETUSHELP />
+        <GhostWriting 
+        serviceTitle="Ghostwriting Services"
+          serviceDesc="What if we tell you that you no longer have to worry about writing? It’ll ease so many of your problems, right?"
+          serviceDesc2="Best Selling Publisher's exceptional ghostwriting services set them apart in the industry. Their team of skilled writers possesses a rare talent for impeccably embodying the voice and vision of their clients, whether it's for a memoir, a novel, or corporate literature."/>
         <CREATIVEGHOSTWRITERS />
         <CTA />
         <BTM />
-        <WMODE 
-         subtitle="Carrying out"
-         title="The Fastest Work Mode, Get Your <br className='mr-lg:block hidden' /> Work in 4 Easy Steps"
-         desc=" Working with us gives you prompt delivery of work because we have set up everything systematically. Here is our 4 step process, which keeps us streamlined from the beginning."
-         GridCols="grid-cols-4"
-         StoryPlotData = {[
-           {
-               steps: "Step 01",
-               heading: "Submit Your Manuscript",
-               desc: "After making up your mind about working with us, you place your order."
-           },
-           {
-               steps: "Step 02",
-               heading: "Edit & Design",
-               desc: "We refine your text and design your book's cover."
-           },
-           {
-               steps: "Step 03",
-               heading: "Review & Approve",
-               desc: "You review our work and give the green light."
-           },
-           {
-               steps: "Step 04",
-               heading: "Publish & Distribute",
-               desc: "Your book is published and distributed on schedule."
-           }
-       ]}
+        <WMODE
+          subtitle="We Pursue"
+          title="A Swift Work Mode that Involves 4 Easy Steps"
+          desc="We emphasize prompt deliveries because we don’t like to keep you waiting. Following are the 4 easy steps that keep us streamlined from the beginning:"
+          GridCols="grid-cols-4"
+          StoryPlotData={[
+            {
+              steps: "Step 01",
+              heading: "Submit Your Manuscript",
+              desc: "Start your publishing process by sharing your manuscript with us."
+            },
+            {
+              steps: "Step 02",
+              heading: "Edit & Design",
+              desc: "We add our artistic expertise while retaining your unique voice."
+            },
+            {
+              steps: "Step 03",
+              heading: "Review & Approve",
+              desc: "We will NEVER go above your head! Your approval matters, and we want to ensure our creative contributions align with your vision."
+            },
+            {
+              steps: "Step 04",
+              heading: "Publish & Distribute",
+              desc: "Witness your book being published and reaching readers across the globe."
+            }
+          ]}
         />
         <SwiperComponents />
         <MRContact />

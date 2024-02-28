@@ -23,9 +23,8 @@ const Audience = () => {
                     <Row className={`${styles.audienceRow} justify-content-center align-items-center`}>
                         <Col lg={6} sm={12}>
                             <div className={styles.audienceTxt}>
-                                <h2 className='font-50 fw-300 font-primary txt-white mb-3'>Reach Your Audience
-                                    Effectively with Our Digital  <span className='bg-black txt-white mt-2 w-75 p-1 font-50 fw-500 d-block'>Publishing Services</span></h2>
-                                <p className='font-15 font-secondary txt-white mb-5'>Best Selling Publisher brings your dream of book writing to life.</p>
+                                <h2 className='font-50 fw-300 font-primary txt-white mb-3'><span className='bg-black txt-white mt-2 p-1 font-45 fw-500 d-block'>Digital Publishing Services</span> That Amplifies Your Voice  Publishing Services</h2>
+                                <p className='font-15 font-secondary txt-white mb-5'>Let us transform your written words into global conversations, connecting your stories with every corner of the world.</p>
                                 <div className={`${styles.bttns} mt-4 mb-5 mb-md-0`}>
                                     <Link onClick={openLiveChat} className='btns btnBlack' href="#">Let's discuss</Link>
                                     <Link className='btns btnTransprnt' href="tel:800-781-9093">800-781-9093</Link>
