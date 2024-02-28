@@ -4,6 +4,7 @@ import Image from 'next/image'
 import styles from '@/styles/Dreams.module.css'
 import Bookshelf from '@/styles/Bookshelf.module.css'
 import { Container, Row, Col } from 'react-bootstrap'
+import { MRCTAGroup } from '@/component'
 
 const data = [
     {
@@ -66,7 +67,7 @@ const Exceptional = ({
                     </div>
                     <Row className={`${styles.dreamsRow} justify-content-center pt-4 pb-5 gy-4 gx-4 mr-xs:mx-3`}>
                         {data?.map((e, i) => (
-                            <Col key={i} xl={4} lg={4} md={6} xxl={3} >
+                            <Col key={i} xl={4} lg={4} md={6} xxl={4} >
                                 <div className={`${styles.ExceptionalCard} bg-white text-left position-relative`}>
                                     <div style={{
                                         position: "absolute",
@@ -87,10 +88,11 @@ const Exceptional = ({
                                 </div>
                             </Col>
                         ))}
-                        <div className={`${Bookshelf.bttns} dislpay-flex mt-5 justify-content-center`}>
+                        {/* <div className={`${Bookshelf.bttns} dislpay-flex mt-5 justify-content-center`}>
                             <Link className='btns btnPrimary' onClick={openLiveChat} href="#">Let's discuss</Link>
                             <Link className='btns btnSecondary' href="tel:800-781-9093">800-781-9093</Link>
-                        </div>
+                        </div> */}
+                        <MRCTAGroup classes='justify-center mt-5'/>
                     </Row>
                 </div>
             </section>
