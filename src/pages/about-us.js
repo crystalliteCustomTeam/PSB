@@ -25,12 +25,12 @@ const about = () => {
 
   return (
     <>
-    <Head>
-      <title>Premier Book Publishing Assistance | Book Selling Publisher</title>
-      <meta name="description" content="From eBooks to audiobooks, we offer a wide range of publishing services tailored to meet your needs. Contact us today to get started on your project." />
+      <Head>
+        <title>Premier Book Publishing Assistance | Book Selling Publisher</title>
+        <meta name="description" content="From eBooks to audiobooks, we offer a wide range of publishing services tailored to meet your needs. Contact us today to get started on your project." />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
-    </Head>
+      </Head>
       <main>
         {/* <FEATURED
           banneraffordable='aboutus'
@@ -46,13 +46,13 @@ const about = () => {
           </>}
         /> */}
         <MRHero
-        // subTitle="Awarded #1 Book Publishing Services"
-        title="About US"
-        desc="Are you in search of the perfect partner to publish your book? We’re so glad you have found us! "
-        fullImg="mr-lg:bg-[url('../../public/assets/images/newimg/editing-banner.png')]"
-        classes="bg-right bg-center mr-lg:!py-[200px]"
-        form={false}
-      />
+          // subTitle="Awarded #1 Book Publishing Services"
+          title="About US"
+          desc="Are you in search of the perfect partner to publish your book? We’re so glad you have found us! "
+          fullImg="mr-lg:bg-[url('../../public/assets/images/newimg/editing-banner.png')]"
+          classes="bg-right bg-center mr-lg:!py-[200px]"
+          form={false}
+        />
         <LogoSliders></LogoSliders>
 
         <IM
@@ -74,7 +74,34 @@ const about = () => {
 
         <CTA />
         <BTM />
-        <WMODE />
+        <WMODE
+          subtitle="Carrying out"
+          title="The Fastest Work Mode, Get Your <br className='mr-lg:block hidden' /> Work in 4 Easy Steps"
+          desc=" Working with us gives you prompt delivery of work because we have set up everything systematically. Here is our 4 step process, which keeps us streamlined from the beginning."
+          GridCols="grid-cols-4"
+          StoryPlotData={[
+            {
+              steps: "Step 01",
+              heading: "Submit Your Manuscript",
+              desc: "After making up your mind about working with us, you place your order."
+            },
+            {
+              steps: "Step 02",
+              heading: "Edit & Design",
+              desc: "We refine your text and design your book's cover."
+            },
+            {
+              steps: "Step 03",
+              heading: "Review & Approve",
+              desc: "You review our work and give the green light."
+            },
+            {
+              steps: "Step 04",
+              heading: "Publish & Distribute",
+              desc: "Your book is published and distributed on schedule."
+            }
+          ]}
+        />
         <SwiperComponents />
       </main>
     </>
