@@ -10,7 +10,7 @@ import MBOOK1 from '../component/marketBook1'
 import CTA3 from '../component/cta3';
 import CTA4 from '../component/cta4';
 import SwiperComponents from '../component/SwiperComponent'
-import { MRHero } from '@/component';
+import { MRContact, MRHero } from '@/component';
 import Enlistedlogo from '@/fa-component/Enlistedlogo';
 import Tradition from '@/fa-component/Tradition';
 import StoryPlot from '@/component';
@@ -89,12 +89,7 @@ export default function Home() {
       ]}
       />
       <SwiperComponents />
-      <StoryPlot />
-
-
-
-
-
+      <MRContact/>
     </>
 
 
