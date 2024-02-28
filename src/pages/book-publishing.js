@@ -3,16 +3,34 @@ import Link from 'next/link';
 //
 
 import Tradition from '@/fa-component/Tradition'
-import EnlistedNew from '@/fa-component/BookPublishing/EnlistedNew'
 import SwiperComponent from '@/component/SwiperComponent'
 import BTM from '../component/bottomLogos';
 import CTA from '../component/cta3';
 import BroaderNew from '@/fa-component/BroaderNew'
 import PublishingNewComponent from '@/fa-component/PublishingNewComponent'
 import Enlistedlogo from '@/fa-component/Enlistedlogo'
-import { MRHero, MRContact } from '@/component';
+import { MRHero, MRContact, MRQuestioners } from '@/component';
 import broader from 'media/ahsan/spacious-bookstore.png'
 import Head from 'next/head';
+
+const MRQuestionersData = [
+  {
+    title: "What Are Book Publishing Services?",
+    desc: "Amazon KDP is a self publishing service from Amazon that allows authors to publish and distribute their books worldwide. It's a fast, easy and affordable way to get your book into the hands of readers looking for new titles to enjoy."
+  },
+  {
+    title: "Who Needs Book Publishing Services?",
+    desc: "Anyone who wishes to self-publish their book without going through a traditional publishing house may need book publishing services. This is especially true if you are not familiar with the self-publishing process or do not have the time or resources to do it yourself."
+  },
+  {
+    title: "Benefits Of Using Book Publishing Services?",
+    desc: "There are many benefits to using book publishing services offered by book publishers, including professional support, cost savings, and peace of mind. When you work with a reputable book publishing service, you can be confident that your book will be of the highest quality and reach your target audience."
+  },
+  {
+    title: "How Do I Choose A Book Publishing Service?",
+    desc: "There are many factors to consider when choosing a book publishing service, such as cost, services offered, turnaround time, and reputation. It is important to do your research and choose a service that is right for you and your book. Finding the best digital book publishers in the industry is not an easy task. But as the leading book publishers in the industry, Best Selling Publisher offers various publishing services just for you! "
+  }
+]
 
 const about = () => {
 
@@ -68,10 +86,10 @@ const about = () => {
           title="Proficient Books Publishers Services "
           desc="We Publish Books That Sell!"
         />
-        <EnlistedNew
-          subtitle="Be a Part of the Best Sellers’ Fraternity"
+        <MRQuestioners
+          subTitle="Be a Part of the Best Sellers’ Fraternity"
           title="Why Are We  The Best Book Publishing Company For You?"
-          paragraph=""
+          data= {MRQuestionersData}
         />
 
 

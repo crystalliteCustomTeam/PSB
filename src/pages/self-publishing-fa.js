@@ -2,7 +2,6 @@ import Head from 'next/head'
 // components
 
 import Tradition from '@/fa-component/Tradition'
-import EnlistedNew from '@/fa-component/selfpublishing/EnlistedNew'
 import BroaderNew from '@/fa-component/BroaderNew'
 import Enlistedlogo from '@/fa-component/Enlistedlogo'
 import SwiperComponent from '@/component/SwiperComponent'
@@ -14,7 +13,28 @@ import PublishingNewComponent from '@/fa-component/PublishingNewComponent'
 import bannerImg from 'media/ahsan/self-publishing-banner.png'
 import img2 from 'media/images/banner/img2.png'
 import broader from 'media/ahsan/self-publishing-broder.png'
-import { MRHero, MRContact } from '@/component'
+import { MRHero, MRContact, MRQuestioners } from '@/component'
+
+
+const MRQuestionersData = [
+  {
+    title: "What Is Self Publishing?",
+    desc: "Self-publishing is the process of publishing your own book without the need for a traditional publisher. This means that you will be responsible for all aspects of the publishing process, from editing and design to printing and distribution. While self publishing services can be a lot of work, it also gives you a lot of control over your book and the publishing process."
+  },
+  {
+    title: "Why Would I Want To Self Publish My Book?",
+    desc: "There exists multiple reasons why someone might want to self publish their book. Maybe you have a story that you feel is important and needs to be told, but you can’t find a traditional publisher who is interested. Or maybe you want to be in control of the publishing process and your book’s destiny. Either way, self publishing services can be a great way to get your book into the world."
+  },
+  {
+    title: "How Do I Self Publish My Book?",
+    desc: "There are a few different ways to go about self publishing your book. You can hire a professional books publisher to print your book for you or use an online print-on-demand service offered by Best Selling Publisher. You will also need to create a book design and cover and format your book for printing. Once your book is ready, you can start promoting and selling it to readers.  "
+  },
+  {
+    title: "What Are The Benefits Of Self Publishing?",
+    desc: "A: Best self publishing services give you a lot of control over your book and the publishing process. You can determine the price of your book, the format in which it will be printed, and how it will be distributed. You can also reach a wider audience with the help of the best self publishing companies since your book will be available for sale online and in bookstores. And, of course, you get to keep all the profits from your book sales! "
+  }
+]
+
 
 const amazonpublishing = () => {
   const newSpan = <h1 className='font-50 fw-700 font-primary txt-secondary mt-3 leading-tight'>Best Self Publishing Services <br /> - Your One-Stop Solution<br /> For Self Publishing Success!</h1>
@@ -75,12 +95,11 @@ const amazonpublishing = () => {
       />
 
       {/*========= Enlisted fold =========*/}
-      <EnlistedNew
-        subtitle="Be a Part of the Best Sellers’ Fraternity"
-        title="How Best Self Publishing Services Companies Can Help You Succeed As A Published Author? "
-        desc=""
-        desc2=""
-        paragraph="As an author, you have a lot of control over the success of your book. But did you know that there are companies out there whose sole purpose is to help you self-publish your book and make it a success? These are called self publishing book services companies, and they can provide everything from writing and editing to marketing and distribution. "
+      <MRQuestioners
+        subTitle="Be a Part of the Best Sellers’ Fraternity"
+        title="How Best Self Publishing Services Companies Can <br class='hidden mr-lg:block'/> Help You Succeed As A Published Author? "
+        desc="As an author, you have a lot of control over the success of your book. But did you know that there are companies out there whose sole purpose is to help you self-publish your book and make it a success? These are called self publishing book services companies, and they can provide everything from writing and editing to marketing and distribution."
+        data={MRQuestionersData}
       />
       <PublishingNewComponent
         subtitle="Enlist Yourself with the All-Time Best "

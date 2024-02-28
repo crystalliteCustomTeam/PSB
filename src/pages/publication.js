@@ -62,32 +62,32 @@ const about = () => {
           PublishWithUs={
             [
               {
-                  steps: "Step 01",
+                  step: "Step 01",
                   heading: "Professionalism",
                   desc: "We uphold the highest standards of professionalism, ensuring that your book is bound with quality. Our commitment to excellence is non-negotiable."
               },
               {
-                  steps: "Step 02",
+                  step: "Step 02",
                   heading: "Experience",
                   desc: "With years of experience in the publishing industry, we possess a profound understanding of what it takes to make a book successful. We’ve worked with authors from diverse genres, and our portfolio speaks for itself."
               },
               {
-                  steps: "Step 03",
+                  step: "Step 03",
                   heading: "Customization",
                   desc: "We understand that every author and book is unique. That’s why our services are fully customizable and tailored to your specific needs and goals. Your vision is at the forefront of everything we do, from book writing to book design services."
               },
               {
-                  steps: "Step 04",
+                  step: "Step 04",
                   heading: "Affordability",
                   desc: "We believe that publishing should be accessible to all. Our book services pricing is competitive, and we offer flexible payment options to accommodate your budget."
               },
               {
-                  steps: "Step 05",
+                  step: "Step 05",
                   heading: "Confidentiality",
                   desc: "We take your privacy seriously and maintain strict confidentiality throughout the entire process. Your work is safe in our hands."
               },
               {
-                  steps: "Step 06",
+                  step: "Step 06",
                   heading: "Submitting it for review",
                   desc: "This is the final stage of the process, ensuring that all tasks are completed and your design is perfected. Our team affirms your success."
               }

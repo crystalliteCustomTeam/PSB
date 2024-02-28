@@ -19,36 +19,41 @@ import SwiperComponents from '../component/SwiperComponent'
 import bannerImg from 'media/ahsan/home-banner.png'
 import img2 from 'media/images/banner/img2.png'
 import broader from 'media/ahsan/children-broder.png'
-import { MRHero, MRContact } from '@/component'
+import { MRHero, MRContact, MRQuestioners } from '@/component'
+import PublishingNewComponent from '@/fa-component/PublishingNewComponent'
+
+
+const MRQuestionersData = [
+  {
+    title: "Experience and Quality",
+    desc: "We are a highly experienced and reputable book publishing company."
+  },
+  {
+    title: "Industry Experts",
+    desc: "Our best seller publishing team is composed of industry experts."
+  },
+  {
+    title: "Range of Services",
+    desc: "We offer a wide range of book publishing services, including manuscript editing, formatting, and publishing consultation."
+  },
+  {
+    title: "Goal-Driven",
+    desc: "We have a proven track record of success in helping our  authorschieve their publishing goals."
+  },
+  {
+    title: "Affordable Packages",
+    desc: "We offer competitive pricing and terms that are favorable to our authors."
+  },
+  {
+    title: "Passion and Creativity",
+    desc: "As a leading book publishing company, we are passionate about helping our authors reach their full potential and bring their vision to life."
+  }
+
+]
+
 
 const amazonpublishing = () => {
-  const paratitles = [
-    {
-      para: 1,
-      paraTitle: "What is Amazon KDP?",
-      paraSubTitle: "Amazon KDP is a self publishing service from Amazon that allows authors to publish  and distribute their books worldwide. It's a fast, easy and affordable way to get your book into the hands of readers looking for new titles to enjoy."
-    },
-    {
-      para: 2,
-      paraTitle: "How Does Amazon KDP Work?",
-      paraSubTitle: "Amazon KDP works by allowing authors to upload their book files to the Amazon Kindle Store, where they can be sold and downloaded by readers. Authors can also choose to have their books printed and shipped to customers via Amazon's CreateSpace service."
-    },
-    {
-      para: 3,
-      paraTitle: "How Much Does It Cost To Publish With Amazon KDP?",
-      paraSubTitle: "It costs nothing to publish your book with Amazon KDP. You will only be charged when your book is sold, and you will receive a 70% royalty on each sale."
-    },
-    {
-      para: 4,
-      paraTitle: "What Are The Requirements For My Book?",
-      paraSubTitle: "Your book must be at least 20 pages long and have a professional cover design. Additionally, your book must be formatted correctly to be accepted into the Amazon Kindle Store."
-    },
-    {
-      para: 5,
-      paraTitle: "What Are The Benefits Of Publishing With Amazon KDP?",
-      paraSubTitle: "It costs nothing to publish your book with Amazon KDP. You will only be charged when your book is sold, and you will receive a 70% royalty on each sale."
-    }
-  ]
+
 
 
   return (
@@ -85,10 +90,21 @@ const amazonpublishing = () => {
       />
       <Audience />
       {/*========= Enlisted fold =========*/}
-      <Enlisted
-        subtitle="Be a Part of the Best Sellers’ Fraternity"
+      <MRQuestioners
+        subTitle="Be a Part of the Best Sellers’ Fraternity"
         title="What Makes Us the Most Preferred Book Publishers?"
-        data={paratitles}
+        // desc="As an author, you have a lot of control over the success of your book. But did you know that there are companies out there whose sole purpose is to help you self-publish your book and make it a success? These are called self publishing book services companies, and they can provide everything from writing and editing to marketing and distribution. "
+        data={MRQuestionersData}
+      />
+
+      {/*========= Publshing Component fold =========*/}
+      <PublishingNewComponent
+        subtitle="Enlist Yourself with the All-Time Best "
+        title="Your Book Deserves Only The"
+        desc="Best Selling Publishers."
+        bgImage="bg-[url('../../public/ahsan/bg_black.png')]"
+        classes="bg-cover bg-no-repeat"
+        textBG="bg-primary-100"
       />
       {/*========= Exceptional fold =========*/}
       <Exceptional
