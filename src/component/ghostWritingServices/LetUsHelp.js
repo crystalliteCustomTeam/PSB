@@ -64,7 +64,6 @@ const demandingSpecilaist = ({
         };
     }, []);
     return (
-        <>
             <section className="py-[80px]">
                 <div className="mr-container relative z-10 font-secondary">
                     <div className="text-center justify-content-center mb-5 xs:px-2 ">
@@ -75,6 +74,7 @@ const demandingSpecilaist = ({
                     </div>
                     <div className={`${isLargeScreen ? '' : 'hidden'} grid md:grid-cols-2 grid-cols-4 gap-4 mt-10 items-stretch justify-stretch xs:grid-cols-1 xs:px-5 md:px-5`}>
                         {data && data?.map((e, i) => (
+                            <>
                             <div className="  ">
                                 <div className="hover:shadow-2xl hover:shadow-[#777777] hover:-translate-y-1 hover:scale-105 hover:bg-[#1d1d1f] duration-300 hover:text-white box text-center bg-[#f2f2f2] p-6 px-auto items-center justify-center mx-auto rounded-3xl">
                                     <h4 className='xl:text-2xl text-xl font-semibold font-primary min-h-[65px] mx-auto' dangerouslySetInnerHTML={{ __html: e.h4title }} />
@@ -82,23 +82,24 @@ const demandingSpecilaist = ({
                                     <p className='text-[17px]'>100% original Content</p>
                                 </div>
                             </div>
-                        </div>
-                        <div className=" ">
-                            <div className="hover:shadow-2xl hover:shadow-[#777777] hover:-translate-y-1 hover:scale-105 hover:bg-[#1d1d1f] duration-300 hover:text-white box text-center bg-[#f2f2f2] p-6 px-auto items-center justify-center mx-auto rounded-3xl">
+                            <div className=" ">
+                                <div className="hover:shadow-2xl hover:shadow-[#777777] hover:-translate-y-1 hover:scale-105 hover:bg-[#1d1d1f] duration-300 hover:text-white box text-center bg-[#f2f2f2] p-6 px-auto items-center justify-center mx-auto rounded-3xl">
 
-                                <h4 className='xl:text-2xl text-xl font-semibold font-primary min-h-[65px] mx-auto'>Unlimited <br className='xl:hidden block' /> Revisions</h4>
-                                <Image quality={95} src="/imageAR/checkmark.png" width={80} height={80} className='mx-auto my-12' alt="Unlimited Revisions" />
-                                <p className='text-[17px] '>Amendments and Omissions</p>
+                                    <h4 className='xl:text-2xl text-xl font-semibold font-primary min-h-[65px] mx-auto'>Unlimited <br className='xl:hidden block' /> Revisions</h4>
+                                    <Image quality={95} src="/imageAR/checkmark.png" width={80} height={80} className='mx-auto my-12' alt="Unlimited Revisions" />
+                                    <p className='text-[17px] '>Amendments and Omissions</p>
+                                </div>
                             </div>
-                        </div>
-                        <div className=" ">
-                            <div className="hover:shadow-2xl hover:shadow-[#777777] hover:-translate-y-1 hover:scale-105 hover:bg-[#1d1d1f] duration-300 hover:text-white box text-center bg-[#f2f2f2] p-6 px-auto items-center justify-center mx-auto rounded-3xl">
+                            <div className=" ">
+                                <div className="hover:shadow-2xl hover:shadow-[#777777] hover:-translate-y-1 hover:scale-105 hover:bg-[#1d1d1f] duration-300 hover:text-white box text-center bg-[#f2f2f2] p-6 px-auto items-center justify-center mx-auto rounded-3xl">
 
-                                <h4 className='xl:text-2xl text-xl font-semibold font-primary min-h-[65px] mx-auto'>Rights of  <br className='xl:hidden block' /> Ownership</h4>
-                                <Image quality={95} src="/imageAR/checkmark.png" width={80} height={80} className='mx-auto my-12' alt="Rights of Ownership Maintained" />
-                                <p className='text-[17px] '>Copyrights</p>
+                                    <h4 className='xl:text-2xl text-xl font-semibold font-primary min-h-[65px] mx-auto'>Rights of  <br className='xl:hidden block' /> Ownership</h4>
+                                    <Image quality={95} src="/imageAR/checkmark.png" width={80} height={80} className='mx-auto my-12' alt="Rights of Ownership Maintained" />
+                                    <p className='text-[17px] '>Copyrights</p>
+                                </div>
                             </div>
-                        </div>
+                            </>
+                        ))}
                     </div>
 
 
@@ -106,35 +107,36 @@ const demandingSpecilaist = ({
                     <div className={`${isLargeScreen ? 'hidden' : ''} grid md:grid-cols-2 grid-cols-4 gap-4 mt-10 items-stretch justify-stretch sm:grid-cols-1 sm:px-16 xs:grid-cols-1 xs:px-10 md:px-5`}>
                         <Slider {...settings}>
                             {data && data?.map((e, i) => (
-                                <div className="  ">
+                            <>
+                                <div className=" ">
                                     <div className="hover:shadow-2xl hover:shadow-[#777777] hover:-translate-y-1 hover:scale-105 hover:bg-[#1d1d1f] duration-300 hover:text-white box text-center bg-[#f2f2f2] p-6 px-auto items-center justify-center mx-auto rounded-3xl">
                                         <h4 className='xl:text-2xl text-xl font-semibold font-primary min-h-[65px] mx-auto' dangerouslySetInnerHTML={{ __html: e.h4title }} />
                                         <Image quality={95} src={e.imgPath} width={80} height={80} className='mx-auto my-12 ' alt={e.alt} />
                                         <p className='text-[17px]'>100% original Content</p>
                                     </div>
                                 </div>
-                            </div>
-                            <div className=" ">
-                                <div className="hover:shadow-lg hover:shadow-[#777777] hover:-translate-y-1 hover:scale-95 hover:bg-[#1d1d1f] duration-300 hover:text-white box text-center bg-[#f2f2f2] p-6 px-auto items-center justify-center mx-auto rounded-3xl">
+                                <div className=" ">
+                                    <div className="hover:shadow-lg hover:shadow-[#777777] hover:-translate-y-1 hover:scale-95 hover:bg-[#1d1d1f] duration-300 hover:text-white box text-center bg-[#f2f2f2] p-6 px-auto items-center justify-center mx-auto rounded-3xl">
 
-                                    <h4 className='xl:text-2xl text-xl font-semibold font-primary min-h-[65px] mx-auto'>Unlimited <br className='xl:hidden block' /> Revisions</h4>
-                                    <Image quality={95} src="/imageAR/checkmark.png" width={80} height={80} className='mx-auto my-12' alt="Unlimited Revisions" />
-                                    <p className='text-[17px] '>For all your book projects</p>
+                                        <h4 className='xl:text-2xl text-xl font-semibold font-primary min-h-[65px] mx-auto'>Unlimited <br className='xl:hidden block' /> Revisions</h4>
+                                        <Image quality={95} src="/imageAR/checkmark.png" width={80} height={80} className='mx-auto my-12' alt="Unlimited Revisions" />
+                                        <p className='text-[17px] '>For all your book projects</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className=" ">
-                                <div className="hover:shadow-lg hover:shadow-[#777777] hover:-translate-y-1 hover:scale-95 hover:bg-[#1d1d1f] duration-300 hover:text-white box text-center bg-[#f2f2f2] p-6 px-auto items-center justify-center mx-auto rounded-3xl">
+                                <div className=" ">
+                                    <div className="hover:shadow-lg hover:shadow-[#777777] hover:-translate-y-1 hover:scale-95 hover:bg-[#1d1d1f] duration-300 hover:text-white box text-center bg-[#f2f2f2] p-6 px-auto items-center justify-center mx-auto rounded-3xl">
 
-                                    <h4 className='xl:text-2xl text-xl font-semibold font-primary min-h-[65px] mx-auto'>Rights of  <br className='xl:hidden block' /> Ownership Maintained</h4>
-                                    <Image quality={95} src="/imageAR/checkmark.png" width={80} height={80} className='mx-auto my-12' alt="Rights of Ownership Maintained" />
-                                    <p className='text-[17px] '>Copyrights</p>
+                                        <h4 className='xl:text-2xl text-xl font-semibold font-primary min-h-[65px] mx-auto'>Rights of  <br className='xl:hidden block' /> Ownership Maintained</h4>
+                                        <Image quality={95} src="/imageAR/checkmark.png" width={80} height={80} className='mx-auto my-12' alt="Rights of Ownership Maintained" />
+                                        <p className='text-[17px] '>Copyrights</p>
+                                    </div>
                                 </div>
-                            </div>
+                            </>
+                         ))}
                         </Slider>
                     </div>
                 </div>
             </section>
-        </>
 
     )
 }
