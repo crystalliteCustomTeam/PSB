@@ -19,7 +19,7 @@ import SwiperComponents from '../component/SwiperComponent'
 import bannerImg from 'media/ahsan/home-banner.png'
 import img2 from 'media/images/banner/img2.png'
 import broader from 'media/ahsan/children-broder.png'
-import { MRHero, MRContact, MRQuestioners } from '@/component'
+import { MRHero, MRContact, MRQuestioners,} from '@/component'
 import PublishingNewComponent from '@/fa-component/PublishingNewComponent'
 
 

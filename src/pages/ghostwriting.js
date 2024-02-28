@@ -7,12 +7,38 @@ import CTA from '../component/cta3';
 import BTM from '../component/bottomLogos';
 import SwiperComponents from '../component/SwiperComponent'
 import Enlistedlogo from '@/fa-component/Enlistedlogo'
-import { MRHero, MRContact } from '@/component'
+import { MRHero, MRContact, MRContent2 } from '@/component'
 import Head from 'next/head'
 
 
 const Ghostwriting = () => {
-
+  const MRContent2Data = [
+    {
+      title: "Fiction",
+      desc: "Our fiction ghostwriters will assist you in creatively expressing your ideas into enticing literacy that will captivate your audience. All aspects of a story are considered, particularly the author’s major plot and characters. "
+    },
+    {
+      title: "Informative",
+      desc: "Our ghostwriters comprehend the nuance of your text. They ensure their information is reliable and well-acknowledged worldwide, under the available data and facts."
+    },
+    {
+      title: "Memoir",
+      desc: "Our ghostwriters have been trained to write memoirs, not to confuse them with autobiographies. Furthermore, they cherish your sentiments and emotions and go to great lengths to turn your precious memories into a book."
+    },
+    {
+      title: "Children's Book",
+      desc: "Our well-trained and experienced writers are well-versed in all aspects of children’s books. They use their ingenuity to write classic subjects that young minds can understand, with vibrant graphics that keep them hooked."
+    },
+    {
+      title: "Self Help Book",
+      desc: "We allow your ideas to reach the right audiences and serve your experiences to be their holy grail in the relevant endeavor."
+    },
+    {
+      title: "Biography",
+      desc: "Our expert writers are keenly interested in learning about your subjects’ stories, holding the skills and expertise to provide you with well-written content for whoever you want to write about. They also conduct extensive research through various channels such as newspapers, blogs, and interviews to ensure they use correct facts and figures."
+    }
+  
+  ]
   return (
     <>
       <Head>
@@ -46,11 +72,16 @@ const Ghostwriting = () => {
         />
         <Enlistedlogo />
         <LETUSHELP />
-        <GhostWriting 
-        serviceTitle="Ghostwriting Services"
+        <GhostWriting
+          serviceTitle="Ghostwriting Services"
           serviceDesc="What if we tell you that you no longer have to worry about writing? It’ll ease so many of your problems, right?"
-          serviceDesc2="Best Selling Publisher's exceptional ghostwriting services set them apart in the industry. Their team of skilled writers possesses a rare talent for impeccably embodying the voice and vision of their clients, whether it's for a memoir, a novel, or corporate literature."/>
-        <CREATIVEGHOSTWRITERS />
+          serviceDesc2="Best Selling Publisher's exceptional ghostwriting services set them apart in the industry. Their team of skilled writers possesses a rare talent for impeccably embodying the voice and vision of their clients, whether it's for a memoir, a novel, or corporate literature." />
+        <MRContent2
+          subTitle="Our Creative Ghostwriters,"
+          title="Bringing Your Imagination To Life."
+          desc={`You may have an idea for the next best-seller, but you may not have the time or expertise to write it yourself. Our platform meets all of the <br class="mr-xl:block hidden"/> requirements and offers a diverse range of writing styles, including:`}
+          data={MRContent2Data}
+        />
         <CTA />
         <BTM />
         <WMODE

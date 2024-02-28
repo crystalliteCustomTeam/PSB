@@ -7,7 +7,7 @@ import CTA3 from '../component/cta3';
 import BTM from '../component/bottomLogos';
 import SwiperComponents from '../component/SwiperComponent'
 import Enlistedlogo from '@/fa-component/Enlistedlogo'
-import { MRHero, MRContact } from '@/component';
+import { MRHero, MRContact, MRContent2 } from '@/component';
 
 const openLiveChat = (e) => {
   e.preventDefault();
@@ -15,6 +15,33 @@ const openLiveChat = (e) => {
     window.LiveChatWidget.call('maximize');
   }
 };
+const MRContent2Data = [
+  {
+    title: "Fiction",
+    desc: "Our fiction ghostwriters will assist you in creatively expressing your ideas into enticing literacy that will captivate your audience. All aspects of a story are considered, particularly the author’s major plot and characters. "
+  },
+  {
+    title: "Informative",
+    desc: "Our ghostwriters comprehend the nuance of your text. They ensure their information is reliable and well-acknowledged worldwide, under the available data and facts."
+  },
+  {
+    title: "Memoir",
+    desc: "Our ghostwriters have been trained to write memoirs, not to confuse them with autobiographies. Furthermore, they cherish your sentiments and emotions and go to great lengths to turn your precious memories into a book."
+  },
+  {
+    title: "Children's Book",
+    desc: "Our well-trained and experienced writers are well-versed in all aspects of children’s books. They use their ingenuity to write classic subjects that young minds can understand, with vibrant graphics that keep them hooked."
+  },
+  {
+    title: "Self Help Book",
+    desc: "We allow your ideas to reach the right audiences and serve your experiences to be their holy grail in the relevant endeavor."
+  },
+  {
+    title: "Biography",
+    desc: "Our expert writers are keenly interested in learning about your subjects’ stories, holding the skills and expertise to provide you with well-written content for whoever you want to write about. They also conduct extensive research through various channels such as newspapers, blogs, and interviews to ensure they use correct facts and figures."
+  }
+
+]
 const Ghostwriting = () => {
   return (
     <>
@@ -46,7 +73,12 @@ const Ghostwriting = () => {
         <GhostWriting serviceTitle="SEO Content Writing Services"
           serviceDesc="We have a vast pool of ghostwriters and will work with you to find the best match for your needs. You will receive a PR and media campaign, an audiobook with a professional voice actor, and high-quality studio production. Finally, distribution and retailer accounts will be established in your name, ensuring you own all rights and royalties.
         "/>
-        <CREATIVEGHOSTWRITERS />
+        <MRContent2
+          subTitle="Our Creative Ghostwriters,"
+          title="Bringing Your Imagination To Life."
+          desc={`You may have an idea for the next best-seller, but you may not have the time or expertise to write it yourself. Our platform meets all of the <br class="mr-xl:block hidden"/> requirements and offers a diverse range of writing styles, including:`}
+          data={MRContent2Data}
+        />
         <CTA3 />
         <BTM />
         <WMODE
