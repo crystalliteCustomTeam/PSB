@@ -5,5 +5,6 @@ import MRHero from "./MRHero/MRHero"
 import MRHeroCounter from "./MRHeroCounter/MRHeroCounter"
 import MRContact from "./MRContact/MRContact"
 import MRQuestioners from "./MRQuestioners/MRQuestioners"
+import MRContent1 from "./MRContent1/MRContent1"
 
-export { MRHero, MRCTAGroup, MRCTA, MRHeroForm, MRHeroCounter, MRContact, MRQuestioners }
+export { MRHero, MRCTAGroup, MRCTA, MRHeroForm, MRHeroCounter, MRContact, MRQuestioners, MRContent1 }

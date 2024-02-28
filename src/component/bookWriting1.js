@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Image from 'next/image'
-import { MRCTA, MRCTAGroup } from '.'
+import { MRCTA, MRCTAGroup } from '@/component'
 
 const bookWriting = (props) => {
     return (
