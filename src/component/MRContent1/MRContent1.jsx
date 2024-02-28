@@ -8,15 +8,17 @@ const MRContent1 = ({
     img1,
     img2,
     listTitle,
-    listTitleClasses = "",
+    listTitleClasses = " ",
     listClasses = "grid grid-cols-2 gap-3",
-    classes = "",
+    classes = " ",
     list,
     theme = "light",
     cta = true,
     textTheme = "text-[#000000]",
-    direction = "",
-    listing = true
+    direction = " ",
+    listing = true,
+    listBorder = " ",
+    ctaText
 }) => {
     return (
         <section>
@@ -24,12 +26,12 @@ const MRContent1 = ({
                 <div className="mr-container">
                     <div className={`${img1 ? "" : "flex gap-5 items-center"} ${direction}`}>
                         <div className={`${img1 ? "" : "basis-1/2"}`}>
-                            <div className={`${img1 ? "flex items-center gap-3" : ""} ${direction}`}>
+                            <div className={`${img1 ? "flex items-center gap-5" : ""} ${direction}`}>
                                 <div className="basis-1/2">
-                                    {subTitle && (<span className="text-[20px] mr-lg:text-[30px] block leading-tight font-semibold font-sans text-[#40BEE2] mb-2">
+                                    {subTitle && (<span className="text-[18px] mr-lg:text-[25px] block leading-tight font-semibold font-sans text-[#40BEE2] mb-2">
                                         {subTitle}
                                     </span>)}
-                                    {title && (<h2 className={`text-[26px] mr-md:text-[30px] mr-lg:text-[40px] block leading-tight font-bold font-sans ${textTheme}  mb-3`} dangerouslySetInnerHTML={{ __html: title }} />)}
+                                    {title && (<h2 className={`text-[26px] mr-md:text-[30px] mr-lg:text-[35px] mr-2xl:text-[40px] block leading-tight font-bold font-sans ${textTheme}  mb-3`} dangerouslySetInnerHTML={{ __html: title }} />)}
                                     {desc && (<p className={`text-[14px] mr-lg:text-[16px] block leading-[26px] font-normal font-sans ${textTheme}`} dangerouslySetInnerHTML={{ __html: desc }} />)}
                                     {(!img1 || listing) && (
                                         listTitle &&
@@ -40,7 +42,7 @@ const MRContent1 = ({
                                         (<ul className={`mt-3 ${listClasses} list-image-[url(../../public/listIcon.png)] list-inside `}>
                                             {
                                                 list?.map((e, i) => (
-                                                    <li key={i} className={`text-[14px] leading-[26px] font-semibold font-sans ${textTheme}`}>{e}</li>
+                                                    <li key={i} className={`text-[14px] leading-[26px] font-semibold font-sans ${textTheme} ${listBorder}`} dangerouslySetInnerHTML={{ __html: e }} />
                                                 ))
                                             }
                                         </ul>)
@@ -80,14 +82,25 @@ const MRContent1 = ({
                                             }
                                         </div>)
                                     )}
+                                    {ctaText && (
+                                        ctaText &&
+                                        (
+
+                                            <MRCTA
+                                                text={ctaText}
+                                                classes="hover:bg-white hover:text-black rounded-sm mt-5"
+                                                handle="onclick='parent.LC_API.open_chat_window();return false;'"
+                                            />
+                                        )
+                                    )}
                                 </div>
                                 <div className="basis-1/2">
-                                    {img1 && <Image src={img1} alt="img" width={900} height={600} />}
+                                    {img1 && <Image src={img1} alt="img" width={900} height={100} className="!w-auto mx-auto" />}
                                 </div>
                             </div>
                         </div>
                         <div className={`${img1 ? "" : "basis-1/2"}`}>
-                            {img2 && <Image src={img2} alt="img" width={900} height={600} />}
+                            {img2 && <Image src={img2} alt="img" width={900} height={100} className="!w-auto mx-auto" />}
                         </div>
                     </div>
                 </div>
