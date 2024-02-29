@@ -1,3 +1,4 @@
+import LETUSHELP from "@/component/ghostWritingServices/LetUsHelp"
 import WMODE from "@/component/workMode1"
 import CTA from "@/component/cta3"
 import BTM from "@/component/bottomLogos"
@@ -6,7 +7,7 @@ import Enlistedlogo from "@/fa-component/Enlistedlogo"
 import { MRHero, MRContact, MRContent2, MRContent1 } from "@/component"
 import Head from "next/head"
 
-const PressReleaseWritingServices = () => {
+const ProfessionalGhostwriting = () => {
   const MRContent2Data = [
     {
       title: "Fiction",
@@ -36,49 +37,36 @@ const PressReleaseWritingServices = () => {
   return (
     <main>
       <Head>
-        <title>Press Release Writing Services | Best Selling Publisher</title>
-        <meta name="description" content="At Best Selling Publisher, we take pride in our exceptional article writing services. Connect with us to start your publishing journey today!" />
+        <title>Professional Ghostwriting Services | Best Selling Publisher</title>
+        <meta name="description" content="Best Selling Publisher offers professional ghostwriting services tailored to your needs. Start your publishing journey today and see why we're the premier choice for authors." />
       </Head>
       <MRHero
-        title="Get Your Press Releases <br /> Covered By the Right Sites"
-        desc="Welcome to Best Selling Publisher Ghostwriting. We offer professional web copywriting services, taking your website to the next level with the help of our expert copywriters."
+        title="Affordable and Professional  <br /> Ghostwriting Services"
+        desc="Do you know how to make your content incredible? You team up with the experts! Over the years, we have assisted innumerable authors who aspired to become the next best sellers. If you plan to be one of them, we are here for you."
         logos="images/banner/img2.png"
-        classes='bg-[#fefefe] !py-[80px]'
         counter={true}
-        beforeImg="mr-md:before:bg-[url('../../public/imageAR/newspaper-concept.png')]"
+        classes='!py-[80px] bg-[#fefefe]'
+        beforeImg="mr-md:before:bg-[url('../../public/imageAR/serious-man.png')]"
       />
       <Enlistedlogo />
+      <LETUSHELP />
       <MRContent1
-        title="Press Releases Covered By The Right Sites"
-        desc="Press Release gives you maximum acquaintance, achieved through the careful selection of your target audience through media and targeted niche."
-        img1="/imageAR/bold.png"
-        list={[
-          "EIN Presswire",
-          "Ereleases",
-          "Issuewire",
-          "Linking News",
-          "Newswire",
-          "PR Distribution"
-        ]}
-        direction="flex-row-reverse"
-      />
-      <MRContent1
-        subTitle="Our Comprehensive"
-        title="Press Release Writing Services"
-        desc="We have a vast pool of ghostwriters and will work with you to find the best match for your needs. You will receive a PR and media campaign, an audiobook with a professional voice actor, and high-quality studio production. Finally, distribution and retailer accounts will be established in your name, ensuring you own all rights and royalties."
+        subTitle="Our Exceptional"
+        title="Ghostwriting Services"
+        desc="What if we tell you that you no longer have to worry about writing? It’ll ease so many of your problems, right? <span class='h-3 block'></span> Best Selling Publisher's exceptional ghostwriting services set them apart in the industry. Their team of skilled writers possesses a rare talent for impeccably embodying the voice and vision of their clients, whether it's for a memoir, a novel, or corporate literature."
         img1="/assets/images/newimg/ghostwriting_book.png"
-        listTitle="Our process is simple and aims to deliver flawless results for every project."
-        listTitleClasses="bg-white p-3 !text-black w-max"
+        listTitle="Our process is simple yet effective."
+        listTitleClasses="bg-white p-3 !text-black w-max pr-20 [clip-path:polygon(0_0,_90%_0,_80%_99%,_0_100%)]"
         textTheme="text-white"
         list={[
-          "Writing Genuine Content Based On Your Idea",
-          "Critical Review, Editing, And Proofreading",
-          "Extensive Formatting, Typesetting, & Designing",
-          "Publishing, Branding, Marketing, And Promotions",
-          "Critical Review And Analysis",
-          "Book Coaching",
+          "Genuine Content",
+          "Extensive Formatting",
+          "Critical Reviews and Assessments",
           "Copy Editing",
-          "Developmental Editing"
+          "Editing and Proofreading",
+          "Publishing, Marketing, and Promotions",
+          "Creative Consultancy",
+          "Line and Developmental Editing"
         ]}
         classes="bg-[url('../../public/imageAR/serviceBG.png')]"
         theme="dark"
@@ -86,36 +74,36 @@ const PressReleaseWritingServices = () => {
       <MRContent2
         subTitle="Our Creative Ghostwriters,"
         title="Bringing Your Imagination To Life."
-        desc="You may have an idea for the next best-seller, but you may not have the time or expertise to write it yourself. Our platform meets all of the <br class='mr-xl:block hidden'/> requirements and offers a diverse range of writing styles, including:"
+        desc={`You may have an idea for the next best-seller, but you may not have the time or expertise to write it yourself. Our platform meets all of the <br class="mr-xl:block hidden"/> requirements and offers a diverse range of writing styles, including:`}
         data={MRContent2Data}
       />
-      <BTM />
       <CTA />
+      <BTM />
       <WMODE
-        subtitle="Carrying out"
-        title="The Fastest Work Mode, Get Your <br className='mr-lg:block hidden' /> Work in 4 Easy Steps"
-        desc=" Working with us gives you prompt delivery of work because we have set up everything systematically. Here is our 4 step process, which keeps us streamlined from the beginning."
+        subtitle="We Pursue"
+        title="A Swift Work Mode that Involves 4 Easy Steps"
+        desc="We emphasize prompt deliveries because we don’t like to keep you waiting. Following are the 4 easy steps that keep us streamlined from the beginning:"
         GridCols="grid-cols-4"
         StoryPlotData={[
           {
             steps: "Step 01",
             heading: "Submit Your Manuscript",
-            desc: "After making up your mind about working with us, you place your order."
+            desc: "Start your publishing process by sharing your manuscript with us."
           },
           {
             steps: "Step 02",
             heading: "Edit & Design",
-            desc: "We refine your text and design your book's cover."
+            desc: "We add our artistic expertise while retaining your unique voice."
           },
           {
             steps: "Step 03",
             heading: "Review & Approve",
-            desc: "You review our work and give the green light."
+            desc: "We will NEVER go above your head! Your approval matters, and we want to ensure our creative contributions align with your vision."
           },
           {
             steps: "Step 04",
             heading: "Publish & Distribute",
-            desc: "Your book is published and distributed on schedule."
+            desc: "Witness your book being published and reaching readers across the globe."
           }
         ]}
       />
@@ -125,4 +113,4 @@ const PressReleaseWritingServices = () => {
   )
 }
 
-export default PressReleaseWritingServices
+export default ProfessionalGhostwriting

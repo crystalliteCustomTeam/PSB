@@ -2,17 +2,13 @@ import Head from "next/head"
 // components
 import Tradition from "@/fa-component/Tradition"
 import Audience from "@/fa-component/Audience"
-import Broader from "@/fa-component/Broader"
 import Dreams from "@/fa-component/Dreams"
 import Plans from "@/fa-component/Plans"
-import Advice from "@/fa-component/Advice"
 import Enlistedlogo from "@/fa-component/Enlistedlogo"
 import Exceptional from "@/fa-component/Exceptional"
-import SwiperComponents from "../component/SwiperComponent"
-import { MRHero, MRContact, MRQuestioners, } from "@/component"
+import SwiperComponents from "@/component/SwiperComponent"
+import { MRHero, MRContact, MRQuestioners, MRContent1, } from "@/component"
 import PublishingNewComponent from "@/fa-component/PublishingNewComponent"
-// images
-import broader from "media/ahsan/children-broder.png"
 
 const MRQuestionersData = [
   {
@@ -44,7 +40,7 @@ const MRQuestionersData = [
 
 const Home = () => {
   return (
-    <>
+    <main>
       <Head>
         <title>The Home of Quality Publishing | Best Book Publishing Company</title>
         <meta name="description" content="Experience the pinnacle of publishing services with the Best Book Publishing Company. With our commitment to quality, we guide every author toward success. Get started today!" />
@@ -77,17 +73,36 @@ const Home = () => {
         textBG="bg-primary-100"
       />
       <Exceptional
-        title={`Explore The Best Writing  <br class="mr-lg:block hidden" /> Services We Offer`}
-        subtitle={`Beyond the extraordinary resides an array of services we take immense pride in. That said, <br class="mr-lg:block hidden" /> It’s time to make your publishing dreams come to life.`}
+        title="Explore The Best Writing  <br class='mr-lg:block hidden' /> Services We Offer"
+        subtitle="Beyond the extraordinary resides an array of services we take immense pride in. That said, <br class='mr-lg:block hidden' /> It’s time to make your publishing dreams come to life."
       />
       <Dreams />
-      <Broader
-        subtitle="Capture the Interest of a Bigger Audience"
+      <MRContent1
+        subTitle="Capture the Interest of a Bigger Audience"
         title="Amazon Publishing Services"
         desc="Amazon Publishing Services encompass a range of offerings designed to assist authors in bringing their books to market and maximizing their success on the Amazon platform. These services may include editorial support, cover design, formatting assistance, and marketing guidance. Authors can reach a global audience and optimize their visibility to potential readers through Amazon's vast distribution network and marketing tools."
-        image={broader}
+        listTitle="Our Package Include"
+        list={[
+          "Idea research and analysis",
+          "Manuscript drafting",
+          "Proofreading to eliminate errors",
+          "Critical reviews",
+          "Book Cover design and illustration",
+          "Preparing text for publication",
+          "Traditional and self-publishing",
+          "Publishing on best libraries",
+          "Video Book Trailers",
+          "Branding and marketing"
+        ]}
+        img1="/images/flods/broader.png"
       />
-      <Advice />
+      <MRContent1
+        subTitle="Would you like to know a secret?"
+        title="Less Is Never More for Us – It Can Be If You Want It to Be!"
+        img1="/images/flods/advice.png"
+        listing={false}
+        direction="flex-row-reverse"
+      />
       <Plans />
       <SwiperComponents />
       <MRContact
@@ -95,7 +110,7 @@ const Home = () => {
         title="We Will Always Be There"
         desc="The right publishing partner. It can make all the difference between a manuscript collecting dust and a literary masterpiece capturing hearts worldwide. Best Selling Publisher is the unrivaled beacon of excellence in the dominion of publishing services. What sets Best Selling Publisher apart is its unwavering commitment to author success. With a team of seasoned professionals dedicated to every facet of the publishing process, from scrupulous editing to fascinating cover design and strategic marketing, Best Selling Publisher ensures that each book receives the royal treatment it deserves. <br /> <br /> Best Selling Publisher's innovative approach leverages cutting-edge technology and data-driven insights to maximize a book's visibility and reach across various platforms, including the formidable Amazon marketplace. Authors partnering with Best Selling Publisher gain access to a wealth of resources and expertise and benefit from personalized support every step of the way."
       />
-    </>
+    </main>
   )
 }
 

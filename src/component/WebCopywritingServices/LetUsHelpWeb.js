@@ -71,26 +71,6 @@ const LetUsHelpWeb = () => {
     return (
         <>
             <section className="py-20 relative md:py-10">
-                <div className='flex sm:grid sm:grid-cols-1 items-center xs:grid xs:grid-cols-1 xs:px-8 '   >
-                    <div className='basis-[50%] md:items-center md:py-10'>
-                        <Image quality={95} width={1000} height={100} className=' hover:-translate-y-1 hover:scale-105' src='/assets/images/newimg/communicate.png' alt='communicate' />
-                    </div>
-                    <div className='w-[60%] sm:w-[100%] xs:w-[100%] col-span-1'>
-                        <div className='py-10 md:py-0 xs:py-5 sm:px-10 sm:text-center'>
-                            <h6 className='text-[30px] font-primary text-[#40BEE2] font-semibold'>Communicate</h6>
-                            <h1 className='font-primary font-bold leading-[60px] text-[40px] md:leading-tight md:text-2xl sm:text-4xl sm:py-5  xs:text-3xl xs:w-[100%] '>
-                                Your Brand’s Message <br className='mr-xl:block hidden'/> Efficiently
-                            </h1>
-                            <p className='w-[70%] md:w-[90%] sm:w-[100%] xs:w-[95%] xs:py-3'>
-                                Our professional SEO writers produce keyword-rich content to help you beat the competition, bringing in the high ranking needed to elevate your website for better outreach, branding, and visibility.
-                            </p>
-                            <div className='w-[40%] md:w-[70%] grid grid-cols-2 grid-rows-1 gap-x-5 py-5 sm:mx-auto sm:w-[80%] xs:w-[90%]'>
-                                <a href="tel:800-781-9093" className='bg-[#00C0E4] py-1 text-white hover:bg-transparent hover:border-solid hover:border-[1px] hover:border-[#1d1d1f] hover:text-[#1d1d1f] hover:transition-all hover:transform-gpu flex items-center justify-center text-center h-[40px]'>Get Started</a>
-                                <a href="#" onClick={openLiveChat} className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div className="container max-w-7xl lg:max-w-6xl relative z-10 font-secondary">
                     <div className={`${isLargeScreen ? '' : 'hidden'} grid w-[90%] mx-auto md:grid-cols-2 grid-cols-3 gap-4 mt-6 items-stretch justify-stretch xs:grid-cols-1 xs:px-5 md:px-5`}>
                         <div className="  ">

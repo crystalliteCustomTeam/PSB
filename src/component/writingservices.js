@@ -32,14 +32,14 @@ const data = [
     {
         ImagePath: photoBook,
         heading: 'Photo Book',
-        desc: 'Make your book publication available in the digital form comprising of story, text, and images and is convenient to read.',
+        desc: 'A photo book is mostly found at the coffee tables, comprising the photographs as a means of the overall content.',
         alt: 'Best Publishing Photo Book'
     },
 ]
 
 const writingservices = () => {
     var settings = {
-        dots : true,
+        dots: true,
         infinite: true,
         speed: 500,
         // autoplay: true,
@@ -105,16 +105,16 @@ const writingservices = () => {
                 <div className='mr-container'>
                     <div className='grid mr-xl:grid-cols-12 items-center justify-center'>
                         <div className='mr-xl:col-span-4 col-span-12 m-auto mr-xl:mb-0 mb-10 items-center'>
-                            <h4 className='mr-2xl:text-[50px] text-[40px] mr-lg:text-[40px] font-primary font-bold mr-md:py-5 mr-xl:!text-left !text-center mr-md:text-[40px] mr-xs:text-[40px] mr-xs:py-3 leading-tight'>Exceptional <br className='mr-2xl:block hidden'/> Book Writing <br className='mr-2xl:block hidden'/> Service!</h4>
-                            <MRCTAGroup classes='mt-4 mr-2xl:flex-nowrap  mr-lg:flex-wrap mr-2xl:w-[100%] mr-xl:!w-[80%] mr-lg:!w-[80%] mr-lg:mr-auto mr-xl:justify-start mb-[30px]' />
+                            <h4 className='mr-2xl:text-[50px] text-[40px] mr-lg:text-[40px] font-primary font-bold mr-md:py-5 mr-xl:!text-left !text-center mr-md:text-[40px] mr-xs:text-[40px] mr-xs:py-3 leading-tight'>Exceptional <br className='mr-xl:block hidden' /> Book Writing <br className='mr-xl:block hidden' /> Service!</h4>
+                            <MRCTAGroup />
                         </div>
 
-                        <div className={`${isLargeScreen ? '' : 'hidden'} flex col-span-8 mr-xl:pl-2 items-center`}>
+                        <div className={`${isLargeScreen ? '' : 'hidden'} flex col-span-8 mr-xl:pl-2 items-center gap-2`}>
                             {data?.map((e, i) => (
                                 <div key={i} className='m-auto col-span-3'>
                                     <Image quality={100} src={e.ImagePath} className='mr-auto' width={130} height={200} alt={e.alt} />
                                     <h5 className='text-[25px] font-bold mt-5'>{e.heading}</h5>
-                                    <p className='text-base'>{e.desc}</p>
+                                    <p className='text-[14px] leading-[22px]'>{e.desc}</p>
                                 </div>
                             ))}
                         </div>
@@ -126,7 +126,7 @@ const writingservices = () => {
                                 <div key={i} className='col-span-3 '>
                                     <Image quality={100} src={e.ImagePath} className='block mr-md:mr-auto mx-auto' width={130} height={200} alt={e.alt} />
                                     <h5 className='text-[25px] font-bold mt-5'>{e.heading}</h5>
-                                    <p className='text-base'>{e.desc}</p>
+                                    <p className='text-[14px] leading-[22px]'>{e.desc}</p>
                                 </div>
                             ))}
                         </Slider>

@@ -1,15 +1,18 @@
-import WEARE from "@/component/bookPublication/LetUsWEARE"
 import PWMODE from "@/component/ProcessWorkMode"
-import PUBLISHING from "@/component/publishing"
 import BTM from "@/component/bottomLogos"
 import CTA from "@/component/cta3"
 import SwiperComponents from "@/component/SwiperComponent"
 import { MRHero, MRContact, MRContent1 } from "@/component"
 import Enlistedlogo from "@/fa-component/Enlistedlogo"
+import Head from "next/head"
 
 const Publication = () => {
   return (
     <main>
+      <Head>
+        <title>Publication | Best Book Publishing Company</title>
+        <meta name="description" content="Experience the pinnacle of publishing services with the Best Book Publishing Company. With our commitment to quality, we guide every author toward success. Get started today!" />
+      </Head>
       <MRHero
         subTitle="Awarded #1 Book Publishing Services"
         title="Transform Your Manuscript Into  A Bestseller With Premier Book Publishing Services"

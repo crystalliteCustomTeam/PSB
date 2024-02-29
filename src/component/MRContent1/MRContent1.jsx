@@ -39,7 +39,7 @@ const MRContent1 = ({
                                     )}
                                     {(!img1 || listing) && (
                                         list &&
-                                        (<ul className={`mt-3 ${listClasses} list-image-[url(../../public/listIcon.png)] list-inside `}>
+                                        (<ul className={`mt-3 ${listClasses} list-image-[url(../../public/listIcon.png)] list-inside`}>
                                             {
                                                 list?.map((e, i) => (
                                                     <li key={i} className={`text-[14px] leading-[26px] font-semibold font-sans ${textTheme} ${listBorder}`} dangerouslySetInnerHTML={{ __html: e }} />
