@@ -1,21 +1,19 @@
 import React from 'react'
 import WS from '../component/writingservices';
-import Slider1 from '../component/Slider1';
 import DS1 from '../component/demandingSpecilaist1';
-import IM1 from '../component/impressiveWorks1';
 import BW1 from '../component/bookWriting1';
 import BTM from '../component/bottomLogos';
 import WMODE1 from '../component/workMode1'
 import MBOOK1 from '../component/marketBook1'
 import CTA3 from '../component/cta3';
-import CTA4 from '../component/cta4';
 import SwiperComponents from '../component/SwiperComponent'
 import { MRContact, MRHero } from '@/component';
 import Enlistedlogo from '@/fa-component/Enlistedlogo';
 import Tradition from '@/fa-component/Tradition';
-import StoryPlot from '@/component';
 import PublishingNewComponent from '@/fa-component/PublishingNewComponent';
-// import TSlider from '../component/testimonialslider';
+
+
+
 export default function Home() {
   return (
 
