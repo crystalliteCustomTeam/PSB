@@ -1,7 +1,6 @@
 import WS from "@/component/writingservices"
 import BTM from "@/component/bottomLogos"
 import WMODE1 from "@/component/workMode1"
-import MBOOK1 from "@/component/marketBook1"
 import CTA3 from "@/component/cta3"
 import SwiperComponents from "@/component/SwiperComponent"
 import { MRContact, MRContent1, MRHero } from "@/component"
