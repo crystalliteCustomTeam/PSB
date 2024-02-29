@@ -13,7 +13,6 @@ import { MRHero, MRContact, MRQuestioners, } from "@/component"
 import PublishingNewComponent from "@/fa-component/PublishingNewComponent"
 // images
 import broader from "media/ahsan/children-broder.png"
-
 const MRQuestionersData = [
   {
     title: "Experience and Quality",
@@ -95,6 +94,7 @@ const Home = () => {
         title="We Will Always Be There"
         desc="The right publishing partner. It can make all the difference between a manuscript collecting dust and a literary masterpiece capturing hearts worldwide. Best Selling Publisher is the unrivaled beacon of excellence in the dominion of publishing services. What sets Best Selling Publisher apart is its unwavering commitment to author success. With a team of seasoned professionals dedicated to every facet of the publishing process, from scrupulous editing to fascinating cover design and strategic marketing, Best Selling Publisher ensures that each book receives the royal treatment it deserves. <br /> <br /> Best Selling Publisher's innovative approach leverages cutting-edge technology and data-driven insights to maximize a book's visibility and reach across various platforms, including the formidable Amazon marketplace. Authors partnering with Best Selling Publisher gain access to a wealth of resources and expertise and benefit from personalized support every step of the way."
       />
+     
     </>
   )
 }

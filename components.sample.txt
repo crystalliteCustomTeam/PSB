@@ -24,3 +24,26 @@
     direction="flex-row-reverse" (default = " ")
     cta={false} (default = true)
 />
+
+/** Use MRCards **/
+
+<MRCards
+        title={`Discover What Exceptional Writing <br class="mr-xl:block hidden" /> Services We Offer`}
+        desc="Uncover the unparalleled excellence of our publishing services, where each word is meticulously crafted to captivate and inspire. Explore the realm of literary mastery with our team and discover the epitome of quality in every page turned."
+        gridsClasses="mr-xl:grid-cols-4 mr-lg:grid-cols-3 mr-sm:grid-cols-2"
+        cta={false}
+        data={[
+          {
+            indexing: true,
+            classes: "bg-white shadow-lg px-3 rounded-lg relative py-[40px] mt-[30px] transition-all duration-300 ease-in-out hover:!bg-[#40BEE2] hover:!text-white",
+            cta: false,
+            stepText: "",
+            content: [
+              {
+                title: "Book Editing",
+                desc: "Once your ideas are on paper, you need an expert’s eye to look for the red flags. Book editing can be a tiresome and redundant process for which we have experts running the show. Book Writing Expert enhances your book’s vocabulary and sentence formations, in order to provide your readers a refined product.",
+              },
+            ]
+          },
+        ]}
+      />
