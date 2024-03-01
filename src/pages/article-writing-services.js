@@ -5,7 +5,7 @@ import CTA from "@/component/cta3"
 import BTM from "@/component/bottomLogos"
 import SwiperComponents from "@/component/SwiperComponent"
 import Enlistedlogo from "@/fa-component/Enlistedlogo"
-import { MRHero, MRContact, MRContent2, MRContent1 } from "@/component"
+import { MRHero, MRContact, MRContent2, MRContent1, MRCards } from "@/component"
 import Head from "next/head"
 
 const ArticleWritingServices = () => {
@@ -35,6 +35,64 @@ const ArticleWritingServices = () => {
       desc: "Probe into the lives of extraordinary individuals and explore the world of human existence with biographies, where real-life stories unfold with depth and authenticity. From historical figures to modern-day icons, biographies offer a glimpse into the triumphs, tribulations, and defining moments that shape a person's legacy."
     }
   ]
+  const MRCardData = [
+    {
+      classes: "bg-[#fff] shadow-lg px-3 rounded-lg relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-center",
+      content: [
+        {
+          icon: "",
+          title: "Original Key-Word </br> Optimized Content",
+        },
+        {
+          icon: "",
+          title: "Content Writing </br> And Editing Services",
+        },
+        {
+          icon: "",
+          title: "Professional Writers </br> Trained In SEO",
+        },
+        {
+          icon: "",
+          title: "Easy-To-Use </br> Platform",
+        },
+        {
+          icon: "",
+          title: "Topic </br> Ideation",
+        },
+        {
+          icon: "",
+          title: "Creative, Out-Of-The- </br> Box Taglines",
+        },
+      ]
+    }]
+    const MRCardData2 = [
+      {
+        classes: "bg-[#fff] shadow-lg mr-2xl:px-4 px-2 rounded-xl relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-left",
+        stepText: "Step",
+        indexing: true,
+        content: [
+          {
+            textColor: "text-[#40BEE2] group-hover:text-white",
+            title: "Submit Your Manuscript",
+            desc: "After making up your mind about working with us, you place your order.",
+          },
+          {
+            textColor: "text-[#40BEE2] group-hover:text-white",
+            title: "Edit & Design",
+            desc: "We refine your text and design your book's cover.",
+          },
+          {
+            textColor: "text-[#40BEE2] group-hover:text-white",
+            title: "Review & Approve",
+            desc: "You review our work and give the green light.",
+          },
+          {
+            textColor: "text-[#40BEE2] group-hover:text-white",
+            title: "Publish & Distribute",
+            desc: "Your book is published and distributed on schedule.",
+          },
+        ]
+      }]
   return (
     <main>
       <Head>
@@ -50,7 +108,14 @@ const ArticleWritingServices = () => {
         beforeImg="before:mr-md:bg-[url('../../public/imageAR/business-woman-working.png')]"
       />
       <Enlistedlogo />
-      <LHArticle />
+      <MRCards
+        subTitle="Our Services Have Been Constantly Hailed as Remarkable"
+        title={`What Makes Us the Premier Choice in <br class="mr-xl:block hidden" /> Professional Ghostwriting?`}
+        desc="Best Selling Publisher's ghostwriting services truly stand out as a class apart. Their team of expert writers possesses an unparalleled ability to capture the unique voice and essence of each client, flawlessly translating their ideas into fascinating prose. What sets them apart is their dedication to understanding the vision and goals of their clients."
+        gridsClasses="mr-xl:grid-cols-3 mr-lg:grid-cols-3 mr-sm:grid-cols-2 !gap-x-8 mr-xl:w-[80%] mx-auto"
+        cta={true}
+        variant="icons"
+        data={MRCardData} />
       <MRContent1
         subTitle="Our Exceptional"
         title="Article Writing Services"
@@ -80,34 +145,14 @@ const ArticleWritingServices = () => {
       />
       <BTM />
       <CTA />
-      <WMODE
-        subtitle="Carrying out"
-        title="The Fastest Work Mode, Get Your <br className='mr-lg:block hidden' /> Work in 4 Easy Steps"
-        desc=" Working with us gives you prompt delivery of work because we have set up everything systematically. Here is our 4 step process, which keeps us streamlined from the beginning."
-        GridCols="grid-cols-4"
-        StoryPlotData={[
-          {
-            steps: "Step 01",
-            heading: "Submit Your Manuscript",
-            desc: "After making up your mind about working with us, you place your order."
-          },
-          {
-            steps: "Step 02",
-            heading: "Edit & Design",
-            desc: "We refine your text and design your book's cover."
-          },
-          {
-            steps: "Step 03",
-            heading: "Review & Approve",
-            desc: "You review our work and give the green light."
-          },
-          {
-            steps: "Step 04",
-            heading: "Publish & Distribute",
-            desc: "Your book is published and distributed on schedule."
-          }
-        ]}
-      />
+      <MRCards
+        subTitle="We Pursue"
+        title={`A Swift Work Mode that Involves <br class="mr-xl:block hidden" /> 4 Easy Steps`}
+        desc={`We emphasize prompt deliveries because we don’t like to keep you waiting. Following are the <br class="mr-xl:block hidden" /> 4 easy steps that keep us streamlined from the beginning:`}
+        gridsClasses="mr-xl:grid-cols-4 mr-lg:grid-cols-3 mr-sm:grid-cols-2"
+        cta={false}
+        variant="steps"
+        data={MRCardData2} />
       <SwiperComponents />
       <MRContact />
     </main>

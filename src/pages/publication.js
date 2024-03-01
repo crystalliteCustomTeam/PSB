@@ -2,11 +2,45 @@ import PWMODE from "@/component/ProcessWorkMode"
 import BTM from "@/component/bottomLogos"
 import CTA from "@/component/cta3"
 import SwiperComponents from "@/component/SwiperComponent"
-import { MRHero, MRContact, MRContent1 } from "@/component"
+import { MRHero, MRContact, MRContent1, MRCards } from "@/component"
 import Enlistedlogo from "@/fa-component/Enlistedlogo"
 import Head from "next/head"
 
 const Publication = () => {
+  const MRCardData = [
+    {
+      classes: "bg-[#F2F2F2] shadow-lg px-3 rounded-lg relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-left",
+      cta: false,
+      stepText: "Step",
+      indexing: "true",
+      content: [
+        {
+          title: "Professionalism",
+          desc: "We uphold the highest standards of professionalism, ensuring that your book meets the quality it deserves. Our commitment to excellence is non-negotiable.",
+        },
+        {
+          title: "Experience",
+          desc: "With years of experience in the publishing industry, we possess a profound understanding of what it takes to make a book successful, We've worked with authors from diverse genres, and our portfolio speaks for itself.",
+        },
+        {
+          title: "Customization",
+          desc: "We understand that every author and book is unique. That's why our services are fully customizable, tailored to your specific needs and goals. Your vision is at the forefront of everything we do from book writing to book design services.",
+        },
+        {
+          title: "Affordability",
+          desc: "We believe that publishing should be accessible to all, Our book services pricing is competitive, and we offer flexible payment options to accommodate your budget.",
+        },
+        {
+          title: "Confidentiality",
+          desc: "We take your privacy seriously and maintain strict confidentiality throughout the entire process. Your work is safe in our hands.",
+        },
+        {
+          title: "Submitting It For Review",
+          desc: "Now this is the final stage of the process when we submit it for review and ensure that all the tasks are completed and that your design is perfected. Our team will ensure your success.",
+        },
+      ]
+    },
+  ]
   return (
     <main>
       <Head>
@@ -49,41 +83,13 @@ const Publication = () => {
         cta={false}
         ctaText="Publish Your Book, Reach the World - Get Started!"
       />
-      <PWMODE
-        PublishWithUs={
-          [
-            {
-              step: "Step 01",
-              heading: "Professionalism",
-              desc: "We uphold the highest standards of professionalism, ensuring that your book is bound with quality. Our commitment to excellence is non-negotiable."
-            },
-            {
-              step: "Step 02",
-              heading: "Experience",
-              desc: "With years of experience in the publishing industry, we possess a profound understanding of what it takes to make a book successful, We've worked with authors from diverse genres, and our portfolio speaks for itself."
-            },
-            {
-              step: "Step 03",
-              heading: "Customization",
-              desc: "We understand that every author and book is unique. That's why our services are fully customizable, tailored to your specific needs and goals. Your vision is at the forefront of everything we do from book writing to book design services."
-            },
-            {
-              step: "Step 04",
-              heading: "Affordability",
-              desc: "We believe that publishing should be accessible to all, Our book services pricing is competitive, and we offer flexible payment options to accommodate your budget."
-            },
-            {
-              step: "Step 05",
-              heading: "Confidentiality",
-              desc: "We take your privacy seriously and maintain strict confidentiality throughout the entire process. Your work is safe in our hands."
-            },
-            {
-              step: "Step 06",
-              heading: "Submitting it for review",
-              desc: "Now this is the final stage of the process when we submit it for review and ensure that all the tasks are completed and that your design is perfected. Our team will ensure your success."
-            }
-          ]
-        }
+      <MRCards
+        title={`Why Publish With Us? `}
+        desc="Choosing us for your publishing needs means partnering with a team deeply committed to bringing your literary vision to life. Our dedicated approach ensures your book not only reaches but captivates a global audience. Here's why you should publish with us:"
+        gridsClasses="mr-xl:grid-cols-3 mr-lg:grid-cols-3 mr-sm:grid-cols-2"
+        cta={true}
+        variant="steps"
+        data={MRCardData}
       />
       <BTM />
       <CTA />

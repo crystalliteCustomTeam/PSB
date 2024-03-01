@@ -3,11 +3,45 @@ import BTM from "@/component/bottomLogos"
 import CTA from "@/component/cta3"
 import SwiperComponents from "@/component/SwiperComponent"
 import Enlistedlogo from "@/fa-component/Enlistedlogo"
-import { MRHero, MRContact, MRContent1 } from "@/component"
+import { MRHero, MRContact, MRContent1, MRCards } from "@/component"
 import TabNavigation from "@/component/marketing/TabNavigation"
 import Head from "next/head"
 
 const BookMarketing = () => {
+  const MRCardData = [
+    {
+      classes: "bg-[#F2F2F2] shadow-lg px-3 rounded-lg relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-left",
+      cta: false,
+      stepText: "Step",
+      indexing: "true",
+      content: [
+        {
+          title: "Sign Up",
+          desc: "You first sign up for our marketing services, be it book promotion, author marketing, or eBook marketing services. You answer these questions in a questionnaire. Once this is done, you will get aligned with one of our sales people who assigns your project to a particular department suited to your needs.",
+        },
+        {
+          title: "Marketing Review",
+          desc: "Our marketing experts then review a marketing strategy to utilize for your goals. This is based on the nature and scope of your project. Everything that follows will vary accordingly. A large project requires more investment and a larger team to cater to your needs..",
+        },
+        {
+          title: "Research",
+          desc: "We then begin research on the subjects and topics that people are interested in. What are common traits within these topics, such as the covers, titles, and book descriptions? What are the things they try to avoid? These are the questions that we answer during our research phase.",
+        },
+        {
+          title: "Target audience selection",
+          desc: "Here, we decide who the target audience or demographic will be for your book, the type of product they might like, and how to meet or exceed their expectations.",
+        },
+        {
+          title: "Making it look good",
+          desc: "Now is the time to work on the book cover. Your cover is the most important piece of marketing of your book, and our cover designers understand this better than anyone else.",
+        },
+        {
+          title: "Submitting it for review",
+          desc: "Now this is the final stage of the process when we submit it for review and ensure that all the tasks are completed and that your design is perfected. Our team will ensure your success.",
+        },
+      ]
+    },
+  ]
   return (
     <main>
       <Head>
@@ -35,43 +69,13 @@ const BookMarketing = () => {
           <TabNavigation />
         </div>
       </div>
-      <PWMODE
-        subtitle=""
-        title="The Process of Us Marketing Your Product"
+      <MRCards
+        title={`The Process of Us Marketing Your Product`}
         desc="We will discuss below how we get you recognition and fame with the help of our marketing services. Our marketing team is adept at changing situations within the market and capable of utilizing the best practices that lead to the most attention and attraction towards your product, whatever it might be."
-        PublishWithUs={[
-          {
-            step: "Step 01",
-            heading: "Sign Up",
-            desc: "You first sign up for our marketing services, be it book promotion, author marketing, or eBook marketing services. You answer these questions in a questionnaire. Once this is done, you will get aligned with one of our sales people who assigns your project to a particular department suited to your needs."
-          },
-          {
-            step: "Step 02",
-            heading: "Marketing Review",
-            desc: "Our marketing experts then review a marketing strategy to utilize for your goals. This is based on the nature and scope of your project. Everything that follows will vary accordingly. A large project requires more investment and a larger team to cater to your needs.."
-          },
-          {
-            step: "Step 03",
-            heading: "Research",
-            desc: " We then begin research on the subjects and topics that people are interested in. What are common traits within these topics, such as the covers, titles, and book descriptions? What are the things they try to avoid? These are the questions that we answer during our research phase."
-          },
-          {
-            step: "Step 04",
-            heading: "Target audience selection",
-            desc: "Here, we decide who the target audience or demographic will be for your book, the type of product they might like, and how to meet or exceed their expectations."
-          },
-          {
-            step: "Step 05",
-            heading: "Making it look good",
-            desc: " Now is the time to work on the book cover. Your cover is the most important piece of marketing of your book, and our cover designers understand this better than anyone else."
-          },
-          {
-            step: "Step 06",
-            heading: "Submitting it for review",
-            desc: "Now this is the final stage of the process when we submit it for review and ensure that all the tasks are completed and that your design is perfected. Our team will ensure your success."
-          }
-        ]}
-
+        gridsClasses="mr-xl:grid-cols-3 mr-lg:grid-cols-3 mr-sm:grid-cols-2"
+        cta={true}
+        variant="steps"
+        data={MRCardData}
       />
       <BTM />
       <CTA />

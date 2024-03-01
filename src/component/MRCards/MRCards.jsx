@@ -11,6 +11,7 @@ const MRCards = ({
     cta = "",
     variant = "steps",
     data,
+    theme = "light"
 }) => {
     return (
         <section>
@@ -20,13 +21,13 @@ const MRCards = ({
                         {subTitle && (<span className="text-[20px] mr-lg:text-[30px] block leading-tight font-semibold font-sans text-[#40BEE2] mb-2">
                             {subTitle}
                         </span>)}
-                        {title && (<h2 className="text-[26px] mr-md:text-[30px] mr-lg:text-[40px] block leading-tight font-bold font-sans text-[#000000] mb-2" dangerouslySetInnerHTML={{ __html: title }} />)}
-                        {desc && (<p className="text-[14px] mr-lg:text-[16px] mr-2xl:w-[75%] mr-lg:w-[85%] mx-auto block leading-[26px] font-normal font-sans text-[#000000]" dangerouslySetInnerHTML={{ __html: desc }} />)}
+                        {title && (<h2 className={`text-[26px] mr-md:text-[30px] mr-lg:text-[50px] block leading-tight font-black font-sans ${theme == "light" ? "text-[#000000]" : "text-white"} mb-2`} dangerouslySetInnerHTML={{ __html: title }} />)}
+                        {desc && (<p className={`text-[14px] mr-lg:text-[16px] mr-2xl:w-[75%] mr-lg:w-[85%] mx-auto block leading-[26px] font-normal font-sans ${theme == "light" ? "text-[#000000]" : "text-white"}`} dangerouslySetInnerHTML={{ __html: desc }} />)}
                     </div>
                     {variant == "steps" && <div className={`grid ${gridsClasses} gap-x-4 gap-y-5`}>
                         {
                             data && data?.map(({ content, cta, classes, stepText, indexing }) => (
-                                content?.map(({ title, desc, border, padding, minHeight }, i) => (
+                                content?.map(({ title, desc, border, padding, minHeight, textColor }, i) => (
                                     <div className={`${classes} cursor-pointer`} key={i}>
                                         {stepText && indexing && (<span className={`mr-lg:text-[20px] text-[20px] block leading-tight font-semibold font-sans text-[#40BEE2] group-hover:text-white my-[16px]`}>
                                             {stepText} 0{i + 1}
@@ -35,7 +36,7 @@ const MRCards = ({
                                             0{i + 1}
                                         </div>)}
                                         <div >
-                                            {title && (<h3 className={`text-[20px] block leading-tight ${border} ${padding} font-semibold font-sans mt-[15px] mb-[10px]`}>
+                                            {title && (<h3 className={`text-[25px] block leading-tight ${textColor} ${border} ${padding} font-semibold font-sans mt-[15px] mb-[10px]`}>
                                                 {title}
                                             </h3>)}
                                             {desc && (<p className={`text-[14px] ${minHeight} mr-2xl:text-[15px] block leading-normal font-normal font-sans`}>
@@ -72,16 +73,15 @@ const MRCards = ({
                                             />
                                             }
                                             {desc && title && (<p className={`text-[16px] mr-2xl:text-[16px] block leading-normal font-normal font-sans`} dangerouslySetInnerHTML={{ __html: `${desc}` }} />)}
-                                            {!desc && title && (<h3 className={`text-[20px] block leading-tight font-semibold font-sans mt-[15px] mb-[10px]`}>
-                                                {title}
-                                            </h3>)}
+                                            {!desc && title && (<h3 className={`text-[20px] block leading-tight font-semibold font-sans mt-[15px] mb-[10px]`} dangerouslySetInnerHTML={{ __html: `${title}` }} />
+                                            )}
                                         </div>
                                     </div>
                                 ))
                             ))
                         }
                     </div>}
-                    {cta && <MRCTAGroup classes="justify-center mt-5" />}
+                    {cta && <MRCTAGroup classes="justify-center mt-10" />}
                 </div>
             </div>
         </section>
