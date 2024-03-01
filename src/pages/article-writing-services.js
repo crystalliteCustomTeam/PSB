@@ -55,9 +55,8 @@ const ArticleWritingServices = () => {
         subTitle="Our Exceptional"
         title="Article Writing Services"
         desc="At Best Selling Publisher, we take pride in exceptional article-writing services that consistently exceed expectations. With our dedicated team of experienced writers, we deliver compelling and well-researched articles tailored to meet your unique needs. Our commitment to excellence shines through in every piece."
-        img1="/assets/images/newimg/ghostwriting_book.png"
+        img2="/assets/images/newimg/ghostwriting_book.png"
         listTitle="Our process is simple yet effective."
-        listTitleClasses="bg-white p-3 !text-black w-max pr-20 [clip-path:polygon(0_0,_90%_0,_80%_99%,_0_100%)]"
         textTheme="text-white"
         list={[
           "Genuine Content",

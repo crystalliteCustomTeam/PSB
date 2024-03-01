@@ -11,7 +11,7 @@ const MRContent2 = ({
         <section>
             <div className="relative py-[40px] mr-lg:py-[70px]">
                 <div className="mr-container">
-                    <div className="text-center mb-10">
+                    <div className="text-center mr-lg:mb-[20px]">
                         {subTitle && (<span className="text-[20px] mr-lg:text-[30px] block leading-tight font-semibold font-sans text-[#40BEE2] mb-2">
                             {subTitle}
                         </span>)}

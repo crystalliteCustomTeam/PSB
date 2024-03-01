@@ -67,7 +67,6 @@ const AmazonPublishingFa = () => {
         title="Amazon Ebook Publishing To Help Your Work Be A Cut Above The Rest!"
         desc="Amazon eBook publishing is a great way to get your work out without spending much money. If you're looking for a company that can help you publish your Amazon eBook, look no further than us! We have the experience and expertise to get your book onto Kindle and into the hands of readers worldwide. We know the ins and outs of the Amazon digital book publishing process and can help you navigate it successfully. We'll work with you to format and convert your book, design a professional cover, and create an engaging description. We'll also help you price your book competitively and promote it effectively. And, of course, we'll take care of all the technical details involved in getting your book published on Amazon. If you're ready to take your eBook publishing dreams to the next level, contact us today! We'll be happy to answer any of your questions and get you started on the path to Amazon success owing to our amazon publishing services!"
         img1="/images/flods/amazonpublishingbroder.png"
-        listing={false}
       />
       <BTM />
       <CTA />

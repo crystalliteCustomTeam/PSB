@@ -81,7 +81,6 @@ const EbookPublishing = () => {
         title="We Are Ebook Publishers You Would Love To Partner With!"
         desc="At Best Selling Publisher, we understand that reading should be an enjoyable experience for everyone. That's why we offer a wide variety of eBooks for you to choose from. Whether you're looking for the latest bestseller or a classic work of literature, we have something for everyone. We also believe that books should be affordable, so we offer our eBooks at a fraction of the cost of print books. So why not take a look at our catalog and see what we have to offer in our book publishing services? You're sure to find something that interests you."
         img1="/ahsan/ebook-broder.png"
-        listing={false}
       />
       <BTM />
       <CTA />

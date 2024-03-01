@@ -55,9 +55,8 @@ const ScriptWritingServices = () => {
         subTitle="Our Comprehensive"
         title="Script Writing Services"
         desc="We have a vast pool of ghostwriters and will work with you to find the best match for your needs. You will receive a PR and media campaign, an audiobook with a professional voice actor, and high-quality studio production. Finally, distribution and retailer accounts will be established in your name, ensuring you own all rights and royalties."
-        img1="/assets/images/newimg/ghostwriting_book.png"
+        img2="/assets/images/newimg/ghostwriting_book.png"
         listTitle="Our process is simple and aims to deliver flawless results for every project."
-        listTitleClasses="bg-white p-3 !text-black w-max"
         textTheme="text-white"
         list={[
           "Writing Genuine Content Based On Your Idea",

@@ -64,7 +64,6 @@ const BookPublishing = () => {
       <MRContent1
         title="Where Your Words Could Change The World"
         desc="At Best Selling Publisher, we understand that book publishing can be a daunting task for authors. We are here to help you every step of the way, from start to finish. We have years of experience in the industry, and our team of experts is dedicated to helping you reach your publishing goals. We offer a variety of services to choose from, such as eBook publishing services, digital publishing services, and Amazon publishing services, so you can find the perfect fit for your needs. We are here to help you succeed! <span class='h-3 block'></span> We are the leading book publishers in the industry with the creative flair and dedication that you need. Whether you are looking for children's book publishers or science fiction publishers, we have you covered! We publish your dreams so call us today!"
-        listing={false}
         img1="/ahsan/spacious-bookstore.png"
       />
       <BTM />

@@ -28,7 +28,6 @@ const BookMarketing = () => {
         title="Optimal Marketing Strategies That Will Let Your Work Thrive!"
         desc="An exceptional book can be let down with no or less marketing. After availing book writing services, marketing becomes a must in today’s hyper-competitive world. Effectively promoting yourself can be impossible without the necessary experience and expertise, qualities integral in the ghostwriters at Best Selling Publisher Ghostwriting. Proficient book marketers are crucial in guiding you at every step of your journey. We provide comprehensive marketing services, including Amazon marketing for the Kindle Vella distribution platform, eBook marketing for various online digital stores, author marketing to enhance your personal brand, and book marketing for non-digital formats. Our approach to marketing involves analyzing market trends first and then incorporating innovative methods to maximize impact."
         img1="ahsan/optimizingSales.png"
-        listing={false}
       />
       <div className="relative  text-white xs:mb-0 bg-black" >
         <div className='mr-container m-auto py-0 mr-xs:px-0 mr-xs:py-5'>

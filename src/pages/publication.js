@@ -35,13 +35,11 @@ const Publication = () => {
           "<span class='text-primary-100 font-bold'>Comprehensive Marketing Support:</span> Our innovative marketing solutions extend your book's reach, engaging readers across multiple platforms and turning visibility into sustained success"
         ]}
         direction="flex-row-reverse"
-        listBorder="border-b-[1px] border-black pb-2 !font-normal"
       />
       <MRContent1
         subTitle="Global Publishing Excellence Awaits Your Book"
         title="Maximize Your Book's Impact with Our Publishing Services"
         desc="Step into the spotlight with Best Selling Publisher, your trusted book publishing company dedicated to amplifying authors' voices worldwide. We specialize in navigating the complexities of the publishing landscape to ensure your book achieves the recognition it deserves. From Amazon book publishing services to extensive distribution networks, our tailored approach positions your work in front of the right audience, both digitally and in print."
-        listing={false}
         theme="dark"
         classes="bg-[url('../../public/imageAR/serviceBG.png')]"
         img1="/assets/images/newimg/graduation-cap-earth-globe.png"

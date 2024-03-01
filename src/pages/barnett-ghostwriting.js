@@ -30,9 +30,8 @@ const BarnettGhostwriting = () => {
         subTitle="Give Yourself The Experience Of"
         title="Working With The Most Demanded Specialists"
         desc="Have you got a creative story in mind? Share it with the world because we truly believe every story is worth sharing, and to display your story in the finest form to the world, our ghostwriters are definitely worthy of your hire. To achieve the best, there goes a lot of hard work and dedication, which our company doesn’t lack. Our team works effortlessly to deliver you an exciting project. All the ideas and your story are transformed into a masterpiece by our writers who flaunt the work with beautiful words."
-        img2="/ahsan/demand_specialist.png"
+        img1="/ahsan/demand_specialist.png"
         listTitle="Our Services Include"
-        listTitleClasses="bg-black text-white p-3 w-max pr-20 [clip-path:polygon(0_0,_90%_0,_80%_99%,_0_100%)]"
         list={[
           "E-Book Writing",
           "Audio Book",
@@ -64,7 +63,7 @@ const BarnettGhostwriting = () => {
           "Additions, Revisions, And Re-Editions!"
         ]}
         listClasses="grid-cols-1"
-        img2="/assets/images/newimg/industry-section.png"
+        img1="/assets/images/newimg/industry-section.png"
       />
       <BTM />
       <CTA3 />
@@ -85,7 +84,7 @@ const BarnettGhostwriting = () => {
           "Barnes & Noble Nook Edition"
         ]}
         direction="flex-row-reverse"
-        img2="/ahsan/spacious-bookstore-interior.png"
+        img1="/ahsan/spacious-bookstore-interior.png"
       />
       <PublishingNewComponent
         subtitle="Are You Ready To Be On The"

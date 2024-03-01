@@ -54,9 +54,8 @@ const ProfessionalGhostwriting = () => {
         subTitle="Our Exceptional"
         title="Ghostwriting Services"
         desc="What if we tell you that you no longer have to worry about writing? It’ll ease so many of your problems, right? <span class='h-3 block'></span> Best Selling Publisher's exceptional ghostwriting services set them apart in the industry. Their team of skilled writers possesses a rare talent for impeccably embodying the voice and vision of their clients, whether it's for a memoir, a novel, or corporate literature."
-        img1="/assets/images/newimg/ghostwriting_book.png"
+        img2="/assets/images/newimg/ghostwriting_book.png"
         listTitle="Our process is simple yet effective."
-        listTitleClasses="bg-white p-3 !text-black w-max pr-20 [clip-path:polygon(0_0,_90%_0,_80%_99%,_0_100%)]"
         textTheme="text-white"
         list={[
           "Genuine Content",

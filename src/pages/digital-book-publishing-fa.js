@@ -64,7 +64,6 @@ const DigitalBookPublishingFa = () => {
         title="We Are Better Than Other Digital Book Publishing Companies Out There!"
         desc="We enjoy being a prominent name based on several demanding features. Not to mention, our book publishers provide authors with platforms to publish and sell their books, as well as reach new readers. In addition, our seasoned publishers offer editorial and marketing services to help authors promote their books. Above all else, our digital book publishers also partner with traditional print publishers, giving authors the option to publish their books in both formats. This way, you are able to reach the widest possible audience for your work! <span class='h-3 block'></span> This is how we are different from others. First, our books publisher offer a unique approach to digital book publishing that allows authors to keep more of the rights to their work. This means that authors can control how their books are distributed and marketed, and they can also receive a higher percentage of the royalties. Last but not least, we offer our authors competitive royalties and marketing support, so they can continue to grow their careers and reach new readers."
         img1="/ahsan/digital-book-broder.png"
-        listing={false}
       />
       <BTM />
       <CTA />

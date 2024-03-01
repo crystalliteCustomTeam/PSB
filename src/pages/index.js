@@ -100,7 +100,6 @@ const Home = () => {
         subTitle="Would you like to know a secret?"
         title="Less Is Never More for Us – It Can Be If You Want It to Be!"
         img1="/images/flods/advice.png"
-        listing={false}
         direction="flex-row-reverse"
       />
       <Plans />

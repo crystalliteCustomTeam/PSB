@@ -64,7 +64,6 @@ const SelfPublishingFa = () => {
         title="Publishing Your Dreams With The Best Seller Publishing Services!"
         desc="“Whatever you may have heard, self-publishing is not a shortcut to anything. Except maybe insanity. Self-publishing, like every other kind of publishing, is hard work. You don’t wake up one morning good at it. You have to work for that.” — Zoe Winters <span class='h-3 block'></span> When you're ready to publish your book, you want to ensure you're working with a reputable and reliable self-publishing company. Best Selling Publisher is one of the best in the business, and we're proud to offer our services to authors looking to self-publish. Call us today to become a published author!."
         img1="/ahsan/self-publishing-broder.png"
-        listing={false}
       />
       <BTM />
       <CTA />
