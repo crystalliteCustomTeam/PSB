@@ -19,7 +19,7 @@ import Device from 'media/ahsan/device-compatibility.png'
 import EasyUpload from 'media/ahsan/easyupload.png'
 import ChildrenProps from '@/component/childrenBookIllustration/childProps'
 import WMODE1 from '../component/workMode1'
-import Jambore from 'media/ahsan/Jambore.png'
+import Jambore from 'media/ahsan/jambore.png'
 import IllustrationPackages from '@/component/IllustrationPackages/IllustrationPackages'
 
 
