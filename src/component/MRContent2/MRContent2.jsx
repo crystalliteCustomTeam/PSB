@@ -28,7 +28,7 @@ const MRContent2 = ({
                                     </div>
                                 ))
                             }
-                        <MRCTAGroup classes="mt-5" />
+                            <MRCTAGroup classes="mt-5" />
                         </div>
                         <div className='col-span-6'>
                             <div className='mr-lg:mt-0 mt-4 mr-md:block hidden'>
