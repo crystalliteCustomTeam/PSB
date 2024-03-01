@@ -4,7 +4,7 @@ import CTA from "@/component/cta3"
 import BTM from "@/component/bottomLogos"
 import SwiperComponents from "@/component/SwiperComponent"
 import Enlistedlogo from "@/fa-component/Enlistedlogo"
-import { MRHero, MRContact, MRContent2, MRContent1 } from "@/component"
+import { MRHero, MRContact, MRContent2, MRContent1, MRCards } from "@/component"
 import Head from "next/head"
 
 const ProfessionalGhostwriting = () => {
@@ -34,6 +34,60 @@ const ProfessionalGhostwriting = () => {
       desc: "Our expert writers are keenly interested in learning about your subjects’ stories, holding the skills and expertise to provide you with well-written content for whoever you want to write about. They also conduct extensive research through various channels such as newspapers, blogs, and interviews to ensure they use correct facts and figures."
     }
   ]
+  const MRCardData = [
+    {
+      classes: "bg-[#F2F2F2] shadow-lg px-3 rounded-lg relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-center",
+      content: [
+        {
+          icon: "",
+          title: "Seal Of Approval",
+          desc: "Genuine work with our seal of </br> approval and guarantee",
+        },
+        {
+          icon: "",
+          title: "In-Depth Review System",
+          desc: "Ensuring work is thoroughly </br> edited with no mistakes",
+        },
+        {
+          icon: "",
+          title: "Unlimited Revisions",
+          desc: "We allow as many revisions as </br> possible for your satisfaction",
+        },
+        {
+          icon: "",
+          title: "Rights Of Ownership Maintained",
+          desc: "You maintain all the rights to </br> your book we don’t hold any",
+        },
+      ]
+    }]
+  const MRCardData2 = [
+    {
+      classes: "bg-[#fff] shadow-lg mr-2xl:px-4 px-2 rounded-xl relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-left",
+      stepText: "Step",
+      indexing: true,
+      content: [
+        {
+          textColor: "text-[#40BEE2] group-hover:text-white",
+          title: "Submit Your Manuscript",
+          desc: "After making up your mind about working with us, you place your order.",
+        },
+        {
+          textColor: "text-[#40BEE2] group-hover:text-white",
+          title: "Edit & Design",
+          desc: "We refine your text and design your book's cover.",
+        },
+        {
+          textColor: "text-[#40BEE2] group-hover:text-white",
+          title: "Review & Approve",
+          desc: "You review our work and give the green light.",
+        },
+        {
+          textColor: "text-[#40BEE2] group-hover:text-white",
+          title: "Publish & Distribute",
+          desc: "Your book is published and distributed on schedule.",
+        },
+      ]
+    }]
   return (
     <main>
       <Head>
@@ -49,7 +103,14 @@ const ProfessionalGhostwriting = () => {
         beforeImg="mr-md:before:bg-[url('../../public/imageAR/serious-man.png')]"
       />
       <Enlistedlogo />
-      <LETUSHELP />
+      <MRCards
+        subTitle="Our Services Have Been Constantly Hailed as Remarkable"
+        title={`What Makes Us the Premier Choice in <br class="mr-xl:block hidden" /> Professional Ghostwriting?`}
+        desc="Best Selling Publisher's ghostwriting services truly stand out as a class apart. Their team of expert writers possesses an unparalleled ability to capture the unique voice and essence of each client, flawlessly translating their ideas into fascinating prose. What sets them apart is their dedication to understanding the vision and goals of their clients."
+        gridsClasses="mr-xl:grid-cols-4 mr-lg:grid-cols-3 mr-sm:grid-cols-2"
+        cta={true}
+        variant="icons"
+        data={MRCardData} />
       <MRContent1
         subTitle="Our Exceptional"
         title="Ghostwriting Services"
@@ -78,34 +139,14 @@ const ProfessionalGhostwriting = () => {
       />
       <CTA />
       <BTM />
-      <WMODE
-        subtitle="We Pursue"
-        title="A Swift Work Mode that Involves 4 Easy Steps"
-        desc="We emphasize prompt deliveries because we don’t like to keep you waiting. Following are the 4 easy steps that keep us streamlined from the beginning:"
-        GridCols="grid-cols-4"
-        StoryPlotData={[
-          {
-            steps: "Step 01",
-            heading: "Submit Your Manuscript",
-            desc: "Start your publishing process by sharing your manuscript with us."
-          },
-          {
-            steps: "Step 02",
-            heading: "Edit & Design",
-            desc: "We add our artistic expertise while retaining your unique voice."
-          },
-          {
-            steps: "Step 03",
-            heading: "Review & Approve",
-            desc: "We will NEVER go above your head! Your approval matters, and we want to ensure our creative contributions align with your vision."
-          },
-          {
-            steps: "Step 04",
-            heading: "Publish & Distribute",
-            desc: "Witness your book being published and reaching readers across the globe."
-          }
-        ]}
-      />
+      <MRCards
+        subTitle="We Pursue"
+        title={`A Swift Work Mode that Involves <br class="mr-xl:block hidden" /> 4 Easy Steps`}
+        desc={`We emphasize prompt deliveries because we don’t like to keep you waiting. Following are the <br class="mr-xl:block hidden" /> 4 easy steps that keep us streamlined from the beginning:`}
+        gridsClasses="mr-xl:grid-cols-4 mr-lg:grid-cols-3 mr-sm:grid-cols-2"
+        cta={false}
+        variant="steps"
+        data={MRCardData2} />
       <SwiperComponents />
       <MRContact />
     </main>

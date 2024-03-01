@@ -5,9 +5,8 @@ import Audience from "@/fa-component/Audience"
 import Dreams from "@/fa-component/Dreams"
 import Plans from "@/fa-component/Plans"
 import Enlistedlogo from "@/fa-component/Enlistedlogo"
-import Exceptional from "@/fa-component/Exceptional"
 import SwiperComponents from "@/component/SwiperComponent"
-import { MRHero, MRContact, MRQuestioners, MRContent1, } from "@/component"
+import { MRHero, MRContact, MRQuestioners, MRContent1, MRCards, } from "@/component"
 import PublishingNewComponent from "@/fa-component/PublishingNewComponent"
 
 const MRQuestionersData = [
@@ -37,7 +36,69 @@ const MRQuestionersData = [
   }
 
 ]
-
+const MRCardData = [
+  {
+    indexing: true,
+    classes: "bg-white shadow-lg px-3 rounded-lg relative pt-[40px] pb-[40px] mt-[40px] transition-all duration-300 ease-in-out hover:!bg-[#40BEE2] hover:!text-white",
+    cta: false,
+    stepText: "",
+    content: [
+      {
+        title: "Amazon Publishing",
+        desc: "With this esteemed collaboration, you can gain access to Amazon's vast distribution network and cutting-edge publishing technology, ensuring their work reaches a global audience. We offer a diverse range of imprints covering various genres, including mystery, romance, science fiction, and non-fiction. You can count on Best Selling Publisher.",
+      },
+      {
+        title: "Book Publishing",
+        desc: "Book publishing is the process of bringing your written works to the market for public consumption! Exciting isn’t it? It involves various stages, from acquiring manuscripts or ideas, editing, design, production, and distribution to marketing and sales. Publishers play a crucial role in curating and refining content, ensuring its quality and relevance to target your audience.",
+      },
+      {
+        title: "Digital Book Publishing",
+        desc: "You’re probably wondering how book publishing works. Here’s the thing: it leverages digital technologies to offer readers convenient access to a wide range of literary content on various devices. These include e-readers, tablets, and smartphones. Digital book publishing has revolutionized the traditional publishing industry, enabling you to reach global audiences.",
+      },
+      {
+        title: "E-Book Publishing",
+        desc: "eBook publishing, a cornerstone of digital literature, involves the creation, distribution, and consumption of books in electronic format. Unlike traditional print publishing, eBook publishing eliminates the need for you to have physical copies. You can easily reach readers anywhere in the world.",
+      },
+      {
+        title: "Self-publishing",
+        desc: "Empowered authors like you can bring their literary creations directly to readers without the involvement of traditional publishing houses. This involves the author overseeing all aspects of the publishing process, including editing, formatting, cover design, and distribution.",
+      },
+      {
+        title: "Book Marketing",
+        desc: "Book marketing encompasses the strategic efforts to promote and sell a book to your target audience. It involves a wide range of activities to increase visibility, generate interest, and ultimately drive sales.",
+      },
+    ]
+  },
+]
+const MRCardData2 = [
+  {
+    classes: "bg-[#F2F2F2] shadow-lg px-4 rounded-lg relative py-[20px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-center",
+    cta: true,
+    content: [
+      {
+        title: "Top-Notch Services",
+        border: "border-b border-[#707070]",
+        padding: "pb-2",
+        desc: "The first thing that’s probably on your mind is why we are the best. Our services prioritize quality, reliability, and customer satisfaction. We aim to exceed expectations and deliver exceptional value. By consistently delivering superior results, our top-notch services earn your trust, loyalty, and a reputation for excellence that sets us apart in a competitive marketplace.",
+        minHeight: "min-h-[140px]"
+      },
+      {
+        title: "Experience and Dedication",
+        border: "border-b border-[#707070]",
+        padding: "pb-2",
+        desc: "Our team of experts has years of experience that allows them to pursue every project with great dedication. We strongly believe there should never be any compromise on quality and your satisfaction.",
+        minHeight: "min-h-[140px]"
+      },
+      {
+        title: "Cost-Effective Packages",
+        border: "border-b border-[#707070]",
+        padding: "pb-2",
+        desc: "These packages are designed to meet the needs of budget-conscious consumers or businesses without compromising on quality. They often include a combination of products or services bundled together at a discounted rate compared to purchasing each item separately. ",
+        minHeight: "min-h-[140px]"
+      },
+    ]
+  },
+]
 const Home = () => {
   return (
     <main>
@@ -72,11 +133,19 @@ const Home = () => {
         classes="bg-cover bg-no-repeat"
         textBG="bg-primary-100"
       />
-      <Exceptional
-        title="Explore The Best Writing  <br class='mr-lg:block hidden' /> Services We Offer"
-        subtitle="Beyond the extraordinary resides an array of services we take immense pride in. That said, <br class='mr-lg:block hidden' /> It’s time to make your publishing dreams come to life."
+      <MRCards 
+      title="Explore The Best Writing  <br class='mr-lg:block hidden' /> Services We Offer" desc="Beyond the extraordinary resides an array of services we take immense pride in. That said, <br class='mr-lg:block hidden' /> It’s time to make your publishing dreams come to life."
+        gridsClasses="mr-lg:grid-cols-3 mr-sm:grid-cols-2 grid-cols-1 !gap-x-8"
+        cta={true}
+        data={MRCardData} />
+     <MRCards
+        title={`Dreams Don’t Turn to Dust with <br class="mr-xl:block hidden" /> Best Selling Publisher `}
+        desc="Your dreams matter to us. We understand that there is nothing more painful for a writer than to witness their written word go to waste. We know exactly how to publish your work and emphasize it in unimaginable ways that will leave the readers wanting more."
+        gridsClasses="mr-xl:grid-cols-3 mr-lg:grid-cols-3 mr-sm:grid-cols-2 !gap-x-8"
+        cta={false}
+        variant="steps"
+        data={MRCardData2}
       />
-      <Dreams />
       <MRContent1
         subTitle="Capture the Interest of a Bigger Audience"
         title="Amazon Publishing Services"

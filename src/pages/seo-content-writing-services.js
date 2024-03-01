@@ -5,9 +5,15 @@ import CTA3 from "@/component/cta3"
 import BTM from "@/component/bottomLogos"
 import SwiperComponents from "@/component/SwiperComponent"
 import Enlistedlogo from "@/fa-component/Enlistedlogo"
-import { MRHero, MRContact, MRContent2, MRContent1 } from "@/component"
+import { MRHero, MRContact, MRContent2, MRContent1, MRCards } from "@/component"
 import Head from "next/head"
-
+// Import Images
+import Research from "media/imageAR/research.png"
+import Seo from "media/imageAR/seo.png"
+import Search from "media/imageAR/search.png"
+import Analyse from "media/imageAR/analyse.png"
+import Optimization from "media/imageAR/optimization.png"
+import Linking from "media/imageAR/linking.png"
 const MRContent2Data = [
   {
     title: "Fiction",
@@ -35,6 +41,64 @@ const MRContent2Data = [
   }
 
 ]
+const MRCardData = [
+  {
+    classes: "bg-[#F2F2F2] shadow-lg px-3 rounded-lg relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#40BEE2] hover:!text-white text-center",
+    content: [
+      {
+        icon: Research,
+        title: "Research <br/> FAQ Section",
+      },
+      {
+        icon: Seo,
+        title: "SEO Copywriting <br /> And Editing",
+      },
+      {
+        icon: Search,
+        title: "SEO Title And <br /> Meta Description",
+      },
+      {
+        icon: Analyse,
+        title: "Professional <br /> Analysis",
+      },
+      {
+        icon: Optimization,
+        title: "Effective Keyword <br /> Optimization",
+      },
+      {
+        icon: Linking,
+        title: "In-Depth <br /> Page Linking",
+      },
+    ]
+  }]
+  const MRCardData2 = [
+    {
+      classes: "bg-[#fff] shadow-lg mr-2xl:px-4 px-2 rounded-xl relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-left",
+      stepText: "Step",
+      indexing: true,
+      content: [
+        {
+          textColor: "text-[#40BEE2] group-hover:text-white",
+          title: "Submit Your Manuscript",
+          desc: "After making up your mind about working with us, you place your order.",
+        },
+        {
+          textColor: "text-[#40BEE2] group-hover:text-white",
+          title: "Edit & Design",
+          desc: "We refine your text and design your book's cover.",
+        },
+        {
+          textColor: "text-[#40BEE2] group-hover:text-white",
+          title: "Review & Approve",
+          desc: "You review our work and give the green light.",
+        },
+        {
+          textColor: "text-[#40BEE2] group-hover:text-white",
+          title: "Publish & Distribute",
+          desc: "Your book is published and distributed on schedule.",
+        },
+      ]
+    }]
 const SEOContentWritingServices = () => {
   return (
     <main>
@@ -51,7 +115,14 @@ const SEOContentWritingServices = () => {
         counter={true}
       />
       <Enlistedlogo />
-      <LETUSHELPSEO />
+      <MRCards
+        subTitle="Let Us Help You"
+        title={`What Sets Us Apart?`}
+        desc="Best Selling Publisher Ghostwriting is a well-known international ghostwriting and editing firm operating for over a decade. Our experts create well-versed writing that demonstrates true professionalism while exhibiting creativity. Our services are not only economical but also ensure that both the needs of the authors and the preferences of their target audience are adequately met. Some of our platform's distinguishing traits are as follows:"
+        gridsClasses="mr-xl:grid-cols-3 mr-lg:grid-cols-3 mr-sm:grid-cols-2 !gap-x-8 mr-xl:w-[80%] mx-auto"
+        cta={true}
+        variant="icons"
+        data={MRCardData} />
       <MRContent1
         subTitle="Our Comprehensive"
         title="SEO Content Writing Services"
@@ -80,34 +151,14 @@ const SEOContentWritingServices = () => {
       />
       <CTA3 />
       <BTM />
-      <WMODE
-        subtitle="Carrying out"
-        title="The Fastest Work Mode, Get Your <br className='mr-lg:block hidden' /> Work in 4 Easy Steps"
-        desc=" Working with us gives you prompt delivery of work because we have set up everything systematically. Here is our 4 step process, which keeps us streamlined from the beginning."
-        GridCols="grid-cols-4"
-        StoryPlotData={[
-          {
-            steps: "Step 01",
-            heading: "Submit Your Manuscript",
-            desc: "After making up your mind about working with us, you place your order."
-          },
-          {
-            steps: "Step 02",
-            heading: "Edit & Design",
-            desc: "We refine your text and design your book's cover."
-          },
-          {
-            steps: "Step 03",
-            heading: "Review & Approve",
-            desc: "You review our work and give the green light."
-          },
-          {
-            steps: "Step 04",
-            heading: "Publish & Distribute",
-            desc: "Your book is published and distributed on schedule."
-          }
-        ]}
-      />
+      <MRCards
+        subTitle="We Pursue"
+        title={`A Swift Work Mode that Involves <br class="mr-xl:block hidden" /> 4 Easy Steps`}
+        desc={`We emphasize prompt deliveries because we don’t like to keep you waiting. Following are the <br class="mr-xl:block hidden" /> 4 easy steps that keep us streamlined from the beginning:`}
+        gridsClasses="mr-xl:grid-cols-4 mr-lg:grid-cols-3 mr-sm:grid-cols-2"
+        cta={false}
+        variant="steps"
+        data={MRCardData2} />
       <SwiperComponents />
       <MRContact />
     </main>

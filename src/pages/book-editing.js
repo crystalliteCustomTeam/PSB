@@ -4,11 +4,36 @@ import BTM from "@/component/bottomLogos"
 import CTA from "@/component/cta3"
 import SwiperComponents from "@/component/SwiperComponent"
 import Enlistedlogo from "@/fa-component/Enlistedlogo"
-import { MRHero, MRContact, MRContent1 } from "@/component"
+import { MRHero, MRContact, MRContent1, MRCards } from "@/component"
 import PublishingNewComponent from "@/fa-component/PublishingNewComponent"
 import Head from "next/head"
 
 const BookEditing = () => {
+  const MRCardData = [
+    {
+      classes: "bg-[#fff] shadow-lg px-3 rounded-lg relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-left",
+      cta: false,
+      stepText: false,
+      indexing:false,
+      content: [
+        {
+          title: "Copy-Editing",
+          textColor:"text-[#40BEE2]",
+          desc: "The process of revising the written material to improve the readability of the book ensures it is free of grammatical errors. Work with our professional book editing services, you will be provided with all the fixes you need.",
+        },
+        {
+          title: "Line-Editing:",
+          textColor:"text-[#40BEE2]",
+          desc: "In this form of editing, our expert editors’ help with the flow, writing style, and comprehension of the manuscript.",
+        },
+        {
+          title: "Proof-reading:",
+          textColor:"text-[#40BEE2]",
+          desc: "Our expert proofreaders check your text for errors before sharing it. We offer the best proofreading services in the industry.",
+        },
+      ]
+    },
+  ]
   return (
     <main>
       <Head>
@@ -47,7 +72,15 @@ const BookEditing = () => {
         classes="bg-cover bg-no-repeat"
         textBG="bg-primary-100"
       />
-      <PWMODE />
+      <MRCards
+        subTitle="High quality editing"
+        title={`Editing Tailored to Your Needs `}
+        desc="We create the ideal editing workflow to suit all your editing needs. Our editors are the best at creating an ideal environment for refining your manuscripts and producing the highest quality. Our outstanding results are a testament to the hard work of affordable book editing services the people at Best Selling Publisher Ghostwriting provide."
+        gridsClasses="mr-xl:grid-cols-3 mr-lg:grid-cols-3 mr-sm:grid-cols-2 !gap-x-8 mr-xl:w-[80%] mx-auto"
+        cta={true}
+        variant="steps"
+        data={MRCardData}
+      />
       <BTM />
       <CTA />
       <SwiperComponents />
