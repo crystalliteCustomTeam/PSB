@@ -1,5 +1,5 @@
 import Contact from "./Contact/Contact"
 import Hero from "./Hero/Hero"
-import Reviews from "./Reviews/Reviews"
+import Reviewss from "./Reviewss/Reviewss"
 
-export { Contact, Reviews, Hero }
+export { Contact, Reviewss, Hero }
