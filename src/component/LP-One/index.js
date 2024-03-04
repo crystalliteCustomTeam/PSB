@@ -1,4 +1,5 @@
 import Contact from "./Contact/Contact"
-import Review from "./Review/Review"
+import Review from "./Reviews/Reviews"
 import BookSlider from "./BookSlider/BookSlider"
-export { Contact, Review, BookSlider }
+import ScrollBanner from "./ScrollBanner/ScrollBanner"
+export { Contact, Review, BookSlider, ScrollBanner }
