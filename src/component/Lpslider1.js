@@ -4,6 +4,7 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import React from 'react';
+import { MRCTAGroup } from '.';
 
 // const openZendeskChat = () => {
 //     if (window.zESettings) {
@@ -372,12 +373,13 @@ const LpSlider = () => {
 
                     </Slider>
                 </div>
-                <div className='mx-auto py-8 md:w-[60%] sm:w-[70%]'>
+                {/* <div className='mx-auto py-8 md:w-[60%] sm:w-[70%]'>
                     <div className='w-[30%] md:w-[90%] sm:w-[90%] xs:w-[100%] mx-auto grid grid-cols-2 grid-rows-1 gap-3 py-5 relative'>
                         <a href='tel:800-781-9093' className='bg-[#00C0E4] py-1 text-white hover:bg-white hover:border-solid hover:border-[3px] hover:text-[#1d1d1f] hover:transition-all text-center flex items-center justify-center h-[40px]'>Get started</a>
                         <a href='#' onClick={openLiveChat} className='bg-[#fff] py-1 text-black border-solid border-[#000] border-[3px] hover:bg-[#00C0E4] hover:text-[#1d1d1f] hover:border-[2px] hover:border-[#00C0E4] text-center flex items-center justify-center h-[40px]'>Live Chat</a>
                     </div>
-                </div>
+                </div> */}
+                <MRCTAGroup classes='justify-center mr-xl:mt-14 mt-10'/>
             </div>
 
         </>
