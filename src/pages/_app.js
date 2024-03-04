@@ -1,26 +1,22 @@
-import "@/styles/globals.css";
+import "@/styles/globals.css"
 import "@/styles/custom.css"
-import { useState, useEffect } from 'react';
-import Head from 'next/head'
-
-import Headernew from "../component/Headernew";
-import Footer1 from "../component/Footer1";
-import { SfProDisplay, primary } from "@/configs/fonts";
-import Script from "next/script";
-// import Zendesk, { ZendeskAPI } from "../pages/zendesk";
-// const ZENDESK_KEY = "325da280-f4f0-4c80-997f-ea4de45eb2f1";
+import { useState, useEffect } from "react"
+import Head from "next/head"
+import Headernew from "@/component/Headernew"
+import Footer1 from "@/component/Footer1"
+import { SfProDisplay, primary } from "@/configs/fonts"
+import Script from "next/script"
+import { useRouter } from "next/router"
 
 export default function App({ Component, pageProps }) {
   const [loadScript, setLoadScript] = useState(false);
 
   useEffect(() => {
-    // Example condition: Load script 5 seconds after page load
     const timer = setTimeout(() => setLoadScript(true), 5000);
     return () => clearTimeout(timer);
   }, []);
 
   useEffect(() => {
-    // LiveChat initialization script
     window.__lc = window.__lc || {};
     window.__lc.license = 17215314;
 
@@ -61,57 +57,39 @@ export default function App({ Component, pageProps }) {
       n.LiveChatWidget = n.LiveChatWidget || e;
     })(window, document, [].slice);
   }, []);
-
-
-  // const handleLoaded = () => {
-  //   zE('webWidget:on', 'open', function () {
-  //   });
-  // };
-
+  const router = useRouter();
   return (
     <>
-
-
-<Head>
-<link rel="icon" href="/images/favicon.svg" />
-</Head>
-
+      <Head>
+        <link rel="icon" href="/images/favicon.svg" />
+      </Head>
       <main className={`${primary.className} ${SfProDisplay.variable}`}>
-        <Headernew />
+        {router.pathname == "/lp-one" ? "" : <Headernew />}
         <Component {...pageProps} />
         <Footer1 />
       </main>
       {loadScript && (
-        // <Script
-        //   src="https://static.zdassets.com/ekr/snippet.js?key=0b817d63-4ced-4290-829c-a9889a9d1780"
-        //   id="ze-snippet"
-        //   strategy="afterInteractive"
-        // />
-
-<>
-
-<Script
-        dangerouslySetInnerHTML={{
-          __html: `
+        <>
+          <Script
+            dangerouslySetInnerHTML={{
+              __html: `
             if (window.LiveChatWidget) {
               window.LiveChatWidget.call('maximize');
             }
           `,
-        }}
-      />
-      <noscript>
-        <a href="https://www.livechat.com/chat-with/17215314/" rel="nofollow">
-          Chat with us
-        </a>
-        , powered by{' '}
-        <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">
-          LiveChat
-        </a>
-      </noscript>
-
-</>
-
+            }}
+          />
+          <noscript>
+            <a href="https://www.livechat.com/chat-with/17215314/" rel="nofollow">
+              Chat with us
+            </a>
+            , powered by{' '}
+            <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">
+              LiveChat
+            </a>
+          </noscript>
+        </>
       )}
     </>
-  );
+  )
 }

@@ -1,4 +1,4 @@
 import Contact from "./Contact/Contact"
-import Review from "./Review/Review"
+import Reviews from "./Reviews/Reviews"
 
-export { Contact, Review }
+export { Contact, Reviews }
