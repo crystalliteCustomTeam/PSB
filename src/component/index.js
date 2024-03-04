@@ -8,5 +8,6 @@ import MRQuestioners from "./MRQuestioners/MRQuestioners"
 import MRContent1 from "./MRContent1/MRContent1"
 import MRContent2 from "./MRContent2/MRContent2"
 import MRLibarySphere from './MRLibrarySphere/MRLibrarySphere'
+import MRTable from './MRTable/MRTable'
 
-export { MRHero, MRCTAGroup, MRCTA, MRHeroForm, MRHeroCounter, MRContact, MRQuestioners, MRContent1, MRContent2, MRLibarySphere }
+export { MRHero, MRCTAGroup, MRCTA, MRHeroForm, MRHeroCounter, MRContact, MRQuestioners, MRContent1, MRContent2, MRTable, MRLibarySphere }
