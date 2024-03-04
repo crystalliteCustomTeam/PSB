@@ -66,7 +66,7 @@ const Header = () => {
                               <ul className="mt-3 text-[15px]">
 
                                 <li>
-                                  <Link href="/professional-ghostwriting" className="flex justify-start align-middle items-center p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600">
+                                  <Link href="/ghostwriting" className="flex justify-start align-middle items-center p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600">
 
                                     <span>
                                       <Image quality={95} className='filter brightness-50 mr-2 block sm:hidden xs:hidden' src="/assets/images/newimg/ghostwriting.png" width={40} height={40} alt='ghost writing' />
