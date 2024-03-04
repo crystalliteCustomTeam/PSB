@@ -62,6 +62,41 @@ const MRCardData2 = [
       }
     ]
   }]
+  const packagesData = [
+    {
+      title: "Half Page Illustration",
+      amount: "before:content-['$75']",
+      desc: "As the name says, this is an illustration that fills half a page. While it can be detailed, due to it's smaller size, the background will be less detailed than a full page illustration.",
+      note: "Add on: £50 For Expicted Services",
+      list: [
+        "Up To Two Characters",
+        "Background",
+        "Extra Characters - $15 Each",
+      ]
+    },
+    {
+      title: "Full Page Illustration",
+      amount: "before:content-['$105']",
+      desc: "This is a full page illustration where we pull out all the stops and include lots of detail! We can also leave space for your text if needed.",
+      note: "Add on: £50 For Expicted Services",
+      list: [
+        "Up To Three Characters",
+        "Detailed Background",
+        "Extra Characters - $15 Each",
+      ]
+    },
+    {
+      title: "Spread Illustration",
+      amount: "before:content-['$190']",
+      desc: "Spread across two full pages, normally with text on the illustration. While a mix of different illustration sizes makes a beautiful book, going all out and making your whole book double- page spreads will undoubtedly will make it amazing!",
+      note: "Add on: £50 For Expicted Services",
+      list: [
+        "Up To Six Characters",
+        "Detailed Background",
+        "Extra Characters - $15 Each",
+      ]
+    },
+  ];
 const ChildrenBookIllustration = () => {
   const newSpan = <h1 className='font-50 fw-700 font-primary txt-secondary mt-3 leading-tight'>Pinnacle Publishing For<br /> Children's Illustration<br />Book</h1>
 
