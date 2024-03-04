@@ -1,6 +1,7 @@
 import Header from "./Header/Header"
 import Contact from "./Contact/Contact"
 import Hero from "./Hero/Hero"
-import Reviews from "./Reviews/Reviews"
+import Reviews from "./Reviewss/Reviewss"
 
-export { Contact, Reviews, Header, Hero }
+import ScrollBanner from "./ScrollBanner/ScrollBanner"
+export { Contact, Reviews, Header, Hero, ScrollBanner }
