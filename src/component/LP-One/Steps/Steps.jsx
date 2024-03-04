@@ -31,7 +31,7 @@ const Steps = () => {
     return (
         <section>
             <div className="mr-md:py-[50px] py-[40px] bg-black font-sans text-white">
-                <div className="container">
+                <div className="mr-container">
                     <div className="text-center">
                         <h2 className="mr-xl:text-[40px] mr-md:text-[30px] text-[25px] leading-tight font-bold">Unleashing The Power Of Words With Our 4-Step Of Publishing Process</h2>
                     </div>
@@ -52,7 +52,7 @@ const Steps = () => {
                     <div className="mr-sm:flex items-center mr-sm:flex-nowrap flex-wrap justify-center mr-sm:gap-x-10 gap-5 mt-10">
                         <MRCTA
                             text="Connect with Us!"
-                            classes="hover:bg-secondary-100 rounded-sm mr-sm:mb-0 mb-5"
+                            classes="hover:bg-secondary-100 mr-sm:mb-0 mb-5"
                             handle="onclick='parent.LC_API.open_chat_window();return false;'"
                         />
                         <MRCTA
@@ -60,7 +60,7 @@ const Steps = () => {
                             link="tel:8007819093"
                             bg="bg-transparent"
                             color="text-white"
-                            border="border-white hover:!bg-primary-100 hover:border-transparent hover:text-white rounded-sm"
+                            border="border-white hover:!bg-primary-100 hover:border-transparent hover:text-white"
                         />
                     </div>
                 </div>

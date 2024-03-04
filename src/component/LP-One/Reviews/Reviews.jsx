@@ -13,7 +13,6 @@ const Reviews = () => {
             spaceBetween: "20px",
             speed: 1500,
             loop: true,
-            draggable: true,
             pagination: {
                 clickable: true
             },

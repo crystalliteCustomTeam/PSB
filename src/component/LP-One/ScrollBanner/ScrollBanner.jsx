@@ -96,32 +96,28 @@ const ScrollBanner = () => {
                     <div className='mr-container grid mr-xl:grid-cols-2 mr-lg:grid-cols-2 mr-lg:!text-left text-center justify-center text-white md:py-[50px] xs:py-[30px] sm:py-[30px]'>
                         <div className='items-center relative mr-lg:py-[150px] mr-lg:px-5'>
                             {/* <span className='mr-2xl:text-[40px] mr-xl:text-[35px] px-2 py-1 bg-black text-white mr-xs:text-center font-primary font-bold mr-md:text-[35px] mr-sm:text-[35px] mr-xs:text-[25px] leading-normal mb-3'>Need assistance or have inquiries? </span> */}
-                            <div className='flex items-center mr-lg:gap-x-4 gap-x-1 text-white font-bold mr-lg:!text-left mr-lg:!justify-start justify-center text-center'>
+                            <div className='flex items-center mr-lg:gap-x-4 gap-x-1 text-white font-bold mr-lg:!text-left mr-lg:!justify-start justify-center text-center mb-4'>
                                 <span className='border-b-4 border-primary-100 mr-lg:text-[25px] text-[18px]'>Your Book</span>
                                 <h3 className='flex items-center mr-lg:text-[50px] text-[40px] font-bold leading-tight '>50<span className='text-base leading-normal text-red-600 font-light block'>%</span><span className='text-base block leading-normal font-light'>OFF</span></h3>
-                                <span className='font-bold mr-lg:text-[25px] text-[px] leading-tight'>project with just a <br/> down payment!</span>
+                                <span className='font-bold mr-lg:text-[25px] text-[px] leading-tight'>project with just a <br /> down payment!</span>
                             </div>
-                            <p className='xs:!text-center m-auto md:px-10 mr-xl:px-0 block'>
-                            Dive into the world of authorship without breaking the bank – <br className='hidden mr-lg:block'/> your dream book is closer than you think!
+                            <p className='xs:!text-center m-auto mr-xl:px-0 block'>
+                                Dive into the world of authorship without breaking the bank – <br className='hidden mr-lg:block' /> your dream book is closer than you think!
                             </p>
-                            <div className='mx-auto py-4'>
-                                <div className='flex gap-3 mr-xl:!justify-start md:!justify-center sm:!justify-center xs:!justify-center'>
-                                    <div className="grid grid-cols-1 mr-sm:flex gap-3">
-                                        <MRCTA
-                                            text="Get a Free Quote"
-                                            classes="hover:!bg-primary-100 hover:!text-white rounded-sm bg-white !text-black"
-                                            handle="onclick='parent.LC_API.open_chat_window();return false;'"
-                                        />
-                                        <MRCTA
-                                            text="Call Now"
-                                            link="tel:8007819093"
-                                            bg="bg-primary-100"
-                                            color="!text-white"
-                                            border="border-transparent hover:!bg-transparent hover:border-primary-100 rounded-sm hover:!text-white"
-                                        />
-                                    </div>
-                                </div>
-                            </div>
+                            <div className="mr-sm:flex items-center mr-sm:flex-nowrap flex-wrap justify-center mr-lg:justify-start mr-sm:gap-x-10 gap-5 mt-10">
+                        <MRCTA
+                            text="Connect with Us!"
+                            classes="hover:bg-secondary-100 mr-sm:mb-0 mb-5"
+                            handle="onclick='parent.LC_API.open_chat_window();return false;'"
+                        />
+                        <MRCTA
+                            text="Call us NOW!"
+                            link="tel:8007819093"
+                            bg="bg-transparent"
+                            color="text-white"
+                            border="border-white hover:!bg-primary-100 hover:border-transparent hover:text-white"
+                        />
+                    </div>
                         </div>
 
                         <div className='relative section z-0 w-[50%] mr-xl:!block mr-lg:!block h-[100%] !hidden'>

@@ -1,5 +1,5 @@
 import { MRContent2 } from "@/component"
-import { Contact, Header, Hero, Reviews } from "@/component/LP-One"
+import { BookSlider, Contact, Header, Hero, Reviews, ScrollBanner } from "@/component/LP-One"
 import Steps from "@/component/LP-One/Steps/Steps"
 import Head from "next/head"
 import Nature from "media/imageAR/nature.png"
@@ -33,6 +33,11 @@ const LPOne = () => {
                 <title>LP One | Best Book Publishing Company</title>
                 <meta name="description" content="Experience the pinnacle of publishing services with the Best Book Publishing Company. With our commitment to quality, we guide every author toward success. Get started today!" />
             </Head>
+            <Header />
+            <Hero />
+            <BookSlider
+                title="We Have Supported Countless Writers Get Best Selling Books Published Under Their Name"
+            />
             <MRContent2
                 title={`Unleash Your Literary Dreams with Best Selling Publisher! <br class="mr-xl:block hidden"/> Embark on a Journey to Authorship Today!`}
                 desc={`Are you ready to transform your creative vision into a captivating masterpiece? <br class="mr-xl:block hidden"/> Look no further! At Best Selling Publisher, we're your dedicated partners in making your literary dreams a reality.`}
@@ -40,9 +45,8 @@ const LPOne = () => {
                 sideImage={Nature}
                 data={MRContent2Data}
             />
+            <ScrollBanner />
             <Steps />
-            <Header />
-            <Hero />
             <Reviews />
             <Contact />
         </main>
