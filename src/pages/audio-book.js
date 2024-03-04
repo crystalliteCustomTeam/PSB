@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import React from 'react'
-import { MRContact, MRHero, MRLibarySphere } from '@/component'
+import { MRContact, MRHero, MRLibarySphere, MRTable } from '@/component'
 import Enlistedlogo from '@/fa-component/Enlistedlogo'
 import CTA from '../component/cta3';
 import BTM from '../component/bottomLogos';
@@ -11,60 +11,59 @@ import Affordable from 'media/ahsan/affordable.png'
 import Professional from 'media/ahsan/professional.png'
 import Qualified from 'media/ahsan/qualified.png'
 
-const MRLibarySphereData=[
+const MRLibarySphereData = [
     {
-        title:'Profitable <br/> Content',
+        title: 'Profitable <br/> Content',
         imagePath: Profitable,
-        alt:'Profitable Content'
+        alt: 'Profitable Content'
     },
     {
-        title:'Affordable <br/> Pricing',
+        title: 'Affordable <br/> Pricing',
         imagePath: Affordable,
-        alt:'Affordable Pricing'
+        alt: 'Affordable Pricing'
     },
     {
-        title:'Professional <br/> Excellence',
+        title: 'Professional <br/> Excellence',
         imagePath: Professional,
-        alt:'Professional Excellence'
+        alt: 'Professional Excellence'
     },
     {
-        title:'Qualified <br/> Experts',
-        imagePath:Qualified,
-        alt:'Qualified Experts'
+        title: 'Qualified <br/> Experts',
+        imagePath: Qualified,
+        alt: 'Qualified Experts'
     },
     {
-        title:'Secure <br/> Ownership',
-        imagePath:Profitable,
-        alt:'Secure Ownership'
+        title: 'Secure <br/> Ownership',
+        imagePath: Profitable,
+        alt: 'Secure Ownership'
     },
     {
-        title:'Editing & <br/> Proofreading',
-        imagePath:Affordable,
-        alt:'Editing & Proofreading'
+        title: 'Editing & <br/> Proofreading',
+        imagePath: Affordable,
+        alt: 'Editing & Proofreading'
     },
     {
-        title:'Secure <br/> Ownership',
-        imagePath:Qualified,
-        alt:'Secure Ownership'
+        title: 'Secure <br/> Ownership',
+        imagePath: Qualified,
+        alt: 'Secure Ownership'
     },
     {
-        title:'Editing & <br/> Proofreading',
-        imagePath:Qualified,
-        alt:'Editing & Proofreading'
+        title: 'Editing & <br/> Proofreading',
+        imagePath: Qualified,
+        alt: 'Editing & Proofreading'
     }
 ]
 
 const AudioBook = () => {
     return (
         <>
-            <Head>
-                <title>Audio Book Services | Best Selling Publisher</title>
-                <meta name="description" content="" />
-                <meta property="og:locale" content="en_US" />
-                <meta property="og:type" content="website" />
-            </Head>
             <main>
-                {/* Hero Section */}
+                <Head>
+                    <title>Audio Book Services | Best Selling Publisher</title>
+                    <meta name="description" content="" />
+                    <meta property="og:locale" content="en_US" />
+                    <meta property="og:type" content="website" />
+                </Head>
                 <MRHero
                     title="Exceptional Book Marketing Services"
                     desc="Lead the industry by publishing books that generate sales and client acquisition. We are a one-of-a-kind marketing tool."
@@ -73,10 +72,7 @@ const AudioBook = () => {
                     classes='!py-[80px] bg-[#fefefe]'
                     beforeImg="mr-md:before:bg-[url('../../public/ahsan/medium-shot-woman-with-headphones.png')]"
                 />
-                {/*  Logo Section */}
                 <Enlistedlogo />
-
-                {/*  Library Section */}
                 <MRLibarySphere
                     title="Here Writers Come To Get Their Books <br class'hidden mr-lg:block'/> Published Be A Part Of The Literary Sphere!"
                     desc="Embark on your literary journey with us, where writers find the gateway to publish their books and become integral contributors to the vibrant literary sphere. Join our community and witness your literary dreams come to life."
@@ -86,17 +82,13 @@ const AudioBook = () => {
                     // GridClasses="mr-md:grid-cols-3 mr-lg:grid-cols-4", Default Classes
                     data={MRLibarySphereData}
                 />
-
-                {/* Bottom Logo Section */}
+                <MRTable
+                    title="You Can Be The Next Best-Seller Author. <br class'hidden mr-lg:block'/> Start Your Journey Smartly With The Discount Offer!"
+                    desc="Fuel your literary ambitions with our comprehensive support, from expert editing to strategic marketing, ensuring your book stands out in the crowded market. Take advantage of our exclusive discount today and set the stage for your unparalleled success in the world of literature."
+                />
                 <BTM />
-
-                {/*  CTA Section */}
                 <CTA />
-                
-                {/*  Swiper Component Section */}
                 <SwiperComponents />
-                
-                {/*  Contact Section */}
                 <MRContact />
             </main>
 

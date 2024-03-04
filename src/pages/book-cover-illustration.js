@@ -12,40 +12,61 @@ import MagazineProp from '@/component/MagazineProp'
 // images
 import bannerImg from 'media/ahsan/children-banner.png'
 import img2 from 'media/images/banner/img2.png'
-import { MRHero, MRContact } from '@/component'
+import { MRHero, MRContact, MRCards, MRContent1 } from '@/component'
 import Sales from 'media/ahsan/sales.png'
 import Compatibility from 'media/ahsan/compatibility.png'
 import UniqueIllustrations from 'media/ahsan/device-compatibility.png'
 import EasyUpload from 'media/ahsan/easyuploadCover.png'
-import ChildrenProps from '@/component/childrenBookIllustration/childProps'
-import WMODE1 from '../component/workMode1'
 import BestFriendMarco from 'media/ahsan/bestFriendMarco.png'
 import IllustrationPackages from '@/component/IllustrationPackages/IllustrationPackages'
 
+const MRCardData = [
+  {
+    classes: "bg-[#fff] shadow-lg px-3 rounded-2xl relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#40BEE2] hover:!text-white text-center",
+    content: [
+      {
+        icon: Sales,
+        title: "Increased <br/> Sales",
+      },
+      {
+        icon: Compatibility,
+        title: "All-Device <br/> Compatibility",
+      },
+      {
+        icon: EasyUpload,
+        title: "Easy To <br/> Upload",
+      },
+      {
+        icon: UniqueIllustrations,
+        title: "Unique <br/> Illustrations",
+      }
+    ]
+  }]
+const MRCardData2 = [
+  {
+    classes: "bg-[#fff] shadow-lg mr-2xl:!px-5 mr-md:!px-4 px-3 rounded-xl relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-left",
+    stepText: "Step",
+    indexing: true,
+    content: [
+      {
+        textColor: "text-[#40BEE2] group-hover:text-white",
+        title: "Sign Up",
+        desc: "Sign up now and share your exciting ideas about illustrative design. Please consult with our highly trained consultants and explain to them about your needs and requirements. Please fill out our contact us form and get in touch with our consultant right away",
+      },
+      {
+        textColor: "text-[#40BEE2] group-hover:text-white",
+        title: "Illustration Commences",
+        desc: "After you've finalized your favorite illustration design, our expert illustrators commence the work right away on your custom illustration. Each illustration can take some time to prepare as they try to create something unique and charming",
+      },
+      {
+        textColor: "text-[#40BEE2] group-hover:text-white",
+        title: "Final Delivery",
+        desc: "After we've finalized the design and got the designed approved by you, we then commence our final phase to provide you with the print-ready professional PDF files and finally, send you the complete formats and high-quality final files.",
+      }
+    ]
+  }]
 
-const propData=[
-  {
-    imagePath: Sales ,
-    heading:"Increased <br/> Sales",
-    alt:"Increased Sales"
-  },
-  {
-    imagePath: Compatibility ,
-    heading:"All-Device <br/> Compatibility",
-    alt: "All-Device Compatibility"
-  },
-  {
-    imagePath: EasyUpload ,
-    heading:"Easy To <br/> Upload",
-    alt:"Easy To Upload"
-  },
-  {
-    imagePath: UniqueIllustrations ,
-    heading:"Unique <br/> Illustrations",
-    alt:"Unique Illustrations"
-  }
-  
-]
+
 
 const amazonpublishing = () => {
   const newSpan = <h1 className='font-50 fw-700 font-primary txt-secondary mt-3 leading-tight'>Pinnacle Publishing For<br /> Children's Illustration<br />Book</h1>
@@ -101,13 +122,7 @@ const amazonpublishing = () => {
 
         <title>Ebook Publishing Company - Best Selling Publisher - Amazon Publishing Services</title>
         <link rel="icon" href="/images/favicon.svg" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-        {/* <Helmet>
-  <script type="application/ld+json">
-    {JSON.stringify(schema)}
-  </script>
- </Helmet> */}
+        
       </Head>
 
       <MRHero
@@ -118,43 +133,43 @@ const amazonpublishing = () => {
         classes="bg-right bg-center !py-[80px]"
         beforeImg="mr-md:before:bg-[url('../../public/ahsan/bookCoverillustration1.png')]"
       />
-      
+
 
       {/*========= Clients fold =========*/}
       {/* <Clients /> */}
 
       <Enlistedlogo />
-
-      <MagazineProp
-        subtitle="Let Us Help You"
-        title="Give Your Book Cover a Tremendous Finish"
+      <MRCards
+        subTitle="Let Us Help You"
+        title={`Give Your Book Cover a Tremendous Finish`}
         desc="It would be best to have a team of professional book cover illustrators that recognize the value of cover images and drawings in kids' literature, art books, comics, graphic novels, digital book cover, tutorials, and guide books. The right illustrations are necessary to represent the theme of the book and the author's thought process. Our expert illustrators will produce compelling drawings that will excite your viewers, whether you’re searching for graphics for your entire book or just the cover."
-        classes=""
-        data={propData}
-      />
+        gridsClasses="mr-xl:grid-cols-4 mr-lg:grid-cols-3 mr-sm:grid-cols-2 !gap-x-8 mr-xl:w-[100%] mx-auto"
+        cta={true}
+        variant="icons"
+        data={MRCardData} />
+
       {/*========= Tradition fold =========*/}
       <Tradition
         title="Some Of Our Best Book Cover Illustrations"
         desc="We have worked on a variety of projects for clients that included creating picture book illustrations, illustrated stories, cartoon books, kid’s comics, children's encyclopedia, and more. Have a look at our best sample for children's book illustrations below!"
-        background="bg-[url('../../public/ahsan/blueBG.png')]"
+        background="bg-[url('../../public/ahsan/bgBlack2.png')]"
         classes="!text-[#fff]"
-        BGclasses="bg-[#40BEE2]"
         txtColor="!text-[#fff]"
       />
-
-     <ChildrenProps
-      subtitle=''
-      title='Why Choose Us?'
-      desc='Illustration Experts has been empowering clients to share their ideas into excellent quality illustrations at extremely competitive rates. Our team possesses the required level of expertise and creativity to deliver pragmatic designs and evoke an emotional response.'
-      ImagePath={BestFriendMarco}
-      lists={[
-        "<span class='text-[#00c0e4] font-bold'>Qualified Illustrators: </span>Every Work Of Our Client Is Catered By An Experienced Professional To Ensure That The Work Is Perfect.",
-        "<span class='text-[#00c0e4] font-bold'>Quickest Turnarounds: </span>Late Delivery Of Services Is Something That Puts Customers Off, And We Never Let That Happen. We Always Deliver On Time!",
-        "<span class='text-[#00c0e4] font-bold'>Satisfaction Guaranteed: </span>Our Experts Present You With Numerous Illustrations And Revise The Approved Ones Until You’re Fully Satisfied.",
-        "<span class='text-[#00c0e4] font-bold'>Unlimited Revisions: </span>We Offer Unlimited Quick Revisions To Ensure That The Final Draft Lives Up To Our Client's Expectations."
-      ]}
-     />
-
+      <MRContent1
+        title="What Are The Types Of Illustrations For Children’s Books?"
+        desc="From Acrylic To Charcoal To Watercolor, We Know Exactly What To Incorporate Onto Our Illustrations To Help Your Audience Connect Better With Your Brand."
+        list={[
+          "<span class='text-[#00c0e4] font-bold'>Qualified Illustrators: </span>Every Work Of Our Client Is Catered By An Experienced Professional To Ensure That The Work Is Perfect.",
+          "<span class='text-[#00c0e4] font-bold'>Quickest Turnarounds: </span>Late Delivery Of Services Is Something That Puts Customers Off, And We Never Let That Happen. We Always Deliver On Time!",
+          "<span class='text-[#00c0e4] font-bold'>Satisfaction Guaranteed: </span>Our Experts Present You With Numerous Illustrations And Revise The Approved Ones Until You’re Fully Satisfied.",
+          "<span class='text-[#00c0e4] font-bold'>Unlimited Revisions: </span>We Offer Unlimited Quick Revisions To Ensure That The Final Draft Lives Up To Our Client's Expectations."
+        ]}
+        listClasses="grid grid-cols-2 gap-3"
+        img1={BestFriendMarco}
+        direction="flex-row-reverse"
+      />
+     
       <PublishingNewComponent
         subtitle="Share Your Book Cover Illustration Requirements With"
         title="Our Experts For The Best Results."
@@ -163,42 +178,26 @@ const amazonpublishing = () => {
         classes="bg-cover bg-no-repeat"
         textBG="bg-primary-100"
       />
-       {/* Packages */}
-       <IllustrationPackages  packagesData={packagesData}/>
-      
+      {/* Packages */}
+      <IllustrationPackages packagesData={packagesData} />
+
       {/*========= CTA fold =========*/}
       <BTM />
       <CTA />
-      {/*========= WorkModules fold =========*/}
-      <WMODE1 
-        subtitle="Carrying out"
-        title="Steps To Get Started!"
-        desc=" We are known for our outstanding, extraordinary quality illustrations and our dependable services at extremely affordable prices. Here is our 3-step process for a charming illustrative design!"
-        GridCols="grid-cols-3"
-        StoryPlotData = {[
-          {
-              steps: "Step 01",
-              heading: "Sign Up",
-              desc: "Sign up now and share your exciting ideas about illustrative design. Please consult with our highly trained consultants and explain to them about your needs and requirements. Please fill out our contact us form and get in touch with our consultant right away"
-          },
-          {
-              steps: "Step 02",
-              heading: "Illustration Commences",
-              desc: "After you've finalized your favorite illustration design, our expert illustrators commence the work right away on your custom illustration. Each illustration can take some time to prepare as they try to create something unique and charming"
-          },
-          {
-              steps: "Step 03",
-              heading: "Final Delivery",
-              desc: "After we've finalized the design and got the designed approved by you, we then commence our final phase to provide you with the print-ready professional PDF files and finally, send you the complete formats and high-quality final files."
-          }
-      ]}
-      />
+      <MRCards
+        subTitle="Carrying out"
+        title={`Steps To Get Started!`}
+        desc={`We are known for our outstanding, extraordinary quality illustrations and our dependable services at extremely affordable prices. Here is our 3-step process for a charming illustrative design!`}
+        gridsClasses="mr-xl:grid-cols-3 mr-lg:grid-cols-3 mr-sm:grid-cols-2 !gap-x-5"
+        cta={false}
+        variant="steps"
+        data={MRCardData2} />
       {/*========= swiperComponent fold =========*/}
       <SwiperComponent />
 
       {/*========= Bookshelf fold =========*/}
-      <MRContact 
-      BGimage="before:!bg-[url('../../public/ahsan/bookCoverssBGStory.png')]"
+      <MRContact
+        BGimage="before:!bg-[url('../../public/ahsan/bookCoverssBGStory.png')]"
       />
     </>
   )

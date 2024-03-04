@@ -5,13 +5,13 @@ import "slick-carousel/slick/slick-theme.css";
 import React, { useState, useEffect } from 'react';
 
 const LibrarySphere = ({
-    subtitle = "",
+    subTitle = "",
     title = "",
     desc = "",
     background = "",
     BGclasses = "",
     CardClasses = "",
-    GridClasses="mr-md:grid-cols-3 mr-lg:grid-cols-4",
+    GridClasses = "mr-md:grid-cols-3 mr-lg:grid-cols-4",
     data
 }) => {
     var settings = {
@@ -43,15 +43,10 @@ const LibrarySphere = ({
         ]
     };
 
-    // Initialize state for screen size
-    const [isLargeScreen, setIsLargeScreen] = useState(true); // Default to true for larger screens
-
-    // Function to update the screen size state
+    const [isLargeScreen, setIsLargeScreen] = useState(true);
     const updateScreenSize = () => {
         setIsLargeScreen(window.innerWidth >= 767); // Customize the breakpoint as needed
     };
-
-    // Add an event listener to update the screen size state on resize
     useEffect(() => {
         updateScreenSize(); // Initial call
 
@@ -68,39 +63,39 @@ const LibrarySphere = ({
     }, []);
     return (
         <>
-            <section className={`${background} ${BGclasses}`}>
-                <div className="mr-container font-sans">
-                    <div className="text-center justify-content-center ">
-                        <h6 className='mr-lg:text-[30px] text-[20px] font-semibold text-[#40BEE2]'>{subtitle}</h6>
-                        <h2 className={`mr-lg:text-[45px] text-[30px] font-bold mt-2`} dangerouslySetInnerHTML={{ __html: title }} />
-                        <p className='mr-lg:w-[80%] m-auto'> {desc}</p>
-                    </div>
-                    <div className={`grid  ${isLargeScreen ? '' : 'hidden'} m-auto ${GridClasses} gap-3 mt-12 items-stretch justify-stretch mr-xs:grid-cols-1`}>
-                        {data?.map((e, i) => (
-                            <div key={i} className="">
-                                <div className={`hover:shadow-lg hover:shadow-[#707070] hover:scale-95  hover:bg-[#00c0e4] duration-300 hover:text-white box text-center bg-[#fff] py-12 items-center justify-center m-auto rounded-lg ${CardClasses}`} >
-                                    <Image quality={95} width={50} height={50} className='m-auto mb-5' src={e.imagePath} alt={e.alt} />
-                                    <h4 className={`text-xl font-semibold mx-auto`} dangerouslySetInnerHTML={{ __html: e.title }} />
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-
-
-
-
-
-                    <div className={`grid xs:w-[90%] ${isLargeScreen ? 'hidden' : ''} mx-auto gap-5 mt-12 items-stretch justify-stretch sm:grid-cols-1 sm:px-20 xs:grid-cols-1 xs:px-5 md:px-5`}>
-                        <Slider {...settings}>
+            <section>
+                <div className={`${background} ${BGclasses}`}>
+                    <div className="mr-container">
+                        <div className="text-center mb-5">
+                            {subTitle && (<span className="text-[20px] mr-lg:text-[30px] block leading-tight font-semibold font-sans text-[#40BEE2] mb-2">
+                                {subTitle}
+                            </span>)}
+                            {title && (<h2 className="text-[26px] mr-md:text-[30px] mr-lg:text-[40px] block leading-tight font-bold font-sans mb-2" dangerouslySetInnerHTML={{ __html: title }} />)}
+                            {desc && (<p className="text-[14px] mr-lg:text-[16px] mr-lg:w-[85%] mx-auto block leading-[26px] font-normal font-sans" dangerouslySetInnerHTML={{ __html: desc }} />)}
+                        </div>
+                        <div className={`grid  ${isLargeScreen ? '' : 'hidden'} m-auto ${GridClasses} gap-3 mt-12 items-stretch justify-stretch mr-xs:grid-cols-1`}>
                             {data?.map((e, i) => (
                                 <div key={i} className="">
-                                    <div className={`hover:shadow-lg hover:shadow-[#707070] hover:scale-95  hover:bg-[#00c0e4] duration-300 hover:text-white box text-center bg-[#fff] py-10 items-center justify-center m-auto rounded-lg ${CardClasses}`} >
+                                    <div className={`hover:shadow-lg hover:shadow-[#707070] hover:scale-95  hover:bg-[#00c0e4] duration-300 hover:text-white box text-center bg-[#fff] py-12 items-center justify-center m-auto rounded-lg ${CardClasses}`} >
                                         <Image quality={95} width={50} height={50} className='m-auto mb-5' src={e.imagePath} alt={e.alt} />
                                         <h4 className={`text-xl font-semibold mx-auto`} dangerouslySetInnerHTML={{ __html: e.title }} />
                                     </div>
                                 </div>
                             ))}
-                        </Slider>
+                        </div>
+
+                        <div className={`grid xs:w-[90%] ${isLargeScreen ? 'hidden' : ''} mx-auto gap-5 mt-12 items-stretch justify-stretch sm:grid-cols-1 sm:px-20 xs:grid-cols-1 xs:px-5 md:px-5`}>
+                            <Slider {...settings}>
+                                {data?.map((e, i) => (
+                                    <div key={i} className="">
+                                        <div className={`hover:shadow-lg hover:shadow-[#707070] hover:scale-95  hover:bg-[#00c0e4] duration-300 hover:text-white box text-center bg-[#fff] py-10 items-center justify-center m-auto rounded-lg ${CardClasses}`} >
+                                            <Image quality={95} width={50} height={50} className='m-auto mb-5' src={e.imagePath} alt={e.alt} />
+                                            <h4 className={`text-xl font-semibold mx-auto`} dangerouslySetInnerHTML={{ __html: e.title }} />
+                                        </div>
+                                    </div>
+                                ))}
+                            </Slider>
+                        </div>
                     </div>
                 </div>
             </section>
