@@ -137,16 +137,16 @@ const Bloginner = () => {
               <h3 className=" text-[20px] font-bold mt-3 text-white">Follow Us:</h3>
               <div className="flex space-x-2 basis-8/12 items-center text-[12px] xs:text-center xs:mx-auto">
                 <Link href="https://www.facebook.com/Best-Selling-Publisher-103021665842266/?ref=page_internal">
-                <Image src={Facebook} alt="Icons" width={7} height={13} className="p-1 h-4 w-2" />
+                <Image src={Facebook} alt="Icons" width={7} height={13} className="!h-[13px] !w-[7px]" />
                 </Link>
                 <Link href="https://twitter.com/bspublisher">
-                  <Image src={Insta} alt="Icons" width={7} height={13} className="p-1 h-4 w-2" />
+                  <Image src={Twitter} alt="Icons" width={7} height={13} className="!h-[12px] !w-[12px]" />
                 </Link>
                 <Link href="javascript:;" target="_blank">
-                  <Image src={Twitter} alt="Icons" width={7} height={13} className="p-1 h-4 w-2" />
+                  <Image src={Insta} alt="Icons" width={7} height={13} className="!h-[12px] !w-[12px]" />
                 </Link>
                 <Link href="javascript:;" target="_blank" >
-                  <Image src={LinkedIn} alt="Icons" width={7} height={13} className="p-1 h-4 w-2" />
+                  <Image src={LinkedIn} alt="Icons" width={7} height={13} className="!h-[12px] !w-[12px]" />
                 </Link>
               </div>
             </div>

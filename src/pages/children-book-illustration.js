@@ -1,8 +1,6 @@
 import Head from 'next/head'
 // components
 import Tradition from '@/fa-component/Tradition'
-import EnlistedNew from '@/fa-component/childrenIllustration/EnlistedNew'
-import BroaderNew from '@/fa-component/BroaderNew'
 import Enlistedlogo from '@/fa-component/Enlistedlogo'
 import SwiperComponent from '@/component/SwiperComponent'
 import BTM from '../component/bottomLogos';
@@ -14,7 +12,6 @@ import MagazineProp from '@/component/MagazineProp'
 // images
 import bannerImg from 'media/ahsan/children-banner.png'
 import img2 from 'media/images/banner/img2.png'
-import broader from 'media/ahsan/children-broder.png'
 import { MRHero, MRContact } from '@/component'
 import Sales from 'media/ahsan/sales.png'
 import AudienceOriented from 'media/ahsan/audience-oriented.png'
@@ -22,7 +19,7 @@ import Device from 'media/ahsan/device-compatibility.png'
 import EasyUpload from 'media/ahsan/easyupload.png'
 import ChildrenProps from '@/component/childrenBookIllustration/childProps'
 import WMODE1 from '../component/workMode1'
-import Jambore from 'media/ahsan/Jambore.png'
+import Jambore from 'media/ahsan/jambore.png'
 import IllustrationPackages from '@/component/IllustrationPackages/IllustrationPackages'
 
 

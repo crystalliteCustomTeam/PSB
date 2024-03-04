@@ -1,36 +1,13 @@
-import Head from 'next/head'
-// components
-import Banner from '@/fa-component/Banner'
-import Tradition from '@/fa-component/Tradition'
-import EnlistedNew from '@/fa-component/EnlistedNew'
-import BroaderNew from '@/fa-component/BroaderNew'
-import Enlistedlogo from '@/fa-component/Enlistedlogo'
-import Exceptional from '@/fa-component/Exceptional'
-import SwiperComponent from '@/component/SwiperComponent'
-import BTM from '../component/bottomLogos';
-import CTA from '../component/cta3';
-import PublishingNewComponent from '@/fa-component/PublishingNewComponent'
-import { MRHero, MRContact, MRQuestioners } from '@/component'
+import Head from "next/head"
+import Tradition from "@/fa-component/Tradition"
+import Enlistedlogo from "@/fa-component/Enlistedlogo"
+import SwiperComponent from "@/component/SwiperComponent"
+import BTM from "@/component/bottomLogos";
+import CTA from "@/component/cta3";
+import PublishingNewComponent from "@/fa-component/PublishingNewComponent"
+import { MRHero, MRContact, MRQuestioners, MRContent1 } from "@/component"
 
-import bannerImg from 'media/images/banner/amazonbanner.png'
-import img2 from 'media/images/banner/img2.png'
-import broader from 'media/images/flods/amazonpublishingbroder.png'
-
-
-
-const amazonpublishing = () => {
-  const newSpan = <h1 className='font-50 fw-700 font-primary txt-secondary mt-3 leading-tight'>Amazon Publishing Services Company To Make Your Book Available To Millions Of Readers!</h1>;
-
-  const bannertext = [
-    {
-      title: newSpan,
-      discuss: `LET'S DISCUSS`,
-      homebannernum: '800-781-9093',
-      bannercounter: 'counter',
-      imageban: bannerImg,
-      img2: img2,
-    }
-  ]
+const AmazonPublishingFa = () => {
   const MRQuestionersData = [
     {
       title: "What is Amazon KDP?",
@@ -54,33 +31,13 @@ const amazonpublishing = () => {
     }
   ]
 
-
   return (
-    <>
+    <main>
       <Head>
-
-        <title>Best Book Publishing Company - Best Selling Publisher - Amazon Publishing Services</title>
-        <link rel="icon" href="/images/favicon.svg" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-        {/* <Helmet>
-  <script type="application/ld+json">
-    {JSON.stringify(schema)}
-  </script>
- </Helmet> */}
+        <title>Amazon Publishing Fa | Best Book Publishing Company</title>
+        <meta name="description" content="Experience the pinnacle of publishing services with the Best Book Publishing Company. With our commitment to quality, we guide every author toward success. Get started today!" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
       </Head>
-
-      {/*========= Banner =========*/}
-      {/* {bannertext.map((item, i) =>
-        <Banner key={i}
-          title={item.title}
-          discuss={item.discuss}
-          homebannernum={item.homebannernum}
-          bannercounter={item.bannercounter}
-          imageban={item.imageban}
-          img2={item.img2}
-        />
-      )} */}
       <MRHero
         title="Amazon Publishing Services Company To Make Your Book Available To Millions Of Readers!"
         logos="images/banner/img2.png"
@@ -88,30 +45,15 @@ const amazonpublishing = () => {
         classes="bg-right bg-center !py-[80px]"
         beforeImg="mr-md:before:bg-[url('../../public/ahsan/amazon-publishing-banner.png')]"
       />
-
-
-      {/*========= Clients fold =========*/}
-      {/* <Clients /> */}
-
       <Enlistedlogo />
-
-      {/*========= Tradition fold =========*/}
       <Tradition
         title="Top-Notch Amazon Self Publishing Services"
         desc="Let our publishing pros make your books rock on amazon!"
       />
-
-      {/*========= Enlisted fold =========*/}
-      {/* <EnlistedNew
-        subtitle="Be a Part of the Best Sellers’ Fraternity"
-        title={"Some Questions Whirling Around Your Mind About <br/> Amazon KDP Publishing Have Answers Over Here!"}
-        data={paratitles}
-      /> */}
       <MRQuestioners
         subTitle="Be a Part of the Best Sellers’ Fraternity"
         title="Some Questions Whirling Around Your Mind About <br class='hidden mr-lg:block' /> Amazon KDP Publishing Have Answers Over Here!"
-        // desc="As an author, you have a lot of control over the success of your book. But did you know that there are companies out there whose sole purpose is to help you self-publish your book and make it a success? These are called self publishing book services companies, and they can provide everything from writing and editing to marketing and distribution. "
-        data = {MRQuestionersData}
+        data={MRQuestionersData}
       />
       <PublishingNewComponent
         subtitle="Enlist Yourself with the All-Time Best "
@@ -121,24 +63,17 @@ const amazonpublishing = () => {
         classes="bg-cover bg-no-repeat"
         textBG="bg-primary-100"
       />
-      {/*========= Broader fold =========*/}
-      <BroaderNew
+      <MRContent1
         title="Amazon Ebook Publishing To Help Your Work Be A Cut Above The Rest!"
         desc="Amazon eBook publishing is a great way to get your work out without spending much money. If you're looking for a company that can help you publish your Amazon eBook, look no further than us! We have the experience and expertise to get your book onto Kindle and into the hands of readers worldwide. We know the ins and outs of the Amazon digital book publishing process and can help you navigate it successfully. We'll work with you to format and convert your book, design a professional cover, and create an engaging description. We'll also help you price your book competitively and promote it effectively. And, of course, we'll take care of all the technical details involved in getting your book published on Amazon. If you're ready to take your eBook publishing dreams to the next level, contact us today! We'll be happy to answer any of your questions and get you started on the path to Amazon success owing to our amazon publishing services!"
-        image={broader}
+        img1="/images/flods/amazonpublishingbroder.png"
       />
-
-      {/*========= CTA fold =========*/}
       <BTM />
       <CTA />
-  
-      {/*========= swiperComponent fold =========*/}
       <SwiperComponent />
-
-      {/*========= Bookshelf fold =========*/}
       <MRContact />
-    </>
+    </main>
   )
 }
 
-export default amazonpublishing
+export default AmazonPublishingFa

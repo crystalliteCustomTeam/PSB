@@ -20,7 +20,7 @@ import before from 'media/images/flods/tradition-before.png'
 
 // mport { Fade } from "react-awesome-reveal";
 import Link from 'next/link'
-import { MRCTA } from '@/component'
+import { MRCTAGroup } from '@/component'
 
 const Tradition = ({
     subtitle,
@@ -142,20 +142,7 @@ const Tradition = ({
                                 </Slider>
                             </div>
                         </Col>
-                        <div className={`grid grid-cols-1 mr-sm:flex gap-3 justify-center mt-5`}>
-                            <MRCTA
-                                text="LET'S DISCUSS"
-                                classes="hover:bg-transparent hover:border-secondary-100 rounded-sm bg-secondary-100"
-                                handle="onclick='parent.LC_API.open_chat_window();return false;'"
-                            />
-                            <MRCTA
-                                text="800-781-9093"
-                                link="tel:8007819093"
-                                bg="bg-transparent"
-                                color="text-primary-100"
-                                border="border-secondary-100 hover:!bg-white hover:border-secodary hover:text-black rounded-sm text-secondary-100"
-                            />
-                        </div>
+                        <MRCTAGroup classes="mt-5 justify-center" />
                     </Row>
                 </div>
             </section>

@@ -1,3 +1,4 @@
+import LETUSHELP from "@/component/ghostWritingServices/LetUsHelp"
 import WMODE from "@/component/workMode1"
 import CTA from "@/component/cta3"
 import BTM from "@/component/bottomLogos"
@@ -6,7 +7,7 @@ import Enlistedlogo from "@/fa-component/Enlistedlogo"
 import { MRHero, MRContact, MRContent2, MRContent1, MRCards } from "@/component"
 import Head from "next/head"
 
-const PressReleaseWritingServices = () => {
+const ProfessionalGhostwriting = () => {
   const MRContent2Data = [
     {
       title: "Fiction",
@@ -33,6 +34,32 @@ const PressReleaseWritingServices = () => {
       desc: "Our expert writers are keenly interested in learning about your subjects’ stories, holding the skills and expertise to provide you with well-written content for whoever you want to write about. They also conduct extensive research through various channels such as newspapers, blogs, and interviews to ensure they use correct facts and figures."
     }
   ]
+  const MRCardData = [
+    {
+      classes: "bg-[#F2F2F2] shadow-lg px-3 rounded-lg relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-center",
+      content: [
+        {
+          icon: "",
+          title: "Seal Of Approval",
+          desc: "Genuine work with our seal of </br> approval and guarantee",
+        },
+        {
+          icon: "",
+          title: "In-Depth Review System",
+          desc: "Ensuring work is thoroughly </br> edited with no mistakes",
+        },
+        {
+          icon: "",
+          title: "Unlimited Revisions",
+          desc: "We allow as many revisions as </br> possible for your satisfaction",
+        },
+        {
+          icon: "",
+          title: "Rights Of Ownership Maintained",
+          desc: "You maintain all the rights to </br> your book we don’t hold any",
+        },
+      ]
+    }]
   const MRCardData2 = [
     {
       classes: "bg-[#fff] shadow-lg mr-2xl:px-4 px-2 rounded-xl relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-left",
@@ -64,48 +91,42 @@ const PressReleaseWritingServices = () => {
   return (
     <main>
       <Head>
-        <title>Press Release Writing Services | Best Selling Publisher</title>
-        <meta name="description" content="At Best Selling Publisher, we take pride in our exceptional article writing services. Connect with us to start your publishing journey today!" />
+        <title>Professional Ghostwriting Services | Best Selling Publisher</title>
+        <meta name="description" content="Best Selling Publisher offers professional ghostwriting services tailored to your needs. Start your publishing journey today and see why we're the premier choice for authors." />
       </Head>
       <MRHero
-        title="Get Your Press Releases <br /> Covered By the Right Sites"
-        desc="Welcome to Best Selling Publisher Ghostwriting. We offer professional web copywriting services, taking your website to the next level with the help of our expert copywriters."
+        title="Affordable and Professional  <br /> Ghostwriting Services"
+        desc="Do you know how to make your content incredible? You team up with the experts! Over the years, we have assisted innumerable authors who aspired to become the next best sellers. If you plan to be one of them, we are here for you."
         logos="images/banner/img2.png"
-        classes='bg-[#fefefe] !py-[80px]'
         counter={true}
-        beforeImg="mr-md:before:bg-[url('../../public/imageAR/newspaper-concept.png')]"
+        classes='!py-[80px] bg-[#fefefe]'
+        beforeImg="mr-md:before:bg-[url('../../public/imageAR/serious-man.png')]"
       />
       <Enlistedlogo />
+      <MRCards
+        subTitle="Our Services Have Been Constantly Hailed as Remarkable"
+        title={`What Makes Us the Premier Choice in <br class="mr-xl:block hidden" /> Professional Ghostwriting?`}
+        desc="Best Selling Publisher's ghostwriting services truly stand out as a class apart. Their team of expert writers possesses an unparalleled ability to capture the unique voice and essence of each client, flawlessly translating their ideas into fascinating prose. What sets them apart is their dedication to understanding the vision and goals of their clients."
+        gridsClasses="mr-xl:grid-cols-4 mr-lg:grid-cols-3 mr-sm:grid-cols-2"
+        cta={true}
+        variant="icons"
+        data={MRCardData} />
       <MRContent1
-        title="Press Releases Covered By The Right Sites"
-        desc="Press Release gives you maximum acquaintance, achieved through the careful selection of your target audience through media and targeted niche."
-        img1="/imageAR/bold.png"
-        list={[
-          "EIN Presswire",
-          "Ereleases",
-          "Issuewire",
-          "Linking News",
-          "Newswire",
-          "PR Distribution"
-        ]}
-        direction="flex-row-reverse"
-      />
-      <MRContent1
-        subTitle="Our Comprehensive"
-        title="Press Release Writing Services"
-        desc="We have a vast pool of ghostwriters and will work with you to find the best match for your needs. You will receive a PR and media campaign, an audiobook with a professional voice actor, and high-quality studio production. Finally, distribution and retailer accounts will be established in your name, ensuring you own all rights and royalties."
+        subTitle="Our Exceptional"
+        title="Ghostwriting Services"
+        desc="What if we tell you that you no longer have to worry about writing? It’ll ease so many of your problems, right? <span class='h-3 block'></span> Best Selling Publisher's exceptional ghostwriting services set them apart in the industry. Their team of skilled writers possesses a rare talent for impeccably embodying the voice and vision of their clients, whether it's for a memoir, a novel, or corporate literature."
         img2="/assets/images/newimg/ghostwriting_book.png"
-        listTitle="Our process is simple and aims to deliver flawless results for every project."
+        listTitle="Our process is simple yet effective."
         textTheme="text-white"
         list={[
-          "Writing Genuine Content Based On Your Idea",
-          "Critical Review, Editing, And Proofreading",
-          "Extensive Formatting, Typesetting, & Designing",
-          "Publishing, Branding, Marketing, And Promotions",
-          "Critical Review And Analysis",
-          "Book Coaching",
+          "Genuine Content",
+          "Extensive Formatting",
+          "Critical Reviews and Assessments",
           "Copy Editing",
-          "Developmental Editing"
+          "Editing and Proofreading",
+          "Publishing, Marketing, and Promotions",
+          "Creative Consultancy",
+          "Line and Developmental Editing"
         ]}
         classes="bg-[url('../../public/imageAR/serviceBG.png')]"
         theme="dark"
@@ -113,11 +134,11 @@ const PressReleaseWritingServices = () => {
       <MRContent2
         subTitle="Our Creative Ghostwriters,"
         title="Bringing Your Imagination To Life."
-        desc="You may have an idea for the next best-seller, but you may not have the time or expertise to write it yourself. Our platform meets all of the <br class='mr-xl:block hidden'/> requirements and offers a diverse range of writing styles, including:"
+        desc={`You may have an idea for the next best-seller, but you may not have the time or expertise to write it yourself. Our platform meets all of the <br class="mr-xl:block hidden"/> requirements and offers a diverse range of writing styles, including:`}
         data={MRContent2Data}
       />
-      <BTM />
       <CTA />
+      <BTM />
       <MRCards
         subTitle="We Pursue"
         title={`A Swift Work Mode that Involves <br class="mr-xl:block hidden" /> 4 Easy Steps`}
@@ -132,4 +153,4 @@ const PressReleaseWritingServices = () => {
   )
 }
 
-export default PressReleaseWritingServices
+export default ProfessionalGhostwriting

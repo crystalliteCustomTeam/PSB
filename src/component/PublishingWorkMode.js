@@ -1,7 +1,5 @@
 import React from 'react'
 
-import Image from 'next/image'
-
 const data = [
     {
         heading: "Low Upfront Costs",
@@ -40,7 +38,7 @@ const PublishingWorkMode = ({
 
                     <div className=' grid grid-cols-4 gap-4 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-1 md:w-[95%] md:gap-5 mx-auto sm:w-[90%] xs:w-[90%]'>
                         {data?.map((e, i) => (
-                            <div key={i} className="rounded-2xl p-2 shadow-xl shadow-slate-300 text-left text-[#000] hover:text-[#fff] p-3 hover:bg-black">
+                            <div key={i} className="rounded-2xl shadow-xl shadow-slate-300 text-left text-[#000] hover:text-[#fff] p-3 hover:bg-black">
                                 <div className='p-2'>
                                     <h4 className='text-[20px] font-primary py-3 text-primary-100 font-semibold leading-6 m-0 transition-[.5s all]'>
                                         {e.heading}</h4>

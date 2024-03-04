@@ -1,27 +1,13 @@
-import Head from 'next/head'
+import Head from "next/head"
 // components
-import Banner from '@/fa-component/Banner'
-import Tradition from '@/fa-component/Tradition'
-// import Climax from '@/fa-component/Climax'
-import Enlisted from '@/fa-component/Enlisted'
-import Audience from '@/fa-component/Audience'
-import Broader from '@/fa-component/Broader'
-import Dreams from '@/fa-component/Dreams'
-import Plans from '@/fa-component/Plans'
-import Advice from '@/fa-component/Advice'
-import Bookshelf from '@/fa-component/Bookshelf'
-import Enlistedlogo from '@/fa-component/Enlistedlogo'
-import Exceptional from '@/fa-component/Exceptional'
-import SwiperTestimonial from '@/fa-component/swiperComponent'
-import SwiperComponents from '../component/SwiperComponent'
-// import { Helmet } from 'react-helmet'
-// images
-import bannerImg from 'media/ahsan/home-banner.png'
-import img2 from 'media/images/banner/img2.png'
-import broader from 'media/ahsan/children-broder.png'
-import { MRHero, MRContact, MRQuestioners,} from '@/component'
-import PublishingNewComponent from '@/fa-component/PublishingNewComponent'
-
+import Tradition from "@/fa-component/Tradition"
+import Audience from "@/fa-component/Audience"
+import Dreams from "@/fa-component/Dreams"
+import Plans from "@/fa-component/Plans"
+import Enlistedlogo from "@/fa-component/Enlistedlogo"
+import SwiperComponents from "@/component/SwiperComponent"
+import { MRHero, MRContact, MRQuestioners, MRContent1, MRCards, } from "@/component"
+import PublishingNewComponent from "@/fa-component/PublishingNewComponent"
 
 const MRQuestionersData = [
   {
@@ -50,57 +36,95 @@ const MRQuestionersData = [
   }
 
 ]
-
-
-const amazonpublishing = () => {
-
-
-
+const MRCardData = [
+  {
+    indexing: true,
+    classes: "bg-white shadow-lg px-3 rounded-lg relative pt-[40px] pb-[40px] mt-[40px] transition-all duration-300 ease-in-out hover:!bg-[#40BEE2] hover:!text-white",
+    cta: false,
+    stepText: "",
+    content: [
+      {
+        title: "Amazon Publishing",
+        desc: "With this esteemed collaboration, you can gain access to Amazon's vast distribution network and cutting-edge publishing technology, ensuring their work reaches a global audience. We offer a diverse range of imprints covering various genres, including mystery, romance, science fiction, and non-fiction. You can count on Best Selling Publisher.",
+      },
+      {
+        title: "Book Publishing",
+        desc: "Book publishing is the process of bringing your written works to the market for public consumption! Exciting isn’t it? It involves various stages, from acquiring manuscripts or ideas, editing, design, production, and distribution to marketing and sales. Publishers play a crucial role in curating and refining content, ensuring its quality and relevance to target your audience.",
+      },
+      {
+        title: "Digital Book Publishing",
+        desc: "You’re probably wondering how book publishing works. Here’s the thing: it leverages digital technologies to offer readers convenient access to a wide range of literary content on various devices. These include e-readers, tablets, and smartphones. Digital book publishing has revolutionized the traditional publishing industry, enabling you to reach global audiences.",
+      },
+      {
+        title: "E-Book Publishing",
+        desc: "eBook publishing, a cornerstone of digital literature, involves the creation, distribution, and consumption of books in electronic format. Unlike traditional print publishing, eBook publishing eliminates the need for you to have physical copies. You can easily reach readers anywhere in the world.",
+      },
+      {
+        title: "Self-publishing",
+        desc: "Empowered authors like you can bring their literary creations directly to readers without the involvement of traditional publishing houses. This involves the author overseeing all aspects of the publishing process, including editing, formatting, cover design, and distribution.",
+      },
+      {
+        title: "Book Marketing",
+        desc: "Book marketing encompasses the strategic efforts to promote and sell a book to your target audience. It involves a wide range of activities to increase visibility, generate interest, and ultimately drive sales.",
+      },
+    ]
+  },
+]
+const MRCardData2 = [
+  {
+    classes: "bg-[#F2F2F2] shadow-lg px-4 rounded-lg relative py-[20px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-center",
+    cta: true,
+    content: [
+      {
+        title: "Top-Notch Services",
+        border: "border-b border-[#707070]",
+        padding: "pb-2",
+        desc: "The first thing that’s probably on your mind is why we are the best. Our services prioritize quality, reliability, and customer satisfaction. We aim to exceed expectations and deliver exceptional value. By consistently delivering superior results, our top-notch services earn your trust, loyalty, and a reputation for excellence that sets us apart in a competitive marketplace.",
+        minHeight: "min-h-[140px]"
+      },
+      {
+        title: "Experience and Dedication",
+        border: "border-b border-[#707070]",
+        padding: "pb-2",
+        desc: "Our team of experts has years of experience that allows them to pursue every project with great dedication. We strongly believe there should never be any compromise on quality and your satisfaction.",
+        minHeight: "min-h-[140px]"
+      },
+      {
+        title: "Cost-Effective Packages",
+        border: "border-b border-[#707070]",
+        padding: "pb-2",
+        desc: "These packages are designed to meet the needs of budget-conscious consumers or businesses without compromising on quality. They often include a combination of products or services bundled together at a discounted rate compared to purchasing each item separately. ",
+        minHeight: "min-h-[140px]"
+      },
+    ]
+  },
+]
+const Home = () => {
   return (
-    <>
+    <main>
       <Head>
         <title>The Home of Quality Publishing | Best Book Publishing Company</title>
-        <meta name="description" content="Experience the pinnacle of publishing services with the Best Book Publishing Company. With our commitment to quality, we guide every author toward success. Get started today!"></meta>
-         <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="website" />
-        <link rel="icon" href="/images/favicon.svg" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <meta name="description" content="Experience the pinnacle of publishing services with the Best Book Publishing Company. With our commitment to quality, we guide every author toward success. Get started today!" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
       </Head>
-
-
       <MRHero
-        // subTitle="Awarded #1 Book Publishing Services"
-        title="Craft Legacy Through <br />Words with the Best Book <br /> Publishing Company "
-        // desc="Welcome to Best Selling Publisher, where your publishing dreams turn into reality. As a leading book publishing company, we specialize in bringing authors' visions to life and catapulting their works onto bestseller lists, including Amazon's coveted ranks.With our comprehensive book publishing services, from meticulous editing to bespoke marketing strategies, we're here to guide you every step of the way. Partner with us and see your book shine across the globe."
+        title="Craft Legacy Through <br /> Words with the Best Book <br /> Publishing Company "
         containImg="ahsan/home-banner-new.png"
-        // fullImg="bg-[url('../../public/assets/images/newimg/man-working-printing-house-with-paper-paints.png')]"
-        // classes="bg-right bg-center"
         logos="images/banner/img2.png"
         form={false}
         counter={true}
       />
-
-
-      {/*========= Clients fold =========*/}
-      {/* <Clients /> */}
-
       <Enlistedlogo />
-
-      {/*========= Tradition fold =========*/}
       <Tradition
         title="Celebrating Your Wins"
         desc="Discover how your publications can be nothing but glorious with Best Selling Publisher."
       />
       <Audience />
-      {/*========= Enlisted fold =========*/}
       <MRQuestioners
         subTitle="Time again, folks like you have celebrated our services as nothing short of remarkable. "
         title="Here’s what sets us apart from all the others"
-        // desc="As an author, you have a lot of control over the success of your book. But did you know that there are companies out there whose sole purpose is to help you self-publish your book and make it a success? These are called self publishing book services companies, and they can provide everything from writing and editing to marketing and distribution. "
         data={MRQuestionersData}
       />
-
-      {/*========= Publshing Component fold =========*/}
       <PublishingNewComponent
         subtitle="Becoming the Next Best Seller has"
         title="Never Been Easier with "
@@ -109,28 +133,44 @@ const amazonpublishing = () => {
         classes="bg-cover bg-no-repeat"
         textBG="bg-primary-100"
       />
-      {/*========= Exceptional fold =========*/}
-      <Exceptional
-        title="Explore The Best Writing  <br /> Services We Offer"
-        subtitle="Beyond the extraordinary resides an array of services we take immense pride in. That said, It’s time to make your publishing dreams come to life. "
+      <MRCards 
+      title="Explore The Best Writing  <br class='mr-lg:block hidden' /> Services We Offer" desc="Beyond the extraordinary resides an array of services we take immense pride in. That said, <br class='mr-lg:block hidden' /> It’s time to make your publishing dreams come to life."
+        gridsClasses="mr-lg:grid-cols-3 mr-sm:grid-cols-2 grid-cols-1 !gap-x-8"
+        cta={true}
+        data={MRCardData} />
+     <MRCards
+        title={`Dreams Don’t Turn to Dust with <br class="mr-xl:block hidden" /> Best Selling Publisher `}
+        desc="Your dreams matter to us. We understand that there is nothing more painful for a writer than to witness their written word go to waste. We know exactly how to publish your work and emphasize it in unimaginable ways that will leave the readers wanting more."
+        gridsClasses="mr-xl:grid-cols-3 mr-lg:grid-cols-3 mr-sm:grid-cols-2 !gap-x-8"
+        cta={false}
+        variant="steps"
+        data={MRCardData2}
       />
-      <Dreams />
-
-      {/*========= Broader fold =========*/}
-      <Broader
-        subtitle="Capture the Interest of a Bigger Audience"
+      <MRContent1
+        subTitle="Capture the Interest of a Bigger Audience"
         title="Amazon Publishing Services"
         desc="Amazon Publishing Services encompass a range of offerings designed to assist authors in bringing their books to market and maximizing their success on the Amazon platform. These services may include editorial support, cover design, formatting assistance, and marketing guidance. Authors can reach a global audience and optimize their visibility to potential readers through Amazon's vast distribution network and marketing tools."
-        image={broader}
+        listTitle="Our Package Include"
+        list={[
+          "Idea research and analysis",
+          "Manuscript drafting",
+          "Proofreading to eliminate errors",
+          "Critical reviews",
+          "Book Cover design and illustration",
+          "Preparing text for publication",
+          "Traditional and self-publishing",
+          "Publishing on best libraries",
+          "Video Book Trailers",
+          "Branding and marketing"
+        ]}
+        img1="/images/flods/broader.png"
       />
-
-
-
-      {/*========= Audience fold =========*/}
-
-
-      <Advice />
-      {/*========= Plans fold =========*/}
+      <MRContent1
+        subTitle="Would you like to know a secret?"
+        title="Less Is Never More for Us – It Can Be If You Want It to Be!"
+        img1="/images/flods/advice.png"
+        direction="flex-row-reverse"
+      />
       <Plans />
       <SwiperComponents />
       <MRContact
@@ -138,10 +178,8 @@ const amazonpublishing = () => {
         title="We Will Always Be There"
         desc="The right publishing partner. It can make all the difference between a manuscript collecting dust and a literary masterpiece capturing hearts worldwide. Best Selling Publisher is the unrivaled beacon of excellence in the dominion of publishing services. What sets Best Selling Publisher apart is its unwavering commitment to author success. With a team of seasoned professionals dedicated to every facet of the publishing process, from scrupulous editing to fascinating cover design and strategic marketing, Best Selling Publisher ensures that each book receives the royal treatment it deserves. <br /> <br /> Best Selling Publisher's innovative approach leverages cutting-edge technology and data-driven insights to maximize a book's visibility and reach across various platforms, including the formidable Amazon marketplace. Authors partnering with Best Selling Publisher gain access to a wealth of resources and expertise and benefit from personalized support every step of the way."
       />
-      {/*========= Bookshelf fold =========*/}
-      {/* <Bookshelf /> */}
-    </>
+    </main>
   )
 }
 
-export default amazonpublishing
+export default Home

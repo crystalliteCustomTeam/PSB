@@ -15,6 +15,7 @@ import Mockup10 from '../../public/images/book-mockup/10.jpg'
 import Mockup11 from '../../public/images/book-mockup/11.jpg'
 import Mockup12 from '../../public/images/book-mockup/12.jpg'
 import Logoss from '../../public/ahsan/logoss.png'
+import { MRCTA } from '@/component';
 const YourComponent = () => {
 
   const openLiveChat = (e) => {
@@ -95,15 +96,27 @@ const YourComponent = () => {
         <div className='w-full font-secondary bg-[#40BEE2]'>
           <div className='mr-container grid mr-xl:grid-cols-2 mr-lg:grid-cols-2 mr-lg:!text-left text-center justify-center text-white md:py-[50px] xs:py-[30px] sm:py-[30px]'>
             <div className='items-center relative mr-xl:py-[150px] mr-lg:py-[150px]'>
-              <span className='mr-2xl:text-[40px] mr-xl:text-[40px] px-2 py-1 bg-black text-white mr-xs:text-center font-primary font-bold mr-md:text-[35px] mr-sm:text-[35px] mr-xs:text-[25px] leading-normal mb-3'>Need assistance or have inquiries? </span>
-              <h3 className='mr-2xl:text-[40px] mr-xl:text-[42px] xs:text-center font-primary font-bold mr-md:text-[35px] mr-sm:text-[30px] mr-xs:text-[25px] leading-normal mb-3'>Your Book, Our Expertise – Let's Collaborate!</h3>
+              <span className='mr-2xl:text-[40px] mr-xl:text-[35px] px-2 py-1 bg-black text-white mr-xs:text-center font-primary font-bold mr-md:text-[35px] mr-sm:text-[35px] mr-xs:text-[25px] leading-normal mb-3'>Need assistance or have inquiries? </span>
+              <h3 className='mr-2xl:text-[40px] mr-xl:text-[42px] xs:text-center font-primary font-bold mr-md:text-[35px] mr-sm:text-[30px] mr-xs:text-[25px] leading-tight mb-3'>Your Book, Our Expertise – Let's Collaborate!</h3>
               <p className='xs:!text-center m-auto md:px-10 mr-xl:px-0'>
-              Our committed team is at your disposal during our operational hours, ready to assist you. We extend a warm invitation to engage with us; after all, your inquiries and requirements are consistently our foremost concern, aren't they?
+                Our committed team is at your disposal during our operational hours, ready to assist you. We extend a warm invitation to engage with us; after all, your inquiries and requirements are consistently our foremost concern, aren't they?
               </p>
-              <div  className='mx-auto py-4'>
+              <div className='mx-auto py-4'>
                 <div className='flex gap-3 mr-xl:!justify-start md:!justify-center sm:!justify-center xs:!justify-center'>
-                  <a href='tel:800-781-9093' className='bg-black text-white hover:bg-white hover:border-solid hover:border-[1px] hover:text-[#1d1d1f] hover:transition-all hover:transform-gpu flex items-center justify-center py-2 px-10'>Start Your Project Today!</a>
-                  <a onClick={openLiveChat} href='#' className='bg-transparent text-white border-solid border-[#1d1d1f] border-[2px] hover:bg-white hover:text-[#000] hover:border-[2px] hover:border-white flex items-center justify-center py-2 px-10'>Connect with Us!</a>
+                  <div className="grid grid-cols-1 mr-sm:flex gap-3">
+                    <MRCTA
+                      text="Start Your Project Today!"
+                      classes="hover:!bg-white hover:!text-black rounded-sm bg-black"
+                      handle="onclick='parent.LC_API.open_chat_window();return false;'"
+                    />
+                    <MRCTA
+                      text="Connect with Us!"
+                      link="tel:8007819093"
+                      bg="bg-transparent"
+                      color="!text-black"
+                      border="border-black hover:!bg-black hover:border-transparent rounded-sm hover:!text-white"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
