@@ -1,31 +1,43 @@
 import React from 'react';
-import Link from 'next/link';
-import FEATURED from '../component/contactus/featuredSec'
-import WMODE from '../component/workMode1'
 import BTM from '../component/bottomLogos';
 import CTA from '../component/cta3';
 import SwiperComponents from '../component/SwiperComponent'
 import Enlistedlogo from '@/fa-component/Enlistedlogo'
 import ContactModel from '../component/ContactModel'
-import { MRHero } from '@/component';
-const blog = () => {
+import { MRCards, MRHero } from '@/component';
+const contact = () => {
+  const MRCardData2 = [
+    {
+      classes: "bg-[#fff] shadow-lg mr-2xl:px-4 px-2 rounded-xl relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-left",
+      stepText: "Step",
+      indexing: true,
+      content: [
+        {
+          textColor: "text-[#40BEE2] group-hover:text-white",
+          title: "Submit Your Manuscript",
+          desc: "After making up your mind about working with us, you place your order.",
+        },
+        {
+          textColor: "text-[#40BEE2] group-hover:text-white",
+          title: "Edit & Design",
+          desc: "We refine your text and design your book's cover.",
+        },
+        {
+          textColor: "text-[#40BEE2] group-hover:text-white",
+          title: "Review & Approve",
+          desc: "You review our work and give the green light.",
+        },
+        {
+          textColor: "text-[#40BEE2] group-hover:text-white",
+          title: "Publish & Distribute",
+          desc: "Your book is published and distributed on schedule.",
+        },
+      ]
+    }]
   return (
     <>
       <main>
-        {/* <FEATURED
-          banneraffordable='aboutus'
-          title='Witness Excellence by Working with the Top Industry Specialists'
-          dec={`Your dream of becoming a successful author is our mission. So, don’t hold back; get ahold of us today.`}
-          href1={<> <Link href='tel:800-781-9093' data-fancybox="" data-src="#popupform" className="btn btn-green">
-            Get Started <i className="fas fa-caret-right ml-1"></i>
-          </Link> </>}
-          href2={<>
-            <Link href="href='javascript:$zopim.livechat.window.show()'" className="chat btn btn-white-border ml-4">
-              Live Chat
-            </Link>
-          </>}
-        /> */}
-         <MRHero
+        <MRHero
           title="Witness Excellence By <br /> Working With The Top <br /> Industry Specialists"
           desc="Your dream of becoming a successful author is our mission. So, don’t hold back; get ahold of us today."
           // containImg="images/newimg/contact-banner.png"
@@ -35,38 +47,18 @@ const blog = () => {
           classes='!py-[80px] bg-[#fefefe] bg-right bg-center'
           beforeImg="mr-md:before:bg-[url('../../public/imageAR/portrait-woman-customer-service-worker.png')] before:!opacity-100"
         />
-        <Enlistedlogo/>
+        <Enlistedlogo />
         <ContactModel></ContactModel>
         <BTM />
         <CTA />
-        <WMODE
-          subtitle="Carrying out"
-          title="The Fastest Work Mode, Get Your <br className='mr-lg:block hidden' /> Work in 4 Easy Steps"
-          desc=" Working with us gives you prompt delivery of work because we have set up everything systematically. Here is our 4 step process, which keeps us streamlined from the beginning."
-          GridCols="grid-cols-4"
-          StoryPlotData={[
-            {
-              steps: "Step 01",
-              heading: "Submit Your Manuscript",
-              desc: "After making up your mind about working with us, you place your order."
-            },
-            {
-              steps: "Step 02",
-              heading: "Edit & Design",
-              desc: "We refine your text and design your book's cover."
-            },
-            {
-              steps: "Step 03",
-              heading: "Review & Approve",
-              desc: "You review our work and give the green light."
-            },
-            {
-              steps: "Step 04",
-              heading: "Publish & Distribute",
-              desc: "Your book is published and distributed on schedule."
-            }
-          ]}
-        />
+        <MRCards
+          subTitle="Carrying out"
+          title={`The Fastest Work Mode, Get Your <br class="mr-xl:block hidden" /> Work in 4 Easy Steps `}
+          desc="Working with us gives you prompt delivery of work because we have set up everything systematically. Here is our 4 step process, which keeps us streamlined from the beginning."
+          gridsClasses="mr-xl:grid-cols-4 mr-lg:grid-cols-3 mr-sm:grid-cols-2 !gap-x-5"
+          cta={false}
+          variant="steps"
+          data={MRCardData2} />
         <SwiperComponents />
 
       </main>
@@ -74,4 +66,4 @@ const blog = () => {
   )
 }
 
-export default blog
+export default contact
