@@ -5,7 +5,9 @@ const MRContent2 = ({
     subTitle,
     title,
     desc,
-    data
+    data,
+    direction,
+    sideImage = Woman,
 }) => {
     return (
         <section>
@@ -18,8 +20,8 @@ const MRContent2 = ({
                         {title && (<h2 className="text-[26px] mr-md:text-[30px] mr-lg:text-[40px] block leading-tight font-bold font-sans text-[#000000] mb-2" dangerouslySetInnerHTML={{ __html: title }} />)}
                         {desc && (<p className="text-[14px] mr-lg:text-[16px] mr-lg:w-[85%] mx-auto block leading-[26px] font-normal font-sans text-[#000000]" dangerouslySetInnerHTML={{ __html: desc }} />)}
                     </div>
-                    <div className="grid mr-lg:grid-cols-12 gap-x-2">
-                        <div className="col-span-6 py-4">
+                    <div className={`mr-lg:flex items-center ${direction} gap-x-10`}>
+                        <div className="basis-[45%] py-4">
                             {
                                 data && data?.map((e, i) => (
                                     <div key={i} >
@@ -30,9 +32,9 @@ const MRContent2 = ({
                             }
                             <MRCTAGroup classes="mt-5" />
                         </div>
-                        <div className='col-span-6'>
+                        <div className='basis-[50%]'>
                             <div className='mr-lg:mt-0 mt-4 mr-md:block hidden'>
-                                <Image src={Woman} alt='Icons' className='block mx-auto' />
+                                <Image src={sideImage} alt='Icons' className='block mx-auto' />
                             </div>
                         </div>
                     </div>
