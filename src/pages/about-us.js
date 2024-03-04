@@ -1,15 +1,12 @@
 import React from 'react';
-import Link from 'next/link';
-import FEATURED from '../component/AboutUS/featuredSec'
 import IM from '../component/impressiveWorks1';
-import WMODE from '../component/workMode1'
 import BTM from '../component/bottomLogos';
 import CTA from '../component/cta3';
 import SwiperComponents from '../component/SwiperComponent'
 import LogoSliders from '../component/LogoSlider'
 import DM1 from '../component/demandingSpecilaist1'
 import BW1 from '../component/bookWriting1';
-import { MRHero } from '@/component';
+import { MRCards, MRHero } from '@/component';
 import Head from 'next/head';
 
 
@@ -22,7 +19,34 @@ const about = () => {
       window.LiveChatWidget.call('maximize');
     }
   };
-
+  const MRCardData2 = [
+    {
+      classes: "bg-[#fff] shadow-lg mr-2xl:px-4 px-2 rounded-xl relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-left",
+      stepText: "Step",
+      indexing: true,
+      content: [
+        {
+          textColor: "text-[#40BEE2] group-hover:text-white",
+          title: "Submit Your Manuscript",
+          desc: "After making up your mind about working with us, you place your order.",
+        },
+        {
+          textColor: "text-[#40BEE2] group-hover:text-white",
+          title: "Edit & Design",
+          desc: "We refine your text and design your book's cover.",
+        },
+        {
+          textColor: "text-[#40BEE2] group-hover:text-white",
+          title: "Review & Approve",
+          desc: "You review our work and give the green light.",
+        },
+        {
+          textColor: "text-[#40BEE2] group-hover:text-white",
+          title: "Publish & Distribute",
+          desc: "Your book is published and distributed on schedule.",
+        },
+      ]
+    }]
   return (
     <>
       <Head>
@@ -32,19 +56,6 @@ const about = () => {
         <meta property="og:type" content="website" />
       </Head>
       <main>
-        {/* <FEATURED
-          banneraffordable='aboutus'
-          title='About US'
-          dec={`Shape your idea into the form of a best-selling book and spread your work to the masses. `}
-          href1={<> <Link href="tel:800-781-9093" data-fancybox="" data-src="#popupform" className="btn btn-green">
-            Get Started <i className="fas fa-caret-right ml-1"></i>
-          </Link> </>}
-          href2={<>
-            <Link onClick={openLiveChat} href="#" className="chat btn btn-white-border ml-4">
-              Live Chat
-            </Link>
-          </>}
-        /> */}
         <MRHero
           // subTitle="Awarded #1 Book Publishing Services"
           title="About US"
@@ -53,8 +64,7 @@ const about = () => {
           classes="bg-right bg-center mr-lg:!py-[200px]"
           form={false}
         />
-        <LogoSliders></LogoSliders>
-
+        <LogoSliders />
         <IM
           title='Every Project Is Treated Like a Work of Art'
           desc={"We don't just think outside the box — we obliterate it."}
@@ -74,34 +84,13 @@ const about = () => {
 
         <CTA />
         <BTM />
-        <WMODE
-          subtitle="Carrying out"
-          title="The Fastest Work Mode, Get Your <br className='mr-lg:block hidden' /> Work in 4 Easy Steps"
-          desc=" Working with us gives you prompt delivery of work because we have set up everything systematically. Here is our 4 step process, which keeps us streamlined from the beginning."
-          GridCols="grid-cols-4"
-          StoryPlotData={[
-            {
-              steps: "Step 01",
-              heading: "Submit Your Manuscript",
-              desc: "After making up your mind about working with us, you place your order."
-            },
-            {
-              steps: "Step 02",
-              heading: "Edit & Design",
-              desc: "We refine your text and design your book's cover."
-            },
-            {
-              steps: "Step 03",
-              heading: "Review & Approve",
-              desc: "You review our work and give the green light."
-            },
-            {
-              steps: "Step 04",
-              heading: "Publish & Distribute",
-              desc: "Your book is published and distributed on schedule."
-            }
-          ]}
-        />
+        <MRCards
+        title={`Dreams Don’t Turn to Dust with <br class="mr-xl:block hidden" /> Best Selling Publisher `}
+        desc="Your dreams matter to us. We understand that there is nothing more painful for a writer than to witness their written word go to waste. We know exactly how to publish your work and emphasize it in unimaginable ways that will leave the readers wanting more."
+        gridsClasses="mr-xl:grid-cols-4 mr-lg:grid-cols-3 mr-sm:grid-cols-2 !gap-x-5"
+        cta={false}
+        variant="steps"
+        data={MRCardData2}/>
         <SwiperComponents />
       </main>
     </>
