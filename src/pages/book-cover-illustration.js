@@ -1,24 +1,17 @@
-import Head from 'next/head'
-// components
-import Tradition from '@/fa-component/Tradition'
-import Enlistedlogo from '@/fa-component/Enlistedlogo'
-import SwiperComponent from '@/component/SwiperComponent'
-import BTM from '../component/bottomLogos';
-import CTA from '../component/cta3';
-import PublishingNewComponent from '@/fa-component/PublishingNewComponent'
-import MagazineProp from '@/component/MagazineProp'
-
-// import { Helmet } from 'react-helmet'
-// images
-import bannerImg from 'media/ahsan/children-banner.png'
-import img2 from 'media/images/banner/img2.png'
-import { MRHero, MRContact, MRCards, MRContent1 } from '@/component'
-import Sales from 'media/ahsan/sales.png'
-import Compatibility from 'media/ahsan/compatibility.png'
-import UniqueIllustrations from 'media/ahsan/device-compatibility.png'
-import EasyUpload from 'media/ahsan/easyuploadCover.png'
-import BestFriendMarco from 'media/ahsan/bestFriendMarco.png'
-import IllustrationPackages from '@/component/IllustrationPackages/IllustrationPackages'
+import Head from "next/head"
+import Tradition from "@/fa-component/Tradition"
+import Enlistedlogo from "@/fa-component/Enlistedlogo"
+import SwiperComponent from "@/component/SwiperComponent"
+import BTM from "@/component/bottomLogos"
+import CTA from "@/component/cta3"
+import PublishingNewComponent from "@/fa-component/PublishingNewComponent"
+import { MRHero, MRContact, MRCards, MRContent1 } from "@/component"
+import Sales from "media/ahsan/sales.png"
+import Compatibility from "media/ahsan/compatibility.png"
+import UniqueIllustrations from "media/ahsan/device-compatibility.png"
+import EasyUpload from "media/ahsan/easyuploadCover.png"
+import BestFriendMarco from "media/ahsan/bestFriendMarco.png"
+import IllustrationPackages from "@/component/IllustrationPackages/IllustrationPackages"
 
 const MRCardData = [
   {
@@ -41,7 +34,8 @@ const MRCardData = [
         title: "Unique <br/> Illustrations",
       }
     ]
-  }]
+  }
+]
 const MRCardData2 = [
   {
     classes: "bg-[#fff] shadow-lg mr-2xl:!px-5 mr-md:!px-4 px-3 rounded-xl relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-left",
@@ -64,23 +58,10 @@ const MRCardData2 = [
         desc: "After we've finalized the design and got the designed approved by you, we then commence our final phase to provide you with the print-ready professional PDF files and finally, send you the complete formats and high-quality final files.",
       }
     ]
-  }]
+  }
+]
 
-
-
-const amazonpublishing = () => {
-  const newSpan = <h1 className='font-50 fw-700 font-primary txt-secondary mt-3 leading-tight'>Pinnacle Publishing For<br /> Children's Illustration<br />Book</h1>
-
-  const bannertext = [
-    {
-      title: newSpan,
-      discuss: `LET'S DISCUSS`,
-      homebannernum: '800-781-9093',
-      bannercounter: 'counter',
-      imageban: bannerImg,
-      img2: img2,
-    }
-  ]
+const BookCoverIllustration = () => {
   const packagesData = [
     {
       title: "Half Page Illustration",
@@ -115,16 +96,13 @@ const amazonpublishing = () => {
         "Extra Characters - $15 Each",
       ]
     },
-  ];
+  ]
   return (
-    <>
+    <main>
       <Head>
-
-        <title>Ebook Publishing Company - Best Selling Publisher - Amazon Publishing Services</title>
-        <link rel="icon" href="/images/favicon.svg" />
-        
+        <title>Book Cover Illustration | Best Book Publishing Company</title>
+        <meta name="description" content="Experience the pinnacle of publishing services with the Best Book Publishing Company. With our commitment to quality, we guide every author toward success. Get started today!" />
       </Head>
-
       <MRHero
         title="Book Cover Illustration Services"
         desc="Achieve more with our top-of-the-line book cover illustration services that make your books visually appealing and irresistible."
@@ -133,11 +111,6 @@ const amazonpublishing = () => {
         classes="bg-right bg-center !py-[80px]"
         beforeImg="mr-md:before:bg-[url('../../public/ahsan/bookCoverillustration1.png')]"
       />
-
-
-      {/*========= Clients fold =========*/}
-      {/* <Clients /> */}
-
       <Enlistedlogo />
       <MRCards
         subTitle="Let Us Help You"
@@ -146,9 +119,8 @@ const amazonpublishing = () => {
         gridsClasses="mr-xl:grid-cols-4 mr-lg:grid-cols-3 mr-sm:grid-cols-2 !gap-x-8 mr-xl:w-[100%] mx-auto"
         cta={true}
         variant="icons"
-        data={MRCardData} />
-
-      {/*========= Tradition fold =========*/}
+        data={MRCardData}
+      />
       <Tradition
         title="Some Of Our Best Book Cover Illustrations"
         desc="We have worked on a variety of projects for clients that included creating picture book illustrations, illustrated stories, cartoon books, kid’s comics, children's encyclopedia, and more. Have a look at our best sample for children's book illustrations below!"
@@ -169,7 +141,6 @@ const amazonpublishing = () => {
         img1={BestFriendMarco}
         direction="flex-row-reverse"
       />
-     
       <PublishingNewComponent
         subtitle="Share Your Book Cover Illustration Requirements With"
         title="Our Experts For The Best Results."
@@ -178,10 +149,7 @@ const amazonpublishing = () => {
         classes="bg-cover bg-no-repeat"
         textBG="bg-primary-100"
       />
-      {/* Packages */}
       <IllustrationPackages packagesData={packagesData} />
-
-      {/*========= CTA fold =========*/}
       <BTM />
       <CTA />
       <MRCards
@@ -191,16 +159,14 @@ const amazonpublishing = () => {
         gridsClasses="mr-xl:grid-cols-3 mr-lg:grid-cols-3 mr-sm:grid-cols-2 !gap-x-5"
         cta={false}
         variant="steps"
-        data={MRCardData2} />
-      {/*========= swiperComponent fold =========*/}
+        data={MRCardData2}
+      />
       <SwiperComponent />
-
-      {/*========= Bookshelf fold =========*/}
       <MRContact
         BGimage="before:!bg-[url('../../public/ahsan/bookCoverssBGStory.png')]"
       />
-    </>
+    </main>
   )
 }
 
-export default amazonpublishing
+export default BookCoverIllustration
