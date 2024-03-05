@@ -70,6 +70,7 @@ const Header = () => {
                                     <MRCTA
                                         text="Let's discuss"
                                         classes="hover:bg-secondary-100 rounded-[5px] !h-[45px]"
+                                        handle="onclick='parent.LC_API.open_chat_window();return false;'"
                                     />
                                 </li>
                             </ul>
