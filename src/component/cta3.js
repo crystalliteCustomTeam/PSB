@@ -16,7 +16,11 @@ import Mockup11 from '../../public/images/book-mockup/11.jpg'
 import Mockup12 from '../../public/images/book-mockup/12.jpg'
 import Logoss from '../../public/ahsan/logoss.png'
 import { MRCTA } from '@/component';
-const YourComponent = () => {
+const YourComponent = ({
+  subtitle = "Don’t Hesitate To Contact Us!",
+  title = `Start Your Bestseller <br class="mr-2xl:block hidden"/> Journey—Publish With Us Today!`,
+  desc = " For personalized support or inquiries, our dedicated team is available to assist you during business hours. We warmly invite you to connect with us; your questions and needs are always our priority. Don't hesitate to reach out.",
+}) => {
 
   const openLiveChat = (e) => {
     e.preventDefault();
@@ -96,11 +100,9 @@ const YourComponent = () => {
         <div className='w-full font-secondary bg-[#40BEE2]'>
           <div className='mr-container grid mr-xl:grid-cols-2 mr-lg:grid-cols-2 mr-lg:!text-left text-center justify-center text-white md:py-[50px] xs:py-[30px] sm:py-[30px]'>
             <div className='items-center relative mr-xl:py-[150px] mr-lg:py-[150px]'>
-              <span className='mr-2xl:text-[40px] mr-xl:text-[35px] px-2 py-1 bg-black text-white mr-xs:text-center font-primary font-bold mr-md:text-[35px] mr-sm:text-[35px] mr-xs:text-[25px] leading-normal mb-3'>Need assistance or have inquiries? </span>
-              <h3 className='mr-2xl:text-[40px] mr-xl:text-[42px] xs:text-center font-primary font-bold mr-md:text-[35px] mr-sm:text-[30px] mr-xs:text-[25px] leading-tight mb-3'>Your Book, Our Expertise – Let's Collaborate!</h3>
-              <p className='xs:!text-center m-auto md:px-10 mr-xl:px-0'>
-                Our committed team is at your disposal during our operational hours, ready to assist you. We extend a warm invitation to engage with us; after all, your inquiries and requirements are consistently our foremost concern, aren't they?
-              </p>
+              <span className='mr-2xl:text-[40px] mr-xl:text-[35px] px-2 py-1 bg-black text-white mr-xs:text-center font-primary font-bold mr-md:text-[35px] mr-sm:text-[35px] mr-xs:text-[25px] leading-normal mb-3'>{subtitle}</span>
+              <h3 className='mr-2xl:text-[40px] mr-xl:text-[42px] xs:text-center font-primary font-bold mr-md:text-[35px] mr-sm:text-[30px] mr-xs:text-[25px] leading-tight mb-3' dangerouslySetInnerHTML={{__html: title}} />
+              <p className='xs:!text-center m-auto md:px-10 mr-xl:px-0' dangerouslySetInnerHTML={{__html : desc}} />
               <div className='mx-auto py-4'>
                 <div className='flex gap-3 mr-xl:!justify-start md:!justify-center sm:!justify-center xs:!justify-center'>
                   <div className="grid grid-cols-1 mr-sm:flex gap-3">

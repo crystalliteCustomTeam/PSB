@@ -99,9 +99,9 @@ const PublishingSlider = () => {
             <section className="py-[80px] mr-md:bg-[url('../../public/ahsan/bgBlack2.png')] bg-no-repeat bg-cover bg-black md:py-20 md:px-5 sm:py-20 sm:px-5 xs:py-20 xs:px-5">
                 <div className='container justify-center mt-10 testimonial mx-auto mb-20 testimonial md:px-5 xs:px-7'>
                     <div className='py-10 text-center xs:py-5 text-white'>
-                        <h6 className='text-[30px] leading-tight font-primary text-[#40BEE2] font-semibold xs:text-base'>Custom high-quality</h6>
-                        <h3 className='font-bold font-primary text-[45px] py-2'>Book Printing Service</h3>
-                        <p className='m-auto xs:w-[100%]'>We provide various book trim size options, cover styles, bookbinding kinds, and other elevated possibilities. <br/> We can do whatever you can think of.</p>
+                        <h6 className='text-[30px] leading-tight font-primary text-[#40BEE2] font-semibold xs:text-base'>Only the Best</h6>
+                        <h3 className='font-bold font-primary text-[45px] py-2'>Book Printing Services Available</h3>
+                        <p className='m-auto xs:w-[100%]'>With our printing services, you can focus on writing and promoting your book, knowing that we have got the printing covered…among other things. </p>
                     </div>
                     <div className='justify-center grid grid-cols-4 sm:grid-cols-2 xs:grid-cols-1 gap-4 items-center'>
                         {data?.map((e, i) => (

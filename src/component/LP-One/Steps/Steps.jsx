@@ -40,9 +40,9 @@ const Steps = () => {
                             step && step?.map((e, i) => (
                                 <div key={i} className="relative">
                                     <span className="text-[60px] leading-tight font-bold">0{++i}</span>
-                                    <div className="relative pl-3 before:absolute before:block before:top-0 before:w-full before:h-full before:-left-4 before:bg-[url('../../public/imageAR/blueLine.png')] before:bg-no-repeat">
-                                        <h3 className="text-[25px] leading-tight font-bold pt-5 mr-md:min-h-[90px] min-h-[70px] pb-2">{e.title}</h3>
-                                        <p className="text-base leading-normal min-h-[200px] font-light">{e.desc}</p>
+                                    <div className="relative pl-3 before:absolute before:block before:top-0 before:w-full before:h-full mr-sm:before:-left-4 before:-left-1 before:bg-[url('../../public/imageAR/blueLine.png')] before:bg-no-repeat">
+                                        <h3 className="mr-lg:text-[25px] text-xl leading-tight font-bold pt-5 mr-md:min-h-[90px] mr-sm:min-h-[70px] pb-2">{e.title}</h3>
+                                        <p className="mr-md:text-base text-sm mr-md:text-start text-justify leading-normal mr-md:min-h-[200px] min-h-[150px] font-light">{e.desc}</p>
                                     </div>
                                     <Image src={e.icon} alt="Icons" width={92} height={92} className="block py-5" />
                                 </div>

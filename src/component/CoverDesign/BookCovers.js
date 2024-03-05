@@ -45,8 +45,8 @@ const PublishingSlider = () => {
             <section className='publishing-slider font-secondary py-10 md:py-0 xs:py-0'>
                 <div className='container max-w-7xl lg:max-w-6xl justify-center mt-10 testimonial mx-auto mb-20 testimonial md:px-5 xs:px-7'>
                     <div className='py-10 text-center xs:py-5'>
-                        <h6 className='text-[30px] leading-tight font-primary text-[#40BEE2] font-semibold sm:text-base xs:text-base'>Book Cover</h6>
-                        <h3 className='font-bold font-primary text-4xl py-2'>Types Of Cover Designs</h3>
+                        <h6 className='text-[30px] leading-tight font-primary text-[#40BEE2] font-semibold sm:text-base xs:text-base'>The Range of</h6>
+                        <h3 className='font-bold font-primary text-4xl py-2'>Exceptional Book Cover Designs that We Offer</h3>
                         {/* <p className='w-[62%] mx-auto xs:w-[100%]'>At , we provide a variety of book trim size options, cover styles, bookbinding kinds, and other elevated possibilities. We can do whatever you can think of.</p> */}
                     </div>
                     <div className='justify-center mr-lg:w-[80%] m-auto grid grid-cols-1 gap-2 items-center space-y-10 sm:px-14 '>
