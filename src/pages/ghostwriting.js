@@ -9,27 +9,27 @@ const ProfessionalGhostwriting = () => {
   const MRContent2Data = [
     {
       title: "Fiction",
-      desc: "Our fiction ghostwriters will assist you in creatively expressing your ideas into enticing literacy that will captivate your audience. All aspects of a story are considered, particularly the author’s major plot and characters. "
+      desc: "Immerse yourself in a world of endless possibilities with fiction, where imagination knows no bounds. From thrilling adventures to heartwarming romances, fiction offers an escape into enchanting narratives crafted by talented storytellers."
     },
     {
       title: "Informative",
-      desc: "Our ghostwriters comprehend the nuance of your text. They ensure their information is reliable and well-acknowledged worldwide, under the available data and facts."
+      desc: "In a world brimming with knowledge, informative literature serves as a guiding light, illuminating the path to understanding and enlightenment. From academic textbooks to engaging non-fiction, informative works provide readers with valuable insights and practical wisdom on a myriad of subjects."
     },
     {
       title: "Memoir",
-      desc: "Our ghostwriters have been trained to write memoirs, not to confuse them with autobiographies. Furthermore, they cherish your sentiments and emotions and go to great lengths to turn your precious memories into a book."
+      desc: "Journey through the world of lived experiences with memoirs, where personal narratives weave tales of triumph, resilience, and self-discovery. Memoirs offer a glimpse into the intimate moments and transformative events that shape a person's life, inviting readers to connect with the raw authenticity of the human experience."
     },
     {
       title: "Children's Book",
-      desc: "Our well-trained and experienced writers are well-versed in all aspects of children’s books. They use their ingenuity to write classic subjects that young minds can understand, with vibrant graphics that keep them hooked."
+      desc: "Spark the imagination and ignite a love for reading with children's books, where whimsy and wonder abound on every page. From colorful picture books to enchanting fairy tales, children's literature enthralls young minds and fosters a lifelong passion for learning and creativity. "
     },
     {
       title: "Self Help Book",
-      desc: "We allow your ideas to reach the right audiences and serve your experiences to be their holy grail in the relevant endeavor."
+      desc: "Empower yourself to steer life's challenges and unlock your full potential with self-help books, where personal growth and transformation take center stage. From practical strategies for success to insights on mindfulness and resilience, self-help literature offers valuable tools and guidance for individuals striving to live happier, healthier, and more fulfilling lives."
     },
     {
       title: "Biography",
-      desc: "Our expert writers are keenly interested in learning about your subjects’ stories, holding the skills and expertise to provide you with well-written content for whoever you want to write about. They also conduct extensive research through various channels such as newspapers, blogs, and interviews to ensure they use correct facts and figures."
+      desc: "Probe into the lives of extraordinary individuals and explore the world of human existence with biographies, where real-life stories unfold with depth and authenticity. From historical figures to modern-day icons, biographies offer a glimpse into the triumphs, tribulations, and defining moments that shape a person's legacy."
     }
   ]
   const MRCardData = [
@@ -39,22 +39,22 @@ const ProfessionalGhostwriting = () => {
         {
           icon: "",
           title: "Seal Of Approval",
-          desc: "Genuine work with our seal of </br> approval and guarantee",
+          desc: "100% Original Content",
         },
         {
           icon: "",
           title: "In-Depth Review System",
-          desc: "Ensuring work is thoroughly </br> edited with no mistakes",
+          desc: "Error-Free Copies",
         },
         {
           icon: "",
           title: "Unlimited Revisions",
-          desc: "We allow as many revisions as </br> possible for your satisfaction",
+          desc: "Amendments and Omissions",
         },
         {
           icon: "",
           title: "Rights Of Ownership Maintained",
-          desc: "You maintain all the rights to </br> your book we don’t hold any",
+          desc: "Copyrights",
         },
       ]
     }]
@@ -67,22 +67,22 @@ const ProfessionalGhostwriting = () => {
         {
           textColor: "text-[#40BEE2] group-hover:text-white",
           title: "Submit Your Manuscript",
-          desc: "After making up your mind about working with us, you place your order.",
+          desc: "Start your publishing process by sharing your manuscript with us.",
         },
         {
           textColor: "text-[#40BEE2] group-hover:text-white",
           title: "Edit & Design",
-          desc: "We refine your text and design your book's cover.",
+          desc: "We add our artistic expertise while retaining your unique voice.",
         },
         {
           textColor: "text-[#40BEE2] group-hover:text-white",
           title: "Review & Approve",
-          desc: "You review our work and give the green light.",
+          desc: "We will NEVER go above your head! Your approval matters, and we want to ensure our creative contributions align with your vision.",
         },
         {
           textColor: "text-[#40BEE2] group-hover:text-white",
           title: "Publish & Distribute",
-          desc: "Your book is published and distributed on schedule.",
+          desc: "Witness your book being published and reaching readers across the globe.",
         },
       ]
     }]
@@ -94,7 +94,7 @@ const ProfessionalGhostwriting = () => {
       </Head>
       <MRHero
         title="Affordable and Professional  <br /> Ghostwriting Services"
-        desc="Do you know how to make your content incredible? You team up with the experts! Over the years, we have assisted innumerable authors who aspired to become the next best sellers. If you plan to be one of them, we are here for you."
+        desc="Do you know how to make your content incredible? You team up with the experts! </br> Over the years, we have assisted innumerable authors who aspired to become the next best sellers. If you plan to be one of them, we are here for you."
         logos="images/banner/img2.png"
         counter={true}
         classes='!py-[80px] bg-[#fefefe]'
@@ -131,11 +131,15 @@ const ProfessionalGhostwriting = () => {
       />
       <MRContent2
         subTitle="Our Creative Ghostwriters,"
-        title="Bringing Your Imagination To Life."
-        desc={`You may have an idea for the next best-seller, but you may not have the time or expertise to write it yourself. Our platform meets all of the <br class="mr-xl:block hidden"/> requirements and offers a diverse range of writing styles, including:`}
+        title="Breathe Life into the Mundane"
+        desc={`Our ghostwriters accentuate your ideas on a whole different level. Every project that we work on inevitably becomes a page-turner.`}
         data={MRContent2Data}
       />
-      <CTA />
+      <CTA 
+      subtitle="Your Book, Our Expertise"
+      title=" – Let's Collaborate!"
+      desc="Need assistance or have inquiries? <span class='block h-3'></span> Our committed team is at your disposal during our operational hours, ready to assist you. We extend a warm invitation to engage with us; after all, your inquiries and requirements are consistently our foremost concern, aren't they?"
+      />
       <BTM />
       <MRCards
         subTitle="We Pursue"

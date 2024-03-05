@@ -1,6 +1,5 @@
 import { MRContent1, MRContent2 } from "@/component"
-import { BookSlider, Contact, Header, Hero, Reviews, ScrollBanner } from "@/component/LP-One"
-import Steps from "@/component/LP-One/Steps/Steps"
+import { BookSlider, Contact, Header, Hero, Reviews, ScrollBanner,Steps } from "@/component/LP-One"
 import Head from "next/head"
 import Nature from "media/imageAR/nature.png"
 import Enlistedlogo from "@/fa-component/Enlistedlogo"

@@ -73,7 +73,7 @@ const ProcessWorkMode = () => {
                             What We
                         </h6>
                         <h2 className='text-[40px] font-primary font-semibold leading-10 xs:text-[26px]'>
-                            Work On
+                            Specialize In
                         </h2>
                     </div>
 
@@ -82,9 +82,9 @@ const ProcessWorkMode = () => {
                             <div>
                                 <div className="box rounded-2xl bg-[#f2f2f2] text-[#1d1d1f] hover:text-white h-[100%] py-[100px] px-5 border-2 border-solid transition-[.5s] hover:bg-[#1d1d1f] hover:border-white">
                                     <p className='text-[20px] font-primary font-semibold leading-6 m-0 transition-[.5s all mb-20'>
-                                        Printed Books
+                                        Printed Books:
                                         <span className='block font-secondary font-normal text-[13px] leading-5 mt-2'>
-                                            Perfect, long-lasting covers to protect your story and message from damage
+                                            Long-lasting covers that protect your book from damage.
                                         </span>
                                     </p>
                                 </div>
@@ -101,7 +101,7 @@ const ProcessWorkMode = () => {
 
                                         Photo Album
                                         <span className='block font-normal text-[13px] leading-5 mt-2'>
-                                            Photographing photo album covers is a critical task our professionals excel at.
+                                            Preserving your cherished memories that can always be revisited.
                                         </span>
                                     </p>
                                 </div>
@@ -118,7 +118,7 @@ const ProcessWorkMode = () => {
 
                                         Comic Books
                                         <span className='block font-normal text-[13px] leading-5 mt-2'>
-                                            Colorful and appealing illustrations to entice comic <br /> readers.
+                                            Detailed illustrations with catchy dialogues and impeccable panels.
                                         </span>
                                     </p>
                                 </div>
@@ -135,7 +135,7 @@ const ProcessWorkMode = () => {
 
                                         Magazine
                                         <span className='block font-normal text-[13px] leading-5 mt-2'>
-                                            Cover design that is trendy and fashionable to help you put your best foot forward in terms of glamour.
+                                            An entire catalog filled with diverse and intriguing content.
                                         </span>
                                     </p>
                                 </div>
@@ -152,7 +152,7 @@ const ProcessWorkMode = () => {
 
                                         Year Books
                                         <span className='block font-normal text-[13px] leading-5 mt-2'>
-                                            Compilation of your academic achievements in an <br /> appealing format.
+                                            All your academic achievements and memories in one place.
                                         </span>
                                     </p>
                                 </div>
@@ -169,7 +169,7 @@ const ProcessWorkMode = () => {
 
                                         E Books
                                         <span className='block font-normal text-[13px] leading-5 mt-2'>
-                                            Digital book cover design that is both creative and high-quality for maximum impact on your online audience.
+                                            Easy to carry, easy to read, and easy to access books.
                                         </span>
                                     </p>
                                 </div>

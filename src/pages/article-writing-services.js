@@ -74,22 +74,22 @@ const ArticleWritingServices = () => {
           {
             textColor: "text-[#40BEE2] group-hover:text-white",
             title: "Submit Your Manuscript",
-            desc: "After making up your mind about working with us, you place your order.",
+            desc: "Share your manuscript and we will get started.",
           },
           {
             textColor: "text-[#40BEE2] group-hover:text-white",
             title: "Edit & Design",
-            desc: "We refine your text and design your book's cover.",
+            desc: "We retain the context but add that artistic flavor.",
           },
           {
             textColor: "text-[#40BEE2] group-hover:text-white",
             title: "Review & Approve",
-            desc: "You review our work and give the green light.",
+            desc: "You review and approve our creative contributions.",
           },
           {
             textColor: "text-[#40BEE2] group-hover:text-white",
             title: "Publish & Distribute",
-            desc: "Your book is published and distributed on schedule.",
+            desc: "Your book has been published and distributed.",
           },
         ]
       }]
@@ -143,7 +143,11 @@ const ArticleWritingServices = () => {
         data={MRContent2Data}
       />
       <BTM />
-      <CTA />
+      <CTA 
+      subtitle="It's Time to Kick Off Your Dream Project" 
+      title="Are You Ready to Start Publishing?"
+      desc="Our team is here for you! Do you have questions or need assistance? Just reach out during our operational hours. We're always happy to help. Don't be shy – we'd love to hear from you!"
+      />
       <MRCards
         subTitle="We Pursue"
         title={`A Swift Work Mode that Involves <br class="mr-xl:block hidden" /> 4 Easy Steps`}
