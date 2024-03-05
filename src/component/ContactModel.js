@@ -12,10 +12,9 @@ import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import Router from "next/router";
 import Link from "next/link";
 import Image from "next/image";
-import Facebook from "../../public/imageAR/facebook.png"
-import Insta from "../../public/imageAR/insta.png"
-import Twitter from "../../public/imageAR/twitter.png"
-import LinkedIn from "../../public/imageAR/linkedIn.png"
+import Facebook from 'media/images/icons/facebook.svg'
+import Instagram from 'media/images/icons/instagram.svg'
+import XIcon from 'media/images/icons/x-icon.svg'
 
 const Bloginner = () => {
   const [score, setScore] = useState("Submit Form");
@@ -136,18 +135,15 @@ const Bloginner = () => {
               </ul>
               <h3 className=" text-[20px] font-bold mt-3 text-white">Follow Us:</h3>
               <div className="flex space-x-2 basis-8/12 items-center text-[12px] xs:text-center xs:mx-auto">
-                <Link href="https://www.facebook.com/Best-Selling-Publisher-103021665842266/?ref=page_internal">
-                <Image src={Facebook} alt="Icons" width={7} height={13} className="!h-[13px] !w-[7px]" />
-                </Link>
-                <Link href="https://twitter.com/bspublisher">
-                  <Image src={Twitter} alt="Icons" width={7} height={13} className="!h-[12px] !w-[12px]" />
-                </Link>
-                <Link href="javascript:;" target="_blank">
-                  <Image src={Insta} alt="Icons" width={7} height={13} className="!h-[12px] !w-[12px]" />
-                </Link>
-                <Link href="javascript:;" target="_blank" >
-                  <Image src={LinkedIn} alt="Icons" width={7} height={13} className="!h-[12px] !w-[12px]" />
-                </Link>
+                <a href="https://www.facebook.com/bestsellingpublisher" target="_blank" rel="noopener noreferrer">
+                <Image src={Facebook} alt="Icons" width={25} height={25}  />
+                </a>
+                <a href="https://twitter.com/bspublisher" target="_blank" rel="noopener noreferrer">
+                  <Image src={XIcon} alt="Icons" width={25} height={25}  />
+                </a>
+                <a href="https://www.instagram.com/bspublisher/" target="_blank" rel="noopener noreferrer">
+                  <Image src={Instagram} alt="Icons" width={25} height={25}  />
+                </a>
               </div>
             </div>
           </div>
