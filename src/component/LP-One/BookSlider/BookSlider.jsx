@@ -8,7 +8,7 @@ import Slider2 from 'media/ahsan/slider2.png'
 import Slider3 from 'media/ahsan/slider3.png'
 import Slider4 from 'media/ahsan/slider4.png'
 import Slider5 from 'media/ahsan/slider5.png'
-
+import styles from "./bookslider.module.css"
 
 const BookSliderData = [
     {
@@ -75,7 +75,7 @@ const BookSlider = ({
 
     return (
         <section>
-            <div className={`py-[40px] mr-lg:py-[70px] ${classes}`}>
+            <div className={`py-[40px] mr-lg:py-[70px] ${classes} lpOneBookSlider`}>
                 <div className="mr-container">
                     <div className="text-center mb-5">
                         {subTitle && (<span className="text-[20px] mr-lg:text-[30px] block leading-tight font-semibold font-sans text-[#40BEE2] mb-2">

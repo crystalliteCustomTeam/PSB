@@ -19,21 +19,21 @@ const Header = () => {
                 <div className="mr-container">
                     <div className="flex items-center justify-center mr-sm:justify-between">
                         <div className="email mr-sm:block hidden">
-                            <Link href="mailto:info@bestsellingpublisher.com;" className="flex items-center gap-x-2">
+                            <a href="mailto:info@bestsellingpublisher.com" className="flex items-center gap-x-2">
                                 <Image src={Mail} alt="Mail-Icon" />
                                 <span className="text-[16px] text-white leading-[19px]">info@bestsellingpublisher.com</span>
-                            </Link>
+                            </a>
                         </div>
                         <div className="social_media flex items-center gap-3">
-                            <Link href="javascript:;">
+                            <a href="https://www.facebook.com/bestsellingpublisher?ref=page_internal" target="_blank">
                                 <Image src={Facebook} alt="SocialMedia" width={30} height={30} />
-                            </Link>
-                            <Link href="javascript:;">
+                            </a>
+                            <a href="https://twitter.com/bspublisher" target="_blank">
                                 <Image src={Instagram} alt="SocialMedia" width={30} height={30} />
-                            </Link>
-                            <Link href="javascript:;">
+                            </a>
+                            {/* <a href="javascript:;">
                                 <Image src={XIcon} alt="SocialMedia" width={30} height={30} />
-                            </Link>
+                            </a> */}
                         </div>
                     </div>
                 </div>
