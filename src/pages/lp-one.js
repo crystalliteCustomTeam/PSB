@@ -1,8 +1,9 @@
-import { MRContent2 } from "@/component"
+import { MRContent1, MRContent2 } from "@/component"
 import { BookSlider, Contact, Header, Hero, Reviews, ScrollBanner } from "@/component/LP-One"
 import Steps from "@/component/LP-One/Steps/Steps"
 import Head from "next/head"
 import Nature from "media/imageAR/nature.png"
+import Enlistedlogo from "@/fa-component/Enlistedlogo"
 
 const LPOne = () => {
     const MRContent2Data = [
@@ -35,8 +36,14 @@ const LPOne = () => {
             </Head>
             <Header />
             <Hero />
+            <Enlistedlogo />
             <BookSlider
                 title="We Have Supported Countless Writers Get Best Selling Books Published Under Their Name"
+            />
+            <MRContent1
+             title="Why Choose Us?"
+             desc="Every successful book has a team of dedicated professionals behind it. Our renowned group of editors, designers, and marketing specialists is dedicated to taking your book to the next level and making it stand out from the competition. choosing a Best-Selling Publisher is an investment in your literary career rather than merely a choice. Become a part of our esteemed writer community and see your tale turn into the next big hit!"
+             img1="/ahsan/mocknew.png"
             />
             <MRContent2
                 title={`Unleash Your Literary Dreams with Best Selling Publisher! <br class="mr-xl:block hidden"/> Embark on a Journey to Authorship Today!`}
@@ -46,6 +53,12 @@ const LPOne = () => {
                 data={MRContent2Data}
             />
             <ScrollBanner />
+            <MRContent1
+             title="Why Choose Our Amazon <br class='hidden mr-lg:block'/> Publishing Services?"
+             desc="Your work is over after creating a masterpiece. Let us take the lead from here. Our Amazon publishing services include the three crucial areas of the publishing process: Production, Marketing, and Distribution. As the best publishers, our experience lies in publishing many books by professional writers. And our publishing experts have upgraded many authors to published book authors universally. It’s time for you to get famous!"
+             img1="/ahsan/mocknew1.png"
+             direction="flex-row-reverse"
+            />
             <Steps />
             <Reviews />
             <Contact />

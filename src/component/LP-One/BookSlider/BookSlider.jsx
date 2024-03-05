@@ -46,7 +46,7 @@ const BookSlider = ({
     let traditionslider = {
         dots: true,
         arrows: false,
-        autoplay: true,
+        autoplay: false,
         infinite: true,
         speed: 500,
         slidesToShow: 5,

@@ -15,7 +15,6 @@ import Device from 'media/ahsan/device-compatibility.png'
 import EasyUpload from 'media/ahsan/easyupload.png'
 import Jambore from 'media/ahsan/jambore.png'
 import IllustrationPackages from '@/component/IllustrationPackages/IllustrationPackages'
-import { BookSlider, ScrollBanner } from '@/component/LP-One';
 
 const MRCardData = [
   {
@@ -130,13 +129,7 @@ const ChildrenBookIllustration = () => {
       />
 
       <Enlistedlogo />
-      <ScrollBanner />
-      <BookSlider
-        title="We Have Supported Countless Writers Get Best Selling Books Published Under Their Name"
-      />
-
      
-
       <MRCards
         subTitle="Let Us Help You"
         title={`Children's Book Illustration Services`}
