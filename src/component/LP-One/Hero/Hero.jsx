@@ -80,16 +80,16 @@ const Hero = () => {
                                 </h2>
                                 <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-y-5" autoComplete="off">
                                     <div>
-                                        <input type="text" required name="name" placeholder="Your Name" onkeypress="return /[a-z]/i.test(event.key)" className="placeholder:text-white rounded-md outline-none text-[#9E9E9E] bg-transparent font-normal text-[15px] leading-[25px] block w-full  h-[40px] px-2 border-2 border-white" />
+                                        <input type="text" required name="name" placeholder="Your Name" onkeypress="return /[a-z]/i.test(event.key)" className="placeholder:text-white rounded-md outline-none text-white bg-transparent font-normal text-[15px] leading-[25px] block w-full  h-[40px] px-2 border-2 border-white" />
                                     </div>
                                     <div>
-                                        <input type="email" required name="email" placeholder="Email Address" className="placeholder:text-white rounded-md outline-none text-[#9E9E9E] bg-transparent font-normal text-[15px] leading-[25px] block w-full  h-[40px] px-2 border-2 border-white" />
+                                        <input type="email" required name="email" placeholder="Email Address" className="placeholder:text-white rounded-md outline-none text-white bg-transparent font-normal text-[15px] leading-[25px] block w-full  h-[40px] px-2 border-2 border-white" />
                                     </div>
                                     <div>
-                                        <input type="tel" minLength="10" maxLength="13" pattern="[0-9]*" name="phone" placeholder="Phone" className="placeholder:text-white rounded-md outline-none text-[#9E9E9E] bg-transparent font-normal text-[15px] leading-[25px] block w-full  h-[40px] px-2 border-2 border-white" />
+                                        <input type="tel" minLength="10" maxLength="13" pattern="[0-9]*" name="phone" placeholder="Phone" className="placeholder:text-white rounded-md outline-none text-white bg-transparent font-normal text-[15px] leading-[25px] block w-full  h-[40px] px-2 border-2 border-white" />
                                     </div>
                                     <div>
-                                        <textarea id="message" name="comments" placeholder="Details..." className="placeholder:text-white rounded-md outline-none text-[#9E9E9E] bg-transparent font-normal text-[15px] leading-[25px] block w-full  h-[80px] p-2 border-2 border-white resize-none" ></textarea>
+                                        <textarea id="message" name="comments" placeholder="Details..." className="placeholder:text-white rounded-md outline-none text-white bg-transparent font-normal text-[15px] leading-[25px] block w-full  h-[80px] p-2 border-2 border-white resize-none" ></textarea>
                                     </div>
                                     <div>
                                         <button type="submit" className="w-full rounded-md block h-[40px] text-center text-[16px] text-white bg-primary-100 font-semibold">{score}</button>
