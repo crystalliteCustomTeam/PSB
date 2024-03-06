@@ -1,21 +1,21 @@
 import React from 'react'
 import check from 'media/ahsan/checkmark.png'
-
+import Image from 'next/image'
 const Theading = [
     {
-        name1 : 'Services',
-        name2 : 'Basics',
-        name3 : 'Standard',
-        name4 : 'Platinum'
+        name1: 'Services',
+        name2: 'Basics',
+        name3: 'Standard',
+        name4: 'Platinum'
     }
 ]
 const Thead = [['Services'], ['Basics'], ['Standard'], ['Platinum']]
 const TData = [
     {
         Services: 'Google Preview Book',
-        Basics: 'check',
-        Standard: 'check',
-        Platinum: 'check'
+        Basics: check,
+        Standard: check,
+        Platinum: check
     },
     {
         Services: 'Social Media Promotion',
@@ -26,8 +26,8 @@ const TData = [
     {
         Services: 'Amazon Marketing',
         Basics: '',
-        Standard: 'check',
-        Platinum: 'check'
+        Standard: check,
+        Platinum: check
     },
     {
         Services: 'Search Engine Optimization',
@@ -42,22 +42,22 @@ const TData = [
         Platinum: '10 Reviews'
     },
     {
-        Services: 'Book Launch Animated Video - 1Minute Video',
+        Services: 'Book Launch Animated Video - 1 Minute Video',
         Basics: '1 Video',
         Standard: '1 Video',
         Platinum: '1 Video'
     },
     {
         Services: 'Author Website Setup- 1',
-        Basics: 'check',
-        Standard: 'check',
-        Platinum: 'check'
+        Basics: check,
+        Standard: check,
+        Platinum: check
     },
     {
         Services: 'Website For Author And Book',
-        Basics: 'check',
-        Standard: 'check',
-        Platinum: 'check'
+        Basics: check,
+        Standard: check,
+        Platinum: check
     },
     {
         Services: 'Promotional Bookmarks Design',
@@ -73,9 +73,9 @@ const TData = [
     },
     {
         Services: 'Promotional Business Cards Design',
-        Basics: 'check',
-        Standard: 'check',
-        Platinum: 'check'
+        Basics: check,
+        Standard: check,
+        Platinum: check
     },
     {
         Services: 'Blogs/Articles Marketing',
@@ -85,9 +85,9 @@ const TData = [
     },
     {
         Services: 'Blogs Written And Posted On High Authority Domain Platforms',
-        Basics: 'check',
-        Standard: 'check',
-        Platinum: 'check'
+        Basics: check,
+        Standard: check,
+        Platinum: check
     },
     {
         Services: 'Press Release Campaign - 10',
@@ -104,26 +104,26 @@ const TData = [
     {
         Services: 'Google Knowledge Panel For The Book',
         Basics: '',
-        Standard: 'check',
-        Platinum: 'check'
+        Standard: check,
+        Platinum: check
     },
     {
         Services: 'Podcast',
         Basics: '',
-        Standard: 'check',
-        Platinum: 'check'
+        Standard: check,
+        Platinum: check
     },
     {
         Services: 'Editorial Critique',
-        Basics: 'check',
-        Standard: 'check',
-        Platinum: 'check'
+        Basics: check,
+        Standard: check,
+        Platinum: check
     },
     {
         Services: 'Quora Space',
         Basics: '',
-        Standard: 'check',
-        Platinum: 'check'
+        Standard: check,
+        Platinum: check
     }
 ]
 
@@ -132,8 +132,8 @@ const MRTable = ({
     subTitle = "",
     title = "",
     desc = "",
+    imageIcon = "check"
 }) => {
-
     return (
         <>
             <section>
@@ -157,22 +157,46 @@ const MRTable = ({
                                     </tr>
                                 </thead> */}
                                 <thead>
-                                {Theading?.map((e, i) => (
-                                    <tr key={i} className='font-semibold mr-md:text-[18px] text-[16px]'>
+                                    {Theading?.map((e, i) => (
+                                        <tr key={i} className='font-semibold mr-md:text-[18px] text-[16px]'>
                                             <th className='bg-[#40BEE2] text-white border border-[#E2E2E2] mr-md:py-2 py-1 mr-md:px-3 px-10'>{e.name1}</th>
                                             <th className='bg-[#000] text-white border border-[#E2E2E2] mr-md:py-2 py-1 mr-md:px-3 px-10'>{e.name2}</th>
                                             <th className='bg-[#40BEE2] text-white border border-[#E2E2E2] mr-md:py-2 py-1 mr-md:px-3 px-10'>{e.name3}</th>
                                             <th className='bg-[#000] text-white border border-[#E2E2E2] mr-md:py-2 py-1 mr-md:px-3 px-10'>{e.name4}</th>
-                                    </tr>
-                                     ))}
+                                        </tr>
+                                    ))}
                                 </thead>
                                 <tbody>
                                     {TData?.map((e, i) => (
-                                        <tr key={i} className='font-normal mr-md:text-[14px] text-[12px]'>
-                                            <td className='border border-[#E2E2E2] mr-md:py-2 py-1 pl-5'>{e.Services}</td>
-                                            <td className='border border-[#E2E2E2] mr-md:py-3 py-1 text-center'>{e.Basics}</td>
-                                            <td className='border border-[#E2E2E2] mr-md:py-3 py-1 text-center'>{e.Standard}</td>
-                                            <td className='border border-[#E2E2E2] mr-md:py-3 py-1 text-center'>{e.Platinum}</td>
+                                        <tr key={i} className='font-semibold mr-md:text-[16px] text-[12px]'>
+                                            <td className='border border-[#E2E2E2] mr-md:py-2 py-1 pl-3'>
+                                                {e.Services}
+                                            </td>
+                                            <td className='border border-[#E2E2E2] mr-md:py-3 py-1 text-center'>
+                                                {e.Basics == check ?
+                                                    <Image src={e.Basics} quality={100} width={30} height={40} alt='icon' className='m-auto' /> : 
+                                                    <p>{e.Basics}</p>    
+                                                }
+                                            </td>
+
+                                            <td className='border border-[#E2E2E2] mr-md:py-3 py-1 text-center'>
+                                                {(e.Standard) == check ? (
+                                                    <Image src={e.Standard} quality={100} width={30} height={40} alt='icon' className='m-auto' />
+                                                ) : (
+                                                    <p>
+                                                        {e.Standard}
+                                                    </p>
+                                                )}
+                                            </td>
+                                            <td className='border border-[#E2E2E2] mr-md:py-3 py-1 text-center'>
+                                                {(e.Platinum) == check ? (
+                                                    <Image src={e.Platinum} quality={100} width={30} height={40} alt='icon' className='m-auto' />
+                                                ) : (
+                                                    <p>
+                                                        {e.Platinum}
+                                                    </p>
+                                                )}
+                                            </td>
                                         </tr>
                                     ))}
                                 </tbody>
