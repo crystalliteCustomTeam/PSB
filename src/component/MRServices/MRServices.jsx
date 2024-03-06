@@ -10,6 +10,7 @@ import VideoReview from 'media/ahsan/video-review.png'
 import VideoReview1 from 'media/ahsan/video-review1.png'
 import BlogsBooks from 'media/ahsan/blogs-for-books.png'
 import PressRelease from 'media/ahsan/press-releases.png'
+import Link from 'next/link'
 
 const MRServices = ({
     subTitle,
@@ -32,11 +33,13 @@ const MRServices = ({
                     <div className='grid mr-md:grid-cols-12 grid-cols-1 mr-md:gap-2 gap-y-3 mr-xl:w-[90%] w-[90%] text-white font-bold m-auto relative mt-5'>
                         <div className='mr-md:col-span-3 '>
                             <div className='relative mr-md:mb-1 mb-3'>
-                                <Image src={author} quality={100} alt='author website' />
-                                <div className='absolute bottom-0 p-5 mr-lg:text-[22px] text-[14px]'>
-                                    <h3>Author Website<br />
+                                <Image src={author} quality={100} width={500} height={500} alt='author website' className='' />
+                                <div className='absolute bottom-0 p-5 mr-lg:text-[22px] text-[14px]  '>
+                                    <Link href="javascript:;" className='hover:text-[#40BEE2]'><h3>Author Website<br />
                                         Design & Development
                                     </h3>
+                                    </Link>
+
                                     <p className='flex gap-x-2 items-center'> <span className='text-primary-100 mr-lg:text-[14px] text-[14px]'>$1699</span>
                                         <span className='mr-lg:text-[14px] text-[14px] line-through'>$1999</span></p>
                                 </div>
@@ -44,8 +47,9 @@ const MRServices = ({
                             <div className='relative'>
                                 <Image src={Seo} quality={100} alt='Search Engine Optimization' />
                                 <div className='absolute bottom-0 p-5 mr-lg:text-[22px] text-[14px]'>
-                                    <h3>Search Engine<br />Optimization
-                                    </h3>
+                                    <Link href="javascript:;" className='hover:text-[#40BEE2]'>
+                                        <h3>Search Engine<br />Optimization
+                                        </h3></Link>
                                     <p className='flex gap-x-2 items-center'> <span className='text-primary-100 mr-lg:text-[14px] text-[14px]'>$3999</span>
                                         <span className='mr-lg:text-[14px] text-[14px] line-through'>$4999</span></p>
                                 </div>
@@ -55,9 +59,10 @@ const MRServices = ({
                             <div className='relative'>
                                 <Image src={customer} quality={95} alt='Online Independent' />
                                 <div className='absolute bottom-0 p-5 mr-lg:text-[22px] text-[14px]'>
-                                    <h3>Online Independent<br />
-                                        Reviews
-                                    </h3>
+                                    <Link href="javascript:;" className='hover:text-[#40BEE2]'>
+                                        <h3>Online Independent<br />
+                                            Reviews
+                                        </h3></Link>
                                     <p className='flex gap-x-2 items-center'> <span className='text-primary-100 mr-lg:text-[14px] text-[14px]'>$899</span>
                                         <span className='mr-lg:text-[14px] text-[14px] line-through'>$1199</span></p>
                                 </div>
@@ -67,9 +72,11 @@ const MRServices = ({
                             <div className='relative mr-md:mb-1 mb-3'>
                                 <Image src={Books} quality={100} alt='author website' />
                                 <div className='absolute bottom-0 p-5 mr-lg:text-[22px] text-[14px]'>
-                                    <h3>Book<br />
-                                        Trailer
-                                    </h3>
+                                    <Link href="javascript:;" className='hover:text-[#40BEE2]'>
+                                        <h3>Book<br />
+                                            Trailer
+                                        </h3>
+                                    </Link>
                                     <p className='flex gap-x-2 items-center'> <span className='text-primary-100 mr-lg:text-[14px] text-[14px]'>$999</span>
                                         <span className='mr-lg:text-[14px] text-[14px] line-through'>$1240</span></p>
                                 </div>
@@ -77,9 +84,10 @@ const MRServices = ({
                             <div className='relative'>
                                 <Image src={editorial} quality={100} alt='EditorialCritiques' />
                                 <div className='absolute bottom-0 p-5 mr-lg:text-[22px] text-[14px]'>
-                                    <h3>Editorial<br />
-                                        Critiques
-                                    </h3>
+                                    <Link href="javascript:;" className='hover:text-[#40BEE2]'>
+                                        <h3>Editorial<br />
+                                            Critiques
+                                        </h3></Link>
                                     <p className='flex gap-x-2 items-center'> <span className='text-primary-100 mr-lg:text-[14px] text-[14px]'>$899</span>
                                         <span className='mr-lg:text-[14px] text-[14px] line-through'>$1199</span></p>
                                 </div>
@@ -87,11 +95,12 @@ const MRServices = ({
                         </div>
                         <div className='mr-md:col-span-9'>
                             <div className='relative'>
-                                <Image src={SocialMedia} quality={95} alt='Social Media Marketing' />
+                                <Image src={SocialMedia} quality={95} width={1000} height={400} alt='Social Media Marketing' />
                                 <div className='absolute bottom-0 p-5 mr-lg:text-[22px] text-[14px]'>
-                                    <h3>Social Media <br />
-                                        Marketing
-                                    </h3>
+                                    <Link href="javascript:;" className='hover:text-[#40BEE2]'>
+                                        <h3>Social Media <br />
+                                            Marketing
+                                        </h3></Link>
                                     <p className='flex gap-x-2 items-center'> <span className='text-primary-100 mr-lg:text-[14px] text-[14px]'>$1999</span>
                                         <span className='mr-lg:text-[14px] text-[14px] line-through'>$2499</span></p>
                                 </div>
@@ -100,11 +109,12 @@ const MRServices = ({
                         <div className='mr-md:col-span-3'>
                             <div className='relative '>
                                 <Image src={VideoReview} quality={100} alt='book trailer' className='mr-md:block hidden' />
-                                <Image src={VideoReview1} quality={100} alt-="book trailer" className='mr-md:hidden block'/>
+                                <Image src={VideoReview1} quality={100} alt-="book trailer" className='mr-md:hidden block' />
                                 <div className='absolute bottom-0 p-5 mr-lg:text-[22px] text-[14px]'>
-                                    <h3>Book<br />
-                                        Trailer
-                                    </h3>
+                                    <Link href="javascript:;" className='hover:text-[#40BEE2]'>
+                                        <h3>Book<br />
+                                            Trailer
+                                        </h3></Link>
                                     <p className='flex gap-x-2 items-center'> <span className='text-primary-100 mr-lg:text-[14px] text-[14px]'>$999</span>
                                         <span className='mr-lg:text-[14px] text-[14px] line-through'>$1240</span></p>
                                 </div>
@@ -114,9 +124,11 @@ const MRServices = ({
                             <div className='relative'>
                                 <Image src={BlogsBooks} quality={95} alt='Blogs For Book Promotion' />
                                 <div className='absolute bottom-0 p-5 mr-lg:text-[22px] text-[14px]'>
-                                    <h3>Blogs For <br />
-                                        Book Promotion
-                                    </h3>
+                                    <Link href="javascript:;" className='hover:text-[#40BEE2]'>
+                                        <h3>Blogs For <br />
+                                            Book Promotion
+                                        </h3>
+                                    </Link>
                                     <p className='flex gap-x-2 items-center'> <span className='text-primary-100 mr-lg:text-[14px] text-[14px]'>$1299</span>
                                         <span className='mr-lg:text-[14px] text-[14px] line-through'>$1599</span></p>
                                 </div>
@@ -126,9 +138,11 @@ const MRServices = ({
                             <div className='relative'>
                                 <Image src={PressRelease} quality={95} alt='Press Releases' />
                                 <div className='absolute bottom-0 p-5 mr-lg:text-[22px] text-[20px]'>
-                                    <h3>Press <br />
-                                        Releases
-                                    </h3>
+                                    <Link href="javascript:;" className='hover:text-[#40BEE2]'>
+                                        <h3>Press <br />
+                                            Releases
+                                        </h3>
+                                    </Link>
                                     <p className='flex gap-x-2 items-center'> <span className='text-primary-100 mr-lg:text-[14px] text-[14px]'>$699</span>
                                         <span className='mr-lg:text-[14px] text-[14px] line-through'>$899</span></p>
                                 </div>
