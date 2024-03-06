@@ -9,9 +9,9 @@ import 'slick-carousel/slick/slick-theme.css';
 
 // Images 
 import Logo from "media/assets/images/logo.png"
-import Instagram from "media/assets/sikander/instagram.png"
-import Twitter from "media/assets/sikander/twitter.png"
-import Facebook from "media/assets/sikander/facebook.png"
+import Facebook from 'media/images/icons/facebook.svg'
+import Instagram from 'media/images/icons/instagram.svg'
+import XIcon from 'media/images/icons/x-icon.svg'
 import Tel from "media/assets/sikander/telicon.png"
 import Email from "media/assets/sikander/email.png"
 import Location from "media/assets/sikander/location.png"
@@ -56,21 +56,21 @@ const NewFooter = () => {
                                 </Link>
                                 <p className='text-[13px] leading-[17px] font-[400] font-secondary pt-4 md:w-full  w-11/12'>Best Selling Publisher stands as the pinnacle of excellence in the world of publishing services, renowned for its unparalleled commitment to author success. With a dedicated team of industry experts and innovative resources at their disposal, Best Selling Publisher goes above and beyond.</p>
                                 <p className='text-[13px] leading-[17px] font-[400] font-secondary pt-4 pb-5 md:w-full  w-11/12'>Don't hesitate to reach out and take the first step towards literary success with one of the finest publishers in the industry.</p>
-                                <ul className='flex items-center gap-x-5'>
+                                <ul className='flex items-center gap-x-3'>
                                     <li>
-                                        <Link href="https://www.facebook.com/Best-Selling-Publisher-103021665842266/?ref=page_internal">
-                                            <Image src={Instagram} alt='Amazon Book Publisher' />
-                                        </Link>
+                                        <a href="https://www.facebook.com/bestsellingpublisher" target="_blank" rel="noopener noreferrer">
+                                            <Image src={Instagram} alt='Amazon Book Publisher' width={30} height={30} />
+                                        </a>
                                     </li>
                                     <li>
-                                        <Link href="https://twitter.com/bspublisher">
-                                            <Image src={Twitter} alt='Amazon Book Publisher' />
-                                        </Link>
+                                        <a href="https://twitter.com/bspublisher" target="_blank" rel="noopener noreferrer">
+                                            <Image src={XIcon} alt='Amazon Book Publisher' width={30} height={30} />
+                                        </a>
                                     </li>
                                     <li>
-                                        <Link href="https://www.facebook.com/Best-Selling-Publisher-103021665842266/?ref=page_internal">
-                                            <Image src={Facebook} alt='Amazon Book Publisher' />
-                                        </Link>
+                                        <a href="https://www.instagram.com/bspublisher/" target="_blank" rel="noopener noreferrer">
+                                            <Image src={Facebook} alt='Amazon Book Publisher' width={30} height={30} />
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
@@ -110,7 +110,7 @@ const NewFooter = () => {
                                                 Book Publishing
                                             </Link>
                                         </li>
-                                    
+
                                         <li>
                                             <Link href="/digital-book-publishing-fa" className='text-[13px] font-[400] font-secondary xl:leading-[25px] leading-[15px]'>
                                                 Digital Book Publishing
@@ -128,17 +128,17 @@ const NewFooter = () => {
                                         </li>
                                         <li>
                                             <Link href="/children-Illustration-fa" className='text-[13px] font-[400] font-secondary xl:leading-[25px] leading-[15px]'>
-                                            Children Illustration
+                                                Children Illustration
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="/amazon-book-publishing" className='text-[13px] font-[400] font-secondary xl:leading-[25px] leading-[15px]'>
-                                            Amazon Book Publishing
+                                                Amazon Book Publishing
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="/ebook-publishing" className='text-[13px] font-[400] font-secondary xl:leading-[25px] leading-[15px]'>
-                                            Ebook Publishing
+                                                Ebook Publishing
                                             </Link>
                                         </li>
                                     </ul>

@@ -8,8 +8,6 @@ import Facebook from 'media/images/icons/facebook.svg'
 import Instagram from 'media/images/icons/instagram.svg'
 import XIcon from 'media/images/icons/x-icon.svg'
 import logo from 'media/images/logo.png';
-import Tell from 'media/images/icons/tell.svg';
-import LiveChat from 'media/images/icons/live-chat.svg';
 import CTA from "../CTA/CTA"
 
 const Header = () => {
@@ -25,15 +23,15 @@ const Header = () => {
                             </a>
                         </div>
                         <div className="social_media flex items-center gap-3">
-                            <a href="https://www.facebook.com/bestsellingpublisher?ref=page_internal" target="_blank">
+                            <a href="https://www.facebook.com/bestsellingpublisher" target="_blank" rel="noopener noreferrer">
                                 <Image src={Facebook} alt="SocialMedia" width={30} height={30} />
                             </a>
-                            <a href="https://twitter.com/bspublisher" target="_blank">
+                            <a href="https://www.instagram.com/bspublisher/" target="_blank" rel="noopener noreferrer">
                                 <Image src={Instagram} alt="SocialMedia" width={30} height={30} />
                             </a>
-                            {/* <a href="javascript:;">
+                            <a href="https://twitter.com/bspublisher" target="_blank" rel="noopener noreferrer">
                                 <Image src={XIcon} alt="SocialMedia" width={30} height={30} />
-                            </a> */}
+                            </a>
                         </div>
                     </div>
                 </div>

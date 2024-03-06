@@ -40,7 +40,6 @@ const contact = () => {
         <MRHero
           title="Witness Excellence By <br /> Working With The Top <br /> Industry Specialists"
           desc="Your dream of becoming a successful author is our mission. So, don’t hold back; get ahold of us today."
-          // containImg="images/newimg/contact-banner.png"
           logos="images/banner/img2.png"
           form={false}
           counter={true}
