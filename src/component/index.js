@@ -10,5 +10,6 @@ import MRContent2 from "./MRContent2/MRContent2"
 import MRCards from "./MRCards/MRCards"
 import MRLibarySphere from './MRLibrarySphere/MRLibrarySphere'
 import MRTable from './MRTable/MRTable'
+import MRServices from "./MRServices/MRServices"
 
-export { MRHero, MRCTAGroup, MRCTA, MRHeroForm, MRHeroCounter, MRContact, MRQuestioners, MRContent1, MRContent2, MRTable, MRLibarySphere, MRCards }
+export { MRHero, MRCTAGroup, MRCTA, MRHeroForm, MRHeroCounter, MRContact, MRQuestioners, MRContent1, MRContent2, MRTable, MRLibarySphere, MRCards, MRServices }
