@@ -1,11 +1,10 @@
 import Head from 'next/head'
 import React from 'react'
-import { MRCards, MRContact, MRHero, MRLibarySphere, MRServices, MRTable } from '@/component'
+import { MRCards, MRContact, MRHero, MRServices, MRTable } from '@/component'
 import Enlistedlogo from '@/fa-component/Enlistedlogo'
 import CTA from '../component/cta3';
 import BTM from '../component/bottomLogos';
 import SwiperComponents from '../component/SwiperComponent'
-
 import Profitable from 'media/ahsan/profit.png'
 import Affordable from 'media/ahsan/affordable.png'
 import Professional from 'media/ahsan/professional.png'
@@ -49,13 +48,47 @@ const MRCardData = [
             }
         ]
     }]
+const MRLibarySphereData = [
+    {
+        title: 'Profitable <br/> Content',
+        icon: Profitable
+    },
+    {
+        title: 'Affordable <br/> Pricing',
+        icon: Affordable
+    },
+    {
+        title: 'Professional <br/> Excellence',
+        icon: Professional,
+    },
+    {
+        title: 'Qualified <br/> Experts',
+        icon: Qualified,
+    },
+    {
+        title: 'Secure <br/> Ownership',
+        imagePath: Profitable,
+    },
+    {
+        title: 'Editing & <br/> Proofreading',
+        imagePath: Affordable
+    },
+    {
+        title: 'Secure <br/> Ownership',
+        imagePath: Qualified
+    },
+    {
+        title: 'Editing & <br/> Proofreading',
+        imagePath: Qualified
+    }
+]
 
-const AudioBook = () => {
+const videoTrailer = () => {
     return (
         <>
             <main>
                 <Head>
-                    <title>Audio Book Services | Best Selling Publisher</title>
+                    <title>Video Trailer Services | Best Selling Publisher</title>
                     <meta name="description" content="" />
                     <meta property="og:locale" content="en_US" />
                     <meta property="og:type" content="website" />
@@ -66,12 +99,12 @@ const AudioBook = () => {
                     logos="images/banner/img2.png"
                     counter={true}
                     classes='!py-[80px] bg-[#fefefe]'
-                    beforeImg="mr-md:before:bg-[url('../../public/ahsan/medium-shot-woman-with-headphones.png')]"
+                    beforeImg="mr-md:before:bg-[url('../../public/ahsan/young-woman-reading-book-home.png')]"
                 />
-                <Enlistedlogo /> 
+                <Enlistedlogo />
                 <MRServices
-                    title="Skyrocket Your Sales With Our Marketing Services"
-                    desc="Experience a surge in sales like never before with our cutting-edge marketing services. Our strategic approach and innovative techniques will elevate your brand, captivate your audience, and drive unprecedented growth in your sales."
+                 title="Skyrocket Your Sales With Our Marketing Services"
+                 desc="Experience a surge in sales like never before with our cutting-edge marketing services. Our strategic approach and innovative techniques will elevate your brand, captivate your audience, and drive unprecedented growth in your sales."
                 />
                 <MRCards
                     title="Here Writers Come To Get Their Books <br class'hidden mr-lg:block'/> Published Be A Part Of The Literary Sphere!"
@@ -97,4 +130,4 @@ const AudioBook = () => {
     )
 }
 
-export default AudioBook
+export default videoTrailer

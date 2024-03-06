@@ -27,7 +27,7 @@ const MRCards = ({
                     {variant == "steps" && <div className={`grid ${gridsClasses} gap-x-4 gap-y-5`}>
                         {
                             data && data?.map(({ content, cta, classes, stepText, indexing }) => (
-                                content?.map(({ title, desc, border, padding, minHeight, textColor }, i) => (
+                                content?.map(({ title, desc, border, padding,image, minHeight, textColor }, i) => (
                                     <div className={`${classes} cursor-pointer`} key={i}>
                                         {stepText && indexing && (<span className={`mr-lg:text-[20px] text-[20px] block leading-tight font-semibold font-sans text-[#40BEE2] group-hover:text-white my-[16px]`}>
                                             {stepText} 0{i + 1}
@@ -36,6 +36,7 @@ const MRCards = ({
                                             0{i + 1}
                                         </div>)}
                                         <div >
+                                            {image && (<Image src={image} alt='icon' />)}
                                             {title && (<h3 className={`text-[25px] block leading-tight ${textColor} ${border} ${padding} font-semibold font-sans mt-[15px] mb-[10px]`}>
                                                 {title}
                                             </h3>)}

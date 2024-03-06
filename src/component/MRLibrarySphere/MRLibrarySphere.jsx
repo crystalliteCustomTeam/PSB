@@ -73,12 +73,16 @@ const LibrarySphere = ({
                             {title && (<h2 className="text-[26px] mr-md:text-[30px] mr-lg:text-[40px] block leading-tight font-bold font-sans mb-2" dangerouslySetInnerHTML={{ __html: title }} />)}
                             {desc && (<p className="text-[14px] mr-lg:text-[16px] mr-lg:w-[85%] mx-auto block leading-[26px] font-normal font-sans" dangerouslySetInnerHTML={{ __html: desc }} />)}
                         </div>
-                        <div className={`grid  ${isLargeScreen ? '' : 'hidden'} m-auto ${GridClasses} gap-3 mt-12 items-stretch justify-stretch mr-xs:grid-cols-1`}>
+                        <div className={`grid  ${isLargeScreen ? '' : 'hidden'} m-auto ${GridClasses} gap-5 mt-12 items-stretch justify-stretch mr-xs:grid-cols-1`}>
                             {data?.map((e, i) => (
                                 <div key={i} className="">
-                                    <div className={`hover:shadow-lg hover:shadow-[#707070] hover:scale-95  hover:bg-[#00c0e4] duration-300 hover:text-white box text-center bg-[#fff] py-12 items-center justify-center m-auto rounded-lg ${CardClasses}`} >
-                                        <Image quality={95} width={50} height={50} className='m-auto mb-5' src={e.imagePath} alt={e.alt} />
+                                    <div className={`hover:shadow-lg hover:shadow-[#707070]  hover:bg-[#000] duration-300 hover:text-white box text-center bg-[#fff] p-1 items-center justify-center m-auto rounded-lg shadow-[#707070] shadow-lg  ${CardClasses}`} >
+                                        <Image quality={95} className='m-auto mb-5' src={e.imagePath} alt={e.alt} />
                                         <h4 className={`text-xl font-semibold mx-auto`} dangerouslySetInnerHTML={{ __html: e.title }} />
+                                        <p
+                                            className={`text-base mb-5`}
+                                            dangerouslySetInnerHTML={{ __html: e.desc }} />
+                                            
                                     </div>
                                 </div>
                             ))}
@@ -88,9 +92,12 @@ const LibrarySphere = ({
                             <Slider {...settings}>
                                 {data?.map((e, i) => (
                                     <div key={i} className="">
-                                        <div className={`hover:shadow-lg hover:shadow-[#707070] hover:scale-95  hover:bg-[#00c0e4] duration-300 hover:text-white box text-center bg-[#fff] py-10 items-center justify-center m-auto rounded-lg ${CardClasses}`} >
+                                        <div className={`hover:shadow-lg hover:shadow-[#707070]  hover:bg-[#000] duration-300 hover:text-white box text-center bg-[#fff] py-1 items-center justify-center m-auto rounded-lg shadow-[#707070] shadow-lg${CardClasses}`} >
                                             <Image quality={95} width={50} height={50} className='m-auto mb-5' src={e.imagePath} alt={e.alt} />
                                             <h4 className={`text-xl font-semibold mx-auto`} dangerouslySetInnerHTML={{ __html: e.title }} />
+                                            <p
+                                                className={`text-base mb-3`}
+                                                dangerouslySetInnerHTML={{ __html: e.desc }} />
                                         </div>
                                     </div>
                                 ))}
