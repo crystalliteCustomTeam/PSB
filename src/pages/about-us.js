@@ -28,22 +28,22 @@ const about = () => {
         {
           textColor: "text-[#40BEE2] group-hover:text-white",
           title: "Submit Your Manuscript",
-          desc: "After making up your mind about working with us, you place your order.",
+          desc: "Start your publishing process by sharing your manuscript with us.",
         },
         {
           textColor: "text-[#40BEE2] group-hover:text-white",
           title: "Edit & Design",
-          desc: "We refine your text and design your book's cover.",
+          desc: "We add our artistic expertise while retaining your unique voice.",
         },
         {
           textColor: "text-[#40BEE2] group-hover:text-white",
           title: "Review & Approve",
-          desc: "You review our work and give the green light.",
+          desc: "We will NEVER go above your head! Your approval matters, and we want to ensure our creative contributions align with your vision.",
         },
         {
           textColor: "text-[#40BEE2] group-hover:text-white",
           title: "Publish & Distribute",
-          desc: "Your book is published and distributed on schedule.",
+          desc: "Witness your book being published and reaching readers across the globe.",
         },
       ]
     }]
@@ -82,7 +82,11 @@ const about = () => {
           `}
         />
 
-        <CTA />
+        <CTA 
+        subtitle="Your Project Deserves the Spotlight."
+        title="Let’s Get Started!" 
+        desc="Do you need a hand with book publishing? <span class='h-3 block'></span> We're all ears and ready to help whenever you need us during our operational hours. We're here to chat about anything on your mind — your questions and needs matter most to us."
+        />
         <BTM />
         <MRCards
         title={`Dreams Don’t Turn to Dust with <br class="mr-xl:block hidden" /> Best Selling Publisher `}

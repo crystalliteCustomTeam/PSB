@@ -40,9 +40,7 @@ const MRCards = ({
                                             {title && (<h3 className={`text-[25px] block leading-tight ${textColor} ${border} ${padding} font-semibold font-sans mt-[15px] mb-[10px]`}>
                                                 {title}
                                             </h3>)}
-                                            {desc && (<p className={`text-[14px] ${minHeight} mr-2xl:text-[15px] block leading-normal font-normal font-sans`}>
-                                                {desc}
-                                            </p>)}
+                                            {desc && (<p className={`text-[14px] ${minHeight} mr-2xl:text-[15px] block leading-normal font-normal font-sans`} dangerouslySetInnerHTML={{__html : desc}} />)}
                                             {
                                                 cta && <MRCTA
                                                     text="Connect with Us!"
