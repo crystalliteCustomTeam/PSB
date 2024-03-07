@@ -141,13 +141,15 @@ const TestimonialsSlider = () => {
                         width={80}
                         height={80}
                         className="mb-2"
+                        loading="lazy"
+                        priority
                       />
                       <Image quality={95}
                         src={testimonial.avatar}
                         alt={testimonial.name}
                         width={80}
                         height={80}
-                      />
+                      priority/>
                       <div className="header">
                         <h1 className="name">{testimonial.name}</h1>
                       </div>
