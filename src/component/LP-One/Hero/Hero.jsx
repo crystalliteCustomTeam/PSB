@@ -47,7 +47,7 @@ const Hero = () => {
                             {
                                 ["Personalized Support", "Quality Publishing", "Wide Distribution", "Affordable Pricing", "Satisfaction Guaranteed"].map((e, i) => (
                                     <p key={i} className="text-[16px] font-sans font-normal leading-[30px] mb-4 text-justify lg:text-left flex gap-x-3 items-center text-white">
-                                        <Image src="/lp-one-check-hero-icon.png" width={16} height={16} alt="icon" loading='lazy' priority/>
+                                        <Image src="/lp-one-check-hero-icon.png" width={16} height={16} alt="icon"  priority/>
                                         {e}
                                     </p>
                                 ))
@@ -68,13 +68,13 @@ const Hero = () => {
                                     border="border-white hover:!bg-primary-100 hover:border-transparent hover:text-white rounded-sm"
                                 />
                             </div>
-                            <Image src="/lp-one-hero-1.png" width={610} height={100} className="block mt-6 max-w-[80%]" loading='lazy' priority/>
-                            <Image src="/lp-one-hero-2.png" width={812} height={100} className="block mt-6" loading='lazy' priority/>
-                            <Image src="/lp-one-hero-3.png" width={812} height={100} className="block mt-6" loading='lazy' priority/>
+                            <Image src="/lp-one-hero-1.png" width={610} height={100} className="block mt-6 max-w-[80%]"  priority/>
+                            <Image src="/lp-one-hero-2.png" width={812} height={100} className="block mt-6"  priority/>
+                            <Image src="/lp-one-hero-3.png" width={812} height={100} className="block mt-6"  priority/>
                         </div>
                         <div className="mr-md:col-span-5">
                             <div className="backdrop-blur-md bg-white/30 w-[85%] m-auto px-3 mr-md:px-5 py-10 rounded-md relative mt-10 mr-lg:mt-0">
-                                <Image src="/lp-one-hero-form-badge.png" width={100} height={132} className="absolute top-[-50px] right-[-20px]" loading='lazy' priority/>
+                                <Image src="/lp-one-hero-form-badge.png" width={100} height={132} className="absolute top-[-50px] right-[-20px]"  priority/>
                                 <h2 className="text-[20px] mr-lg:text-[30px] font-sans font-bold text-white leading-tight mb-5">
                                     Request A Free Quote
                                 </h2>

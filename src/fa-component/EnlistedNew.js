@@ -45,7 +45,7 @@ const Enlisted = ({
                         <Col xxl={10} lg={8} sm={0}>
                             <div className={`${styles.enlisContnt} text-center mt-3`}>
                                 <div className={styles.enlisImg}>
-                                    <Image quality={100} loading="lazy" className='img-fluid'
+                                    <Image quality={100}  className='img-fluid'
                                         src={before}
                                         alt='Best_Publisher'
                                     />
@@ -58,7 +58,7 @@ const Enlisted = ({
                                             <p className={`${styles.para4} text-[30px] font-primary txt-secondary mb-5`}>4.</p>
                                             <p className={`${styles.para5} text-[30px]  font-primary txt-secondary`}>5.</p>
                                         </div>
-                                        <Image quality={100} loading="lazy" className='img-fluid'
+                                        <Image quality={100}  className='img-fluid'
                                             src={mid}
                                             alt='Best_Publisher'
                                         />
@@ -72,7 +72,7 @@ const Enlisted = ({
                                         </div>
                                     </div>
 
-                                    <Image quality={100} loading="lazy" className='img-fluid'
+                                    <Image quality={100}  className='img-fluid'
                                         src={after}
                                         alt='Best_Publisher'
                                     />

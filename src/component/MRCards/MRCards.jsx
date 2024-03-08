@@ -36,7 +36,7 @@ const MRCards = ({
                                             0{i + 1}
                                         </div>)}
                                         <div >
-                                            {image && (<Image src={image} alt='icon' loading="lazy" priority/>)}
+                                            {image && (<Image src={image} alt='icon'  priority/>)}
                                             {title && (<h3 className={`text-[25px] block leading-tight ${textColor} ${border} ${padding} font-semibold font-sans mt-[15px] mb-[10px]`}>
                                                 {title}
                                             </h3>)}

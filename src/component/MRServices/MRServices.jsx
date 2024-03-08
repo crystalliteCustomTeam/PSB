@@ -33,7 +33,7 @@ const MRServices = ({
                     <div className='grid mr-md:grid-cols-12 grid-cols-1 mr-md:gap-2 gap-y-3 mr-xl:w-[90%] w-[90%] text-white font-bold m-auto relative mt-5'>
                         <div className='mr-md:col-span-3 '>
                             <div className='relative mr-md:mb-1 mb-3'>
-                                <Image src={author} quality={100} width={500} height={500} alt='author website' className='' loading='lazy' priority/>
+                                <Image src={author} quality={100} width={500} height={500} alt='author website' className=''  priority/>
                                 <div className='absolute bottom-0 p-5 mr-lg:text-[22px] text-[14px]  '>
                                     <Link href="javascript:;" className='hover:text-[#40BEE2]'><h3>Author Website<br />
                                         Design & Development
@@ -45,7 +45,7 @@ const MRServices = ({
                                 </div>
                             </div>
                             <div className='relative'>
-                                <Image src={Seo} quality={100} alt='Search Engine Optimization' loading='lazy' priority/>
+                                <Image src={Seo} quality={100} alt='Search Engine Optimization'  priority/>
                                 <div className='absolute bottom-0 p-5 mr-lg:text-[22px] text-[14px]'>
                                     <Link href="javascript:;" className='hover:text-[#40BEE2]'>
                                         <h3>Search Engine<br />Optimization
@@ -57,7 +57,7 @@ const MRServices = ({
                         </div>
                         <div className='mr-md:col-span-6'>
                             <div className='relative'>
-                                <Image src={customer} quality={95} alt='Online Independent' loading='lazy' priority/>
+                                <Image src={customer} quality={95} alt='Online Independent'  priority/>
                                 <div className='absolute bottom-0 p-5 mr-lg:text-[22px] text-[14px]'>
                                     <Link href="javascript:;" className='hover:text-[#40BEE2]'>
                                         <h3>Online Independent<br />
@@ -70,7 +70,7 @@ const MRServices = ({
                         </div>
                         <div className='mr-md:col-span-3'>
                             <div className='relative mr-md:mb-1 mb-3'>
-                                <Image src={Books} quality={100} alt='author website' loading='lazy' priority/>
+                                <Image src={Books} quality={100} alt='author website'  priority/>
                                 <div className='absolute bottom-0 p-5 mr-lg:text-[22px] text-[14px]'>
                                     <Link href="javascript:;" className='hover:text-[#40BEE2]'>
                                         <h3>Book<br />
@@ -82,7 +82,7 @@ const MRServices = ({
                                 </div>
                             </div>
                             <div className='relative'>
-                                <Image src={editorial} quality={100} alt='EditorialCritiques' loading='lazy' priority/>
+                                <Image src={editorial} quality={100} alt='EditorialCritiques'  priority/>
                                 <div className='absolute bottom-0 p-5 mr-lg:text-[22px] text-[14px]'>
                                     <Link href="javascript:;" className='hover:text-[#40BEE2]'>
                                         <h3>Editorial<br />
@@ -95,7 +95,7 @@ const MRServices = ({
                         </div>
                         <div className='mr-md:col-span-9'>
                             <div className='relative'>
-                                <Image src={SocialMedia} quality={95} width={1000} height={400} alt='Social Media Marketing' loading='lazy' priority/>
+                                <Image src={SocialMedia} quality={95} width={1000} height={400} alt='Social Media Marketing'  priority/>
                                 <div className='absolute bottom-0 p-5 mr-lg:text-[22px] text-[14px]'>
                                     <Link href="javascript:;" className='hover:text-[#40BEE2]'>
                                         <h3>Social Media <br />
@@ -108,8 +108,8 @@ const MRServices = ({
                         </div>
                         <div className='mr-md:col-span-3'>
                             <div className='relative '>
-                                <Image src={VideoReview} quality={100} alt='book trailer' className='mr-md:block hidden' loading='lazy' priority/>
-                                <Image src={VideoReview1} quality={100} alt-="book trailer" className='mr-md:hidden block' loading='lazy' priority/>
+                                <Image src={VideoReview} quality={100} alt='book trailer' className='mr-md:block hidden'  priority/>
+                                <Image src={VideoReview1} quality={100} alt-="book trailer" className='mr-md:hidden block'  priority/>
                                 <div className='absolute bottom-0 p-5 mr-lg:text-[22px] text-[14px]'>
                                     <Link href="javascript:;" className='hover:text-[#40BEE2]'>
                                         <h3>Book<br />
@@ -122,7 +122,7 @@ const MRServices = ({
                         </div>
                         <div className='mr-md:col-span-6'>
                             <div className='relative'>
-                                <Image src={BlogsBooks} quality={95} alt='Blogs For Book Promotion' loading='lazy' priority/>
+                                <Image src={BlogsBooks} quality={95} alt='Blogs For Book Promotion'  priority/>
                                 <div className='absolute bottom-0 p-5 mr-lg:text-[22px] text-[14px]'>
                                     <Link href="javascript:;" className='hover:text-[#40BEE2]'>
                                         <h3>Blogs For <br />
@@ -136,7 +136,7 @@ const MRServices = ({
                         </div>
                         <div className='mr-md:col-span-6'>
                             <div className='relative'>
-                                <Image src={PressRelease} quality={95} alt='Press Releases' loading='lazy' priority/>
+                                <Image src={PressRelease} quality={95} alt='Press Releases'  priority/>
                                 <div className='absolute bottom-0 p-5 mr-lg:text-[22px] text-[20px]'>
                                     <Link href="javascript:;" className='hover:text-[#40BEE2]'>
                                         <h3>Press <br />

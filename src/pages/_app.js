@@ -7,6 +7,7 @@ import Footer1 from "@/component/Footer1"
 import { SfProDisplay, primary } from "@/configs/fonts"
 import Script from "next/script"
 import { useRouter } from "next/router"
+import Loader from "@/component/Loader/Loader"
 
 export default function App({ Component, pageProps }) {
   const [loadScript, setLoadScript] = useState(false);
@@ -65,7 +66,7 @@ export default function App({ Component, pageProps }) {
       </Head>
       <main className={`${primary.className} ${SfProDisplay.variable}`}>
         {router.pathname == "/lp-one" ? "" : <Headernew />}
-        <Component {...pageProps} />
+        {loadScript ? <Component {...pageProps} /> : <Loader />}
         <Footer1 />
       </main>
       {loadScript && (

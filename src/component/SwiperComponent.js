@@ -141,7 +141,7 @@ const TestimonialsSlider = () => {
                         width={80}
                         height={80}
                         className="mb-2"
-                        loading="lazy"
+                        
                         priority
                       />
                       <Image quality={95}

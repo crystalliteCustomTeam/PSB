@@ -61,7 +61,7 @@ const Broader = ({
                         <Col lg={6}>
 
                             <div className={styles.broaderImg}>
-                                <Image quality={100} loading="lazy" width={800} height={800} className='img-fluid'
+                                <Image quality={100}  width={800} height={800} className='img-fluid'
                                     src={broader}
                                     alt='Best_Publisher'
                                 />

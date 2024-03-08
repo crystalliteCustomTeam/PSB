@@ -82,7 +82,7 @@ const Tradition = ({
                                 <h2 className={`mr-lg:text-[45px] text-[30px] font-bold font-primary text-black mb-3 ${classes}`} dangerouslySetInnerHTML={{ __html: title }} />
                                 <p className={`text-[15px] font-secondary text-black ${classes}`}>{desc}</p>
                                 <div className='m-auto justify-content-center'>
-                                    <Image quality={100} loading="lazy" className='img-fluid justify-content-center'
+                                    <Image quality={100}  className='img-fluid justify-content-center'
                                         src={before}
                                         alt='Best_Publisher'
                                     />
@@ -96,43 +96,43 @@ const Tradition = ({
                             <div className='trade'>
                                 <Slider {...traditionslider}>
                                     <div>
-                                        <Image quality={80} loading="lazy" className='hoverCss img-fluid'
+                                        <Image quality={80}  className='hoverCss img-fluid'
                                             src={mock1}
                                             alt='Best_Publisher'
                                         />
                                     </div>
                                     <div>
-                                        <Image quality={80} loading="lazy" className='hoverCss img-fluid'
+                                        <Image quality={80}  className='hoverCss img-fluid'
                                             src={mock2}
                                             alt='Best_Publisher'
                                         />
                                     </div>
                                     <div>
-                                        <Image quality={80} loading="lazy" className='hoverCss img-fluid'
+                                        <Image quality={80}  className='hoverCss img-fluid'
                                             src={mock3}
                                             alt='Best_Publisher'
                                         />
                                     </div>
                                     <div>
-                                        <Image quality={80} loading="lazy" className='hoverCss img-fluid'
+                                        <Image quality={80}  className='hoverCss img-fluid'
                                             src={mock4}
                                             alt='Best_Publisher'
                                         />
                                     </div>
                                     <div>
-                                        <Image quality={80} loading="lazy" className='hoverCss img-fluid'
+                                        <Image quality={80}  className='hoverCss img-fluid'
                                             src={mock5}
                                             alt='Best_Publisher'
                                         />
                                     </div>
                                     <div>
-                                        <Image quality={80} loading="lazy" className=' hoverCss img-fluid'
+                                        <Image quality={80}  className=' hoverCss img-fluid'
                                             src={mock6}
                                             alt='Best_Publisher'
                                         />
                                     </div>
                                     <div>
-                                        <Image quality={80} loading="lazy" className=' hoverCss img-fluid'
+                                        <Image quality={80}  className=' hoverCss img-fluid'
                                             src={mock7}
                                             alt='Best_Publisher'
                                         />
