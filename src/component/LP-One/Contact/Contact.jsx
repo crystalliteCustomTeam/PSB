@@ -59,7 +59,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <label className="block mb-3 font-bold text-[15px] text-black leading-none">Phone<sup>*</sup></label>
-                                    <input type="tel" minLength="10" maxLength="13" pattern="[0-9]*" name="phone" placeholder="Phone" className="placeholder:text-[#9E9E9E] outline-none text-black font-normal text-[15px] leading-[25px] block w-full h-[40px] px-2 border-b-[1px] border-[#9E9E9E]" />
+                                    <input type="tel" minLength="10" maxLength="13" pattern="[0-9]*" name="phone" placeholder="Phone" className="placeholder:text-[#9E9E9E] outline-none text-black font-normal text-[15px] leading-[25px] block w-full h-[40px] px-2 border-b-[1px] border-[#9E9E9E]" required/>
                                 </div>
                                 <div>
                                     <label className="block mb-3 font-bold text-[15px] text-black leading-none">Comments</label>

@@ -86,7 +86,7 @@ const Hero = () => {
                                         <input type="email" required name="email" placeholder="Email Address" className="placeholder:text-white rounded-md outline-none text-white bg-transparent font-normal text-[15px] leading-[25px] block w-full  h-[40px] px-2 border-2 border-white" />
                                     </div>
                                     <div>
-                                        <input type="tel" minLength="10" maxLength="13" pattern="[0-9]*" name="phone" placeholder="Phone" className="placeholder:text-white rounded-md outline-none text-white bg-transparent font-normal text-[15px] leading-[25px] block w-full  h-[40px] px-2 border-2 border-white" />
+                                        <input type="tel" minLength="10" maxLength="13" pattern="[0-9]*" name="phone" placeholder="Phone" className="placeholder:text-white rounded-md outline-none text-white bg-transparent font-normal text-[15px] leading-[25px] block w-full  h-[40px] px-2 border-2 border-white" required/>
                                     </div>
                                     <div>
                                         <textarea id="message" name="comments" placeholder="Details..." className="placeholder:text-white rounded-md outline-none text-white bg-transparent font-normal text-[15px] leading-[25px] block w-full  h-[80px] p-2 border-2 border-white resize-none" ></textarea>
