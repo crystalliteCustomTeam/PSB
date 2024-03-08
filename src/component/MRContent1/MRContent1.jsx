@@ -89,7 +89,7 @@ const MRContent1 = ({
                                     )}
                                 </div>
                                 <div>
-                                    {img2 && <Image src={img2} alt="img" width={900} height={100} className="!w-auto mx-auto" />}
+                                    {img2 && <Image src={img2} alt="img" width={900} height={100} className="!w-auto mx-auto"  priority/>}
                                 </div>
                             </div>
                         </div>
@@ -150,7 +150,7 @@ const MRContent1 = ({
                             />
                         )}
                         <div className={`${img1 ? "basis-full mr-lg:basis-1/2" : ""}`}>
-                            {img1 && <Image src={img1} alt="img" width={900} height={100} className="!w-auto mx-auto" />}
+                            {img1 && <Image src={img1} alt="img" width={900} height={100} className="!w-auto mx-auto"  priority/>}
                         </div>
                     </div>
                 </div>

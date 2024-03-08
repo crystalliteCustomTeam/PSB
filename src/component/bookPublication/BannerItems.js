@@ -13,7 +13,7 @@ const BannerItems = () => {
             <div className={`${styles.count} mt-3 mainclass`}>
                 <div className={`grid grid-cols-3 ${styles.counteRow}`}>
                     <div className='flex items-center gap-3'>
-                        <Image quality={100} loading="lazy" className='img-fluid'
+                        <Image quality={100}  className='img-fluid'
                             src={alignicon}
                             alt='Best_Publisher'
                         />
@@ -23,7 +23,7 @@ const BannerItems = () => {
                         </div>
                     </div>
                     <div className='flex items-center gap-3'>
-                        <Image quality={100} loading="lazy" className='img-fluid'
+                        <Image quality={100}  className='img-fluid'
                             src={authoricon}
                             alt='Best_Publisher'
                         />
@@ -33,7 +33,7 @@ const BannerItems = () => {
                         </div>
                     </div>
                     <div className='flex items-center gap-3'>
-                        <Image quality={100} loading="lazy" className='img-fluid'
+                        <Image quality={100}  className='img-fluid'
                             src={cupicon}
                             alt='Best_Publisher'
                         />

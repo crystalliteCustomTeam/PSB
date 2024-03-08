@@ -26,7 +26,7 @@ const Header = () => {
                 <Navbar expand="lg">
                     <Container fluid className='px-md-5'>
                         <Link href="/">
-                            <Image quality={100} loading="lazy" className={styles.logo}
+                            <Image quality={100}  className={styles.logo}
                                 src={logo}
                                 alt='Best_Publisher' />
                         </Link>

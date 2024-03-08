@@ -50,7 +50,7 @@ const MRHeroForm = ({classes = ""}) => {
                 </div>
                 <div>
                     {/* <label>Phone<sup>*</sup></label> */}
-                    <input type="tel" minLength="10" maxLength="13" pattern="[0-9]*"  name="phone" placeholder="Phone"  />
+                    <input type="tel" minLength="10" maxLength="13" pattern="[0-9]*"  name="phone" placeholder="Phone" required/>
                 </div>
                 <div>
                     {/* <label>Comments</label> */}

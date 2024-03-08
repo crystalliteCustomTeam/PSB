@@ -148,7 +148,7 @@ const Banner = (props) => {
                                         <Row className={styles.counteRow}>
                                             <Col className='colo'>
                                                 <div className='d-flex align-items-center gap-3'>
-                                                    <Image quality={100} loading="lazy" className='img-fluid'
+                                                    <Image quality={100}  className='img-fluid'
                                                         src={alignicon}
                                                         alt='Best_Publisher'
                                                     />
@@ -160,7 +160,7 @@ const Banner = (props) => {
                                             </Col>
                                             <Col className='colo'>
                                                 <div className='d-flex align-items-center gap-3'>
-                                                    <Image quality={100} loading="lazy" className='img-fluid'
+                                                    <Image quality={100}  className='img-fluid'
                                                         src={authoricon}
                                                         alt='Best_Publisher'
                                                     />
@@ -172,7 +172,7 @@ const Banner = (props) => {
                                             </Col>
                                             <Col className='colo'>
                                                 <div className='d-flex align-items-center gap-3'>
-                                                    <Image quality={100} loading="lazy" className='img-fluid'
+                                                    <Image quality={100}  className='img-fluid'
                                                         src={cupicon}
                                                         alt='Best_Publisher'
                                                     />
@@ -199,37 +199,37 @@ const Banner = (props) => {
 {/* 
                                 <Slider {...bannerslider} className='mt-4 gloslider'>
                                     <div>
-                                        <Image quality={100} loading="lazy" className='img-fluid'
+                                        <Image quality={100}  className='img-fluid'
                                             src={banslider1}
                                             alt='Best_Publisher'
                                         />
                                     </div>
                                     <div>
-                                        <Image quality={100} loading="lazy" className='img-fluid'
+                                        <Image quality={100}  className='img-fluid'
                                             src={banslider2}
                                             alt='Best_Publisher'
                                         />
                                     </div>
                                     <div>
-                                        <Image quality={100} loading="lazy" className='img-fluid'
+                                        <Image quality={100}  className='img-fluid'
                                             src={banslider3}
                                             alt='Best_Publisher'
                                         />
                                     </div>
                                     <div>
-                                        <Image quality={100} loading="lazy" className='img-fluid'
+                                        <Image quality={100}  className='img-fluid'
                                             src={banslider4}
                                             alt='Best_Publisher'
                                         />
                                     </div>
                                     <div>
-                                        <Image quality={100} loading="lazy" className='img-fluid'
+                                        <Image quality={100}  className='img-fluid'
                                             src={banslider1}
                                             alt='Best_Publisher'
                                         />
                                     </div>
                                     <div>
-                                        <Image quality={100} loading="lazy" className='img-fluid'
+                                        <Image quality={100}  className='img-fluid'
                                             src={banslider2}
                                             alt='Best_Publisher'
                                         />

@@ -33,6 +33,7 @@ const MRContact = ({
                                         qualit={95}
                                         width={100}
                                         height={50}
+                                        priority
                                     />
                                     <div>
                                         <h4 className="text-[16px] mr-md:text-[20px] font-sans font-semibold text-white mr-lg:!text-black leading-tight mb-1">Your Book Deserves To Be Written!</h4>

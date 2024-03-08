@@ -34,7 +34,7 @@ const MRContent2 = ({
                         </div>
                         <div className='basis-[50%]'>
                             <div className='mr-lg:mt-0 mt-4 mr-md:block hidden'>
-                                <Image src={sideImage} alt='Icons' className='block mx-auto' />
+                                <Image src={sideImage} alt='Icons' className='block mx-auto'  priority/>
                             </div>
                         </div>
                     </div>

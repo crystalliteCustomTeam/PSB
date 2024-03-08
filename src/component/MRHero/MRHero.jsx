@@ -33,10 +33,10 @@ const MRHero = ({
                                     />
                             }
                             {counter && <MRHeroCounter />}
-                            {logos && <Image src={logos} className="!mt-4" alt="bestsellingpublisher" />}
+                            {logos && <Image src={logos} className="!mt-4" alt="bestsellingpublisher"  />}
                         </div>
                         {containImg && <div className="mr-md:col-span-5 mr-lg:col-span-6">
-                            <Image src={containImg} className="block m-auto" alt="bestsellingpublisher" />
+                            <Image src={containImg}  className="block m-auto" alt="bestsellingpublisher" priority/>
                         </div>}
                         {(form || beforeImg) && <div className={`z-10 mr-md:col-span-5 mr-xs:mt-5 mr-sm:mt-5 mr-lg:col-span-6 bg-no-repeat ${beforeImg} before:bg-no-repeat before:absolute before:bg-cover before:w-[43%] mr-lg:before:w-[45%] mr-xl:before:w-[48%] before:h-full -z-10 before:right-0 before:bottom-0 before:top-0 before:opacity-25`}>
                             {form && <MRHeroForm />}
