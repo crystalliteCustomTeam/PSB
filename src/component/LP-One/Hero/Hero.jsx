@@ -40,7 +40,7 @@ const Hero = () => {
     return (
         <section>
             <div className="relative py-[50px] z-10">
-                <Image src={bg} className="absolute top-0 left-0 right-0 bottom-0 w-full h-full -z-10" />
+                <Image src={bg} className="absolute top-0 left-0 right-0 bottom-0 w-full h-full -z-10" priority/>
                 <div className="mr-container">
                     <div className="grid grid-cols-1 mr-md:grid-cols-12 items-center gap-y-5 mr-md:gap-y-0 mr-md:gap-x-4">
                         <div className="mr-md:col-span-7">
