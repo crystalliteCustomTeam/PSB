@@ -31,6 +31,15 @@ const BookSliderData = [
     },
     {
         imagePath: Slider2
+    },
+    {
+        imagePath: Slider3
+    },
+    {
+        imagePath: Slider4
+    },
+    {
+        imagePath: Slider5
     }
 ]
 
