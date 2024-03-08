@@ -126,44 +126,44 @@ const YourComponent = ({
               <div className="gallery z-0 overflow-hidden absolute lg:pr-20 sm:hidden" >
                 <div className="col">
                   <div className="image">
-                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup4} loading='lazy' priority/>
+                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup4}  priority/>
                   </div>
                   <div className="image">
-                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup2} loading='lazy' priority/>
+                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup2}  priority/>
                   </div>
                   <div className="image">
-                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup4} loading='lazy' priority/>
+                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup4}  priority/>
                   </div>
                   <div className="image">
-                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup1} loading='lazy' priority/>
-                  </div>
-                </div>
-                <div className="col">
-                  <div className="image">
-                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup5} loading='lazy' priority/>
-                  </div>
-                  <div className="image">
-                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup6} loading='lazy' priority/>
-                  </div>
-                  <div className="image">
-                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup7} loading='lazy' priority/>
-                  </div>
-                  <div className="image">
-                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup8} loading='lazy' priority/>
+                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup1}  priority/>
                   </div>
                 </div>
                 <div className="col">
                   <div className="image">
-                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup9} loading='lazy' priority/>
+                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup5}  priority/>
                   </div>
                   <div className="image">
-                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup10} loading='lazy' priority/>
+                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup6}  priority/>
                   </div>
                   <div className="image">
-                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup11} loading='lazy' priority/>
+                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup7}  priority/>
                   </div>
                   <div className="image">
-                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup12} loading='lazy' priority/>
+                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup8}  priority/>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="image">
+                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup9}  priority/>
+                  </div>
+                  <div className="image">
+                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup10}  priority/>
+                  </div>
+                  <div className="image">
+                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup11}  priority/>
+                  </div>
+                  <div className="image">
+                    <Image quality={95} width={200} height={250} alt="Call of action" className='' src={Mockup12}  priority/>
                   </div>
                 </div>
               </div>

@@ -53,7 +53,7 @@ const Climax = (props) => {
                         <Col lg={6}>
                            
                                 <div className={styles.climaxImg}>
-                                    <Image quality={100}   loading="lazy" className='img-fluid w-100'
+                                    <Image quality={100}    className='img-fluid w-100'
                                         src={props.imagecli}
                                         alt='Best_Publisher'
                                     />

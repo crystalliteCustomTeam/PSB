@@ -33,7 +33,7 @@ const Broader = ({
                             <div className={styles.broaderImg}>
                                 <Image
                                     quality={100}
-                                    loading="lazy"
+                                    
                                     width={1000}
                                     height={1000}
                                     className='img-fluid m-auto'

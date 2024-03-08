@@ -30,7 +30,7 @@ const Header = () => {
             <div className="items-center justify-between gap-x-4 flex grid-cols-2 grid-rows-1">
               <div className="flex-shrink-0">
                 <Link href="/" className="text-xl font-bold text-indigo-500">
-                  <Image quality={95} src={Logo} loading='lazy' alt=" Best Selling Publisher Ghostwriting logo" width={180} height={50} priority/>
+                  <Image quality={95} src={Logo}  alt=" Best Selling Publisher Ghostwriting logo" width={180} height={50} priority/>
                 </Link>
               </div>
               <nav className="flex space-x-4 text-[16px] text-[#1d1d1f] font-medium">
@@ -69,7 +69,7 @@ const Header = () => {
                                   <Link href="/ghostwriting" className="flex justify-start align-middle items-center p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600">
 
                                     <span>
-                                      <Image quality={95} className='filter brightness-50 mr-2 block sm:hidden xs:hidden' src="/assets/images/newimg/ghostwriting.png" width={40} height={40} alt='ghost writing' loading='lazy' priority/>
+                                      <Image quality={95} className='filter brightness-50 mr-2 block sm:hidden xs:hidden' src="/assets/images/newimg/ghostwriting.png" width={40} height={40} alt='ghost writing'  priority/>
                                     </span>
                                     <span>
                                       Ghostwriting
@@ -80,7 +80,7 @@ const Header = () => {
                                   <Link
                                     href="/seo-content-writing-services"
                                     className="flex justify-start align-middle items-center p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600">                   <span>
-                                      <Image quality={95} className='filter brightness-50 mr-2 block sm:hidden xs:hidden' src="/assets/images/newimg/SEO-Writing.png" width={40} height={40} alt='SEO writing' loading='lazy' priority/>
+                                      <Image quality={95} className='filter brightness-50 mr-2 block sm:hidden xs:hidden' src="/assets/images/newimg/SEO-Writing.png" width={40} height={40} alt='SEO writing'  priority/>
                                     </span>
                                     <span>
                                       SEO Writing
@@ -92,7 +92,7 @@ const Header = () => {
                                     href="/article-writing-services"
                                     className="flex justify-start align-middle items-center p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600">
                                     <span>
-                                      <Image quality={95} className='filter brightness-50 mr-2 block sm:hidden xs:hidden' src="/assets/images/newimg/Article-Writing.png" width={40} height={40} alt='Article writing' loading='lazy' priority/>
+                                      <Image quality={95} className='filter brightness-50 mr-2 block sm:hidden xs:hidden' src="/assets/images/newimg/Article-Writing.png" width={40} height={40} alt='Article writing'  priority/>
                                     </span>
                                     <span>
                                       Article Writing
@@ -105,7 +105,7 @@ const Header = () => {
                                     href="/magazine-writing"
                                     className="flex justify-start align-middle items-center p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600">
                                     <span>
-                                      <Image quality={95} className='filter brightness-50 mr-2 block sm:hidden xs:hidden' src="/assets/images/newimg/magazine-writing.png" width={40} height={40} alt='magazine writing' loading='lazy' priority/>
+                                      <Image quality={95} className='filter brightness-50 mr-2 block sm:hidden xs:hidden' src="/assets/images/newimg/magazine-writing.png" width={40} height={40} alt='magazine writing'  priority/>
                                     </span>
                                     <span>
                                       Magazine Writing
@@ -124,7 +124,7 @@ const Header = () => {
                                     href="/web-copywriting-services"
                                     className="flex justify-start align-middle items-center p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600">
                                     <span>
-                                      <Image quality={95} className='filter brightness-50 mr-2 block sm:hidden xs:hidden' src="/assets/images/newimg/Web-Copy-Writing.png" width={40} height={40} alt='Web copy writing' loading='lazy' priority/>
+                                      <Image quality={95} className='filter brightness-50 mr-2 block sm:hidden xs:hidden' src="/assets/images/newimg/Web-Copy-Writing.png" width={40} height={40} alt='Web copy writing'  priority/>
                                     </span>
                                     <span>
                                       Web Copy Writing
@@ -137,7 +137,7 @@ const Header = () => {
                                     href="/press-release-writing-services"
                                     className="flex justify-start align-middle items-center p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600">
                                     <span>
-                                      <Image quality={95} className='filter brightness-50 mr-2 block sm:hidden xs:hidden' src="/assets/images/newimg/Press-Release.png" width={40} height={40} alt='press release' loading='lazy' priority/>
+                                      <Image quality={95} className='filter brightness-50 mr-2 block sm:hidden xs:hidden' src="/assets/images/newimg/Press-Release.png" width={40} height={40} alt='press release'  priority/>
                                     </span>
                                     <span>
                                       Press Release
@@ -150,7 +150,7 @@ const Header = () => {
                                     href="/script-writing-services"
                                     className="flex justify-start align-middle items-center p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600">
                                     <span>
-                                      <Image quality={95} className='filter brightness-50 mr-2 block sm:hidden xs:hidden' src="/assets/images/newimg/Script-Writing.png" width={40} height={40} alt='script writing' loading='lazy' priority/>
+                                      <Image quality={95} className='filter brightness-50 mr-2 block sm:hidden xs:hidden' src="/assets/images/newimg/Script-Writing.png" width={40} height={40} alt='script writing'  priority/>
                                     </span>
                                     <span>
                                       Script Writing
@@ -179,7 +179,7 @@ const Header = () => {
                   ))}
                   <li className='mr-lg:!mb-4 md:mb-3 sm:mb-3 xs:mb-3 block sm:hidden xs:hidden'>
                     <Link href="tel:800-781-9093" className={`text-[15px] transition-all ease-in-out duration-300 group xs:text-[20px] font-secondary border-2 border-[#40BEE2] bg-[#40BEE2] py-1 px-2 text-[#40BEE2] flex items-center gap-x-3 font-[500] hover:bg-transparent `}>
-                      <Image src={TelIcon} width={15} height={15} alt='Amazon Book Publishing' className='transition-all ease-in-out duration-300 brightness-0 invert group-hover:brightness-100 group-hover:invert-0' loading='lazy' priority/>
+                      <Image src={TelIcon} width={15} height={15} alt='Amazon Book Publishing' className='transition-all ease-in-out duration-300 brightness-0 invert group-hover:brightness-100 group-hover:invert-0'  priority/>
                       <span className=' text-white group-hover:!text-black'>800-781-9093</span>
                     </Link>
                   </li>

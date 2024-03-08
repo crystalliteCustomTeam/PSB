@@ -88,7 +88,7 @@ const BookSlider = ({
                         <Slider {...traditionslider}>
                             {BookSliderData?.map((e, i) => (
                                 <div>
-                                    <Image quality={100} loading="lazy" className='img-fluid m-0'
+                                    <Image quality={100}  className='img-fluid m-0'
                                         src={e.imagePath}
                                         alt='Best_Publisher'
                                     priority/>

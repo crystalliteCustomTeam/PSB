@@ -45,7 +45,7 @@ const Plans = () => {
                                 <Slider {...planslider}>
                                     <div>
                                         <div className={`${styles.plans} flex gap-2 align-items-center justify-center`}>
-                                            <Image quality={80} loading="lazy" className='img-fluid d-block !m-0'
+                                            <Image quality={80}  className='img-fluid d-block !m-0'
                                                 src={rating}
                                                 alt='Best_Publisher'
                                             />
@@ -56,7 +56,7 @@ const Plans = () => {
                                     </div>
                                     <div>
                                        <div className={`${styles.plans} flex gap-2 align-items-center justify-center`}>
-                                            <Image quality={80} loading="lazy" className='img-fluid d-block !m-0'
+                                            <Image quality={80}  className='img-fluid d-block !m-0'
                                                 src={globe}
                                                 alt='Best_Publisher'
                                             />
@@ -67,7 +67,7 @@ const Plans = () => {
                                     </div>
                                     <div>
                                        <div className={`${styles.plans} flex gap-2 align-items-center justify-center`}>
-                                            <Image quality={80} loading="lazy" className='img-fluid d-block !m-0'
+                                            <Image quality={80}  className='img-fluid d-block !m-0'
                                                 src={project}
                                                 alt='Best_Publisher'
                                             />
@@ -78,7 +78,7 @@ const Plans = () => {
                                     </div>
                                     <div>
                                        <div className={`${styles.plans} flex gap-2 align-items-center justify-center`}>
-                                            <Image quality={80} loading="lazy" className='img-fluid d-block !m-0'
+                                            <Image quality={80}  className='img-fluid d-block !m-0'
                                                 src={stamp}
                                                 alt='Best_Publisher'
                                             />

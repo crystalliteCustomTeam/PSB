@@ -24,7 +24,7 @@ const Advice = () => {
                         <Col lg={6}>
 
                             <div className={styles.adviceImg}>
-                                <Image quality={100} loading="lazy" className='img-fluid'
+                                <Image quality={100}  className='img-fluid'
                                     src={advice}
                                     alt='Best_Publisher'
 
