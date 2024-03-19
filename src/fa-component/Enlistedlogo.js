@@ -51,60 +51,60 @@ const Enlistedlogo = () => {
             <Container className='mt-4'>
                 <Row className='justify-content-center'>
                     <Col md={12}>
-                       
-                            <div className={`${styles.enlistedLogo} py-2`}>
-                                <Slider {...enlistedslider}>
-                                    <div>
-                                        <Image quality={100}    className='img-fluid'
-                                            src={partner1}
-                                            alt='Best_Publisher'
-                                        />
-                                    </div>
-                                    <div>
-                                        <Image quality={100}    className='img-fluid'
-                                            src={partner2}
-                                            alt='Best_Publisher'
-                                        />
-                                    </div>
-                                    <div>
-                                        <Image quality={100}    className='img-fluid'
-                                            src={partner3}
-                                            alt='Best_Publisher'
-                                        />
-                                    </div>
-                                    <div>
-                                        <Image quality={100}    className='img-fluid'
-                                            src={partner4}
-                                            alt='Best_Publisher'
-                                        />
-                                    </div>
-                                    <div>
-                                        <Image quality={100}    className='img-fluid'
-                                            src={partner5}
-                                            alt='Best_Publisher'
-                                        />
-                                    </div>
-                                    <div>
-                                        <Image quality={100}    className='img-fluid'
-                                            src={partner6}
-                                            alt='Best_Publisher'
-                                        />
-                                    </div>
-                                    <div>
-                                        <Image quality={100}    className='img-fluid'
-                                            src={partner7}
-                                            alt='Best_Publisher'
-                                        />
-                                    </div>
-                                    <div>
-                                        <Image quality={100}    className='img-fluid'
-                                            src={partner8}
-                                            alt='Best_Publisher'
-                                        />
-                                    </div>
-                                </Slider>
-                            </div>
-                        
+
+                        <div className={`${styles.enlistedLogo} py-2`}>
+                            <Slider {...enlistedslider}>
+                                <div>
+                                    <Image className='img-fluid'
+                                        src={partner1}
+                                        alt='Best_Publisher'
+                                    />
+                                </div>
+                                <div>
+                                    <Image className='img-fluid'
+                                        src={partner2}
+                                        alt='Best_Publisher'
+                                    />
+                                </div>
+                                <div>
+                                    <Image className='img-fluid'
+                                        src={partner3}
+                                        alt='Best_Publisher'
+                                    />
+                                </div>
+                                <div>
+                                    <Image className='img-fluid'
+                                        src={partner4}
+                                        alt='Best_Publisher'
+                                    />
+                                </div>
+                                <div>
+                                    <Image className='img-fluid'
+                                        src={partner5}
+                                        alt='Best_Publisher'
+                                    />
+                                </div>
+                                <div>
+                                    <Image className='img-fluid'
+                                        src={partner6}
+                                        alt='Best_Publisher'
+                                    />
+                                </div>
+                                <div>
+                                    <Image className='img-fluid'
+                                        src={partner7}
+                                        alt='Best_Publisher'
+                                    />
+                                </div>
+                                <div>
+                                    <Image className='img-fluid'
+                                        src={partner8}
+                                        alt='Best_Publisher'
+                                    />
+                                </div>
+                            </Slider>
+                        </div>
+
                     </Col>
                 </Row>
             </Container>

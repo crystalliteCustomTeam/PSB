@@ -33,7 +33,6 @@ const BookPublishing = () => {
       <Head>
         <title>Book Publishing | Best Book Publishing Company</title>
         <meta name="description" content="Experience the pinnacle of publishing services with the Best Book Publishing Company. With our commitment to quality, we guide every author toward success. Get started today!" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
       </Head>
       <MRHero
         title="Publishing Your Amazing Book Swiftly And Aiding You In Bringing About Great Success"
