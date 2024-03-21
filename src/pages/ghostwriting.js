@@ -95,10 +95,10 @@ const ProfessionalGhostwriting = () => {
       <MRHero
         title="Affordable and Professional  <br /> Ghostwriting Services"
         desc="Do you know how to make your content incredible? You team up with the experts! </br> Over the years, we have assisted innumerable authors who aspired to become the next best sellers. If you plan to be one of them, we are here for you."
-        logos="images/banner/img2.png"
+        logos="images/banner/img2.webp"
         counter={true}
         classes='!py-[80px] bg-[#fefefe]'
-        beforeImg="mr-md:before:bg-[url('../../public/imageAR/serious-man.png')]"
+        beforeImg="mr-md:before:bg-[url('../../public/imageAR/serious-man.webp')]"
       />
       <Enlistedlogo />
       <MRCards
@@ -126,7 +126,7 @@ const ProfessionalGhostwriting = () => {
           "Creative Consultancy",
           "Line and Developmental Editing"
         ]}
-        classes="bg-[url('../../public/imageAR/serviceBG.png')]"
+        classes="bg-[url('../../public/imageAR/serviceBG.webp')]"
         theme="dark"
       />
       <MRContent2
