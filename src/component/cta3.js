@@ -2,18 +2,18 @@ import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import Image from 'next/image';
-import Mockup1 from 'media/images/book-mockup/1.jpg'
-import Mockup2 from 'media/images/book-mockup/2.jpg'
-import Mockup3 from 'media/images/book-mockup/3.jpg'
-import Mockup4 from 'media/images/book-mockup/4.jpg'
-import Mockup5 from 'media/images/book-mockup/5.jpg'
-import Mockup6 from 'media/images/book-mockup/6.jpg'
-import Mockup7 from 'media/images/book-mockup/7.jpg'
-import Mockup8 from 'media/images/book-mockup/8.jpg'
-import Mockup9 from 'media/images/book-mockup/9.jpg'
-import Mockup10 from 'media/images/book-mockup/10.jpg'
-import Mockup11 from 'media/images/book-mockup/11.jpg'
-import Mockup12 from 'media/images/book-mockup/12.jpg'
+import Mockup1 from 'media/images/book-mockup/bg/1.webp'
+import Mockup2 from 'media/images/book-mockup/bg/2.webp'
+import Mockup3 from 'media/images/book-mockup/bg/3.webp'
+import Mockup4 from 'media/images/book-mockup/bg/4.webp'
+import Mockup5 from 'media/images/book-mockup/bg/5.webp'
+import Mockup6 from 'media/images/book-mockup/bg/6.webp'
+import Mockup7 from 'media/images/book-mockup/bg/7.webp'
+import Mockup8 from 'media/images/book-mockup/bg/8.webp'
+import Mockup9 from 'media/images/book-mockup/bg/9.webp'
+import Mockup10 from 'media/images/book-mockup/bg/10.webp'
+import Mockup11 from 'media/images/book-mockup/bg/11.webp'
+import Mockup12 from 'media/images/book-mockup/bg/12.webp'
 import Logoss from 'media/ahsan/logoss.png'
 import { MRCTA } from '@/component';
 const YourComponent = ({

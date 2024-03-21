@@ -7,16 +7,16 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 // images
-import mock1 from 'media/images/book-mockup/1.png'
-import mock2 from 'media/images/book-mockup/2.png'
-import mock3 from 'media/images/book-mockup/3.png'
-import mock4 from 'media/images/book-mockup/4.png'
-import mock5 from 'media/images/book-mockup/5.png'
-import mock6 from 'media/images/book-mockup/6.png'
-import mock7 from 'media/images/book-mockup/7.png'
+import mock1 from 'media/images/book-mockup/1.webp'
+import mock2 from 'media/images/book-mockup/2.webp'
+import mock3 from 'media/images/book-mockup/3.webp'
+import mock4 from 'media/images/book-mockup/4.webp'
+import mock5 from 'media/images/book-mockup/5.webp'
+import mock6 from 'media/images/book-mockup/6.webp'
+import mock7 from 'media/images/book-mockup/7.webp'
 
 
-import before from 'media/images/flods/tradition-before.png'
+import before from 'media/images/flods/tradition-before.webp'
 
 // mport { Fade } from "react-awesome-reveal";
 import Link from 'next/link'
@@ -82,7 +82,7 @@ const Tradition = ({
                                 <h2 className={`mr-lg:text-[45px] text-[30px] font-bold font-primary text-black mb-3 ${classes}`} dangerouslySetInnerHTML={{ __html: title }} />
                                 <p className={`text-[15px] font-secondary text-black ${classes}`}>{desc}</p>
                                 <div className='m-auto justify-content-center'>
-                                    <Image quality={100}  className='img-fluid justify-content-center'
+                                    <Image quality={90}  className='img-fluid justify-content-center'
                                         src={before}
                                         alt='Best_Publisher'
                                     />
