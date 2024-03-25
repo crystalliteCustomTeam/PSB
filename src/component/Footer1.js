@@ -59,7 +59,7 @@ const NewFooter = () => {
                                 <ul className='flex items-center gap-x-3'>
                                     <li>
                                         <a href="https://www.facebook.com/bestsellingpublisher" target="_blank" rel="noopener noreferrer">
-                                            <Image src={Instagram} alt='Amazon Book Publisher' width={30} height={30} />
+                                            <Image src={Facebook} alt='Amazon Book Publisher' width={30} height={30} />
                                         </a>
                                     </li>
                                     <li>
@@ -69,7 +69,7 @@ const NewFooter = () => {
                                     </li>
                                     <li>
                                         <a href="https://www.instagram.com/bspublisher/" target="_blank" rel="noopener noreferrer">
-                                            <Image src={Facebook} alt='Amazon Book Publisher' width={30} height={30} />
+                                            <Image src={Instagram} alt='Amazon Book Publisher' width={30} height={30} />
                                         </a>
                                     </li>
                                 </ul>
