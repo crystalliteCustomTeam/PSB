@@ -74,7 +74,7 @@ const Formdata = () => {
 
         let bodyContent = JSON.stringify({
             "IP": `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
-            "Brand": "Bitswits",
+            "Brand": "BEST SELLING PUBLISHER",
             "Page": `${currentRoute}`,
             "Date": currentdate,
             "Time": currentdate,
