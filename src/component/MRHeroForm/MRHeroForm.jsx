@@ -1,21 +1,51 @@
-import { useState } from "react";
+import { useState, useEffect } from 'react';
+import Axios from "axios";
+import { useRouter } from 'next/router';
 import styles from "./MRHeroForm.module.css"
-import Router from "next/router";
 const MRHeroForm = ({classes = ""}) => {
-    const [score, setScore] = useState("APPLY FOR IT");
+    const [ip, setIP] = useState('');
+    //creating function to load ip address from the API
+    const getIPData = async () => {
+        const res = await Axios.get('https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8');
+        setIP(res.data);
+    }
+    useEffect(() => {
+        getIPData()
+    }, [])
+
+    const [score, setScore] = useState('Apply For It');
+
+    const router = useRouter();
+    const currentRoute = router.pathname;
+     const [pagenewurl, setPagenewurl] = useState('');
+      useEffect(() => {
+        const pagenewurl = window.location.href;
+        console.log(pagenewurl);
+        setPagenewurl(pagenewurl);
+      }, []);
+
     const handleSubmit = async (e) => {
-        e.preventDefault();
+
+        e.preventDefault()
+        var currentdate = new Date().toLocaleString() + ''
+
         const data = {
             name: e.target.name.value,
             email: e.target.email.value,
             phone: e.target.phone.value,
             comment: e.target.comments.value,
+            pageUrl: pagenewurl,
+            IP: `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
+            currentdate: currentdate,
         }
 
-        const JSONdata = JSON.stringify(data);
-        console.log(JSONdata);
+        const JSONdata = JSON.stringify(data)
+
         setScore('Sending Data');
-        fetch('/api/email/route', {
+        console.log(JSONdata);
+
+
+        fetch('api/email/route', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json, text/plain, */*',
@@ -28,7 +58,34 @@ const MRHeroForm = ({classes = ""}) => {
                 console.log(`Response Successed ${res}`)
             }
         })
-        const { pathname } = Router
+
+        let headersList = {
+            "Accept": "*/*",
+            "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+            "Authorization": "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
+            "Content-Type": "application/json"
+        }
+
+        let bodyContent = JSON.stringify({
+            "IP": `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
+            "Brand": "BEST SELLING PUBLISHER",
+            "Page": `${currentRoute}`,
+            "Date": currentdate,
+            "Time": currentdate,
+            "JSON": JSONdata,
+
+        });
+        
+        
+
+        await fetch("https://sheetdb.io/api/v1/1ownp6p7a9xpi", {
+            method: "POST",
+            body: bodyContent,
+            headers: headersList
+        });
+
+
+        const { pathname } = router;
         if (pathname == pathname) {
             window.location.href = '/ThankYou';
         }
