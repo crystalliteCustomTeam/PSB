@@ -66,8 +66,8 @@ export default function App({ Component, pageProps }) {
       </Head>
       <main className={`${primary.className} ${SfProDisplay.variable}`}>
         {router.pathname == "/lp-one" ? "" : <Headernew />}
-        {loadScript ? <Component {...pageProps} /> : <Loader />}
-        {/* <Component {...pageProps} /> */}
+        {/* {loadScript ? <Component {...pageProps} /> : <Loader />} */}
+        <Component {...pageProps} />
         <Footer1 />
       </main>
       {loadScript && (
