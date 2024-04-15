@@ -41,7 +41,7 @@ const Contact = () => {
     }
     return (
         <section className="relative z-10">
-            <div className="py-[30px] mr-lg:py-[50px] before:bg-no-repeat before:absolute before:left-0 before:right-0 before:top-0 before:bottom-0 before:-z-10 before:bg-cover before:h-[70%] before:bg-center before:bg-[url('../../public/lp-one-conatct-bg.png')]">
+            <div className="py-[30px] mr-lg:py-[50px] before:bg-no-repeat before:absolute before:left-0 before:right-0 before:top-0 before:bottom-0 before:-z-10 before:bg-cover before:h-[70%] before:bg-center before:bg-[url('../../public/lp-one-conatct-bg.webp')]">
                 <div className="mr-container">
                     <div className="grid grid-cols-2 mr-xs:grid-cols-1 mr-md:flex w-[100%] mr-lg:w-[80%] mr-xl:w-[65%] mx-auto items-center">
                         <div className="mr-md:basis-[60%] bg-white shadow-lg shadow-gray-300 p-3 mr-md:p-5">

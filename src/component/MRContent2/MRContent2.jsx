@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Woman from "media/imageAR/woman-writing-.png"
+import Woman from "media/imageAR/woman-writing-.webp"
 import { MRCTAGroup } from '..'
 const MRContent2 = ({
     subTitle,

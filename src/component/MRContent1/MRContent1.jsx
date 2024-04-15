@@ -37,7 +37,7 @@ const MRContent1 = ({
                                     )}
                                     {img1 && (
                                         list &&
-                                        (<ul className={`mt-3 grid gap-2 mr-xl:gap-3 ${listClasses} list-image-[url(../../public/listIcon.png)] list-inside`}>
+                                        (<ul className={`mt-3 grid gap-2 mr-xl:gap-3 ${listClasses} list-image-[url(../../public/listIcon.webp)] list-inside`}>
                                             {
                                                 list?.map((e, i) => (
                                                     <li key={i} className={`text-[12px] leading-[16px] mr-xl:text-[14px] mr-xl:leading-[26px] font-semibold font-sans ${textTheme}`} dangerouslySetInnerHTML={{ __html: e }} />
@@ -99,7 +99,7 @@ const MRContent1 = ({
                         )}
                         {img2 && (
                             list &&
-                            (<ul className={`mt-3 grid gap-2 mr-xl:gap-3 ${listClasses} list-image-[url(../../public/listIcon.png)] list-inside`}>
+                            (<ul className={`mt-3 grid gap-2 mr-xl:gap-3 ${listClasses} list-image-[url(../../public/listIcon.webp)] list-inside`}>
                                 {
                                     list?.map((e, i) => (
                                         <li key={i} className={`text-[12px] leading-[16px] mr-xl:text-[14px] mr-xl:leading-[26px] font-semibold font-sans ${textTheme}`} dangerouslySetInnerHTML={{ __html: e }} />

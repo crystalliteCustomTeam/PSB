@@ -74,19 +74,23 @@ const Formdata = () => {
 
         let bodyContent = JSON.stringify({
             "IP": `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
-            "Brand": "Bitswits",
+            "Brand": "BEST SELLING PUBLISHER",
             "Page": `${currentRoute}`,
             "Date": currentdate,
             "Time": currentdate,
             "JSON": JSONdata,
 
         });
+        
+        
 
         await fetch("https://sheetdb.io/api/v1/1ownp6p7a9xpi", {
             method: "POST",
             body: bodyContent,
             headers: headersList
         });
+
+
         const { pathname } = router;
         if (pathname == pathname) {
             window.location.href = '/ThankYou';

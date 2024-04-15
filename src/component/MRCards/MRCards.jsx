@@ -1,6 +1,6 @@
 import { MRCTA, MRCTAGroup } from "@/component/";
 import Image from "next/image";
-import Checkmark from "media/imageAR/checkmark.png"
+import Checkmark from "media/imageAR/checkmark.webp"
 
 const MRCards = ({
     subTitle,
