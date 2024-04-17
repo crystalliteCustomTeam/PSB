@@ -21,6 +21,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <link rel="icon" href="/images/favicon.svg" />
+        <meta name="google-site-verification" content="R28eoLjUYrldzCTVPJyB50E-zTd2cWaogKpJP3ycGFM" />
       </Head>
       <main className={`${primary.className} ${SfProDisplay.variable}`}>
         {router.pathname == "/lp-one" ? "" : <Headernew />}
