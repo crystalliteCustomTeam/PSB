@@ -14,6 +14,12 @@ const Genre = () => {
       <Head>
         <title>Genre | Best Selling Publisher</title>
         <meta name="description" content="At Best Selling Publisher, we take pride in our exceptional article writing services. Connect with us to start your publishing journey today!" />
+
+        <meta property="og:url" content="https://bestsellingpublisher.com/genre/" />
+        <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
+
+        {/* canonical: */}
+        <link rel="canonical" href="https://bestsellingpublisher.com/genre/" />
       </Head>
       <MRHero
         title="We Are The Gatekeepers Of Literary Success"

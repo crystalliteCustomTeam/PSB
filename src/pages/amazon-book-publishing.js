@@ -53,7 +53,7 @@ const amazonpublishing = () => {
       paraTitle: "How Do I Choose A Book Publishing Service?",
       paraSubTitle: "There are many factors to consider when choosing a book publishing service, such as cost, services offered, turnaround time, and reputation. It is important to do your research and choose a service that is right for you and your book. Finding the best digital book publishers in the industry is not an easy task. But as the leading book publishers in the industry, Best Selling Publisher offers various publishing services just for you! "
     }
-    
+
   ]
 
 
@@ -65,11 +65,17 @@ const amazonpublishing = () => {
         <link rel="icon" href="/images/favicon.svg" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 
+        <meta property="og:url" content="https://bestsellingpublisher.com/amazon-book-publishing/" />
+        <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
+
+        {/* canonical: */}
+        <link rel="canonical" href="https://bestsellingpublisher.com/amazon-book-publishing/" />
+
         {/* <Helmet>
-  <script type="application/ld+json">
-    {JSON.stringify(schema)}
-  </script>
- </Helmet> */}
+              <script type="application/ld+json">
+                {JSON.stringify(schema)}
+              </script>
+            </Helmet> */}
       </Head>
 
       {/*========= Banner =========*/}
@@ -84,10 +90,10 @@ const amazonpublishing = () => {
         />
       )} */}
       <MRHero
-          title="Amazon Publishing Services Company To Make Your Book Available To Millions Of Readers!"
-          logos="images/banner/img2.png"
-          counter={true}
-        />
+        title="Amazon Publishing Services Company To Make Your Book Available To Millions Of Readers!"
+        logos="images/banner/img2.png"
+        counter={true}
+      />
 
 
       {/*========= Clients fold =========*/}
@@ -96,9 +102,9 @@ const amazonpublishing = () => {
       <Enlistedlogo />
 
       {/*========= Tradition fold =========*/}
-      <Tradition 
-      title="Proficient Books Publishers Services"
-      desc="We Publish Books That Sell!"
+      <Tradition
+        title="Proficient Books Publishers Services"
+        desc="We Publish Books That Sell!"
       />
 
       {/*========= Enlisted fold =========*/}

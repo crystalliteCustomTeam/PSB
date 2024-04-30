@@ -5,6 +5,7 @@ import SwiperComponents from '../component/SwiperComponent'
 import Enlistedlogo from '@/fa-component/Enlistedlogo'
 import ContactModel from '../component/ContactModel'
 import { MRCards, MRHero } from '@/component';
+import Head from "next/head"
 const contact = () => {
   const MRCardData2 = [
     {
@@ -37,6 +38,16 @@ const contact = () => {
   return (
     <>
       <main>
+        <Head>
+          <title>Contact Us | Best Selling Publisher</title>
+          <meta name="description" content="" />
+
+          <meta property="og:url" content="https://bestsellingpublisher.com/contact-us/" />
+          <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
+
+          {/* canonical: */}
+          <link rel="canonical" href="https://bestsellingpublisher.com/contact-us/" />
+        </Head>
         <MRHero
           title="Witness Excellence By <br /> Working With The Top <br /> Industry Specialists"
           desc="Your dream of becoming a successful author is our mission. So, don’t hold back; get ahold of us today."

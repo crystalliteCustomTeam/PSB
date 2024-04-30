@@ -54,6 +54,12 @@ const about = () => {
         <meta name="description" content="From eBooks to audiobooks, we offer a wide range of publishing services tailored to meet your needs. Contact us today to get started on your project." />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
+
+        <meta property="og:url" content="https://bestsellingpublisher.com/about-us/" />
+        <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
+
+        {/* canonical: */}
+        <link rel="canonical" href="https://bestsellingpublisher.com/about-us/" />
       </Head>
       <main>
         <MRHero
@@ -82,19 +88,19 @@ const about = () => {
           `}
         />
 
-        <CTA 
-        subtitle="Your Project Deserves the Spotlight."
-        title="Let’s Get Started!" 
-        desc="Do you need a hand with book publishing? <span class='h-3 block'></span> We're all ears and ready to help whenever you need us during our operational hours. We're here to chat about anything on your mind — your questions and needs matter most to us."
+        <CTA
+          subtitle="Your Project Deserves the Spotlight."
+          title="Let’s Get Started!"
+          desc="Do you need a hand with book publishing? <span class='h-3 block'></span> We're all ears and ready to help whenever you need us during our operational hours. We're here to chat about anything on your mind — your questions and needs matter most to us."
         />
         <BTM />
         <MRCards
-        title={`Dreams Don’t Turn to Dust with <br class="mr-xl:block hidden" /> Best Selling Publisher `}
-        desc="Your dreams matter to us. We understand that there is nothing more painful for a writer than to witness their written word go to waste. We know exactly how to publish your work and emphasize it in unimaginable ways that will leave the readers wanting more."
-        gridsClasses="mr-xl:grid-cols-4 mr-lg:grid-cols-3 mr-sm:grid-cols-2 !gap-x-5"
-        cta={false}
-        variant="steps"
-        data={MRCardData2}/>
+          title={`Dreams Don’t Turn to Dust with <br class="mr-xl:block hidden" /> Best Selling Publisher `}
+          desc="Your dreams matter to us. We understand that there is nothing more painful for a writer than to witness their written word go to waste. We know exactly how to publish your work and emphasize it in unimaginable ways that will leave the readers wanting more."
+          gridsClasses="mr-xl:grid-cols-4 mr-lg:grid-cols-3 mr-sm:grid-cols-2 !gap-x-5"
+          cta={false}
+          variant="steps"
+          data={MRCardData2} />
         <SwiperComponents />
       </main>
     </>

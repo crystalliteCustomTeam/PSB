@@ -106,6 +106,12 @@ const Home = () => {
         <title>The Home of Quality Publishing | Best Book Publishing Company</title>
         <meta name="description" content="Experience the pinnacle of publishing services with the Best Book Publishing Company. With our commitment to quality, we guide every author toward success. Get started today!" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+
+        <meta property="og:url" content="https://bestsellingpublisher.com/" />
+        <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
+
+        {/* canonical: */}
+        <link rel="canonical" href="https://bestsellingpublisher.com/" />
       </Head>
       <MRHero
         title="Craft Legacy Through <br /> Words with the Best Book <br /> Publishing Company "
@@ -133,12 +139,12 @@ const Home = () => {
         classes="bg-cover bg-no-repeat"
         textBG="bg-primary-100"
       />
-      <MRCards 
-      title="Explore The Best Writing  <br class='mr-lg:block hidden' /> Services We Offer" desc="Beyond the extraordinary resides an array of services we take immense pride in. That said, <br class='mr-lg:block hidden' /> It’s time to make your publishing dreams come to life."
+      <MRCards
+        title="Explore The Best Writing  <br class='mr-lg:block hidden' /> Services We Offer" desc="Beyond the extraordinary resides an array of services we take immense pride in. That said, <br class='mr-lg:block hidden' /> It’s time to make your publishing dreams come to life."
         gridsClasses="mr-lg:grid-cols-3 mr-sm:grid-cols-2 grid-cols-1 !gap-x-8"
         cta={true}
         data={MRCardData} />
-     <MRCards
+      <MRCards
         title={`Dreams Don’t Turn to Dust with <br class="mr-xl:block hidden" /> Best Selling Publisher `}
         desc="Your dreams matter to us. We understand that there is nothing more painful for a writer than to witness their written word go to waste. We know exactly how to publish your work and emphasize it in unimaginable ways that will leave the readers wanting more."
         gridsClasses="mr-xl:grid-cols-3 mr-lg:grid-cols-3 mr-sm:grid-cols-2 !gap-x-8"

@@ -46,6 +46,12 @@ const Publication = () => {
       <Head>
         <title>Publication | Best Book Publishing Company</title>
         <meta name="description" content="Experience the pinnacle of publishing services with the Best Book Publishing Company. With our commitment to quality, we guide every author toward success. Get started today!" />
+
+        <meta property="og:url" content="https://bestsellingpublisher.com/publication/" />
+        <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
+
+        {/* canonical: */}
+        <link rel="canonical" href="https://bestsellingpublisher.com/publication/" />
       </Head>
       <MRHero
         subTitle="Awarded #1 Book Publishing Services"

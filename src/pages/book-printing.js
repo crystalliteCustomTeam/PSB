@@ -14,31 +14,31 @@ const BookPrinting = () => {
       classes: "bg-[#fff] shadow-lg px-3 rounded-lg relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-left",
       cta: false,
       stepText: false,
-      indexing:false,
+      indexing: false,
       content: [
         {
           title: "Low Upfront Costs",
-          textColor:"text-[#40BEE2]",
+          textColor: "text-[#40BEE2]",
           desc: "Looking for an affordable way to publish? We're so glad you found us! <span class='h-3 block'></span> At Best Selling Publisher, we're all about making publishing accessible to everyone. That's why our services come with low upfront costs, perfect for aspiring authors and established writers. With transparent pricing and no hidden fees, you can start your publishing journey confidently, assured that you're getting outstanding value for every penny invested.",
-          minHeight:"overflow-y-scroll h-[130px]",
+          minHeight: "overflow-y-scroll h-[130px]",
         },
         {
           title: "Complete Publishing Solution",
-          textColor:"text-[#40BEE2]",
+          textColor: "text-[#40BEE2]",
           desc: "Do you want a publishing partner who's got your back every step of the way? <span class='h-3 block'></span> Best Selling Publisher is here with solutions crafted to meet all your needs. Our journey covers everything from editing and design to distribution and marketing, ensuring your book realizes its full potential. With a team of experts dedicated to your project, we walk you through the entire publishing process, offering personalized advice and support tailored just for you.",
-          minHeight:"overflow-y-scroll h-[130px]",
+          minHeight: "overflow-y-scroll h-[130px]",
         },
         {
           title: "Print On Demand",
-          textColor:"text-[#40BEE2]",
+          textColor: "text-[#40BEE2]",
           desc: "Want to share your book with the world without the headache of inventory or storage costs? <span class='h-3 block'></span>  Best Selling Publisher's print-on-demand services make it a breeze. Thanks to our cutting-edge printing technology, we're set up to print and fulfill orders the moment they're placed, guaranteeing your book is ready to meet its readers anytime, anywhere.",
-          minHeight:"overflow-y-scroll h-[130px]",
+          minHeight: "overflow-y-scroll h-[130px]",
         },
         {
           title: "Reach Millions Of Readers",
-          textColor:"text-[#40BEE2]",
+          textColor: "text-[#40BEE2]",
           desc: "Want your book to be everywhere readers are looking, both online and in stores? <span class='h-3 block'></span>  Through our partnerships with major retailers, online platforms, and libraries, we ensure your book shines in both digital and print formats wherever books are sold. With Best Selling Publisher, you can share your story with the world and reach millions of readers eager to discover new books and authors. ",
-          minHeight:"overflow-y-scroll h-[130px]",
+          minHeight: "overflow-y-scroll h-[130px]",
         },
       ]
     },
@@ -76,6 +76,12 @@ const BookPrinting = () => {
       <Head>
         <title>Affordable Book Printing Services | Best Selling Publisher</title>
         <meta name="description" content="From editing to distribution, Best Selling Publisher offers personalized support and industry-leading book printing services to make your book a standout success." />
+
+        <meta property="og:url" content="https://bestsellingpublisher.com/book-printing/" />
+        <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
+
+        {/* canonical: */}
+        <link rel="canonical" href="https://bestsellingpublisher.com/book-printing/" />
       </Head>
       <MRHero
         title="Take Your Book From Manuscript To Masterpiece with Our Book Printing Services"
@@ -105,10 +111,10 @@ const BookPrinting = () => {
         txtBlK="!text-black"
       />
       <BTM />
-      <CTA 
-      subtitle="The Wait is Over — It's Go Time!"
-      title="Start Your Project With Best Selling Publisher Today!"
-      desc="Need help or have questions? Our friendly team is here to assist you during our business hours. We warmly invite you to reach out; your questions and needs always take center stage with us. Feel free to get in touch anytime."
+      <CTA
+        subtitle="The Wait is Over — It's Go Time!"
+        title="Start Your Project With Best Selling Publisher Today!"
+        desc="Need help or have questions? Our friendly team is here to assist you during our business hours. We warmly invite you to reach out; your questions and needs always take center stage with us. Feel free to get in touch anytime."
       />
       <MRCards
         subTitle="We Pursue"

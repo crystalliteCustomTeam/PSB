@@ -71,40 +71,47 @@ const MRCardData = [
       },
     ]
   }]
-  const MRCardData2 = [
-    {
-      classes: "bg-[#fff] shadow-lg mr-2xl:px-4 px-2 rounded-xl relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-left",
-      stepText: "Step",
-      indexing: true,
-      content: [
-        {
-          textColor: "text-[#40BEE2] group-hover:text-white",
-          title: "Submit Your Manuscript",
-          desc: "After making up your mind about working with us, you place your order.",
-        },
-        {
-          textColor: "text-[#40BEE2] group-hover:text-white",
-          title: "Edit & Design",
-          desc: "We refine your text and design your book's cover.",
-        },
-        {
-          textColor: "text-[#40BEE2] group-hover:text-white",
-          title: "Review & Approve",
-          desc: "You review our work and give the green light.",
-        },
-        {
-          textColor: "text-[#40BEE2] group-hover:text-white",
-          title: "Publish & Distribute",
-          desc: "Your book is published and distributed on schedule.",
-        },
-      ]
-    }]
+const MRCardData2 = [
+  {
+    classes: "bg-[#fff] shadow-lg mr-2xl:px-4 px-2 rounded-xl relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-left",
+    stepText: "Step",
+    indexing: true,
+    content: [
+      {
+        textColor: "text-[#40BEE2] group-hover:text-white",
+        title: "Submit Your Manuscript",
+        desc: "After making up your mind about working with us, you place your order.",
+      },
+      {
+        textColor: "text-[#40BEE2] group-hover:text-white",
+        title: "Edit & Design",
+        desc: "We refine your text and design your book's cover.",
+      },
+      {
+        textColor: "text-[#40BEE2] group-hover:text-white",
+        title: "Review & Approve",
+        desc: "You review our work and give the green light.",
+      },
+      {
+        textColor: "text-[#40BEE2] group-hover:text-white",
+        title: "Publish & Distribute",
+        desc: "Your book is published and distributed on schedule.",
+      },
+    ]
+  }]
 const SEOContentWritingServices = () => {
   return (
     <main>
       <Head>
         <title>SEO Content Writing Services | Best Selling Publisher</title>
         <meta name="description" content="Best Selling Publisher offers professional ghostwriting services tailored to your needs. Start your publishing journey today and see why we're the premier choice for authors." />
+        
+
+        <meta property="og:url" content="https://bestsellingpublisher.com/seo-content-writing-services/" />
+        <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
+
+        {/* canonical: */}
+        <link rel="canonical" href="https://bestsellingpublisher.com/seo-content-writing-services/" />
       </Head>
       <MRHero
         title="Amplify Your Brand Image Through SEO Content Writing"

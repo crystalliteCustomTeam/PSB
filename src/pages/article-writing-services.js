@@ -65,39 +65,45 @@ const ArticleWritingServices = () => {
         },
       ]
     }]
-    const MRCardData2 = [
-      {
-        classes: "bg-[#fff] shadow-lg mr-2xl:px-4 px-2 rounded-xl relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-left",
-        stepText: "Step",
-        indexing: true,
-        content: [
-          {
-            textColor: "text-[#40BEE2] group-hover:text-white",
-            title: "Submit Your Manuscript",
-            desc: "Share your manuscript and we will get started.",
-          },
-          {
-            textColor: "text-[#40BEE2] group-hover:text-white",
-            title: "Edit & Design",
-            desc: "We retain the context but add that artistic flavor.",
-          },
-          {
-            textColor: "text-[#40BEE2] group-hover:text-white",
-            title: "Review & Approve",
-            desc: "You review and approve our creative contributions.",
-          },
-          {
-            textColor: "text-[#40BEE2] group-hover:text-white",
-            title: "Publish & Distribute",
-            desc: "Your book has been published and distributed.",
-          },
-        ]
-      }]
+  const MRCardData2 = [
+    {
+      classes: "bg-[#fff] shadow-lg mr-2xl:px-4 px-2 rounded-xl relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-left",
+      stepText: "Step",
+      indexing: true,
+      content: [
+        {
+          textColor: "text-[#40BEE2] group-hover:text-white",
+          title: "Submit Your Manuscript",
+          desc: "Share your manuscript and we will get started.",
+        },
+        {
+          textColor: "text-[#40BEE2] group-hover:text-white",
+          title: "Edit & Design",
+          desc: "We retain the context but add that artistic flavor.",
+        },
+        {
+          textColor: "text-[#40BEE2] group-hover:text-white",
+          title: "Review & Approve",
+          desc: "You review and approve our creative contributions.",
+        },
+        {
+          textColor: "text-[#40BEE2] group-hover:text-white",
+          title: "Publish & Distribute",
+          desc: "Your book has been published and distributed.",
+        },
+      ]
+    }]
   return (
     <main>
       <Head>
         <title>Best Selling Publisher | Exceptional Article Writing Services</title>
         <meta name="description" content="At Best Selling Publisher, we take pride in our exceptional article writing services. Connect with us to start your publishing journey today!" />
+
+        <meta property="og:url" content="https://bestsellingpublisher.com/article-writing-services/" />
+        <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
+
+        {/* canonical: */}
+        <link rel="canonical" href="https://bestsellingpublisher.com/article-writing-services/" />
       </Head>
       <MRHero
         title="Craft Your Narrative with Our Help — Premier Article Writing Excellencee"
@@ -143,10 +149,10 @@ const ArticleWritingServices = () => {
         data={MRContent2Data}
       />
       <BTM />
-      <CTA 
-      subtitle="It's Time to Kick Off Your Dream Project" 
-      title="Are You Ready to Start Publishing?"
-      desc="Our team is here for you! Do you have questions or need assistance? Just reach out during our operational hours. We're always happy to help. Don't be shy – we'd love to hear from you!"
+      <CTA
+        subtitle="It's Time to Kick Off Your Dream Project"
+        title="Are You Ready to Start Publishing?"
+        desc="Our team is here for you! Do you have questions or need assistance? Just reach out during our operational hours. We're always happy to help. Don't be shy – we'd love to hear from you!"
       />
       <MRCards
         subTitle="We Pursue"

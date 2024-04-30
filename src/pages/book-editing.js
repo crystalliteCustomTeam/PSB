@@ -14,21 +14,21 @@ const BookEditing = () => {
       classes: "bg-[#fff] shadow-lg px-3 rounded-lg relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-left",
       cta: false,
       stepText: false,
-      indexing:false,
+      indexing: false,
       content: [
         {
           title: "Proofreading: ",
-          textColor:"text-[#40BEE2]",
+          textColor: "text-[#40BEE2]",
           desc: "Have you ever wondered how a simple typo can take away from the brilliance of your story? At Best Selling Publisher, we understand that even the smallest errors can cast a shadow over your masterpiece. That's why our proofreading service doesn't just skim the surface; we dive deep into your manuscript, carefully checking for grammar, punctuation, and spelling mistakes to ensure your final product is flawless.",
         },
         {
           title: "Line Editing:",
-          textColor:"text-[#40BEE2]",
+          textColor: "text-[#40BEE2]",
           desc: "Best Selling Publisher's line editing service enhances your manuscript's readability, flow, and style by refining sentence structure, diction, and pacing. Our line editors delve deep into your prose, smoothing out awkward phrasing, clarifying ambiguous passages, and polishing language for maximum impact.",
         },
         {
           title: "Developmental Editing:",
-          textColor:"text-[#40BEE2]",
+          textColor: "text-[#40BEE2]",
           desc: "Do you know what separates a good book from a great one? At Best Selling Publisher, our developmental editing service provides invaluable feedback and guidance to strengthen your manuscript's structure, plot, and character development. Our developmental editors collaborate closely with you to identify strengths, address weaknesses, and unlock the full potential of your story.",
         },
       ]
@@ -67,6 +67,12 @@ const BookEditing = () => {
       <Head>
         <title>Professional Book Editing Services | Best Selling Publisher</title>
         <meta name="description" content="Make your book unforgettable with our book editing services. We fine-tune your manuscript for clarity, coherence, and reader engagement." />
+        
+        <meta property="og:url" content="https://bestsellingpublisher.com/book-editing/" />
+        <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
+
+        {/* canonical: */}
+        <link rel="canonical" href="https://bestsellingpublisher.com/book-editing/" />
       </Head>
       <MRHero
         title="Craft the Perfect Narrative for Your Manuscript with our Expert Book Editing Services"
@@ -111,19 +117,19 @@ const BookEditing = () => {
         data={MRCardData}
       />
       <BTM />
-      <CTA 
-      subtitle="What Are You Waiting For?"
-      title="Let's Kickstart Your Project Today!"
-      desc="Need help or have questions? Our friendly team is here to assist you during our business hours. We warmly invite you to reach out; your questions and needs always take center stage with us. Feel free to get in touch anytime."
+      <CTA
+        subtitle="What Are You Waiting For?"
+        title="Let's Kickstart Your Project Today!"
+        desc="Need help or have questions? Our friendly team is here to assist you during our business hours. We warmly invite you to reach out; your questions and needs always take center stage with us. Feel free to get in touch anytime."
       />
       <MRCards
-      subTitle="We Pursue"
-      title={`A Swift Work Mode that Involves <br class="mr-xl:block hidden" /> 4 Easy Steps`}
-      desc={`We emphasize prompt deliveries because we don’t like to keep you waiting. Following are the <br class="mr-xl:block hidden" /> 4 easy steps that keep us streamlined from the beginning:`}
-      gridsClasses="mr-xl:grid-cols-4 mr-lg:grid-cols-3 mr-sm:grid-cols-2"
-      cta={false}
-      variant="steps"
-      data={MRCardData2} />
+        subTitle="We Pursue"
+        title={`A Swift Work Mode that Involves <br class="mr-xl:block hidden" /> 4 Easy Steps`}
+        desc={`We emphasize prompt deliveries because we don’t like to keep you waiting. Following are the <br class="mr-xl:block hidden" /> 4 easy steps that keep us streamlined from the beginning:`}
+        gridsClasses="mr-xl:grid-cols-4 mr-lg:grid-cols-3 mr-sm:grid-cols-2"
+        cta={false}
+        variant="steps"
+        data={MRCardData2} />
       <SwiperComponents />
       <MRContact />
     </main>

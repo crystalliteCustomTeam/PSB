@@ -91,6 +91,12 @@ const ProfessionalGhostwriting = () => {
       <Head>
         <title>Professional Ghostwriting Services | Best Selling Publisher</title>
         <meta name="description" content="Best Selling Publisher offers professional ghostwriting services tailored to your needs. Start your publishing journey today and see why we're the premier choice for authors." />
+
+        <meta property="og:url" content="https://bestsellingpublisher.com/ghostwriting/" />
+        <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
+
+        {/* canonical: */}
+        <link rel="canonical" href="https://bestsellingpublisher.com/ghostwriting/" />
       </Head>
       <MRHero
         title="Affordable and Professional  <br /> Ghostwriting Services"
@@ -135,10 +141,10 @@ const ProfessionalGhostwriting = () => {
         desc={`Our ghostwriters accentuate your ideas on a whole different level. Every project that we work on inevitably becomes a page-turner.`}
         data={MRContent2Data}
       />
-      <CTA 
-      subtitle="Your Book, Our Expertise"
-      title=" – Let's Collaborate!"
-      desc="Need assistance or have inquiries? <span class='block h-3'></span> Our committed team is at your disposal during our operational hours, ready to assist you. We extend a warm invitation to engage with us; after all, your inquiries and requirements are consistently our foremost concern, aren't they?"
+      <CTA
+        subtitle="Your Book, Our Expertise"
+        title=" – Let's Collaborate!"
+        desc="Need assistance or have inquiries? <span class='block h-3'></span> Our committed team is at your disposal during our operational hours, ready to assist you. We extend a warm invitation to engage with us; after all, your inquiries and requirements are consistently our foremost concern, aren't they?"
       />
       <BTM />
       <MRCards

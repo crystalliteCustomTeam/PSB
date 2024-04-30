@@ -75,6 +75,12 @@ const BookCoverDesign = () => {
       <Head>
         <title>Custom Book Cover Designs | Best Selling Publisher</title>
         <meta name="description" content="Stand out in a crowded shelf with our innovative book cover designs. Let our creative team design a cover that commands attention. Contact us today!" />
+
+        <meta property="og:url" content="https://bestsellingpublisher.com/book-cover-design/" />
+        <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
+
+        {/* canonical: */}
+        <link rel="canonical" href="https://bestsellingpublisher.com/book-cover-design/" />
       </Head>
       <MRHero
         title="Covers that Let You Judge a Book"
@@ -125,18 +131,18 @@ const BookCoverDesign = () => {
       <WORKON />
       <BTM />
       <CTA
-       subtitle="We Can't Wait to "
-       title="Get Started on Your Project!"
-       desc="Our dedicated team is here to assist you during our working hours, always eager to answer your questions and cater to your needs. We warmly invite you to reach out and start a conversation with us. Your vision and requirements are our top priority. Don't hesitate to get in touch and let us help you get your book to the right audience!"
-       />
-      <MRCards 
-      subTitle="We Pursue"
-      title={`A Swift Work Mode that Involves <br class="mr-xl:block hidden" /> 4 Easy Steps`}
-      desc={`We emphasize prompt deliveries because we don’t like to keep you waiting. Following are the <br class="mr-xl:block hidden" /> 4 easy steps that keep us streamlined from the beginning:`}
-      gridsClasses="mr-xl:grid-cols-4 mr-lg:grid-cols-3 mr-sm:grid-cols-2"
-      cta={false}
-      variant="steps"
-      data={MRCardData2} />
+        subtitle="We Can't Wait to "
+        title="Get Started on Your Project!"
+        desc="Our dedicated team is here to assist you during our working hours, always eager to answer your questions and cater to your needs. We warmly invite you to reach out and start a conversation with us. Your vision and requirements are our top priority. Don't hesitate to get in touch and let us help you get your book to the right audience!"
+      />
+      <MRCards
+        subTitle="We Pursue"
+        title={`A Swift Work Mode that Involves <br class="mr-xl:block hidden" /> 4 Easy Steps`}
+        desc={`We emphasize prompt deliveries because we don’t like to keep you waiting. Following are the <br class="mr-xl:block hidden" /> 4 easy steps that keep us streamlined from the beginning:`}
+        gridsClasses="mr-xl:grid-cols-4 mr-lg:grid-cols-3 mr-sm:grid-cols-2"
+        cta={false}
+        variant="steps"
+        data={MRCardData2} />
       <SwiperComponents />
       <MRContact />
     </main>
