@@ -77,11 +77,11 @@ const BookPrinting = () => {
         <title>Affordable Book Printing Services | Best Selling Publisher</title>
         <meta name="description" content="From editing to distribution, Best Selling Publisher offers personalized support and industry-leading book printing services to make your book a standout success." />
 
-        <meta property="og:url" content="https://bestsellingpublisher.com/book-printing/" />
+        <meta property="og:url" content="https://bestsellingpublisher.com/book-printing" />
         <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
 
         {/* canonical: */}
-        <link rel="canonical" href="https://bestsellingpublisher.com/book-printing/" />
+        <link rel="canonical" href="https://bestsellingpublisher.com/book-printing" />
       </Head>
       <MRHero
         title="Take Your Book From Manuscript To Masterpiece with Our Book Printing Services"

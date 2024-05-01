@@ -107,11 +107,11 @@ const Home = () => {
         <meta name="description" content="Experience the pinnacle of publishing services with the Best Book Publishing Company. With our commitment to quality, we guide every author toward success. Get started today!" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
 
-        <meta property="og:url" content="https://bestsellingpublisher.com/" />
+        <meta property="og:url" content="https://bestsellingpublisher.com" />
         <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
 
         {/* canonical: */}
-        <link rel="canonical" href="https://bestsellingpublisher.com/" />
+        <link rel="canonical" href="https://bestsellingpublisher.com" />
       </Head>
       <MRHero
         title="Craft Legacy Through <br /> Words with the Best Book <br /> Publishing Company "
