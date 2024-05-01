@@ -98,11 +98,11 @@ const WebCopywritingServices = () => {
         <title>Web Copywriting Services | Best Selling Publisher</title>
         <meta name="description" content="At Best Selling Publisher, we take pride in our exceptional article writing services. Connect with us to start your publishing journey today!" />
 
-        <meta property="og:url" content="https://bestsellingpublisher.com/web-copywriting-services/" />
+        <meta property="og:url" content="https://bestsellingpublisher.com/web-copywriting-services" />
         <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
 
         {/* canonical: */}
-        <link rel="canonical" href="https://bestsellingpublisher.com/web-copywriting-services/" />
+        <link rel="canonical" href="https://bestsellingpublisher.com/web-copywriting-services" />
       </Head>
       <MRHero
         title="Develop Your Business With The Outstanding Skills And  Expertise of Our Web Copywriters"

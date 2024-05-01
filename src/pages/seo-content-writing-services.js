@@ -107,11 +107,11 @@ const SEOContentWritingServices = () => {
         <meta name="description" content="Best Selling Publisher offers professional ghostwriting services tailored to your needs. Start your publishing journey today and see why we're the premier choice for authors." />
         
 
-        <meta property="og:url" content="https://bestsellingpublisher.com/seo-content-writing-services/" />
+        <meta property="og:url" content="https://bestsellingpublisher.com/seo-content-writing-services" />
         <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
 
         {/* canonical: */}
-        <link rel="canonical" href="https://bestsellingpublisher.com/seo-content-writing-services/" />
+        <link rel="canonical" href="https://bestsellingpublisher.com/seo-content-writing-services" />
       </Head>
       <MRHero
         title="Amplify Your Brand Image Through SEO Content Writing"

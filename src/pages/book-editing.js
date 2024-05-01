@@ -68,11 +68,11 @@ const BookEditing = () => {
         <title>Professional Book Editing Services | Best Selling Publisher</title>
         <meta name="description" content="Make your book unforgettable with our book editing services. We fine-tune your manuscript for clarity, coherence, and reader engagement." />
         
-        <meta property="og:url" content="https://bestsellingpublisher.com/book-editing/" />
+        <meta property="og:url" content="https://bestsellingpublisher.com/book-editing" />
         <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
 
         {/* canonical: */}
-        <link rel="canonical" href="https://bestsellingpublisher.com/book-editing/" />
+        <link rel="canonical" href="https://bestsellingpublisher.com/book-editing" />
       </Head>
       <MRHero
         title="Craft the Perfect Narrative for Your Manuscript with our Expert Book Editing Services"

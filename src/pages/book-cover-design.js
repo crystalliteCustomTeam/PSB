@@ -76,11 +76,11 @@ const BookCoverDesign = () => {
         <title>Custom Book Cover Designs | Best Selling Publisher</title>
         <meta name="description" content="Stand out in a crowded shelf with our innovative book cover designs. Let our creative team design a cover that commands attention. Contact us today!" />
 
-        <meta property="og:url" content="https://bestsellingpublisher.com/book-cover-design/" />
+        <meta property="og:url" content="https://bestsellingpublisher.com/book-cover-design" />
         <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
 
         {/* canonical: */}
-        <link rel="canonical" href="https://bestsellingpublisher.com/book-cover-design/" />
+        <link rel="canonical" href="https://bestsellingpublisher.com/book-cover-design" />
       </Head>
       <MRHero
         title="Covers that Let You Judge a Book"

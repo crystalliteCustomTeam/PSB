@@ -65,11 +65,11 @@ const amazonpublishing = () => {
         <link rel="icon" href="/images/favicon.svg" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-        <meta property="og:url" content="https://bestsellingpublisher.com/amazon-book-publishing/" />
+        <meta property="og:url" content="https://bestsellingpublisher.com/amazon-book-publishing" />
         <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
 
         {/* canonical: */}
-        <link rel="canonical" href="https://bestsellingpublisher.com/amazon-book-publishing/" />
+        <link rel="canonical" href="https://bestsellingpublisher.com/amazon-book-publishing" />
 
         {/* <Helmet>
               <script type="application/ld+json">
