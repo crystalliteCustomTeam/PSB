@@ -42,6 +42,74 @@ const BookMarketing = () => {
       ]
     },
   ]
+
+  const schemaWebsite = {
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    "name": "Book Marketing Services | Best Selling Publisher",
+    "url": "https://bestsellingpublisher.com/book-marketing",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "{search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  const schemaCorporation = {
+    "@context": "https://schema.org",
+    "@type": "Corporation",
+    "name": "Book Marketing Services | Best Selling Publisher",
+    "url": "https://bestsellingpublisher.com/book-marketing",
+    "logo": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png"
+  }
+  const schemaProffesionalService = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Book Marketing Services | Best Selling Publisher",
+    "image": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+    "url": "https://bestsellingpublisher.com/book-marketing",
+    "telephone": "(800) 781-9093",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1001 Wilshire Boulevard #1176",
+      "addressLocality": "Los Angeles",
+      "addressRegion": "CA",
+      "postalCode": "90017",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 34.0518073,
+      "longitude": -118.2613875
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "09:00",
+      "closes": "17:00"
+    } 
+  }
+  const schemaProduct = {
+    "@context": "https://schema.org/", 
+    "@type": "Product", 
+    "name": "Book Marketing Services | Best Selling Publisher",
+    "image": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+    "description": "Market your book on Amazon and other platforms with our high quality book marketing services",
+    "brand": {
+      "@type": "Brand",
+      "name": "Best Selling Publisher"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "ratingCount": "1174"
+    }
+  }
   return (
     <main>
       <Head>
@@ -53,6 +121,16 @@ const BookMarketing = () => {
 
         {/* canonical: */}
         <link rel="canonical" href="https://bestsellingpublisher.com/book-marketing" />
+
+        {/* Schema */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaWebsite)}}/>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaCorporation)}}/>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaProffesionalService)}}/>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaProduct)}}/>
+
+
+
+
       </Head>
       <MRHero
         title="Providing Professional Online Book Marketing Services"

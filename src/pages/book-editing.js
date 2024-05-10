@@ -62,6 +62,74 @@ const BookEditing = () => {
         },
       ]
     }]
+
+    const schemaWebsite = {
+      "@context": "https://schema.org/",
+      "@type": "WebSite",
+      "name": "Book Editing Services | Best Selling Publisher",
+      "url": "https://bestsellingpublisher.com/book-editing",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "{search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    const schemaCorporation = {
+      "@context": "https://schema.org",
+      "@type": "Corporation",
+      "name": "Book Editing Services | Best Selling Publisher",
+      "url": "https://bestsellingpublisher.com/book-editing",
+      "logo": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png"
+    }
+    const schemaProffesionalService = {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Book Editing Services | Best Selling Publisher",
+      "image": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+      "url": "https://bestsellingpublisher.com/book-editing",
+      "telephone": "(800) 781-9093",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1001 Wilshire Boulevard #1176",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA",
+        "postalCode": "90017",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 34.0518073,
+        "longitude": -118.2613875
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "17:00"
+      } 
+    }
+    const schemaProduct = {
+      "@context": "https://schema.org/", 
+      "@type": "Product", 
+      "name": "Book Editing Services | Best Selling Publisher",
+      "image": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+      "description": "Get your manuscript edited by our leading book editors. Hire our book editing services today",
+      "brand": {
+        "@type": "Brand",
+        "name": "Best Selling Publisher"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "1174"
+      }
+    }
   return (
     <main>
       <Head>
@@ -73,6 +141,15 @@ const BookEditing = () => {
 
         {/* canonical: */}
         <link rel="canonical" href="https://bestsellingpublisher.com/book-editing" />
+        
+        {/* Schema */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaWebsite)}}/>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaCorporation)}}/>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaProffesionalService)}}/>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaProduct)}}/>
+
+        
+
       </Head>
       <MRHero
         title="Craft the Perfect Narrative for Your Manuscript with our Expert Book Editing Services"
