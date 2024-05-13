@@ -108,7 +108,7 @@ const Home = () => {
     "url": "https://bestsellingpublisher.com/",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "[search_term_string]",
+      "target": "{search_term_string}",
       "query-input": "required name=search_term_string"
     }
   }
