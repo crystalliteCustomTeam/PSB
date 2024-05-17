@@ -101,7 +101,7 @@ const YourComponent = ({
           <div className='mr-container grid mr-xl:grid-cols-2 mr-lg:grid-cols-2 mr-lg:!text-left text-center justify-center text-white md:py-[50px] xs:py-[30px] sm:py-[30px]'>
             <div className='items-center relative mr-xl:py-[150px] mr-lg:py-[150px]'>
               <span className='mr-2xl:text-[40px] mr-xl:text-[35px] px-2 py-1 bg-black text-white mr-xs:text-center font-primary font-bold mr-md:text-[35px] mr-sm:text-[35px] mr-xs:text-[25px] leading-normal mb-3'>{subtitle}</span>
-              <h3 className='mr-2xl:text-[40px] mr-xl:text-[42px] xs:text-center font-primary font-bold mr-md:text-[35px] mr-sm:text-[30px] mr-xs:text-[25px] leading-tight mb-3' dangerouslySetInnerHTML={{__html: title}} />
+              <h2 className='mr-2xl:text-[40px] mr-xl:text-[42px] xs:text-center font-primary font-bold mr-md:text-[35px] mr-sm:text-[30px] mr-xs:text-[25px] leading-tight mb-3' dangerouslySetInnerHTML={{__html: title}} />
               <p className='xs:!text-center m-auto md:px-10 mr-xl:px-0' dangerouslySetInnerHTML={{__html : desc}} />
               <div className='mx-auto py-4'>
                 <div className='flex gap-3 mr-xl:!justify-start md:!justify-center sm:!justify-center xs:!justify-center'>

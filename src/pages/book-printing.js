@@ -19,13 +19,13 @@ const BookPrinting = () => {
         {
           title: "Low Upfront Costs",
           textColor: "text-[#40BEE2]",
-          desc: "Looking for an affordable way to publish? We're so glad you found us! <span class='h-3 block'></span> At Best Selling Publisher, we're all about making publishing accessible to everyone. That's why our services come with low upfront costs, perfect for aspiring authors and established writers. With transparent pricing and no hidden fees, you can start your publishing journey confidently, assured that you're getting outstanding value for every penny invested.",
+          desc: "Looking for an affordable way to publish? We're so glad you found us! <span class='h-3 block'></span> At Best Selling Publisher, we're all about making <a href='https://bestsellingpublisher.com/book-publishing'> book publishing </a> accessible to everyone. That's why our services come with low upfront costs, perfect for aspiring authors and established writers. With transparent pricing and no hidden fees, you can start your publishing journey confidently, assured that you're getting outstanding value for every penny invested.",
           minHeight: "overflow-y-scroll h-[130px]",
         },
         {
           title: "Complete Publishing Solution",
           textColor: "text-[#40BEE2]",
-          desc: "Do you want a publishing partner who's got your back every step of the way? <span class='h-3 block'></span> Best Selling Publisher is here with solutions crafted to meet all your needs. Our journey covers everything from editing and design to distribution and marketing, ensuring your book realizes its full potential. With a team of experts dedicated to your project, we walk you through the entire publishing process, offering personalized advice and support tailored just for you.",
+          desc: "Do you want a publishing partner who's got your back every step of the way? <span class='h-3 block'></span> Best Selling Publisher is here with solutions crafted to meet all your needs. Our journey covers everything from <a href='https://bestsellingpublisher.com/book-editing'>book editing</a> and design to distribution and marketing, ensuring your book realizes its full potential. With a team of experts dedicated to your project, we walk you through the entire publishing process, offering personalized advice and support tailored just for you.",
           minHeight: "overflow-y-scroll h-[130px]",
         },
         {
@@ -37,7 +37,7 @@ const BookPrinting = () => {
         {
           title: "Reach Millions Of Readers",
           textColor: "text-[#40BEE2]",
-          desc: "Want your book to be everywhere readers are looking, both online and in stores? <span class='h-3 block'></span>  Through our partnerships with major retailers, online platforms, and libraries, we ensure your book shines in both digital and print formats wherever books are sold. With Best Selling Publisher, you can share your story with the world and reach millions of readers eager to discover new books and authors. ",
+          desc: "Want your book to be everywhere readers are looking, both online and in stores? <span class='h-3 block'></span>  Through our partnerships with major retailers, online platforms, and libraries, we ensure your book shines in both digital and print formats wherever books are sold. With Best Selling Publisher, you can share your story with the world and reach millions of readers eager to discover new books and authors.",
           minHeight: "overflow-y-scroll h-[130px]",
         },
       ]
@@ -174,7 +174,7 @@ const BookPrinting = () => {
       <MRCards
         subTitle="Our Printing Services Offer"
         title={`Words that Are Easy to Read and Easy <br class="mr-xl:block hidden"/> to Comprehend`}
-        desc={`We have been in the printing business for a very long time. We understand that words on a printed page, if not done properly, <br class="mr-xl:block hidden"/> are nothing but mere squiggles.`}
+        desc={`We have been in the business for a very long time as print book publishers, which has helped us understand that words on a printed page, if not executed properly, are nothing but mere squiggles. Here's what our professional book printing services offer:`}
         gridsClasses="mr-xl:grid-cols-4 mr-lg:grid-cols-3 mr-sm:grid-cols-2"
         cta={false}
         variant="steps"
@@ -193,18 +193,23 @@ const BookPrinting = () => {
       <CTA
         subtitle="The Wait is Over — It's Go Time!"
         title="Start Your Project With Best Selling Publisher Today!"
-        desc="Need help or have questions? Our friendly team is here to assist you during our business hours. We warmly invite you to reach out; your questions and needs always take center stage with us. Feel free to get in touch anytime."
+        desc="Need help or have questions? As a top-grade book printing company, we are here to assist you during our business hours. We warmly invite you to reach out; your questions and needs always take center stage with us. Feel free to get in touch anytime."
       />
       <MRCards
         subTitle="We Pursue"
         title={`A Swift Work Mode that Involves <br class="mr-xl:block hidden" /> 4 Easy Steps`}
-        desc={`We emphasize prompt deliveries because we don’t like to keep you waiting. Following are the <br class="mr-xl:block hidden" /> 4 easy steps that keep us streamlined from the beginning:`}
+        desc={`We, as a leading book printing company, emphasize prompt deliveries because we don’t like to keep you waiting. Maintaining our reputation as the premier provider of the best book printing services is of utmost importance to us. Here are the four easy steps outlining our top book printing services, ensuring a streamlined process from the beginning:`}
         gridsClasses="mr-xl:grid-cols-4 mr-lg:grid-cols-3 mr-sm:grid-cols-2"
         cta={false}
         variant="steps"
         data={MRCardData2} />
       <SwiperComponents />
-      <MRContact />
+      <MRContact 
+       subTitle="Discuss Your Ideas"
+       title="Do You Have A Story Plot <br/> In Mind? Tell Us About It!"
+       desc="We value your time and energy, which is why we're here to help you transform your
+       narrative into a beautifully written book. Get top-quality book printing services for hire by simply filling out our form, and our dedicated team will be in touch to discuss your needs."
+      />
     </main>
   )
 }
