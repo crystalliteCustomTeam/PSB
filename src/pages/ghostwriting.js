@@ -158,7 +158,7 @@ const ProfessionalGhostwriting = () => {
   return (
     <main>
       <Head>
-        <meta name="robots" content="noindex" />
+        <meta name="robots" content="noindex, nofollow" />
         <title>Professional Ghostwriting Services | Best Selling Publisher</title>
         <meta name="description" content="Best Selling Publisher offers professional ghostwriting services tailored to your needs. Start your publishing journey today and see why we're the premier choice for authors." />
 
