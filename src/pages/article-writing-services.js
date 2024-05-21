@@ -229,7 +229,7 @@ const ArticleWritingServices = () => {
       <CTA
         subtitle="It's Time to Kick Off Your Dream Project"
         title="Are You Ready to Start Publishing?"
-        desc="Our team is here for you if you want to start book publishing! Do you have questions or need assistance? Just reach out during our operational hours. We're always happy to help. Don't be shy – we'd love to hear from you!"
+        desc="Our team is here for you if you want to start <a href='https://bestsellingpublisher.com/book-publishing'> book publishing</a>! Do you have questions or need assistance? Just reach out during our operational hours. We're always happy to help. Don't be shy – we'd love to hear from you!"
       />
       <MRCards
         subTitle="We Pursue"
