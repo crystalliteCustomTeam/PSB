@@ -8,10 +8,14 @@ import CTA from '../component/cta3';
 import SwiperComponents from '../component/SwiperComponent'
 import { MRHero, MRContact } from '@/component';
 import Enlistedlogo from '@/fa-component/Enlistedlogo'
+import Head from 'next/head';
 
 const blog = () => {
   return (
     <>
+      <Head>
+        <meta name="robots" content="noindex" />
+      </Head>
       <main>
         {/* <FEATURED
           banneraffordable='aboutus'

@@ -7,10 +7,14 @@ import CTA from '../component/cta3';
 import SwiperComponents from '../component/SwiperComponent'
 
 import Bloginners from '../component/Bloginner'
+import Head from 'next/head';
 
 const blog = () => {
   return (
     <>
+    <Head>
+    <meta name="robots" content="noindex"/>
+    </Head>
       <main>
 
         <div>
