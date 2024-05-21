@@ -81,7 +81,7 @@ const Header = () => {
                                     </span>
                                   </Link>
                                 </li> */}
-                                <li>
+                                {/* <li>
                                   <Link
                                     href="/seo-content-writing-services"
                                     className="flex justify-start align-middle items-center p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600">                   <span>
@@ -91,7 +91,7 @@ const Header = () => {
                                       SEO Writing
                                     </span>
                                   </Link>
-                                </li>
+                                </li> */}
                                 <li>
                                   <Link
                                     href="/article-writing-services"
@@ -123,7 +123,7 @@ const Header = () => {
                               <p className="uppercase tracking-wider text-gray-500 font-medium text-[13px]">
                                 Extensions
                               </p>
-                              <ul className="mt-4 text-[15px]">
+                              {/* <ul className="mt-4 text-[15px]">
                                 <li>
                                   <Link
                                     href="/web-copywriting-services"
@@ -162,7 +162,7 @@ const Header = () => {
                                     </span>
                                   </Link>
                                 </li>
-                              </ul>
+                              </ul> */}
                             </div>
                           </div>
                         </div>
@@ -170,8 +170,8 @@ const Header = () => {
                     </div>
                   </li>
                   {[
-                    ['Genre', '/genre'],
-                    ['Marketing', '/book-marketing'],
+                    // ['Genre', '/genre'],
+                    // ['Marketing', '/book-marketing'],
                     ['Publication', '/publication'],
                     ['Printing', '/book-printing'],
                     ['Cover Design', '/book-cover-design'],

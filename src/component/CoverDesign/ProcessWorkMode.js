@@ -152,7 +152,7 @@ const ProcessWorkMode = () => {
 
                                         Year Books
                                         <span className='block font-normal text-[13px] leading-5 mt-2'>
-                                            All your academic achievements and memories in one place.
+                                            All your achievements and memories in one place.
                                         </span>
                                     </p>
                                 </div>

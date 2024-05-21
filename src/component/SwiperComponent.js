@@ -51,7 +51,7 @@ const TestimonialsSlider = () => {
       name: "Tami Pierce",
       title: "CTO, Cybertech Solutions",
       quote:
-        "“I hired Best Selling Publisher for ghostwriting services, and I couldn't be happier with the results! They perfectly captured my voice and brought my ideas to life in a way I never could have on my own. Highly recommend their talented team!”",
+        "“I hired Best Selling Publisher for book writing services, and I couldn't be happier with the results! They perfectly captured my voice and brought my ideas to life in a way I never could have on my own. Highly recommend their talented team!”",
     },
     {
       avatar: "/assets/images/newimg/stars.png",

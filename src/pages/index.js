@@ -20,7 +20,7 @@ const MRQuestionersData = [
   },
   {
     title: "Range of Services",
-    desc: "Our services vary from ghostwriting that whispers your story to the world, SEO content that puts you on the map, and articles, magazines, and web copy that speak volumes. Not to mention press releases and scripts that make waves — we've got all your writing needs covered!"
+    desc: "Our services vary from book writing that whispers your story to the world, SEO content that puts you on the map, and articles, magazines, and web copy that speak volumes. Not to mention press releases and scripts that make waves — we've got all your writing needs covered!"
   },
   {
     title: "Goal-Driven",

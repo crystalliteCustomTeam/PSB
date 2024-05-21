@@ -1,13 +1,21 @@
-import LHArticle from "@/component/WebCopywritingServices/LetUsHelpWeb"
+import LHScript from "@/component/ScriptWritingServices/LetUsPress"
+import GhostWriting from "@/component/ghostWritingServices/ghostWriting"
+import WMODE from "@/component/workMode1"
 import CTA from "@/component/cta3"
 import BTM from "@/component/bottomLogos"
 import SwiperComponents from "@/component/SwiperComponent"
-import WMODE from "@/component/workMode1"
 import Enlistedlogo from "@/fa-component/Enlistedlogo"
 import { MRHero, MRContact, MRContent2, MRContent1, MRCards } from "@/component"
 import Head from "next/head"
+// Import Images
+import Film from "media/imageAR/Film.png"
+import Video from "media/imageAR/Video.png"
+import Documentary from "media/imageAR/Documentary.png"
+import Story from "media/imageAR/Story.png"
+import Manuscript from "media/imageAR/Manuscript.png"
+import Content from "media/imageAR/Content.png"
 
-const WebCopywritingServices = () => {
+const ScriptWritingServices = () => {
   const MRContent2Data = [
     {
       title: "Fiction",
@@ -36,31 +44,31 @@ const WebCopywritingServices = () => {
   ]
   const MRCardData = [
     {
-      classes: "bg-[#fff] shadow-lg px-3 rounded-lg relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-center",
+      classes: "bg-[#fff] shadow-lg px-3 rounded-2xl relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#40BEE2] hover:!text-white text-center",
       content: [
         {
-          icon: "",
-          title: "Original Key-Word </br> Optimized Content",
+          icon: Film,
+          title: "Film </br> Writing",
         },
         {
-          icon: "",
-          title: "Content Writing </br> And Editing Services",
+          icon: Video,
+          title: "Video </br> Scripting",
         },
         {
-          icon: "",
-          title: "Professional Writers </br> Trained In SEO",
+          icon: Documentary,
+          title: "Documentary </br> Scripting",
         },
         {
-          icon: "",
-          title: "Easy-To-Use </br> Platform",
+          icon: Story,
+          title: "Story </br> Scripting",
         },
         {
-          icon: "",
-          title: "Topic </br> Ideation",
+          icon: Manuscript,
+          title: "Manuscript </br> Scripting",
         },
         {
-          icon: "",
-          title: "Creative, Out-Of-The- </br> Box Taglines",
+          icon: Content,
+          title: "Content </br> Scripting",
         },
       ]
     }]
@@ -92,124 +100,120 @@ const WebCopywritingServices = () => {
         },
       ]
     }]
-    const schemaWebsite = {
-      "@context": "https://schema.org/",
-      "@type": "WebSite",
-      "name": "Web Copywriting Services | Best Selling Publisher",
-      "url": "https://bestsellingpublisher.com/web-copywriting-services",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "{search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    }
 
-    const schemaCorporation = {
-      "@context": "https://schema.org",
-      "@type": "Corporation",
-      "name": "Web Copywriting Services | Best Selling Publisher",
-      "url": "https://bestsellingpublisher.com/web-copywriting-services",
-      "logo": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png"
+  const schemaWebsite = {
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    "name": "Script Writing Services | Best Selling Publisher",
+    "url": "https://bestsellingpublisher.com/script-writing-services",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "{search_term_string}",
+      "query-input": "required name=search_term_string"
     }
+  }
 
-    const schemaProffesionalService = {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Web Copywriting Services | Best Selling Publisher",
-      "image": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
-      "url": "https://bestsellingpublisher.com/web-copywriting-services",
-      "telephone": "(800) 781-9093",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "1001 Wilshire Boulevard #1176",
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "postalCode": "90017",
-        "addressCountry": "US"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 34.0518073,
-        "longitude": -118.2613875
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
-        "opens": "09:00",
-        "closes": "17:00"
-      } 
+  const schemaCorporation = {
+    "@context": "https://schema.org",
+    "@type": "Corporation",
+    "name": "Script Writing Services | Best Selling Publisher",
+    "url": "https://bestsellingpublisher.com/script-writing-services",
+    "logo": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png"
+  }
+  const schemaProffesionalService = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Script Writing Services | Best Selling Publisher",
+    "image": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+    "url": "https://bestsellingpublisher.com/script-writing-services",
+    "telephone": "(800) 781-9093",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1001 Wilshire Boulevard #1176",
+      "addressLocality": "Los Angeles",
+      "addressRegion": "CA",
+      "postalCode": "90017",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 34.0518073,
+      "longitude": -118.2613875
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "09:00",
+      "closes": "17:00"
+    } 
+  }
+  const schemaProduct = {
+    "@context": "https://schema.org/", 
+    "@type": "Product", 
+    "name": "Script Writing Services | Best Selling Publisher",
+    "image": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+    "description": "Take your scripts to the next level with our top rated script writing services",
+    "brand": {
+      "@type": "Brand",
+      "name": "Best Selling Publisher"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "ratingCount": "1174"
     }
-
-    const schemaProduct = {
-      "@context": "https://schema.org/", 
-      "@type": "Product", 
-      "name": "Web Copywriting Services | Best Selling Publisher",
-      "image": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
-      "description": "Get the best quality of web copies written with our web copywriting services",
-      "brand": {
-        "@type": "Brand",
-        "name": "Best Selling Publisher"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "ratingCount": "1174"
-      }
-    }
+  }
   return (
     <main>
       <Head>
-        <title>Web Copywriting Services | Best Selling Publisher</title>
+        <title>Script Writing Services | Best Selling Publisher</title>
         <meta name="description" content="At Best Selling Publisher, we take pride in our exceptional article writing services. Connect with us to start your publishing journey today!" />
+        <meta name="robots" content="noindex, nofollow" />
 
-        <meta property="og:url" content="https://bestsellingpublisher.com/web-copywriting-services" />
+        <meta property="og:url" content="https://bestsellingpublisher.com/script-writing-services" />
         <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
 
         {/* canonical: */}
-        <link rel="canonical" href="https://bestsellingpublisher.com/web-copywriting-services" />
+        <link rel="canonical" href="https://bestsellingpublisher.com/script-writing-services" />
 
         {/* Schema */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaWebsite)}}/>
+
         <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaCorporation)}}/>
+
         <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaProffesionalService)}}/>
+
         <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaProduct)}}/>
 
 
 
       </Head>
       <MRHero
-        title="Develop Your Business With The Outstanding Skills And  Expertise of Our Web Copywriters"
-        desc="Welcome to Best Selling Publisher Ghostwriting. We offer professional web copywriting services, taking your website to the next level with the help of our expert copywriters."
+        title="Professional High-Quality <br /> Script by Expert Writers"
+        desc="Streamline your content needs with our high-quality script writing service, which educates your audience about your brand and helps elevate you."
         logos="images/banner/img2.png"
-        classes='bg-[#FEFEFE] !py-[80px]'
-        beforeImg="mr-md:before:bg-[url('../../public/imageAR/front-laptop-keyboard.png')]"
+        classes='bg-[#fefefe] !py-[80px]'
+        beforeImg="mr-md:before:bg-[url('../../public/imageAR/notebook.png')]"
         counter={true}
       />
       <Enlistedlogo />
-      <MRContent1
-        subTitle="Communicate"
-        title="Your Brand’s Message Efficiently"
-        desc="Our professional SEO writers produce keyword-rich content to help you beat the competition, bringing in the high ranking needed to elevate your website for better outreach, branding, and visibility."
-        img1="/assets/images/newimg/communicate.png"
-        direction="flex-row-reverse"
-      />
       <MRCards
-        subTitle="Our Services Have Been Constantly Hailed as Remarkable"
-        title={`What Makes Us the Premier Choice in <br class="mr-xl:block hidden" /> Professional Ghostwriting?`}
-        desc="Best Selling Publisher's ghostwriting services truly stand out as a class apart. Their team of expert writers possesses an unparalleled ability to capture the unique voice and essence of each client, flawlessly translating their ideas into fascinating prose. What sets them apart is their dedication to understanding the vision and goals of their clients."
+        subTitle="The Script That Is"
+        title={`Written With Pure Perfection`}
+        desc="Scriptwriting is massive, but with us, it becomes easy and accessible. You choose your script, and our writers do wonders with it. Our scriptwriting is known and acknowledged internationally."
         gridsClasses="mr-xl:grid-cols-3 mr-lg:grid-cols-3 mr-sm:grid-cols-2 !gap-x-8 mr-xl:w-[80%] mx-auto"
         cta={true}
         variant="icons"
         data={MRCardData} />
       <MRContent1
         subTitle="Our Comprehensive"
-        title="Web Copywriting Services"
+        title="Script Writing Services"
         desc="We have a vast pool of ghostwriters and will work with you to find the best match for your needs. You will receive a PR and media campaign, an audiobook with a professional voice actor, and high-quality studio production. Finally, distribution and retailer accounts will be established in your name, ensuring you own all rights and royalties."
         img2="/assets/images/newimg/ghostwriting_book.png"
         listTitle="Our process is simple and aims to deliver flawless results for every project."
@@ -233,8 +237,8 @@ const WebCopywritingServices = () => {
         desc="You may have an idea for the next best-seller, but you may not have the time or expertise to write it yourself. Our platform meets all of the <br class='mr-xl:block hidden'/> requirements and offers a diverse range of writing styles, including:"
         data={MRContent2Data}
       />
-      <BTM />
       <CTA />
+      <BTM />
       <MRCards
         subTitle="We Pursue"
         title={`A Swift Work Mode that Involves <br class="mr-xl:block hidden" /> 4 Easy Steps`}
@@ -249,4 +253,4 @@ const WebCopywritingServices = () => {
   )
 }
 
-export default WebCopywritingServices
+export default ScriptWritingServices
