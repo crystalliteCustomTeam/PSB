@@ -137,11 +137,11 @@ const ProfessionalGhostwriting = () => {
       ],
       "opens": "09:00",
       "closes": "17:00"
-    } 
+    }
   }
   const schemaProduct = {
-    "@context": "https://schema.org/", 
-    "@type": "Product", 
+    "@context": "https://schema.org/",
+    "@type": "Product",
     "name": "Ghostwriting Services | Best Selling Publisher",
     "image": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
     "description": "Get your book written with our top-rated ghostwriters as you hire our ghostwriting services",
@@ -158,6 +158,7 @@ const ProfessionalGhostwriting = () => {
   return (
     <main>
       <Head>
+        <meta name="robots" content="noindex" />
         <title>Professional Ghostwriting Services | Best Selling Publisher</title>
         <meta name="description" content="Best Selling Publisher offers professional ghostwriting services tailored to your needs. Start your publishing journey today and see why we're the premier choice for authors." />
 
@@ -166,12 +167,12 @@ const ProfessionalGhostwriting = () => {
 
         {/* canonical: */}
         <link rel="canonical" href="https://bestsellingpublisher.com/ghostwriting" />
-        
+
         {/* Schema */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaWebsite)}}/>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaCorporation)}}/>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaProffesionalService)}}/>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaProduct)}}/>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaWebsite) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaCorporation) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProffesionalService) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProduct) }} />
 
 
 
