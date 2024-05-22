@@ -17,15 +17,15 @@ import Linking from "media/imageAR/linking.png"
 const MRContent2Data = [
   {
     title: "Fiction",
-    desc: "Our fiction ghostwriters will assist you in creatively expressing your ideas into enticing literacy that will captivate your audience. All aspects of a story are considered, particularly the author’s major plot and characters. "
+    desc: "Our fiction writers will assist you in creatively expressing your ideas into enticing literacy that will captivate your audience. All aspects of a story are considered, particularly the author’s major plot and characters. "
   },
   {
     title: "Informative",
-    desc: "Our ghostwriters comprehend the nuance of your text. They ensure their information is reliable and well-acknowledged worldwide, under the available data and facts."
+    desc: "Our writers comprehend the nuance of your text. They ensure their information is reliable and well-acknowledged worldwide, under the available data and facts."
   },
   {
     title: "Memoir",
-    desc: "Our ghostwriters have been trained to write memoirs, not to confuse them with autobiographies. Furthermore, they cherish your sentiments and emotions and go to great lengths to turn your precious memories into a book."
+    desc: "Our writers have been trained to write memoirs, not to confuse them with autobiographies. Furthermore, they cherish your sentiments and emotions and go to great lengths to turn your precious memories into a book."
   },
   {
     title: "Children's Book",
@@ -171,7 +171,7 @@ const SEOContentWritingServices = () => {
     <main>
       <Head>
         <title>SEO Content Writing Services | Best Selling Publisher</title>
-        <meta name="description" content="Best Selling Publisher offers professional ghostwriting services tailored to your needs. Start your publishing journey today and see why we're the premier choice for authors." />
+        <meta name="description" content="Best Selling Publisher offers professional writing services tailored to your needs. Start your publishing journey today and see why we're the premier choice for authors." />
         <meta name="robots" content="noindex,nofollow"/>
         <meta property="og:url" content="https://bestsellingpublisher.com/seo-content-writing-services" />
         <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
@@ -200,7 +200,7 @@ const SEOContentWritingServices = () => {
       <MRCards
         subTitle="Let Us Help You"
         title={`What Sets Us Apart?`}
-        desc="Best Selling Publisher Ghostwriting is a well-known international ghostwriting and editing firm operating for over a decade. Our experts create well-versed writing that demonstrates true professionalism while exhibiting creativity. Our services are not only economical but also ensure that both the needs of the authors and the preferences of their target audience are adequately met. Some of our platform's distinguishing traits are as follows:"
+        desc="Best Selling Publisher Writing is a well-known international writing and editing firm operating for over a decade. Our experts create well-versed writing that demonstrates true professionalism while exhibiting creativity. Our services are not only economical but also ensure that both the needs of the authors and the preferences of their target audience are adequately met. Some of our platform's distinguishing traits are as follows:"
         gridsClasses="mr-xl:grid-cols-3 mr-lg:grid-cols-3 mr-sm:grid-cols-2 !gap-x-8 mr-xl:w-[80%] mx-auto"
         cta={true}
         variant="icons"
@@ -208,7 +208,7 @@ const SEOContentWritingServices = () => {
       <MRContent1
         subTitle="Our Comprehensive"
         title="SEO Content Writing Services"
-        desc="We have a vast pool of ghostwriters and will work with you to find the best match for your needs. You will receive a PR and media campaign, an audiobook with a professional voice actor, and high-quality studio production. Finally, distribution and retailer accounts will be established in your name, ensuring you own all rights and royalties."
+        desc="We have a vast pool of writers and will work with you to find the best match for your needs. You will receive a PR and media campaign, an audiobook with a professional voice actor, and high-quality studio production. Finally, distribution and retailer accounts will be established in your name, ensuring you own all rights and royalties."
         img2="/assets/images/newimg/ghostwriting_book.png"
         listTitle="Our process is simple & aims to deliver flawless results for every project."
         textTheme="text-white"
@@ -226,7 +226,7 @@ const SEOContentWritingServices = () => {
         theme="dark"
       />
       <MRContent2
-        subTitle="Our Creative Ghostwriters,"
+        subTitle="Our Creative Writers,"
         title="Bringing Your Imagination To Life."
         desc="You may have an idea for the next best-seller, but you may not have the time or expertise to write it yourself. Our platform meets all of the <br class='mr-xl:block hidden'/> requirements and offers a diverse range of writing styles, including:"
         data={MRContent2Data}

@@ -10,15 +10,15 @@ const PressReleaseWritingServices = () => {
   const MRContent2Data = [
     {
       title: "Fiction",
-      desc: "Our fiction ghostwriters will assist you in creatively expressing your ideas into enticing literacy that will captivate your audience. All aspects of a story are considered, particularly the author’s major plot and characters. "
+      desc: "Our fiction writers will assist you in creatively expressing your ideas into enticing literacy that will captivate your audience. All aspects of a story are considered, particularly the author’s major plot and characters. "
     },
     {
       title: "Informative",
-      desc: "Our ghostwriters comprehend the nuance of your text. They ensure their information is reliable and well-acknowledged worldwide, under the available data and facts."
+      desc: "Our writers comprehend the nuance of your text. They ensure their information is reliable and well-acknowledged worldwide, under the available data and facts."
     },
     {
       title: "Memoir",
-      desc: "Our ghostwriters have been trained to write memoirs, not to confuse them with autobiographies. Furthermore, they cherish your sentiments and emotions and go to great lengths to turn your precious memories into a book."
+      desc: "Our writers have been trained to write memoirs, not to confuse them with autobiographies. Furthermore, they cherish your sentiments and emotions and go to great lengths to turn your precious memories into a book."
     },
     {
       title: "Children's Book",
@@ -155,7 +155,7 @@ const PressReleaseWritingServices = () => {
       </Head>
       <MRHero
         title="Get Your Press Releases <br /> Covered By the Right Sites"
-        desc="Welcome to Best Selling Publisher Ghostwriting. We offer professional web copywriting services, taking your website to the next level with the help of our expert copywriters."
+        desc="Welcome to Best Selling Publisher writing. We offer professional web copywriting services, taking your website to the next level with the help of our expert copywriters."
         logos="images/banner/img2.png"
         classes='bg-[#fefefe] !py-[80px]'
         counter={true}
@@ -179,7 +179,7 @@ const PressReleaseWritingServices = () => {
       <MRContent1
         subTitle="Our Comprehensive"
         title="Press Release Writing Services"
-        desc="We have a vast pool of ghostwriters and will work with you to find the best match for your needs. You will receive a PR and media campaign, an audiobook with a professional voice actor, and high-quality studio production. Finally, distribution and retailer accounts will be established in your name, ensuring you own all rights and royalties."
+        desc="We have a vast pool of writers and will work with you to find the best match for your needs. You will receive a PR and media campaign, an audiobook with a professional voice actor, and high-quality studio production. Finally, distribution and retailer accounts will be established in your name, ensuring you own all rights and royalties."
         img2="/assets/images/newimg/ghostwriting_book.png"
         listTitle="Our process is simple and aims to deliver flawless results for every project."
         textTheme="text-white"
@@ -197,7 +197,7 @@ const PressReleaseWritingServices = () => {
         theme="dark"
       />
       <MRContent2
-        subTitle="Our Creative Ghostwriters,"
+        subTitle="Our Creative Writers,"
         title="Bringing Your Imagination To Life."
         desc="You may have an idea for the next best-seller, but you may not have the time or expertise to write it yourself. Our platform meets all of the <br class='mr-xl:block hidden'/> requirements and offers a diverse range of writing styles, including:"
         data={MRContent2Data}

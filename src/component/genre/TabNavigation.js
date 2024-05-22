@@ -140,7 +140,7 @@ const ParentComponent = () => {
             <div className='space-y-2'>
               <h6 className='text-[30px] font-semibold text-[#40BEE2] font-primary'> Content for Non Fiction</h6>
               <h3 className='font-bold font-primary text-[40px] leading-tight md:text-4xl sm:text-3xl xs:text-3xl'>Top-ranked Non fiction writing services</h3>
-              <p>For this genre of compelling stories, engaging character dialogue and emotional story beats. You require the services of a Non fiction ghostwriter for hire. Our writers are adept at making the worlds of your stories come to life with the usage of story telling elements such as intensive world building, fascinating character motivations, intriguing plotting. This leads to our clients often times becoming best selling authors.</p>
+              <p>For this genre of compelling stories, engaging character dialogue and emotional story beats. You require the services of a Non fiction writer for hire. Our writers are adept at making the worlds of your stories come to life with the usage of story telling elements such as intensive world building, fascinating character motivations, intriguing plotting. This leads to our clients often times becoming best selling authors.</p>
               <div className='w-[60%] grid grid-cols-2 grid-rows-1 gap-x-5 py-5 md:w-[100%] sm:w-[90%] xs:w-[90%]'>
                 <MRCTAGroup />
               </div>
@@ -159,7 +159,7 @@ const ParentComponent = () => {
             <div className='space-y-2'>
               <h6 className='text-[30px] font-semibold text-[#40BEE2] font-primary'> Content for Biography</h6>
               <h3 className='font-bold font-primary text-[40px] leading-tight md:text-4xl sm:text-3xl xs:text-3xl'>Top-ranked Biography writing services</h3>
-              <p>For this genre of compelling stories, engaging character dialogue and emotional story beats. You require the services of a Biography ghostwriter for hire. Our writers are adept at making the worlds of your stories come to life with the usage of story telling elements such as intensive world building, fascinating character motivations, intriguing plotting. This leads to our clients often times becoming best selling authors.</p>
+              <p>For this genre of compelling stories, engaging character dialogue and emotional story beats. You require the services of a Biography writer for hire. Our writers are adept at making the worlds of your stories come to life with the usage of story telling elements such as intensive world building, fascinating character motivations, intriguing plotting. This leads to our clients often times becoming best selling authors.</p>
               <div className='w-[60%] grid grid-cols-2 grid-rows-1 gap-x-5 py-5 md:w-[100%] sm:w-[90%] xs:w-[90%]'>
                 <MRCTAGroup />
               </div>
@@ -178,7 +178,7 @@ const ParentComponent = () => {
             <div className='space-y-2'>
               <h6 className='text-[30px] font-semibold text-[#40BEE2] font-primary'>Content for Informative</h6>
               <h3 className='font-bold font-primary text-[40px] leading-tight md:text-4xl sm:text-3xl xs:text-3xl'>Top-ranked Informative writing services</h3>
-              <p>For this genre of compelling stories, engaging character dialogue and emotional story beats. You require the services of a Informative ghostwriter for hire. Our writers are adept at making the worlds of your stories come to life with the usage of story telling elements such as intensive world building, fascinating character motivations, intriguing plotting. This leads to our clients often times becoming best selling authors.</p>
+              <p>For this genre of compelling stories, engaging character dialogue and emotional story beats. You require the services of a Informative writer for hire. Our writers are adept at making the worlds of your stories come to life with the usage of story telling elements such as intensive world building, fascinating character motivations, intriguing plotting. This leads to our clients often times becoming best selling authors.</p>
               <div className='w-[60%] grid grid-cols-2 grid-rows-1 gap-x-5 py-5 md:w-[100%] sm:w-[90%] xs:w-[90%]'>
                 <MRCTAGroup />
               </div>
@@ -197,7 +197,7 @@ const ParentComponent = () => {
             <div className='space-y-2'>
               <h6 className='text-[30px] font-semibold text-[#40BEE2] font-primary'>Content for Autobiography</h6>
               <h3 className='font-bold font-primary text-[40px] leading-tight md:text-4xl sm:text-3xl xs:text-3xl'>Top-ranked Autobiography writing services</h3>
-              <p>For this genre of compelling stories, engaging character dialogue and emotional story beats. You require the services of a Autobiography ghostwriter for hire. Our writers are adept at making the worlds of your stories come to life with the usage of story telling elements such as intensive world building, fascinating character motivations, intriguing plotting. This leads to our clients often times becoming best selling authors.</p>
+              <p>For this genre of compelling stories, engaging character dialogue and emotional story beats. You require the services of a Autobiography writer for hire. Our writers are adept at making the worlds of your stories come to life with the usage of story telling elements such as intensive world building, fascinating character motivations, intriguing plotting. This leads to our clients often times becoming best selling authors.</p>
               <div className='w-[60%] grid grid-cols-2 grid-rows-1 gap-x-5 py-5 md:w-[100%] sm:w-[90%] xs:w-[90%]'>
                 <MRCTAGroup />
               </div>
@@ -216,7 +216,7 @@ const ParentComponent = () => {
             <div className='space-y-2'>
               <h6 className='text-[30px] font-semibold text-[#40BEE2] font-primary'>Content for Memoir</h6>
               <h3 className='font-bold font-primary text-[40px] leading-tight md:text-4xl sm:text-3xl xs:text-3xl'>Top-ranked Memoir writing services</h3>
-              <p>For this genre of compelling stories, engaging character dialogue and emotional story beats. You require the services of a Memoir ghostwriter for hire. Our writers are adept at making the worlds of your stories come to life with the usage of story telling elements such as intensive world building, fascinating character motivations, intriguing plotting. This leads to our clients often times becoming best selling authors.</p>
+              <p>For this genre of compelling stories, engaging character dialogue and emotional story beats. You require the services of a Memoir writer for hire. Our writers are adept at making the worlds of your stories come to life with the usage of story telling elements such as intensive world building, fascinating character motivations, intriguing plotting. This leads to our clients often times becoming best selling authors.</p>
               <div className='w-[60%] grid grid-cols-2 grid-rows-1 gap-x-5 py-5 md:w-[100%] sm:w-[90%] xs:w-[90%]'>
                 <MRCTAGroup />
               </div>
@@ -235,7 +235,7 @@ const ParentComponent = () => {
             <div className='space-y-2'>
               <h6 className='text-[30px] font-semibold text-[#40BEE2] font-primary'>Content for Children Book</h6>
               <h3 className='font-bold font-primary text-[40px] leading-tight md:text-4xl sm:text-3xl xs:text-3xl'>Top-ranked Children Book writing services</h3>
-              <p>For this genre of compelling stories, engaging character dialogue and emotional story beats. You require the services of a Children Book ghostwriter for hire. Our writers are adept at making the worlds of your stories come to life with the usage of story telling elements such as intensive world building, fascinating character motivations, intriguing plotting. This leads to our clients often times becoming best selling authors.</p>
+              <p>For this genre of compelling stories, engaging character dialogue and emotional story beats. You require the services of a Children Book writer for hire. Our writers are adept at making the worlds of your stories come to life with the usage of story telling elements such as intensive world building, fascinating character motivations, intriguing plotting. This leads to our clients often times becoming best selling authors.</p>
               <div className='w-[60%] grid grid-cols-2 grid-rows-1 gap-x-5 py-5 md:w-[100%] sm:w-[90%] xs:w-[90%]'>
                 <MRCTAGroup />
               </div>

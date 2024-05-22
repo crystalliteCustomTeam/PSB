@@ -11,15 +11,15 @@ const WebCopywritingServices = () => {
   const MRContent2Data = [
     {
       title: "Fiction",
-      desc: "Our fiction ghostwriters will assist you in creatively expressing your ideas into enticing literacy that will captivate your audience. All aspects of a story are considered, particularly the author’s major plot and characters. "
+      desc: "Our fiction writers will assist you in creatively expressing your ideas into enticing literacy that will captivate your audience. All aspects of a story are considered, particularly the author’s major plot and characters. "
     },
     {
       title: "Informative",
-      desc: "Our ghostwriters comprehend the nuance of your text. They ensure their information is reliable and well-acknowledged worldwide, under the available data and facts."
+      desc: "Our writers comprehend the nuance of your text. They ensure their information is reliable and well-acknowledged worldwide, under the available data and facts."
     },
     {
       title: "Memoir",
-      desc: "Our ghostwriters have been trained to write memoirs, not to confuse them with autobiographies. Furthermore, they cherish your sentiments and emotions and go to great lengths to turn your precious memories into a book."
+      desc: "Our writers have been trained to write memoirs, not to confuse them with autobiographies. Furthermore, they cherish your sentiments and emotions and go to great lengths to turn your precious memories into a book."
     },
     {
       title: "Children's Book",
@@ -185,7 +185,7 @@ const WebCopywritingServices = () => {
       </Head>
       <MRHero
         title="Develop Your Business With The Outstanding Skills And  Expertise of Our Web Copywriters"
-        desc="Welcome to Best Selling Publisher Ghostwriting. We offer professional web copywriting services, taking your website to the next level with the help of our expert copywriters."
+        desc="Welcome to Best Selling Publisher Writing. We offer professional web copywriting services, taking your website to the next level with the help of our expert copywriters."
         logos="images/banner/img2.png"
         classes='bg-[#FEFEFE] !py-[80px]'
         beforeImg="mr-md:before:bg-[url('../../public/imageAR/front-laptop-keyboard.png')]"
@@ -201,8 +201,8 @@ const WebCopywritingServices = () => {
       />
       <MRCards
         subTitle="Our Services Have Been Constantly Hailed as Remarkable"
-        title={`What Makes Us the Premier Choice in <br class="mr-xl:block hidden" /> Professional Ghostwriting?`}
-        desc="Best Selling Publisher's ghostwriting services truly stand out as a class apart. Their team of expert writers possesses an unparalleled ability to capture the unique voice and essence of each client, flawlessly translating their ideas into fascinating prose. What sets them apart is their dedication to understanding the vision and goals of their clients."
+        title={`What Makes Us the Premier Choice in <br class="mr-xl:block hidden" /> Professional Writing?`}
+        desc="Best Selling Publisher's writing services truly stand out as a class apart. Their team of expert writers possesses an unparalleled ability to capture the unique voice and essence of each client, flawlessly translating their ideas into fascinating prose. What sets them apart is their dedication to understanding the vision and goals of their clients."
         gridsClasses="mr-xl:grid-cols-3 mr-lg:grid-cols-3 mr-sm:grid-cols-2 !gap-x-8 mr-xl:w-[80%] mx-auto"
         cta={true}
         variant="icons"
@@ -210,7 +210,7 @@ const WebCopywritingServices = () => {
       <MRContent1
         subTitle="Our Comprehensive"
         title="Web Copywriting Services"
-        desc="We have a vast pool of ghostwriters and will work with you to find the best match for your needs. You will receive a PR and media campaign, an audiobook with a professional voice actor, and high-quality studio production. Finally, distribution and retailer accounts will be established in your name, ensuring you own all rights and royalties."
+        desc="We have a vast pool of writers and will work with you to find the best match for your needs. You will receive a PR and media campaign, an audiobook with a professional voice actor, and high-quality studio production. Finally, distribution and retailer accounts will be established in your name, ensuring you own all rights and royalties."
         img2="/assets/images/newimg/ghostwriting_book.png"
         listTitle="Our process is simple and aims to deliver flawless results for every project."
         textTheme="text-white"
@@ -228,7 +228,7 @@ const WebCopywritingServices = () => {
         theme="dark"
       />
       <MRContent2
-        subTitle="Our Creative Ghostwriters,"
+        subTitle="Our Creative Writers,"
         title="Bringing Your Imagination To Life."
         desc="You may have an idea for the next best-seller, but you may not have the time or expertise to write it yourself. Our platform meets all of the <br class='mr-xl:block hidden'/> requirements and offers a diverse range of writing styles, including:"
         data={MRContent2Data}
