@@ -12,7 +12,7 @@ import ArticleWriting from "media/assets/images/newimg/Article-Writing.png"
 import MagazineWriting from "media/assets/images/newimg/magazine-writing.png"
 import WebCopyWriting from "media/assets/images/newimg/Web-Copy-Writing.png"
 import PressRelease from "media/assets/images/newimg/Press-Release.png"
-import ScriptWriting from "media/assets/images/newimg/Script-Writing.png"
+import ScriptWriting from "media/assets/images/newimg/Script-Writing.png" 
 const Header = () => {
   const [showSubMenu, setShowSubMenu] = useState(true);
   const [menuOpen, setMenuOpen] = useState(true); // Set to false initially
