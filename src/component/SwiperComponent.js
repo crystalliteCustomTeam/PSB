@@ -48,58 +48,58 @@ const TestimonialsSlider = () => {
     {
       avatar: "/assets/images/newimg/stars.png",
       polit: "/assets/images/newimg/trust.png",
-      name: "Tami Pierce",
+      name: "Samm Helton",
       title: "CTO, Cybertech Solutions",
       quote:
-        "“I hired Best Selling Publisher for book writing services, and I couldn't be happier with the results! They perfectly captured my voice and brought my ideas to life in a way I never could have on my own. Highly recommend their talented team!”",
+        "“I was lost in the sea of publishing until I found Best Selling Publisher. Their ghostwriting and book marketing services were exactly what I needed. The team, especially Dennis, was phenomenal.”",
     },
     {
       avatar: "/assets/images/newimg/stars.png",
       polit: "/assets/images/newimg/stars.png",
-      name: "Lamar Wright",
+      name: "Palma Lauria",
       title: "CTO, Cybertech Solutions",
       quote:
-        "“Best Selling Publisher’s SEO writing service has significantly boosted our online visibility. Their expertise in keyword optimization and engaging content creation has helped us climb the search engine rankings. We’ve seen a noticeable increase in traffic and leads since partnering with them!”",
+        "“Publishing my first novel with Best Selling Publisher was a breeze. Their guidance on book editing and marketing made a world of difference. Dennis Daniel, in particular, was a pillar of support throughout this journey.”",
     },
     {
       avatar: "/assets/images/newimg/stars.png",
       polit: "/assets/images/newimg/stars.png",
-      name: "Lucas Garcia",
+      name: "Robert el Martin",
       title: "CTO, Cybertech Solutions",
       quote:
-        "“I’ve used Best Selling Publisher for article writing multiple times, and each time they’ve delivered top-notch content that exceeds my expectations. Their writers are skilled at researching diverse topics and presenting information clearly and engagingly. A fantastic choice for anyone in need of quality articles!”",
+        "“From a tangled manuscript to a published book, Best Selling Publisher made my dream a reality. Their comprehensive services, especially the marketing strategies provided the perfect launchpad for my book. Dennis Daniel's support was invaluable.”",
     },
     {
       avatar: "/assets/images/newimg/stars.png",
       polit: "/assets/images/newimg/stars.png",
-      name: "Darnell Patterson",
+      name: "Evain Stavenger",
       title: "CTO, Cybertech Solutions",
       quote:
-        "“Best Selling Publisher is my go-to for magazine writing projects. Their writers have a knack for crafting captivating stories and articles that resonate with our readers. Their attention to detail and commitment to meeting deadlines make them a pleasure to work with. Highly recommend!”",
+        "“Best Selling Publisher turned my publishing dreams into reality. Their book editing and marketing services are unparalleled. Special thanks to Dennis Daniel for his dedicated support and guidance.”",
     },
     {
       avatar: "/assets/images/newimg/stars.png",
       polit: "/assets/images/newimg/stars.png",
-      name: "Ernest Cortez",
+      name: "Llody hawk",
       title: "CTO, Cybertech Solutions",
       quote:
-        "“When it comes to web copywriting, Best Selling Publisher is second to none. They understand the importance of compelling copy in driving conversions, and their expertise shines through in every project they undertake. Our website has never looked better thanks to their exceptional work!”",
+        "“Best Selling Publisher is a beacon for any aspiring author. Their ghostwriting service breathed life into my ideas, and the book marketing strategies they employed were ingenious. A shoutout to Dennis for being an incredible support!”",
     },
     {
       avatar: "/assets/images/newimg/stars.png",
       polit: "/assets/images/newimg/stars.png",
-      name: "Justin Nunez",
+      name: "Pieter A.",
       title: "CTO, Cybertech Solutions",
       quote:
-        "“Best Selling Publisher helped us craft a compelling press release that generated significant media attention for our latest product launch. Their writers have a talent for crafting attention-grabbing headlines and persuasive copy that gets results. We’re thrilled with the exposure their press release garnered for our brand!”",
+        "“The Journey to publishing my book felt insurmountable until I found Best Selling Publisher. Their team, especially Dennis Daniel, guided me through every step with patience and expertise. The book editing and marketing services were exceptional. Highly recommend!”",
     },
     {
       avatar: "/assets/images/newimg/stars.png",
       polit: "/assets/images/newimg/stars.png",
-      name: "Doug Weaver",
+      name: "Ingmar Singleton",
       title: "CTO, Cybertech Solutions",
       quote:
-        "“I recently engaged Best Selling Publisher for script writing services, and I couldn’t be happier with the outcome. Their writers have a gift for storytelling and dialogue that brings scripts to life on screen. Working with them was a seamless and enjoyable experience from start to finish. Highly recommend their services for anyone in need of professional scriptwriting!”",
+        "“I never imagined my manuscript could transform into something professional and polished. The Book editing team at Best Selling Publisher is truly top-notch. Their publishing and marketing services exceeded all my expectations.”",
     },
   ];
 
