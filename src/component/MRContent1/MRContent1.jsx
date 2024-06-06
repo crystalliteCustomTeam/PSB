@@ -95,7 +95,7 @@ const MRContent1 = ({
                         </div>
                         {img2 && (
                             listTitle &&
-                            (<h3 className={`text-[16px] mr-xl:text-[20px] block leading-tight font-semibold font-sans pr-10 w-max p-3 mt-[10px] mr-xl:mt-[16px] ${textTheme == "text-[#000000]" ? "bg-primary-100 text-white" : "bg-white text-black"} rounded-r-[50px] ${listTitleClasses}`} dangerouslySetInnerHTML={{ __html: listTitle }} />)
+                            (<h3 className={`text-[16px] mr-xl:text-[20px] block leading-tight font-semibold font-sans pr-10 mr-md:w-max w-full p-3 mt-[10px] mr-xl:mt-[16px] ${textTheme == "text-[#000000]" ? "bg-primary-100 text-white" : "bg-white text-black"} rounded-r-[50px] ${listTitleClasses}`} dangerouslySetInnerHTML={{ __html: listTitle }} />)
                         )}
                         {img2 && (
                             list &&

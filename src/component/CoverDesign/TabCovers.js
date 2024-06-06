@@ -79,12 +79,10 @@ const ParentComponent = () => {
           <div className='grid grid-cols-2 grid-rows-1 xs:grid-cols-1 items-center justify-center font-secondary'>
             <div className='space-y-2'>
               <h3 className='font-semibold text-[40px] md:text-4xl font-primary sm:text-4xl'>Dust Jacket Cover</h3>
-              <p>Imagine holding a story in your hands. What's the first thing you notice? </p>
-              <p>The dust jacket cover - a silent herald of the adventures hidden within its pages. It's a canvas where visual storytelling comes to life. With striking imagery, evocative typography, and design elements that pull you in, each cover is a doorway begging to be opened. The dust jacket illuminates key details like the title, author, and a tantalizing synopsis. and our designers would do everything to make a lasting impact of your book! </p>
+              <p>Imagine holding a story in your hands. What's the first thing you notice?</p>
+              <p>The dust jacket cover - a silent herald of the adventures hidden within its pages. It's a canvas where visual storytelling comes to life. With striking imagery, evocative typography, and design elements that pull you in, each cover is a doorway begging to be opened. The dust jacket illuminates key details like the title, author, and a tantalizing synopsis. and our designers would do everything to make a lasting impact on your book!</p>
               <p>Don't believe us? See it for yourself!</p>
              <MRCTAGroup classes='!mt-[20px]'/>
-              <p>True to its name, a dust jacket, thoughtfully provided by a professional book writing agency, serves as a protective barrier, safeguarding the book’s cover from dust, spills, scuffs, and dirt. To enhance durability and stain resistance, a gloss or matte laminate is commonly applied to the dust jacket. This protective cover not only contributes to the sleek appearance of your book but also acts as an attractive feature, drawing in your readers. Furthermore, we ensure prompt delivery of your work.</p>
-              <MRCTAGroup />
             </div>
             <div>
               <Image quality={95} src='/imageAR/cover-design3.png' className='block mx-auto' width={500} height={600} alt='Tablist Images' />
@@ -98,15 +96,17 @@ const ParentComponent = () => {
 
           <div className='grid grid-cols-2 grid-rows-1 xs:grid-cols-1 items-center justify-center font-secondary'>
             <div className='space-y-2'>
-              <h3 className='font-semibold text-[40px] md:text-4xl font-primary'>Hard Cover</h3>
-              <p>Have you ever considered what makes a book feel like a treasure even before you turn its first page? The magic often begins with its hardcover. </p>
+              {/* <h3 className='font-semibold text-[40px] md:text-4xl font-primary'>Hard Cover</h3>
+              <p>Have you ever considered what makes a book feel like a treasure even before you turn its first page? The magic often begins with its hardcover.</p>
               <p>A hardcover speaks of permanence and longevity, serving as a sturdy shield against the ravages of time. But it's more than just a protector. A hardcover brings with it an air of sophistication and craftsmanship, transforming the act of picking up a book into the start of a luxurious experience. Its solid spine and robust construction add significance to the words waiting inside, promising you a substantial and memorable journey.</p>
               <p>Oh, we don’t want you to just trust our words — we want you to experience it!</p>
-              <MRCTAGroup classes='!mt-[20px]'/>
+              <MRCTAGroup classes='!mt-[20px]'/> */}
 
               <h3 className='font-semibold text-[40px] md:text-4xl font-primary'>Hardboard Cover</h3>
-              <p>For this genre of compelling stories, engaging character dialogue and emotional story beats. You require the services of a fiction ghostwriter for hire. Our writers are adept at making the worlds of your stories come to life with the usage of story telling elements such as intensive world building, fascinating character motivations, intriguing plotting. This leads to our clients often times becoming best selling authors.</p>
-              <MRCTAGroup />
+              <p>Have you ever considered what makes a book feel like a treasure even before you turn its first page? The magic often begins with its hardcover.</p>
+              <p>A hardcover speaks of permanence and longevity, serving as a sturdy shield against the ravages of time. But it's more than just a protector. A hardcover brings with it an air of sophistication and craftsmanship, transforming the act of picking up a book into the start of a luxurious experience. Its solid spine and robust construction add significance to the words waiting inside, promising you a substantial and memorable journey.</p>
+              <p>Oh, we don’t want you to just trust our words — we want you to experience it!</p>
+              <MRCTAGroup classes='!mt-[20px]' />
             </div>
             <div>
               <Image quality={95} src='/assets/images/newimg/hardboard-cover.png' className='mx-auto' width={300} height={600} alt='Tablist Images' />
@@ -122,7 +122,7 @@ const ParentComponent = () => {
             <div className='space-y-2'>
               <h3 className='font-semibold text-[40px] md:text-4xl font-primary'>Paperback Cover</h3>
               <p>Who hasn't found themselves lost in a good book, no matter where they are?</p>
-              <p>With its versatile and welcoming design, the paperback cover stands as your gateway into the vast and intriguing literary world. But don't let its gentle appearance fool you; the paperback is more than capable of safeguarding the treasure trove of words inside, keeping the essence of your adventure intact.  Its affordability and easy-to-carry nature have made it a beloved choice among both those who devour books and those who indulge in the occasional literary escape.</p>
+              <p>With its versatile and welcoming design, the paperback cover stands as your gateway into the vast and intriguing literary world. But don't let its gentle appearance fool you; the paperback is more than capable of safeguarding the treasure trove of words inside, keeping the essence of your adventure intact. Its affordability and easy-to-carry nature have made it a beloved choice among both those who devour books and those who indulge in the occasional literary escape.</p>
               <p>Do you want to test how good we are at book cover designs?</p>
               <MRCTAGroup classes='!mt-[20px]'/>
               <p>For this genre of compelling stories, engaging character dialogue and emotional story beats. You require the services of a fiction ghostwriter for hire. Our writers are adept at making the worlds of your stories come to life with the usage of story telling elements such as intensive world building, fascinating character motivations, intriguing plotting. This leads to our clients often times becoming best selling authors.</p>

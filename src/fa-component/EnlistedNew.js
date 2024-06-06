@@ -56,7 +56,7 @@ const Enlisted = ({
                                             <p className={`${styles.para2} text-[30px] font-primary txt-secondary mb-5`}>2.</p>
                                             <p className={`${styles.para3} text-[30px] font-primary txt-secondary mb-5`}>3.</p>
                                             <p className={`${styles.para4} text-[30px] font-primary txt-secondary mb-5`}>4.</p>
-                                            <p className={`${styles.para5} text-[30px]  font-primary txt-secondary`}>5.</p>
+                                            <p className={`${styles.para5} text-[30px]  font-primary txt-secondary mb-5`}>5.</p>
                                         </div>
                                         <Image quality={100}  className='img-fluid'
                                             src={mid}

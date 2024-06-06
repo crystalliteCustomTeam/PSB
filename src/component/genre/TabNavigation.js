@@ -120,8 +120,8 @@ const ParentComponent = () => {
           <div className='grid grid-cols-2 grid-rows-1 xs:grid-cols-1 xs:gap-y-10 items-center justify-center font-secondary'>
             <div className='space-y-2'>
               <h6 className='text-[30px] font-semibold text-[#40BEE2] font-primary'>Fiction</h6>
-              <h3 className='font-bold font-primary text-[40px] md:text-4xl sm:text-3xl leading-tight xs:text-3xl'>Top-Ranked Fiction Writing Services</h3>
-              <p>For this genre of compelling stories, engaging character dialogue, and emotional story beats, getting a professional story writer becomes a necessity. Our writers excel at bringing your story to life through expert storytelling elements, including careful word-building, persuasive character motivations, and intense and unpredictable plot development. This proficiency frequently results in our clients achieving best-selling author status.</p>
+              <h3 className='font-bold font-primary text-[40px] md:text-4xl sm:text-3xl leading-tight xs:text-3xl'>Top-Ranked Services for Fiction Book Publishing Genre</h3>
+              <p>Our well-regarded fiction writing services will help you tell better stories. Our talented writers create gripping mysteries, endearing romances, or grand journeys. We provide your story's life with suspense, feeling, and striking visuals, from engrossing storylines to vibrant characters. Turn your project over to our gifted staff of wordsmiths, who specialize in creating stories that keep readers on the edge of their seats.</p>
               <div className='w-[60%] grid grid-cols-2 grid-rows-1 gap-x-5 py-5 md:w-[100%] sm:w-[90%] xs:w-[90%]'>
                 <MRCTAGroup />
               </div>
@@ -138,9 +138,9 @@ const ParentComponent = () => {
 
           <div className='grid grid-cols-2 grid-rows-1 xs:grid-cols-1 xs:gap-y-10 items-center justify-center font-secondary'>
             <div className='space-y-2'>
-              <h6 className='text-[30px] font-semibold text-[#40BEE2] font-primary'> Content for Non Fiction</h6>
-              <h3 className='font-bold font-primary text-[40px] leading-tight md:text-4xl sm:text-3xl xs:text-3xl'>Top-ranked Non fiction writing services</h3>
-              <p>For this genre of compelling stories, engaging character dialogue and emotional story beats. You require the services of a Non fiction writer for hire. Our writers are adept at making the worlds of your stories come to life with the usage of story telling elements such as intensive world building, fascinating character motivations, intriguing plotting. This leads to our clients often times becoming best selling authors.</p>
+              <h6 className='text-[30px] font-semibold text-[#40BEE2] font-primary'>Non-Fiction</h6>
+              <h3 className='font-bold font-primary text-[40px] leading-tight md:text-4xl sm:text-3xl xs:text-3xl'>Top-Ranked Services for Non Fiction Book Publishing Genre</h3>
+              <p>Our top non fiction book publishing services can let you experience the power of narrative. Our skilled non-fiction writers turn real-life events into gripping stories. By use of thorough investigation and captivating narrative, we enable you to impart your knowledge and motivate readers to investigate novel concepts, acquire insightful knowledge, and act. Our staff makes sure your project resonates with authenticity and leaves a lasting effect. </p>
               <div className='w-[60%] grid grid-cols-2 grid-rows-1 gap-x-5 py-5 md:w-[100%] sm:w-[90%] xs:w-[90%]'>
                 <MRCTAGroup />
               </div>
@@ -157,9 +157,9 @@ const ParentComponent = () => {
 
           <div className='grid grid-cols-2 grid-rows-1 xs:grid-cols-1 xs:gap-y-10 items-center justify-center font-secondary'>
             <div className='space-y-2'>
-              <h6 className='text-[30px] font-semibold text-[#40BEE2] font-primary'> Content for Biography</h6>
-              <h3 className='font-bold font-primary text-[40px] leading-tight md:text-4xl sm:text-3xl xs:text-3xl'>Top-ranked Biography writing services</h3>
-              <p>For this genre of compelling stories, engaging character dialogue and emotional story beats. You require the services of a Biography writer for hire. Our writers are adept at making the worlds of your stories come to life with the usage of story telling elements such as intensive world building, fascinating character motivations, intriguing plotting. This leads to our clients often times becoming best selling authors.</p>
+              <h6 className='text-[30px] font-semibold text-[#40BEE2] font-primary'>Biographies</h6>
+              <h3 className='font-bold font-primary text-[40px] leading-tight md:text-4xl sm:text-3xl xs:text-3xl'>Professional Biography Writing Services</h3>
+              <p>Hire our well-known biography writing services to record life stories. Our professional biography writers pay close attention to details and love writing exciting stories that celebrate wins, losses, and successes. Whether they are honoring a famous person or a loved one, our team makes sure that their story is told to the world in a way that inspires and teaches the next generation.</p>
               <div className='w-[60%] grid grid-cols-2 grid-rows-1 gap-x-5 py-5 md:w-[100%] sm:w-[90%] xs:w-[90%]'>
                 <MRCTAGroup />
               </div>
@@ -176,9 +176,9 @@ const ParentComponent = () => {
 
           <div className='grid grid-cols-2 grid-rows-1 xs:grid-cols-1 md:gap-x-5 xs:gap-y-10 items-center justify-center font-secondary'>
             <div className='space-y-2'>
-              <h6 className='text-[30px] font-semibold text-[#40BEE2] font-primary'>Content for Informative</h6>
-              <h3 className='font-bold font-primary text-[40px] leading-tight md:text-4xl sm:text-3xl xs:text-3xl'>Top-ranked Informative writing services</h3>
-              <p>For this genre of compelling stories, engaging character dialogue and emotional story beats. You require the services of a Informative writer for hire. Our writers are adept at making the worlds of your stories come to life with the usage of story telling elements such as intensive world building, fascinating character motivations, intriguing plotting. This leads to our clients often times becoming best selling authors.</p>
+              <h6 className='text-[30px] font-semibold text-[#40BEE2] font-primary'>Informative</h6>
+              <h3 className='font-bold font-primary text-[40px] leading-tight md:text-4xl sm:text-3xl xs:text-3xl'>Best Informative Writing Services</h3>
+              <p>Our informative book writers specialize in producing articles, guides, and instructional materials that educate, enthrall, and empower readers, and distill complicated knowledge into understandable, approachable text. We make sure your message is understood clearly and positions you as a reliable authority in your field. Our offerings range from well-researched articles that examine new trends and developments to thorough guides that offer useful guidance and insightful analysis.</p>
               <div className='w-[60%] grid grid-cols-2 grid-rows-1 gap-x-5 py-5 md:w-[100%] sm:w-[90%] xs:w-[90%]'>
                 <MRCTAGroup />
               </div>
@@ -195,9 +195,9 @@ const ParentComponent = () => {
 
           <div className='grid grid-cols-2 grid-rows-1 xs:grid-cols-1 xs:gap-y-10 items-center justify-center font-secondary'>
             <div className='space-y-2'>
-              <h6 className='text-[30px] font-semibold text-[#40BEE2] font-primary'>Content for Autobiography</h6>
-              <h3 className='font-bold font-primary text-[40px] leading-tight md:text-4xl sm:text-3xl xs:text-3xl'>Top-ranked Autobiography writing services</h3>
-              <p>For this genre of compelling stories, engaging character dialogue and emotional story beats. You require the services of a Autobiography writer for hire. Our writers are adept at making the worlds of your stories come to life with the usage of story telling elements such as intensive world building, fascinating character motivations, intriguing plotting. This leads to our clients often times becoming best selling authors.</p>
+              <h6 className='text-[30px] font-semibold text-[#40BEE2] font-primary'>Autobiography</h6>
+              <h3 className='font-bold font-primary text-[40px] leading-tight md:text-4xl sm:text-3xl xs:text-3xl'>Leading Autobiography Writing Services</h3>
+              <p>Write sincere, real stories with our autobiography writing services. Our autobiography writers focus on assisting people in narrating their life stories with depth, clarity, and emotional impact. By use of open interviews, introspective writing, and deft narration, we document the highs and lows, victories, and setbacks that have molded your life, so constructing an engaging story that enables readers to take on your position and see the world from your perspective.</p>
               <div className='w-[60%] grid grid-cols-2 grid-rows-1 gap-x-5 py-5 md:w-[100%] sm:w-[90%] xs:w-[90%]'>
                 <MRCTAGroup />
               </div>
@@ -214,9 +214,9 @@ const ParentComponent = () => {
 
           <div className='grid grid-cols-2 grid-rows-1 xs:grid-cols-1 xs:gap-y-10 items-center justify-center font-secondary'>
             <div className='space-y-2'>
-              <h6 className='text-[30px] font-semibold text-[#40BEE2] font-primary'>Content for Memoir</h6>
-              <h3 className='font-bold font-primary text-[40px] leading-tight md:text-4xl sm:text-3xl xs:text-3xl'>Top-ranked Memoir writing services</h3>
-              <p>For this genre of compelling stories, engaging character dialogue and emotional story beats. You require the services of a Memoir writer for hire. Our writers are adept at making the worlds of your stories come to life with the usage of story telling elements such as intensive world building, fascinating character motivations, intriguing plotting. This leads to our clients often times becoming best selling authors.</p>
+              <h6 className='text-[30px] font-semibold text-[#40BEE2] font-primary'>Memoir</h6>
+              <h3 className='font-bold font-primary text-[40px] leading-tight md:text-4xl sm:text-3xl xs:text-3xl'>Top-Ranked Memoir Publishing Services</h3>
+              <p>Write compelling stories based on your own life that will hold readers' attention and accurately, and empathetically. We take you through the joyful, sad, loving, and sad times that have shaped you by using self-reflection and insight to craft a story that people can really connect with. We make sure that your story is told in a way that is fair, honest, and caring.</p>
               <div className='w-[60%] grid grid-cols-2 grid-rows-1 gap-x-5 py-5 md:w-[100%] sm:w-[90%] xs:w-[90%]'>
                 <MRCTAGroup />
               </div>
@@ -233,9 +233,9 @@ const ParentComponent = () => {
 
           <div className='grid grid-cols-2 grid-rows-1 xs:grid-cols-1 xs:gap-y-10 items-center justify-center font-secondary'>
             <div className='space-y-2'>
-              <h6 className='text-[30px] font-semibold text-[#40BEE2] font-primary'>Content for Children Book</h6>
-              <h3 className='font-bold font-primary text-[40px] leading-tight md:text-4xl sm:text-3xl xs:text-3xl'>Top-ranked Children Book writing services</h3>
-              <p>For this genre of compelling stories, engaging character dialogue and emotional story beats. You require the services of a Children Book writer for hire. Our writers are adept at making the worlds of your stories come to life with the usage of story telling elements such as intensive world building, fascinating character motivations, intriguing plotting. This leads to our clients often times becoming best selling authors.</p>
+              <h6 className='text-[30px] font-semibold text-[#40BEE2] font-primary'>Children Books</h6>
+              <h3 className='font-bold font-primary text-[40px] leading-tight md:text-4xl sm:text-3xl xs:text-3xl'>Top-Rated Children Book Writing Services</h3>
+              <p>Our team of skilled children's book writers will work closely with you to make your ideas come to life. They will write books that entertain, inspire, and leave a lasting effect on young readers who are excited to try new books. As one of the best children book publishing services, we write books for kids that give them power, teach them, entertain them, and let them discover new worlds through age-appropriate content and interesting stories.</p>
               <div className='w-[60%] grid grid-cols-2 grid-rows-1 gap-x-5 py-5 md:w-[100%] sm:w-[90%] xs:w-[90%]'>
                 <MRCTAGroup />
               </div>

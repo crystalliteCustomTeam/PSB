@@ -10,28 +10,28 @@ import Head from "next/head"
 const WebCopywritingServices = () => {
   const MRContent2Data = [
     {
-      title: "Fiction",
-      desc: "Our fiction writers will assist you in creatively expressing your ideas into enticing literacy that will captivate your audience. All aspects of a story are considered, particularly the author’s major plot and characters. "
+      title: "Creating Captivating Author Brand",
+      desc: "Every author who wants to be great needs a strong brand identity. We'll help you write an interesting author description that shows off your style and personality and connects with readers, pulling them into your world."
     },
     {
-      title: "Informative",
-      desc: "Our writers comprehend the nuance of your text. They ensure their information is reliable and well-acknowledged worldwide, under the available data and facts."
+      title: "Engaging Website Content",
+      desc: "We'll write blog posts about authors and website copy that shows off your brand's values. This will show off your knowledge and build a community of loyal readers."
     },
     {
-      title: "Memoir",
-      desc: "Our writers have been trained to write memoirs, not to confuse them with autobiographies. Furthermore, they cherish your sentiments and emotions and go to great lengths to turn your precious memories into a book."
+      title: "Optimizing Online Presence",
+      desc: "Our team will help you come up with targeted keywords and meta descriptions that will make sure that people looking for websites or books in your field can find yours online."
     },
     {
-      title: "Children's Book",
-      desc: "Our well-trained and experienced writers are well-versed in all aspects of children’s books. They use their ingenuity to write classic subjects that young minds can understand, with vibrant graphics that keep them hooked."
+      title: "Targeted Landing Pages",
+      desc: "We'll make specific landing pages that get people interested in your website and help you make sales, whether it's for a pre-order campaign or a new book release."
     },
     {
-      title: "Self Help Book",
-      desc: "We allow your ideas to reach the right audiences and serve your experiences to be their holy grail in the relevant endeavor."
+      title: "Interesting Author Bios",
+      desc: "We'll use the author's past, awards, and writing style to create stories that make readers feel like they know the people who wrote the books."
     },
     {
-      title: "Biography",
-      desc: "Our expert writers are keenly interested in learning about your subjects’ stories, holding the skills and expertise to provide you with well-written content for whoever you want to write about. They also conduct extensive research through various channels such as newspapers, blogs, and interviews to ensure they use correct facts and figures."
+      title: "Interesting Book Descriptions",
+      desc: "We avoid writing dry synopses. Our copywriters write descriptions that make people want to read more. These descriptions hit on the emotional core of your books, show off their unique selling points, and make people want to read the story inside."
     }
   ]
   const MRCardData = [
@@ -72,23 +72,23 @@ const WebCopywritingServices = () => {
       content: [
         {
           textColor: "text-[#40BEE2] group-hover:text-white",
-          title: "Submit Your Manuscript",
-          desc: "After making up your mind about working with us, you place your order.",
+          title: "Submit Your Details",
+          desc: "This includes information about your target audience, website goals, brand voice, and desired tone",
         },
         {
           textColor: "text-[#40BEE2] group-hover:text-white",
-          title: "Edit & Design",
-          desc: "We refine your text and design your book's cover.",
+          title: "Content Creation",
+          desc: "We'll utilize your insights and expertise to create content.",
         },
         {
           textColor: "text-[#40BEE2] group-hover:text-white",
           title: "Review & Approve",
-          desc: "You review our work and give the green light.",
+          desc: "You'll have ample opportunity to provide feedback and request revisions.",
         },
         {
           textColor: "text-[#40BEE2] group-hover:text-white",
           title: "Publish & Distribute",
-          desc: "Your book is published and distributed on schedule.",
+          desc: "The copy is ready to integrate into your website.",
         },
       ]
     }]
@@ -184,8 +184,8 @@ const WebCopywritingServices = () => {
 
       </Head>
       <MRHero
-        title="Develop Your Business With The Outstanding Skills And  Expertise of Our Web Copywriters"
-        desc="Welcome to Best Selling Publisher Writing. We offer professional web copywriting services, taking your website to the next level with the help of our expert copywriters."
+        title="Develop Your Brand With The Skills And Expertise of Our Web Copywriters"
+        desc="Best Selling Publisher offers the professional web copywriting services, aimed at enhancing your website to drive sales and maximize ROI"
         logos="images/banner/img2.png"
         classes='bg-[#FEFEFE] !py-[80px]'
         beforeImg="mr-md:before:bg-[url('../../public/imageAR/front-laptop-keyboard.png')]"
@@ -195,14 +195,14 @@ const WebCopywritingServices = () => {
       <MRContent1
         subTitle="Communicate"
         title="Your Brand’s Message Efficiently"
-        desc="Our professional SEO writers produce keyword-rich content to help you beat the competition, bringing in the high ranking needed to elevate your website for better outreach, branding, and visibility."
+        desc="Hire top-rated web copywriters who produce SEO-optimized content to help you beat the competition, bringing in the high ranking needed to elevate your website for better outreach, branding, and visibility."
         img1="/assets/images/newimg/communicate.png"
         direction="flex-row-reverse"
       />
       <MRCards
         subTitle="Our Services Have Been Constantly Hailed as Remarkable"
-        title={`What Makes Us the Premier Choice in <br class="mr-xl:block hidden" /> Professional Writing?`}
-        desc="Best Selling Publisher's writing services truly stand out as a class apart. Their team of expert writers possesses an unparalleled ability to capture the unique voice and essence of each client, flawlessly translating their ideas into fascinating prose. What sets them apart is their dedication to understanding the vision and goals of their clients."
+        title={`What Makes Us the Premier Choice in <br class="mr-xl:block hidden" /> Professional Web Writing?`}
+        desc="As a leading web copywriting company, our team of experts has the unmatched capacity to distill each client's voice and soul into works that speak to the intended audience. What sets us apart is our dedication to understanding the vision and goals of our clients."
         gridsClasses="mr-xl:grid-cols-3 mr-lg:grid-cols-3 mr-sm:grid-cols-2 !gap-x-8 mr-xl:w-[80%] mx-auto"
         cta={true}
         variant="icons"
@@ -210,31 +210,35 @@ const WebCopywritingServices = () => {
       <MRContent1
         subTitle="Our Comprehensive"
         title="Web Copywriting Services"
-        desc="We have a vast pool of writers and will work with you to find the best match for your needs. You will receive a PR and media campaign, an audiobook with a professional voice actor, and high-quality studio production. Finally, distribution and retailer accounts will be established in your name, ensuring you own all rights and royalties."
+        desc="Our expert web copywriters at Best Selling Publisher work closely with you to understand your brand, target audience, and desired goals. Then, we translate that information into compelling website content that resonates and drives action. Our team possesses the best web copywriting services in the USA, ensuring your website content stands out and achieves results. "
         img2="/assets/images/newimg/ghostwriting_book.png"
         listTitle="Our process is simple and aims to deliver flawless results for every project."
         textTheme="text-white"
         list={[
-          "Writing Genuine Content Based On Your Idea",
-          "Critical Review, Editing, And Proofreading",
+          "Writing Genuine Copy Based On Your Idea",
+          "Critical Review, Editing, Optimizing  And Proofreading",
           "Extensive Formatting, Typesetting, & Designing",
-          "Publishing, Branding, Marketing, And Promotions",
-          "Critical Review And Analysis",
-          "Book Coaching",
+          "Branding, Marketing, And Promotions",
+          "Review And Analysis",
           "Copy Editing",
-          "Developmental Editing"
+          "Developmental Editing",
+          "Line Editing"
         ]}
         classes="bg-[url('../../public/imageAR/serviceBG.png')]"
         theme="dark"
       />
       <MRContent2
-        subTitle="Our Creative Writers,"
-        title="Bringing Your Imagination To Life."
-        desc="You may have an idea for the next best-seller, but you may not have the time or expertise to write it yourself. Our platform meets all of the <br class='mr-xl:block hidden'/> requirements and offers a diverse range of writing styles, including:"
+        subTitle="Our Experts"
+        title="Write Web Copy that Converts"
+        desc="Your website is your digital showroom, a salesman who never stops trying to draw in and keep clients. Our expert web copywriters are here to help you produce compelling content that speaks directly to your target audience and drives actionable results."
         data={MRContent2Data}
       />
       <BTM />
-      <CTA />
+      <CTA 
+      subtitle="Get a Free Quote Now!"
+      title="Create Compelling Web Copy & Boost Your Online Presence"
+      desc="Our dedicated team of professional web copywriters are available to discuss your project and answer your questions. Connect with us today – we're here to help you achieve your online goals."
+      />
       <MRCards
         subTitle="We Pursue"
         title={`A Swift Work Mode that Involves <br class="mr-xl:block hidden" /> 4 Easy Steps`}
@@ -244,7 +248,12 @@ const WebCopywritingServices = () => {
         variant="steps"
         data={MRCardData2} />
       <SwiperComponents />
-      <MRContact />
+      <MRContact 
+      title="Ready to Discover Your Potential? Let Our Expert Copywriters Bring Your Vision to Life!"
+      desc="Our collaborative approach begins with an open discussion where you can share your goals, target audience, and any initial ideas you might have. So what are you waiting for? Just fill out the form and let’s get started!"
+      titleB="Write Your Success Story with Us! "
+      descB={`Contact us today for a free consultation and learn <br class="hidden mr-sm:block" /> more about how our web copywriting services can <br class="hidden mr-sm:block" /> transform your online presence.`}
+      />
     </main>
   )
 }

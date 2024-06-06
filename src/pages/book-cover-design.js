@@ -20,24 +20,24 @@ const BookCoverDesign = () => {
       indexing: false,
       content: [
         {
-          title: "Concept Development:",
+          title: "Concept Development",
           textColor: "text-[#40BEE2]",
-          desc: "Creating the perfect book cover starts with an idea, a spark that captures the essence of your story. Our design process starts with concept development, a stage we approach with careful attention to detail. We get it — your book's cover is much more than just a visual; it’s the first impression of the story within. and that’s exactly what we prioritize. ",
+          desc: "Creating the ideal book cover begins with an idea, a spark that encapsulates the heart of your novel. Our design process begins with concept creation, which we handle with meticulous attention to detail. We get it — your book's cover is much more than just a visual; it’s the first impression of the story within. and that’s exactly what we prioritize.",
         },
         {
-          title: "Custom Illustration and Artwork:",
+          title: "Custom Illustration and Artwork",
           textColor: "text-[#40BEE2]",
-          desc: "Our team of talented artists and illustrators is dedicated to bringing each author's vision to life through bespoke artwork that reflects the essence of their story. Your story is unique, and so should be its visual companion. Let’s create something unforgettable together",
+          desc: "Our team of artists and gifted illustrators is committed to realizing each author's idea through customized artwork that captures the spirit of their narrative. Your story is unique, and so should be its visual companion. Let’s create something unforgettable together",
         },
         {
-          title: "Typography and Layout:",
+          title: "Typography and Layout",
           textColor: "text-[#40BEE2]",
           desc: "Whether your story whispers of age-old mysteries through elegant serif fonts or pulses with the heart-stopping pace of modern thrillers through bold, contemporary typefaces, we carefully craft the typography to resonate with your book's genre, mood, and intended audience.",
         },
         {
           title: "Print and Digital Optimization:",
           textColor: "text-[#40BEE2]",
-          desc: "Your book needs to make a splash, both in hand and on screen. That’s why we're careful about every pixel and print detail in your book cover design. Our commitment to mastering print and digital mediums means your story gets the spotlight it deserves everywhere your readers are.",
+          desc: "Your book needs to make a splash, both in hand and on screen. That’s why we're careful about every pixel and print detail in your book cover design. As a top-grade book cover design company, our commitment to mastering print and digital mediums means your story gets the spotlight it deserves everywhere your readers are.",
         },
       ]
     },
@@ -50,95 +50,95 @@ const BookCoverDesign = () => {
       content: [
         {
           textColor: "text-[#40BEE2] group-hover:text-white",
-          title: "Submit Your Manuscript",
-          desc: "Share your manuscript, and we will get started.",
+          title: "Submit Your Details",
+          desc: "Share your information by filling out the form or calling us and we will get started.",
         },
         {
           textColor: "text-[#40BEE2] group-hover:text-white",
-          title: "Edit & Design",
-          desc: "We retain the context but add that artistic flavor.",
+          title: "Content Creation",
+          desc: "We'll utilize your insights to create a book cover.",
         },
         {
           textColor: "text-[#40BEE2] group-hover:text-white",
           title: "Review & Approve",
-          desc: "You review and approve our creative contributions.",
+          desc: "You'll have ample opportunity to provide feedback and request revisions.",
         },
         {
           textColor: "text-[#40BEE2] group-hover:text-white",
           title: "Publish & Distribute",
-          desc: "Your book has been published and distributed.",
+          desc: "The book cover is ready to integrate into your publishing platform.",
         },
       ]
     }]
 
-    const schemaWebsite = {
-      "@context": "https://schema.org/",
-      "@type": "WebSite",
-      "name": "Book Cover Design Services | Best Selling Publisher",
-      "url": "https://bestsellingpublisher.com/book-cover-design",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "{search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
+  const schemaWebsite = {
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    "name": "Book Cover Design Services | Best Selling Publisher",
+    "url": "https://bestsellingpublisher.com/book-cover-design",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "{search_term_string}",
+      "query-input": "required name=search_term_string"
     }
-    const schemaCorporation = {
-      "@context": "https://schema.org",
-      "@type": "Corporation",
-      "name": "Book Cover Design Services | Best Selling Publisher",
-      "url": "https://bestsellingpublisher.com/book-cover-design",
-      "logo": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png"
-    }
+  }
+  const schemaCorporation = {
+    "@context": "https://schema.org",
+    "@type": "Corporation",
+    "name": "Book Cover Design Services | Best Selling Publisher",
+    "url": "https://bestsellingpublisher.com/book-cover-design",
+    "logo": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png"
+  }
 
-    const schemaProffesionalService = {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Book Cover Design Services | Best Selling Publisher",
-      "image": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
-      "url": "https://bestsellingpublisher.com/book-cover-design",
-      "telephone": "(800) 781-9093",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "1001 Wilshire Boulevard #1176",
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "postalCode": "90017",
-        "addressCountry": "US"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 34.0518073,
-        "longitude": -118.2613875
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
-        "opens": "09:00",
-        "closes": "17:00"
-      } 
+  const schemaProffesionalService = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Book Cover Design Services | Best Selling Publisher",
+    "image": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+    "url": "https://bestsellingpublisher.com/book-cover-design",
+    "telephone": "(800) 781-9093",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1001 Wilshire Boulevard #1176",
+      "addressLocality": "Los Angeles",
+      "addressRegion": "CA",
+      "postalCode": "90017",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 34.0518073,
+      "longitude": -118.2613875
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "09:00",
+      "closes": "17:00"
     }
-    const schemaProduct = {
-      "@context": "https://schema.org/", 
-      "@type": "Product", 
-      "name": "Book Cover Design Services | Best Selling Publisher",
-      "image": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
-      "description": "Design professional and top quality book covers with our book cover design services",
-      "brand": {
-        "@type": "Brand",
-        "name": "Best Selling Publisher"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "ratingCount": "1174"
-      }
+  }
+  const schemaProduct = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Book Cover Design Services | Best Selling Publisher",
+    "image": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+    "description": "Design professional and top quality book covers with our book cover design services",
+    "brand": {
+      "@type": "Brand",
+      "name": "Best Selling Publisher"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "ratingCount": "1174"
     }
+  }
   return (
     <main>
       <Head>
@@ -150,19 +150,19 @@ const BookCoverDesign = () => {
 
         {/* canonical: */}
         <link rel="canonical" href="https://bestsellingpublisher.com/book-cover-design" />
-        
+
         {/* Schema */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaWebsite)}}/>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaCorporation)}}/>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaProffesionalService)}}/>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaProduct)}}/>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaWebsite) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaCorporation) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProffesionalService) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProduct) }} />
 
 
 
       </Head>
       <MRHero
         title="Covers that Let You Judge a Book"
-        desc="First impressions matter — BIG TIME! Do you want to make a great first impression of your book? <span class='h-3 block'></span>
+        desc="First impressions matter BIG TIME! Do you want to make a great first impression of your book?
         At Best Selling Publisher, we believe the success of your book starts with its cover. Our goal is to create the most attractive cover designs, turning your manuscript into a visual standout that commands attention. Let's start this creative process together."
         logos="images/banner/img2.png"
         classes='!py-[80px] bg-[#fefefe]'
@@ -171,8 +171,8 @@ const BookCoverDesign = () => {
       />
       <Enlistedlogo />
       <MRContent1
-        subTitle="The Most Immaculate Book Cover Designs"
-        title="Creating Captivating Book Cover Designs For Your Books"
+        subTitle="Creating Captivating Designs For Your Book"
+        title="Hire Professional Book Cover Designers"
         desc="Whether it's through striking imagery, elegant typography, or innovative concepts, a book’s cover is its initial introduction to potential readers, offering a glimpse into the adventure that awaits inside. <span class='h-3 block'></span>
         At Best Selling Publisher, we recognize the significance of this first interaction. Our team of creative designers is committed to producing designs that reflect the essence of your story while enticing readers to explore further.
         "
@@ -181,14 +181,14 @@ const BookCoverDesign = () => {
           "We retain your concept and offer immaculate embellishment.",
           "Customer satisfaction is our top priority.",
           "Complete ownership over the final book cover.",
-          " 24/7 assistance for all your queries and concerns."
+          "24/7 assistance for all your queries and concerns."
         ]}
         direction="flex-row-reverse"
       />
       <MRCards
         subTitle="Our Book Covers Offer"
         title={`An Exceptional First Impression of Your Book`}
-        desc="We treat every book cover like a canvas. Our trained professionals ensure that every stroke on the canvas projects vibrancy and vividness."
+        desc="We treat every book cover like a canvas. As full-service book cover designers, we ensure that every stroke on the canvas projects vibrancy and vividness."
         gridsClasses="mr-xl:grid-cols-4 mr-lg:grid-cols-3 mr-sm:grid-cols-2 !gap-x-8"
         classes="bg-[url('../../public/imageAR/our-comprehensive.png')] bg-no-repeat bg-cover bg-center"
         cta={true}
@@ -216,13 +216,19 @@ const BookCoverDesign = () => {
       <MRCards
         subTitle="We Pursue"
         title={`A Swift Work Mode that Involves <br class="mr-xl:block hidden" /> 4 Easy Steps`}
-        desc={`We emphasize prompt deliveries because we don’t like to keep you waiting. Following are the <br class="mr-xl:block hidden" /> 4 easy steps that keep us streamlined from the beginning:`}
+        desc={`We emphasize prompt deliveries because we don’t like to keep you waiting. Following are the
+        4 easy steps that keep us streamlined from the beginning:`}
         gridsClasses="mr-xl:grid-cols-4 mr-lg:grid-cols-3 mr-sm:grid-cols-2"
         cta={false}
         variant="steps"
         data={MRCardData2} />
       <SwiperComponents />
-      <MRContact />
+      <MRContact
+        subTitle="Discuss Your Story" title="And We Will Craft a Stunning Cover to Match Its Magic"
+        desc="We value your time and energy, which is why we're here to help you transform your narrative with our professional book cover designers for hire!"
+        titleB="Time to Turn Ideas into Reality"
+        descB={`With our expert design team, your book's <br class="hidden mr-sm:block" /> cover is just the beginning of its journey.`}
+      />
     </main>
   )
 }

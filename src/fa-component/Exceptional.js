@@ -8,8 +8,8 @@ import { MRCTAGroup } from '@/component'
 
 const data = [
     {
-        heading: "Amazon Publishing",
-        para: "With this esteemed collaboration, you can gain access to Amazon's vast distribution network and cutting-edge publishing technology, ensuring their work reaches a global audience. We offer a diverse range of imprints covering various genres, including mystery, romance, science fiction, and non-fiction. You can count on Best Selling Publisher.",
+        heading: "Amazon Book Publishing",
+        para: "With our expert support and global platform, your manuscript can reach readers worldwide. We handle the details, from formatting to distribution, so you can focus on writing. Using our professional Amazon book publishing services, you can have access to Amazon’s extensive distribution network and excellent publishing technologies. Publish a book on Amazon hassle-free by partnering up with Best Selling Publisher!",
         path: "/images/flods/amazon_publishing.png",
         alt: "Book Editing"
     },
@@ -20,25 +20,24 @@ const data = [
     },
     {
         heading: "Digital Book Publishing",
-        para: "You’re probably wondering how book publishing works. Here’s the thing: it leverages digital technologies to offer readers convenient access to a wide range of literary content on various devices. These include e-readers, tablets, and smartphones. Digital book publishing has revolutionized the traditional publishing industry, enabling you to reach global audiences.",
+        para: "Broaden the scope of your book with our links to the major distribution networks, such as Amazon Kindle, Apple Books, Barnes & Noble, and others. We control the procedure, so you can focus on the writing of your story. Benefit from expert guidance and a global platform for maximum exposure and reader engagement.",
         path: "/images/flods/ebook_publishing.png",
         alt: "Article Publication"
     },
     {
         heading: "E-Book Publishing",
-        para: "eBook publishing, a cornerstone of digital literature, involves the creation, distribution, and consumption of books in electronic format. Unlike traditional print publishing, eBook publishing eliminates the need for you to have physical copies. You can easily reach readers anywhere in the world. ",
-        path: "/images/flods/book_marketing.png",
+        para: `We format, design, and distribute your eBooks across major platforms like Amazon Kindle, Apple Books, and Google Play. Our technical team ensures compatibility across devices for smooth reading experiences. Reach wider audiences, boost your visibility, and maximize sales with our professional <a href="https://bestsellingpublisher.com/ebook-publishing" rel="dofollow"> ebook publishing service.</a>`,
         alt: "E-Book Writing"
     },
     {
         heading: "Self-publishing",
-        para: "Empowered authors like you can bring their literary creations directly to readers without the involvement of traditional publishing houses. This involves the author overseeing all aspects of the publishing process, including editing, formatting, cover design, and distribution.",
+        para: "Edit your manuscript, format it professionally, design a captivating cover, and distribute it across major platforms like Amazon Kindle, Apple Books, and Google Play. With our expertise, your book will shine on any device, captivating readers worldwide. Break free from traditional publishing limitations and take control of your book's journey.",
         path: "/images/flods/book_marketing.png",
         alt: "Book Marketing"
     },
     {
         heading: "Book Marketing",
-        para: "Book marketing encompasses the strategic efforts to promote and sell a book to your target audience. It involves a wide range of activities to increase visibility, generate interest, and ultimately drive sales.",
+        para: `We strategize promotions across social media, Amazon, and book review platforms. Our targeted advertising maximizes audience engagement, driving sales and building reader loyalty. Other than strategic promotion and target advertising of your book, our <a href="https://bestsellingpublisher.com/book-marketing" rel="dofollow">book marketing services</a> include personalized outreach to influencers and bloggers in your book's genre.`,
         alt: "Children’s Book Publication"
     },
 ]
@@ -84,7 +83,7 @@ const Exceptional = ({
                                         border: "2px solid #E2E2E2"
                                     }}>0{i + 1}</div>
                                     <h3 className='font-32 fw-700 font-primary txt-secondary1 pb-2'>{e.heading}</h3>
-                                    <p className='font-15 font-medium font-secondary txt-secondary '>{e.para}</p>
+                                    <p className='font-15 font-medium font-secondary txt-secondary ' dangerouslySetInnerHTML={{__html : e.para}} />
                                 </div>
                             </Col>
                         ))}

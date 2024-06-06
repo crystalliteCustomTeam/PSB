@@ -100,8 +100,8 @@ const Genre = () => {
 
       </Head>
       <MRHero
-        title="We Are The Gatekeepers Of Literary Success"
-        desc="Our mission as a company is to bring you literary success. How we go about achieving that is our writer’s magic. We offer great content for every book genre, whether you need fiction, autobiography, memoirs, or children’s books."
+        title="Create Your Literary Legacy, Because Your Story Deserves the Best!"
+        desc="Our mission as a company is to bring you literary success. We offer great content for every book genre, whether you need fiction book publishing services, autobiography, top-ranked memoirs publishing, or best children book publishing, we’ve covered it all!"
         logos="images/banner/img2.png"
         counter={true}
         classes='bg-[#fefefe] !py-[80px]'
@@ -121,7 +121,10 @@ const Genre = () => {
       <BTM />
       <CTA />
       <SwiperComponents />
-      <MRContact />
+      <MRContact 
+      titleB="It's Time to Write Your Book!" 
+      descB={`Craft tales that transport, captivate, and <br class="hidden mr-sm:block" /> linger in minds with Best Selling Publisher!`}
+       />
     </main>
   )
 }

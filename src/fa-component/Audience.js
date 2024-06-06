@@ -22,8 +22,8 @@ const Audience = () => {
                     <Row className={`${styles.audienceRow} justify-content-center align-items-center`}>
                         <Col lg={6} sm={12}>
                             <div className={styles.audienceTxt}>
-                                <h2 className='font-50 fw-300 font-primary txt-white mb-3'><span className='bg-black txt-white mt-2 p-1 font-45 fw-500 d-block'>Digital Publishing Services</span> That Amplifies Your Voice  Publishing Services</h2>
-                                <p className='font-15 font-secondary txt-white mb-2'>Let us transform your written words into global conversations, connecting your stories with every corner of the world.</p>
+                                <h2 className='font-45 fw-300 font-primary txt-white mb-3'><span className='bg-black txt-white mt-2 p-1 font-45 fw-500 d-inline-block'>Digital Book Publishing </span> <br /> That Helped 3000+ Authors Publish Their Books</h2>
+                                <p className='font-15 font-secondary txt-white mb-2'>From Manuscript to Global Distribution, let’s connect your story to every corner of the world in no time!</p>
                                 <p className='font-15 font-secondary txt-white mb-2'><strong><em>Your Story Deserves to Shine!</em></strong></p>
                                 <div className="grid grid-cols-1 mr-sm:flex gap-3">
                                     <MRCTA

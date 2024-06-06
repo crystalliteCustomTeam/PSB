@@ -18,28 +18,28 @@ import Content from "media/imageAR/Content.png"
 const ScriptWritingServices = () => {
   const MRContent2Data = [
     {
-      title: "Fiction",
-      desc: "Our fiction writers will assist you in creatively expressing your ideas into enticing literacy that will captivate your audience. All aspects of a story are considered, particularly the author’s major plot and characters. "
+      title: "Film Scripts",
+      desc: "A successful film requires a great script and our experienced script writers have honed the art of storytelling to ensure your script is of the highest caliber. Character development to plot twists, we focus intently on every aspect of your script for its success."
     },
     {
-      title: "Informative",
-      desc: "Our writers comprehend the nuance of your text. They ensure their information is reliable and well-acknowledged worldwide, under the available data and facts."
+      title: "Television Scripts",
+      desc: "We pay attention to every detail, from characters to plot twists. With the help of Best Selling Publisher, your TV script will keep viewers interested and coming back for more. That’s because our talented script writers know the recipe for making a TV show a hit!"
     },
     {
-      title: "Memoir",
-      desc: "Our writers have been trained to write memoirs, not to confuse them with autobiographies. Furthermore, they cherish your sentiments and emotions and go to great lengths to turn your precious memories into a book."
+      title: "Commercial Scripts",
+      desc: "Whether you’re directing for TV, radio, or online platforms, our talented writers can help you effectively get your message across with perfectly crafted commercial scripts! With our keen understanding of audience psychology and persuasive language, Best Selling Publisher ensures that your brand stands out"
     },
     {
-      title: "Children's Book",
-      desc: "Our well-trained and experienced writers are well-versed in all aspects of children’s books. They use their ingenuity to write classic subjects that young minds can understand, with vibrant graphics that keep them hooked."
+      title: "Video Scripts",
+      desc: "We can provide game-changing scripts for social media, corporate presentations, or marketing campaigns to ensure that your message is conveyed effectively. Our attention-grabbing introductions and impactful calls-to-action are essential elements in achieving key objectives like increasing brand awareness, driving sales, or educating your audience."
     },
     {
-      title: "Self Help Book",
-      desc: "We allow your ideas to reach the right audiences and serve your experiences to be their holy grail in the relevant endeavor."
+      title: "Corporate Scripts",
+      desc: "Our suite of corporate scripts includes training videos, internal communications, promotional materials, and more. We’re the masters when it comes to educating your employees or engaging your stakeholders. With the help of Best Selling Publisher, you can easily achieve your corporate objectives with clear and engaging messaging."
     },
     {
-      title: "Biography",
-      desc: "Our expert writers are keenly interested in learning about your subjects’ stories, holding the skills and expertise to provide you with well-written content for whoever you want to write about. They also conduct extensive research through various channels such as newspapers, blogs, and interviews to ensure they use correct facts and figures."
+      title: "Educational Scripts",
+      desc: "Our educational scripts are designed to inform and inspire! From clear explanations to interactive elements, we ensure your educational objectives are met effectively. We cover online courses, training modules, educational videos, and more!"
     }
   ]
   const MRCardData = [
@@ -80,23 +80,23 @@ const ScriptWritingServices = () => {
       content: [
         {
           textColor: "text-[#40BEE2] group-hover:text-white",
-          title: "Submit Your Manuscript",
-          desc: "After making up your mind about working with us, you place your order.",
+          title: "Submit Your Concept",
+          desc: "Once you've decided to collaborate with us, simply share your script idea with us.",
         },
         {
           textColor: "text-[#40BEE2] group-hover:text-white",
-          title: "Edit & Design",
-          desc: "We refine your text and design your book's cover.",
+          title: "Writing & Revision",
+          desc: "Our team meticulously crafts your script, incorporating your feedback along the way.",
         },
         {
           textColor: "text-[#40BEE2] group-hover:text-white",
           title: "Review & Approve",
-          desc: "You review our work and give the green light.",
+          desc: "You review the script and provide any final adjustments or approvals.",
         },
         {
           textColor: "text-[#40BEE2] group-hover:text-white",
-          title: "Publish & Distribute",
-          desc: "Your book is published and distributed on schedule.",
+          title: "Finalization & Delivery",
+          desc: "Upon your approval, we finalize the script and deliver it to you on time, ready for production or presentation.",
         },
       ]
     }]
@@ -151,11 +151,11 @@ const ScriptWritingServices = () => {
       ],
       "opens": "09:00",
       "closes": "17:00"
-    } 
+    }
   }
   const schemaProduct = {
-    "@context": "https://schema.org/", 
-    "@type": "Product", 
+    "@context": "https://schema.org/",
+    "@type": "Product",
     "name": "Script Writing Services | Best Selling Publisher",
     "image": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
     "description": "Take your scripts to the next level with our top rated script writing services",
@@ -183,20 +183,20 @@ const ScriptWritingServices = () => {
         <link rel="canonical" href="https://bestsellingpublisher.com/script-writing-services" />
 
         {/* Schema */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaWebsite)}}/>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaWebsite) }} />
 
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaCorporation)}}/>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaCorporation) }} />
 
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaProffesionalService)}}/>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProffesionalService) }} />
 
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaProduct)}}/>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProduct) }} />
 
 
 
       </Head>
       <MRHero
-        title="Professional High-Quality <br /> Script by Expert Writers"
-        desc="Streamline your content needs with our high-quality script writing service, which educates your audience about your brand and helps elevate you."
+        title="Capture Your Audience’s Imagination with Professional Script Writing Services"
+        desc="Our team of skilled script writers intimately understand the profound impact of storytelling. We recognize that every word, every scene, and every character holds the potential to captivate your audience. Join the ranks of satisfied clients who’ve entrusted us to develop captivating scripts!"
         logos="images/banner/img2.png"
         classes='bg-[#fefefe] !py-[80px]'
         beforeImg="mr-md:before:bg-[url('../../public/imageAR/notebook.png')]"
@@ -205,8 +205,8 @@ const ScriptWritingServices = () => {
       <Enlistedlogo />
       <MRCards
         subTitle="The Script That Is"
-        title={`Written With Pure Perfection`}
-        desc="Scriptwriting is massive, but with us, it becomes easy and accessible. You choose your script, and our writers do wonders with it. Our scriptwriting is known and acknowledged internationally."
+        title={`The Script That Is Written With Pure Perfection`}
+        desc="Experience the ease and accessibility of scriptwriting with us. You select your script, and our skilled writers work their magic."
         gridsClasses="mr-xl:grid-cols-3 mr-lg:grid-cols-3 mr-sm:grid-cols-2 !gap-x-8 mr-xl:w-[80%] mx-auto"
         cta={true}
         variant="icons"
@@ -214,41 +214,45 @@ const ScriptWritingServices = () => {
       <MRContent1
         subTitle="Our Comprehensive"
         title="Script Writing Services"
-        desc="We have a vast pool of writers and will work with you to find the best match for your needs. You will receive a PR and media campaign, an audiobook with a professional voice actor, and high-quality studio production. Finally, distribution and retailer accounts will be established in your name, ensuring you own all rights and royalties."
+        desc="Our experienced team collaborates closely with you to ensure every aspect of your story is captured authentically. From concept development to polished scripts, we ensure every detail aligns with your goals. As a leading script writing company, we deliver exceptional results for all types including for film, television, theater, corporate videos, and more!"
         img2="/assets/images/newimg/ghostwriting_book.png"
-        listTitle="Our process is simple and aims to deliver flawless results for every project."
+        listTitle="Our streamlined process is designed to yield impeccable outcomes."
         textTheme="text-white"
         list={[
-          "Writing Genuine Content Based On Your Idea",
-          "Critical Review, Editing, And Proofreading",
-          "Extensive Formatting, Typesetting, & Designing",
-          "Publishing, Branding, Marketing, And Promotions",
-          "Critical Review And Analysis",
-          "Book Coaching",
-          "Copy Editing",
-          "Developmental Editing"
+          "Creating authentic content inspired by your ideas",
+          "Thoroughly reviewing, editing, and carefully proofreading",
+          "Extensive formatting, typesetting, and innovative design",
+          "Comprehensive support for publishing, branding, marketing, and promotions",
+          "In-depth critical analysis and evaluation",
+          "Personalized guidance and support through book coaching",
+          "Refining copy with precise editing",
+          "Enhancing manuscripts through developmental editing"
         ]}
         classes="bg-[url('../../public/imageAR/serviceBG.png')]"
         theme="dark"
       />
       <MRContent2
         subTitle="Our Creative Writers,"
-        title="Bringing Your Imagination To Life."
-        desc="You may have an idea for the next best-seller, but you may not have the time or expertise to write it yourself. Our platform meets all of the <br class='mr-xl:block hidden'/> requirements and offers a diverse range of writing styles, including:"
+        title="Turn Your Thoughts into Masterful Scripts"
+        desc="Our top-rated script writing services can grab people's attention with captivating stories. They make sure each script is perfect for you, bringing your ideas to life on screen! Here are the types of scripts we specialize in:"
         data={MRContent2Data}
       />
-      <CTA />
+      <CTA subtitle="Don't Wait to Get in Touch!" title="Start Your Path to Becoming a Bestseller!" desc="We are here to offer our personalized assistance and address any inquiries you may have. Your questions are of utmost importance to us and we warmly invite you to connect with us. So reach us through our live chat or phone number without any hesitation." />
       <BTM />
       <MRCards
         subTitle="We Pursue"
         title={`A Swift Work Mode that Involves <br class="mr-xl:block hidden" /> 4 Easy Steps`}
-        desc={`We emphasize prompt deliveries because we don’t like to keep you waiting. Following are the <br class="mr-xl:block hidden" /> 4 easy steps that keep us streamlined from the beginning:`}
+        desc={`Our script writing process is streamlined into 4 easy steps, ensuring a swift and efficient delivery. Here’s the process of <br class="mr-xl:block hidden" /> our script writing services:`}
         gridsClasses="mr-xl:grid-cols-4 mr-lg:grid-cols-3 mr-sm:grid-cols-2"
         cta={false}
         variant="steps"
         data={MRCardData2} />
       <SwiperComponents />
-      <MRContact />
+      <MRContact
+        subTitle="Share Your Vision"
+        title={`Have a Story Idea Brewing? <br class="mr-xl:block hidden" /> Let's Hear It!`}
+        desc={`We’re ready to collaborate your story plot into a compelling script! So what <br class="mr-xl:block hidden" /> are you waiting for? Simply fill out the form and join hands with the best script writer!`}
+      />
     </main>
   )
 }

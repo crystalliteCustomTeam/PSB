@@ -9,36 +9,36 @@ import { MRHero, MRContact, MRQuestioners, MRContent1 } from "@/component"
 
 const MRQuestionersData = [
   {
-    title: "Ebooks Are Much Cheaper To Produce Than Print Books. ",
+    title: "Ebooks Are Cheaper To Produce Than Print Books.",
     desc: "You don't have to pay for printing, paper, or shipping costs."
   },
   {
-    title: "Ebooks Can Be Published And Distributed Very Quickly.  ",
-    desc: "You can have your eBook available for sale within days or weeks."
+    title: "Ebooks Can Be Published And Distributed Very Quickly.",
+    desc: "E-books can be written and delivered extremely quickly. Your e-book can be on the market in a few days."
   },
   {
     title: "Ebooks Are Very Easy To Update.",
-    desc: "You can make changes to your eBook and distribute the updated version to your readers without having to go through the traditional printing and distribution process. "
+    desc: "You can update right in your ebook and hand your reading community the updated copy without all the hassles and costs of conventional printing and distribution."
   },
   {
     title: "Ebooks Are Very Easy To Distribute.",
-    desc: "You can sell your eBook online or distribute it for free through websites and social media."
+    desc: "Ebooks are very easy to distribute. With the aid of social media and web resources, you can sell an eBook."
   },
   {
     title: "Ebooks Are Very Sustainable.",
-    desc: "They don't require trees to be cut down to be produced, and they can be read on electronic devices that use very little energy."
+    desc: "This is because making them does not require trees to be cut down and the electronic gadgets that are required to read them only consume a little electricity."
   },
   {
     title: "Ebooks Can Be An Excellent Marketing Tool.",
-    desc: "You can use your eBook to promote your other products and services."
+    desc: "Publish your eBook and use it to promote your other products or services."
   },
   {
     title: "Ebooks Can Help You Build A Community Around Your Brand.",
-    desc: "If you distribute your eBook for free, you can attract new readers and followers who will be interested in what you have to say."
+    desc: "Offering your eBooks free will reach a new market."
   },
   {
     title: "Ebooks Can Be A Great Revenue Stream.",
-    desc: "If you sell your eBook, you can make a significant amount of money from it. There are many more benefits to eBook publishing than we have space to list here. Suffice it to say that if you're thinking about publishing a book, you should seriously consider doing it as an eBook. It's a quick, easy, cost-effective way to get your content out there. And who knows? Your eBook could end up being a bestseller!"
+    desc: "You might just make your fortune from eBook publishing. It is enough to say if your book is in the pipeline, consider publishing it as an ebook. It's cheap and easy for you to spread your content. Who knows, your eBook may be the next one for the best sellers! If you plan to publish an eBook on Amazon or any other platform, the best option lies in hiring a full-service eBook publishing company."
   }
 ]
 
@@ -133,7 +133,8 @@ const EbookPublishing = () => {
 
       </Head>
       <MRHero
-        title="Create The Best-Selling Ebooks With Our Ebook Publishing Services!"
+        title="Create The Best-Selling eBooks With Our Ebook Publishing Services!"
+        desc="Hire the best eBook publisher to create your next best-seller! Best Selling Publisher guarantees professional formatting, eye-catching design, and wide distribution to maximize your book's visibility and sales potential. "
         logos="images/banner/img2.png"
         counter={true}
         classes="bg-right bg-center !py-[80px]"
@@ -146,8 +147,8 @@ const EbookPublishing = () => {
       />
       <MRQuestioners
         subTitle="Be a Part of the Best Sellers’ Fraternity"
-        title="Why Does E Book Publishing Gain A Lot Of Momentum? "
-        desc="Ebook publishing has gained a lot of momentum in recent years. This is because it is a very efficient way to publish and distribute content. There are many advantages to using eBooks over traditional print books. Here are some of the most important benefits:"
+        title="Why Does E-Book Publishing Gain A Lot Of Momentum?"
+        desc="Ebook publishing has been increasingly popular in recent years. It's because eBooks are a really effective way to distribute and publish content. eBooks have numerous advantages over printed books. Here are some of the most significant benefits:"
         data={MRQuestionersData}
       />
       <PublishingNewComponent
@@ -160,14 +161,18 @@ const EbookPublishing = () => {
       />
       <MRContent1
         subTitle="Here’s A Good Piece Of Advice"
-        title="We Are Ebook Publishers You Would Love To Partner With!"
-        desc="At Best Selling Publisher, we understand that reading should be an enjoyable experience for everyone. That's why we offer a wide variety of eBooks for you to choose from. Whether you're looking for the latest bestseller or a classic work of literature, we have something for everyone. We also believe that books should be affordable, so we offer our eBooks at a fraction of the cost of print books. So why not take a look at our catalog and see what we have to offer in our book publishing services? You're sure to find something that interests you."
+        title="We Are The Ebook Publishers You Would Love To Hire!"
+        desc="We at Best Selling Publisher believe that reading should be a fun experience for all. We offer a variety of eBooks to suit your needs. We have something to offer everyone, whether you are looking for the newest bestseller or classic literature. Our eBooks are priced at a fraction of the price of printed books because we believe books should be accessible to everyone. We take pride in being one of the top eBook publishers. Why not browse the catalog to see our complete eBook publishing services? We’re sure you’ll find something that interests you."
         img1="/ahsan/ebook-broder.png"
       />
       <BTM />
       <CTA />
       <SwiperComponent />
-      <MRContact />
+      <MRContact 
+      desc="We value your time and energy, which is why we’re here to help you transform your narrative into a beautifully written book with our eBook publishing service!"
+      titleB="It's Time to Write Your Book!"
+      descB={`Now that you have an expert book editing, <br class="hidden mr-sm:block" /> and eBook publishing company. What are <br class="hidden mr-sm:block" /> you waiting for?`}
+      />
     </>
   )
 }

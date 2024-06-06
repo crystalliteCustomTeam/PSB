@@ -148,13 +148,13 @@ const NewFooter = () => {
                                     <ul>
                                         <li className='xl:pb-5 pb-3'>
                                             <Link href="mailto:info(@)bestsellingpublisher(.)com" className='flex items-start gap-x-2 text-[13px] font-[400] font-secondary xl:leading-[25px] leading-[15px]'>
-                                                <Image src={Tel} alt='Amazon Book Publishing ' className='min-h-[25px]object-contain ' />
+                                            <Image src={Email} alt='Amazon Book Publishing ' className='object-contain w-[15px] h-[15px]' />
                                                 info@bestsellingpublisher.com
                                             </Link>
                                         </li>
                                         <li className='xl:pb-5 pb-3'>
                                             <Link href="tel:(800) 781-9093" className='flex items-start gap-x-2 text-[13px] font-[400] font-secondary xl:leading-[25px] leading-[15px]'>
-                                                <Image src={Email} alt='Amazon Book Publishing ' className='object-contain w-[15px] h-[15px]' />
+                                            <Image src={Tel} alt='Amazon Book Publishing ' className='min-h-[25px]object-contain ' />
                                                 (800) 781-9093 (Toll Free)
                                             </Link>
                                         </li>
