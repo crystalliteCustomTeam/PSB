@@ -4,7 +4,11 @@ import { useEffect, useRef } from "react";
 import { register } from "swiper/element/bundle";
 // register Swiper custom elements
 
-const TestimonialsSlider = () => {
+const TestimonialsSlider = ({
+  subTitle = "Enough from Us",
+  title = "See What Our Clients Have to Say",
+  desc = "We can go on and on about our services, but if you seek further credibility, then see what our clients have to say about us:",
+}) => {
   const swiperElRef = useRef(null);
 
   useEffect(() => {
@@ -109,13 +113,13 @@ const TestimonialsSlider = () => {
         <div>
           <div className="text-center">
             <h6 className="font-semibold text-[#40BEE2] font-primary text-[30px] mb-3">
-            Enough from Us
+              {subTitle}
             </h6>
             <h2 className="mr-xl:text-[45px] font-bold mb-5 font-primary">
-            See What Our Clients Have to Say
+              {title}
             </h2>
             <p className="text-lg mb-3 mx-auto text-[16px] xs:text-[15px]">
-            We can go on and on about our services, but if you seek further credibility, then see what our clients have to say about us:
+              {desc}
             </p>
 
           </div>
@@ -141,7 +145,7 @@ const TestimonialsSlider = () => {
                         width={80}
                         height={80}
                         className="mb-2"
-                        
+
                         priority
                       />
                       <Image quality={95}
@@ -149,7 +153,7 @@ const TestimonialsSlider = () => {
                         alt={testimonial.name}
                         width={80}
                         height={80}
-                      priority/>
+                        priority />
                       <div className="header">
                         <h1 className="name">{testimonial.name}</h1>
                       </div>

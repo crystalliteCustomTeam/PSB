@@ -247,7 +247,10 @@ const ScriptWritingServices = () => {
         cta={false}
         variant="steps"
         data={MRCardData2} />
-      <SwiperComponents />
+      <SwiperComponents 
+      subTitle="That's Plenty From Us"
+      title="We’ll Let Our Clients Speak Now "
+      desc="While we could continue discussing our services, for further assurance of our credibility, take a moment to hear directly from our satisfied clients:" />
       <MRContact
         subTitle="Share Your Vision"
         title={`Have a Story Idea Brewing? <br class="mr-xl:block hidden" /> Let's Hear It!`}

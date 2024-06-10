@@ -125,8 +125,6 @@ const ParentComponent = () => {
               <p>With its versatile and welcoming design, the paperback cover stands as your gateway into the vast and intriguing literary world. But don't let its gentle appearance fool you; the paperback is more than capable of safeguarding the treasure trove of words inside, keeping the essence of your adventure intact. Its affordability and easy-to-carry nature have made it a beloved choice among both those who devour books and those who indulge in the occasional literary escape.</p>
               <p>Do you want to test how good we are at book cover designs?</p>
               <MRCTAGroup classes='!mt-[20px]'/>
-              <p>For this genre of compelling stories, engaging character dialogue and emotional story beats. You require the services of a fiction ghostwriter for hire. Our writers are adept at making the worlds of your stories come to life with the usage of story telling elements such as intensive world building, fascinating character motivations, intriguing plotting. This leads to our clients often times becoming best selling authors.</p>
-              <MRCTAGroup />
             </div>
             <div>
               <Image quality={95} src='/assets/images/newimg/paper-book-cover.png' className='mx-auto' width={400} height={600} alt='Tablist Images' />
