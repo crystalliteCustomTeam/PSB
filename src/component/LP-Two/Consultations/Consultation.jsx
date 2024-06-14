@@ -95,7 +95,7 @@ const Consultation = ({title,desc}) => {
     return (
         <section>
             <div className="relative z-10 font-sans mr-lg:py-[80px] mr-md:py-[60px] py-[40px]">
-                <Image src={Banner} alt="consultationBanner" className="absolute top-0 left-0 right-0 bottom-0 -z-10 w-full h-full object-cover object-bottom" priority />
+                <Image src={Banner} alt="consultationBanner" className="absolute top-0 left-0 right-0 bottom-0 -z-10 w-full h-full object-cover object-bottom" priority={true}/>
                 <div className="mr-container">
                     <div className="mr-sm:text-center text-justify text-white mr-xl:w-[75%] mr-md:w-[90%] w-full mx-auto">
                         <h2 className="mr-lg:text-[40px] mr-md:text-[30px] text-[25px] leading-normal font-medium mb-3" dangerouslySetInnerHTML={{__html : title}} />

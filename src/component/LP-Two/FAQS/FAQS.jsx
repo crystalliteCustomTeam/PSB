@@ -11,7 +11,7 @@ const FAQS = ({ title, items }) => {
             <div className='mr-lg:py-[80px] mr-md:py-[60px] py-[40px]'>
                 <div className='mr-container'>
                     <div className='mr-sm:text-center text-justify mb-[40px]'>
-                        <h2 className='mr-lg:text-[40px] mr-md:text-[30px] text-[25px] leading-normal font-medium' dangerouslySetInnerHTML={{ __html: title }} />
+                        <h2 className='mr-lg:text-[40px] mr-md:text-[30px] text-[25px] leading-normal font-medium mb-3' dangerouslySetInnerHTML={{ __html: title }} />
                     </div>
                     <div>
                         {items.map(([title, desc], index) => (

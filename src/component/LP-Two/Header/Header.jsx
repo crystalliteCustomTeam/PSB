@@ -24,7 +24,7 @@ const Header = () => {
             <div className="items-center justify-between gap-x-4 flex grid-cols-2 grid-rows-1">
               <div className="flex-shrink-0">
                 <Link href="/" className="text-xl font-bold text-indigo-500">
-                  <Image quality={95} src={Logo} alt=" Best Selling Publisher Ghostwriting logo" width={180} height={50} priority />
+                  <Image quality={95} src={Logo} alt=" Best Selling Publisher Ghostwriting logo" width={180} height={50} priority={true}/>
                 </Link>
               </div>
               <nav className="flex space-x-4 text-[16px] text-[#1d1d1f] font-medium">
@@ -56,7 +56,7 @@ const Header = () => {
                   ))}
                   <li className='mr-lg:!mb-4 md:mb-3 sm:mb-3 xs:mb-3 block sm:hidden xs:hidden'>
                     <Link href="tel:800-781-9093" className={`text-[15px] transition-all ease-in-out duration-300 group xs:text-[20px] font-secondary border-2 border-[#40BEE2] bg-[#40BEE2] py-1 px-2 text-[#40BEE2] flex items-center gap-x-3 font-[500] hover:bg-transparent `}>
-                      <Image src={TelIcon} width={15} height={15} alt='Amazon Book Publishing' className='transition-all ease-in-out duration-300 brightness-0 invert group-hover:brightness-100 group-hover:invert-0' priority />
+                      <Image src={TelIcon} width={15} height={15} alt='Amazon Book Publishing' className='transition-all ease-in-out duration-300 brightness-0 invert group-hover:brightness-100 group-hover:invert-0' priority={true}/>
                       <span className=' text-white group-hover:!text-black'>800-781-9093</span>
                     </Link>
                   </li>

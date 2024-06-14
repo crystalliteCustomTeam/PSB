@@ -28,7 +28,7 @@ const GhostwritingBanner = (props) => {
             </div>
           </div>
           <div className='mx-auto w-[100%] justify-center items-center text-center pt-10 sm:w-[90%] sm:pb-0 xs:w-[90%] xs:pb-10'>
-            <Image priority quality={100} src='/assets/images/newimg/professional-ghostwriting.png' width={650} height={400} className='mx-auto' alt='professional-ghostwriting' />
+            <Image priority={true}quality={100} src='/assets/images/newimg/professional-ghostwriting.png' width={650} height={400} className='mx-auto' alt='professional-ghostwriting' />
           </div>
         </div>
 

@@ -153,7 +153,7 @@ const TestimonialsSlider = ({
                         alt={testimonial.name}
                         width={80}
                         height={80}
-                        priority />
+                        priority={true}/>
                       <div className="header">
                         <h1 className="name">{testimonial.name}</h1>
                       </div>

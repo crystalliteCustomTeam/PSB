@@ -6,7 +6,7 @@ const WhyChoose = ({ title, desc, card }) => {
             <div className="mr-lg:py-[80px] mr-md:py-[60px] py-[40px] font-sans bg-[#F3F3F3]">
                 <div className="mr-container">
                     <div className="mr-sm:text-center text-justify mr-xl:w-[75%] mr-md:w-[90%] w-full mx-auto">
-                        <h2 className="mr-lg:text-[40px] mr-md:text-[30px] text-[25px] leading-normal font-medium mb-2" dangerouslySetInnerHTML={{ __html: title }} />
+                        <h2 className="mr-lg:text-[40px] mr-md:text-[30px] text-[25px] leading-normal font-medium mb-3" dangerouslySetInnerHTML={{ __html: title }} />
                         <p className="mr-md:text-base text-sm font-normal leading-normal" dangerouslySetInnerHTML={{ __html: desc }} />
                     </div>
                     <div className="grid mr-lg:grid-cols-3 mr-md:grid-cols-2 grid-cols-1 items-center mr-lg:gap-x-5 gap-5 mt-[50px]">

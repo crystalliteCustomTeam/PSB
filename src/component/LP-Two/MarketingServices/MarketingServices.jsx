@@ -21,7 +21,7 @@ const MarketingServices = ({services,title,desc}) => {
             <div className="mr-lg:py-[80px] mr-md:py-[60px] py-[40px] font-sans __bookMarketingServices">
                 <div className="mr-container">
                     <div className="mr-sm:text-center text-justify mr-lg:w-[75%] mr-md:w-[80%] w-full mx-auto">
-                        <h2 className="mr-lg:text-[40px] mr-md:text-[30px] text-[25px] font-medium leading-normal text-black" dangerouslySetInnerHTML={{__html : title}}/>
+                        <h2 className="mr-lg:text-[40px] mr-md:text-[30px] text-[25px] font-medium leading-normal text-black mb-3" dangerouslySetInnerHTML={{__html : title}}/>
                         <p className="text-base leading-normal font-normal" dangerouslySetInnerHTML={{__html : desc}} />
                     </div>
                     <div className={styles.embla}>

@@ -6,8 +6,8 @@ import HeroBGTwo from "media/lp-two-images/hero/2.png"
 const Hero = ({ title, desc }) => {
     return (
         <section className="relative z-10">
-            <Image src={HeroBGOne} alt="mockups" className="mr-xl:block hidden absolute top-10 mr-2xl:-left-[120px] -left-[190px] bottom-0 z-20 w-[477px] h-[555px] object-cover object-bottom" priority />
-            <Image src={HeroBGTwo} alt="mockups" className="mr-xl:block hidden absolute top-10 mr-2xl:-right-[100px] -right-[150px] bottom-0 z-20 w-[449px] h-[560px] object-cover object-bottom" priority />
+            <Image src={HeroBGOne} alt="mockups" className="mr-xl:block hidden absolute top-10 mr-2xl:-left-[120px] -left-[190px] bottom-0 z-20 w-[477px] h-[555px] object-cover object-bottom" priority={true} />
+            <Image src={HeroBGTwo} alt="mockups" className="mr-xl:block hidden absolute top-10 mr-2xl:-right-[100px] -right-[150px] bottom-0 z-20 w-[449px] h-[560px] object-cover object-bottom" priority={true} />
             <div className="font-sans mr-lg:py-[80px] mr-md:py-[60px] pt-[60px] pb-[40px]">
                 <div className="mr-container">
                     <div className="mr-sm:text-center text-justify mr-xl:w-[65%] mr-lg:w-[75%] w-full mx-auto text-black">

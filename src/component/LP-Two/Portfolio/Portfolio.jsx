@@ -44,7 +44,7 @@ const Portfolio = ({subtitle,title ,desc}) => {
                 <div className="mr-container">
                     <div className="mr-sm:text-center text-justify mr-xl:w-[75%] mr-md:w-[90%] w-full mx-auto">
                         <span className='mr-md:text-base text-sm font-normal leading-normal'>{subtitle}</span>
-                        <h2 className="mr-lg:text-[40px] mr-md:text-[30px] text-[25px] font-medium leading-normal mb-2" dangerouslySetInnerHTML={{__html : title}}/>
+                        <h2 className="mr-lg:text-[40px] mr-md:text-[30px] text-[25px] font-medium leading-normal mb-3" dangerouslySetInnerHTML={{__html : title}}/>
                         <p className="mr-md:text-base text-sm font-normal leading-normal" dangerouslySetInnerHTML={{__html : desc}} />
                     </div>
                 </div>

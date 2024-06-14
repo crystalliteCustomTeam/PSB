@@ -97,11 +97,11 @@ const Benifits = ({ title, desc }) => {
     return (
         <section>
             <div className="relative z-10 mr-md:py-[60px] py-[40px] font-sans">
-                <Image src={benifitsBanner} alt="benifitsBanner" className="absolute top-0 left-0 right-0 bottom-0 -z-10 w-full h-full object-cover object-bottom" priority />
+                <Image src={benifitsBanner} alt="benifitsBanner" className="absolute top-0 left-0 right-0 bottom-0 -z-10 w-full h-full object-cover object-bottom" priority={true}/>
                 <div className="mr-container">
                     <div className="grid grid-cols-12 mr-lg:gap-x-5 gap-5 items-center">
                         <div className="mr-lg:col-span-7 col-span-12 relative z-10">
-                            <Image src={benifitsBg} alt="benifitsBanner" className="absolute top-0 left-0 right-0 bottom-0 -z-10 w-full h-full object-auto" priority />
+                            <Image src={benifitsBg} alt="benifitsBanner" className="absolute top-0 left-0 right-0 bottom-0 -z-10 w-full h-full object-auto" priority={true}/>
                             <div className="py-16 w-[85%] mx-auto text-white">
                                 <h2 className="mr-lg:text-[40px] mr-md:text-[30px] text-[25px] font-medium leading-normal mb-2">{title}</h2>
                                 <p className="mr-md:text-base text-sm mr-sm:text-start text-justify font-normal leading-normal">{desc}</p>

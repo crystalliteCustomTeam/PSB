@@ -37,7 +37,7 @@ const Bookmockups = () => {
     return (
         <section>
             <div className="relative mr-md:py-[10px] py-[40px] font-sans">
-                <Image src={Banner} alt="mockupsBanner" className="absolute top-0 left-0 right-0 bottom-0 -z-50 w-full h-full object-cover object-bottom" priority />
+                <Image src={Banner} alt="mockupsBanner" className="absolute top-0 left-0 right-0 bottom-0 -z-50 w-full h-full object-cover object-bottom" priority={true}/>
                 <div className="mr-container">
                     <div className={styles.embla}>
                         <div className="overflow-hidden" ref={emblaRef}>

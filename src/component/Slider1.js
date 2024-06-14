@@ -21,7 +21,7 @@ const Slider1 = () => {
                         <a href='javascript:$zopim.livechat.window.show()' className='bg-[#1d1d1f] py-1 text-white border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#1d1d1f] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
                     </div>
                     <div className='mx-auto w-[70%] justify-center items-center text-center hover:-translate-y-1 hover:scale-105 duration-300'>
-                        <Image priority quality={95} src='/assets/images/newimg/open-book-with-hard-cover-isolated-white.png' width={1000} height={500} alt='Home Image banner' className='block mx-auto' />
+                        <Image priority={true}quality={95} src='/assets/images/newimg/open-book-with-hard-cover-isolated-white.png' width={1000} height={500} alt='Home Image banner' className='block mx-auto' />
                     </div>
 
                 </div>
