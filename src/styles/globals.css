@@ -988,38 +988,45 @@ header .group:hover .group-hover\:visible {
 }
 
 /* Cover Design Slider CSS */
-.__slides .slick-prev, .__slides .slick-next{
-      font-size: 0;
-      line-height: 0;
-      position: absolute;
-      top: inherit;
-      bottom: -65px;
-      display: block;
-      width: 50px;
-      height: 50px;
-      padding: 0;
-      transform: translate(0, -50%);
-      cursor: pointer;
-      color: transparent;
-      border: none;
-      outline: none;
-      background: transparent;
-  }
-  .__slides .slick-prev{
+.__slides .slick-prev,
+.__slides .slick-next {
+   font-size: 0;
+   line-height: 0;
+   position: absolute;
+   top: inherit;
+   bottom: -65px;
+   display: block;
+   width: 50px;
+   height: 50px;
+   padding: 0;
+   transform: translate(0, -50%);
+   cursor: pointer;
+   color: transparent;
+   border: none;
+   outline: none;
+   background: transparent;
+}
+
+.__slides .slick-prev {
    left: 45%;
-  }
-  .__slides .slick-next{
+}
+
+.__slides .slick-next {
    right: 45%;
-  }
-  .__slides .slick-prev::before{
+}
+
+.__slides .slick-prev::before {
    content: url(../../public/imageAR/leftActive.png);
-  }
-  .__slides .slick-next::before{
+}
+
+.__slides .slick-next::before {
    content: url(../../public/imageAR/rightActive.png);
-  }
-  .ImgSliderWS.slick-slider img {
+}
+
+.ImgSliderWS.slick-slider img {
    margin: 0 !important;
 }
+
 .lpOneBookSlider .slick-dots li button:before {
    opacity: 1 !important;
    content: '' !important;
@@ -1049,4 +1056,48 @@ header .group:hover .group-hover\:visible {
    display: flex !important;
    gap: 10px !important;
    justify-content: center !important;
+}
+
+.__bookMarketingServices .embla__slide.is-snapped .__card {
+   background-color: #40BEE2;
+   top: -50px;
+}
+
+.__bookMarketingServices .embla__slide.is-snapped .__card span {
+   background-color: #000000;
+}
+
+.__bookMarketingServices .embla__slide.is-snapped .__card img {
+   filter: brightness(0) invert(1);
+}
+
+.__bookMarketingServices .embla__slide.is-snapped .__card h4 {
+   color: white;
+}
+
+.__bookMarketingServices .embla__slide.is-snapped .__card p {
+   color: white;
+}
+
+.__bookMarketingServices .embla__slide.is-snapped .__card a {
+   background-color: #000;
+}
+
+@media screen and (max-width: 768px) {
+   .__bookMarketingServices .embla__slide.is-snapped .__card {
+      top: 0px;
+   }
+}
+
+.__testimonialsAR .embla__slide.is-snapped .__card {
+   background-color: white;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.09);
+}
+
+.__testimonialsAR .embla__slide.is-snapped .__card h4 {
+   color: #40BEE2;
+}
+
+.__testimonialsAR .embla__slide.is-snapped .__card p {
+   color: black;
 }

@@ -24,10 +24,10 @@ export default function App({ Component, pageProps }) {
         <meta name="google-site-verification" content="R28eoLjUYrldzCTVPJyB50E-zTd2cWaogKpJP3ycGFM" />
       </Head>
       <main className={`${primary.className} ${SfProDisplay.variable}`}>
-        {router.pathname == "/lp-one" ? "" : <Headernew />}
+        {router.pathname == "/lp-one" || router.pathname == "/lp-two" ? "" : <Headernew />}
         {/* {loadScript ? <Component {...pageProps} /> : <Loader />} */}
         <Component {...pageProps} />
-        <Footer1 />
+        {router.pathname == "/lp-two" ? "" : <Footer1 />}
       </main>
       {loadScript && (
         <>
