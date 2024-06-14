@@ -105,7 +105,7 @@ const Benifits = ({ title, desc }) => {
                             <div className="py-16 w-[85%] mx-auto text-white">
                                 <h2 className="mr-lg:text-[40px] mr-md:text-[30px] text-[25px] font-medium leading-normal mb-2">{title}</h2>
                                 <p className="mr-md:text-base text-sm mr-sm:text-start text-justify font-normal leading-normal">{desc}</p>
-                                <MRCTA text="Book An Appointment" classes="bg-black mt-4 mr-md:mb-14 mb-10 mr-md:text-base text-sm" />
+                                <MRCTA text="Book An Appointment" classes="bg-black mt-4 mr-md:mb-14 mb-10 mr-md:text-base text-sm hover:bg-transparent hover:border-white" />
                                 <div className="grid grid-cols-12 2xl:gap-x-4 mr-md:gap-2 gap-5 items-center">
                                     <span className="mr-sm:col-span-3 col-span-6 flex items-center mr-2xl:gap-x-2 gap-x-1 border-e">
                                         <h4 className="mr-2xl:text-[40px] mr-xl:text-[30px] mr-sm:text-[25px] text-lg font-bold leading-tight">10</h4>
@@ -133,7 +133,7 @@ const Benifits = ({ title, desc }) => {
                                 <input type="email" required name="email" placeholder="Email *" className="block focus-visible:outline-[#40BEE2] w-full border-2 border-[#E1E1E1] rounded-md px-4 py-4 mb-4 placeholder:text-[#B4B4B4] font-medium" />
                                 <input type="tel" minLength="10" maxLength="13" pattern="[0-9]*" name="phone" placeholder="Phone" required className="block focus-visible:outline-[#40BEE2] w-full border-2 border-[#E1E1E1] rounded-md px-4 py-4 mb-4 placeholder:text-[#B4B4B4] font-medium" />
                                 <textarea className="resize-none focus-visible:outline-[#40BEE2] w-full border-2 border-[#E1E1E1] rounded-md px-4 pt-4 pb-10 mb-4 placeholder:text-[#B4B4B4]" id="message" name="comments" placeholder="Comments.."></textarea>
-                                <button type="submit" className="bg-[#40BEE2] text-white w-full block rounded-md py-3">{score}</button>
+                                <button type="submit" className="bg-[#40BEE2] text-white w-full block rounded-md py-3 hover:bg-black transition-all duration-300 ease-in-out">{score}</button>
                             </form>
                         </div>
                     </div>

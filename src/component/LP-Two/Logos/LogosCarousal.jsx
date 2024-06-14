@@ -42,7 +42,7 @@ const LogosCarousal = () => {
                             [Logo8],
                         ].map(([img], i) => (
                             <div className={styles.embla__slide} key={i}>
-                                <Image src={img} alt='logos' className='block mx-auto' />
+                                <Image src={img} alt='logos' className='block mx-auto' property />
                             </div>
                         ))
                     }

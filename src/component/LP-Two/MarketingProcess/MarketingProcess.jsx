@@ -43,7 +43,7 @@ const MarketingProcess = ({ items, title, desc }) => {
                                                     </p>
                                                 )}
                                                 {openIndex === index && (
-                                                    <MRCTA text="Connect With Us!" classes='mt-5' />
+                                                    <MRCTA text="Connect With Us!" classes='mt-5 hover:bg-black' />
                                                 )}
                                             </div>
                                         </button>

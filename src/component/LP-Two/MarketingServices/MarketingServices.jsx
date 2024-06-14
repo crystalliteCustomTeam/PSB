@@ -35,7 +35,7 @@ const MarketingServices = ({services,title,desc}) => {
                                                 </span>
                                                 <h4 className="text-[20px] leading-tight font-medium mt-8 mb-4">{title}</h4>
                                                 <p className="text-base font-normal leading-normal">{desc}</p>
-                                                <MRCTA text="Connect With Us!" classes="mt-5" />
+                                                <MRCTA text="Connect With Us!" classes="mt-5 hover:bg-black" />
                                             </div>
                                         </div>
                                     ))

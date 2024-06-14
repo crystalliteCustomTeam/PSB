@@ -120,7 +120,7 @@ const IndustryExperts = ({ title, desc, descTwo }) => {
                                 <input type="email" required name="email" placeholder="Email *" className="block focus-visible:outline-[#40BEE2] w-full border-2 border-[#E1E1E1] rounded-md px-4 py-4 mb-4 placeholder:text-[#B4B4B4] font-medium" />
                                 <input type="tel" minLength="10" maxLength="13" pattern="[0-9]*" name="phone" placeholder="Phone" required className="block focus-visible:outline-[#40BEE2] w-full border-2 border-[#E1E1E1] rounded-md px-4 py-4 mb-4 placeholder:text-[#B4B4B4] font-medium" />
                                 <textarea className="resize-none focus-visible:outline-[#40BEE2] w-full border-2 border-[#E1E1E1] rounded-md px-4 pt-4 pb-10 mb-4 placeholder:text-[#B4B4B4]" id="message" name="comments" placeholder="Comments.."></textarea>
-                                <button type="submit" className="bg-[#40BEE2] text-white w-full block rounded-md py-3">{score}</button>
+                                <button type="submit" className="bg-[#40BEE2] text-white w-full block rounded-md py-3 hover:bg-black transition-all duration-300 ease-in-out">{score}</button>
                             </form>
                         </div>
                     </div>

@@ -108,7 +108,7 @@ const Consultation = ({title,desc}) => {
                                 <input type="email" required name="email" placeholder="Email *" className="bg-[linear-gradient(180deg,_rgba(83,83,83,0.9)_0%,_rgba(43,43,43,1)_100%)] text-white block w-full border border-[#707070] rounded-2xl px-4 py-4 mb-4 placeholder:text-[#ffffff] font-medium" />
                                 <input type="tel" minLength="10" maxLength="13" pattern="[0-9]*" name="phone" placeholder="Phone Number *" required className="bg-[linear-gradient(180deg,_rgba(83,83,83,0.9)_0%,_rgba(43,43,43,1)_100%)] text-white block w-full border border-[#707070] rounded-2xl px-4 py-4 mb-4 placeholder:text-[#ffffff] font-medium" />
                                 <textarea className="bg-[linear-gradient(180deg,_rgba(83,83,83,0.9)_0%,_rgba(43,43,43,1)_100%)] text-white resize-none w-full border border-[#707070] rounded-2xl px-4 pt-4 pb-10 mb-4 placeholder:text-[#ffffff]" id="message" name="comments" placeholder="Message"></textarea>
-                                <button type="submit" className="bg-[#40BEE2] text-white w-full block rounded-md py-3">{score}</button>
+                                <button type="submit" className="bg-[#40BEE2] text-white w-full block rounded-md py-3 hover:bg-secondary-100 transition-all duration-300 ease-in-out">{score}</button>
                             </form>
                         </div>
                         <div>

@@ -3,12 +3,6 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import Logo from "media/assets/images/logo.png"
 import TelIcon from "media/assets/sikander/telicon.png"
-import SeoWriting from "media/assets/images/newimg/SEO-Writing.png"
-import ArticleWriting from "media/assets/images/newimg/Article-Writing.png"
-import MagazineWriting from "media/assets/images/newimg/magazine-writing.png"
-import WebCopyWriting from "media/assets/images/newimg/Web-Copy-Writing.png"
-import PressRelease from "media/assets/images/newimg/Press-Release.png"
-import ScriptWriting from "media/assets/images/newimg/Script-Writing.png"
 const Header = () => {
   const [showSubMenu, setShowSubMenu] = useState(true);
   const [menuOpen, setMenuOpen] = useState(true); // Set to false initially
@@ -41,20 +35,20 @@ const Header = () => {
                     </Link>
                   </li>
                   {[
-                    ['Home', '/'],
-                    ['About', '/about-us'],
-                    ['Writing Services', '/'],
+                    ['Home', 'javascript:;'],
+                    ['About', 'javascript:;'],
+                    ['Writing Services', 'javascript:;'],
                   ].map(([title, url]) => (
                     <li className='mr-lg:!mb-4 md:mb-3 sm:mb-3 xs:mb-3'>
                       <Link href={url} className={`list mr-2xl:!text-black mr-xl:!text-black  mr-lg:!text-white md:!text-white sm:!text-white text-black xs:!text-white mr-2xl:text-[15px] mr-xl:text-[15px] mr-lg:text-xl mr-md:text-xl mr-sm:text-xl xs:text-[20px] font-[400]`}>{title}</Link>
                     </li>
                   ))}
                   {[
-                    ['Genre', '/genre'],
-                    ['Marketing', '/book-marketing'],
-                    ['Publication', '/publication'],
-                    ['Printing', '/book-printing'],
-                    ['Cover Design', '/book-cover-design']
+                    ['Genre', 'javascript:;'],
+                    ['Marketing', 'javascript:;'],
+                    ['Publication', 'javascript:;'],
+                    ['Printing', 'javascript:;'],
+                    ['Cover Design', 'javascript:;']
                   ].map(([title, url]) => (
                     <li className='mr-lg:!mb-4 md:mb-3 sm:mb-3 xs:mb-3'>
                       <Link href={url} className={`list mr-2xl:!text-black mr-xl:!text-black  mr-lg:!text-white md:!text-white sm:!text-white text-black xs:!text-white mr-2xl:text-[15px] mr-xl:text-[15px] mr-lg:text-xl mr-md:text-xl mr-sm:text-xl xs:text-[20px] font-[400]`}>{title}</Link>

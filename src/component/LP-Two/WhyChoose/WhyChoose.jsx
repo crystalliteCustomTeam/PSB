@@ -18,7 +18,7 @@ const WhyChoose = ({ title, desc, card }) => {
                         ))
                         }
                     </div>
-                    <MRCTA text="Connect With Us!" classes="mx-auto mt-[40px]" />
+                    <MRCTA text="Connect With Us!" classes="mx-auto mt-[40px] hover:bg-black" />
                 </div>
             </div>
         </section>
