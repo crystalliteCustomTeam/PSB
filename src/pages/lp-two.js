@@ -28,24 +28,27 @@ import Icon9 from "media/lp-two-images/servicesIcons/9.svg"
 import Icon10 from "media/lp-two-images/servicesIcons/10.svg"
 import Icon11 from "media/lp-two-images/servicesIcons/11.svg"
 import Icon12 from "media/lp-two-images/servicesIcons/12.svg"
+import Icon13 from "media/lp-two-images/servicesIcons/13.svg"
+import Icon14 from "media/lp-two-images/servicesIcons/14.svg"
+import Icon15 from "media/lp-two-images/servicesIcons/15.svg"
 const LPTwo = () => {
     {/* Marketing Services Section Content */ }
     const serviceContent = [
-        [Icon1, "Personal Marketing Assistants", "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency."],
-        [Icon2, "Personal Marketing Assistants", "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency."],
-        [Icon3, "Personal Marketing Assistants", "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency."],
-        [Icon4, "Personal Marketing Assistants", "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency."],
-        [Icon5, "Personal Marketing Assistants", "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency."],
-        [Icon6, "Personal Marketing Assistants", "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency."],
-        [Icon7, "Personal Marketing Assistants", "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency."],
-        [Icon8, "Personal Marketing Assistants", "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency."],
-        [Icon9, "Personal Marketing Assistants", "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency."],
-        [Icon10, "Personal Marketing Assistants", "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency."],
-        [Icon11, "Personal Marketing Assistants", "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency."],
-        [Icon12, "Personal Marketing Assistants", "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency."],
-        [Icon12, "Personal Marketing Assistants", "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency."],
-        [Icon12, "Personal Marketing Assistants", "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency."],
-        [Icon12, "Personal Marketing Assistants", "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency."],
+        [Icon1, "Barnes and Noble <br/> Nook Edition", "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency."],
+        [Icon2, "Apple <br/> Books", "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency."],
+        [Icon3, "Amazon <br/> Kindle", "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency."],
+        [Icon4, "Marketing <br/> Consultation", "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency."],
+        [Icon5, "Business <br/> Cards", "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency."],
+        [Icon6, "Personal Marketing <br/> Assistants", "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency."],
+        [Icon7, "Social Media <br/> Set-Up", "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency."],
+        [Icon8, "Creative and Appealing <br/> Bookmarks", "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency."],
+        [Icon9, "Digital <br/> Postcards", "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency."],
+        [Icon10, "Press <br/> Release", "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency."],
+        [Icon11, "Book Video <br/> Trailers", "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency."],
+        [Icon12, "Marketing on Social Media <br/> Platforms", "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency."],
+        [Icon13, "Audio <br/> Book", "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency."],
+        [Icon14, "Author <br/> Website", "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency."],
+        [Icon15, "Article <br/> Writing", "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency."],
     ];
     {/* Marketing Services Section Content */ }
 
@@ -162,7 +165,7 @@ const LPTwo = () => {
             {/* BrandLogos Section */}
             <BrandLogos
                 title={`Just By <span class="text-[#40BEE2]">Working</span> With US.`}
-                desc={`Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned <br /> marketing professionals expertly employ advanced, effective techniques to boost your Consistency.`}
+                desc={`Our seasoned marketing professionals expertly employ advanced, effective <br class="mr-xl:block hidden" /> techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency.`}
             />
             {/* BrandLogos Section */}
 

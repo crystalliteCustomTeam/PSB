@@ -21,10 +21,6 @@ import Mockup12 from "media/lp-two-images/bookMockups/12.png"
 import Mockup13 from "media/lp-two-images/bookMockups/13.png"
 import Mockup14 from "media/lp-two-images/bookMockups/14.png"
 import Mockup15 from "media/lp-two-images/bookMockups/15.png"
-import Mockup16 from "media/lp-two-images/bookMockups/16.png"
-import Mockup17 from "media/lp-two-images/bookMockups/17.png"
-import Mockup18 from "media/lp-two-images/bookMockups/18.png"
-import Mockup19 from "media/lp-two-images/bookMockups/19.png"
 import Image from 'next/image'
 const Bookmockups = () => {
     const [emblaRef, emblaApi] = useEmblaCarousel({ align: 'start' })
@@ -58,11 +54,7 @@ const Bookmockups = () => {
                                         [Mockup12, "The Last Crusader"],
                                         [Mockup13, "Bonds of Blood"],
                                         [Mockup14, "Spend Some Time In <br /> Nature"],
-                                        [Mockup15, "Beneath The Surface"],
-                                        [Mockup16, "The Last Crusader"],
-                                        [Mockup17, "Bonds of Blood"],
-                                        [Mockup18, "Spend Some Time In <br /> Nature"],
-                                        [Mockup19, "Beneath The Surface"]
+                                        [Mockup15, "Beneath The Surface"]
                                     ].map(([img, title], i) => (
                                         <div className={styles.embla__slide} key={i}>
                                             <Image src={img} alt='mockups' className='block mx-auto shadow-[10px_5px_5px_0px_rgba(0,0,0,0.2)]' />

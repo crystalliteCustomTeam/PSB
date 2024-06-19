@@ -24,7 +24,7 @@ const MarketingProcess = ({ items, title, desc }) => {
                             {items.map(([title, desc], index) => (
                                 <div key={useId()} className={`${openIndex === index ? "bg-white shadow-[0_3px_15px_rgba(0,_0,_0,_0.07)]" : "bg-[#F3F3F3]"} rounded-xl mb-3 py-4 px-5`}>
                                     <div className={`flex gap-x-5 ${openIndex === index ? "my-2 items-start" : "my-0 items-center"} `}>
-                                        <span className={`${openIndex === index ? "bg-black text-white" : "bg-white text-black"} py-1 px-2 rounded-lg font-bold  mr-xl:text-[25px] text-xl`}>0{index + 1}</span>
+                                        <span className={`${openIndex === index ? "bg-black text-white" : "bg-white text-black"} py-2 px-2 rounded-lg font-bold  mr-xl:text-[25px] text-xl`}>0{index + 1}</span>
                                         <button
                                             className="w-full text-left focus:outline-none"
                                             onClick={() => toggleAccordion(index)}

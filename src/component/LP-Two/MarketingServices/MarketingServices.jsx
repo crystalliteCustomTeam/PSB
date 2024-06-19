@@ -33,7 +33,7 @@ const MarketingServices = ({services,title,desc}) => {
                                                 <span className="bg-[#F3F3F3] rounded-xl flex items-center justify-center w-[85px] h-[82px] absolute -top-10">
                                                     <Image src={img} alt="icons" className="block mx-auto" />
                                                 </span>
-                                                <h4 className="text-[20px] leading-tight font-medium mt-8 mb-4">{title}</h4>
+                                                <h4 className="text-[20px] leading-tight font-medium mt-8 mb-4" dangerouslySetInnerHTML={{__html : title}}/>
                                                 <p className="text-base font-normal leading-normal">{desc}</p>
                                                 <MRCTA text="Connect With Us!" classes="mt-5 hover:bg-black" />
                                             </div>
