@@ -61,7 +61,11 @@
       transform: translatey(0px);
    }
 }
-
+@media (prefers-reduced-motion: no-preference) {
+   :root {
+       scroll-behavior: smooth;
+   }
+}
 .avatar {
    width: 120px;
    height: 170px;

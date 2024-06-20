@@ -31,7 +31,7 @@ const Bookmockups = () => {
         onNextButtonClick
     } = usePrevNextButtons(emblaApi)
     return (
-        <section>
+        <section id="caseStudies">
             <div className="relative mr-md:py-[10px] py-[40px] font-sans">
                 <Image src={Banner} alt="mockupsBanner" className="absolute top-0 left-0 right-0 bottom-0 -z-50 w-full h-full object-cover object-bottom" priority={true}/>
                 <div className="mr-container">

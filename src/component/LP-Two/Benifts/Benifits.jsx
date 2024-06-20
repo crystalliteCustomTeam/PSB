@@ -105,7 +105,7 @@ const Benifits = ({ title, desc }) => {
                             <div className="py-16 w-[85%] mx-auto text-white">
                                 <h2 className="mr-lg:text-[40px] mr-md:text-[30px] text-[25px] font-medium leading-normal mb-2">{title}</h2>
                                 <p className="mr-md:text-base text-sm mr-sm:text-start text-justify font-normal leading-normal">{desc}</p>
-                                <MRCTA text="Book An Appointment" classes="bg-black mt-4 mr-md:mb-14 mb-10 mr-md:text-base text-sm hover:bg-transparent hover:border-white" />
+                                <MRCTA text="Book An Appointment" classes="bg-black mt-4 mr-md:mb-14 mb-10 mr-md:text-base text-sm hover:bg-transparent hover:border-white" handle="onclick='parent.LC_API.open_chat_window();return false;'" />
                                 <div className="grid grid-cols-12 2xl:gap-x-4 mr-md:gap-2 gap-5 items-center">
                                     <span className="mr-sm:col-span-3 col-span-6 flex items-center mr-2xl:gap-x-2 gap-x-1 border-e">
                                         <h4 className="mr-2xl:text-[40px] mr-xl:text-[30px] mr-sm:text-[25px] text-lg font-bold leading-tight">10</h4>

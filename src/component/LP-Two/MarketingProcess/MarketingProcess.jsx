@@ -9,7 +9,7 @@ const MarketingProcess = ({ items, title, desc }) => {
         setOpenIndex(prevIndex => (prevIndex === index ? null : index));
     };
     return (
-        <section>
+        <section id='process'>
             <div className='mr-lg:py-[80px] mr-md:py-[60px] py-[40px] font-sans'>
                 <div className='mr-container'>
                     <div className='mr-sm:text-center text-justify mr-xl:w-[75%] mr-md:w-[90%] w-full mx-auto'>
@@ -43,7 +43,7 @@ const MarketingProcess = ({ items, title, desc }) => {
                                                     </p>
                                                 )}
                                                 {openIndex === index && (
-                                                    <MRCTA text="Connect With Us!" classes='mt-5 hover:bg-black' />
+                                                    <MRCTA text="Connect With Us!" classes='mt-5 hover:bg-black' handle="onclick='parent.LC_API.open_chat_window();return false;'" />
                                                 )}
                                             </div>
                                         </button>

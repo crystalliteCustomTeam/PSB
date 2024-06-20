@@ -7,11 +7,11 @@ const Footer = () => {
                 <div className="container">
                     <div className="text-white flex mr-sm:flex-nowrap flex-wrap items-center gap-3 justify-between text-sm">
                         <div className="flex mr-sm:flex-nowrap flex-wrap gap-x-2 items-center">
-                        <Link href="/">Terms of Use</Link>
-                        <span className="block">|</span>
-                        <Link href="/">Privacy Policy</Link>
+                            <Link href="/terms-and-conditions">Terms of Use</Link>
+                            <span className="block">|</span>
+                            <Link href="/privacy-policy">Privacy Policy</Link>
                         </div>
-                        <span className="block text-left">© 2024 - All Rights Reserved <Link href="/">Bhaoo INC</Link></span>
+                        <span className="block text-left">© 2024 - All Rights Reserved <Link href="https://bhaooinc.com/" target="_blank">Bhaoo INC</Link></span>
                     </div>
                 </div>
             </div>

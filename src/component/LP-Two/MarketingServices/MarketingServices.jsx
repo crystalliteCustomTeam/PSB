@@ -17,7 +17,7 @@ const MarketingServices = ({services,title,desc}) => {
         onNextButtonClick
     } = usePrevNextButtons(emblaApi)
     return (
-        <section>
+        <section id="services">
             <div className="mr-lg:py-[80px] mr-md:py-[60px] py-[40px] font-sans __bookMarketingServices">
                 <div className="mr-container">
                     <div className="mr-sm:text-center text-justify mr-lg:w-[75%] mr-md:w-[80%] w-full mx-auto">
@@ -35,7 +35,7 @@ const MarketingServices = ({services,title,desc}) => {
                                                 </span>
                                                 <h4 className="text-[20px] leading-tight font-medium mt-8 mb-4" dangerouslySetInnerHTML={{__html : title}}/>
                                                 <p className="text-base font-normal leading-normal">{desc}</p>
-                                                <MRCTA text="Connect With Us!" classes="mt-5 hover:bg-black" />
+                                                <MRCTA text="Connect With Us!" classes="mt-5 hover:bg-black" handle="onclick='parent.LC_API.open_chat_window();return false;'" />
                                             </div>
                                         </div>
                                     ))

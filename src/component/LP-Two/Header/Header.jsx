@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Logo from "media/assets/images/logo.png"
 import TelIcon from "media/assets/sikander/telicon.png"
@@ -14,17 +14,44 @@ const Header = () => {
     setMenuOpen(!menuOpen);
 
   };
-  return (
+  const [isSticky, setIsSticky] = useState(false);
+  const [isIdle, setIsIdle] = useState(false);
+  let timeoutId = null;
 
+  useEffect(() => {
+    const handleScroll = () => {
+      clearTimeout(timeoutId);
+      if (window.scrollY > 50) {
+        setIsSticky(true);
+        setIsIdle(false);
+
+        // Set a timeout to mark the user as idle after 5 seconds
+        timeoutId = setTimeout(() => {
+          setIsIdle(true);
+        }, 5000);
+      } else {
+        setIsSticky(false);
+        setIsIdle(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      clearTimeout(timeoutId);
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  return (
     <>
       {/* <TOPHEADER1 /> */}
-      <div className='font-secondary px-0 sm:!px-2 xs:!px-2 pt-4'>
-        <header className="bg-white relative z-30">
+      <div className={`font-secondary px-0 sm:!px-2 xs:!px-2 pt-0 transition-all duration-300 ease-in-out ${isSticky ? 'fixed top-0 left-0 right-0 z-50 shadow-lg' : ''} ${isIdle ? '-top-full' : 'top-0'}`}>
+        <header className="bg-white relative z-30 py-5">
           <div className="mr-container">
             <div className="items-center justify-between gap-x-4 flex grid-cols-2 grid-rows-1">
               <div className="flex-shrink-0">
                 <Link href="/" className="text-xl font-bold text-indigo-500">
-                  <Image quality={95} src={Logo} alt=" Best Selling Publisher Ghostwriting logo" width={180} height={50} priority={true}/>
+                  <Image quality={95} src={Logo} alt=" Best Selling Publisher Ghostwriting logo" width={180} height={50} priority={true} />
                 </Link>
               </div>
               <nav className="flex space-x-4 text-[16px] text-[#1d1d1f] font-medium">
@@ -35,28 +62,27 @@ const Header = () => {
                     </Link>
                   </li>
                   {[
-                    ['Home', 'javascript:;'],
-                    ['About', 'javascript:;'],
-                    ['Writing Services', 'javascript:;'],
+                    ['Home', '#'],
+                    ['Services', '#services'],
+                    ['Testimonials', '#testimonials'],
                   ].map(([title, url]) => (
-                    <li className='mr-lg:!mb-4 md:mb-3 sm:mb-3 xs:mb-3'>
+                    <li>
                       <Link href={url} className={`list mr-2xl:!text-black mr-xl:!text-black  mr-lg:!text-white md:!text-white sm:!text-white text-black xs:!text-white mr-2xl:text-[15px] mr-xl:text-[15px] mr-lg:text-xl mr-md:text-xl mr-sm:text-xl xs:text-[20px] font-[400]`}>{title}</Link>
                     </li>
                   ))}
                   {[
-                    ['Genre', 'javascript:;'],
-                    ['Marketing', 'javascript:;'],
-                    ['Publication', 'javascript:;'],
-                    ['Printing', 'javascript:;'],
-                    ['Cover Design', 'javascript:;']
+                    ['Case Studies', '#caseStudies'],
+                    ['Process', '#process'],
+                    ['Contact', '#contact'],
+                    ['Portfolio', '#portfolio'],
                   ].map(([title, url]) => (
-                    <li className='mr-lg:!mb-4 md:mb-3 sm:mb-3 xs:mb-3'>
+                    <li>
                       <Link href={url} className={`list mr-2xl:!text-black mr-xl:!text-black  mr-lg:!text-white md:!text-white sm:!text-white text-black xs:!text-white mr-2xl:text-[15px] mr-xl:text-[15px] mr-lg:text-xl mr-md:text-xl mr-sm:text-xl xs:text-[20px] font-[400]`}>{title}</Link>
                     </li>
                   ))}
-                  <li className='mr-lg:!mb-4 md:mb-3 sm:mb-3 xs:mb-3 block sm:hidden xs:hidden'>
+                  <li className='block sm:hidden xs:hidden'>
                     <Link href="tel:800-781-9093" className={`text-[15px] transition-all ease-in-out duration-300 group xs:text-[20px] font-secondary border-2 border-[#40BEE2] bg-[#40BEE2] py-1 px-2 text-[#40BEE2] flex items-center gap-x-3 font-[500] hover:bg-transparent `}>
-                      <Image src={TelIcon} width={15} height={15} alt='Amazon Book Publishing' className='transition-all ease-in-out duration-300 brightness-0 invert group-hover:brightness-100 group-hover:invert-0' priority={true}/>
+                      <Image src={TelIcon} width={15} height={15} alt='Amazon Book Publishing' className='transition-all ease-in-out duration-300 brightness-0 invert group-hover:brightness-100 group-hover:invert-0' priority={true} />
                       <span className=' text-white group-hover:!text-black'>800-781-9093</span>
                     </Link>
                   </li>

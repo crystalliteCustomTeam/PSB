@@ -39,7 +39,7 @@ const Portfolio = ({subtitle,title ,desc}) => {
         onNextButtonClick
     } = usePrevNextButtons(emblaApi)
     return (
-        <section>
+        <section id='portfolio'>
             <div className="mr-lg:py-[80px] mr-md:py-[60px] py-[40px] font-sans">
                 <div className="mr-container">
                     <div className="mr-sm:text-center text-justify mr-xl:w-[75%] mr-md:w-[90%] w-full mx-auto">

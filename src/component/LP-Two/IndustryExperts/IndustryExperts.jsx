@@ -94,7 +94,7 @@ const IndustryExperts = ({ title, desc, descTwo }) => {
 
     }
     return (
-        <section>
+        <section id="contact">
             <div className="font-sans relative z-10 mr-lg:my-16 mr-lg:py-0 mr-md:py-[60px] py-[40px]">
                 <Image src={IndustryExpertsBanner} alt="IndustryExpertsBanner" className="absolute mr-xl:top-[10%] mr-lg:top-[5%] left-0 right-0 bottom-0 -z-10 w-full mr-xl:h-[80%] mr-lg:h-[90%] h-full object-cover" priority={true}/>
                 <div className="mr-container">
