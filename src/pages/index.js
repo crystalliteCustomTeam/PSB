@@ -172,8 +172,8 @@ const Home = () => {
   return (
     <main>
       <Head>
-        <title>The Home of Quality Publishing | Best Book Publishing Company</title>
-        <meta name="description" content="Experience the pinnacle of publishing services with the Best Book Publishing Company. With our commitment to quality, we guide every author toward success. Get started today!" />
+        <title>Best Selling Publisher | Home Of Professional Book Publishing</title>
+        <meta name="description" content="Publishing best sellers has never been easier with us. We are the premium book publishers for hire. Visit our website!" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
 
         <meta property="og:url" content="https://bestsellingpublisher.com" />

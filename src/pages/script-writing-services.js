@@ -173,7 +173,7 @@ const ScriptWritingServices = () => {
     <main>
       <Head>
         <title>Script Writing Services | Best Selling Publisher</title>
-        <meta name="description" content="At Best Selling Publisher, we take pride in our exceptional article writing services. Connect with us to start your publishing journey today!" />
+        <meta name="description" content="Our best script writing services provide affordable and premium quality of screenwriting for all types of media. Hire us now." />
         <meta name="robots" content="index, follow" />
 
         <meta property="og:url" content="https://bestsellingpublisher.com/script-writing-services" />

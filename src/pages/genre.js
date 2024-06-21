@@ -81,7 +81,7 @@ const Genre = () => {
     <main>
       <Head>
         <title>Genre | Best Selling Publisher</title>
-        <meta name="description" content="At Best Selling Publisher, we take pride in our exceptional article writing services. Connect with us to start your publishing journey today!" />
+        <meta name="description" content="Have you written an amazing fiction book? Or want to publish an autobiography. Explore our wide range of book genres and get your book published today." />
         <meta name="robots" content="index, follow" />
         
         <meta property="og:url" content="https://bestsellingpublisher.com/genre" />
