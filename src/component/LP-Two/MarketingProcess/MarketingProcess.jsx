@@ -43,7 +43,7 @@ const MarketingProcess = ({ items, title, desc }) => {
                                                     </p>
                                                 )}
                                                 {openIndex === index && (
-                                                    <MRCTA text="Connect With Us!" classes='mt-5 hover:bg-black' handle="onclick='parent.LC_API.open_chat_window();return false;'" />
+                                                    <MRCTA text="Connect With Us!" classes='__animatedPing mt-5 hover:bg-black' handle="onclick='parent.LC_API.open_chat_window();return false;'" />
                                                 )}
                                             </div>
                                         </button>

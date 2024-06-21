@@ -18,7 +18,7 @@ const WhyChoose = ({ title, desc, card }) => {
                         ))
                         }
                     </div>
-                    <MRCTA text="Connect With Us!" classes="mx-auto mt-[40px] hover:bg-black" handle="onclick='parent.LC_API.open_chat_window();return false;'" />
+                    <MRCTA text="Connect With Us!" classes="__animatedPing mx-auto mt-[40px] hover:bg-black" handle="onclick='parent.LC_API.open_chat_window();return false;'" />
                 </div>
             </div>
         </section>

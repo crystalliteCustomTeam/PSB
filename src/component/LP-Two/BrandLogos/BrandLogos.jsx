@@ -21,7 +21,7 @@ const BrandLogos = ({ title, desc }) => {
                         <div className="mr-2xl:col-span-5 mr-lg:col-span-6 mr-sm:text-start text-justify">
                             <h2 className="mr-lg:text-[40px] mr-md:text-[30px] text-[25px] leading-normal font-medium mb-3" dangerouslySetInnerHTML={{ __html: title }} />
                             <p className="mr-md:text-base text-sm leading-normal font-normal" dangerouslySetInnerHTML={{ __html: desc }} />
-                            <MRCTAGroup classes="mt-5" />
+                            <MRCTAGroup classes="mt-5" animation="__animatedPing" />
                         </div>
                         <div className="mr-2xl:col-span-7 mr-lg:col-span-6">
                             {
