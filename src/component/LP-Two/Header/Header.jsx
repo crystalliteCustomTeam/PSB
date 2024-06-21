@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import Image from 'next/image'
 import Logo from "media/assets/images/logo.png"
 import TelIcon from "media/assets/sikander/telicon.png"
@@ -16,36 +16,44 @@ const Header = () => {
   };
   const [isSticky, setIsSticky] = useState(false);
   const [isIdle, setIsIdle] = useState(false);
-  let timeoutId = null;
+  const timeoutIdRef = useRef(null);
+
+  const handleScroll = () => {
+    // Clear the previous timeout if there's any
+    if (timeoutIdRef.current) {
+      clearTimeout(timeoutIdRef.current);
+    }
+
+    if (window.scrollY > 50) {
+      setIsSticky(true);
+      setIsIdle(false);
+
+      // Set a new timeout to set isIdle to true after 3 seconds of no scrolling
+      timeoutIdRef.current = setTimeout(() => {
+        setIsIdle(true);
+      }, 3000);
+    } else {
+      setIsSticky(false);
+      setIsIdle(false);
+    }
+  };
 
   useEffect(() => {
-    const handleScroll = () => {
-      clearTimeout(timeoutId);
-      if (window.scrollY > 50) {
-        setIsSticky(true);
-        setIsIdle(false);
-
-        // Set a timeout to mark the user as idle after 5 seconds
-        timeoutId = setTimeout(() => {
-          setIsIdle(true);
-        }, 5000);
-      } else {
-        setIsSticky(false);
-        setIsIdle(false);
-      }
-    };
-
+    // Add the scroll event listener
     window.addEventListener('scroll', handleScroll);
 
+    // Cleanup event listener on component unmount
     return () => {
-      clearTimeout(timeoutId);
       window.removeEventListener('scroll', handleScroll);
+      if (timeoutIdRef.current) {
+        clearTimeout(timeoutIdRef.current);
+      }
     };
   }, []);
   return (
     <>
       {/* <TOPHEADER1 /> */}
-      <div className={`font-secondary px-0 sm:!px-2 xs:!px-2 pt-0 transition-all duration-300 ease-in-out ${isSticky ? 'fixed top-0 left-0 right-0 z-50 shadow-lg' : ''} ${isIdle ? '-top-full' : 'top-0'}`}>
+      <div className={`font-secondary px-0 sm:!px-2 xs:!px-2 pt-0 transition-all duration-1000 ease-in-out ${isSticky ? 'fixed top-0 left-0 right-0 z-50 shadow-lg' : ''} ${isIdle ? '!-top-full' : ' '}`}>
         <header className="bg-white relative z-30 py-5">
           <div className="mr-container">
             <div className="items-center justify-between gap-x-4 flex grid-cols-2 grid-rows-1">
