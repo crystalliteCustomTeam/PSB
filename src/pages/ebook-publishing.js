@@ -113,8 +113,8 @@ const EbookPublishing = () => {
   return (
     <>
       <Head>
-        <title>Ebook Publishing | Best Book Publishing Company</title>
-        <meta name="description" content="Experience the pinnacle of publishing services with the Best Book Publishing Company. With our commitment to quality, we guide every author toward success. Get started today!" />
+        <title>Ebook Publishing Services | Best Selling Publisher</title>
+        <meta name="description" content="Love to publish ebooks that sell and earn well? Hire our ebook publishing company and publish your ebook right away." />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
 
         <meta property="og:url" content="https://bestsellingpublisher.com/ebook-publishing" />

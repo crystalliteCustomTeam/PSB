@@ -125,7 +125,8 @@ const amazonpublishing = () => {
     <>
       <Head>
 
-        <title>Best Book Publishing Company - Best Selling Publisher - Amazon Publishing Services</title>
+        <title>Amazon Book Publishing Services | Best Selling Publisher</title>
+        <meta name="description" content="Looking to publish a book on Amazon KDP and earn royalties? Get in touch with our Amazon publishing services and start publishing your best sellers." />
         <link rel="icon" href="/images/favicon.svg" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 
