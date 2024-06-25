@@ -7,8 +7,8 @@ import {
 } from '../EmblaSliderArrows/EmblaSliderArrows'
 import styles from "./styles.module.css"
 import Image from 'next/image'
-import Google from "media/book-marketing-comany/google-review.png"
-import Stars from "media/book-marketing-comany/stars.png"
+import Google from "media/book-marketing-company/google-review.png"
+import Stars from "media/book-marketing-company/stars.png"
 
 const Testimonials = ({
     title,

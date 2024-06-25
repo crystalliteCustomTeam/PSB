@@ -1,8 +1,8 @@
 import { MRCTAGroup } from "@/component";
 import LogosCarousal from "../Logos/LogosCarousal";
 import Image from "next/image";
-import HeroBGOne from "media/book-marketing-comany/hero/1.png"
-import HeroBGTwo from "media/book-marketing-comany/hero/2.png"
+import HeroBGOne from "media/book-marketing-company/hero/1.png"
+import HeroBGTwo from "media/book-marketing-company/hero/2.png"
 const Hero = ({ title, desc }) => {
     return (
         <section className="relative z-10">

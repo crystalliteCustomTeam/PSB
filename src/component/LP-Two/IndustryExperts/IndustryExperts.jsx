@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Avater from "media/book-marketing-comany/avater.png"
-import IndustryExpertsBanner from "media/book-marketing-comany/IndustryExpertsBanner.png"
+import Avater from "media/book-marketing-company/avater.png"
+import IndustryExpertsBanner from "media/book-marketing-company/IndustryExpertsBanner.png"
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { Axios } from "axios";

@@ -1,16 +1,16 @@
 import Image from "next/image";
-import BrandLogos1 from "media/book-marketing-comany/brandLogos/1.svg"
-import BrandLogos2 from "media/book-marketing-comany/brandLogos/2.svg"
-import BrandLogos3 from "media/book-marketing-comany/brandLogos/3.svg"
-import BrandLogos4 from "media/book-marketing-comany/brandLogos/4.svg"
-import BrandLogos5 from "media/book-marketing-comany/brandLogos/5.svg"
-import BrandLogos6 from "media/book-marketing-comany/brandLogos/6.svg"
-import BrandLogos7 from "media/book-marketing-comany/brandLogos/7.svg"
-import BrandLogos8 from "media/book-marketing-comany/brandLogos/8.svg"
-import BrandLogos9 from "media/book-marketing-comany/brandLogos/9.svg"
-import BrandLogos10 from "media/book-marketing-comany/brandLogos/10.svg"
-import BrandLogos11 from "media/book-marketing-comany/brandLogos/11.svg"
-import BrandLogos12 from "media/book-marketing-comany/brandLogos/12.svg"
+import BrandLogos1 from "media/book-marketing-company/brandLogos/1.svg"
+import BrandLogos2 from "media/book-marketing-company/brandLogos/2.svg"
+import BrandLogos3 from "media/book-marketing-company/brandLogos/3.svg"
+import BrandLogos4 from "media/book-marketing-company/brandLogos/4.svg"
+import BrandLogos5 from "media/book-marketing-company/brandLogos/5.svg"
+import BrandLogos6 from "media/book-marketing-company/brandLogos/6.svg"
+import BrandLogos7 from "media/book-marketing-company/brandLogos/7.svg"
+import BrandLogos8 from "media/book-marketing-company/brandLogos/8.svg"
+import BrandLogos9 from "media/book-marketing-company/brandLogos/9.svg"
+import BrandLogos10 from "media/book-marketing-company/brandLogos/10.svg"
+import BrandLogos11 from "media/book-marketing-company/brandLogos/11.svg"
+import BrandLogos12 from "media/book-marketing-company/brandLogos/12.svg"
 import { MRCTAGroup } from "@/component";
 const BrandLogos = ({ title, desc }) => {
     return (

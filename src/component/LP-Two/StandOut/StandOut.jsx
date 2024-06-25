@@ -1,6 +1,6 @@
 import { MRCTA } from "@/component";
 import Image from "next/image";
-import StandOutBanner from "media/book-marketing-comany/standOutBanner.png"
+import StandOutBanner from "media/book-marketing-company/standOutBanner.png"
 const StandOut = ({ title, desc }) => {
     return (
         <section>

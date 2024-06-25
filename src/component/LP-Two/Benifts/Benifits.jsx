@@ -1,6 +1,6 @@
 import Image from "next/image";
-import benifitsBanner from "media/book-marketing-comany/benifitsBanner.png"
-import benifitsBg from "media/book-marketing-comany/benifitsBg.png"
+import benifitsBanner from "media/book-marketing-company/benifitsBanner.png"
+import benifitsBg from "media/book-marketing-company/benifitsBg.png"
 import { MRCTA } from "@/component";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";

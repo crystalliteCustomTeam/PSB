@@ -17,29 +17,29 @@ import {
 } from "@/component/LP-Two"
 import Head from "next/head"
 // Services Icons
-import Icon1 from "media/book-marketing-comany/servicesIcons/1.svg"
-import Icon2 from "media/book-marketing-comany/servicesIcons/2.svg"
-import Icon3 from "media/book-marketing-comany/servicesIcons/3.svg"
-import Icon4 from "media/book-marketing-comany/servicesIcons/4.svg"
-import Icon5 from "media/book-marketing-comany/servicesIcons/5.svg"
-import Icon6 from "media/book-marketing-comany/servicesIcons/6.svg"
-import Icon7 from "media/book-marketing-comany/servicesIcons/7.svg"
-import Icon8 from "media/book-marketing-comany/servicesIcons/8.svg"
-import Icon9 from "media/book-marketing-comany/servicesIcons/9.svg"
-import Icon10 from "media/book-marketing-comany/servicesIcons/10.svg"
-import Icon11 from "media/book-marketing-comany/servicesIcons/11.svg"
-import Icon12 from "media/book-marketing-comany/servicesIcons/12.svg"
-import Icon13 from "media/book-marketing-comany/servicesIcons/13.svg"
-import Icon14 from "media/book-marketing-comany/servicesIcons/14.svg"
-import Icon15 from "media/book-marketing-comany/servicesIcons/15.svg"
+import Icon1 from "media/book-marketing-company/servicesIcons/1.svg"
+import Icon2 from "media/book-marketing-company/servicesIcons/2.svg"
+import Icon3 from "media/book-marketing-company/servicesIcons/3.svg"
+import Icon4 from "media/book-marketing-company/servicesIcons/4.svg"
+import Icon5 from "media/book-marketing-company/servicesIcons/5.svg"
+import Icon6 from "media/book-marketing-company/servicesIcons/6.svg"
+import Icon7 from "media/book-marketing-company/servicesIcons/7.svg"
+import Icon8 from "media/book-marketing-company/servicesIcons/8.svg"
+import Icon9 from "media/book-marketing-company/servicesIcons/9.svg"
+import Icon10 from "media/book-marketing-company/servicesIcons/10.svg"
+import Icon11 from "media/book-marketing-company/servicesIcons/11.svg"
+import Icon12 from "media/book-marketing-company/servicesIcons/12.svg"
+import Icon13 from "media/book-marketing-company/servicesIcons/13.svg"
+import Icon14 from "media/book-marketing-company/servicesIcons/14.svg"
+import Icon15 from "media/book-marketing-company/servicesIcons/15.svg"
 // Testimonial Icons
-import Icon16 from "media/book-marketing-comany/testimonials/1.png"
-import Icon17 from "media/book-marketing-comany/testimonials/2.png"
-import Icon18 from "media/book-marketing-comany/testimonials/3.png"
-import Icon19 from "media/book-marketing-comany/testimonials/4.png"
-import Icon20 from "media/book-marketing-comany/testimonials/5.png"
-import Icon21 from "media/book-marketing-comany/testimonials/6.png"
-const LPTwo = () => {
+import Icon16 from "media/book-marketing-company/testimonials/1.png"
+import Icon17 from "media/book-marketing-company/testimonials/2.png"
+import Icon18 from "media/book-marketing-company/testimonials/3.png"
+import Icon19 from "media/book-marketing-company/testimonials/4.png"
+import Icon20 from "media/book-marketing-company/testimonials/5.png"
+import Icon21 from "media/book-marketing-company/testimonials/6.png"
+const BookMarketingCompany = () => {
     {/* Marketing Services Section Content */ }
     const serviceContent = [
         [Icon1, "Barnes and Noble <br/> Nook Edition", "Convert your manuscript into a professional Nook edition, ensuring compatibility and optimal display on Barnes and Noble’s platform. Expanding your reach on this platform is essential for comprehensive book marketing for self-published authors on Amazon."],
@@ -208,4 +208,4 @@ const LPTwo = () => {
         </main>
     )
 }
-export default LPTwo;
+export default BookMarketingCompany;
