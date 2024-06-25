@@ -79,7 +79,6 @@ const Header = () => {
                     </li>
                   ))}
                   {[
-                    ['Case Studies', '#caseStudies'],
                     ['Process', '#process'],
                     ['Contact', '#contact'],
                     ['Portfolio', '#portfolio'],

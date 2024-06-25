@@ -3,14 +3,14 @@ import useEmblaCarousel from 'embla-carousel-react'
 import AutoScroll from 'embla-carousel-auto-scroll'
 import styles from "./styles.module.css"
 import Image from 'next/image'
-import Logo1 from "media/lp-two-images/logos/1.svg"
-import Logo2 from "media/lp-two-images/logos/2.svg"
-import Logo3 from "media/lp-two-images/logos/3.svg"
-import Logo4 from "media/lp-two-images/logos/4.svg"
-import Logo5 from "media/lp-two-images/logos/5.svg"
-import Logo6 from "media/lp-two-images/logos/6.svg"
-import Logo7 from "media/lp-two-images/logos/7.svg"
-import Logo8 from "media/lp-two-images/logos/8.svg"
+import Logo1 from "media/book-marketing-comany/logos/1.svg"
+import Logo2 from "media/book-marketing-comany/logos/2.svg"
+import Logo3 from "media/book-marketing-comany/logos/3.svg"
+import Logo4 from "media/book-marketing-comany/logos/4.svg"
+import Logo5 from "media/book-marketing-comany/logos/5.svg"
+import Logo6 from "media/book-marketing-comany/logos/6.svg"
+import Logo7 from "media/book-marketing-comany/logos/7.svg"
+import Logo8 from "media/book-marketing-comany/logos/8.svg"
 
 const LogosCarousal = () => {
     const autoScrollOptions = {

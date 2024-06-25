@@ -62,24 +62,43 @@
    }
 }
 .__animatedPing {
-   --pulseSize: 10px;
-   --blue: #88a8d8;
-   --transparentBlue: #88a8d849;
-   animation: ping 2s infinite;
-   transition: all 0.2s;
-   cursor: pointer;
+     overflow: hidden;
+     position: relative;
  }
+ .__animatedPing:before {
+     position: absolute;
+     content: '';
+     display: inline-block;
+     top: -180px;
+     left: 0;
+     width: 30px;
+     height: 100%;
+     background-color: #fff;
+     animation: ping 3s ease-in-out infinite;
+ }
+ .__animatedPing:hover{
+   opacity: .7;
+ }
+ .__animatedPing:active{
+   box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+               -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+     inset -4px -4px 6px 0 rgba(255,255,255,.2),
+     inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+ }
+ 
  @keyframes ping {
-   from {
-     box-shadow: 0 0 0 0 var(--blue);
-   }
-   70% {
-     box-shadow: 0 0 0 var(--pulseSize) var(--transparentBlue);
-   }
-   to {
-     box-shadow: 0 0 0 0 var(--transparentBlue);
-   }
+   0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+     80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+     81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+     100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
  }
+ @-webkit-keyframes ping {
+     0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+     80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+     81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+     100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+ }
+ 
 @media (prefers-reduced-motion: no-preference) {
    :root {
        scroll-behavior: smooth;

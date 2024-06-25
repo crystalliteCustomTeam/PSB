@@ -2,8 +2,8 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { Axios } from "axios";
-import Banner from "media/lp-two-images/consultationBanner.png"
-import BannerMockup from "media/lp-two-images/bannerMockup.png"
+import Banner from "media/book-marketing-comany/consultationBanner.png"
+import BannerMockup from "media/book-marketing-comany/bannerMockup.png"
 const Consultation = ({title,desc}) => {
     const [ip, setIP] = useState('');
     const getIPData = async () => {

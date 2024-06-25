@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Avater from "media/lp-two-images/avater.png"
-import IndustryExpertsBanner from "media/lp-two-images/IndustryExpertsBanner.png"
+import Avater from "media/book-marketing-comany/avater.png"
+import IndustryExpertsBanner from "media/book-marketing-comany/IndustryExpertsBanner.png"
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { Axios } from "axios";
@@ -96,7 +96,7 @@ const IndustryExperts = ({ title, desc, descTwo }) => {
     return (
         <section id="contact">
             <div className="font-sans relative z-10 mr-lg:my-16 mr-lg:py-0 mr-md:py-[60px] py-[40px]">
-                <Image src={IndustryExpertsBanner} alt="IndustryExpertsBanner" className="absolute mr-xl:top-[10%] mr-lg:top-[5%] left-0 right-0 bottom-0 -z-10 w-full mr-xl:h-[80%] mr-lg:h-[90%] h-full object-cover" priority={true} />
+                <Image src={IndustryExpertsBanner} alt="IndustryExpertsBanner" className="absolute mr-xl:top-[8%] mr-lg:top-[5%] left-0 right-0 bottom-0 -z-10 w-full mr-xl:h-[85%] mr-lg:h-[90%] h-full object-cover" priority={true} />
                 <div className="mr-container">
                     <div className="grid mr-lg:grid-cols-12 grid-cols-1 mr-lg:gap-x-5 gap-10 items-center">
                         <div className="mr-2xl:col-span-6 mr-lg:col-span-7 text-white mr-sm:text-start text-justify">

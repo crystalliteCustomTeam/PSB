@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { useState, useId } from 'react';
-import Arrows from "media/lp-two-images/arrows.svg"
-import StreamlinedBooks from "media/lp-two-images/streamlinedBooks.png"
+import Arrows from "media/book-marketing-comany/arrows.svg"
+import StreamlinedBooks from "media/book-marketing-comany/streamlinedBooks.png"
 import { MRCTA } from '@/component';
 const MarketingProcess = ({ items, title, desc }) => {
     const [openIndex, setOpenIndex] = useState(0);

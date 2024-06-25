@@ -8,16 +8,16 @@ import {
 } from '../EmblaSliderArrows/EmblaSliderArrows'
 import styles from "./styles.module.css"
 import Image from 'next/image'
-import Portfolio1 from "media/lp-two-images/portfolio/1.png"
-import Portfolio2 from "media/lp-two-images/portfolio/2.png"
-import Portfolio3 from "media/lp-two-images/portfolio/3.png"
-import Portfolio4 from "media/lp-two-images/portfolio/4.png"
-import Portfolio5 from "media/lp-two-images/portfolio/5.png"
-import Portfolio6 from "media/lp-two-images/portfolio/6.png"
-import Portfolio7 from "media/lp-two-images/portfolio/7.png"
-import Portfolio8 from "media/lp-two-images/portfolio/8.png"
-import Portfolio9 from "media/lp-two-images/portfolio/9.png"
-import Portfolio10 from "media/lp-two-images/portfolio/10.png"
+import Portfolio1 from "media/book-marketing-comany/portfolio/1.png"
+import Portfolio2 from "media/book-marketing-comany/portfolio/2.png"
+import Portfolio3 from "media/book-marketing-comany/portfolio/3.png"
+import Portfolio4 from "media/book-marketing-comany/portfolio/4.png"
+import Portfolio5 from "media/book-marketing-comany/portfolio/5.png"
+import Portfolio6 from "media/book-marketing-comany/portfolio/6.png"
+import Portfolio7 from "media/book-marketing-comany/portfolio/7.png"
+import Portfolio8 from "media/book-marketing-comany/portfolio/8.png"
+import Portfolio9 from "media/book-marketing-comany/portfolio/9.png"
+import Portfolio10 from "media/book-marketing-comany/portfolio/10.png"
 const Portfolio = ({subtitle,title ,desc}) => {
     const autoScrollOptions = {
         playOnInit: true, speed: 0.5, stopOnInteraction: false, stopOnMouseEnter: true, stopOnFocusIn: false

@@ -7,8 +7,8 @@ import {
 } from '../EmblaSliderArrows/EmblaSliderArrows'
 import styles from "./styles.module.css"
 import Image from 'next/image'
-import Google from "media/lp-two-images/google-review.png"
-import Stars from "media/lp-two-images/stars.png"
+import Google from "media/book-marketing-comany/google-review.png"
+import Stars from "media/book-marketing-comany/stars.png"
 
 const Testimonials = ({
     title,
@@ -33,7 +33,7 @@ const Testimonials = ({
                     <div className={styles.embla}>
                         <div className="overflow-hidden" ref={emblaRef}>
                             <div className={`${styles.embla__container}`}>
-                                {data?.map(([title, aboutClient, desc], i) => (
+                                {data?.map(([title, aboutClient, clientImage, desc], i) => (
                                     <div key={i} className={`${styles.embla__slide} embla__slide mr-md:py-10 py-5`}>
                                         <div className='__card bg-[#F3F3F3] mr-md:py-[50px] py-[30px] px-[25px] rounded-3xl'>
                                             <div className='flex items-center justify-between border-b border-[#C9C9C9] pb-4'>
@@ -43,10 +43,10 @@ const Testimonials = ({
                                                     <span className='block text-[#B2B2B2] mr-md:text-base text-sm font-normal'>{aboutClient}</span>
                                                 </div>
                                                 <div>
-                                                    <Image src={Google} alt='GoogleIcon' className='block mx-auto' />
+                                                    <Image src={clientImage} alt='client' className='block mx-auto' />
                                                 </div>
                                             </div>
-                                            <p className='mr-md:text-[20px] text-base leading-normal font-medium mt-4'>{desc}</p>
+                                            <p className='mr-md:text-[20px] min-h-[160px] text-base leading-normal font-medium mt-4'>{desc}</p>
                                         </div>
                                     </div>
                                 ))

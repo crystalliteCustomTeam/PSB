@@ -1,5 +1,5 @@
 import { useState, useId } from 'react';
-import Arrows from "media/lp-two-images/arrows.svg"
+import Arrows from "media/book-marketing-comany/arrows.svg"
 import Image from 'next/image';
 const FAQS = ({ title, items }) => {
     const [openIndex, setOpenIndex] = useState(0);
