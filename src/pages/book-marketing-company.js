@@ -104,7 +104,7 @@ const BookMarketingCompany = () => {
             {/* Head */}
             <Head>
                 <meta name="robots" content="noindex" />
-                <title>Top-Grade Book Marketing Company - Best Selling Publisher</title>
+                <title>Top Book Marketing Company - Best Selling Publisher</title>
                 <meta name="description" content="Partner with Best Selling Publisher, an expert book marketing company, offering customized strategies to maximize your book's visibility and drive sales!" />
             </Head>
             {/* Head */}
@@ -129,7 +129,7 @@ const BookMarketingCompany = () => {
 
             {/* Marketing Services Section */}
             <MarketingService
-                title={`Our Services As a Result-Driven Book Marketing <span class="text-[#40BEE2]">Marketing</span> Agency`}
+                title={`Our Services As a Result-Driven Book <span class="text-[#40BEE2]">Marketing</span> Agency`}
                 desc={`We offer versatile book marketing services to increase your books' visibility and sales. We know how to run effective, targeted campaigns, ensuring your book reaches the right audience. `}
                 services={serviceContent} />
             {/* Marketing Services Section */}
@@ -167,14 +167,14 @@ const BookMarketingCompany = () => {
 
             {/* StandOut Section */}
             <StandOut
-                title={`Ready to Write Your Next Chapter?`}
+                title={`Boost Your Book Sales With Us`}
                 desc={`Our expert marketing team crafts custom strategies to skyrocket your visibility & reader engagement. There are no gimmicks, just proven results to get your book noticed and bought.`}
             />
             {/* StandOut Section */}
 
             {/* BrandLogos Section */}
             <BrandLogos
-                title={`Our Diverse <span class="text-[#40BEE2]">Portfolio</span> of High-Profile Clients`}
+                title={`Get Your Book <span class="text-[#40BEE2]">Featured</span> Everywhere!`}
                 desc={`We work with top authors and publishers, delivering effective marketing strategies that enhance visibility and drive success across multiple genres and platforms.`}
             />
             {/* BrandLogos Section */}
@@ -182,7 +182,7 @@ const BookMarketingCompany = () => {
             {/* Testimonials Section */}
             <Testimonials
                 title="Insights from <span class='text-[#40BEE2]'>Our Valued</span> Clients"
-                desc="Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned <br /> marketing professionals expertly employ advanced, effective techniques to boost your Consistency."
+                desc="Our clients share their success stories and experiences, highlighting how our customized marketing strategies have helped them achieve their goals and reach a broader audience."
                 data={testimonialData}
             />
             {/* Testimonials Section */}

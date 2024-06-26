@@ -13,7 +13,7 @@ const Hero = ({ title, desc }) => {
                     <div className="mr-sm:text-center text-justify mr-2xl:w-[57%] mr-xl:w-[65%] mr-lg:w-[75%] w-full mx-auto text-black">
                         <h1 className="mr-xl:text-[50px] mr-lg:text-[40px] mr-md:text-[30px] text-[25px] leading-normal font-medium mb-3" dangerouslySetInnerHTML={{ __html: title }} />
                         <p className="mr-md:text-base leading-normal text-sm font-normal" dangerouslySetInnerHTML={{ __html: desc }} />
-                        <MRCTAGroup classes="justify-center mt-8" animation="__animatedPing" />
+                        <MRCTAGroup classes="justify-center mt-8" animation="__animatedPing" text1="Get Free Consultation" text2="Call Us Now!" />
                     </div>
                     <LogosCarousal />
                 </div>
