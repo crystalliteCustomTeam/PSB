@@ -40,25 +40,24 @@ const Bookmockups = () => {
                             <div className={styles.embla__container}>
                                 {
                                     [
-                                        [Mockup1, "Bonds of Blood"],
-                                        [Mockup2, "Spend Some Time In <br /> Nature"],
-                                        [Mockup3, "Beneath The Surface"],
-                                        [Mockup4, "The Last Crusader"],
-                                        [Mockup5, "Bonds of Blood"],
-                                        [Mockup6, "Spend Some Time In <br /> Nature"],
-                                        [Mockup7, "Beneath The Surface"],
-                                        [Mockup8, "The Last Crusader"],
-                                        [Mockup9, "Bonds of Blood"],
-                                        [Mockup10, "Spend Some Time In <br /> Nature"],
-                                        [Mockup11, "Beneath The Surface"],
-                                        [Mockup12, "The Last Crusader"],
-                                        [Mockup13, "Bonds of Blood"],
-                                        [Mockup14, "Spend Some Time In <br /> Nature"],
-                                        [Mockup15, "Beneath The Surface"]
-                                    ].map(([img, title], i) => (
+                                        Mockup1,
+                                        Mockup2,
+                                        Mockup3,
+                                        Mockup4,
+                                        Mockup5,
+                                        Mockup6,
+                                        Mockup7,
+                                        Mockup8,
+                                        Mockup9,
+                                        Mockup10,
+                                        Mockup11,
+                                        Mockup12,
+                                        Mockup13,
+                                        Mockup14,
+                                        Mockup1
+                                    ].map((e, i) => (
                                         <div className={styles.embla__slide} key={i}>
-                                            <Image src={img} alt='mockups' className='block mx-auto shadow-[10px_5px_5px_0px_rgba(0,0,0,0.2)]' />
-                                            <h4 className='text-base leading-tight font-bold text-white text-center mt-4' dangerouslySetInnerHTML={{ __html: title }} />
+                                            <Image src={e} alt='mockups' className='block mx-auto shadow-[10px_5px_5px_0px_rgba(0,0,0,0.2)]' />
                                         </div>
                                     ))
                                 }

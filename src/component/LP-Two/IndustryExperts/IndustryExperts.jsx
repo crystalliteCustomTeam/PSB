@@ -3,7 +3,7 @@ import Avater from "media/book-marketing-company/avater.png"
 import IndustryExpertsBanner from "media/book-marketing-company/IndustryExpertsBanner.png"
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import { Axios } from "axios";
+import Axios from "axios";
 const IndustryExperts = ({ title, desc, descTwo }) => {
     const [ip, setIP] = useState('');
     //creating function to load ip address from the API
