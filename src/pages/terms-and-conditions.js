@@ -9,7 +9,7 @@ const TermsConditions = () => {
             <section>
                 <div className="bg-[rgb(64_190_226)] mr-md:h-[250px] h-[150px] mt-5 flex items-center text-center">
                     <div className="mr-container">
-                        <h1 className="text-4xl mr-sm:text-5xl mr-xl:text-5xl mr-2xl:text-6xl text-white font-bold leading-none">Terms & Conditions
+                        <h1 className="text-4xl mr-sm:text-5xl mr-xl:text-6xl text-white font-bold leading-none">Terms & Conditions
                         </h1>
                     </div>
                 </div>
