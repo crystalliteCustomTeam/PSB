@@ -39,7 +39,6 @@ import Icon18 from "media/book-marketing-company/testimonials/3.png"
 import Icon19 from "media/book-marketing-company/testimonials/4.png"
 import Icon20 from "media/book-marketing-company/testimonials/5.png"
 import Icon21 from "media/book-marketing-company/testimonials/6.png"
-import { MRVideoTestimonials } from "@/component"
 const BookMarketingCompany = () => {
     {/* Marketing Services Section Content */ }
     const serviceContent = [
@@ -201,9 +200,6 @@ const BookMarketingCompany = () => {
                 items={faqsContent}
             />
             {/* FAQS Section */}
-            {/* Video Testimonials Section */}
-            {/* <MRVideoTestimonials /> */}
-            {/* Video Testimonials Section */}
             {/* Footer Section */}
             <Footer />
             {/* Footer Section */}

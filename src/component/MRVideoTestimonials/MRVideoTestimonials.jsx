@@ -13,9 +13,9 @@ import Avater4 from "media/imageAR/avater/4.png"
 import Avater5 from "media/imageAR/avater/5.png"
 const MRVideoTestimonials = (
     {
-        subtitle = "Enough From Us",
-        title = "See What Our Clients Have To Say",
-        desc = "We can go on and on about our services, but if you seek further credibility, then see what our clients have to say about us:"
+        subtitle = "Book Reviews",
+        title = "Let’s hear what they have to say!",
+        desc = "We have been delivering top-notch services to our clients, which has established us as one of the most trusted book writing, publishing and marketing company in the eyes of every author out there!"
     }
 ) => {
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
@@ -32,7 +32,7 @@ const MRVideoTestimonials = (
                     <div className="mr-sm:text-center text-justify">
                         <span className="block mr-lg:text-[30px] mr-md:text-[25px] text-xl leading-tight font-semibold text-primary-100">{subtitle}</span>
                         <h2 className="mr-xl:text-[45px] mr-lg:text-[40px] mr-md:text-[30px] text-[25px] leading-tight font-semibold mt-2 mb-3">{title}</h2>
-                        <p className="mr-md:text-base text-sm leading-tight font-normal">{desc}</p>
+                        <p className="mr-md:text-base text-sm mr-lg:w-[70%] mx-auto leading-tight font-normal">{desc}</p>
                     </div>
                     <div className={styles.embla}>
                         <div className="overflow-hidden" ref={emblaRef}>
@@ -40,42 +40,36 @@ const MRVideoTestimonials = (
                                 {
                                     [
                                         [`<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/969194638?badge=0&autopause=0&player_id=0&app_id=58479/embed" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div>`,
-                                            `" We will strategically promote your books online to optimize sales and secure the well-deserved exposure your work deserves. We will strategically promote your books online to optimize sales We will strategically"`,
+                                            "I chose Best Selling Publisher for their complete package. They refined my manuscript, editors polished it to perfection, and the marketing team of got my book into the hands of readers. Their cohesive efforts made my book a huge success.",
                                             Avater2,
-                                            "Christopher Carter",
-                                            "Assistant Manager"],
+                                            "Christopher Ray"],
                                         [`<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/969194794?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Frederick Huff s Journey_ How Our Expertise Made His Book a Triumph _ _ Best Selling Publisher"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>`,
-                                            `" We will strategically promote your books online to optimize sales and secure the well-deserved exposure your work deserves. We will strategically promote your books online to optimize sales We will strategically"`,
+                                            "I had my debut novel published by Best Selling Publishers. Their experience exceeded all my expectations. Their team guided me at every step of the publishing process. They truly cared about my vision for the book and made sure it is exactly as I dreamed it would.",
                                             Avater,
-                                            "Frederick Huff",
-                                            "Assistant Manager"],
+                                            "Frederick Huff"],
                                         [`<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/969194720?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Eric s Publishing Journey_ Seamless Process and Exceptional Support with Best Selling Publisher"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>`,
-                                            `" We will strategically promote your books online to optimize sales and secure the well-deserved exposure your work deserves. We will strategically promote your books online to optimize sales We will strategically"`,
+                                            "I just want to say that their marketing team is fantastic. I published my self-help with Best Selling Publisher. They crafted a marketing plan that resonated with my target audience. Their team handled the book signing campaigns, social media. Thanks to their marketing strategies, my book became a best seller.",
                                             Avater3,
-                                            "Eric",
-                                            "Assistant Manager"],
+                                            "Eric Miller"],
                                         [`<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/969194426?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="How We Brought Brandy Hughes  Story to Life_ A Memorable Publishing Journey _ Best Selling Publisher"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>`,
-                                            `" We will strategically promote your books online to optimize sales and secure the well-deserved exposure your work deserves. We will strategically promote your books online to optimize sales We will strategically"`,
+                                            "Amazed by their editors’ attention to detail. Every suggestion they made was aimed at clarifying and enhancing my argument whilst making sure that the original tone and intent of my idea remains intact. ",
                                             Avater4,
-                                            "Brandy Hughes",
-                                            "Assistant Manager"],
+                                            "Brandy Hughes"],
                                         [`<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/969194554?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="A Heartfelt Thank You to Our Valued Customers _ Best Selling Publisher"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>`,
-                                            `" We will strategically promote your books online to optimize sales and secure the well-deserved exposure your work deserves. We will strategically promote your books online to optimize sales We will strategically"`,
+                                            "As an entrepreneur, I wanted to pen my journey but never had the time. Best Selling Publisher’s writing and editing team captured my voice and my passion for business in the book. The final manuscript really felt like my story. ",
                                             Avater5,
-                                            "Max",
-                                            "Assistant Manager"]
+                                            "Max"]
                                     ].map(([iframe, desc, img, name, work], i) => (
                                         <div className={`${styles.embla__slide} `} key={i}>
                                             <div className='rounded-[20px] border-[#C4C4C4] border overflow-hidden shadow-lg'>
                                                 <div dangerouslySetInnerHTML={{ __html: iframe }} />
                                                 <div className='py-[30px] px-[25px] '>
-                                                    <p className='text-[16px] leading-normal font-normal'>{desc}</p>
+                                                    <p className='text-[16px] leading-normal font-normal min-h-[170px]'>{desc}</p>
                                                     <div className='flex items-center gap-x-5 mt-5'>
                                                         <Image src={img} alt='client' className='block' />
                                                         <div>
-                                                            <h4 className='text-xl font-semibold leading-tight text-[#000]'>{name}</h4>
-                                                            <span className='text-[#3d3d3d] text-base leading-normal'>{work}</span>
-                                                        </div>
+                                                            <h4 className='text-2xl font-semibold leading-tight text-[#000]'>{name}</h4>
+                                                            </div>
                                                     </div>
                                                 </div>
                                             </div>

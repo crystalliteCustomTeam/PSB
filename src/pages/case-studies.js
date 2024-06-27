@@ -23,16 +23,13 @@ const OurReviews = () => {
             {/* Head */}
             <Head>
                 <meta name="robots" content="noindex" />
-                <title>Top Book Marketing Company - Best Selling Publisher</title>
+                <title>Book Marketing & Publishing Reviews - Best Selling Publisher</title>
                 <meta name="description" content="Partner with Best Selling Publisher, an expert book marketing company, offering customized strategies to maximize your book's visibility and drive sales!" />
             </Head>
             {/* Head */}
             <Header />
             {/* Hero Section */}
-            <Hero
-                title={`<span class="text-[#40BEE2]"> Professional</span> Online <span class="text-[#40BEE2]">Book</span> <br class="mr-lg:block hidden" /> Marketing Company`}
-                desc={`We help you break through the noise by connecting your book with ideal readers. Our strategic book marketing services drive sustainable book sales, boost your book’s visibility, and ensure lasting success for your author brand!`}
-            />
+            <Hero/>
             {/* Hero Section */}
             {/* Reviews Section */}
             <Reviews/>

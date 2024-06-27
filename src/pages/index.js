@@ -6,7 +6,7 @@ import Dreams from "@/fa-component/Dreams"
 import Plans from "@/fa-component/Plans"
 import Enlistedlogo from "@/fa-component/Enlistedlogo"
 import SwiperComponents from "@/component/SwiperComponent"
-import { MRHero, MRContact, MRQuestioners, MRContent1, MRCards, } from "@/component"
+import { MRHero, MRContact, MRQuestioners, MRContent1, MRCards, MRVideoTestimonials, } from "@/component"
 import PublishingNewComponent from "@/fa-component/PublishingNewComponent"
 
 const MRQuestionersData = [
@@ -151,11 +151,11 @@ const Home = () => {
       ],
       "opens": "09:00",
       "closes": "17:00"
-    } 
+    }
   }
   const schemaProduct = {
-    "@context": "https://schema.org/", 
-    "@type": "Product", 
+    "@context": "https://schema.org/",
+    "@type": "Product",
     "name": "Best Selling Publisher",
     "image": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
     "description": "Best Selling Publisher can publish your book in no time as we are the leading book publishers in US",
@@ -183,14 +183,14 @@ const Home = () => {
         <link rel="canonical" href="https://bestsellingpublisher.com" />
 
         {/* Schema */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html : JSON.stringify(schemaWebsite)}} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html : JSON.stringify(schemaCorporation)}} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html : JSON.stringify(schemaProffesionalService)}} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html : JSON.stringify(schemaProduct)}} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaWebsite) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaCorporation) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProffesionalService) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProduct) }} />
 
 
 
-          
+
       </Head>
       <MRHero
         title={`Start Selling Your Books Worldwide With Best <br class="mr-xl:block hidden"/> Selling Publisher `}
@@ -220,7 +220,7 @@ const Home = () => {
         textBG="bg-primary-100"
       />
       <MRCards
-        title="Explore the Services We Offer" 
+        title="Explore the Services We Offer"
         desc="We take pride in providing a remarkable range of services. That said, it’s your moment to make your <br class='mr-lg:block hidden' /> publishing dreams come to life."
         gridsClasses="mr-lg:grid-cols-3 mr-sm:grid-cols-2 grid-cols-1 !gap-x-8"
         cta={true}
@@ -260,6 +260,9 @@ const Home = () => {
       />
       <Plans />
       <SwiperComponents />
+      {/* Video Testimonials Section */}
+      <MRVideoTestimonials />
+      {/* Video Testimonials Section */}
       <MRContact
         subTitle="No Matter What Choice You Make…"
         title="We Will Always Be Here"

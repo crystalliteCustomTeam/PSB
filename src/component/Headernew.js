@@ -13,6 +13,7 @@ import MagazineWriting from "media/assets/images/newimg/magazine-writing.png"
 import WebCopyWriting from "media/assets/images/newimg/Web-Copy-Writing.png"
 import PressRelease from "media/assets/images/newimg/Press-Release.png"
 import ScriptWriting from "media/assets/images/newimg/Script-Writing.png" 
+import BookEditing from "media/assets/images/newimg/book-editing.svg" 
 const Header = () => {
   const [showSubMenu, setShowSubMenu] = useState(true);
   const [menuOpen, setMenuOpen] = useState(true); // Set to false initially
@@ -116,6 +117,16 @@ const Header = () => {
                                       Magazine Writing
                                     </span>
                                   </Link>
+                                  <Link
+                                    href="/book-editing"
+                                    className="flex justify-start align-middle items-center p-2 -mx-2 rounded-lg hover:bg-gradient-to-br hover:from-indigo-50 hover:to-pink-50 hover:via-blue-50 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600">
+                                    <span>
+                                      <Image quality={95} className='filter !brightness-0 invert-50 mr-2 block sm:hidden xs:hidden' src={BookEditing} width={40} height={40} alt='book editing' priority={true}/>
+                                    </span>
+                                    <span>
+                                      Book Editing
+                                    </span>
+                                  </Link>
                                 </li>
                               </ul>
                             </div>
@@ -175,7 +186,7 @@ const Header = () => {
                     ['Publication', '/publication'],
                     ['Printing', '/book-printing'],
                     ['Cover Design', '/book-cover-design'],
-                    ['Editing', '/book-editing'],
+                    ['Case Studies', '/case-studies'],
                     ['Contact Us', '/contact-us'],
                   ].map(([title, url]) => (
                     <li className='mr-lg:!mb-4 md:mb-3 sm:mb-3 xs:mb-3'>

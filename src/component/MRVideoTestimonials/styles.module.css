@@ -73,6 +73,6 @@
 
 @media (min-width: 1400px) {
     .embla .embla__slide {
-        flex: 0 0 calc(100% / 5);
+        flex: 0 0 calc(100% / 3);
     }
 }

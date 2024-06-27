@@ -11,9 +11,9 @@ const Hero = () => {
                 <div className="mr-container">
                     <div className="grid mr-lg:grid-cols-2 grid-cols-1 mr-lg:gap-x-5 gap-y-5 items-center">
                         <div className="text-white">
-                            <h1 className="mr-xl:text-[50px] mr-lg:text-[40px] mr-md:text-[30px] text-[25px] leading-tight font-semibold mb-5"><span className="border-t-4 border-primary-100">Case Studies</span> Fulfilling All <br className="mr-md:block hidden" /> Your Writing <span className="border-b-4 border-primary-100">Needs</span></h1>
-                            <p className="text-base leading-normal font-normal">We will strategically promote your books online to optimize sales and secure the well-deserved exposure your work deserves. We will strategically promote your books online to optimize sales We <br className="mr-2xl:block hidden" />  will strategically promote your books online to optimize sales and secure the well-deserved</p>
-                            <MRCTAGroup classes="mt-10" />
+                            <h1 className="mr-xl:text-[50px] mr-lg:text-[40px] mr-md:text-[30px] text-[25px] leading-tight font-semibold mb-5"><span className="border-t-4 border-primary-100">99% Client </span> Satisfaction Is  <br className="mr-md:block hidden" /> Our Biggest <span className="border-b-4 border-primary-100">Achievement </span></h1>
+                            <p className="text-base leading-normal font-normal">Best Selling Publisher continues to provide top-notch book writing, book marketing and publishing services to clients. We have turned authors into best-sellers with our strategic marketing and publishing strategies. </p>
+                            <MRCTAGroup classes="mt-10" animation="__animatedPing" text1="Let’s Talk" text2="Call Now " />
                         </div>
                         <div>
                             <Image src={HeroImage} alt="hero" className="block mx-auto" />

@@ -7,7 +7,8 @@ import {
 } from '../EmblaSliderArrows/EmblaSliderArrows'
 import styles from "./styles.module.css"
 import Image from 'next/image'
-import Google from "media/book-marketing-company/google-review.png"
+import Google from "media/book-marketing-company/google-review.svg"
+import TrustPilot from "media/book-marketing-company/Trustpilot.svg"
 import Stars from "media/book-marketing-company/stars.png"
 
 const Testimonials = ({
@@ -52,6 +53,10 @@ const Testimonials = ({
                                 ))
                                 }
                             </div>
+                        </div>
+                        <div className="flex items-center justify-center mr-md:mb-10 mb-16 gap-x-10">
+                            <Image src={Google} alt='icons' className='block' />
+                            <Image src={TrustPilot} alt='icons' className='block' />
                         </div>
                         <div className={styles.embla__controls}>
                             <div className={styles.embla__buttons}>
