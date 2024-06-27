@@ -1,3 +1,6 @@
+// Next
+import dynamic from "next/dynamic"
+
 import MRHeroForm from "./MRHeroForm/MRHeroForm"
 import MRCTA from "./MRCTA/MRCTA"
 import MRCTAGroup from "./MRCTAGroup/MRCTAGroup"
@@ -11,5 +14,6 @@ import MRCards from "./MRCards/MRCards"
 import MRLibarySphere from './MRLibrarySphere/MRLibrarySphere'
 import MRTable from './MRTable/MRTable'
 import MRServices from "./MRServices/MRServices"
+const MRVideoTestimonials = dynamic(() => import('./MRVideoTestimonials/MRVideoTestimonials'))
 
-export { MRHero, MRCTAGroup, MRCTA, MRHeroForm, MRHeroCounter, MRContact, MRQuestioners, MRContent1, MRContent2, MRTable, MRLibarySphere, MRCards, MRServices }
+export { MRHero, MRCTAGroup, MRCTA, MRHeroForm, MRHeroCounter, MRContact, MRQuestioners, MRContent1, MRContent2, MRTable, MRLibarySphere, MRCards, MRServices, MRVideoTestimonials }

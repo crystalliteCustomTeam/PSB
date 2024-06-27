@@ -9,7 +9,7 @@ export default async function POST(req, res) {
       secure: true,
       auth: {
         user: "leads@bestsellingpublisher.com",
-        pass: "10@Kskwoks",
+        pass: "Qwerty@12345!!@@@!",
       },
     });
     const mailOptions = {

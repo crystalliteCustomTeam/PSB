@@ -24,7 +24,7 @@ export default function App({ Component, pageProps }) {
         <meta name="google-site-verification" content="R28eoLjUYrldzCTVPJyB50E-zTd2cWaogKpJP3ycGFM" />
       </Head>
       <main className={`${primary.className} ${SfProDisplay.variable}`}>
-        {router.pathname == "/lp-one" || router.pathname == "/book-marketing-company" ? "" : <Headernew />}
+        {router.pathname == "/lp-one" || router.pathname == "/book-marketing-company" || router.pathname == "/our-reviews" ? "" : <Headernew />}
         {/* {loadScript ? <Component {...pageProps} /> : <Loader />} */}
         <Component {...pageProps} />
         {router.pathname == "/book-marketing-company" ? "" : <Footer1 />}

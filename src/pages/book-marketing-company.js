@@ -39,6 +39,7 @@ import Icon18 from "media/book-marketing-company/testimonials/3.png"
 import Icon19 from "media/book-marketing-company/testimonials/4.png"
 import Icon20 from "media/book-marketing-company/testimonials/5.png"
 import Icon21 from "media/book-marketing-company/testimonials/6.png"
+import { MRVideoTestimonials } from "@/component"
 const BookMarketingCompany = () => {
     {/* Marketing Services Section Content */ }
     const serviceContent = [
@@ -89,7 +90,6 @@ const BookMarketingCompany = () => {
         ["John Miller", "Author and Speaker", Icon21, "Their team provided the tools and support I needed to connect with a wider audience. Highly recommended for any author."]
     ];
     {/* Testimonials Section Content*/ }
-
     {/* FAQS Section Content */ }
     const faqsContent = [
         ["Can I hire someone to market my book?", "Yes, you can hire book marketing services to optimize your sales pages, making them irresistible to readers. A professional book marketer can enhance your Amazon description, select effective keywords, and even improve your website with special offers. This ensures your book attracts more attention and drives more sales."],
@@ -201,7 +201,9 @@ const BookMarketingCompany = () => {
                 items={faqsContent}
             />
             {/* FAQS Section */}
-
+            {/* Video Testimonials Section */}
+            {/* <MRVideoTestimonials /> */}
+            {/* Video Testimonials Section */}
             {/* Footer Section */}
             <Footer />
             {/* Footer Section */}
