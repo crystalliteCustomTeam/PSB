@@ -8,7 +8,7 @@ import {
 import styles from "./styles.module.css"
 import Image from 'next/image'
 import Google from "media/book-marketing-company/google-review.png"
-import TrustPilot from "media/book-marketing-company/Trustpilot.png"
+import TrustPilot from "media/book-marketing-company/TrustPilot.png"
 import Stars from "media/book-marketing-company/stars.png"
 
 const Testimonials = ({
