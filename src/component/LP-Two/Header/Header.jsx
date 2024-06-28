@@ -58,9 +58,9 @@ const Header = () => {
           <div className="mr-container">
             <div className="items-center justify-between gap-x-4 flex grid-cols-2 grid-rows-1">
               <div className="flex-shrink-0">
-                <Link href="/" className="text-xl font-bold text-indigo-500">
+                <span className="block">
                   <Image quality={95} src={Logo} alt=" Best Selling Publisher Ghostwriting logo" width={180} height={50} priority={true} />
-                </Link>
+                </span>
               </div>
               <nav className="flex space-x-4 text-[16px] text-[#1d1d1f] font-medium">
                 <ul id="menu" className={`${menuOpen ? 'transform translate-x-0 mr-2xl:!flex mr-xl:!flex mr-lg:!hidden md:hidden xs:hidden sm:hidden' : 'flex items-center transition-transform duration-500  ease-in-out translate-x-0 md:translate-x-0 right-0 xs:text-white sm:text-white md:text-white mr-lg:bg-[#2d2d2d] md:bg-[#2d2d2d] sm:bg-[#2d2d2d] mr-lg:!z-50 md:z-50 sm:z-50 md:text-[18px] xs:text-[18px] sm:text-[18px] mr-2xl:!hidden mr-xl:!hidden mr-lg:!block md:block xs:block sm:block xs:fixed sm:fixed md:fixed mr-lg:!fixed xs:top-0 sm:top-0 md:top-0 mr-lg:top-0 sm:py-16 md:py-16 mr-lg:!py-16 mr-lg:!px-10 md:px-10 sm:px-10 mr-2xl:!w-full mr-xl:!w-full mr-lg:!w-[70%] md:w-[70%] mr-lg:!h-full md:h-full xs:w-[320px] xs:h-full sm:w-[300px] sm:h-full xs:right-0 md:right-0 mr-lg:right-0 xs:px-10 leading-9 xs:!p-5 xs:bg-[#2d2d2d] xs:z-50 text-[#1d1d1f] '} flex items-center 2xl:gap-x-5 xl:gap-x-5 lg:gap-x-4 gap-x-3 text-[#1d1d1f] cursor-default overflow-visible sm:!overflow-hidden xs:!overflow-hidden sm:!overflow-y-scroll xs:!overflow-y-scroll `}>
