@@ -1143,3 +1143,6 @@ header .group:hover .group-hover\:visible {
 .__testimonialsAR .embla__slide.is-snapped .__card p {
    color: black;
 }
+.player .vp-video-wrapper .vp-preview-cover {
+   background-image: inherit !important;
+}

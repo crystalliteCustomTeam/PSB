@@ -25,6 +25,7 @@ const MRVideoTestimonials = (
         onPrevButtonClick,
         onNextButtonClick
     } = usePrevNextButtons(emblaApi)
+    
     return (
         <section className='font-sans'>
             <div className='relative mr-lg:py-[80px] mr-md:py-[60px] py-[40px]'>
@@ -59,13 +60,13 @@ const MRVideoTestimonials = (
                                             "As an entrepreneur, I wanted to pen my journey but never had the time. Best Selling Publisher’s writing and editing team captured my voice and my passion for business in the book. The final manuscript really felt like my story. ",
                                             Avater5,
                                             "Max"]
-                                    ].map(([iframe, desc, img, name, work], i) => (
+                                    ].map(([iframe, desc, img, name], i) => (
                                         <div className={`${styles.embla__slide} `} key={i}>
-                                            <div className='rounded-[20px] border-[#C4C4C4] border overflow-hidden shadow-lg'>
+                                            <div className='rounded-[20px] border-[#C4C4C4] border overflow-hidden shadow-md'>
                                                 <div dangerouslySetInnerHTML={{ __html: iframe }} />
                                                 <div className='py-[30px] px-[25px] '>
-                                                    <p className='text-[16px] leading-normal font-normal min-h-[170px]'>{desc}</p>
-                                                    <div className='flex items-center gap-x-5 mt-5'>
+                                                    <p className='text-[16px] leading-normal font-normal mr-2xl:min-h-[145px] mr-xl:min-h-[168px] mr-lg:min-h-[215px] mr-md:min-h-[170px] mr-sm:min-h-[120px] min-h-[195px]'>{desc}</p>
+                                                    <div className='flex items-center gap-x-5 mr-2xl:mt-4 mt-4'>
                                                         <Image src={img} alt='client' className='block' />
                                                         <div>
                                                             <h4 className='text-2xl font-semibold leading-tight text-[#000]'>{name}</h4>

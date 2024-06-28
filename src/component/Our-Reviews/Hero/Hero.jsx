@@ -3,6 +3,8 @@ import Image from "next/image";
 import HeroBanner from "media/our-reviews/banner.png"
 import HeroImage from "media/our-reviews/books.png"
 import Logos from "media/our-reviews/logos.png"
+import Logos1 from "media/our-reviews/logos1.png"
+import Logos2 from "media/our-reviews/logos2.png"
 const Hero = () => {
     return (
         <section className="relative z-10">
@@ -19,7 +21,11 @@ const Hero = () => {
                             <Image src={HeroImage} alt="hero" className="block mx-auto" />
                         </div>
                     </div>
-                    <div className="mr-md:mt-20 mt-12"><Image src={Logos} alt="logos" className="block mx-auto" /></div>
+                    <div className="mr-md:mt-20 mt-12">
+                        <Image src={Logos} alt="logos" className="mr-md:block hidden mx-auto" />
+                        <Image src={Logos1} alt="logos" className="mr-md:hidden block mx-auto" />
+                        <Image src={Logos2} alt="logos" className="mr-md:hidden block mx-auto mt-5" />
+                        </div>
                 </div>
             </div>
         </section>
