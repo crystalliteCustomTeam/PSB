@@ -18,13 +18,13 @@ const Hero = () => {
                             <MRCTAGroup classes="mt-10" animation="__animatedPing" text1="Let’s Talk" text2="Call Now " />
                         </div>
                         <div>
-                            <Image src={HeroImage} alt="hero" className="block mx-auto" />
+                            <Image src={HeroImage} alt="hero" className="block mx-auto" priority={true} />
                         </div>
                     </div>
                     <div className="mr-md:mt-20 mt-12">
-                        <Image src={Logos} alt="logos" className="mr-md:block hidden mx-auto" />
-                        <Image src={Logos1} alt="logos" className="mr-md:hidden block mx-auto" />
-                        <Image src={Logos2} alt="logos" className="mr-md:hidden block mx-auto mt-5" />
+                        <Image src={Logos} alt="logos" className="mr-md:block hidden mx-auto" priority={true} />
+                        <Image src={Logos1} alt="logos" className="mr-md:hidden block mx-auto" priority={true} />
+                        <Image src={Logos2} alt="logos" className="mr-md:hidden block mx-auto mt-5" priority={true} />
                         </div>
                 </div>
             </div>

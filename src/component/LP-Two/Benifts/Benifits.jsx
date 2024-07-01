@@ -127,7 +127,7 @@ const Benifits = ({ title, desc }) => {
                         </div>
                         <div className="mr-lg:col-span-5 col-span-12 text-center mr-md:w-[90%] w-full px-5 py-[40px] rounded-2xl bg-white ms-auto shadow-[0_0_20px_rgba(0,_0,_0,_0.1)]">
                             <h3 className="mr-md:text-[30px] text-[25px] font-medium leading-tight text-black mb-3">Request A <span className="text-[#40BEE2]">Free</span> Quote</h3>
-                            <p className="mr-md:text-base text-sm font-normal text-black leading-normal">Cost-effectiveness. Consumer-centric—the crudity of <br className="mr-xl:block hidden" /> book marketing, delivered!</p>
+                            <p className="mr-md:text-base text-sm font-normal text-black leading-normal">Get in touch with out book marketing expert <br /> to discuss in detail</p>
                             <form onSubmit={handleSubmit} className="mt-8">
                                 <input type="text" required name="name" placeholder="Full Name *" onkeypress="return /[a-z]/i.test(event.key)" className="block focus-visible:outline-[#40BEE2] w-full border-2 border-[#E1E1E1] rounded-md px-4 py-4 mb-4 placeholder:text-[#B4B4B4] font-medium" />
                                 <input type="email" required name="email" placeholder="Email *" className="block focus-visible:outline-[#40BEE2] w-full border-2 border-[#E1E1E1] rounded-md px-4 py-4 mb-4 placeholder:text-[#B4B4B4] font-medium" />

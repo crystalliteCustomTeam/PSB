@@ -20,7 +20,6 @@ import Mockup11 from "media/book-marketing-company/bookMockups/11.png"
 import Mockup12 from "media/book-marketing-company/bookMockups/12.png"
 import Mockup13 from "media/book-marketing-company/bookMockups/13.png"
 import Mockup14 from "media/book-marketing-company/bookMockups/14.png"
-import Mockup15 from "media/book-marketing-company/bookMockups/15.png"
 import Image from 'next/image'
 const Bookmockups = () => {
     const [emblaRef, emblaApi] = useEmblaCarousel({ align: 'start' })
@@ -57,7 +56,7 @@ const Bookmockups = () => {
                                         Mockup1
                                     ].map((e, i) => (
                                         <div className={styles.embla__slide} key={i}>
-                                            <Image src={e} alt='mockups' className='block mx-auto shadow-[10px_5px_5px_0px_rgba(0,0,0,0.2)]' />
+                                            <Image src={e} alt='mockups' className='block mx-auto shadow-[10px_5px_5px_0px_rgba(0,0,0,0.2)]' priority={true}/>
                                         </div>
                                     ))
                                 }
