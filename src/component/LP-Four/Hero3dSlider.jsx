@@ -12,16 +12,66 @@ import Banner5 from "media/lp-four/herobanner2.png"
 import Image from "next/image"
 
 export default function Hero3dSlider() {
+    const swiperElRef = useRef(null)
+
     useEffect(() => {
         register()
+        const params = {
+            grabCursor: "true",
+            slidesPerView: 2,
+            navigation: true,
+            effect: 'coverflow',
+            coverflowEffect: {
+                slideShadows: false,
+            },
+            injectStyles: [
+                `
+                @media (min-width: 992px) {
+                    .swiper {
+                        margin-top: 100px;
+                    }
+                }
+                .swiper {
+                    padding-bottom: 65px;
+                }
+                .swiper-button-next {
+                    top: inherit;
+                    right: 40%;
+                    bottom: 0;
+                    color: white;
+                }
+                .swiper-button-prev {
+                    top: inherit;
+                    left: 40%;
+                    bottom: 0;
+                    color: white;
+                }
+                `
+            ],
+            breakpoints: {
+                992: {
+                    centeredSlides: "true",
+                    coverflowEffect: {
+                        stretch: "150",
+                        depth: "150",
+                        modifier: "1",
+                        rotate: 0,
+                    },
+                },
+            },
+        };
+
+        Object.assign(swiperElRef.current, params);
+
+        swiperElRef.current.initialize();
     }, [])
     return (
         <div>
-            <swiper-container effect="coverflow" grab-cursor="true" centered-slides="true" slides-per-view="2" coverflow-effect-rotate="0" coverflow-effect-stretch="150" coverflow-effect-depth="200" coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true" ali >
+            <swiper-container init={false} ref={swiperElRef}>
                 {
                     [Banner1, Banner2, Banner3, Banner4, Banner5].map((e, i) => (
                         <swiper-slide key={i}>
-                            <Image src={e} alt="banner" className="h-[400px]" />
+                            <Image src={e} alt="banner" className="h-[300px] mr-lg:h-[400px] mx-auto block" />
                         </swiper-slide>
                     ))
                 }
