@@ -125,12 +125,12 @@ const Bloginner = () => {
               <ul className="text-sm text-white">
                 <li className="mb-4 border-b-2 flex items-center gap-x-1 border-[#f9f9f9]">
                   <FontAwesomeIcon icon={faEnvelope} width={30} height={30} className="px-2" /> <span className="block">
-                  info@educationlogo.com
+                  <a href="mailto:info@bestsellingpublisher.com">info@bestsellingpublisher.com</a>
                   </span>
                 </li>
                 <li className="mb-4 border-b-2 flex items-center gap-x-1 border-[#ffffff]">
                   <FontAwesomeIcon icon={faPhone}  width={30} height={30} className="px-2" />
-                  <span className="block">+123-456-7890</span>
+                  <span className="block"><a href="tel:8007819093">(800) 781-9093</a></span>
                 </li>
               </ul>
               <h3 className=" text-[20px] font-bold mt-3 text-white">Follow Us:</h3>

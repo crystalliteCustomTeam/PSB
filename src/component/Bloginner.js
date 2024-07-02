@@ -187,11 +187,11 @@ the details, and let our representatives contact you.</p>
                     <h4 className='font-bold text-white text-[30px] mb-4'>Contact details</h4>
                     <ul className='text-[14px] text-white'>
                       <li className='mb-4 border-b-2 border-[#f9f9f9]'>
-                        <FontAwesomeIcon icon={faEnvelope} className='px-2'/> info@educationlogo.com
+                        <FontAwesomeIcon icon={faEnvelope} className='px-2'/> info@bestsellingpublisher.com
                       </li>
                       <li className='mb-4 border-b-2 border-[#ffffff]'>
                         <FontAwesomeIcon icon={faPhone} className='px-2'/>
-                       +123-456-7890
+                       (800) 781-9093
                        </li>
                     </ul>
                     <h3 className=' text-[20px] font-bold mt-3 text-white'>Follow Us:</h3>
