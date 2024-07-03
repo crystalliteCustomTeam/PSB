@@ -853,18 +853,18 @@ header a:hover {
 /* Audio Banner Slider Start */
 
 .audiobannerSlider .slick-prev {
-   left: 20%;
+   left: 30%;
    z-index: 9;
 }
 
 .audiobannerSlider .slick-next {
-   right: 50%;
+   right: 45%;
 }
 
 .audiobannerSlider .slick-prev,
 .audiobannerSlider .slick-next {
    top: inherit;
-   bottom: 17%;
+   bottom: 10%;
 }
 
 .audiobannerSlider .slick-prev:before {
@@ -881,38 +881,18 @@ header a:hover {
 
 /* ===================== Media Queries ===================== */
 
-@media only screen and (max-width: 1920px) {
-
-   .audiobannerSlider .slick-prev,
-   .audiobannerSlider .slick-next {
-      bottom: 7%;
-   }
-}
-
-@media only screen and (max-width: 1600px) {
-
-   .audiobannerSlider .slick-prev,
-   .audiobannerSlider .slick-next {
-      bottom: 21%;
-   }
-}
-
 @media screen and (min-width: 1600px) {
    .mainclass .colo {
       width: 55%;
    }
 }
 
-@media screen and (max-width: 1399px) {
-
-   /* .audiobannerSlider .slick-prev,
-   .audiobannerSlider .slick-next {
-      bottom: 20%;
-   } */
+@media only screen and (max-width: 1399px) {
 
    .audiobannerSlider .slick-prev,
    .audiobannerSlider .slick-next {
-      bottom: 12%;
+      top: inherit;
+      bottom: 15%;
    }
 }
 
@@ -922,6 +902,16 @@ header a:hover {
       align-items: center;
    }
 }
+
+@media only screen and (max-width: 1199px) {
+
+   .audiobannerSlider .slick-prev,
+   .audiobannerSlider .slick-next {
+      top: inherit;
+      bottom: 27%;
+   }
+}
+
 
 @media screen and (max-width: 991px) {
    .font-13 {
