@@ -34,7 +34,7 @@ const PortfolioCarousal = () => {
                             Portfolio6,
                         ].map((e, i) => (
                             <div className={`${styles.embla__slide}`} key={i}>
-                                <Image src={e} alt='portfolios' className='block' />
+                                <Image src={e} alt='portfolios' className='block bg-primary-100 rounded-xl' priority={true} />
                             </div>
                         ))
                         }
