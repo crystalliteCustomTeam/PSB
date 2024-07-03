@@ -33,7 +33,7 @@ const Reviews = () => {
                     {
                         count.map((e, i) => (
                             (i % 2) === 0 ? (
-                                <div className="grid mr-md:grid-cols-12 grid-cols-1 mr-lg:gap-0 gap-x-5 items-center mr-md:mt-20 mt-0 my-4">
+                                <div className="grid mr-md:grid-cols-12 grid-cols-1 mr-lg:gap-0 gap-x-5 items-center  mr-md:mt-20 mt-0 my-4">
                                     <div className="mr-lg:col-span-5 mr-md:col-span-6">
                                         <div className="z-20 w-[100%] rounded-[50px] relative mr-lg:left-8" dangerouslySetInnerHTML={{ __html: e.vid }} />
                                     </div>
@@ -45,7 +45,7 @@ const Reviews = () => {
                                     </div>
                                 </div>
                             ) : (
-                                <div className="grid mr-md:grid-cols-12 grid-cols-1 mr-lg:gap-0 gap-x-5 items-center mr-md:mt-20 mt-0 my-4">
+                                <div className="grid mr-md:grid-cols-12 grid-cols-1 mr-lg:gap-0 gap-x-5 items-center  mr-md:mt-20 mt-0 my-4">
                                     <div className="mr-lg:col-span-7 mr-md:col-span-6">
                                         <div className="bg-[#272727] mr-sm:block hidden text-white mr-lg:px-[50px] px-[20px] mr-2xl:py-[100px] mr-lg:py-[80px] mr-sm:py-[40px] py-[30px] rounded-xl">
                                             <h3 className="mr-2xl:text-[35px] mr-xl:text-[28px] mr-sm:text-[25px] text-xl leading-tight font-semibold mb-3" dangerouslySetInnerHTML={{__html : e.title}} />

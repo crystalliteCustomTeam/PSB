@@ -25,13 +25,16 @@ export default function App({ Component, pageProps }) {
       </Head>
       <main className={`${primary.className} ${SfProDisplay.variable}`}>
         {router.pathname == "/lp-one"
-          || router.pathname == "/auto-book-lp1"
+          || router.pathname == "/audio-book-lp1"
           || router.pathname == "/book-marketing-company"
           || router.pathname == "/case-studies"
+          || router.pathname == "/lp-four"
           ? "" : <Headernew />}
         {/* {loadScript ? <Component {...pageProps} /> : <Loader />} */}
         <Component {...pageProps} />
-        {router.pathname == "/book-marketing-company" || router.pathname == "/auto-book-lp1"? "" : <Footer1 />}
+        {router.pathname == "/book-marketing-company"
+          || router.pathname == "/audio-book-lp1"
+          || router.pathname == "/lp-four" ? "" : <Footer1 />}
       </main>
       {loadScript && (
         <>
