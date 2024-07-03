@@ -61,49 +61,85 @@
       transform: translatey(0px);
    }
 }
+
 .__animatedPing {
-     overflow: hidden;
-     position: relative;
- }
- .__animatedPing:before {
-     position: absolute;
-     content: '';
-     display: inline-block;
-     top: -180px;
-     left: 0;
-     width: 30px;
-     height: 100%;
-     background-color: #fff;
-     animation: ping 3s ease-in-out infinite;
- }
- .__animatedPing:hover{
+   overflow: hidden;
+   position: relative;
+}
+
+.__animatedPing:before {
+   position: absolute;
+   content: '';
+   display: inline-block;
+   top: -180px;
+   left: 0;
+   width: 30px;
+   height: 100%;
+   background-color: #fff;
+   animation: ping 3s ease-in-out infinite;
+}
+
+.__animatedPing:hover {
    opacity: .7;
- }
- .__animatedPing:active{
-   box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
-               -4px -4px 6px 0 rgba(116, 125, 136, .2), 
-     inset -4px -4px 6px 0 rgba(255,255,255,.2),
-     inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
- }
- 
- @keyframes ping {
-   0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
-     80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
-     81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
-     100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
- }
- @-webkit-keyframes ping {
-     0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
-     80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
-     81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
-     100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
- }
- 
-@media (prefers-reduced-motion: no-preference) {
-   :root {
-       scroll-behavior: smooth;
+}
+
+.__animatedPing:active {
+   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .3),
+      -4px -4px 6px 0 rgba(116, 125, 136, .2),
+      inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+@keyframes ping {
+   0% {
+      -webkit-transform: scale(0) rotate(45deg);
+      opacity: 0;
+   }
+
+   80% {
+      -webkit-transform: scale(0) rotate(45deg);
+      opacity: 0.5;
+   }
+
+   81% {
+      -webkit-transform: scale(4) rotate(45deg);
+      opacity: 1;
+   }
+
+   100% {
+      -webkit-transform: scale(50) rotate(45deg);
+      opacity: 0;
    }
 }
+
+@-webkit-keyframes ping {
+   0% {
+      -webkit-transform: scale(0) rotate(45deg);
+      opacity: 0;
+   }
+
+   80% {
+      -webkit-transform: scale(0) rotate(45deg);
+      opacity: 0.5;
+   }
+
+   81% {
+      -webkit-transform: scale(4) rotate(45deg);
+      opacity: 1;
+   }
+
+   100% {
+      -webkit-transform: scale(50) rotate(45deg);
+      opacity: 0;
+   }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+   :root {
+      scroll-behavior: smooth;
+   }
+}
+
 .avatar {
    width: 120px;
    height: 170px;
@@ -788,6 +824,61 @@ header a:hover {
    margin-bottom: -1px !important;
 }
 
+/* AutoBook start */
+
+.servicesSlider .slick-prev,
+.servicesSlider .slick-next {
+   top: inherit;
+   bottom: -90px;
+}
+
+.servicesSlider .slick-next {
+   right: 45%;
+}
+
+.servicesSlider .slick-prev {
+   left: 45%;
+}
+
+.servicesSlider .slick-prev:before {
+   content: url(/assets/audiobook/rightArrow.png);
+}
+
+.servicesSlider .slick-next:before {
+   content: url(/assets/audiobook/leftArrow.png);
+}
+
+/* AutoBook End */
+
+/* Audio Banner Slider Start */
+
+.audiobannerSlider .slick-prev {
+   left: 20%;
+   z-index: 9;
+}
+
+.audiobannerSlider .slick-next {
+   right: 50%;
+}
+
+.audiobannerSlider .slick-prev,
+.audiobannerSlider .slick-next {
+   top: inherit;
+   bottom: 17%;
+}
+
+.audiobannerSlider .slick-prev:before {
+   content: url(/assets/audiobook/rightArrow.png);
+   filter: brightness(0) invert(100);
+}
+
+.audiobannerSlider .slick-next:before {
+   content: url(/assets/audiobook/leftArrow.png);
+   filter: brightness(0) invert(100);
+}
+
+/* Audio Banner Slider End */
+
 /* ===================== Media Queries ===================== */
 
 @media screen and (min-width: 1600px) {
@@ -796,11 +887,13 @@ header a:hover {
    }
 }
 
-/* @media screen and (max-width: 1360px) {
-   br {
-      display: none;
+@media screen and (max-width: 1399px) {
+
+   .audiobannerSlider .slick-prev,
+   .audiobannerSlider .slick-next {
+      bottom: 9%;
    }
-} */
+}
 
 @media screen and (max-width: 1280px) {
    .contact {
@@ -808,7 +901,6 @@ header a:hover {
       align-items: center;
    }
 }
-
 
 @media screen and (max-width: 991px) {
    .font-13 {
@@ -1143,6 +1235,7 @@ header .group:hover .group-hover\:visible {
 .__testimonialsAR .embla__slide.is-snapped .__card p {
    color: black;
 }
+
 .player .vp-video-wrapper .vp-preview-cover {
    background-image: inherit !important;
 }

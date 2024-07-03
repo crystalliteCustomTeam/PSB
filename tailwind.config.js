@@ -33,6 +33,7 @@ module.exports = {
         "mr-lg": "992px",
         "mr-xl": "1200px",
         "mr-2xl": "1400px",
+        "mr-3xl": "1699px",
       },
       colors: {
         "primary": { 100: "#40BEE2" },

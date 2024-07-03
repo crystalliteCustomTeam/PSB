@@ -24,10 +24,17 @@ export default function App({ Component, pageProps }) {
         <meta name="google-site-verification" content="R28eoLjUYrldzCTVPJyB50E-zTd2cWaogKpJP3ycGFM" />
       </Head>
       <main className={`${primary.className} ${SfProDisplay.variable}`}>
-        {router.pathname == "/lp-one" || router.pathname == "/book-marketing-company" || router.pathname == "/lp-four" || router.pathname == "/case-studies" || router.pathname == "/lp-three" ? "" : <Headernew />}
+        {router.pathname == "/lp-one"
+          || router.pathname == "/audio-book-lp1"
+          || router.pathname == "/book-marketing-company"
+          || router.pathname == "/case-studies" || router.pathname == "/lp-three"
+          || router.pathname == "/lp-four"
+          ? "" : <Headernew />}
         {/* {loadScript ? <Component {...pageProps} /> : <Loader />} */}
         <Component {...pageProps} />
-        {router.pathname == "/book-marketing-company" || router.pathname == "/lp-four" || router.pathname == "/lp-three" ? "" : <Footer1 />}
+        {router.pathname == "/book-marketing-company"
+          || router.pathname == "/audio-book-lp1"
+          || router.pathname == "/lp-four" || router.pathname == "/lp-three" ? "" : <Footer1 />}
       </main>
       {loadScript && (
         <>
@@ -90,8 +97,8 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
           j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-WQT66SHZ');`}</Script>
-        <Script id="chat-script-2" src="https://www.googletagmanager.com/gtag/js?id=G-66Q1HF396Z"></Script>
-        <Script id="chat-script-3">{`window.dataLayer = window.dataLayer || [];
+          <Script id="chat-script-2" src="https://www.googletagmanager.com/gtag/js?id=G-66Q1HF396Z"></Script>
+          <Script id="chat-script-3">{`window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
