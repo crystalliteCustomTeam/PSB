@@ -1,41 +1,40 @@
-import Head from "next/head"
+import Head from "next/head";
 // components
-import Tradition from "@/fa-component/Tradition"
-import Audience from "@/fa-component/Audience"
-import Dreams from "@/fa-component/Dreams"
-import Plans from "@/fa-component/Plans"
-import Enlistedlogo from "@/fa-component/Enlistedlogo"
-import SwiperComponents from "@/component/SwiperComponent"
-import { MRHero, MRContact, MRQuestioners, MRContent1, MRCards, MRVideoTestimonials, } from "@/component"
-import PublishingNewComponent from "@/fa-component/PublishingNewComponent"
+import Tradition from "@/fa-component/Tradition";
+import Audience from "@/fa-component/Audience";
+import Dreams from "@/fa-component/Dreams";
+import Plans from "@/fa-component/Plans";
+import Enlistedlogo from "@/fa-component/Enlistedlogo";
+import SwiperComponents from "@/component/SwiperComponent";
+import {MRHero, MRContact, MRQuestioners, MRContent1, MRCards, MRVideoTestimonials} from "@/component";
+import PublishingNewComponent from "@/fa-component/PublishingNewComponent";
 
 const MRQuestionersData = [
   {
     title: "Experience and Quality",
-    desc: "We are a team of experienced publishers who are focused on one thing, providing excellent quality without exception."
+    desc: "We are a team of experienced publishers who are focused on one thing, providing excellent quality without exception.",
   },
   {
     title: "Industry Experts",
-    desc: "As one of the best selling book publishers, our goal is to provide solutions that are optimal and groundbreaking."
+    desc: "As one of the best selling book publishers, our goal is to provide solutions that are optimal and groundbreaking.",
   },
   {
     title: "Range of Services",
-    desc: "As one of the best selling publishers, our services vary from book writing that whispers your story to the world, SEO content that puts you on the map, articles, magazines, and web copy that speaks volumes. Not to mention press releases and scripts that make waves — we've got all your writing needs covered! "
+    desc: "As one of the best selling publishers, our services vary from book writing that whispers your story to the world, SEO content that puts you on the map, articles, magazines, and web copy that speaks volumes. Not to mention press releases and scripts that make waves — we've got all your writing needs covered! ",
   },
   {
     title: "Goal-Driven",
-    desc: "Best Selling Publisher is well-organized in its priorities. The satisfaction of our clients is our only and ultimate objective."
+    desc: "Best Selling Publisher is well-organized in its priorities. The satisfaction of our clients is our only and ultimate objective.",
   },
   {
     title: "Affordable Packages",
-    desc: "Don’t you deserve a taste of victory too? We want you to realize all that you are capable of writing. Let us use reasonably priced digital publishing to realize your writing ambitions."
+    desc: "Don’t you deserve a taste of victory too? We want you to realize all that you are capable of writing. Let us use reasonably priced digital publishing to realize your writing ambitions.",
   },
   {
     title: "Passion and Creativity",
-    desc: "And guess what? Regarding passion and originality, we don't mind working through the night. Our desire is like an unquenchable candle. So what are you waiting for? "
-  }
-
-]
+    desc: "And guess what? Regarding passion and originality, we don't mind working through the night. Our desire is like an unquenchable candle. So what are you waiting for? ",
+  },
+];
 const MRCardData = [
   {
     indexing: true,
@@ -67,12 +66,13 @@ const MRCardData = [
         title: "Book Printing",
         desc: `From paperback to hardcover, we offer many options to suit your needs in our <a href="https://bestsellingpublisher.com/book-printing" rel="dofollow">book printing services.</a> Using cutting-edge technology, we take pride in delivering top-grade printing quality to ensure every detail of your book is reproduced with clarity and precision.`,
       },
-    ]
+    ],
   },
-]
+];
 const MRCardData2 = [
   {
-    classes: "bg-[#F2F2F2] shadow-lg px-4 rounded-lg relative py-[20px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-center",
+    classes:
+      "bg-[#F2F2F2] shadow-lg px-4 rounded-lg relative py-[20px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-center",
     cta: true,
     content: [
       {
@@ -80,100 +80,99 @@ const MRCardData2 = [
         border: "border-b border-[#707070]",
         padding: "pb-2",
         desc: "The first thing that’s probably on your mind is why we are the best. The highest priorities for our services are client happiness, dependability, and quality. Our excellent services win your trust, and loyalty, and an outstanding reputation that distinguishes us in a cutthroat industry by constantly producing excellent outcomes.",
-        minHeight: "min-h-[140px]"
+        minHeight: "min-h-[140px]",
       },
       {
         title: "Experience and Dedication",
         border: "border-b border-[#707070]",
         padding: "pb-2",
         desc: "Our team of experts have years of experience that allows them to pursue every project with great dedication. We strongly believe there should never be any compromise on quality and your satisfaction.",
-        minHeight: "min-h-[140px]"
+        minHeight: "min-h-[140px]",
       },
       {
         title: "Cost-Effective Packages",
         border: "border-b border-[#707070]",
         padding: "pb-2",
         desc: "Our packages are customized to the preferences of the consumers or businesses who are cost-conscious or who want to save money while at the same time getting the good quality. We usually offer a combination of products and services bundled together at a discounted price. ",
-        minHeight: "min-h-[140px]"
+        minHeight: "min-h-[140px]",
       },
-    ]
+    ],
   },
-]
+];
 const Home = () => {
-
   const schemaWebsite = {
     "@context": "https://schema.org/",
     "@type": "WebSite",
-    "name": "Best Selling Publisher",
-    "url": "https://bestsellingpublisher.com/",
-    "potentialAction": {
+    name: "Best Selling Publisher",
+    url: "https://bestsellingpublisher.com/",
+    potentialAction: {
       "@type": "SearchAction",
-      "target": "{search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  }
+      target: "{search_term_string}",
+      "query-input": "required name=search_term_string",
+    },
+  };
   const schemaCorporation = {
     "@context": "https://schema.org",
     "@type": "Corporation",
-    "name": "Best Selling Publisher",
-    "url": "https://bestsellingpublisher.com/",
-    "logo": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png"
-  }
+    name: "Best Selling Publisher",
+    url: "https://bestsellingpublisher.com/",
+    logo: "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+  };
 
   const schemaProffesionalService = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    "name": "Best Selling Publisher",
-    "image": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
-    "url": "https://bestsellingpublisher.com/",
-    "telephone": "(800) 781-9093",
-    "address": {
+    name: "Best Selling Publisher",
+    image: "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+    url: "https://bestsellingpublisher.com/",
+    telephone: "(800) 781-9093",
+    address: {
       "@type": "PostalAddress",
-      "streetAddress": "1001 Wilshire Boulevard #1176",
-      "addressLocality": "Los Angeles",
-      "addressRegion": "CA",
-      "postalCode": "90017",
-      "addressCountry": "US"
+      streetAddress: "1001 Wilshire Boulevard #1176",
+      addressLocality: "Los Angeles",
+      addressRegion: "CA",
+      postalCode: "90017",
+      addressCountry: "US",
     },
-    "geo": {
+    geo: {
       "@type": "GeoCoordinates",
-      "latitude": 34.0518073,
-      "longitude": -118.2613875
+      latitude: 34.0518073,
+      longitude: -118.2613875,
     },
-    "openingHoursSpecification": {
+    openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "09:00",
-      "closes": "17:00"
-    }
-  }
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "09:00",
+      closes: "17:00",
+    },
+  };
   const schemaProduct = {
     "@context": "https://schema.org/",
     "@type": "Product",
-    "name": "Best Selling Publisher",
-    "image": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
-    "description": "Best Selling Publisher can publish your book in no time as we are the leading book publishers in US",
-    "brand": {
+    name: "Best Selling Publisher",
+    image: "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+    description: "Best Selling Publisher can publish your book in no time as we are the leading book publishers in US",
+    brand: {
       "@type": "Brand",
-      "name": "Best Selling Publisher"
+      name: "Best Selling Publisher",
     },
-    "aggregateRating": {
+    aggregateRating: {
       "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "ratingCount": "1174"
-    }
-  }
+      ratingValue: "4.9",
+      ratingCount: "1174",
+    },
+  };
   return (
     <main>
       <Head>
         <title>Best Selling Publisher | Home Of Professional Book Publishing</title>
         <meta name="description" content="Publishing best sellers has never been easier with us. We are the premium book publishers for hire. Visit our website!" />
+
+        <meta name="DC.title" content="Best Selling Publisher" />
+        <meta name="geo.region" content="US" />
+        <meta name="geo.position" content="39.78373;-100.445882" />
+        <meta name="ICBM" content="39.78373, -100.445882" />
+
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
 
         <meta property="og:url" content="https://bestsellingpublisher.com" />
@@ -183,14 +182,10 @@ const Home = () => {
         <link rel="canonical" href="https://bestsellingpublisher.com" />
 
         {/* Schema */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaWebsite) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaCorporation) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProffesionalService) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProduct) }} />
-
-
-
-
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaWebsite)}} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaCorporation)}} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaProffesionalService)}} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaProduct)}} />
       </Head>
       <MRHero
         title={`Start Selling Your Books Worldwide With Best <br class="mr-xl:block hidden"/> Selling Publisher `}
@@ -201,16 +196,9 @@ const Home = () => {
         counter={true}
       />
       <Enlistedlogo />
-      <Tradition
-        title="Celebrating Your Wins"
-        desc="Discover how your publications can be glorious with Best Selling Publisher."
-      />
+      <Tradition title="Celebrating Your Wins" desc="Discover how your publications can be glorious with Best Selling Publisher." />
       <Audience />
-      <MRQuestioners
-        subTitle="Time Again Folks, Do You Want to Be Our Next Happy Author?"
-        title="Here’s Why We Are The Best Book Publishers For Hire"
-        data={MRQuestionersData}
-      />
+      <MRQuestioners subTitle="Time Again Folks, Do You Want to Be Our Next Happy Author?" title="Here’s Why We Are The Best Book Publishers For Hire" data={MRQuestionersData} />
       <PublishingNewComponent
         subtitle="Becoming the Next Best Seller has"
         title="Never Been Easier with "
@@ -224,7 +212,8 @@ const Home = () => {
         desc="We take pride in providing a remarkable range of services. That said, it’s your moment to make your <br class='mr-lg:block hidden' /> publishing dreams come to life."
         gridsClasses="mr-lg:grid-cols-3 mr-sm:grid-cols-2 grid-cols-1 !gap-x-8"
         cta={true}
-        data={MRCardData} />
+        data={MRCardData}
+      />
       <MRCards
         title={`Highlight Your Work In A Way That The <br class='mr-lg:block hidden' /> Audience Wants More! `}
         desc="Your dreams matter to us. We understand that there is nothing more painful for a writer than to witness their written words go to waste. We know exactly how to publish your work and emphasize it in unimaginable ways that will leave the readers wanting more."
@@ -248,16 +237,11 @@ const Home = () => {
           "Traditional and self-publishing",
           "Publishing on best libraries",
           "Video Book Trailers",
-          "Branding and marketing"
+          "Branding and marketing",
         ]}
         img1="/images/flods/broader.png"
       />
-      <MRContent1
-        subTitle="Would you like to know a secret?"
-        title="Less Is Never More for Us – It Can Be If You Want It to Be!"
-        img1="/images/flods/advice.png"
-        direction="flex-row-reverse"
-      />
+      <MRContent1 subTitle="Would you like to know a secret?" title="Less Is Never More for Us – It Can Be If You Want It to Be!" img1="/images/flods/advice.png" direction="flex-row-reverse" />
       <Plans />
       <SwiperComponents />
       {/* Video Testimonials Section */}
@@ -271,7 +255,7 @@ const Home = () => {
         descB="Now that you have an expert book editing, <br/> and publishing agency. What are you waiting for? "
       />
     </main>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

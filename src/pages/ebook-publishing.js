@@ -117,6 +117,10 @@ const EbookPublishing = () => {
         <meta name="description" content="Love to publish ebooks that sell and earn well? Hire our ebook publishing company and publish your ebook right away." />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
 
+        <meta name="DC.title" content="Ebook Publishing Services" />
+        <meta name="geo.region" content="US" />
+        <meta name="geo.position" content="39.78373;-100.445882" />
+        <meta name="ICBM" content="39.78373, -100.445882" />
         <meta property="og:url" content="https://bestsellingpublisher.com/ebook-publishing" />
         <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
 

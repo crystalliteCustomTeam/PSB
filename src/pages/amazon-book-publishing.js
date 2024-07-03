@@ -127,6 +127,11 @@ const amazonpublishing = () => {
 
         <title>Amazon Book Publishing Services | Best Selling Publisher</title>
         <meta name="description" content="Looking to publish a book on Amazon KDP and earn royalties? Get in touch with our Amazon publishing services and start publishing your best sellers." />
+        <meta name="DC.title" content="Amazon Book Publishing Services" />
+        <meta name="geo.region" content="US" />
+        <meta name="geo.position" content="39.78373;-100.445882" />
+        <meta name="ICBM" content="39.78373, -100.445882" />
+
         <link rel="icon" href="/images/favicon.svg" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 

@@ -83,7 +83,11 @@ const Genre = () => {
         <title>Genre | Best Selling Publisher</title>
         <meta name="description" content="Have you written an amazing fiction book? Or want to publish an autobiography. Explore our wide range of book genres and get your book published today." />
         <meta name="robots" content="index, follow" />
-        
+        <meta name="DC.title" content="Book Genre" />
+        <meta name="geo.region" content="US" />
+        <meta name="geo.position" content="39.78373;-100.445882" />
+        <meta name="ICBM" content="39.78373, -100.445882" />
+
         <meta property="og:url" content="https://bestsellingpublisher.com/genre" />
         <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
 
