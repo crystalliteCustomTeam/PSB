@@ -1,0 +1,139 @@
+// Media
+import Bg from "media/lp-four/secondaryFormBg.png"
+import Banner from "media/lp-four/secondaryFormBanner.png"
+// Next
+import Image from "next/image"
+import { useEffect, useState } from "react"
+import { useRouter } from "next/router"
+// Axios
+import Axios from "axios"
+
+
+export default function SecondaryForm() {
+    const [ip, setIP] = useState('');
+    //creating function to load ip address from the API
+    const getIPData = async () => {
+        const res = await Axios.get('https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8');
+        setIP(res.data);
+    }
+    useEffect(() => {
+        getIPData()
+    }, [])
+
+    const [score, setScore] = useState('Get Free Consultation');
+
+    const router = useRouter();
+    const currentRoute = router.pathname;
+    const [pagenewurl, setPagenewurl] = useState('');
+    useEffect(() => {
+        const pagenewurl = window.location.href;
+        console.log(pagenewurl);
+        setPagenewurl(pagenewurl);
+    }, []);
+
+    const handleSubmit = async (e) => {
+
+        e.preventDefault()
+        var currentdate = new Date().toLocaleString() + ''
+
+        const data = {
+            name: e.target.name.value,
+            email: e.target.email.value,
+            phone: e.target.phone.value,
+            comment: e.target.comments.value,
+            pageUrl: pagenewurl,
+            IP: `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
+            currentdate: currentdate,
+        }
+
+        const JSONdata = JSON.stringify(data)
+
+        setScore('Sending Data');
+        console.log(JSONdata);
+
+
+        fetch('api/email/route', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json, text/plain, */*',
+                'Content-Type': 'application/json'
+            },
+            body: JSONdata
+        }).then((res) => {
+            console.log(`Response received ${res}`)
+            if (res.status === 200) {
+                console.log(`Response Successed ${res}`)
+            }
+        })
+
+        let headersList = {
+            "Accept": "*/*",
+            "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+            "Authorization": "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
+            "Content-Type": "application/json"
+        }
+
+        let bodyContent = JSON.stringify({
+            "IP": `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
+            "Brand": "BEST SELLING PUBLISHER",
+            "Page": `${currentRoute}`,
+            "Date": currentdate,
+            "Time": currentdate,
+            "JSON": JSONdata,
+
+        });
+
+
+
+        await fetch("https://sheetdb.io/api/v1/1ownp6p7a9xpi", {
+            method: "POST",
+            body: bodyContent,
+            headers: headersList
+        });
+
+
+        const { pathname } = router;
+        if (pathname == pathname) {
+            window.location.href = '/ThankYou';
+        }
+
+    }
+    return (
+        <section>
+            <div>
+                <div className="mr-container">
+                    <div className="relative w-[90%] mx-auto mr-lg:w-full z-10 py-[50px] mr-lg:py-0 mr-lg:h-[360px] mr-xl:h-[430px] mr-2xl:h-[480px]">
+                        <Image src={Bg} alt="bg" fill={true} className="-z-10 object-cover object-bottom rounded-[20px]" />
+                        <Image src={Banner} alt="banner" className="hidden mr-lg:block absolute bottom-0 left-0 w-[55%] mr-xl:w-[57%] mr-2xl:w-[55%]" />
+                        <div className="text-white mr-lg:w-[400px] mr-xl:w-[450px] mr-2xl:w-[520px] ml-auto mr-lg:mr-[40px] flex flex-col justify-center h-full mr-xs:px-5 mr-sm:px-10 mr-lg:px-0">
+                            <h2 className="mr-xs:text-[30px] mr-sm:text-[35px] mr-lg:text-[30px] mr-xl:text-[40px] font-semibold leading-tight mb-[15px]">
+                                Let's Turn Your Book Into <br className="hidden mr-lg:block" />
+                                A Best Seller
+                            </h2>
+                            <p className="mr-xs:text-[14px] mr-sm:text-[16px] mr-lg:text-[14px] mr-xl:text-[16px] leading-relaxed font-normal">
+                                Are You Facing Complications Regarding Book Publishing? Break Free From The Challenges Of Book Publishing With The Help
+                            </p>
+                            <form onSubmit={handleSubmit} className="mt-[15px]">
+                                <div className="grid mr-xs:grid-cols-1 mr-sm:grid-cols-2 gap-5 mb-5">
+                                    <div>
+                                        <input type="text" required name="name" placeholder="Full Name *" onkeypress="return /[a-z]/i.test(event.key)" className="h-[45px] w-full bg-[#2CAACE] focus:outline-none px-2 text-[14px] font-normal placeholder:text-white rounded-[6px]" />
+                                    </div>
+                                    <div>
+                                        <input type="email" required name="email" placeholder="Email *" className="h-[45px] w-full bg-[#2CAACE] focus:outline-none px-2 text-[14px] font-normal placeholder:text-white rounded-[6px]" />
+                                    </div>
+                                    <div>
+                                        <input type="tel" minLength="10" maxLength="13" pattern="[0-9]*" name="phone" placeholder="Phone *" required className="h-[45px] w-full bg-[#2CAACE] focus:outline-none px-2 text-[14px] font-normal placeholder:text-white rounded-[6px]" />
+                                    </div>
+                                    <div>
+                                        <input type="text" name="comments" placeholder="Requirements" className="h-[45px] w-full bg-[#2CAACE] focus:outline-none px-2 text-[14px] font-normal placeholder:text-white rounded-[6px]" />
+                                    </div>
+                                </div>
+                                <button type="submit" className="__animatedPing bg-[#2E2E2E] text-white w-full block rounded-md py-3 hover:bg-black transition-all duration-300 ease-in-out">{score}</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    )
+}
