@@ -77,7 +77,7 @@ const Banner = () => {
                                     <div className="image">
                                         <Image src={Book1} alt='PSB' />
                                     </div>
-                                    <div className="songName backdrop-blur-sm bg-[#565656]/80 rounded-[15px] w-[65%] mr-md:w-[45%] mr-lg:w-5/12 py-[14px] px-[20px] absolute bottom-[-1%] mr-md:bottom-[0%] lg:bottom-[16%] mr-2xl:bottom-[31%] left-[13px] mr-md:left-[100px] h-[165px]">
+                                    <div className="songName backdrop-blur-sm bg-[#565656]/80 rounded-[15px] w-[65%] mr-md:w-[45%] mr-lg:w-5/12 py-[14px] px-[20px] absolute bottom-[-1%] mr-md:bottom-[0%] mr-xl:bottom-[20%] mr-2xl:bottom-[30%] mr-3xl:bottom-[16%] left-[13px] mr-md:left-[100px] h-[165px]">
                                         <h3 className='text-[20px] leading-[30px] secondary font-medium text-white'>Separate Ways</h3>
                                         <p className='text-[14px] text-[#8D8D8D] font-[300] secondary'>Carole A Lee</p>
                                         <span className="border-4 border-[#8D8D8D] rounded-[10px] w-full block mt-4 relative before:content-[''] before:absolute before:left-[-10px] before:h-[7px] before:bg-white before:w-[65%] before:top-[-4px] before:rounded-[10px]"></span>
@@ -99,10 +99,10 @@ const Banner = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="circle backdrop-blur-sm bg-[#565656]/80 rounded-full h-[180px] mr-lg:h-[250px] w-[180px] mr-lg:!w-[250px] absolute left-[50%] bottom-[-1%] lg:bottom-[10%] mr-2xl:bottom-[25%]">
+                                    <div className="circle backdrop-blur-sm bg-[#565656]/80 rounded-full h-[180px] mr-lg:h-[250px] w-[180px] mr-lg:!w-[250px] absolute left-[50%] bottom-[-1%] mr-lg:bottom-[10%] mr-xl:bottom-[12%] mr-2xl:bottom-[25%] mr-3xl:bottom-[10%]">
                                         <div className="relative h-full w-full">
                                             <Image src={circle} alt='PSB' className='h-full object-contain w-[85%]' />
-                                            <div className="playIcon absolute top-[50%] translate-y-[-50%] left-[51%] translate-x-[-50%]">
+                                            <div className="playIcon absolute top-[50%] translate-y-[-50%] left-[51%] translate-x-[-50%] cursor-pointer">
                                                 <Image src={play} alt='PSB' />
                                             </div>
                                         </div>
@@ -114,7 +114,7 @@ const Banner = () => {
                                     <div className="image">
                                         <Image src={Book2} alt='PSB' />
                                     </div>
-                                    <div className="songName backdrop-blur-sm bg-[#565656]/80 rounded-[15px] w-[65%] mr-md:w-[45%] mr-lg:w-5/12 py-[14px] px-[20px] absolute bottom-[-1%] mr-md:bottom-[0%] lg:bottom-[16%] mr-2xl:bottom-[31%] left-[13px] mr-md:left-[100px] h-[165px]">
+                                    <div className="songName backdrop-blur-sm bg-[#565656]/80 rounded-[15px] w-[65%] mr-md:w-[45%] mr-lg:w-5/12 py-[14px] px-[20px] absolute bottom-[-1%] mr-md:bottom-[0%] mr-xl:bottom-[20%] mr-2xl:bottom-[30%] mr-3xl:bottom-[16%] left-[13px] mr-md:left-[100px] h-[165px]">
                                         <h3 className='text-[20px] leading-[30px] secondary font-medium text-white'>A Life Story</h3>
                                         <p className='text-[14px] text-[#8D8D8D] font-[300] secondary'>Carole A Lee</p>
                                         <span className="border-4 border-[#8D8D8D] rounded-[10px] w-full block mt-4 relative before:content-[''] before:absolute before:left-[-10px] before:h-[7px] before:bg-white before:w-[65%] before:top-[-4px] before:rounded-[10px]"></span>
@@ -136,10 +136,10 @@ const Banner = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="circle backdrop-blur-sm bg-[#565656]/80 rounded-full h-[180px] mr-lg:h-[250px] w-[180px] mr-lg:!w-[250px] absolute left-[50%] bottom-[-1%] lg:bottom-[10%] mr-2xl:bottom-[25%]">
+                                    <div className="circle backdrop-blur-sm bg-[#565656]/80 rounded-full h-[180px] mr-lg:h-[250px] w-[180px] mr-lg:!w-[250px] absolute left-[50%] bottom-[-1%] mr-lg:bottom-[10%] mr-xl:bottom-[12%] mr-2xl:bottom-[25%] mr-3xl:bottom-[10%]">
                                         <div className="relative h-full w-full">
                                             <Image src={circle} alt='PSB' className='h-full object-contain w-[85%]' />
-                                            <div className="playIcon absolute top-[50%] translate-y-[-50%] left-[51%] translate-x-[-50%]">
+                                            <div className="playIcon absolute top-[50%] translate-y-[-50%] left-[51%] translate-x-[-50%] cursor-pointer">
                                                 <Image src={play} alt='PSB' />
                                             </div>
                                         </div>
@@ -151,7 +151,7 @@ const Banner = () => {
                                     <div className="image">
                                         <Image src={Book3} alt='PSB' />
                                     </div>
-                                    <div className="songName backdrop-blur-sm bg-[#565656]/80 rounded-[15px] w-[65%] mr-md:w-[45%] mr-lg:w-5/12 py-[14px] px-[20px] absolute bottom-[-1%] mr-md:bottom-[0%] lg:bottom-[16%] mr-2xl:bottom-[31%] left-[13px] mr-md:left-[100px] h-[165px]">
+                                    <div className="songName backdrop-blur-sm bg-[#565656]/80 rounded-[15px] w-[65%] mr-md:w-[45%] mr-lg:w-5/12 py-[14px] px-[20px] absolute bottom-[-1%] mr-md:bottom-[0%] mr-xl:bottom-[20%] mr-2xl:bottom-[30%] mr-3xl:bottom-[16%] left-[13px] mr-md:left-[100px] h-[165px]">
                                         <h3 className='text-[20px] leading-[30px] secondary font-medium text-white'>Separate Ways</h3>
                                         <p className='text-[14px] text-[#8D8D8D] font-[300] secondary'>Carole A Lee</p>
                                         <span className="border-4 border-[#8D8D8D] rounded-[10px] w-full block mt-4 relative before:content-[''] before:absolute before:left-[-10px] before:h-[7px] before:bg-white before:w-[65%] before:top-[-4px] before:rounded-[10px]"></span>
@@ -173,10 +173,10 @@ const Banner = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="circle backdrop-blur-sm bg-[#565656]/80 rounded-full h-[180px] mr-lg:h-[250px] w-[180px] mr-lg:!w-[250px] absolute left-[50%] bottom-[-1%] lg:bottom-[10%] mr-2xl:bottom-[25%]">
+                                    <div className="circle backdrop-blur-sm bg-[#565656]/80 rounded-full h-[180px] mr-lg:h-[250px] w-[180px] mr-lg:!w-[250px] absolute left-[50%] bottom-[-1%] mr-lg:bottom-[10%] mr-xl:bottom-[12%] mr-2xl:bottom-[25%] mr-3xl:bottom-[10%]">
                                         <div className="relative h-full w-full">
                                             <Image src={circle} alt='PSB' className='h-full object-contain w-[85%]' />
-                                            <div className="playIcon absolute top-[50%] translate-y-[-50%] left-[51%] translate-x-[-50%]">
+                                            <div className="playIcon absolute top-[50%] translate-y-[-50%] left-[51%] translate-x-[-50%] cursor-pointer">
                                                 <Image src={play} alt='PSB' />
                                             </div>
                                         </div>
@@ -188,7 +188,7 @@ const Banner = () => {
                                     <div className="image">
                                         <Image src={Book1} alt='PSB' />
                                     </div>
-                                    <div className="songName backdrop-blur-sm bg-[#565656]/80 rounded-[15px] w-[65%] mr-md:w-[45%] mr-lg:w-5/12 py-[14px] px-[20px] absolute bottom-[-1%] mr-md:bottom-[0%] lg:bottom-[16%] mr-2xl:bottom-[31%] left-[13px] mr-md:left-[100px] h-[165px]">
+                                    <div className="songName backdrop-blur-sm bg-[#565656]/80 rounded-[15px] w-[65%] mr-md:w-[45%] mr-lg:w-5/12 py-[14px] px-[20px] absolute bottom-[-1%] mr-md:bottom-[0%] mr-xl:bottom-[20%] mr-2xl:bottom-[30%] mr-3xl:bottom-[16%] left-[13px] mr-md:left-[100px] h-[165px]">
                                         <h3 className='text-[20px] leading-[30px] secondary font-medium text-white'>Separate Ways</h3>
                                         <p className='text-[14px] text-[#8D8D8D] font-[300] secondary'>Carole A Lee</p>
                                         <span className="border-4 border-[#8D8D8D] rounded-[10px] w-full block mt-4 relative before:content-[''] before:absolute before:left-[-10px] before:h-[7px] before:bg-white before:w-[65%] before:top-[-4px] before:rounded-[10px]"></span>
@@ -210,10 +210,10 @@ const Banner = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="circle backdrop-blur-sm bg-[#565656]/80 rounded-full h-[180px] mr-lg:h-[250px] w-[180px] mr-lg:!w-[250px] absolute left-[50%] bottom-[-1%] lg:bottom-[10%] mr-2xl:bottom-[25%]">
+                                    <div className="circle backdrop-blur-sm bg-[#565656]/80 rounded-full h-[180px] mr-lg:h-[250px] w-[180px] mr-lg:!w-[250px] absolute left-[50%] bottom-[-1%] mr-lg:bottom-[10%] mr-xl:bottom-[12%] mr-2xl:bottom-[25%] mr-3xl:bottom-[10%]">
                                         <div className="relative h-full w-full">
                                             <Image src={circle} alt='PSB' className='h-full object-contain w-[85%]' />
-                                            <div className="playIcon absolute top-[50%] translate-y-[-50%] left-[51%] translate-x-[-50%]">
+                                            <div className="playIcon absolute top-[50%] translate-y-[-50%] left-[51%] translate-x-[-50%] cursor-pointer">
                                                 <Image src={play} alt='PSB' />
                                             </div>
                                         </div>
@@ -225,7 +225,7 @@ const Banner = () => {
                                     <div className="image">
                                         <Image src={Book4} alt='PSB' />
                                     </div>
-                                    <div className="songName backdrop-blur-sm bg-[#565656]/80 rounded-[15px] w-[65%] mr-md:w-[45%] mr-lg:w-5/12 py-[14px] px-[20px] absolute bottom-[-1%] mr-md:bottom-[0%] lg:bottom-[16%] mr-2xl:bottom-[31%] left-[13px] mr-md:left-[100px] h-[165px]">
+                                    <div className="songName backdrop-blur-sm bg-[#565656]/80 rounded-[15px] w-[65%] mr-md:w-[45%] mr-lg:w-5/12 py-[14px] px-[20px] absolute bottom-[-1%] mr-md:bottom-[0%] mr-xl:bottom-[20%] mr-2xl:bottom-[30%] mr-3xl:bottom-[16%] left-[13px] mr-md:left-[100px] h-[165px]">
                                         <h3 className='text-[20px] leading-[30px] secondary font-medium text-white'>Separate Ways</h3>
                                         <p className='text-[14px] text-[#8D8D8D] font-[300] secondary'>Carole A Lee</p>
                                         <span className="border-4 border-[#8D8D8D] rounded-[10px] w-full block mt-4 relative before:content-[''] before:absolute before:left-[-10px] before:h-[7px] before:bg-white before:w-[65%] before:top-[-4px] before:rounded-[10px]"></span>
@@ -247,10 +247,10 @@ const Banner = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="circle backdrop-blur-sm bg-[#565656]/80 rounded-full h-[180px] mr-lg:h-[250px] w-[180px] mr-lg:!w-[250px] absolute left-[50%] bottom-[-1%] lg:bottom-[10%] mr-2xl:bottom-[25%]">
+                                    <div className="circle backdrop-blur-sm bg-[#565656]/80 rounded-full h-[180px] mr-lg:h-[250px] w-[180px] mr-lg:!w-[250px] absolute left-[50%] bottom-[-1%] mr-lg:bottom-[10%] mr-xl:bottom-[12%] mr-2xl:bottom-[25%] mr-3xl:bottom-[10%]">
                                         <div className="relative h-full w-full">
                                             <Image src={circle} alt='PSB' className='h-full object-contain w-[85%]' />
-                                            <div className="playIcon absolute top-[50%] translate-y-[-50%] left-[51%] translate-x-[-50%]">
+                                            <div className="playIcon absolute top-[50%] translate-y-[-50%] left-[51%] translate-x-[-50%] cursor-pointer">
                                                 <Image src={play} alt='PSB' />
                                             </div>
                                         </div>

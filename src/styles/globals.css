@@ -881,6 +881,22 @@ header a:hover {
 
 /* ===================== Media Queries ===================== */
 
+@media only screen and (max-width: 1920px) {
+
+   .audiobannerSlider .slick-prev,
+   .audiobannerSlider .slick-next {
+      bottom: 7%;
+   }
+}
+
+@media only screen and (max-width: 1600px) {
+
+   .audiobannerSlider .slick-prev,
+   .audiobannerSlider .slick-next {
+      bottom: 17%;
+   }
+}
+
 @media screen and (min-width: 1600px) {
    .mainclass .colo {
       width: 55%;
@@ -889,13 +905,18 @@ header a:hover {
 
 @media screen and (max-width: 1399px) {
 
+   /* .audiobannerSlider .slick-prev,
+   .audiobannerSlider .slick-next {
+      bottom: 20%;
+   } */
+
    .audiobannerSlider .slick-prev,
    .audiobannerSlider .slick-next {
-      bottom: 9%;
+      bottom: 12%;
    }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1299px) {
    .contact {
       display: flex;
       align-items: center;
