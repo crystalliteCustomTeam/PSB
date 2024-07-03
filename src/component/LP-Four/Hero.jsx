@@ -6,7 +6,7 @@ import Logo2 from "media/lp-four/heroLogo2.svg"
 import Image from "next/image"
 // Components
 import { MRCTA } from "@/component"
-import { Hero3dSlider } from "@/component/LP-Four"
+import { Hero3dSlider } from "./"
 
 export default function Hero() {
     return (
