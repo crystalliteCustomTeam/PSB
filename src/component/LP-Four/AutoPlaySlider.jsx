@@ -11,7 +11,7 @@ export default function AutoPlaySlider({ wrapperClasses = " ", options, children
         ClassNames(),
         Autoplay({ delay: 3000, stopOnFocusIn: false, stopOnInteraction: false })
     ]
-    const [emblaRef, emblaApi] = useEmblaCarousel({ dragFree: true, loop: true, ...options })
+    const [emblaRef, emblaApi] = useEmblaCarousel({ dragFree: true, loop: true, ...options}, plugins)
 
     const {
         prevBtnDisabled,

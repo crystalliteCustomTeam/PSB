@@ -27,14 +27,14 @@ export default function App({ Component, pageProps }) {
         {router.pathname == "/lp-one"
           || router.pathname == "/audio-book-lp1"
           || router.pathname == "/book-marketing-company"
-          || router.pathname == "/case-studies"
+          || router.pathname == "/case-studies" || router.pathname == "/lp-three"
           || router.pathname == "/lp-four"
           ? "" : <Headernew />}
         {/* {loadScript ? <Component {...pageProps} /> : <Loader />} */}
         <Component {...pageProps} />
         {router.pathname == "/book-marketing-company"
           || router.pathname == "/audio-book-lp1"
-          || router.pathname == "/lp-four" ? "" : <Footer1 />}
+          || router.pathname == "/lp-four" || router.pathname == "/lp-three" ? "" : <Footer1 />}
       </main>
       {loadScript && (
         <>
