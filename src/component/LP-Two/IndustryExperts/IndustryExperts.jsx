@@ -1,10 +1,14 @@
 import Image from "next/image";
 import Avater from "media/book-marketing-company/avater.png"
-import IndustryExpertsBanner from "media/book-marketing-company/IndustryExpertsBanner.png"
+// import IndustryExpertsBanner from "media/book-marketing-company/IndustryExpertsBanner.png"
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Axios from "axios";
-const IndustryExperts = ({ title, desc, descTwo }) => {
+// Images
+import Email from "media/assets/audiobook/email.svg"
+import Phone from "media/assets/audiobook/phone.svg"
+import Location from "media/assets/audiobook/location.svg"
+const IndustryExperts = ({ title, desc, descTwo, isContact, bannerBg }) => {
     const [ip, setIP] = useState('');
     //creating function to load ip address from the API
     const getIPData = async () => {
@@ -96,13 +100,29 @@ const IndustryExperts = ({ title, desc, descTwo }) => {
     return (
         <section id="contact">
             <div className="font-sans relative z-10 mr-lg:my-16 mr-lg:py-0 mr-md:py-[60px] py-[40px]">
-                <Image src={IndustryExpertsBanner} alt="IndustryExpertsBanner" className="absolute mr-xl:top-[8%] mr-lg:top-[5%] left-0 right-0 bottom-0 -z-10 w-full mr-xl:h-[85%] mr-lg:h-[90%] h-full object-cover" priority={true} />
+                <Image src={bannerBg} alt="IndustryExpertsBanner" className="absolute mr-xl:top-[4%] mr-lg:top-[5%] left-0 right-0 bottom-0 -z-10 w-full mr-lg:h-[92%] h-full object-cover" priority={true} />
                 <div className="mr-container">
                     <div className="grid mr-lg:grid-cols-12 grid-cols-1 mr-lg:gap-x-5 gap-10 items-center">
                         <div className="mr-2xl:col-span-6 mr-lg:col-span-7 text-white mr-sm:text-start text-justify">
                             <h2 className="mr-lg:text-[40px] mr-md:text-[30px] text-[25px] leading-normal font-medium mb-3" dangerouslySetInnerHTML={{ __html: title }} />
                             <p className="mr-md:text-base text-sm leading-normal font-normal pb-5" dangerouslySetInnerHTML={{ __html: desc }} />
-                            <p className="mr-md:text-base text-sm leading-normal font-normal pb-10" dangerouslySetInnerHTML={{ __html: descTwo }} />
+                            {isContact ? null : (<p className="mr-md:text-base text-sm leading-normal font-normal pb-10" dangerouslySetInnerHTML={{ __html: descTwo }} />)}
+                            {isContact ? (
+                                <div className="contacts">
+                                    <a href="mailto:;" className="flex items-center gap-x-4 text-[14px] mr-md:text-[18px] secondary font-[300] mb-5">
+                                        <Image src={Email} alt="PSB" width={20} height={20} />
+                                        <span>info@bestsellingpublisher.com</span>
+                                    </a>
+                                    <a href="telto:;" className="flex items-center gap-x-4 text-[14px] mr-md:text-[18px] secondary font-[300] mb-5">
+                                        <Image src={Phone} alt="PSB" width={20} height={20} />
+                                        <span>(800) 781-9093 (Toll Free)</span>
+                                    </a>
+                                    <a href="javascript:;" className="flex items-center gap-x-4 text-[14px] mr-md:text-[18px] secondary font-[300] mb-5">
+                                        <Image src={Location} alt="PSB" width={20} height={20} />
+                                        <span>1001 Wilshire Boulevard #1176 Los Angeles, CA 90017</span>
+                                    </a>
+                                </div>
+                            ) : null}
                             <div className="flex mr-sm:flex-nowrap flex-wrap mr-sm:gap-x-5 gap-5 items-center pt-10 border-t border-white">
                                 <Image src={Avater} alt="avater" className="block" />
                                 <div>

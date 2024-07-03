@@ -1,9 +1,8 @@
 import Image from 'next/image';
 import { useState, useId } from 'react';
 import Arrows from "media/book-marketing-company/arrows.svg"
-import StreamlinedBooks from "media/book-marketing-company/streamlinedBooks.png"
 import { MRCTA } from '@/component';
-const MarketingProcess = ({ items, title, desc }) => {
+const MarketingProcess = ({ items, title, desc, booksImage }) => {
     const [openIndex, setOpenIndex] = useState(0);
     const toggleAccordion = (index) => {
         setOpenIndex(prevIndex => (prevIndex === index ? null : index));
@@ -13,12 +12,12 @@ const MarketingProcess = ({ items, title, desc }) => {
             <div className='mr-lg:py-[80px] mr-md:py-[60px] py-[40px] font-sans'>
                 <div className='mr-container'>
                     <div className='mr-sm:text-center text-justify mr-xl:w-[75%] mr-md:w-[90%] w-full mx-auto'>
-                        <h2 className='mr-lg:text-[40px] mr-md:text-[30px] text-[25px] leading-normal font-medium mb-3' dangerouslySetInnerHTML={{ __html: title }} />
+                        <h2 className='mr-lg:text-[40px] mr-md:text-[30px] text-[25px] leading-normal font-[600] mb-3' dangerouslySetInnerHTML={{ __html: title }} />
                         <p className='mr-md:text-base text-sm font-normal leading-normal' dangerouslySetInnerHTML={{ __html: desc }} />
                     </div>
                     <div className='grid mr-lg:grid-cols-2 grid-cols-1 items-center mr-lg:gap-x-5 gap-y-5 mr-md:mt-[60px] mt-[40px]'>
                         <div>
-                            <Image src={StreamlinedBooks} alt='StreamlinedBooks' className='block mx-auto' />
+                            <Image src={booksImage} alt='StreamlinedBooks' className='block mx-auto' />
                         </div>
                         <div>
                             {items.map(([title, desc], index) => (

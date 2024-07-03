@@ -2,13 +2,13 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { Axios } from "axios";
-import Banner from "media/book-marketing-company/consultationBanner.png"
-import BannerMockup from "media/book-marketing-company/bannerMockup.png"
-const Consultation = ({title,desc}) => {
+// import Banner from "media/book-marketing-company/consultationBanner.png"
+// import BannerMockup from "media/book-marketing-company/bannerMockup.png"
+const Consultation = ({title,desc, backgroundImage, mockup}) => {
     const [ip, setIP] = useState('');
     const getIPData = async () => {
-        const res = await Axios.get('https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8');
-        setIP(res.data);
+        // const res = await Axios.get('https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8');
+        // setIP(res.data);
     }
     useEffect(() => {
         getIPData()
@@ -95,7 +95,7 @@ const Consultation = ({title,desc}) => {
     return (
         <section>
             <div className="relative z-10 font-sans mr-lg:py-[80px] mr-md:py-[60px] py-[40px]">
-                <Image src={Banner} alt="consultationBanner" className="absolute top-0 left-0 right-0 bottom-0 -z-10 w-full h-full object-cover object-bottom" priority={true}/>
+                <Image src={backgroundImage} alt="consultationBanner" className="absolute top-0 left-0 right-0 bottom-0 -z-10 w-full h-full object-cover object-bottom" priority={true}/>
                 <div className="mr-container">
                     <div className="mr-sm:text-center text-justify text-white mr-xl:w-[75%] mr-md:w-[90%] w-full mx-auto">
                         <h2 className="mr-lg:text-[40px] mr-md:text-[30px] text-[25px] leading-normal font-medium mb-3" dangerouslySetInnerHTML={{__html : title}} />
@@ -112,7 +112,7 @@ const Consultation = ({title,desc}) => {
                             </form>
                         </div>
                         <div>
-                            <Image src={BannerMockup} alt="BannerMockup" className="block ms-auto" />
+                            <Image src={mockup} alt="BannerMockup" className="block ms-auto" />
                         </div>
                     </div>
                 </div>

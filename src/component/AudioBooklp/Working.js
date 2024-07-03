@@ -1,0 +1,73 @@
+import Image from "next/image";
+import BrandLogos1 from "media/assets/audiobook/work-1.svg"
+import BrandLogos2 from "media/assets/audiobook/work-2.svg"
+import BrandLogos3 from "media/assets/audiobook/work-3.svg"
+import BrandLogos4 from "media/assets/audiobook/work-4.svg"
+import BrandLogos5 from "media/assets/audiobook/work-5.svg"
+import BrandLogos6 from "media/assets/audiobook/work-6.svg"
+import BrandLogos7 from "media/assets/audiobook/work-7.svg"
+import BrandLogos8 from "media/assets/audiobook/work-8.svg"
+import BrandLogos9 from "media/assets/audiobook/work-9.svg"
+import BrandLogos10 from "media/assets/audiobook/work-10.svg"
+import BrandLogos11 from "media/assets/audiobook/work-11.svg"
+import BrandLogos12 from "media/assets/audiobook/work-12.svg"
+import { MRCTA, MRCTAGroup } from "@/component";
+const Working = ({ title, desc }) => {
+    return (
+        <section>
+            <div className="mr-lg:pt-[60px] mr-md:pb-[60px] pb-[40px] font-sans">
+                <div className="mr-container">
+                    <div className="grid mr-lg:grid-cols-12 grid-cols-1 mr-xl:gap-x-5 mr-lg:gap-x-6 gap-8">
+                        <div className="mr-2xl:col-span-6 mr-lg:col-span-6 mr-sm:text-start text-justify">
+                            <h2 className="mr-lg:text-[40px] mr-md:text-[30px] text-[25px] leading-normal font-medium mb-3" dangerouslySetInnerHTML={{ __html: title }} />
+                            <p className="mr-md:text-[16px] text-sm leading-normal font-normal mr-lg:pr-[120px] pb-4" dangerouslySetInnerHTML={{ __html: desc }} />
+                            <div className="flex flex-wrap items-center justify-start mr-md:gap-4">
+                                <div className="w-full mr-md:w-max">
+                                    <MRCTA classes="mt-5 w-full !font-medium" animation="__animatedPing" text="Connect With Us!" />
+                                </div>
+                                <div className="w-full mr-md:w-max">
+                                    <MRCTA classes="mt-5 w-full !border !border-black bg-transparent !text-black" animation="__animatedPing" text="Call Us Now!" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="mr-2xl:col-span-6 mr-lg:col-span-6">
+                            {
+                                [
+                                    [
+                                        BrandLogos1,
+                                        BrandLogos2,
+                                        BrandLogos3,
+                                        BrandLogos4
+                                    ],
+                                    [
+                                        BrandLogos5,
+                                        BrandLogos6,
+                                        BrandLogos7,
+                                        BrandLogos8
+                                    ],
+                                    [
+                                        BrandLogos9,
+                                        BrandLogos10,
+                                        BrandLogos11,
+                                        BrandLogos12
+                                    ]
+                                ].map((e, i) => (
+                                    <div key={i} className={`grid relative mr-sm:grid-cols-2 grid-cols-2 items-center gap-x-5 ${i % 2 === 0 ? "mr-lg:w-[calc(100%-0px)]" : ""}`}>
+                                        {
+                                            e.map((logo, index) => (
+                                                <div key={index} className="bg-transparent border border-[#E1E1E1] mr-2xl:px-0 px-2 h-[90px] flex items-center xl:w-[300px] mb-5 rounded-[15px]">
+                                                    <Image src={logo} alt="BrandLogos" className="block mx-auto" />
+                                                </div>
+                                            ))
+                                        }
+                                    </div>
+                                ))
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    )
+}
+export default Working;

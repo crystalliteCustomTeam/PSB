@@ -39,6 +39,16 @@ import Icon18 from "media/book-marketing-company/testimonials/3.png"
 import Icon19 from "media/book-marketing-company/testimonials/4.png"
 import Icon20 from "media/book-marketing-company/testimonials/5.png"
 import Icon21 from "media/book-marketing-company/testimonials/6.png"
+// Stand Out 
+import StandOutBanner from "media/book-marketing-company/standOutBanner.png"
+// Industry Expert 
+import IndustryExpertsBanner from "media/book-marketing-company/IndustryExpertsBanner.png"
+// Marketing Image
+import StreamlinedBooks from "media/book-marketing-company/streamlinedBooks.png"
+// Consultation
+import BannerBg from "media/book-marketing-company/consultationBanner.png"
+import BannerMockup from "media/book-marketing-company/bannerMockup.png"
+
 const BookMarketingCompany = () => {
     {/* Marketing Services Section Content */ }
     const serviceContent = [
@@ -137,6 +147,8 @@ const BookMarketingCompany = () => {
             <Consultation
                 title={`Grab Your Marketing <span class="text-[#40BEE2]">Free Book</span> Strategy Session!`}
                 desc={`Receive a complimentary strategy session to discover personalized marketing insights. Fill out the form below to enhance your book's reach and achieve your marketing goals.`}
+                backgroundImage={BannerBg}
+                mockup={BannerMockup}
             />
             {/* Consultation Section */}
 
@@ -153,6 +165,7 @@ const BookMarketingCompany = () => {
                 title={`Our <span class='text-[#40BEE2]'>Streamlined</span> Book <span class='text-[#40BEE2]'>Marketing</span> Process`}
                 desc={`We make book marketing easy! From start to finish, our process covers everything you need to get your book noticed and reach more readers.`}
                 items={accordionContent}
+                booksImage={StreamlinedBooks}
             />
             {/* MarketingProcess Section */}
 
@@ -168,6 +181,8 @@ const BookMarketingCompany = () => {
             <StandOut
                 title={`Boost Your Book Sales With Us`}
                 desc={`Our expert marketing team crafts custom strategies to skyrocket your visibility & reader engagement. There are no gimmicks, just proven results to get your book noticed and bought.`}
+                bannerBg={StandOutBanner}
+                isContact={false}
             />
             {/* StandOut Section */}
 
@@ -183,6 +198,7 @@ const BookMarketingCompany = () => {
                 title="Insights from <span class='text-[#40BEE2]'>Our Valued</span> Clients"
                 desc="Our clients share their success stories and experiences, highlighting how our customized marketing strategies have helped them achieve their goals and reach a broader audience."
                 data={testimonialData}
+                isBadges={true}
             />
             {/* Testimonials Section */}
 
@@ -191,6 +207,7 @@ const BookMarketingCompany = () => {
                 title={`Time to Play Big with Book Marketing That Dominates!`}
                 desc={`Best Selling Publisher knows how to make your book stand out. Our team of experts uses proven strategies and innovative techniques to boost your book's visibility and sales. We're committed to helping you succeed and reach a wider audience. `}
                 descTwo={`Don’t settle for average results - partner with us and experience the power of top-tier book marketing. Let’s turn your book into a bestseller!`}
+                bannerBg={IndustryExpertsBanner}
             />
             {/* IndustryExperts Section */}
 
