@@ -25,8 +25,8 @@ const AudioBooks = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="books border-t-2 pt-6 pb-6 flex-wrap flex items-center gap-y-10">
-                            <div className="image !w-full mr-md:!w-[35%] mr-lg:!w-[20%] mr-2xl:!w-[17%] !p-0 relative">
+                        <div className="books border-t-2 pt-6 pb-6 flex items-center gap-y-10">
+                            <div className="image !w-full mr-md:!w-[35%] mr-lg:!w-[26%] mr-xl:!w-[20%] mr-2xl:!w-[17%] !p-0 relative">
                                 <Image src={Audio1} alt='PSB' />
                                 <Link href="javascript:;" className="cursor-pointer playIcon absolute right-[20px] top-0 mr-md:hidden block">
                                     <Image src={playIcon} alt='PSB' width={60} height={60} className='ml-auto' />
@@ -50,8 +50,8 @@ const AudioBooks = () => {
                                 <Image src={playIcon} alt='PSB' width={60} height={60} className='ml-auto' />
                             </div>
                         </div>
-                        <div className="books border-t-2 pt-6 pb-6 flex-wrap flex items-center gap-y-10">
-                            <div className="image !w-full mr-md:!w-[35%] mr-lg:!w-[20%] mr-2xl:!w-[17%] !p-0 relative">
+                        <div className="books border-t-2 pt-6 pb-6 flex items-center gap-y-10">
+                            <div className="image !w-full mr-md:!w-[35%] mr-lg:!w-[26%] mr-xl:!w-[20%] mr-2xl:!w-[17%] !p-0 relative">
                                 <Image src={Audio2} alt='PSB' />
                                 <Link href="javascript:;" className="cursor-pointer playIcon absolute right-[20px] top-0 mr-md:hidden block">
                                     <Image src={playIcon} alt='PSB' width={60} height={60} className='ml-auto' />
@@ -75,8 +75,8 @@ const AudioBooks = () => {
                                 <Image src={playIcon} alt='PSB' width={60} height={60} className='ml-auto' />
                             </div>
                         </div>
-                        <div className="books border-t-2 pt-6 pb-6 flex-wrap flex items-center gap-y-10">
-                            <div className="image !w-full mr-md:!w-[35%] mr-lg:!w-[20%] mr-2xl:!w-[17%] !p-0 relative">
+                        <div className="books border-t-2 pt-6 pb-6 flex items-center gap-y-10">
+                            <div className="image !w-full mr-md:!w-[35%] mr-lg:!w-[26%] mr-xl:!w-[20%] mr-2xl:!w-[17%] !p-0 relative">
                                 <Image src={Audio3} alt='PSB' />
                                 <Link href="javascript:;" className="cursor-pointer playIcon absolute right-[20px] top-0 mr-md:hidden block">
                                     <Image src={playIcon} alt='PSB' width={60} height={60} className='ml-auto' />
