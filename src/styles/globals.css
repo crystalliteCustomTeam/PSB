@@ -864,7 +864,7 @@ header a:hover {
 .audiobannerSlider .slick-prev,
 .audiobannerSlider .slick-next {
    top: inherit;
-   bottom: 10%;
+   bottom: 0;
 }
 
 .audiobannerSlider .slick-prev:before {
@@ -879,7 +879,35 @@ header a:hover {
 
 /* Audio Banner Slider End */
 
+/* Audio Banner Start */
+
+/* Audio Banner End */
+
 /* ===================== Media Queries ===================== */
+
+/* @media only screen and (max-width: 1999px) {
+
+   .audiobannerSlider .slick-prev,
+   .audiobannerSlider .slick-next {
+      bottom: 25%;
+   }
+}
+
+@media only screen and (max-width: 1799px) {
+
+   .audiobannerSlider .slick-prev,
+   .audiobannerSlider .slick-next {
+      bottom: 17%;
+   }
+}
+
+@media only screen and (max-width: 1699px) {
+
+   .audiobannerSlider .slick-prev,
+   .audiobannerSlider .slick-next {
+      bottom: 10%;
+   }
+} */
 
 @media screen and (min-width: 1600px) {
    .mainclass .colo {
@@ -887,28 +915,19 @@ header a:hover {
    }
 }
 
-@media only screen and (max-width: 1399px) {
+/* @media only screen and (max-width: 1399px) {
 
    .audiobannerSlider .slick-prev,
    .audiobannerSlider .slick-next {
       top: inherit;
-      bottom: 15%;
+      bottom: 10%;
    }
-}
+} */
 
 @media screen and (max-width: 1299px) {
    .contact {
       display: flex;
       align-items: center;
-   }
-}
-
-@media only screen and (max-width: 1199px) {
-
-   .audiobannerSlider .slick-prev,
-   .audiobannerSlider .slick-next {
-      top: inherit;
-      bottom: 27%;
    }
 }
 

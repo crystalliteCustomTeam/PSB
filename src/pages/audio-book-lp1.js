@@ -8,7 +8,7 @@ import Banner from '@/component/AudioBooklp/Banner'
 import BrandLogos from '@/component/AudioBooklp/BrandLogos'
 import AudioBooks from '@/component/AudioBooklp/AudioBooks'
 import ServiceAudio from '@/component/AudioBooklp/ServiceAudio'
-// Images
+// Images 
 // Testimonial Icons
 import Icon16 from "media/assets/audiobook/trust.png"
 import Icon17 from "media/assets/audiobook/google.png"
@@ -24,6 +24,7 @@ import StreamlinedBooks from "media/assets/audiobook/streamlinedBooks.png"
 import BannerBg from "media/assets/audiobook/consultationBanner.png"
 import BannerMockup from "media/assets/audiobook/bannerMockup.png"
 import Header from '@/component/AudioBooklp/Header'
+import { MRHero } from '@/component'
 
 const autoBookLp = () => {
     {/* MarketingProcess Section Content*/ }
@@ -66,6 +67,14 @@ const autoBookLp = () => {
             <Header />
             {/* Banner Start */}
             <Banner />
+            {/* <MRHero
+                title={`We Provide Stunning Audio Book Production `}
+                desc="Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency."
+                containImg=""
+                logos="assets/audiobook/logos.png"
+                form={false}
+                counter={false}
+            /> */}
             {/* Banner End */}
             {/* Brands Logo Slider Start */}
             <BrandLogos />

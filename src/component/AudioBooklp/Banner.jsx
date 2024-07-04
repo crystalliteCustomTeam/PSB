@@ -29,6 +29,7 @@ const Banner = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
+        fade: true,
         responsive: [
             {
                 breakpoint: 992,
@@ -39,11 +40,11 @@ const Banner = () => {
         ]
     };
     return (
-        <section className="pt-[30px] pb-[30px] mr-md:pb-0 mr-md:pt-[80px] relative mr-lg:bg-[url('/assets/audiobook/banner-bg.png')] bg-cover bg-no-repeat bg-center mr-lg:mt-[-90px]">
+        <section className="pt-[30px] pb-[30px] mr-md:pt-[80px] mr-lg:bg-[url('/assets/audiobook/banner-bg.png')] bg-cover bg-no-repeat bg-center mr-lg:mt-[-90px]">
             <div className="mr-container">
-                <div className="grid grid-cols-12">
+                <div className="grid grid-cols-12 items-center">
                     <div className="col-span-12 mr-lg:col-span-6">
-                        <div className="txt pt-[25px] mr-md:pt-[65px] mr-lg:pt-[100px]">
+                        <div className="txt">
                             <h1 className='text-[35px] mr-lg:text-[40px] mr-xl:text-[50px] leading-[45px] mr-xl:leading-[50px] mr-md:leading-[70px] secondary font-semibold mb-4'>We Provide Stunning <br className='mr-lg:block hidden' /> Audio Book Production</h1>
                             <p className='text-[14px] mr-md:text-[16px] mr-xl:pr-[140px] pb-3'>Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency. </p>
                         </div>
@@ -73,35 +74,35 @@ const Banner = () => {
                     <div className="col-span-12 mr-lg:col-span-6">
                         <Slider {...enlistedslider} className='audiobannerSlider relative mr-lg:pt-[50px]'>
                             <div>
-                                <div className="sliderMain pt-8 lg:pt-0 relative pb-[60px]">
+                                <div className="sliderMain pt-8 lg:pt-0 relative">
                                     <div className="SliderImage w-[80%] ml-auto">
                                         <Image src={Book1} alt='PSB' />
                                     </div>
                                 </div>
                             </div>
                             <div>
-                                <div className="sliderMain pt-8 lg:pt-0 relative pb-[60px]">
+                                <div className="sliderMain pt-8 lg:pt-0 relative">
                                     <div className="SliderImage w-[80%] ml-auto">
                                         <Image src={Book2} alt='PSB' />
                                     </div>
                                 </div>
                             </div>
                             <div>
-                                <div className="sliderMain pt-8 lg:pt-0 relative mr-lg:h-[85vh] mr-3xl:h-[90vh]">
+                                <div className="sliderMain pt-8 lg:pt-0 relative">
                                     <div className="SliderImage w-[80%] ml-auto">
                                         <Image src={Book3} alt='PSB' />
                                     </div>
                                 </div>
                             </div>
                             <div>
-                                <div className="sliderMain pt-8 lg:pt-0 relative pb-[60px]">
+                                <div className="sliderMain pt-8 lg:pt-0 relative">
                                     <div className="SliderImage w-[80%] ml-auto">
                                         <Image src={Book1} alt='PSB' />
                                     </div>
                                 </div>
                             </div>
                             <div>
-                                <div className="sliderMain pt-8 lg:pt-0 relative pb-[60px]">
+                                <div className="sliderMain pt-8 lg:pt-0 relative">
                                     <div className="SliderImage w-[80%] ml-auto">
                                         <Image src={Book4} alt='PSB' />
                                     </div>
