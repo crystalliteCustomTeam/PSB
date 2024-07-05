@@ -19,7 +19,7 @@ import Image from "next/image"
 export default function CaseStudies() {
     return (
         <section>
-            <div>
+            <div className="py-[80px]">
                 <div className="text-center text-black">
                     <h2 className="text-[30px] mr-md:text-[40px] font-semibold leading-snug mb-[15px]">
                         Our Casestudy's
@@ -28,7 +28,7 @@ export default function CaseStudies() {
                         Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced
                     </p>
                 </div>
-                <AutoPlaySlider wrapperClasses="mt-[50px] videos3dSlider" arrowsCss="grayscale">
+                <AutoPlaySlider wrapperClasses="mt-[50px]">
                     {
                         [
                             {

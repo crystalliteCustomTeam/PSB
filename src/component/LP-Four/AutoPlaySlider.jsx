@@ -6,12 +6,12 @@ import Autoplay from "embla-carousel-autoplay"
 // Components
 import { PrevButton, NextButton, usePrevNextButtons } from "./SliderArrows"
 
-export default function AutoPlaySlider({ wrapperClasses = " ", options, children, arrows = true }) {
+export default function AutoPlaySlider({ wrapperClasses = " ", options, children, arrows = true, arrowsCss = " " }) {
     const plugins = [
         ClassNames(),
         Autoplay({ delay: 3000, stopOnFocusIn: false, stopOnInteraction: false })
     ]
-    const [emblaRef, emblaApi] = useEmblaCarousel({ dragFree: true, loop: true, ...options}, plugins)
+    const [emblaRef, emblaApi] = useEmblaCarousel({ dragFree: true, loop: true, ...options }, plugins)
 
     const {
         prevBtnDisabled,
@@ -27,9 +27,9 @@ export default function AutoPlaySlider({ wrapperClasses = " ", options, children
                     {children}
                 </div>
             </div>
-            {arrows && <div className="flex gap-10 justify-center mt-10">
-                <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
-                <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
+            {arrows && <div className="flex gap-x-24 justify-center mt-10">
+                <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} css={arrowsCss} />
+                <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} css={arrowsCss} />
             </div>}
         </>
     )
