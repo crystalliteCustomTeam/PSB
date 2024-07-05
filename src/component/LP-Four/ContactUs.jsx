@@ -1,16 +1,14 @@
-import React from 'react'
-import Image from 'next/image';
-import { MRCTA } from "@/component";
+import Image from "next/image";
+// Images
+import Call from "media/book-illustrations/callIconBlue.svg"
+import Email from "media/book-illustrations/email.svg"
+import Location from "media/book-illustrations/location.svg"
+import Avater from "media/book-illustrations/avater.png"
+import formParticle from "media/assets/audiobook/form-particle.png"
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { Axios } from "axios";
-// Images
-import formParticle from "media/assets/audiobook/form-particle.png"
-
-const MarketBook = ({
-    title = "How We Market Your Book?",
-    desc = "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency. Cost-effectiveness. Consumer-centric—the crudity of book marketing, delivered! Simplifying the harsh process of book marketing. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency. Cost-effectiveness. Consumer-centric—the crudity of book marketing, delivered! Simplifying the harsh process of book marketing."
-}) => {
+const ContactUs = () => {
     const [ip, setIP] = useState('');
     //creating function to load ip address from the API
     const getIPData = async () => {
@@ -100,51 +98,39 @@ const MarketBook = ({
 
     }
     return (
-        <section className='py-[50px] mr-lg:py-[80px] '>
-            <div className='mr-container'>
-                <div className='grid grid-cols-12 items-center gap-y-5'>
-                    <div className='col-span-12 mr-lg:col-span-6'>
-                        <div className="txt">
-                            <h2 className='text-[25px] mr-md:text-[30px] mr-lg:text-[40px] font-[600] mr-md:leading-[70px] secondary pb-2'>{title}</h2>
-                            <p className='text-[14px] mr-md:text-[16px] leading-[26px] font-[300] secondary pb-4 mr-xl:mr-5 mr-xl:pr-5'>{desc}</p>
-                            <div className='pb-3'>
-                                <div className="w-full mr-md:w-max">
-                                    <MRCTA classes="mt-5 w-full !font-medium secondary" animation="__animatedPing" text="Book An Appointment" />
+        <section>
+            <div className="relative z-10 mr-md:py-[60px] py-[40px] bg-[#282828]">
+                <div className="mr-container">
+                    <div className="grid grid-cols-12 mr-lg:gap-x-5 gap-5 items-center">
+                        <div className="mr-xl:col-span-7 mr-lg:col-span-6 col-span-12 text-white">
+                            <h2 className="mr-lg:text-[40px] mr-md:text-[30px] text-[25px] leading-tight font-semibold mb-3">Published 10,000+ Great Books
+                            <br /> Out There! Yours Is Next!</h2>
+                            <p className="mr-md:text-base text-sm leading-normal font-normal">Best Selling Publisher stands as the pinnacle of excellence in the world of publishing services, <br /> renowned for its unparalleled commitment to author success. With a dedicated team of industry <br /> experts and innovative resources at their disposal, Best Selling Publisher goes above and beyond.</p>
+                            <p className="mr-md:text-base text-sm leading-normal font-normal mt-4">Best Selling Publisher stands as the pinnacle of excellence in the world of publishing services, <br /> renowned for its unparalleled commitment to author success. With a dedicated team of industry <br /> experts and innovative resources at their disposal, Best Selling Publisher goes above and beyond.</p>
+                            <div className="my-8">
+                                <a href="mailto:info@bestsellingpublisher.com" className="flex items-center gap-x-3 mb-3">
+                                    <span className="block"><Image src={Email} alt="icons" width={20} height={20}/></span>
+                                    <span className="block">info@bestsellingpublisher.com</span>
+                                </a>
+                                <a href="tel:8007819093" className="flex items-center gap-x-3 mb-3">
+                                    <span className="block"><Image src={Call} alt="icons" width={20} height={20}/></span>
+                                    <span className="block">(800) 781-9093 (Toll Free)</span>
+                                </a>
+                                <a href="https://maps.app.goo.gl/DxyYMqYqyHg31jo39" target="_blank" className="flex items-center gap-x-3 mb-3">
+                                    <span className="block"><Image src={Location} alt="icons" width={20} height={20}/></span>
+                                    <span className="block">1001 Wilshire Boulevard #1176 Los Angeles, CA 90017</span>
+                                </a>
+                            </div>
+                            <div className="flex mr-sm:flex-nowrap flex-wrap mr-sm:w-max mr-sm:gap-x-5 gap-5 items-center pt-6 border-t border-[#8A8A8A]">
+                                <Image src={Avater} alt="avater" className="block" />
+                                <div>
+                                    <h5 className="text-[#40BEE2] mr-md:text-[20px] text-lg leading-normal font-bold mb-3">Your Book Deserves To Be Written!</h5>
+                                    <p className="text-base leading-normal font-normal">Now that you have an expert book writing, editing, <br className="mr-sm:block hidden" />
+                                        and publishing agency. What are you waiting for?</p>
                                 </div>
                             </div>
-                            <div className='flex flex-wrap align-items-center gap-y-4 gap-x-3 mr-md:gap-x-0 justify-between mt-5 pt-5'>
-                                <div className="flex align-items-center gap-x-2 mr-md:gap-x-4">
-                                    <div className="number">
-                                        <span className='mr-md:text-[25px] mr-lg:text-[40px] mr-lg:leading-[48px] font-bold secondary'>10</span>
-                                    </div>
-                                    <div className="txt">
-                                        <p className='text-[#A2A2A2] text-[14px] mr-md:text-[16px] leading-[25px] secondary font-[300]'>Years Of <br className='mr-lg:block hidden' />
-                                            Experience</p>
-                                    </div>
-                                </div>
-                                <div className="flex align-items-center gap-x-2 mr-md:gap-x-4 relative mr-xl:before:content-[''] mr-xl:before:absolute mr-xl:before:bg-[#6DDEFF] mr-xl:before:w-[15px] mr-xl:before:h-[15px] mr-xl:before:rounded-full mr-xl:before:border-4 mr-xl:before:border-[#40BEE2] mr-xl:before:top-[50%] mr-xl:before:translate-y-[-50%] mr-xl:before:left-[-25%]">
-                                    <div className="number">
-                                        <span className='mr-md:text-[25px] mr-lg:text-[40px] mr-lg:leading-[48px] font-bold secondary'>474</span>
-                                    </div>
-                                    <div className="txt">
-                                        <p className='text-[#A2A2A2] text-[14px] mr-md:text-[16px] leading-[25px] secondary font-[300]'>Published <br className='mr-lg:block hidden' />
-                                            Last 12 Months</p>
-                                    </div>
-                                </div>
-                                <div className="flex align-items-center gap-x-2 mr-md:gap-x-4 relative mr-xl:before:content-[''] mr-xl:before:absolute mr-xl:before:bg-[#6DDEFF] mr-xl:before:w-[15px] mr-xl:before:h-[15px] mr-xl:before:rounded-full mr-xl:before:border-4 mr-xl:before:border-[#40BEE2] mr-xl:before:top-[50%] mr-xl:before:translate-y-[-50%] mr-xl:before:left-[-40%]">
-                                    <div className="number">
-                                        <span className='mr-md:text-[25px] mr-lg:text-[40px] mr-lg:leading-[48px] font-bold secondary'>39</span>
-                                    </div>
-                                    <div className="txt">
-                                        <p className='text-[#A2A2A2] text-[14px] mr-md:text-[16px] leading-[25px] secondary font-[300]'>Published <br className='mr-lg:block hidden' />
-                                            Last Month</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="mr-lg:col-span-1"></div>
-                    <div className='col-span-12 mr-lg:col-span-5'>
+                        </div> 
+                        <div className="mr-xl:col-span-5 mr-lg:col-span-6 col-span-12 before:top-0 before:shadow-[-30px_0px_5px_-4px_rgba(0,0,0,0.3)] before:absolute before:w-full before:h-full before:right-0 before:bg-[#242424] before:-z-10">
                         <div className="form relative overflow-hidden bg-white shadow-2xl py-[20px] mr-md:py-[40px] pl-[45px] pr-[20px] mr-md:pr-[35px] z-0">
                             <div className="image absolute top-0 left-[-32px]">
                                 <Image src={formParticle} alt='PSB' />
@@ -158,12 +144,12 @@ const MarketBook = ({
                                 <textarea placeholder='Message' className='text-[#000000] text-[14px] secondary leading-[20px] bg-[#F3F3F3] h-[116px] w-full rounded-[6px] px-4 py-2 resize-none mb-4 focus:outline-0'></textarea>
                                 <button className='w-full h-[45px] rounded-[6px] bg-[#2E2E2E] text-white secondary font-[300] leading-[20px]'>{score}</button>
                             </form>
-                        </div>
+                        </div>  
+                        </div> 
                     </div>
                 </div>
             </div>
         </section>
     )
 }
-
-export default MarketBook
+export default ContactUs;

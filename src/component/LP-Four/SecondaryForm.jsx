@@ -100,7 +100,7 @@ export default function SecondaryForm() {
     }
     return (
         <section>
-            <div>
+            <div className="mr-lg:py-[80px] mr-md:py-[60px] py-[40px]">
                 <div className="mr-container">
                     <div className="relative w-[90%] mx-auto mr-lg:w-full z-10 py-[50px] mr-lg:py-0 mr-lg:h-[360px] mr-xl:h-[430px] mr-2xl:h-[480px]">
                         <Image src={Bg} alt="bg" fill={true} className="-z-10 object-cover object-bottom rounded-[20px]" />

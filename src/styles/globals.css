@@ -1247,6 +1247,27 @@ header .group:hover .group-hover\:visible {
    background-color: #000;
 }
 
+.__publishingService .is-snapped .__card {
+   background-color: #40BEE2;
+   top: -50px;
+}
+
+.__publishingService .is-snapped .__card span {
+   background-color: #000000;
+}
+
+.__publishingService .is-snapped .__card h4 {
+   color: white;
+}
+
+.__publishingService .is-snapped .__card p {
+   color: white;
+}
+
+.__publishingService .is-snapped .__card a {
+   background-color: #000;
+}
+
 @media screen and (max-width: 768px) {
    .__bookMarketingServices .embla__slide.is-snapped .__card {
       top: 0px;
