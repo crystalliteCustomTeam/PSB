@@ -67,14 +67,6 @@ const autoBookLp = () => {
             <Header />
             {/* Banner Start */}
             <Banner />
-            {/* <MRHero
-                title={`We Provide Stunning Audio Book Production `}
-                desc="Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency."
-                containImg=""
-                logos="assets/audiobook/logos.png"
-                form={false}
-                counter={false}
-            /> */}
             {/* Banner End */}
             {/* Brands Logo Slider Start */}
             <BrandLogos />
