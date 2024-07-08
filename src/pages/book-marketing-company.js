@@ -120,7 +120,7 @@ const BookMarketingCompany = () => {
             <Header />
             {/* Hero Section */}
             <Hero
-                title={`<span class="text-[#40BEE2]"> Professional</span> Online <span class="text-[#40BEE2]">Book</span> <br class="mr-lg:block hidden" /> Marketing Company`}
+                title={`Our <span class="text-[#40BEE2]"> Book Marketing Company</span> Helps Authors Become <span class="text-[#40BEE2]">Bestsellers</span>`}
                 desc={`We help you break through the noise by connecting your book with ideal readers. Our strategic book marketing services drive sustainable book sales, boost your book’s visibility, and ensure lasting success for your author brand!`}
             />
             {/* Hero Section */}
@@ -145,7 +145,7 @@ const BookMarketingCompany = () => {
 
             {/* Consultation Section */}
             <Consultation
-                title={`Grab Your Marketing <span class="text-[#40BEE2]">Free Book</span> Strategy Session!`}
+                title={`Grab Your Free <span class="text-[#40BEE2]">Book Marketing</span> Strategy Session!`}
                 desc={`Receive a complimentary strategy session to discover personalized marketing insights. Fill out the form below to enhance your book's reach and achieve your marketing goals.`}
                 backgroundImage={BannerBg}
                 mockup={BannerMockup}
