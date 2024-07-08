@@ -33,7 +33,7 @@ const MRHero = ({
                                     />
                             }
                             {counter && <MRHeroCounter />}
-                            {logos && <Image src={logos} className="!mt-4" alt="bestsellingpublisher"  />}
+                            {logos && <Image src={logos} className="!mt-4 pt-5" alt="bestsellingpublisher"  />}
                         </div>
                         {containImg && <div className="mr-md:col-span-5 mr-lg:col-span-6">
                             <Image src={containImg}  className="block m-auto" alt="bestsellingpublisher" priority/>

@@ -853,18 +853,18 @@ header a:hover {
 /* Audio Banner Slider Start */
 
 .audiobannerSlider .slick-prev {
-   left: 20%;
+   left: 30%;
    z-index: 9;
 }
 
 .audiobannerSlider .slick-next {
-   right: 50%;
+   right: 45%;
 }
 
 .audiobannerSlider .slick-prev,
 .audiobannerSlider .slick-next {
    top: inherit;
-   bottom: 17%;
+   bottom: 0;
 }
 
 .audiobannerSlider .slick-prev:before {
@@ -879,7 +879,35 @@ header a:hover {
 
 /* Audio Banner Slider End */
 
+/* Audio Banner Start */
+
+/* Audio Banner End */
+
 /* ===================== Media Queries ===================== */
+
+/* @media only screen and (max-width: 1999px) {
+
+   .audiobannerSlider .slick-prev,
+   .audiobannerSlider .slick-next {
+      bottom: 25%;
+   }
+}
+
+@media only screen and (max-width: 1799px) {
+
+   .audiobannerSlider .slick-prev,
+   .audiobannerSlider .slick-next {
+      bottom: 17%;
+   }
+}
+
+@media only screen and (max-width: 1699px) {
+
+   .audiobannerSlider .slick-prev,
+   .audiobannerSlider .slick-next {
+      bottom: 10%;
+   }
+} */
 
 @media screen and (min-width: 1600px) {
    .mainclass .colo {
@@ -887,20 +915,22 @@ header a:hover {
    }
 }
 
-@media screen and (max-width: 1399px) {
+/* @media only screen and (max-width: 1399px) {
 
    .audiobannerSlider .slick-prev,
    .audiobannerSlider .slick-next {
-      bottom: 9%;
+      top: inherit;
+      bottom: 10%;
    }
-}
+} */
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1299px) {
    .contact {
       display: flex;
       align-items: center;
    }
 }
+
 
 @media screen and (max-width: 991px) {
    .font-13 {

@@ -168,6 +168,10 @@ const WebCopywritingServices = () => {
         <title>Web Copywriting Services | Best Selling Publisher</title>
         <meta name="description" content="At Best Selling Publisher, we write the best web copies with our web copywriting services. Hire the best web copywriters by contacting us today!" />
         <meta name="robots" content="index, follow" />
+        <meta name="DC.title" content="Web Copywriting Services" />
+        <meta name="geo.region" content="US" />
+        <meta name="geo.position" content="39.78373;-100.445882" />
+        <meta name="ICBM" content="39.78373, -100.445882" />
         <meta property="og:url" content="https://bestsellingpublisher.com/web-copywriting-services" />
         <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
 

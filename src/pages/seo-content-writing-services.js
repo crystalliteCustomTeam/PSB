@@ -173,6 +173,10 @@ const SEOContentWritingServices = () => {
         <title>SEO Content Writing Services | Best Selling Publisher</title>
         <meta name="description" content="Best Selling Publisher offers SEO content writing services tailored to your needs. Start optimizing your website’s SEO by hiring our SEO content writers." />
         <meta name="robots" content="index, follow"/>
+        <meta name="DC.title" content="SEO Content Writing Services" />
+        <meta name="geo.region" content="US" />
+        <meta name="geo.position" content="39.78373;-100.445882" />
+        <meta name="ICBM" content="39.78373, -100.445882" />
         <meta property="og:url" content="https://bestsellingpublisher.com/seo-content-writing-services" />
         <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
 

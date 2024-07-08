@@ -53,7 +53,7 @@ const Header = () => {
     return (
         <>
             {/* <TOPHEADER1 /> */}
-            <div className={`font-secondary px-0 sm:!px-2 xs:!px-2 pt-0 transition-all duration-1000 ease-in-out ${isSticky ? 'fixed top-0 left-0 right-0 z-50 shadow-lg bg-white' : ' bg-transparent'} ${isIdle ? '!-top-full' : ' '}`}>
+            <div className={`font-secondary px-0 sm:!px-2 xs:!px-2 pt-0 transition-all duration-1000 ease-in-out ${isIdle ? '!-top-full' : ' '}`}>
                 <header className="bg-transparent relative z-30 py-5">
                     <div className="mr-container">
                         <div className="items-center justify-between gap-x-4 flex grid-cols-2 grid-rows-1">

@@ -112,7 +112,7 @@ const MarketBook = ({
                                     <MRCTA classes="mt-5 w-full !font-medium secondary" animation="__animatedPing" text="Book An Appointment" />
                                 </div>
                             </div>
-                            <div className='flex flex-wrap align-items-center gap-y-4 gap-x-3 mr-md:gap-x-0 justify-center mr-lg:justify-between mt-5 pt-5'>
+                            <div className='flex flex-wrap align-items-center gap-y-4 gap-x-3 mr-md:gap-x-0 justify-between mt-5 pt-5'>
                                 <div className="flex align-items-center gap-x-2 mr-md:gap-x-4">
                                     <div className="number">
                                         <span className='mr-md:text-[25px] mr-lg:text-[40px] mr-lg:leading-[48px] font-bold secondary'>10</span>
@@ -122,7 +122,7 @@ const MarketBook = ({
                                             Experience</p>
                                     </div>
                                 </div>
-                                <div className="flex align-items-center gap-x-2 mr-md:gap-x-4 relative mr-md:before:content-[''] mr-md:before:absolute mr-md:before:bg-[#6DDEFF] mr-md:before:w-[15px] mr-md:before:h-[15px] mr-md:before:rounded-full mr-md:before:border-4 mr-md:before:border-[#40BEE2] mr-md:before:top-[50%] mr-md:before:translate-y-[-50%] mr-md:before:left-[-25%]">
+                                <div className="flex align-items-center gap-x-2 mr-md:gap-x-4 relative mr-xl:before:content-[''] mr-xl:before:absolute mr-xl:before:bg-[#6DDEFF] mr-xl:before:w-[15px] mr-xl:before:h-[15px] mr-xl:before:rounded-full mr-xl:before:border-4 mr-xl:before:border-[#40BEE2] mr-xl:before:top-[50%] mr-xl:before:translate-y-[-50%] mr-xl:before:left-[-25%]">
                                     <div className="number">
                                         <span className='mr-md:text-[25px] mr-lg:text-[40px] mr-lg:leading-[48px] font-bold secondary'>474</span>
                                     </div>
@@ -131,7 +131,7 @@ const MarketBook = ({
                                             Last 12 Months</p>
                                     </div>
                                 </div>
-                                <div className="flex align-items-center gap-x-2 mr-md:gap-x-4 relative mr-md:before:content-[''] mr-md:before:absolute mr-md:before:bg-[#6DDEFF] mr-md:before:w-[15px] mr-md:before:h-[15px] mr-md:before:rounded-full mr-md:before:border-4 mr-md:before:border-[#40BEE2] mr-md:before:top-[50%] mr-md:before:translate-y-[-50%] mr-md:before:left-[-40%]">
+                                <div className="flex align-items-center gap-x-2 mr-md:gap-x-4 relative mr-xl:before:content-[''] mr-xl:before:absolute mr-xl:before:bg-[#6DDEFF] mr-xl:before:w-[15px] mr-xl:before:h-[15px] mr-xl:before:rounded-full mr-xl:before:border-4 mr-xl:before:border-[#40BEE2] mr-xl:before:top-[50%] mr-xl:before:translate-y-[-50%] mr-xl:before:left-[-40%]">
                                     <div className="number">
                                         <span className='mr-md:text-[25px] mr-lg:text-[40px] mr-lg:leading-[48px] font-bold secondary'>39</span>
                                     </div>
