@@ -82,11 +82,11 @@ const Header = () => {
                     ['About', '/about-us'],
                   ].map(([title, url]) => (
                     <li className='mr-lg:!mb-0 !mb-3'>
-                      <Link href={url} className={`list mr-2xl:!text-white mr-xl:!text-white  mr-lg:!text-white md:!text-white sm:!text-white text-white xs:!text-white mr-2xl:text-[15px] mr-xl:text-[15px] mr-lg:text-xl mr-md:text-xl mr-sm:text-xl xs:text-[20px] font-[400]`}>{title}</Link>
+                      <Link href={url} className={`list mr-2xl:!text-white mr-xl:!text-white  mr-lg:!text-white md:!text-white sm:!text-white text-white xs:!text-white mr-2xl:text-[15px] mr-xl:text-[15px] mr-lg:text-xl mr-md:text-xl mr-sm:text-xl xs:text-[20px] font-[500]`}>{title}</Link>
                     </li>
                   ))}
-                  <li className="relative mr-lg:!mb-0 !mb-3 group py-0 hover:text-[#00C0E4] mr-2xl:text-[15px] mr-xl:text-[15px] mr-lg:text-xl mr-md:text-xl mr-sm:text-xl xs:text-[20px] font-[400] z-50">
-                    <button className="hover:opacity-50 cursor-default mr-2xl:!text-white mr-xl:!text-white  mr-lg:!text-white text-white md:!text-white sm:!text-white xs:!text-white font-[400]" aria-haspopup="true">Writing Services
+                  <li className="relative mr-lg:!mb-0 !mb-3 group py-0 hover:text-[#00C0E4] mr-2xl:text-[15px] mr-xl:text-[15px] mr-lg:text-xl mr-md:text-xl mr-sm:text-xl xs:text-[20px] font-[500] z-50">
+                    <button className="hover:opacity-50 cursor-default mr-2xl:!text-white mr-xl:!text-white  mr-lg:!text-white text-white md:!text-white sm:!text-white xs:!text-white font-[500]" aria-haspopup="true">Writing Services
                       <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 ml-2 -mr-1 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor" >
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" ></path>
                       </svg>
@@ -220,7 +220,7 @@ const Header = () => {
                     ['Contact Us', '/contact-us'],
                   ].map(([title, url]) => (
                     <li className='mr-lg:!mb-0 !mb-3'>
-                      <Link href={url} className={`list mr-2xl:!text-white mr-xl:!text-white  mr-lg:!text-white md:!text-white sm:!text-white text-white xs:!text-white mr-2xl:text-[15px] mr-xl:text-[15px] mr-lg:text-xl mr-md:text-xl mr-sm:text-xl xs:text-[20px] font-[400]`}>{title}</Link>
+                      <Link href={url} className={`list mr-2xl:!text-white mr-xl:!text-white  mr-lg:!text-white md:!text-white sm:!text-white text-white xs:!text-white mr-2xl:text-[15px] mr-xl:text-[15px] mr-lg:text-xl mr-md:text-xl mr-sm:text-xl xs:text-[20px] font-[500]`}>{title}</Link>
                     </li>
                   ))}
                   <li className='mr-lg:!mb-0 !mb-3 block sm:hidden xs:hidden'>

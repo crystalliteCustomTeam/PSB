@@ -8,7 +8,7 @@ import Banner from '@/component/AudioBooklp/Banner'
 import BrandLogos from '@/component/AudioBooklp/BrandLogos'
 import AudioBooks from '@/component/AudioBooklp/AudioBooks'
 import ServiceAudio from '@/component/AudioBooklp/ServiceAudio'
-// Images
+// Images 
 // Testimonial Icons
 import Icon16 from "media/assets/audiobook/trust.png"
 import Icon17 from "media/assets/audiobook/google.png"
@@ -59,7 +59,7 @@ const autoBookLp = () => {
             {/* Head */}
             <Head>
                 <meta name="robots" content="noindex" />
-                <title>Top Book Marketing Company - Best Selling Publisher</title>
+                <title>Top Audio Books - Best Selling Publisher</title>
                 <meta name="description" content="Partner with Best Selling Publisher, an expert book marketing company, offering customized strategies to maximize your book's visibility and drive sales!" />
             </Head>
             {/* Head */}

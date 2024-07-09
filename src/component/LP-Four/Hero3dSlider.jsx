@@ -32,7 +32,7 @@ export default function Hero3dSlider() {
                     }
                 }
                 .swiper {
-                    padding-bottom: 65px;
+                    padding-bottom: 105px;
                 }
                 .swiper-button-next {
                     top: inherit;

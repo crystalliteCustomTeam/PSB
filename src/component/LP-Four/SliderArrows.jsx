@@ -41,27 +41,27 @@ export const usePrevNextButtons = (emblaApi) => {
 }
 
 export const PrevButton = (props) => {
-    const { children, ...restProps } = props
+    const { children,css ,...restProps } = props
 
     return (
         <button
             type="button"
             {...restProps}
         >
-            <Image src={PrevArrow} alt="PrevArrow" />
+            <Image src={PrevArrow} alt="PrevArrow" className={css}/>
         </button>
     )
 }
 
 export const NextButton = (props) => {
-    const { children, ...restProps } = props
+    const { children,css ,...restProps } = props
 
     return (
         <button
             type="button"
             {...restProps}
         >
-            <Image src={NextArrow} alt="NextArrow" />
+            <Image src={NextArrow} alt="NextArrow" className={css}/>
         </button>
     )
 }

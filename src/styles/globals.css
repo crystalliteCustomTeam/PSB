@@ -205,6 +205,10 @@
 
 
 /* conpoentcss */
+.songDetails {
+   width: max-content;
+}
+
 .newtown:hover h5 {
    color: #40BEE2;
 }
@@ -853,18 +857,18 @@ header a:hover {
 /* Audio Banner Slider Start */
 
 .audiobannerSlider .slick-prev {
-   left: 20%;
+   left: 22%;
    z-index: 9;
 }
 
 .audiobannerSlider .slick-next {
-   right: 50%;
+   right: 52%;
 }
 
 .audiobannerSlider .slick-prev,
 .audiobannerSlider .slick-next {
    top: inherit;
-   bottom: 17%;
+   bottom: 40px;
 }
 
 .audiobannerSlider .slick-prev:before {
@@ -879,7 +883,35 @@ header a:hover {
 
 /* Audio Banner Slider End */
 
+/* Audio Banner Start */
+
+/* Audio Banner End */
+
 /* ===================== Media Queries ===================== */
+
+/* @media only screen and (max-width: 1999px) {
+
+   .audiobannerSlider .slick-prev,
+   .audiobannerSlider .slick-next {
+      bottom: 25%;
+   }
+}
+
+@media only screen and (max-width: 1799px) {
+
+   .audiobannerSlider .slick-prev,
+   .audiobannerSlider .slick-next {
+      bottom: 17%;
+   }
+}
+
+@media only screen and (max-width: 1699px) {
+
+   .audiobannerSlider .slick-prev,
+   .audiobannerSlider .slick-next {
+      bottom: 10%;
+   }
+} */
 
 @media screen and (min-width: 1600px) {
    .mainclass .colo {
@@ -887,20 +919,22 @@ header a:hover {
    }
 }
 
-@media screen and (max-width: 1399px) {
+/* @media only screen and (max-width: 1399px) {
 
    .audiobannerSlider .slick-prev,
    .audiobannerSlider .slick-next {
-      bottom: 9%;
+      top: inherit;
+      bottom: 10%;
    }
-}
+} */
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1299px) {
    .contact {
       display: flex;
       align-items: center;
    }
 }
+
 
 @media screen and (max-width: 991px) {
    .font-13 {
@@ -1214,6 +1248,27 @@ header .group:hover .group-hover\:visible {
 }
 
 .__bookMarketingServices .embla__slide.is-snapped .__card a {
+   background-color: #000;
+}
+
+.__publishingService .is-snapped .__card {
+   background-color: #40BEE2;
+   top: -50px;
+}
+
+.__publishingService .is-snapped .__card span {
+   background-color: #000000;
+}
+
+.__publishingService .is-snapped .__card h4 {
+   color: white;
+}
+
+.__publishingService .is-snapped .__card p {
+   color: white;
+}
+
+.__publishingService .is-snapped .__card a {
    background-color: #000;
 }
 

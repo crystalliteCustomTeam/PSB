@@ -62,7 +62,7 @@ const LpThree = () => {
     ];
     {/* FAQS Section Content */ }
     return (
-        <main>
+        <>
             <Head>
                 <meta name="robots" content="noindex" />
                 <title>Book Illustrations LP | Best Book Publishing Company</title>
@@ -99,7 +99,7 @@ const LpThree = () => {
             {/* Footer Section */}
             <Footer />
             {/* Footer Section */}
-        </main>
+        </>
     )
 }
 export default LpThree;

@@ -51,12 +51,12 @@ const Header = () => {
                     ['Home', '/'],
                     ['About', '/about-us'],
                   ].map(([title, url]) => (
-                    <li className='mr-lg:!mb-4 md:mb-3 sm:mb-3 xs:mb-3'>
-                      <Link href={url} className={`list mr-2xl:!text-black mr-xl:!text-black  mr-lg:!text-white md:!text-white sm:!text-white text-black xs:!text-white mr-2xl:text-[15px] mr-xl:text-[15px] mr-lg:text-xl mr-md:text-xl mr-sm:text-xl xs:text-[20px] font-[400]`}>{title}</Link>
+                    <li className='mr-lg:!mb-4 md:mb-3 sm:mb-3 xs:mb-3 relative'>
+                      <Link href={url} className={`list mr-2xl:!text-black mr-xl:!text-black  mr-lg:!text-white md:!text-white sm:!text-white text-black xs:!text-white mr-2xl:text-[17px] mr-xl:text-[15px] mr-lg:text-xl mr-md:text-xl mr-sm:text-xl xs:text-[20px] font-medium mr-2xl:font-semibold before:content-[''] before:absolute before:left-0 before:right-0 before:bottom-[-3px] before:h-[3px] before:bg-[#40bee2] before:translate-x-[-100%] before:invisible hover:before:visible hover:before:translate-x-0 before:transition-transform before:duration-300 before:hidden mr-xl:before:block`}>{title}</Link>
                     </li>
                   ))}
-                  <li className="relative mr-lg:!mb-4 md:mb-3 sm:mb-3 xs:mb-3 group py-0 hover:text-[#00C0E4] mr-2xl:text-[15px] mr-xl:text-[15px] mr-lg:text-xl mr-md:text-xl mr-sm:text-xl xs:text-[20px] font-[400] z-50">
-                    <button className="hover:opacity-50 cursor-default mr-2xl:!text-black mr-xl:!text-black  mr-lg:!text-white text-black md:!text-white sm:!text-white xs:!text-white font-[400]" aria-haspopup="true">Writing Services
+                  <li className="relative mr-lg:!mb-4 md:mb-3 sm:mb-3 xs:mb-3 group py-0 hover:text-[#00C0E4] mr-2xl:text-[15px] mr-xl:text-[15px] mr-lg:text-xl mr-md:text-xl mr-sm:text-xl xs:text-[20px] font-medium mr-2xl:font-semibold z-50">
+                    <button className="hover:opacity-50 cursor-default mr-2xl:!text-black mr-xl:!text-black  mr-lg:!text-white text-black md:!text-white sm:!text-white xs:!text-white font-medium mr-2xl:font-semibold" aria-haspopup="true">Writing Services
                       <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 ml-2 -mr-1 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor" >
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" ></path>
                       </svg>
@@ -189,12 +189,12 @@ const Header = () => {
                     ['Case Studies', '/case-studies'],
                     ['Contact Us', '/contact-us'],
                   ].map(([title, url]) => (
-                    <li className='mr-lg:!mb-4 md:mb-3 sm:mb-3 xs:mb-3'>
-                      <Link href={url} className={`list mr-2xl:!text-black mr-xl:!text-black  mr-lg:!text-white md:!text-white sm:!text-white text-black xs:!text-white mr-2xl:text-[15px] mr-xl:text-[15px] mr-lg:text-xl mr-md:text-xl mr-sm:text-xl xs:text-[20px] font-[400]`}>{title}</Link>
+                    <li className='mr-lg:!mb-4 md:mb-3 sm:mb-3 xs:mb-3 relative'>
+                      <Link href={url} className={`list mr-2xl:!text-black mr-xl:!text-black  mr-lg:!text-white md:!text-white sm:!text-white text-black xs:!text-white mr-2xl:text-[17px] mr-xl:text-[15px] mr-lg:text-xl mr-md:text-xl mr-sm:text-xl xs:text-[20px] font-medium mr-2xl:font-semibold before:content-[''] before:absolute before:left-0 before:right-0 before:bottom-[-3px] before:h-[3px] before:bg-[#40bee2] before:translate-x-[-100%] before:invisible hover:before:visible hover:before:translate-x-0 before:transition-transform before:duration-300 before:hidden mr-xl:before:block`}>{title}</Link>
                     </li>
                   ))}
                   <li className='mr-lg:!mb-4 md:mb-3 sm:mb-3 xs:mb-3 block sm:hidden xs:hidden'>
-                    <Link href="tel:800-781-9093" className={`text-[15px] transition-all ease-in-out duration-300 group xs:text-[20px] font-secondary border-2 border-[#40BEE2] bg-[#40BEE2] py-1 px-2 text-[#40BEE2] flex items-center gap-x-3 font-[500] hover:bg-transparent `}>
+                    <Link href="tel:800-781-9093" className={`text-[15px] mr-2xl:text-[17px] transition-all ease-in-out duration-300 group xs:text-[20px] font-secondary border-2 border-[#40BEE2] bg-[#40BEE2] py-1 px-2 text-[#40BEE2] flex items-center gap-x-3 font-[500] hover:bg-transparent `}>
                       <Image src={TelIcon} width={15} height={15} alt='Amazon Book Publishing' className='transition-all ease-in-out duration-300 brightness-0 invert group-hover:brightness-100 group-hover:invert-0' priority={true}/>
                       <span className=' text-white group-hover:!text-black'>800-781-9093</span>
                     </Link>
