@@ -27,7 +27,7 @@ export default function AutoPlaySlider({ wrapperClasses = " ", options, children
                     {children}
                 </div>
             </div>
-            {arrows && <div className="flex gap-x-24 justify-center mt-10">
+            {arrows && <div className="flex gap-x-24 justify-center mt-10 mr-lg:mt-16">
                 <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} css={arrowsCss} />
                 <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} css={arrowsCss} />
             </div>}

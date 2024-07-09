@@ -19,10 +19,10 @@ export default function Hero() {
                             <h1 className="text-white mr-xs:text-[26px] mr-sm:text-[35px] mr-md:text-[55px] mr-lg:text-[36px] mr-xl:text-[43px] mr-2xl:text-[50px] font-semibold leading-snug mb-[20px]">
                                 Transform Your Manuscript <br className="hidden mr-lg:block" /> Into A Bestseller With Premier <br className="hidden mr-lg:block" /> Book Publishing Services
                             </h1>
-                            <p className="mr-xs:text-justify text-[16px] mr-lg:text-[15px] mr-2xl:text-[17px] font-normal text-white leading-relaxed !mb-[20px] block">
+                            <p className="mr-xs:text-justify text-[16px] mr-lg:text-[15px] mr-2xl:text-[17px] font-normal text-white leading-relaxed !mb-[20px] mr-lg:!mb-[30px] block">
                                 We will strategically promote your books online to optimize sales and secure the well-deserved exposure your work deserves. We will strategically promote your books online to optimize sales
                             </p>
-                            <div className="flex gap-4 mb-[30px]">
+                            <div className="flex gap-4 mb-[50px]">
                                 <MRCTA text="Connect With Us!" classes="mr-xs:!px-5" />
                                 <MRCTA text="Call Us Now!" classes="bg-white mr-xs:!px-5 !text-black" />
                             </div>

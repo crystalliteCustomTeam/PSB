@@ -68,7 +68,7 @@ export default function CaseStudies() {
                                 <div className={`${bg} ${color} p-[20px] mr-md:p-[40px] rounded-2xl`}>
                                     <div className="grid grid-cols-12 gap-5 items-center">
                                         <div className="col-span-12 mr-lg:col-span-4">
-                                            <Image src={img} alt="img" className="mr-lg:w-full h-[300px] mr-lg:h-auto mx-auto" />
+                                            <Image src={img} alt="img" className="mr-md:w-full mr-md:h-auto mx-auto" />
                                         </div>
                                         <div className="col-span-12 mr-lg:col-span-8">
                                             <h3 className="text-[30px] font-semibold leading-snug">
@@ -86,10 +86,10 @@ export default function CaseStudies() {
                                                     ))
                                                 }
                                             </ul>
-                                            <div className="grid grid-cols-4 justify-between mt-[30px] gap-5 items-center">
+                                            <div className="grid grid-cols-2 mr-md:grid-cols-4 justify-center mr-md:justify-between mt-[30px] gap-y-5 gap-x-2 mr-md:gap-x-5 items-center">
                                                 {
                                                     [Logo1, Logo2, Logo3, Logo4, Logo5, Logo6, Logo7, Logo8].map((e, i) => (
-                                                        <Image src={e} alt="logo" />
+                                                        <Image src={e} alt="logo" className="mx-auto block" />
                                                     ))
                                                 }
                                             </div>

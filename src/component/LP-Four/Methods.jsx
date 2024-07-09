@@ -65,7 +65,7 @@ const Methods = () => {
                                     <MRCTA text="Call Us Now!" classes="__animatedPing bg-white !border-black !text-black hover:bg-black hover:!text-white hover:border-black" />
                                 </div>
                             </div>
-                            <div className='relative'>
+                            <div className='relative mr-md:block hidden'>
                                 <Image src={Ellipse} alt="books" className="block mx-auto" />
                                 <Image src={img} alt='logos' className='absolute top-[40%] mr-lg:w-max mr-sm:w-[300px] w-[250px] h-auto bottom-0 left-0 right-0 z-10 block mx-auto' />
                             </div>
