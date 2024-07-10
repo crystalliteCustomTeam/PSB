@@ -11,7 +11,9 @@ import PressRelease from "media/assets/images/newimg/Press-Release.png"
 import ScriptWriting from "media/assets/images/newimg/Script-Writing.png" 
 import BookEditing from "media/assets/images/newimg/book-editing.svg" 
 
-const Header = () => {
+const Header = ({
+  bgColor = "bg-transparent"
+}) => {
   const [showSubMenu, setShowSubMenu] = useState(true);
   const [menuOpen, setMenuOpen] = useState(true); // Set to false initially
   const toggleSubMenu = () => {
@@ -62,7 +64,7 @@ const Header = () => {
     <>
       {/* <TOPHEADER1 /> */}
       <div className={`w-full font-secondary px-0 sm:!px-0 xs:!px-0 pt-0 transition-all duration-1000 ease-in-out ${isSticky ? 'fixed top-0 left-0 right-0 z-50 shadow-lg' : ''} ${isIdle ? '!-top-full' : ' '}`}>
-        <header className={`${isSticky ? 'bg-black' : 'bg-transparent'} absolute w-full z-30 py-5`}>
+        <header className={`${isSticky ? 'bg-black' : bgColor} absolute w-full z-30 py-5`}>
           <div className="mr-container">
             <div className="items-center justify-between gap-x-4 flex grid-cols-2 grid-rows-1">
               <div className="flex-shrink-0">

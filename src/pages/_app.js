@@ -29,6 +29,7 @@ export default function App({ Component, pageProps }) {
           || router.pathname == "/book-marketing-company"
           || router.pathname == "/case-studies" || router.pathname == "/lp-three"
           || router.pathname == "/lp-four"
+          || router.pathname == "/blogs-ar"
           ? "" : <Headernew />}
         {/* {loadScript ? <Component {...pageProps} /> : <Loader />} */}
         <Component {...pageProps} />
