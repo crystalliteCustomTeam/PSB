@@ -32,7 +32,7 @@ export default function Hero3dSlider() {
                     }
                 }
                 .swiper {
-                    padding-bottom: 65px;
+                    padding-bottom: 105px;
                 }
                 .swiper-button-next {
                     top: inherit;
@@ -71,7 +71,7 @@ export default function Hero3dSlider() {
                 {
                     [Banner1, Banner2, Banner3, Banner4, Banner5].map((e, i) => (
                         <swiper-slide key={i}>
-                            <Image src={e} alt="banner" className="h-[300px] mr-lg:h-[400px] mx-auto block" />
+                            <Image src={e} alt="banner" className="h-[300px] mr-lg:h-[400px] mr-xl:h-[470px] mr-lg:w-[95%] mr-2xl:w-[87%] mx-auto block" />
                         </swiper-slide>
                     ))
                 }

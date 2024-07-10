@@ -205,6 +205,10 @@
 
 
 /* conpoentcss */
+.songDetails {
+   width: max-content;
+}
+
 .newtown:hover h5 {
    color: #40BEE2;
 }
@@ -853,18 +857,18 @@ header a:hover {
 /* Audio Banner Slider Start */
 
 .audiobannerSlider .slick-prev {
-   left: 30%;
+   left: 22%;
    z-index: 9;
 }
 
 .audiobannerSlider .slick-next {
-   right: 45%;
+   right: 52%;
 }
 
 .audiobannerSlider .slick-prev,
 .audiobannerSlider .slick-next {
    top: inherit;
-   bottom: 0;
+   bottom: 40px;
 }
 
 .audiobannerSlider .slick-prev:before {

@@ -24,7 +24,6 @@ import StreamlinedBooks from "media/assets/audiobook/streamlinedBooks.png"
 import BannerBg from "media/assets/audiobook/consultationBanner.png"
 import BannerMockup from "media/assets/audiobook/bannerMockup.png"
 import Header from '@/component/AudioBooklp/Header'
-import { MRHero } from '@/component'
 
 const autoBookLp = () => {
     {/* MarketingProcess Section Content*/ }
@@ -60,7 +59,7 @@ const autoBookLp = () => {
             {/* Head */}
             <Head>
                 <meta name="robots" content="noindex" />
-                <title>Top Book Marketing Company - Best Selling Publisher</title>
+                <title>Top Audio Books - Best Selling Publisher</title>
                 <meta name="description" content="Partner with Best Selling Publisher, an expert book marketing company, offering customized strategies to maximize your book's visibility and drive sales!" />
             </Head>
             {/* Head */}

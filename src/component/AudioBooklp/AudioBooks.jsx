@@ -1,14 +1,44 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import { MRCTA } from '..'
 import Image from 'next/image'
 // Images
 import Audio1 from "media/assets/audiobook/audio-book-1.png"
 import Audio2 from "media/assets/audiobook/audio-book-2.png"
 import Audio3 from "media/assets/audiobook/audio-book-3.png"
-import playIcon from "media/assets/audiobook/playIcon.png"
+import play from 'media/assets/audiobook/playIcon.png'
+import pause from 'media/assets/audiobook/pauseIcon.png'
 import Link from 'next/link'
 
 const AudioBooks = () => {
+    const [isPlayingOne, setIsPlayingOne] = useState(false);
+    const [isPlayingTwo, setIsPlayingTwo] = useState(false);
+    const [isPlayingThree, setIsPlayingThree] = useState(false);
+    const audioRef = useRef(null);
+
+    const togglePlayOne = () => {
+        if (isPlayingOne) {
+            audioRef.current.pause();
+        } else {
+            audioRef.current.play();
+        }
+        setIsPlayingOne(!isPlayingOne);
+    };
+    const togglePlayTwo = () => {
+        if (isPlayingTwo) {
+            audioRef.current.pause();
+        } else {
+            audioRef.current.play();
+        }
+        setIsPlayingTwo(!isPlayingTwo);
+    };
+    const togglePlayThree = () => {
+        if (isPlayingThree) {
+            audioRef.current.pause();
+        } else {
+            audioRef.current.play();
+        }
+        setIsPlayingThree(!isPlayingThree);
+    };
     return (
         <section className='bg-[#F3F3F3] py-[50px] mr-md:py-[80px]'>
             <div className="mr-container">
@@ -28,9 +58,9 @@ const AudioBooks = () => {
                         <div className="books border-t-2 pt-6 pb-6 flex items-center gap-y-10">
                             <div className="image !w-full mr-md:!w-[35%] mr-lg:!w-[26%] mr-xl:!w-[20%] mr-2xl:!w-[17%] !p-0 relative">
                                 <Image src={Audio1} alt='PSB' />
-                                <Link href="javascript:;" className="cursor-pointer playIcon absolute right-[20px] top-0 mr-md:hidden block">
+                                {/* <Link href="javascript:;" className="cursor-pointer playIcon absolute right-[20px] top-0 mr-md:hidden block">
                                     <Image src={playIcon} alt='PSB' width={60} height={60} className='ml-auto' />
-                                </Link>
+                                </Link> */}
                             </div>
                             <div className="content w-full mr-md:w-[70%] mr-lg:w-[65%]">
                                 <div className="flex items-center gap-x-14">
@@ -46,16 +76,19 @@ const AudioBooks = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='w-[10%] mr-md:block hidden mr-lg:w-[18%]'>
-                                <Image src={playIcon} alt='PSB' width={60} height={60} className='ml-auto' />
+                            <div className='w-[10%] mr-md:flex hidden mr-lg:w-[18%] items-end justify-end pr-[20px]'>
+                                <audio ref={audioRef} src="/Opening_Credits.mp3" type="audio/mpeg" />
+                                <button onClick={togglePlayOne}>
+                                    {isPlayingOne ? <Image src={pause} width="50" height="50" /> : <Image src={play} width="50" height="50" />}
+                                </button>
                             </div>
                         </div>
                         <div className="books border-t-2 pt-6 pb-6 flex items-center gap-y-10">
                             <div className="image !w-full mr-md:!w-[35%] mr-lg:!w-[26%] mr-xl:!w-[20%] mr-2xl:!w-[17%] !p-0 relative">
                                 <Image src={Audio2} alt='PSB' />
-                                <Link href="javascript:;" className="cursor-pointer playIcon absolute right-[20px] top-0 mr-md:hidden block">
+                                {/* <Link href="javascript:;" className="cursor-pointer playIcon absolute right-[20px] top-0 mr-md:hidden block">
                                     <Image src={playIcon} alt='PSB' width={60} height={60} className='ml-auto' />
-                                </Link>
+                                </Link> */}
                             </div>
                             <div className="content w-full mr-md:w-[70%] mr-lg:w-[65%]">
                                 <div className="flex items-center gap-x-14">
@@ -71,16 +104,19 @@ const AudioBooks = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='w-[10%] mr-md:block hidden mr-lg:w-[18%]'>
-                                <Image src={playIcon} alt='PSB' width={60} height={60} className='ml-auto' />
+                            <div className='w-[10%] mr-md:flex hidden mr-lg:w-[18%] items-end justify-end pr-[20px]'>
+                                <audio ref={audioRef} src="/Opening_Credits.mp3" type="audio/mpeg" />
+                                <button onClick={togglePlayTwo}>
+                                    {isPlayingTwo ? <Image src={pause} width="50" height="50" /> : <Image src={play} width="50" height="50" />}
+                                </button>
                             </div>
                         </div>
                         <div className="books border-t-2 pt-6 pb-6 flex items-center gap-y-10">
                             <div className="image !w-full mr-md:!w-[35%] mr-lg:!w-[26%] mr-xl:!w-[20%] mr-2xl:!w-[17%] !p-0 relative">
                                 <Image src={Audio3} alt='PSB' />
-                                <Link href="javascript:;" className="cursor-pointer playIcon absolute right-[20px] top-0 mr-md:hidden block">
+                                {/* <Link href="javascript:;" className="cursor-pointer playIcon absolute right-[20px] top-0 mr-md:hidden block">
                                     <Image src={playIcon} alt='PSB' width={60} height={60} className='ml-auto' />
-                                </Link>
+                                </Link> */}
                             </div>
                             <div className="content w-full mr-md:w-[70%] mr-lg:w-[65%]">
                                 <div className="flex items-center gap-x-14">
@@ -96,8 +132,11 @@ const AudioBooks = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='w-[10%] mr-md:block hidden mr-lg:w-[18%]'>
-                                <Image src={playIcon} alt='PSB' width={60} height={60} className='ml-auto' />
+                            <div className='w-[10%] mr-md:flex hidden mr-lg:w-[18%] items-end justify-end pr-[20px]'>
+                                <audio ref={audioRef} src="/Opening_Credits.mp3" type="audio/mpeg" />
+                                <button onClick={togglePlayThree}>
+                                    {isPlayingThree ? <Image src={pause} width="50" height="50" /> : <Image src={play} width="50" height="50" />}
+                                </button>
                             </div>
                         </div>
                     </div>
