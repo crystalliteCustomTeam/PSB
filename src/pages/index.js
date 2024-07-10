@@ -2,12 +2,14 @@ import Head from "next/head";
 // components
 import Tradition from "@/fa-component/Tradition";
 import Audience from "@/fa-component/Audience";
-import Dreams from "@/fa-component/Dreams";
 import Plans from "@/fa-component/Plans";
 import Enlistedlogo from "@/fa-component/Enlistedlogo";
 import SwiperComponents from "@/component/SwiperComponent";
 import {MRHero, MRContact, MRQuestioners, MRContent1, MRCards, MRVideoTestimonials} from "@/component";
 import PublishingNewComponent from "@/fa-component/PublishingNewComponent";
+// Media
+import BannerImg from 'media/ahsan/home-banner-new.webp'
+import Logos from 'media/images/banner/img2.webp'
 
 const MRQuestionersData = [
   {
@@ -190,8 +192,8 @@ const Home = () => {
       <MRHero
         title={`Start Selling Your Books Worldwide With Best <br class="mr-xl:block hidden"/> Selling Publisher `}
         desc="Best Selling Publisher specializes in transforming authors into bestsellers! We ensure that your book is showcased to audiences worldwide which boosts your visibility and increases revenue. Committed to maximize your book’s sales potential and return on investment, we employ strategic marketing, distribution, and promotion strategies that align with your book's unique strengths. "
-        containImg="ahsan/home-banner-new.png"
-        logos="images/banner/img2.png"
+        containImg={BannerImg}
+        logos={Logos}
         form={false}
         counter={true}
       />
