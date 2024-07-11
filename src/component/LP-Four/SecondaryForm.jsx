@@ -20,7 +20,7 @@ export default function SecondaryForm() {
         getIPData()
     }, [])
 
-    const [score, setScore] = useState('Get Free Consultation');
+    const [score, setScore] = useState('Book A Free Consultation Session!');
 
     const router = useRouter();
     const currentRoute = router.pathname;
@@ -107,11 +107,10 @@ export default function SecondaryForm() {
                         <Image src={Banner} alt="banner" className="hidden mr-lg:block absolute bottom-0 left-0 w-[55%] mr-xl:w-[57%] mr-2xl:w-[55%]" />
                         <div className="text-white mr-lg:w-[400px] mr-xl:w-[450px] mr-2xl:w-[520px] ml-auto mr-lg:mr-[40px] flex flex-col justify-center h-full mr-xs:px-5 mr-sm:px-10 mr-lg:px-0">
                             <h2 className="mr-xs:text-[30px] mr-sm:text-[35px] mr-lg:text-[30px] mr-xl:text-[40px] font-semibold leading-tight mb-[15px]">
-                                Let's Turn Your Book Into <br className="hidden mr-lg:block" />
-                                A Best Seller
+                            Land on the Bestseller List Next!
                             </h2>
                             <p className="mr-xs:text-[14px] mr-sm:text-[16px] mr-lg:text-[14px] mr-xl:text-[16px] leading-relaxed font-normal">
-                                Are You Facing Complications Regarding Book Publishing? Break Free From The Challenges Of Book Publishing With The Help
+                            Achieve bestseller status with our expert book publishing services. Fill out the form now for a free consultation session!
                             </p>
                             <form onSubmit={handleSubmit} className="mt-[15px]">
                                 <div className="grid mr-xs:grid-cols-1 mr-sm:grid-cols-2 gap-5 mb-5">

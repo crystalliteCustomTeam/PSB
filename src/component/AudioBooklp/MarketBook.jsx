@@ -9,7 +9,9 @@ import formParticle from "media/assets/audiobook/form-particle.png"
 
 const MarketBook = ({
     title = "How We Market Your Book?",
-    desc = "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency. Cost-effectiveness. Consumer-centric—the crudity of book marketing, delivered! Simplifying the harsh process of book marketing. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency. Cost-effectiveness. Consumer-centric—the crudity of book marketing, delivered! Simplifying the harsh process of book marketing."
+    desc = "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency. Cost-effectiveness. Consumer-centric—the crudity of book marketing, delivered! Simplifying the harsh process of book marketing. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency. Cost-effectiveness. Consumer-centric—the crudity of book marketing, delivered! Simplifying the harsh process of book marketing.",
+    formTitle = "Request A <span class='text-[#40BEE2]'>Free</span> Quote",
+    formDesc = "Cost-effectiveness. Consumer-centric—the crudity of <br class='mr-lg:block hidden' /> book marketing, delivered!</p>"
 }) => {
     const [ip, setIP] = useState('');
     //creating function to load ip address from the API
@@ -109,7 +111,7 @@ const MarketBook = ({
                             <p className='text-[14px] mr-md:text-[16px] leading-[26px] font-[300] secondary pb-4 mr-xl:mr-5 mr-xl:pr-5 mr-md:text-left text-justify'>{desc}</p>
                             <div className='pb-3'>
                                 <div className="w-full mr-md:w-max">
-                                    <MRCTA classes="mt-5 w-full !font-medium secondary" animation="__animatedPing" text="Book An Appointment" />
+                                    <MRCTA classes="mt-5 w-full !font-medium secondary" animation="__animatedPing" text="Let’s Connect!" />
                                 </div>
                             </div>
                             <div className='flex flex-wrap align-items-center gap-y-4 gap-x-5 mr-md:gap-x-0 justify-center mr-md:justify-between mt-5 pt-5'>
@@ -149,8 +151,8 @@ const MarketBook = ({
                             <div className="image absolute top-0 left-[-32px]">
                                 <Image src={formParticle} alt='PSB' />
                             </div>
-                            <h3 className='text-center text-[23px] mr-md:text-[30px] leading-[40px] mr-md:leading-[70px] secondary font-[600]'>Request A <span className='text-[#40BEE2]'>Free</span> Quote</h3>
-                            <p className='text-center text-[14px] mr-md:text-[16px] secondary mr-md:leading-[25px] pb-8'>Cost-effectiveness. Consumer-centric—the crudity of <br className='mr-lg:block hidden' /> book marketing, delivered!</p>
+                            <h3 className='text-center text-[23px] mr-md:text-[30px] leading-[40px] mr-md:leading-[70px] secondary font-[600]' dangerouslySetInnerHTML={{__html : formTitle}}/>
+                            <p className='text-center text-[14px] mr-md:text-[16px] secondary mr-md:leading-[25px] pb-8' dangerouslySetInnerHTML={{__html : formDesc}}/>
                             <form onSubmit={handleSubmit} className='relative z-[999]'>
                                 <input type="text" required name="name" placeholder='Full Name *' onkeypress="return /[a-z]/i.test(event.key)" className='text-[#000000] text-[14px] secondary leading-[20px] bg-[#F3F3F3] h-[60px] w-full rounded-[6px] px-4 mb-4 focus:outline-0' />
                                 <input type="email" required name="email" placeholder='Email * ' className='text-[#000000] text-[14px] secondary leading-[20px] bg-[#F3F3F3] h-[60px] w-full rounded-[6px] px-4 mb-4 focus:outline-0' />

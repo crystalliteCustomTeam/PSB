@@ -25,7 +25,7 @@ export default function CaseStudies() {
                         Our Casestudy's
                     </h2>
                     <p className="text-[16px] leading-relaxed font-normal mr-md:max-w-[80%] mr-lg:max-w-[60%] mr-2xl:max-w-[50%] mx-auto">
-                        Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced
+                    Check out our case studies to see how we've turned authors into bestsellers with our expert publishing and marketing strategies.
                     </p>
                 </div>
                 <AutoPlaySlider wrapperClasses="mt-[50px]">
@@ -34,32 +34,32 @@ export default function CaseStudies() {
                             {
                                 img: One,
                                 title: "In The Line of Fire",
-                                desc: "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency. Cost-effectiveness. Consumer-centric—the crudity of book marketing, delivered! Simplifying the harsh process of book marketing. Our seasoned marketing",
-                                list: ["Our seasoned marketing professionals expertly employ advanced, effective", "Techniques to boost your literal presence. Our seasoned marketing professionals", "Expertly employ advanced, effective techniques to boost your Consistency."],
+                                desc: `Samuel Cross's "In The Line Of Fire" became a favorite, earning the #3 spot in the Thriller category on Amazon. Published on Amazon, Barnes & Noble, eBay, Google Books, and Goodreads, we employed diverse marketing strategies to engage readers and boost sales.`,
+                                list: ["Designed and deployed a user-friendly website to showcase the book and the author.", "Launched a book trailer on social media channels and communities.", "Launched a targeted Amazon Ad Campaign to maximize reach."],
                                 bg: "bg-[#563B29]",
                                 color: "text-white"
                             },
                             {
                                 img: Two,
                                 title: "When He Calls",
-                                desc: "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency. Cost-effectiveness. Consumer-centric—the crudity of book marketing, delivered! Simplifying the harsh process of book marketing. Our seasoned marketing",
-                                list: ["Our seasoned marketing professionals expertly employ advanced, effective", "Techniques to boost your literal presence. Our seasoned marketing professionals", "Expertly employ advanced, effective techniques to boost your Consistency."],
+                                desc: `Samuel Brooks's "When He Calls" secured the #2 spot in Mystery & Suspense Short Reads on Amazon. Published exclusively on Amazon, our targeted marketing efforts ensured high visibility and reader engagement.`,
+                                list: ["Launched a focused Amazon Ad Campaign for optimal visibility.", "Designed a dedicated website to showcase the book.", "Enhanced discoverability with comprehensive SEO and active social media marketing."],
                                 bg: "bg-[#C8D5D8]",
                                 color: "text-black"
                             },
                             {
                                 img: Three,
                                 title: "Love Tapestry",
-                                desc: "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency. Cost-effectiveness. Consumer-centric—the crudity of book marketing, delivered! Simplifying the harsh process of book marketing. Our seasoned marketing",
-                                list: ["Our seasoned marketing professionals expertly employ advanced, effective", "Techniques to boost your literal presence. Our seasoned marketing professionals", "Expertly employ advanced, effective techniques to boost your Consistency."],
+                                desc: `Luna Starlight's "Love Tapestry" reached Amazon's #1 Best Seller in the Contemporary Romance category. We ensured its success and visibility across Amazon, Goodreads, and AbeBooks through comprehensive marketing support.`,
+                                list: ["Delivered marketing services, including social media management, SEO, and targeted ads.", "Created and monetized a YouTube account, producing a book video trailer.", "Organized PR activities like a live Q&A session and ads in major publications."],
                                 bg: "bg-[#344960]",
                                 color: "text-white"
                             },
                             {
                                 img: Four,
                                 title: "Last Summer",
-                                desc: "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency. Cost-effectiveness. Consumer-centric—the crudity of book marketing, delivered! Simplifying the harsh process of book marketing. Our seasoned marketing",
-                                list: ["Our seasoned marketing professionals expertly employ advanced, effective", "Techniques to boost your literal presence. Our seasoned marketing professionals", "Expertly employ advanced, effective techniques to boost your Consistency."],
+                                desc: `Benson Roland's "Last Summer" earned the #1 Best Seller badge in the Coming-of-Age Fiction category on Amazon. Published on platforms like Amazon, Barnes & Noble, eBay, Northshire Books, and Goodreads, we provided a robust marketing strategy to enhance its reach and impact.`,
+                                list: ["Implemented a comprehensive Amazon Ad Campaign to boost visibility.", "Developed a dynamic author website and engaging animated book trailer.", "Conducted thorough SEO efforts, book reviews, and regular newsletters to maintain reader engagement."],
                                 bg: "bg-[#8A7D5F]",
                                 color: "text-white"
                             },

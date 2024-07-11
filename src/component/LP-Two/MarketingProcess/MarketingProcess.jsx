@@ -17,7 +17,7 @@ const MarketingProcess = ({ items, title, desc, booksImage }) => {
                     </div>
                     <div className='grid mr-lg:grid-cols-2 grid-cols-1 items-center mr-lg:gap-x-5 gap-y-5 mr-md:mt-[60px] mt-[40px]'>
                         <div>
-                            <Image src={booksImage} alt='StreamlinedBooks' className='mr-md: mx-auto hidden' />
+                            <Image src={booksImage} alt='StreamlinedBooks' className='mr-md:block mx-auto hidden' />
                         </div>
                         <div>
                             {items.map(([title, desc], index) => (

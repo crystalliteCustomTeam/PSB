@@ -35,8 +35,8 @@ const WorkingWithUs = () => {
             <div className="mr-lg:py-[80px] mr-md:py-[60px] py-[40px]">
                 <div className="mr-container">
                     <div className="mr-sm:text-center text-justify mr-2xl:w-[65%] mr-xl:w-[75%] mr-lg:w-[90%] w-full mx-auto">
-                        <h2 className="mr-lg:text-[40px] mr-md:text-[30px] text-[25px] font-medium leading-normal mb-3">Just By Working With Us.</h2>
-                        <p className="mr-md:text-base text-sm font-normal leading-normal">Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective</p>
+                        <h2 className="mr-lg:text-[40px] mr-md:text-[30px] text-[25px] font-medium leading-normal mb-3">Get Your Book Featured On Leading Publications!</h2>
+                        <p className="mr-md:text-base text-sm font-normal leading-normal">We can put your book in the spotlight across top publications! Specializing in strategic placement and targeted publicity, we drive author success with proven results.</p>
                     </div>
                 </div>
                 <div className={styles.embla}>
@@ -52,8 +52,8 @@ const WorkingWithUs = () => {
                         </div>
                     </div>
                     <div className="grid grid-cols-1 mr-sm:flex justify-center mr-sm:gap-x-5 gap-5 mt-12">
-                        <MRCTA text="Connect With Us!" classes="__animatedPing hover:bg-transparent hover:border-black hover:!text-black" />
-                        <MRCTA text="Call Us Now!" classes="__animatedPing bg-white !border-black !text-black hover:bg-black hover:!text-white hover:border-black" />
+                        <MRCTA text="Let's Chat!" handle="onclick='parent.LC_API.open_chat_window();return false;'" classes="__animatedPing hover:bg-transparent hover:border-black hover:!text-black" />
+                        <MRCTA text="Call Us Now!" link='tel:8007819093' classes="__animatedPing bg-white !border-black !text-black hover:bg-black hover:!text-white hover:border-black" />
                     </div>
                 </div>
             </div>

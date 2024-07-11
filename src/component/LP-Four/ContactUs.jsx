@@ -103,10 +103,9 @@ const ContactUs = () => {
                 <div className="mr-container">
                     <div className="grid grid-cols-12 mr-lg:gap-x-5 gap-5 items-center">
                         <div className="mr-xl:col-span-7 mr-lg:col-span-6 col-span-12 text-white">
-                            <h2 className="mr-lg:text-[40px] mr-md:text-[30px] text-[25px] leading-tight font-semibold mb-3">Published 10,000+ Great Books
-                            <br /> Out There! Yours Is Next!</h2>
-                            <p className="mr-md:text-base text-sm leading-normal font-normal">Best Selling Publisher stands as the pinnacle of excellence in the world of publishing services, <br /> renowned for its unparalleled commitment to author success. With a dedicated team of industry <br /> experts and innovative resources at their disposal, Best Selling Publisher goes above and beyond.</p>
-                            <p className="mr-md:text-base text-sm leading-normal font-normal mt-4">Best Selling Publisher stands as the pinnacle of excellence in the world of publishing services, <br /> renowned for its unparalleled commitment to author success. With a dedicated team of industry <br /> experts and innovative resources at their disposal, Best Selling Publisher goes above and beyond.</p>
+                            <h2 className="mr-lg:text-[40px] mr-md:text-[30px] text-[25px] leading-tight font-semibold mb-3">10,000 Hits and Counting! Let Your Book Be the Next Bestseller!</h2>
+                            <p className="mr-md:text-base text-sm leading-normal font-normal">Our expert publishing services have helped countless authors succeed, reaching impressive milestones with over 10,000 hits. We provide comprehensive support, including manuscript evaluation, strategic marketing, and professional design. </p>
+                            <p className="mr-md:text-base text-sm leading-normal font-normal mt-4">Our dedicated team focuses on maximizing visibility, driving sales, and building your author brand. Let us transform your manuscript into the next bestseller, connecting with readers and making a lasting impact in the literary world.</p>
                             <div className="my-8">
                                 <a href="mailto:info@bestsellingpublisher.com" className="flex items-center gap-x-3 mb-3">
                                     <span className="block"><Image src={Email} alt="icons" width={20} height={20}/></span>
@@ -124,9 +123,8 @@ const ContactUs = () => {
                             <div className="flex mr-sm:flex-nowrap flex-wrap mr-sm:w-max mr-sm:gap-x-5 gap-5 items-center pt-6 border-t border-[#8A8A8A]">
                                 <Image src={Avater} alt="avater" className="block" />
                                 <div>
-                                    <h5 className="text-[#40BEE2] mr-md:text-[20px] text-lg leading-normal font-bold mb-3">Your Book Deserves To Be Written!</h5>
-                                    <p className="text-base leading-normal font-normal">Now that you have an expert book writing, editing, <br className="mr-sm:block hidden" />
-                                        and publishing agency. What are you waiting for?</p>
+                                    <h5 className="text-[#40BEE2] mr-md:text-[20px] text-lg leading-normal font-bold mb-3">Let Your Words Take Flight!</h5>
+                                    <p className="text-base leading-normal font-normal">Let Best Selling Publisher help you discover your inner author and share your story with the world.</p>
                                 </div>
                             </div>
                         </div> 
@@ -135,8 +133,8 @@ const ContactUs = () => {
                             <div className="image absolute top-0 left-[-32px]">
                                 <Image src={formParticle} alt='PSB' />
                             </div>
-                            <h3 className='text-center text-[23px] mr-md:text-[30px] leading-[40px] mr-md:leading-[70px] secondary font-[600]'>Request A <span className='text-[#40BEE2]'>Free</span> Quote</h3>
-                            <p className='text-center text-[14px] mr-md:text-[16px] secondary mr-md:leading-[25px] pb-8'>Cost-effectiveness. Consumer-centric—the crudity of <br className='mr-lg:block hidden' /> book marketing, delivered!</p>
+                            <h3 className='text-center text-[23px] mr-md:text-[30px] leading-[40px] mr-md:leading-[70px] secondary font-[600]'>Get Your Publishing Cost Estimate</h3>
+                            <p className='text-center text-[14px] mr-md:text-[16px] secondary mr-md:leading-[25px] pb-8'>Find out how much it will cost to publish your book.</p>
                             <form onSubmit={handleSubmit} className='relative z-[999]'>
                                 <input type="text" required name="name" placeholder='Full Name *' onkeypress="return /[a-z]/i.test(event.key)" className='text-[#000000] text-[14px] secondary leading-[20px] bg-[#F3F3F3] h-[60px] w-full rounded-[6px] px-4 mb-4 focus:outline-0' />
                                 <input type="email" required name="email" placeholder='Email * ' className='text-[#000000] text-[14px] secondary leading-[20px] bg-[#F3F3F3] h-[60px] w-full rounded-[6px] px-4 mb-4 focus:outline-0' />
