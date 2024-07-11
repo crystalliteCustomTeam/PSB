@@ -104,6 +104,16 @@ const Cards = ({ tabs }) => {
     const [filter, setFilter] = useState('All');
     const [data, setData] = useState([]);
     const [filteredData, setFilteredData] = useState([]);
+    const [visibleItems, setVisibleItems] = useState(6); // Initial number of visible items
+
+    const handleFilterClick = (selectedOption) => {
+        setFilter(selectedOption);
+        setVisibleItems(6); // Reset visible items on filter change
+    };
+
+    const handleShowMore = () => {
+        setVisibleItems((prev) => prev + 6); // Increase visible items by 6
+    };
 
     const handleFilterSubmit = (selectedOption) => {
         setFilter(selectedOption);
@@ -122,6 +132,10 @@ const Cards = ({ tabs }) => {
             [Banner3, "General", "Conquer Tech With Best Selling Publisher: Your Path To Unstoppable Progress!",
                 "Best Selling Publisher' Development Of The Proeye Project, A Wallet Analytics And Search Engine Platform On Blockchain, Was Exceptional. Their Comprehensive Work, From Requirement Analysis"],
             [Banner1, "Blockchain", "Conquer Tech With Best Selling Publisher: Your Path To Unstoppable Progress!",
+                "Best Selling Publisher' Development Of The Proeye Project, A Wallet Analytics And Search Engine Platform On Blockchain, Was Exceptional. Their Comprehensive Work, From Requirement Analysis"],
+            [Banner2, "Mobile Application", "Conquer Tech With Best Selling Publisher: Your Path To Unstoppable Progress!",
+                "Best Selling Publisher' Development Of The Proeye Project, A Wallet Analytics And Search Engine Platform On Blockchain, Was Exceptional. Their Comprehensive Work, From Requirement Analysis"],
+            [Banner3, "General", "Conquer Tech With Best Selling Publisher: Your Path To Unstoppable Progress!",
                 "Best Selling Publisher' Development Of The Proeye Project, A Wallet Analytics And Search Engine Platform On Blockchain, Was Exceptional. Their Comprehensive Work, From Requirement Analysis"]
         ];
 
@@ -129,14 +143,24 @@ const Cards = ({ tabs }) => {
     }, []);
 
     useEffect(() => {
+        let filtered = [];
         if (filter === 'All') {
-            setFilteredData(data);
+            filtered = [...data];
         } else {
-            setFilteredData(data.filter(item => item[1] === filter));
+            filtered = data.filter(item => item[1] === filter);
         }
+
+        if (filtered.length >= 2) {
+            filtered.splice(2, 0, ['special', 'Special']);
+        } else {
+            filtered.push(['special', 'Special']);
+        }
+
+        setFilteredData(filtered);
     }, [filter, data]);
 
-    const options = ['All', 'Blockchain', 'Mobile Application', 'General'];
+
+    const options = ['All', 'Blockchain', 'Mobile Application', 'General', 'eCommerce', 'News'];
 
     return (
         <section>
@@ -144,124 +168,76 @@ const Cards = ({ tabs }) => {
                 <div className="mr-container">
                     <FilterDropdown options={options} onFilterSubmit={handleFilterSubmit} />
                     <div className="grid mr-md:grid-cols-6 mr-sm:grid-cols-3 grid-cols-2 mr-md:gap-0 gap-y-7 mr-md:mt-16 mt-12 w-full mx-auto">
-                        {tabs && tabs?.map(({ name }, i) => (
-                            <div key={useId()} className="text-center w-full">
-                                <h4 className={`${openIndex === i ? "border-b-4 font-bold border-[#40BEE2] rounded text-[#000000]" : "border-b-2 border-white w-full text-[#ACACAC]"} pb-2`}>
-                                    <button onClick={() => toggleAccordion(i)}>{name}</button>
-                                </h4>
-                            </div>
+                        {options.map(option => (
+                            <button
+                                key={option}
+                                className={`inline-block pb-2 ${filter === option ? 'border-b-[3px] border-[#F32F53] text-black' : 'text-[#BFBFBF]'}`}
+                                onClick={() => handleFilterClick(option)}
+                            >
+                                {option}
+                            </button>
                         ))}
                     </div>
                     <div key={useId()}>
-                        <div className="grid grid-cols-3 gap-5 mb-5">
-                            <div className={`bg-[#F3F3F3] rounded-xl`}>
-                                <div className="border-b border-[#D4D4D4]">
-                                    <Link href="#">
-                                        <Image src={Banner3} alt="books" width={440} height={200} className="block mx-auto w-full" />
-                                    </Link>
-                                    <div className="px-4 py-6">
-                                        <span className="block text-[#F32F53] font-semibold text-base leading-normal">Mobile Application</span>
-                                        <h4 className="text-[20px] leading-normal font-semibold text-[#000] mb-4"><Link href="#">General", "Conquer Tech With Best Selling Publisher: Your Path To Unstoppable Progress!</Link></h4>
-                                        <p className="text-sm leading-normal font-normal">Best Selling Publisher' Development Of The Proeye Project, A Wallet Analytics And Search Engine Platform On Blockchain, Was Exceptional. Their Comprehensive Work, From Requirement Analysis</p>
-                                        <Link href="#" className="flex items-center ms-auto mt-5 gap-x-2 border-b-2 border-black w-max">
-                                            <span className="block">Read More</span>
-                                            <span><Image src={Arrow} alt="arrow" className="block" /></span>
-                                        </Link>
+
+                        <div className="grid mr-lg:grid-cols-3 mr-md:grid-cols-2 grid-cols-1 gap-5 mb-5 mr-md:mt-10 mt-12">
+                            {filteredData.slice(0, visibleItems).map(([img, subtitle, title, desc], i) => (
+                                img === 'special' ? (
+                                    <div key="unique-card" className="bg-primary-100 rounded-xl flex items-center flex-col justify-center">
+                                        <div className="mr-2xl:px-8 px-5 py-6 text-center text-white">
+                                            <h4 className="mr-2xl:text-[40px] mr-xl:text-[35px] text-[25px] leading-normal font-semibold mb-4">Top-Quality Articles, Delivered Weekly.</h4>
+                                            <p className="text-base leading-normal font-normal">Best Selling Publisher' Development Of The Proeye <br className="mr-2xl:block hidden" /> Project, A Wallet Analytics And Search Engine</p>
+                                            <form onSubmit={(e) => { e.preventDefault(); }} className="mt-8">
+                                                <div className="bg-[#ffffff] bg-opacity-90 border-2 border-white flex mr-md:w-[100%] mx-auto mb-[50px] p-[6px] rounded-[10px]">
+                                                    <input type="email" placeholder="Enter Your Email Address" name="email" id="email" required={true} className="block w-full bg-transparent ps-4 placeholder:text-[#969696] focus-visible:outline-none text-black font-normal text-sm leading-normal" />
+                                                    <button className="bg-black text-white text-lg block mr-sm:w-[50%] w-[55%] rounded-[10px] py-[10px]">Subscribe</button>
+                                                </div>
+                                            </form>
+                                            <span className="block text-sm">By Entering Your Email, You Are Agreeing To Our <Link href="/privacy-policy" target="_blank">Privacy <span className="inline-block border-b-2 border-white">Policy.</span></Link></span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="px-4 py-8">
-                                    <div className="flex items-start gap-x-2">
-                                        <Image src={Avater} alt="avater" className="block w-[15%] rounded-full" />
-                                        <div>
-                                            <div className="flex items-center gap-x-2">
-                                                <h5 className="text-sm font-medium text-black">Nick Willford</h5>
-                                                <Image src={Check} alt="check" className="block" />
+                                ) : (
+                                    <div key={i} className="bg-[#F3F3F3] rounded-xl">
+                                        <div className="border-b border-[#D4D4D4]">
+                                            <Link href="#">
+                                                <Image src={img} alt="books" width={440} height={200} className="block mx-auto w-full" />
+                                            </Link>
+                                            <div className="px-4 py-6">
+                                                <span className="block text-[#F32F53] font-semibold mr-md:text-base text-sm leading-normal">{subtitle}</span>
+                                                <h4 className="mr-md:text-[20px] text-base leading-normal font-semibold text-[#000] mb-4">
+                                                    <Link href="#">{title}</Link>
+                                                </h4>
+                                                <p className="mr-md:text-sm text-xs leading-normal font-normal">{desc}</p>
+                                                <Link href="#" className="mr-md:text-base text-sm flex items-center ms-auto mt-5 gap-x-2 border-b-2 border-black w-max">
+                                                    <span className="block">Read More</span>
+                                                    <span><Image src={Arrow} alt="arrow" className="block" /></span>
+                                                </Link>
                                             </div>
-                                            <p className="text-[#5c5b5b] text-xs leading-normal font-medium">Best Selling Publisher' Development Of The Proeye Project, A Wallet Analytics And Search Engine Platform On Blockchain, Was Exceptional.</p>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className={`bg-[#F3F3F3] rounded-xl`}>
-                                <div className="border-b border-[#D4D4D4]">
-                                    <Link href="#">
-                                        <Image src={Banner3} alt="books" width={440} height={200} className="block mx-auto w-full" />
-                                    </Link>
-                                    <div className="px-4 py-6">
-                                        <span className="block text-[#F32F53] font-semibold text-base leading-normal">Mobile Application</span>
-                                        <h4 className="text-[20px] leading-normal font-semibold text-[#000] mb-4"><Link href="#">General", "Conquer Tech With Best Selling Publisher: Your Path To Unstoppable Progress!</Link></h4>
-                                        <p className="text-sm leading-normal font-normal">Best Selling Publisher' Development Of The Proeye Project, A Wallet Analytics And Search Engine Platform On Blockchain, Was Exceptional. Their Comprehensive Work, From Requirement Analysis</p>
-                                        <Link href="#" className="flex items-center ms-auto mt-5 gap-x-2 border-b-2 border-black w-max">
-                                            <span className="block">Read More</span>
-                                            <span><Image src={Arrow} alt="arrow" className="block" /></span>
-                                        </Link>
-                                    </div>
-                                </div>
-                                <div className="px-4 py-8">
-                                    <div className="flex items-start gap-x-2">
-                                        <Image src={Avater} alt="avater" className="block w-[15%] rounded-full" />
-                                        <div>
-                                            <div className="flex items-center gap-x-2">
-                                                <h5 className="text-sm font-medium text-black">Nick Willford</h5>
-                                                <Image src={Check} alt="check" className="block" />
+                                        <div className="px-4 py-8">
+                                            <div className="flex items-start gap-x-2">
+                                                <Image src={Avater} alt="avater" className="block w-[15%] rounded-full" />
+                                                <div>
+                                                    <div className="flex items-center gap-x-2">
+                                                        <h5 className="text-sm font-medium text-black">Nick Willford</h5>
+                                                        <Image src={Check} alt="check" className="block" />
+                                                    </div>
+                                                    <p className="text-[#5c5b5b] text-xs leading-normal font-medium">
+                                                        Best Selling Publisher' Development Of The Proeye Project, A Wallet Analytics And Search Engine Platform On Blockchain, Was Exceptional.
+                                                    </p>
+                                                </div>
                                             </div>
-                                            <p className="text-[#5c5b5b] text-xs leading-normal font-medium">Best Selling Publisher' Development Of The Proeye Project, A Wallet Analytics And Search Engine Platform On Blockchain, Was Exceptional.</p>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div className={`bg-primary-100 rounded-xl flex items-center flex-col justify-center `}>
-                                <div className="px-8 py-6 text-center text-white">
-                                    <h4 className="text-[40px] leading-normal font-semibold mb-4">Top-Quality Articles, Delivered Weekly.</h4>
-                                    <p className="text-base leading-normal font-normal">Best Selling Publisher' Development Of The Proeye <br /> Project, A Wallet Analytics And Search Engine</p>
-                                    <form onSubmit={handleSubmit} className="mt-8">
-                                        <div className="bg-[#ffffff] bg-opacity-90 border-2 border-white flex mr-md:w-[100%] mx-auto mb-[50px] p-[6px] rounded-[10px]">
-                                            <input type="email" placeholder="Enter Your Email Address" name="email" id="email" required={true} className="block w-full bg-transparent ps-4 placeholder:text-[#BFBFBF] focus-visible:outline-none text-white font-normal text-sm leading-normal" />
-                                            <button className="bg-black text-white text-lg block mr-sm:w-[50%] w-[55%] rounded-[10px] py-[10px]">{score}</button>
-                                        </div>
-                                    </form>
-                                    <span className="block text-sm">By Entering Your Email, You Are Agreeing To Our <Link href="/privacy-policy" target="_blank">Privacy <span className="inline-block border-b-2 border-white">Policy.</span></Link></span>
-                                </div>
-                            </div>
+                                )
+                            ))}
                         </div>
-                        <div className="grid grid-cols-3 gap-5 mb-5">
-                        {filteredData.map(([img, subtitle, title, desc], i) => (
-                            <div key={i} className="bg-[#F3F3F3] rounded-xl">
-                                <div className="border-b border-[#D4D4D4]">
-                                    <Link href="#">
-                                        <Image src={img} alt="books" width={440} height={200} className="block mx-auto w-full" />
-                                    </Link>
-                                    <div className="px-4 py-6">
-                                        <span className="block text-[#F32F53] font-semibold text-base leading-normal">{subtitle}</span>
-                                        <h4 className="text-[20px] leading-normal font-semibold text-[#000] mb-4">
-                                            <Link href="#">{title}</Link>
-                                        </h4>
-                                        <p className="text-sm leading-normal font-normal">{desc}</p>
-                                        <Link href="#" className="flex items-center ms-auto mt-5 gap-x-2 border-b-2 border-black w-max">
-                                            <span className="block">Read More</span>
-                                            <span><Image src={Arrow} alt="arrow" className="block" /></span>
-                                        </Link>
-                                    </div>
-                                </div>
-                                <div className="px-4 py-8">
-                                    <div className="flex items-start gap-x-2">
-                                        <Image src={Avater} alt="avater" className="block w-[15%] rounded-full" />
-                                        <div>
-                                            <div className="flex items-center gap-x-2">
-                                                <h5 className="text-sm font-medium text-black">Nick Willford</h5>
-                                                <Image src={Check} alt="check" className="block" />
-                                            </div>
-                                            <p className="text-[#5c5b5b] text-xs leading-normal font-medium">
-                                                Best Selling Publisher' Development Of The Proeye Project, A Wallet Analytics And Search Engine Platform On Blockchain, Was Exceptional.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
                     </div>
-                    </div>
-                    <MRCTA text="Load More" classes="mx-auto !bg-[#000000] !mt-12 !text-lg !font-bold !px-16 shadow-[0px_5px_20px_rgba(0,0,0,.4)] hover:!bg-primary-100" />
+                    {visibleItems < filteredData.length && (
+                        <button onClick={handleShowMore} className="bg-black font-bold text-lg block mx-auto text-white py-3 px-14 rounded-lg mt-14">
+                            Load More
+                        </button>
+                    )}
                 </div>
             </div>
         </section>
