@@ -104,15 +104,15 @@ const Cards = ({ tabs }) => {
     const [filter, setFilter] = useState('All');
     const [data, setData] = useState([]);
     const [filteredData, setFilteredData] = useState([]);
-    const [visibleItems, setVisibleItems] = useState(6); // Initial number of visible items
+    const [visibleItems, setVisibleItems] = useState(6); 
 
     const handleFilterClick = (selectedOption) => {
         setFilter(selectedOption);
-        setVisibleItems(6); // Reset visible items on filter change
+        setVisibleItems(6); 
     };
 
     const handleShowMore = () => {
-        setVisibleItems((prev) => prev + 6); // Increase visible items by 6
+        setVisibleItems((prev) => prev + 6); 
     };
 
     const handleFilterSubmit = (selectedOption) => {
@@ -179,7 +179,6 @@ const Cards = ({ tabs }) => {
                         ))}
                     </div>
                     <div key={useId()}>
-
                         <div className="grid mr-lg:grid-cols-3 mr-md:grid-cols-2 grid-cols-1 gap-5 mb-5 mr-md:mt-10 mt-12">
                             {filteredData.slice(0, visibleItems).map(([img, subtitle, title, desc], i) => (
                                 img === 'special' ? (
