@@ -13,29 +13,37 @@ const AudioBooks = () => {
     const [isPlayingOne, setIsPlayingOne] = useState(false);
     const [isPlayingTwo, setIsPlayingTwo] = useState(false);
     const [isPlayingThree, setIsPlayingThree] = useState(false);
-    const audioRef = useRef(null);
+
+    const audioRefOne = useRef(null);
+    const audioRefTwo = useRef(null);
+    const audioRefThree = useRef(null);
 
     const togglePlayOne = () => {
+        const audio = audioRefOne.current;
         if (isPlayingOne) {
-            audioRef.current.pause();
+            audio.pause();
         } else {
-            audioRef.current.play();
+            audio.play();
         }
         setIsPlayingOne(!isPlayingOne);
     };
+
     const togglePlayTwo = () => {
+        const audio = audioRefTwo.current;
         if (isPlayingTwo) {
-            audioRef.current.pause();
+            audio.pause();
         } else {
-            audioRef.current.play();
+            audio.play();
         }
         setIsPlayingTwo(!isPlayingTwo);
     };
+
     const togglePlayThree = () => {
+        const audio = audioRefThree.current;
         if (isPlayingThree) {
-            audioRef.current.pause();
+            audio.pause();
         } else {
-            audioRef.current.play();
+            audio.play();
         }
         setIsPlayingThree(!isPlayingThree);
     };
@@ -77,7 +85,7 @@ const AudioBooks = () => {
                                 </div>
                             </div>
                             <div className='w-[10%] mr-md:flex hidden mr-lg:w-[18%] items-end justify-end pr-[20px]'>
-                                <audio ref={audioRef} src="/Opening_Credits.mp3" type="audio/mpeg" />
+                                <audio ref={audioRefOne} src="/audios/Dance-Two-Hearts.mp3" type="audio/mpeg" />
                                 <button onClick={togglePlayOne}>
                                     {isPlayingOne ? <Image src={pause} width="50" height="50" /> : <Image src={play} width="50" height="50" />}
                                 </button>
@@ -105,7 +113,7 @@ const AudioBooks = () => {
                                 </div>
                             </div>
                             <div className='w-[10%] mr-md:flex hidden mr-lg:w-[18%] items-end justify-end pr-[20px]'>
-                                <audio ref={audioRef} src="/Opening_Credits.mp3" type="audio/mpeg" />
+                                <audio ref={audioRefTwo} src="/audios/The-Quest-For-Lost-Treasures.mp3" type="audio/mpeg" />
                                 <button onClick={togglePlayTwo}>
                                     {isPlayingTwo ? <Image src={pause} width="50" height="50" /> : <Image src={play} width="50" height="50" />}
                                 </button>
@@ -133,7 +141,7 @@ const AudioBooks = () => {
                                 </div>
                             </div>
                             <div className='w-[10%] mr-md:flex hidden mr-lg:w-[18%] items-end justify-end pr-[20px]'>
-                                <audio ref={audioRef} src="/Opening_Credits.mp3" type="audio/mpeg" />
+                                <audio ref={audioRefThree} src="/audios/The-Story-of-a-Lifetime.mp3" type="audio/mpeg" />
                                 <button onClick={togglePlayThree}>
                                     {isPlayingThree ? <Image src={pause} width="50" height="50" /> : <Image src={play} width="50" height="50" />}
                                 </button>
