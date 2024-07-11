@@ -126,7 +126,7 @@ const Banner = () => {
                                                     style={{ width: `${progress}%` }}
                                                 ></span>
                                             </span>
-                                            <audio ref={audioRef} src="/Opening_Credits.mp3" type="audio/mpeg" />
+                                            <audio ref={audioRef} src="audios/Separate-Ways.mp3" type="audio/mpeg" />
                                             <div className="controls flex items-center justify-center gap-x-4 pt-4">
                                                 <div className="prev">
                                                     <Image src={Prev} alt='PSB' width={15} height={15} />
@@ -165,7 +165,7 @@ const Banner = () => {
                                                     style={{ width: `${progress}%` }}
                                                 ></span>
                                             </span>
-                                            <audio ref={audioRef} src="/Opening_Credits.mp3" type="audio/mpeg" />
+                                            <audio ref={audioRef} src="audios/The-Quest-For-Lost-Treasures.mp3" type="audio/mpeg" />
                                             <div className="controls flex items-center justify-center gap-x-4 pt-4">
                                                 <div className="prev">
                                                     <Image src={Prev} alt='PSB' width={15} height={15} />
@@ -204,7 +204,7 @@ const Banner = () => {
                                                     style={{ width: `${progress}%` }}
                                                 ></span>
                                             </span>
-                                            <audio ref={audioRef} src="/Opening_Credits.mp3" type="audio/mpeg" />
+                                            <audio ref={audioRef} src="audios/Wings-of-Fire.mp3" type="audio/mpeg" />
                                             <div className="controls flex items-center justify-center gap-x-4 pt-4">
                                                 <div className="prev">
                                                     <Image src={Prev} alt='PSB' width={15} height={15} />
@@ -221,85 +221,7 @@ const Banner = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div>
-                                <div className="sliderMain pb-[40px] mr-md:pb-[100px] pt-8 lg:pt-0 relative">
-                                    <div className="SliderImage ml-auto">
-                                        <Image src={Book1} alt='PSB' />
-                                    </div>
-                                    <div className="sliderPlayIcon mt-[-100px] ml-[345px] mr-lg:ml-[240px] mr-xl:ml-[345px] mr-3xl:ml-[360px] relative mr-md:block hidden backdrop-blur-xl bg-[#737373]/80 rounded-full w-[240px] h-[240px] z-[999999] p-[20px]">
-                                        <Image src={circle} alt='BSP' width={241} height={241} className='ml-auto block ' />
-                                        <button onClick={togglePlay} className='playIcon absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
-                                            {isPlaying ? <Image src={Pause} width={30} height={30} alt='BSP' /> : <Image src={play} alt='BSP' />}
-                                        </button>
-                                    </div>
-                                    <div className="songDetails mt-[-60px] mr-md:mt-[-200px] ml-[35px] mr-md:ml-[130px] mr-lg:ml-[30px] mr-xl:ml-[110px] z-[1] relative px-[20px] py-[20px] rounded-[15px] backdrop-blur-xl bg-[#737373]/80">
-                                        <div className="content">
-                                            <h3 className='secondary text-[20px] leading-[30px] font-medium text-white '>Separate Ways</h3>
-                                            <p className='text-[14px] text-[#8D8D8D] secondary'>Carole A Lee</p>
-                                            <span className='bg-[#8D8D8D] rounded-[10px] h-[4px] w-[250px] block mt-4 relative'>
-                                                <span
-                                                    className='bg-white h-full block absolute top-0 left-0 rounded-[10px]'
-                                                    style={{ width: `${progress}%` }}
-                                                ></span>
-                                            </span>
-                                            <audio ref={audioRef} src="/Opening_Credits.mp3" type="audio/mpeg" />
-                                            <div className="controls flex items-center justify-center gap-x-4 pt-4">
-                                                <div className="prev">
-                                                    <Image src={Prev} alt='PSB' width={15} height={15} />
-                                                </div>
-                                                <div className="pause bg-[#40BEE2] rounded-full w-[40px] h-[40px] flex items-center justify-center">
-                                                    <button onClick={togglePlay}>
-                                                        {isPlaying ? <Image src={Pause} width={16} height={16} /> : <Image src={play} width={18} height={18} className='pl-[2px]' />}
-                                                    </button>
-                                                </div>
-                                                <div className="next">
-                                                    <Image src={Next} alt='PSB' width={15} height={15} />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div className="sliderMain pb-[40px] mr-md:pb-[100px] pt-8 lg:pt-0 relative">
-                                    <div className="SliderImage ml-auto">
-                                        <Image src={Book4} alt='PSB' />
-                                    </div>
-                                    <div className="sliderPlayIcon mt-[-100px] ml-[345px] mr-lg:ml-[240px] mr-xl:ml-[345px] mr-3xl:ml-[360px] relative mr-md:block hidden backdrop-blur-xl bg-[#737373]/80 rounded-full w-[240px] h-[240px] z-[999999] p-[20px]">
-                                        <Image src={circle} alt='BSP' width={241} height={241} className='ml-auto block ' />
-                                        <button onClick={togglePlay} className='playIcon absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
-                                            {isPlaying ? <Image src={Pause} width={30} height={30} alt='BSP' /> : <Image src={play} alt='BSP' />}
-                                        </button>
-                                    </div>
-                                    <div className="songDetails mt-[-60px] mr-md:mt-[-200px] ml-[35px] mr-md:ml-[130px] mr-lg:ml-[30px] mr-xl:ml-[110px] z-[1] relative px-[20px] py-[20px] rounded-[15px] backdrop-blur-xl bg-[#737373]/80">
-                                        <div className="content">
-                                            <h3 className='secondary text-[20px] leading-[30px] font-medium text-white '>Separate Ways</h3>
-                                            <p className='text-[14px] text-[#8D8D8D] secondary'>Carole A Lee</p>
-                                            <span className='bg-[#8D8D8D] rounded-[10px] h-[4px] w-[250px] block mt-4 relative'>
-                                                <span
-                                                    className='bg-white h-full block absolute top-0 left-0 rounded-[10px]'
-                                                    style={{ width: `${progress}%` }}
-                                                ></span>
-                                            </span>
-                                            <audio ref={audioRef} src="/Opening_Credits.mp3" type="audio/mpeg" />
-                                            <div className="controls flex items-center justify-center gap-x-4 pt-4">
-                                                <div className="prev">
-                                                    <Image src={Prev} alt='PSB' width={15} height={15} />
-                                                </div>
-                                                <div className="pause bg-[#40BEE2] rounded-full w-[40px] h-[40px] flex items-center justify-center">
-                                                    <button onClick={togglePlay}>
-                                                        {isPlaying ? <Image src={Pause} width={16} height={16} /> : <Image src={play} width={18} height={18} className='pl-[2px]' />}
-                                                    </button>
-                                                </div>
-                                                <div className="next">
-                                                    <Image src={Next} alt='PSB' width={15} height={15} />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            </div> 
                         </Slider>
                     </div>
                 </div>

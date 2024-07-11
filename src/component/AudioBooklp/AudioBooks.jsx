@@ -77,7 +77,7 @@ const AudioBooks = () => {
                                 </div>
                             </div>
                             <div className='w-[10%] mr-md:flex hidden mr-lg:w-[18%] items-end justify-end pr-[20px]'>
-                                <audio ref={audioRef} src="/Opening_Credits.mp3" type="audio/mpeg" />
+                                <audio ref={audioRef} src="audios/Dance-Two-Hearts.mp3" type="audio/mpeg" />
                                 <button onClick={togglePlayOne}>
                                     {isPlayingOne ? <Image src={pause} width="50" height="50" /> : <Image src={play} width="50" height="50" />}
                                 </button>
@@ -105,7 +105,7 @@ const AudioBooks = () => {
                                 </div>
                             </div>
                             <div className='w-[10%] mr-md:flex hidden mr-lg:w-[18%] items-end justify-end pr-[20px]'>
-                                <audio ref={audioRef} src="/Opening_Credits.mp3" type="audio/mpeg" />
+                                <audio ref={audioRef} src="audios/The-Haunting-of-Blackwood-House.mp3" type="audio/mpeg" />
                                 <button onClick={togglePlayTwo}>
                                     {isPlayingTwo ? <Image src={pause} width="50" height="50" /> : <Image src={play} width="50" height="50" />}
                                 </button>
@@ -133,7 +133,7 @@ const AudioBooks = () => {
                                 </div>
                             </div>
                             <div className='w-[10%] mr-md:flex hidden mr-lg:w-[18%] items-end justify-end pr-[20px]'>
-                                <audio ref={audioRef} src="/Opening_Credits.mp3" type="audio/mpeg" />
+                                <audio ref={audioRef} src="audios/The-Story-of-a-Lifetime.mp3" type="audio/mpeg" />
                                 <button onClick={togglePlayThree}>
                                     {isPlayingThree ? <Image src={pause} width="50" height="50" /> : <Image src={play} width="50" height="50" />}
                                 </button>
