@@ -49,7 +49,7 @@ export default function CaseStudies() {
                             },
                             {
                                 img: Three,
-                                title: "Love Tapestry",
+                                title: "Love's Tapestry",
                                 desc: `Luna Starlight's "Love Tapestry" reached Amazon's #1 Best Seller in the Contemporary Romance category. We ensured its success and visibility across Amazon, Goodreads, and AbeBooks through comprehensive marketing support.`,
                                 list: ["Delivered marketing services, including social media management, SEO, and targeted ads.", "Created and monetized a YouTube account, producing a book video trailer.", "Organized PR activities like a live Q&A session and ads in major publications."],
                                 bg: "bg-[#344960]",
