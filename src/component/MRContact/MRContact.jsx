@@ -9,8 +9,8 @@ const MRContact = ({
     subTitle = "Discuss Your Ideas",
     title = "Do You Have A Story Plot <br class='hidden mr-lg:block' /> In Mind? Tell Us About It!",
     desc = "We value your time and energy, which is why we're here to help you transform your <br class='hidden mr-lg:block' /> narrative into a beautifully written book.",
-    titleB="Your Book Deserves To Be Written!",
-    descB=`Now that you have an expert book writing, editing, <br className="hidden mr-sm:block" /> and publishing agency. What are you waiting for?`
+    titleB = "Your Book Deserves To Be Written!",
+    descB = `Now that you have an expert book writing, editing, <br className="hidden mr-sm:block" /> and publishing agency. What are you waiting for?`
 }) => {
     return (
         <>
@@ -39,7 +39,7 @@ const MRContact = ({
                                     />
                                     <div>
                                         <h4 className="text-[16px] mr-md:text-[20px] font-sans font-semibold text-white mr-lg:!text-black leading-tight mb-1">{titleB}</h4>
-                                        <p className="text-[14px] mr-md:text-[15px] font-sans font-normal text-white mr-lg:!text-black leading-[23px]" dangerouslySetInnerHTML={{__html : descB}} />
+                                        <p className="text-[14px] mr-md:text-[15px] font-sans font-normal text-white mr-lg:!text-black leading-[23px]" dangerouslySetInnerHTML={{ __html: descB }} />
                                     </div>
                                 </div>
                             </div>

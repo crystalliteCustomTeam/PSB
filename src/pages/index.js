@@ -5,7 +5,7 @@ import Audience from "@/fa-component/Audience";
 import Plans from "@/fa-component/Plans";
 import Enlistedlogo from "@/fa-component/Enlistedlogo";
 import SwiperComponents from "@/component/SwiperComponent";
-import {MRHero, MRContact, MRQuestioners, MRContent1, MRCards, MRVideoTestimonials} from "@/component";
+import { MRHero, MRContact, MRQuestioners, MRContent1, MRCards, MRVideoTestimonials } from "@/component";
 import PublishingNewComponent from "@/fa-component/PublishingNewComponent";
 // Media
 import BannerImg from 'media/ahsan/home-banner-new.webp'
@@ -58,7 +58,7 @@ const MRCardData = [
       },
       {
         title: "Book Marketing",
-        desc: "We're dedicated to making your book shine in the crowded marketplace! With customized strategies, we ensure your book reaches the right audience through effective promotion across multiple channels. Our experienced team not only specializes in publishing best sellers but also excels in employing strategic techniques to publicize your book. ",
+        desc: "We're dedicated to making your book shine in the crowsded marketplace! With customized strategies, we ensure your book reaches the right audience through effective promotion across multiple channels. Our experienced team not only specializes in publishing best sellers but also excels in employing strategic techniques to publicize your book. ",
       },
       {
         title: "Book Cover Design",
@@ -184,10 +184,10 @@ const Home = () => {
         <link rel="canonical" href="https://bestsellingpublisher.com" />
 
         {/* Schema */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaWebsite)}} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaCorporation)}} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaProffesionalService)}} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaProduct)}} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaWebsite) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaCorporation) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProffesionalService) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProduct) }} />
       </Head>
       <MRHero
         title={`Start Selling Your Books Worldwide With Best <br class="mr-xl:block hidden"/> Selling Publisher `}

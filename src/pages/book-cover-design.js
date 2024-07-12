@@ -159,9 +159,6 @@ const BookCoverDesign = () => {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaCorporation) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProffesionalService) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProduct) }} />
-
-
-
       </Head>
       <MRHero
         title="Covers that Let You Judge a Book"
