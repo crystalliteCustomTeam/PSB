@@ -9,7 +9,7 @@ let list = [
 const Contact = () => {
     // ===============
     const [ip, setIP] = useState('');
-    const [score, setScore] = useState('Apply For It');
+    const [score, setScore] = useState('Submit');
     const [pagenewurl, setPagenewurl] = useState('');
     const router = useRouter();
     const currentRoute = router.pathname;
