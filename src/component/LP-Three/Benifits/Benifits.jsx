@@ -5,7 +5,7 @@ import Alien from "media/book-illustrations/banifits/3.png"
 import { MRCTA } from "@/component";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import { Axios } from "axios";
+import Axios  from "axios";
 const Benifits = ({ title, desc }) => {
     // ===============
     const [ip, setIP] = useState('');

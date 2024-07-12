@@ -3,7 +3,7 @@ import Link from "next/link";
 import FilterDropdown from "../FilterDropdown/FilterDropdown";
 import { useState, useId, useEffect } from "react";
 import { useRouter } from "next/router";
-import { Axios } from "axios";
+import Axios from "axios";
 import Arrow from "media/blog-new/arrowBlack.png"
 import Banner1 from "media/blog-new/1.png"
 import Banner2 from "media/blog-new/2.png"
@@ -104,15 +104,15 @@ const Cards = ({ tabs }) => {
     const [filter, setFilter] = useState('All');
     const [data, setData] = useState([]);
     const [filteredData, setFilteredData] = useState([]);
-    const [visibleItems, setVisibleItems] = useState(6); 
+    const [visibleItems, setVisibleItems] = useState(6);
 
     const handleFilterClick = (selectedOption) => {
         setFilter(selectedOption);
-        setVisibleItems(6); 
+        setVisibleItems(6);
     };
 
     const handleShowMore = () => {
-        setVisibleItems((prev) => prev + 6); 
+        setVisibleItems((prev) => prev + 6);
     };
 
     const handleFilterSubmit = (selectedOption) => {

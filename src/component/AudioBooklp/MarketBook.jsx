@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { useRouter } from "next/router";
-import { Axios } from "axios";
+import Axios from "axios";
 // Images
 import formParticle from "media/assets/audiobook/form-particle.png"
 

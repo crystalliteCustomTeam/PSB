@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import { Axios } from "axios";
+import Axios from "axios";
 // import Banner from "media/book-marketing-company/consultationBanner.png"
 // import BannerMockup from "media/book-marketing-company/bannerMockup.png"
 const Consultation = ({ title, desc, backgroundImage, mockup }) => {

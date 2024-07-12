@@ -7,7 +7,7 @@ import Avater from "media/book-illustrations/avater.png"
 import Alien from "media/book-illustrations/banifits/3.png"
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import { Axios } from "axios";
+import Axios from "axios";
 const ContactUs = () => {
     // ===============
     const [ip, setIP] = useState('');

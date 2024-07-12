@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import { Axios } from "axios";
+import Axios from "axios";
 
 import benifitsBanner from "media/book-marketing-company/benifitsBanner.png"
 import benifitsBg from "media/book-marketing-company/benifitsBg.png"

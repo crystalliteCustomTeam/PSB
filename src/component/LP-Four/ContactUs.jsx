@@ -7,7 +7,7 @@ import Avater from "media/book-illustrations/avater.png"
 import formParticle from "media/assets/audiobook/form-particle.png"
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import { Axios } from "axios";
+import Axios from "axios";
 const ContactUs = () => {
     const [ip, setIP] = useState('');
     //creating function to load ip address from the API

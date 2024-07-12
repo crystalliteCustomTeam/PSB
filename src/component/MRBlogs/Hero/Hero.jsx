@@ -2,7 +2,7 @@ import Image from "next/image";
 import Banner from "media/blog-new/hero.png"
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import { Axios } from "axios";
+import Axios from "axios";
 const Hero = () => {
     const [ip, setIP] = useState('');
     //creating function to load ip address from the API
