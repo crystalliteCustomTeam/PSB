@@ -91,7 +91,7 @@ const Reviews = () => {
                                 <div className="shadow-md">
                                     <div className="mr-lg:my-[40px] mr-md:my-[30px] py-[30px] bg-[#fff] w-full h-full">
                                         <Image quality={95}
-                                            src="../../images/newimg/trust.png"
+                                            src="/images/newimg/trust.png"
                                             width={150}
                                             height={45}
                                             className="block mx-auto"

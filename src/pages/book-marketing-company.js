@@ -206,7 +206,8 @@ const BookMarketingCompany = () => {
             <IndustryExperts
                 title={`Time to Play Big with Book Marketing That Dominates!`}
                 desc={`Best Selling Publisher knows how to make your book stand out. Our team of experts uses proven strategies and innovative techniques to boost your book's visibility and sales. We're committed to helping you succeed and reach a wider audience. `}
-                descTwo={`Don’t settle for average results - partner with us and experience the power of top-tier book marketing. Let’s turn your book into a bestseller!`}
+                descTwo={``}
+                isContact={true}
                 bannerBg={IndustryExpertsBanner}
             />
             {/* IndustryExperts Section */}

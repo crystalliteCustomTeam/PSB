@@ -153,9 +153,9 @@ const NewFooter = () => {
                                             </Link>
                                         </li>
                                         <li className='xl:pb-5 pb-3'>
-                                            <Link href="tel:(800) 781-9093" className='flex items-start gap-x-2 text-[13px] font-[400] font-secondary xl:leading-[25px] leading-[15px]'>
-                                            <Image src={Tel} alt='Amazon Book Publishing ' className='min-h-[25px]object-contain ' />
-                                                (800) 781-9093 (Toll Free)
+                                            <Link href="tel:2135563626" className='flex items-start gap-x-2 text-[13px] font-[400] font-secondary xl:leading-[25px] leading-[15px]'>
+                                            <Image src={Tel} alt='Amazon Book Publishing ' className='min-h-[25px] object-contain ' />
+                                                (213) 556-3626 
                                             </Link>
                                         </li>
                                         <li className='xl:pb-5 pb-3'>

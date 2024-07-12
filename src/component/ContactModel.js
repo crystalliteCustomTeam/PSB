@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
@@ -9,7 +9,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
-import Router from "next/router";
+import Router, { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
 import Facebook from 'media/images/icons/facebook.svg'
@@ -17,38 +17,156 @@ import Instagram from 'media/images/icons/instagram.svg'
 import XIcon from 'media/images/icons/x-icon.svg'
 
 const Bloginner = () => {
-  const [score, setScore] = useState("Submit Form");
+  // ===============
+  const [ip, setIP] = useState('');
+  const [score, setScore] = useState('Submit Form');
+  const [pagenewurl, setPagenewurl] = useState('');
+  const router = useRouter();
+  const currentRoute = router.pathname;
+
+  useEffect(() => {
+    const getIPData = async () => {
+      try {
+        const res = await Axios.get('https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8');
+        setIP(res.data);
+      } catch (error) {
+        console.error('Error fetching IP data:', error);
+      }
+    };
+    getIPData();
+  }, []);
+
+  useEffect(() => {
+    const currentUrl = window.location.href;
+    console.log(currentUrl);
+    setPagenewurl(currentUrl);
+  }, []);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const currentdate = new Date().toLocaleString();
+
     const data = {
       name: e.target.name.value,
       email: e.target.email.value,
       phone: e.target.phone.value,
       comment: e.target.comments.value,
-    }
+      pageUrl: pagenewurl,
+      IP: `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
+      currentdate: currentdate,
+    };
 
     const JSONdata = JSON.stringify(data);
-    console.log(JSONdata);
+
     setScore('Sending Data');
-    fetch('/api/email/route', {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json, text/plain, */*',
-        'Content-Type': 'application/json'
-      },
-      body: JSONdata
-    }).then((res) => {
-      console.log(`Response received ${res}`)
+    console.log(JSONdata);
+
+    try {
+      const res = await fetch('api/email/route', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json, text/plain, */*',
+          'Content-Type': 'application/json'
+        },
+        body: JSONdata
+      });
+
       if (res.status === 200) {
-        console.log(`Response Successed ${res}`)
+        console.log('Response Successed', res);
       }
-    })
-    const { pathname } = Router
-    if (pathname == pathname) {
-      window.location.href = '/ThankYou';
+    } catch (error) {
+      console.error('Error sending data:', error);
     }
 
-  }
+    const headersList = {
+      'Accept': '*/*',
+      'User-Agent': 'Thunder Client (https://www.thunderclient.com)',
+      'Authorization': 'Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer',
+      'Content-Type': 'application/json'
+    };
+
+    const bodyContent = JSON.stringify({
+      IP: `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
+      Brand: 'BEST SELLING PUBLISHER',
+      Page: currentRoute,
+      Date: currentdate,
+      Time: currentdate,
+      JSON: JSONdata,
+    });
+
+    try {
+      await fetch('https://sheetdb.io/api/v1/1ownp6p7a9xpi', {
+        method: 'POST',
+        body: bodyContent,
+        headers: headersList
+      });
+    } catch (error) {
+      console.error('Error sending to SheetDB:', error);
+    }
+
+    const myHeaders = new Headers();
+    myHeaders.append('Content-Type', 'application/json');
+
+    const raw = JSON.stringify({
+      fields: [
+        {
+          objectTypeId: '0-1',
+          name: 'email',
+          value: e.target.email.value
+        },
+        {
+          objectTypeId: '0-1',
+          name: 'firstname',
+          value: e.target.name.value
+        },
+        {
+          objectTypeId: '0-1',
+          name: 'phone',
+          value: e.target.phone.value
+        },
+        {
+          objectTypeId: '0-1',
+          name: 'message',
+          value: e.target.comments.value
+        }
+      ],
+      context: {
+        ipAddress: ip.IPv4,
+        pageUri: pagenewurl,
+        pageName: pagenewurl
+      },
+      legalConsentOptions: {
+        consent: {
+          consentToProcess: true,
+          text: 'I agree to allow Example Company to store and process my personal data.',
+          communications: [
+            {
+              value: true,
+              subscriptionTypeId: 999,
+              text: 'I agree to receive marketing communications from Example Company.'
+            }
+          ]
+        }
+      }
+    });
+
+    const requestOptions = {
+      method: 'POST',
+      headers: myHeaders,
+      body: raw,
+      redirect: 'follow'
+    };
+
+    try {
+      const response = await fetch('https://api.hsforms.com/submissions/v3/integration/submit/46656315/524aec68-a41e-4446-87d5-416ce22cfde6', requestOptions);
+      const result = await response.text();
+      console.log(result);
+    } catch (error) {
+      console.error('Error submitting to HubSpot:', error);
+    }
+
+    router.push('/ThankYou');
+  };
 
   return (
     <>
@@ -84,7 +202,7 @@ const Bloginner = () => {
                   name="phone"
                   className="p-3 bg-[#ededed] text-[#989898] border-b-2 border-[#fff] pb-2"
                   placeholder="Phone"
-                  
+
                 />
               </div>
               <div className="w-full mb-3">
@@ -125,24 +243,24 @@ const Bloginner = () => {
               <ul className="text-sm text-white">
                 <li className="mb-4 border-b-2 flex items-center gap-x-1 border-[#f9f9f9]">
                   <FontAwesomeIcon icon={faEnvelope} width={30} height={30} className="px-2" /> <span className="block">
-                  <a href="mailto:info@bestsellingpublisher.com">info@bestsellingpublisher.com</a>
+                    <a href="mailto:info@bestsellingpublisher.com">info@bestsellingpublisher.com</a>
                   </span>
                 </li>
                 <li className="mb-4 border-b-2 flex items-center gap-x-1 border-[#ffffff]">
-                  <FontAwesomeIcon icon={faPhone}  width={30} height={30} className="px-2" />
+                  <FontAwesomeIcon icon={faPhone} width={30} height={30} className="px-2" />
                   <span className="block"><a href="tel:8007819093">(800) 781-9093</a></span>
                 </li>
               </ul>
               <h3 className=" text-[20px] font-bold mt-3 text-white">Follow Us:</h3>
               <div className="flex space-x-2 basis-8/12 items-center text-[12px] xs:text-center xs:mx-auto">
                 <a href="https://www.facebook.com/bestsellingpublisher" target="_blank" rel="noopener noreferrer">
-                <Image src={Facebook} alt="Icons" width={25} height={25}  />
+                  <Image src={Facebook} alt="Icons" width={25} height={25} />
                 </a>
                 <a href="https://twitter.com/bspublisher" target="_blank" rel="noopener noreferrer">
-                  <Image src={XIcon} alt="Icons" width={25} height={25}  />
+                  <Image src={XIcon} alt="Icons" width={25} height={25} />
                 </a>
                 <a href="https://www.instagram.com/bspublisher/" target="_blank" rel="noopener noreferrer">
-                  <Image src={Instagram} alt="Icons" width={25} height={25}  />
+                  <Image src={Instagram} alt="Icons" width={25} height={25} />
                 </a>
               </div>
             </div>

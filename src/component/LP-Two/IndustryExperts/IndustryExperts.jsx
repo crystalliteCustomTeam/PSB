@@ -171,13 +171,13 @@ const IndustryExperts = ({ title, desc, descTwo, isContact, bannerBg }) => {
                             {isContact ? null : (<p className="mr-md:text-base text-sm leading-normal font-normal pb-10" dangerouslySetInnerHTML={{ __html: descTwo }} />)}
                             {isContact ? (
                                 <div className="contacts">
-                                    <a href="mailto:;" className="flex items-center gap-x-4 text-[14px] mr-md:text-[18px] secondary font-[300] mb-5">
+                                    <a href="mailto:info@bestsellingpublisher.com" className="flex items-center gap-x-4 text-[14px] mr-md:text-[18px] secondary font-[300] mb-5">
                                         <Image src={Email} alt="PSB" width={20} height={20} />
                                         <span>info@bestsellingpublisher.com</span>
                                     </a>
-                                    <a href="telto:;" className="flex items-center gap-x-4 text-[14px] mr-md:text-[18px] secondary font-[300] mb-5">
+                                    <a href="tel:2135563626" className="flex items-center gap-x-4 text-[14px] mr-md:text-[18px] secondary font-[300] mb-5">
                                         <Image src={Phone} alt="PSB" width={20} height={20} />
-                                        <span>(800) 781-9093 (Toll Free)</span>
+                                        <span>(213) 556-3626</span>
                                     </a>
                                     <a href="javascript:;" className="flex items-center gap-x-4 text-[14px] mr-md:text-[18px] secondary font-[300] mb-5">
                                         <Image src={Location} alt="PSB" width={20} height={20} />

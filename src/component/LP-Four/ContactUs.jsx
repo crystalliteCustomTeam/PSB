@@ -111,9 +111,9 @@ const ContactUs = () => {
                                     <span className="block"><Image src={Email} alt="icons" width={20} height={20}/></span>
                                     <span className="block">info@bestsellingpublisher.com</span>
                                 </a>
-                                <a href="tel:8007819093" className="flex items-center gap-x-3 mb-3">
+                                <a href="tel:2135563626" className="flex items-center gap-x-3 mb-3">
                                     <span className="block"><Image src={Call} alt="icons" width={20} height={20}/></span>
-                                    <span className="block">(800) 781-9093 (Toll Free)</span>
+                                    <span className="block">(213) 556-3626</span>
                                 </a>
                                 <a href="https://maps.app.goo.gl/DxyYMqYqyHg31jo39" target="_blank" className="flex items-center gap-x-3 mb-3">
                                     <span className="block"><Image src={Location} alt="icons" width={20} height={20}/></span>
