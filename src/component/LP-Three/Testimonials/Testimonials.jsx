@@ -50,13 +50,13 @@ const Testimonials = ({
                                                         <div>
                                                             <Image src={Stars} alt='stars' width={100} height={100} className='block mb-2' />
                                                             <h4 className='mr-md:text-[25px] text-[20px] mr-xl:min-h-0 mr-lg:min-h-[50px] min-h-0 leading-normal font-bold'>{title}</h4>
-                                                            <span className='block text-[#B2B2B2] mr-md:text-base text-sm font-normal'>{aboutClient}</span>
+                                                            <span className='block min-h-[50px] text-[#B2B2B2] mr-md:text-base text-sm font-normal'>{aboutClient}</span>
                                                         </div>
                                                         <div>
                                                             <Image src={clientImage} alt='client' width={60} height={50} className='block mx-auto' />
                                                         </div>
                                                     </div>
-                                                    <p className='mr-md:text-[20px] mr-2xl:min-h-[250px] mr-lg:min-h-[220px] min-h-[100px] text-base leading-normal font-medium mt-4'>{desc}</p>
+                                                    <p className='mr-md:text-[20px] mr-2xl:min-h-[200px] mr-lg:min-h-[200px] min-h-[100px] text-base leading-normal font-medium mt-4'>{desc}</p>
                                                 </div>
                                             </div>
                                         ))

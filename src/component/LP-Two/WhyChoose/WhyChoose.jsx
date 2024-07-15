@@ -13,7 +13,7 @@ const WhyChoose = ({ title, desc, card }) => {
                         {card.map(([title, desc], i) => (
                             <div className="bg-white rounded-2xl text-center mr-md:px-6 px-4 py-5 group hover:bg-black transition-all duration-500 ease-in-out cursor-pointer">
                                 <h4 className="text-[20px] leading-normal font-medium mb-2 group-hover:text-white">{title}</h4>
-                                <p className="mr-md:text-base text-sm font-normal leading-normal group-hover:text-white min-h-[100px]">{desc}</p>
+                                <p className="mr-md:text-base text-sm font-normal leading-normal group-hover:text-white mr-md:min-h-[100px]">{desc}</p>
                             </div>
                         ))
                         }

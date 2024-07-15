@@ -18,9 +18,9 @@ const TypesOfIllustrations = ({ tabs }) => {
                         <h2 className="mr-lg:text-[40px] mr-md:text-[30px] text-[25px] font-semibold leading-normal mb-3">Types of Children’s Book Illustrations</h2>
                         <p className="mr-md:text-base text-sm leading-normal font-normal">Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective</p>
                     </div>
-                    <div className="grid mr-md:grid-cols-5 mr-sm:grid-cols-3 grid-cols-2 mr-md:gap-0 gap-y-7 mr-md:mt-16 mt-12 mr-lg:w-[90%] w-full mx-auto">
+                    <div className="mr-sm:grid mr-md:grid-cols-5 mr-sm:grid-cols-3 flex overflow-scroll [text-wrap:nowrap] mr-md:gap-0 gap-y-7 mr-md:mt-16 mt-12 mr-lg:w-[90%] mr-sm:w-full mx-auto">
                         {tabs && tabs?.map(({ name }, i) => (
-                            <div key={useId()} className="text-center">
+                            <div key={useId()} className="text-center mr-sm:me-0 me-5 mr-sm:pb-0 pb-5">
                                 <h4 className={`${openIndex === i ? "border-b-4 border-[#40BEE2] text-[#000000]" : "border-b-2 border-[#D1D1D1] text-[#ACACAC]"} pb-2`}>
                                     <button onClick={() => toggleAccordion(i)}>{name}</button>
                                 </h4>
@@ -35,9 +35,9 @@ const TypesOfIllustrations = ({ tabs }) => {
                             <div>
                                 <h3 className="mr-md:text-[30px] text-[20px] leading-normal font-semibold text-[#000] mb-4">{title}</h3>
                                 <p className="mr-lg:text-base text-sm leading-normal font-normal">{desc}</p>
-                                <div className="grid grid-cols-1 mr-sm:flex mr-sm:gap-x-5 gap-5 mt-8">
-                                    <MRCTA text="Connect With Us!" classes="__animatedPing !rounded-full hover:bg-transparent hover:border-black hover:text-[#000]" />
-                                    <MRCTA text="Call Us Now!" classes="__animatedPing !rounded-full bg-transparent !border-black !text-black hover:bg-black hover:!text-white hover:border-black" />
+                                <div className="grid grid-cols-1 mr-sm:flex flex-wrap mr-sm:gap-x-5 gap-5 mt-8">
+                                    <MRCTA text="Connect With Us!" handle="onclick='parent.LC_API.open_chat_window();return false;'" classes="__animatedPing !rounded-full hover:bg-transparent hover:border-black hover:text-[#000]" />
+                                    <MRCTA text="Call Us Now!" link="tel:800-781-9093" classes="__animatedPing !rounded-full bg-transparent !border-black !text-black hover:bg-black hover:!text-white hover:border-black" />
                                 </div>
                             </div>
                         </div>
