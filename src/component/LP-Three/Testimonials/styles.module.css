@@ -46,7 +46,13 @@
         gap: 25px;
     }
 }
-
+@media screen and (max-width: 767px) {
+    .embla .embla__buttons {
+        top: -25px;
+        justify-content: center;
+        gap: 25px;
+    }
+}
 @media (min-width: 300px) {
     .embla .embla__slide {
         flex: 0 0 100%;

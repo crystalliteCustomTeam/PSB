@@ -166,16 +166,16 @@ const ContactUs = () => {
                 <div className="mr-container">
                     <div className="grid grid-cols-12 mr-lg:gap-x-5 gap-5 items-center">
                         <div className="mr-xl:col-span-7 mr-lg:col-span-6 col-span-12 text-white">
-                            <h2 className="mr-lg:text-[40px] mr-md:text-[30px] text-[25px] leading-tight font-semibold mb-3">Let's Turn Your Book Into A Best Seller</h2>
-                            <p className="mr-md:text-base text-sm leading-normal font-normal">Best Selling Publisher stands as the pinnacle of excellence in the world of publishing services, <br /> renowned for its unparalleled commitment to author success. With a dedicated team of industry <br /> experts and innovative resources at their disposal, Best Selling Publisher goes above and beyond.</p>
+                            <h2 className="mr-lg:text-[40px] mr-md:text-[30px] text-[25px] leading-tight font-semibold mb-3">Hire the Best Children’s Book Illustrators for Your Project!</h2>
+                            <p className="mr-md:text-base text-sm leading-normal font-normal">We have a talented team of book illustrators ready to bring your story to life. Every project includes expert management to ensure your book illustrations are perfect. Fill out our inquiry form for children's book illustration services, and we'll promptly provide you with an estimate.</p>
                             <div className="my-8">
                                 <a href="mailto:info@bestsellingpublisher.com" className="flex items-center gap-x-3 mb-3">
                                     <span className="block"><Image src={Email} alt="icons" width={20} height={20} /></span>
                                     <span className="block">info@bestsellingpublisher.com</span>
                                 </a>
-                                <a href="tel:2135563626" className="flex items-center gap-x-3 mb-3">
+                                <a href="tel:2135563626 " className="flex items-center gap-x-3 mb-3">
                                     <span className="block"><Image src={Call} alt="icons" width={20} height={20} /></span>
-                                    <span className="block">(213) 556-3626</span>
+                                    <span className="block">(213) 556-3626 </span>
                                 </a>
                                 <a href="https://maps.app.goo.gl/DxyYMqYqyHg31jo39" target="_blank" className="flex items-center gap-x-3 mb-3">
                                     <span className="block"><Image src={Location} alt="icons" width={20} height={20} /></span>
@@ -185,9 +185,9 @@ const ContactUs = () => {
                             <div className="flex mr-sm:flex-nowrap flex-wrap mr-sm:w-max mr-sm:gap-x-5 gap-5 items-center pt-6 border-t border-[#8A8A8A]">
                                 <Image src={Avater} alt="avater" className="block" />
                                 <div>
-                                    <h5 className="text-[#40BEE2] mr-md:text-[20px] text-lg leading-normal font-bold mb-3">Your Book Deserves To Be Written!</h5>
-                                    <p className="text-base leading-normal font-normal">Now that you have an expert book writing, editing, <br className="mr-sm:block hidden" />
-                                        and publishing agency. What are you waiting for?</p>
+                                    <h5 className="text-[#40BEE2] mr-md:text-[20px] text-lg leading-normal font-bold mb-3">Make Your Book a Visual Delight with Illustrations!</h5>
+                                    <p className="text-base leading-normal font-normal">We create beautiful illustrations that make your book visually <br className="mr-sm:block hidden" />
+                                    captivating, focusing on quality and creativity.</p>
                                 </div>
                             </div>
                         </div>
@@ -195,8 +195,7 @@ const ContactUs = () => {
                             <div className="relative z-20 text-center mr-sm:w-[80%] px-5 py-[40px] rounded-3xl bg-white mx-auto border border-[#DCDCDC]">
                                 <Image src={Alien} alt="icon" width={70} height={70} className="absolute -top-6 mr-sm:-left-6 -left-4 z-30 w-[18%] h-[16%] object-contain" priority={true} />
                                 <h3 className="mr-md:text-[30px] text-[25px] font-medium leading-tight text-black mb-3">Request A <span className="text-[#40BEE2]">Free</span> Quote</h3>
-                                <p className="mr-md:text-base text-sm font-normal text-black leading-normal">Cost-effectiveness. Consumer-centric—the crudity
-                                    of book marketing, delivered!</p>
+                                <p className="mr-md:text-base text-sm font-normal text-black leading-normal">Find out how much it will cost to illustrate a children’s book</p>
                                 <form onSubmit={handleSubmit} className="mt-8">
                                     <div className="flex justify-between gap-x-5">
                                         <input type="text" required name="name" placeholder="Full Name *" onkeypress="return /[a-z]/i.test(event.key)" className="block bg-[#000] bg-opacity-30 focus-visible:outline-primary-100 w-full rounded-xl px-4 py-4 mb-4 placeholder:text-white font-medium" />
