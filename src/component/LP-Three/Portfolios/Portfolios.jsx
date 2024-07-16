@@ -7,7 +7,7 @@ import Moon from "media/book-illustrations/moon.png"
 import { MRCTA } from "@/component";
 const Portfolios = () => {
     return (
-        <section className="font-sans">
+        <section className="font-sans" id="portfolio">
             <div className="relative z-10 mr-lg:py-[80px] mr-md:py-[60px] py-[40px]">
                 <Image src={Moon} alt="icons" className="absolute mr-lg:block hidden left-6 bottom-10 -z-10 w-[100px] h-auto object-cover" priority={true} />
                 <Image src={Sun} alt="icons" className="absolute mr-lg:block hidden top-6 right-6 bottom-0 -z-10 w-[100px] h-auto object-cover" priority={true} />
@@ -28,8 +28,8 @@ const Portfolios = () => {
                         </div>
                     </div>
                     <div className="grid grid-cols-1 mr-sm:flex justify-center mr-sm:gap-x-5 gap-5 mr-md:mt-16 mt-10">
-                        <MRCTA text="Connect With Us!" classes="__animatedPing !rounded-full hover:bg-transparent hover:border-black hover:text-[#000]" />
-                        <MRCTA text="Call Us Now!" classes="__animatedPing !rounded-full bg-transparent !border-black !text-black hover:bg-black hover:!text-white hover:border-black" />
+                        <MRCTA text="Connect With Us!" handle="onclick='parent.LC_API.open_chat_window();return false;'" classes="__animatedPing !rounded-full hover:bg-transparent hover:border-black hover:text-[#000]" />
+                        <MRCTA text="Call Us Now!" link="tel:800-781-9093" classes="__animatedPing !rounded-full bg-transparent !border-black !text-black hover:bg-black hover:!text-white hover:border-black" />
                     </div>
                 </div>
             </div>

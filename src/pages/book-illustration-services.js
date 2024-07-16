@@ -1,4 +1,17 @@
-import { Benifits, ContactUs, Header, Hero, IllustrationsProcess, Portfolios, StandOut, StandOut2, Testimonials, TypesOfIllustrations, WhyChoose } from "@/component/LP-Three";
+import {
+    Benifits,
+    ContactUs,
+    Header,
+    Hero,
+    IllustrationsProcess,
+    Portfolios,
+    StandOut,
+    StandOut2,
+    Testimonials,
+    TypesOfIllustrations,
+    WhyChoose
+}
+    from "@/component/LP-Three";
 import Head from "next/head";
 import Book1 from "media/book-illustrations/portfolio/7.png"
 import Book2 from "media/book-illustrations/portfolio/8.png"

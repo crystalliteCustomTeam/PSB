@@ -160,7 +160,7 @@ const ContactUs = () => {
         router.push('/ThankYou');
     };
     return (
-        <section>
+        <section id="contact">
             <div className="relative z-10 mr-md:py-[60px] py-[40px]">
                 <Image src={Banner} alt="heroBanner" className="absolute top-0 left-0 right-0 bottom-0 -z-10 w-full h-full object-cover" priority={true} />
                 <div className="mr-container">

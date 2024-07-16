@@ -78,15 +78,13 @@ const Header = () => {
                     </Link>
                   </li>
                   {[
-                    ['Home', '/'],
-                    ['About', '/about-us'],
-                    ['Genre', '/genre'],
-                    ['Marketing', '/book-marketing'],
-                    ['Publication', '/publication'],
-                    ['Printing', '/book-printing'],
-                    ['Cover Design', '/book-cover-design'],
-                    ['Case Studies', '/case-studies'],
-                    ['Contact Us', '/contact-us']
+                    ['Home', '#'],
+                    ['Services', '#services'],
+                    ['Portfolio', '#portfolio'],
+                    ['Book Illustrations', '#bookIllustrations'],
+                    ['Process', '#process'],
+                    ['Testimonials', '#testimonials'],
+                    ['Contact', '#contact']
                   ].map(([title, url]) => (
                     <li className='mr-lg:!mb-0 !mb-3'>
                       <Link href={url} className={`list mr-2xl:!text-white mr-xl:!text-white  mr-lg:!text-white md:!text-white sm:!text-white text-white xs:!text-white mr-2xl:text-[15px] mr-xl:text-[15px] mr-lg:text-xl mr-md:text-xl mr-sm:text-xl xs:text-[20px] font-medium`}>{title}</Link>

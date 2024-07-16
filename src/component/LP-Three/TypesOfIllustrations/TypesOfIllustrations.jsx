@@ -9,7 +9,7 @@ const TypesOfIllustrations = ({ tabs }) => {
         setOpenIndex(prevIndex => (prevIndex === i ? null : i));
     };
     return (
-        <section className="font-sans">
+        <section className="font-sans" id="bookIllustrations">
             <div className="mr-lg:py-[80px] mr-md:py-[60px] py-[40px] relative z-10">
                 <Image src={Ufo} alt="icons" className="absolute mr-lg:block hidden top-10 left-6 bottom-0 -z-10 w-[100px] h-auto object-cover" priority={true} />
                 <Image src={Satellite} alt="icons" className="absolute mr-lg:block hidden top-16 right-6 bottom-0 -z-10 w-[100px] h-auto object-cover" priority={true} />

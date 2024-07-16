@@ -4,7 +4,7 @@ import Arrow from "media/book-illustrations/arrowBlue.svg"
 import { MRCTA } from "@/component";
 const WhyChoose = () => {
     return (
-        <section className="font-sans">
+        <section className="font-sans" id="services">
             <div className="relative z-10 mr-lg:py-[80px] mr-md:py-[60px] py-[40px]">
                 <Image src={Banner} alt="heroBanner" className="absolute top-0 left-0 right-0 bottom-0 -z-10 w-full h-full object-cover" priority={true} />
                 <div className="mr-container">
@@ -29,8 +29,8 @@ const WhyChoose = () => {
                                         <h4 className="mr-2xl:text-[25px] mr-lg:text-[22px] text-[20px] leading-tight font-semibold mb-4 mr-md:min-h-[60px]">{title}</h4>
                                         <p className="mr-2xl:text-base text-[15px] leading-normal font-normal mr-md:min-h-[100px]">{desc}</p>
                                     </div>
-                                    <a href="javascript:;" className="flex items-center gap-x-2 mt-4">
-                                        <span className="block group-hover:text-white text-primary-100 text-base leading-normal">More Information</span>
+                                    <a href="javascript:;" className="flex items-center gap-x-2 mt-4" onClick={() => { parent.LC_API.open_chat_window(); return false; }}>
+                                        <span className="block group-hover:text-white text-primary-100 text-base leading-normal">Let’s Talk</span>
                                         <Image src={Arrow} alt="arrow" className="block group-hover:brightness-0 group-hover:invert" />
                                     </a>
                                 </div>
@@ -38,8 +38,8 @@ const WhyChoose = () => {
                         }
                     </div>
                     <div className="grid grid-cols-1 mr-sm:flex justify-center mr-sm:gap-x-5 gap-5 mr-md:mt-16 mt-10">
-                        <MRCTA text="Connect With Us!" classes="__animatedPing !rounded-full hover:bg-transparent hover:border-white" />
-                        <MRCTA text="Call Us Now!" classes="__animatedPing !rounded-full bg-transparent border-white hover:bg-black hover:border-black" />
+                        <MRCTA text="Connect With Us!" handle="onclick='parent.LC_API.open_chat_window();return false;'" classes="__animatedPing !rounded-full hover:bg-transparent hover:border-white" />
+                        <MRCTA text="Call Us Now!" link="tel:800-781-9093" classes="__animatedPing !rounded-full bg-transparent border-white hover:bg-black hover:border-black" />
                     </div>
                 </div>
             </div>
