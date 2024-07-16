@@ -59,7 +59,7 @@ const Header = () => {
           <div className="mr-container">
             <div className="items-center justify-between gap-x-4 flex grid-cols-2 grid-rows-1">
               <div className="flex-shrink-0">
-                <Link href="/" className="text-xl font-bold text-indigo-500">
+                <Link href="#" className="text-xl font-bold text-indigo-500">
                   <Image quality={95} src={Logo} alt=" Best Selling Publisher Ghostwriting logo" width={180} height={50} priority={true} />
                 </Link>
               </div>
@@ -71,15 +71,12 @@ const Header = () => {
                     </Link>
                   </li>
                   {[
-                    ['Home', '/'],
-                    ['About', '/about-us'],
-                    ['Genre', '/genre'],
-                    ['Marketing', '/book-marketing'],
-                    ['Publication', '/publication'],
-                    ['Printing', '/book-printing'],
-                    ['Cover Design', '/book-cover-design'],
-                    ['Case Studies', '/case-studies'],
-                    ['Contact Us', '/contact-us']
+                    ['Home', '#'],
+                    ['Services', '#services'],
+                    ['Portfolio', '#portfolio'],
+                    ['Case Studies', '#caseStudies'],
+                    ['Process', '#process'],
+                    ['Contact', '#contact']
                   ].map(([title, url]) => (
                     <li className='mr-lg:!mb-0 !mb-3'>
                       <Link href={url} className={`list mr-2xl:!text-white mr-xl:!text-white  mr-lg:!text-white md:!text-white sm:!text-white text-white xs:!text-white mr-2xl:text-[15px] mr-xl:text-[15px] mr-lg:text-xl mr-md:text-xl mr-sm:text-xl xs:text-[20px] font-medium`}>{title}</Link>

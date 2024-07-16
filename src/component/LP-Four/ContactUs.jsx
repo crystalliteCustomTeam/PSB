@@ -146,7 +146,7 @@ const ContactUs = () => {
     };
 
     return (
-        <section>
+        <section id="contact">
             <div className="relative z-10 mr-md:py-[60px] py-[40px] bg-[#282828]">
                 <div className="mr-container">
                     <div className="grid grid-cols-12 mr-lg:gap-x-5 gap-5 items-center">
@@ -172,16 +172,16 @@ const ContactUs = () => {
                                 <Image src={Avater} alt="avater" className="block" />
                                 <div>
                                     <h5 className="text-[#40BEE2] mr-md:text-[20px] text-lg leading-normal font-bold mb-3">Let Your Words Take Flight!</h5>
-                                    <p className="text-base leading-normal font-normal">Let Best Selling Publisher help you discover your inner author and share your story with the world.</p>
+                                    <p className="text-base leading-normal font-normal">Let Best Selling Publisher help you discover your inner <br /> author and share your story with the world.</p>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                         <div className="mr-xl:col-span-5 mr-lg:col-span-6 col-span-12 before:top-0 before:shadow-[-30px_0px_5px_-4px_rgba(0,0,0,0.3)] before:absolute before:w-full before:h-full before:right-0 before:bg-[#242424] before:-z-10">
                             <div className="form relative overflow-hidden bg-white shadow-2xl py-[20px] mr-md:py-[40px] pl-[45px] pr-[20px] mr-md:pr-[35px] z-0">
                                 <div className="image absolute top-0 left-[-32px]">
                                     <Image src={formParticle} alt='PSB' />
                                 </div>
-                                <h3 className='text-center text-[23px] mr-md:text-[30px] leading-[40px] mr-md:leading-[70px] secondary font-[600]'>Get Your Publishing Cost Estimate</h3>
+                                <h3 className='text-center text-[23px] mr-md:text-[30px] mb-3 secondary font-[600]'>Get Your Publishing Cost Estimate</h3>
                                 <p className='text-center text-[14px] mr-md:text-[16px] secondary mr-md:leading-[25px] pb-8'>Find out how much it will cost to publish your book.</p>
                                 <form onSubmit={handleSubmit} className='relative z-[999]'>
                                     <input type="text" required name="name" placeholder='Full Name *' onkeypress="return /[a-z]/i.test(event.key)" className='text-[#000000] text-[14px] secondary leading-[20px] bg-[#F3F3F3] h-[60px] w-full rounded-[6px] px-4 mb-4 focus:outline-0' />

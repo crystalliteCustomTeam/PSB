@@ -18,7 +18,7 @@ import Image from "next/image"
 
 export default function CaseStudies() {
     return (
-        <section>
+        <section id="caseStudies">
             <div className="py-[80px]">
                 <div className="text-center text-black">
                     <h2 className="text-[30px] mr-md:text-[40px] font-semibold leading-snug mb-[15px]">

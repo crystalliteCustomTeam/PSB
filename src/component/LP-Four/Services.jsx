@@ -3,7 +3,7 @@ import { MRCTA } from "..";
 
 const Services = () => {
     return (
-        <section>
+        <section id="services">
             <div className="mr-lg:py-[80px] mr-md:py-[60px] py-[40px]">
                 <div className="mr-container">
                     <div className="mr-sm:text-center text-justify mr-xl:w-[65%] mr-lg:w-[75%] mr-md:w-[90%] w-full mx-auto">

@@ -30,7 +30,7 @@ export default function App({ Component, pageProps }) {
           || router.pathname == "/case-studies" || router.pathname == "/book-illustration-services"
           || router.pathname == "/lp/book-publishing-company"
           || router.pathname == "/blogs-ar"
-          || router.pathname == "/new-book-marketing-company"
+          || router.pathname == "/lp/book-marketing-company"
           ? "" : <Headernew />}
         {/* {loadScript ? <Component {...pageProps} /> : <Loader />} */}
         <Component {...pageProps} />
@@ -38,7 +38,7 @@ export default function App({ Component, pageProps }) {
           || router.pathname == "/audio-book-lp1"
           || router.pathname == "/lp/book-publishing-company" 
           || router.pathname == "/book-illustration-services" 
-          || router.pathname == "/new-book-marketing-company" 
+          || router.pathname == "/lp/book-marketing-company" 
           ? "" : <Footer1 />}
       </main>
       {loadScript && (

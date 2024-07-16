@@ -71,7 +71,7 @@ export default function Hero3dSlider() {
                 {
                     [Banner1, Banner2, Banner3, Banner4, Banner5].map((e, i) => (
                         <swiper-slide key={i}>
-                            <Image src={e} alt="banner" className="h-[300px] mr-lg:h-[400px] mr-xl:h-[470px] mr-lg:w-[95%] mr-2xl:w-[87%] mx-auto block" />
+                            <Image src={e} alt="banner" className="h-[300px] mr-lg:h-[350px] mr-2xl:h-[400px] mr-lg:w-[85%] mr-2xl:w-[85%] mx-auto block" />
                         </swiper-slide>
                     ))
                 }

@@ -11,7 +11,7 @@ import { Hero3dSlider } from "./"
 export default function Hero() {
     return (
         <section>
-            <div className="relative pt-[100px] pb-[50px] mr-lg:py-0 mr-lg:h-[750px] z-10 bg-gray-700">
+            <div className="relative pt-[100px] mr-md:pt-[80px] pb-[50px] z-10 bg-gray-700">
                 <Image src={Bg} alt="Bg" fill={true} className="object-cover object-center -z-10" priority={true} />
                 <div className="mr-container h-full flex flex-col justify-center relative">
                     <div className="grid grid-cols-1 mr-lg:grid-cols-2 items-center gap-5">

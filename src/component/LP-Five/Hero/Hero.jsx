@@ -7,7 +7,7 @@ import LogosCarousals from "../Logos/LogosCarousal";
 import HeroBook from "media/book-marketing-company/heroBook.png"
 import Icon1 from "media/book-marketing-company/servicesIcons/16.svg"
 import Icon2 from "media/book-marketing-company/servicesIcons/17.svg"
-import Icon3 from "media/book-marketing-company/servicesIcons/17.svg"
+import Icon3 from "media/book-marketing-company/servicesIcons/18.svg"
 const Hero = ({ title, desc }) => {
     const [ip, setIP] = useState('');
     const getIPData = async () => {
@@ -114,7 +114,7 @@ const Hero = ({ title, desc }) => {
                                         <Image src={Icon2} alt="Icons" className="block" draggable={false} />
                                     </div>
                                     <div className="text-white mb-3">
-                                        <h4 className="mr-2xl:text-[40px] mr-xl:text-[35px] text-lg leading-none font-bold mb-px">100%</h4>
+                                        <h4 className="mr-2xl:text-[40px] mr-xl:text-[35px] text-lg leading-none font-bold mb-px">99%%</h4>
                                         <span className="block mr-xl:text-base text-sm leading-normal font-normal">Customer <br /> Satisfaction</span>
                                     </div>
                                 </div>
@@ -123,8 +123,8 @@ const Hero = ({ title, desc }) => {
                                         <Image src={Icon1} alt="Icons" className="block" draggable={false} />
                                     </div>
                                     <div className="text-white mb-3">
-                                        <h4 className="mr-2xl:text-[40px] mr-xl:text-[35px] text-lg leading-none font-bold mb-px">2,500+</h4>
-                                        <span className="block mr-xl:text-base text-sm leading-normal font-normal">Customers in 51+ <br />Countries</span>
+                                        <h4 className="mr-2xl:text-[40px] mr-xl:text-[35px] text-lg leading-none font-bold mb-px">5,000+</h4>
+                                        <span className="block mr-xl:text-base text-sm leading-normal font-normal">Customers in 50+ <br />Countries</span>
                                     </div>
                                 </div>
                                 <div className="flex gap-x-2">
@@ -133,7 +133,7 @@ const Hero = ({ title, desc }) => {
                                     </div>
                                     <div className="text-white mb-3">
                                         <h4 className="mr-2xl:text-[40px] mr-xl:text-[35px] text-lg leading-none font-bold mb-px">200%</h4>
-                                        <span className="block mr-xl:text-base text-sm leading-normal font-normal">Sales Boost, <br />Guaranteed!</span>
+                                        <span className="block mr-xl:text-base text-sm leading-normal font-normal">Increase In <br /> Sales </span>
                                     </div>
                                 </div>
                             </div>

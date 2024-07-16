@@ -2,18 +2,20 @@ import {
     Header,
     Hero,
     Bookmockups,
-    Benifits,
+    BrandLogos,
+    StandOutTwo,
+} from "@/component/LP-Five"
+import {
     MarketingService,
     Consultation,
     Portfolio,
     MarketingProcess,
     WhyChoose,
     StandOut,
-    BrandLogos,
     Testimonials,
     IndustryExperts,
     FAQS,
-    Footer,
+    Footer
 } from "@/component/LP-Two"
 import Head from "next/head"
 // Services Icons
@@ -41,13 +43,14 @@ import Icon20 from "media/book-marketing-company/testimonials/5.png"
 import Icon21 from "media/book-marketing-company/testimonials/6.png"
 // Stand Out 
 import StandOutBanner from "media/book-marketing-company/standOutBanner.png"
+import StandOutTwoBanner from "media/book-marketing-company/standOutTwoBanner.png"
 // Industry Expert 
 import IndustryExpertsBanner from "media/book-marketing-company/IndustryExpertsBanner.png"
 // Marketing Image
 import StreamlinedBooks from "media/book-marketing-company/streamlinedBooks.png"
 // Consultation
 import BannerBg from "media/book-marketing-company/consultationBanner.png"
-import BannerMockup from "media/book-marketing-company/bannerMockup.png"
+import BannerMockup from "media/book-marketing-company/bannerMockup2.png"
 
 const BookMarketingCompany = () => {
     {/* Marketing Services Section Content */ }
@@ -128,13 +131,6 @@ const BookMarketingCompany = () => {
             <Bookmockups />
             {/* Books Mockup Section */}
 
-            {/* Benifits Section */}
-            <Benifits
-                title="How We Market Your Book?"
-                desc="We utilize data-driven strategies, including SEO optimization, targeted social media campaigns, and email marketing, to enhance your book's reach. Our approach includes advanced analytics to track performance, ensuring continuous improvement. Using influencer partnerships and comprehensive PR efforts, we create a buzz around your book, driving engagement and sales."
-            />
-            {/* Benifits Section */}
-
             {/* Marketing Services Section */}
             <MarketingService
                 title={`Our Services As a Result-Driven Book <span class="text-[#40BEE2]">Marketing</span> Agency`}
@@ -192,6 +188,16 @@ const BookMarketingCompany = () => {
             />
             {/* BrandLogos Section */}
 
+            {/* StandOutTwo Section */}
+            <StandOutTwo
+                title={`Ready To Make Your Book Stand Out?`}
+                desc={`Boost your book's success with our expert marketing services! Reach wider audiences, increase visibility, and drive sales. Let's elevate your book together. Contact us today`}
+                bannerBg={StandOutTwoBanner}
+                isContact={false}
+            />
+            {/* StandOutTwo Section */}
+
+
             {/* Testimonials Section */}
             <Testimonials
                 title="Insights from <span class='text-[#40BEE2]'>Our Valued</span> Clients"
@@ -204,9 +210,9 @@ const BookMarketingCompany = () => {
             {/* IndustryExperts Section */}
             <IndustryExperts
                 title={`Time to Play Big with Book Marketing That Dominates!`}
-                desc={`Best Selling Publisher knows how to make your book stand out. Our team of experts uses proven strategies and innovative techniques to boost your book's visibility and sales. We're committed to helping you succeed and reach a wider audience. `}
-                descTwo={``}
+                desc={`Best Selling Publisher knows how to make your book stand out. Our team of experts uses proven strategies and innovative techniques to boost your book's visibility and sales. We're committed to helping you succeed and reach a wider audience.`}
                 isContact={true}
+                descTwo={``}
                 bannerBg={IndustryExpertsBanner}
             />
             {/* IndustryExperts Section */}
