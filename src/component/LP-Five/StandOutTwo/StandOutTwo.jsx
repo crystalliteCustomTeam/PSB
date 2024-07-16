@@ -12,7 +12,7 @@ const StandOut = ({ title, desc, bannerBg }) => {
                             <div className="mr-2xl:col-span-6 text-white mr-lg:col-span-7 col-span-12 mr-sm:text-start text-justify">
                                 <h2 className="mr-xl:text-[40px] mr-md:text-[30px] text-[25px] leading-normal font-[600] secondary mb-3" dangerouslySetInnerHTML={{ __html: title }} />
                                 <p className="text-base font-normal leading-normal" dangerouslySetInnerHTML={{ __html: desc }} />
-                                <MRCTA text="Book An Appointment" classes="__animatedPing bg-black text-white mt-6 hover:bg-transparent hover:border-black hover:text-secondary-100" handle="onclick='parent.LC_API.open_chat_window();return false;'" />
+                                <MRCTA text="Get Free Consultation" classes="__animatedPing bg-black text-white mt-6 hover:bg-transparent hover:border-black hover:text-secondary-100" handle="onclick='parent.LC_API.open_chat_window();return false;'" />
                             </div>
                             <div className="mr-2xl:col-span-6 mr-lg:col-span-5 col-span-12 relative">
                                 <Image src={Book} alt="books" className="block mx-auto mr-xl:absolute mr-2xl:-top-[230px] mr-xl:-top-[170px] mr-xl:left-0" />

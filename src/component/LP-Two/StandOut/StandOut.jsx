@@ -12,7 +12,7 @@ const StandOut = ({ title, desc, bannerBg }) => {
                             <div className="mr-lg:col-span-8 mr-sm:col-span-9 col-span-12 mr-sm:ps-12 px-5 mr-sm:text-start text-justify">
                                 <h2 className="mr-lg:text-[40px] mr-md:text-[30px] text-[25px] leading-normal font-[600] secondary mb-3" dangerouslySetInnerHTML={{ __html: title }} />
                                 <p className="text-base font-normal leading-normal" dangerouslySetInnerHTML={{ __html: desc }} />
-                                <MRCTA text="Book An Appointment" classes="__animatedPing bg-black text-white mt-6 hover:bg-transparent hover:border-black hover:text-secondary-100" handle="onclick='parent.LC_API.open_chat_window();return false;'"/>
+                                <MRCTA text="Get Free Consultation" classes="__animatedPing bg-black text-white mt-6 hover:bg-transparent hover:border-black hover:text-secondary-100" handle="onclick='parent.LC_API.open_chat_window();return false;'"/>
                             </div>
                         </div>
                     </div>
