@@ -107,7 +107,7 @@ const Hero = ({ title, desc }) => {
                             <LogosCarousals />
                         </div>
                         <div className="relative">
-                            <Image src={HeroBook} alt="HeroBook" className="block mr-2xl:max-w-max mr-lg:max-w-[80%] mr-lg:me-auto mr-lg:mx-0 mx-auto" />
+                            <Image src={HeroBook} alt="HeroBook" className="mr-md:block hidden mr-2xl:max-w-max mr-lg:max-w-[80%] mr-lg:me-auto mr-lg:mx-0 mx-auto" />
                             <div className="mr-lg:absolute mr-lg:bottom-16 mr-lg:right-0 mr-lg:block hidden">
                                 <div className="flex gap-x-2">
                                     <div className="bg-primary-100 p-2 rounded-xl w-max h-max">
