@@ -114,7 +114,7 @@ const Hero = ({ title, desc }) => {
                                         <Image src={Icon2} alt="Icons" className="block" draggable={false} />
                                     </div>
                                     <div className="text-white mb-3">
-                                        <h4 className="mr-2xl:text-[40px] mr-xl:text-[35px] text-lg leading-none font-bold mb-px">99%%</h4>
+                                        <h4 className="mr-2xl:text-[40px] mr-xl:text-[35px] text-lg leading-none font-bold mb-px">99%</h4>
                                         <span className="block mr-xl:text-base text-sm leading-normal font-normal">Customer <br /> Satisfaction</span>
                                     </div>
                                 </div>
