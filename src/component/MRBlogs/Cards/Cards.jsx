@@ -11,7 +11,7 @@ import Banner3 from "media/blog-new/3.png"
 import Avater from "media/blog-new/avater.png"
 import Check from "media/blog-new/check.png"
 import { MRCTA } from "@/component";
-const Cards = ({ tabs }) => {
+const Cards = ({ tabs, posts }) => {
     const [ip, setIP] = useState('');
     //creating function to load ip address from the API
     const getIPData = async () => {
@@ -180,8 +180,9 @@ const Cards = ({ tabs }) => {
                     </div>
                     <div key={useId()}>
                         <div className="grid mr-lg:grid-cols-3 mr-md:grid-cols-2 grid-cols-1 gap-5 mb-5 mr-md:mt-10 mt-12">
-                            {filteredData.slice(0, visibleItems).map(([img, subtitle, title, desc], i) => (
-                                img === 'special' ? (
+                            {posts.map(({ title, excerpt: desc, slug, bSPCategories, featuredImage,author }, i) => (
+                                i === 2  ? (
+                                    <>
                                     <div key="unique-card" className="bg-primary-100 rounded-xl flex items-center flex-col justify-center">
                                         <div className="mr-2xl:px-8 px-5 py-6 text-center text-white">
                                             <h4 className="mr-2xl:text-[40px] mr-xl:text-[35px] text-[25px] leading-normal font-semibold mb-4">Top-Quality Articles, Delivered Weekly.</h4>
@@ -195,19 +196,27 @@ const Cards = ({ tabs }) => {
                                             <span className="block text-sm">By Entering Your Email, You Are Agreeing To Our <Link href="/privacy-policy" target="_blank">Privacy <span className="inline-block border-b-2 border-white">Policy.</span></Link></span>
                                         </div>
                                     </div>
-                                ) : (
+                                    
+                                    
+                                    
                                     <div key={i} className="bg-[#F3F3F3] rounded-xl">
                                         <div className="border-b border-[#D4D4D4]">
-                                            <Link href="#">
-                                                <Image src={img} alt="books" width={440} height={200} className="block mx-auto w-full" />
-                                            </Link>
+                                            {
+                                                    <Link href={`/blogs/${slug}`}>
+                                                        <Image src={process.env.NEXT_PUBLIC_MEDIA_ENDPOINT + "/" + featuredImage.node.mediaDetails.file} alt="books" width={440} height={200} className="block mx-auto w-full" />
+                                                    </Link>
+                                            }
                                             <div className="px-4 py-6">
-                                                <span className="block text-[#F32F53] font-semibold mr-md:text-base text-sm leading-normal">{subtitle}</span>
+                                                {
+                                                    bSPCategories?.nodes?.map(({ name }) => (
+                                                        <span className="block text-[#F32F53] font-semibold mr-md:text-base text-sm leading-normal capitalize">{name}</span>
+                                                    ))
+                                                }
                                                 <h4 className="mr-md:text-[20px] text-base leading-normal font-semibold text-[#000] mb-4">
-                                                    <Link href="#">{title}</Link>
+                                                    <Link href={`/blogs/${slug}`}>{title}</Link>
                                                 </h4>
-                                                <p className="mr-md:text-sm text-xs leading-normal font-normal">{desc}</p>
-                                                <Link href="#" className="mr-md:text-base text-sm flex items-center ms-auto mt-5 gap-x-2 border-b-2 border-black w-max">
+                                                <div className="mr-md:text-sm text-xs leading-normal font-normal" dangerouslySetInnerHTML={{ __html: desc.slice(0, 200) }} />
+                                                <Link href={`/blogs/${slug}`} className="mr-md:text-base text-sm flex items-center ms-auto mt-5 gap-x-2 border-b-2 border-black w-max">
                                                     <span className="block">Read More</span>
                                                     <span><Image src={Arrow} alt="arrow" className="block" /></span>
                                                 </Link>
@@ -215,14 +224,57 @@ const Cards = ({ tabs }) => {
                                         </div>
                                         <div className="px-4 py-8">
                                             <div className="flex items-start gap-x-2">
-                                                <Image src={Avater} alt="avater" className="block w-[15%] rounded-full" />
+                                                <Image src={author.node.avatar.url} alt="avater" width={100} height={100} className="block w-[15%] rounded-full" />
                                                 <div>
                                                     <div className="flex items-center gap-x-2">
-                                                        <h5 className="text-sm font-medium text-black">Nick Willford</h5>
+                                                        <h5 className="text-sm font-medium text-black">{author.node.name}</h5>
                                                         <Image src={Check} alt="check" className="block" />
                                                     </div>
                                                     <p className="text-[#5c5b5b] text-xs leading-normal font-medium">
-                                                        Best Selling Publisher' Development Of The Proeye Project, A Wallet Analytics And Search Engine Platform On Blockchain, Was Exceptional.
+                                                        {author.node.description}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </>
+                              
+
+                               
+                                ) : (
+                                    <div key={i} className="bg-[#F3F3F3] rounded-xl">
+                                        <div className="border-b border-[#D4D4D4]">
+                                            {
+                                                    <Link href={`/blogs/${slug}`}>
+                                                        <Image src={process.env.NEXT_PUBLIC_MEDIA_ENDPOINT + "/" + featuredImage.node.mediaDetails.file} alt="books" width={440} height={200} className="block mx-auto w-full" />
+                                                    </Link>
+                                            }
+                                            <div className="px-4 py-6">
+                                                {
+                                                    bSPCategories?.nodes?.map(({ name }) => (
+                                                        <span className="block text-[#F32F53] font-semibold mr-md:text-base text-sm leading-normal capitalize">{name}</span>
+                                                    ))
+                                                }
+                                                <h4 className="mr-md:text-[20px] text-base leading-normal font-semibold text-[#000] mb-4">
+                                                    <Link href={`/blogs/${slug}`}>{title}</Link>
+                                                </h4>
+                                                <div className="mr-md:text-sm text-xs leading-normal font-normal" dangerouslySetInnerHTML={{ __html: desc.slice(0, 200) }} />
+                                                <Link href={`/blogs/${slug}`} className="mr-md:text-base text-sm flex items-center ms-auto mt-5 gap-x-2 border-b-2 border-black w-max">
+                                                    <span className="block">Read More</span>
+                                                    <span><Image src={Arrow} alt="arrow" className="block" /></span>
+                                                </Link>
+                                            </div>
+                                        </div>
+                                        <div className="px-4 py-8">
+                                            <div className="flex items-start gap-x-2">
+                                                <Image src={author.node.avatar.url} alt="avater" width={100} height={100} className="block w-[15%] rounded-full" />
+                                                <div>
+                                                    <div className="flex items-center gap-x-2">
+                                                        <h5 className="text-sm font-medium text-black">{author.node.name}</h5>
+                                                        <Image src={Check} alt="check" className="block" />
+                                                    </div>
+                                                    <p className="text-[#5c5b5b] text-xs leading-normal font-medium">
+                                                        {author.node.description}
                                                     </p>
                                                 </div>
                                             </div>
