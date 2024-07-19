@@ -41,7 +41,6 @@ export default function LPFour() {
     {/* MarketingProcess Section Content*/ }
     {/* FAQS Section Content */ }
     const faqsContent = [
-        ["Is it better to self-publish or get a publisher?", "Choosing between self-publishing and traditional publishing depends on your goals. Self-publishing offers more control and higher royalty rates, while traditional publishing provides support from agents and industry professionals. We at Best Selling Publisher offer both services, allowing you to choose the path that best suits your needs and ensuring your book's success."],
         ["How long does it take to publish a book?", "The book publication time varies, typically ranging from a few months to a year. Factors like editing, design, and marketing plans impact the timeline. We streamline the process, ensuring efficient progress while maintaining high-quality standards, so your book reaches readers as soon as possible."],
         ["Can I publish both print and e-book versions?", "Yes, you can publish both print and e-book versions of your book. We offer comprehensive services to format, design, and distribute your book across multiple platforms, ensuring it reaches a wide audience in both physical and digital formats."],
         ["Do I retain the rights to my book?", "Yes, with our self-publishing services, you retain all rights to your book. For traditional publishing, rights depend on the contract terms. We provide clear guidance on rights management, ensuring you make informed decisions that best suit your publishing goals."]
