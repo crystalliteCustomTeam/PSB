@@ -7,7 +7,7 @@ const Hero = () => {
     const [ip, setIP] = useState('');
     //creating function to load ip address from the API
     const getIPData = async () => {
-        const res = await Axios.get('https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8');
+        const res = await Axios.get('https://ipwho.is/');
         setIP(res.data);
     }
     useEffect(() => {
@@ -33,7 +33,7 @@ const Hero = () => {
         const data = {
             email: e.target.email.value,
             pageUrl: pagenewurl,
-            IP: `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
+            "IP": `${ip.ip} - ${ip.country} - ${ip.city}`,
             currentdate: currentdate,
         }
 

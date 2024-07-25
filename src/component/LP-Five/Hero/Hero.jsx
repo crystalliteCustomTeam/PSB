@@ -11,7 +11,7 @@ import Icon3 from "media/book-marketing-company/servicesIcons/18.svg"
 const Hero = ({ title, desc }) => {
     const [ip, setIP] = useState('');
     const getIPData = async () => {
-        const res = await Axios.get('https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8');
+        const res = await Axios.get('https://ipwho.is/');
         setIP(res.data);
     }
     useEffect(() => {
@@ -39,7 +39,7 @@ const Hero = ({ title, desc }) => {
             email: e.target.email.value,
             phone: e.target.phone.value,
             pageUrl: pagenewurl,
-            IP: `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
+            "IP": `${ip.ip} - ${ip.country} - ${ip.city}`,
             currentdate: currentdate,
         }
 
