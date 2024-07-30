@@ -5,21 +5,16 @@ import { MRCTA } from '..'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-// Images
-import logo1 from "media/assets/audiobook/banner-1.png"
-import logo2 from "media/assets/audiobook/banner-2.png"
-import logo3 from "media/assets/audiobook/banner-3.png"
-import logo4 from "media/assets/audiobook/banner-4.png"
+// Images 
+import logo5 from "media/assets/audiobook/banner-5.svg"
 import Book1 from "media/assets/audiobook/banner-book1.svg"
-import Book2 from "media/assets/audiobook/banner-book2.svg"
-import Book3 from "media/assets/audiobook/banner-book3.svg"
+import Book2 from "media/assets/audiobook/banner-book2.svg" 
 import Book4 from "media/assets/audiobook/banner-book4.svg"
 import Prev from "media/assets/audiobook/prev.png"
 import Next from "media/assets/audiobook/next.png"
 import Pause from "media/assets/audiobook/pause.png"
 import play from "media/assets/audiobook/play.png"
 import circle from "media/assets/audiobook/circle.png"
-import songNameBg from "media/assets/audiobook/songs-bg.png"
 
 const Banner = () => {
     const bannerSlider = {
@@ -102,35 +97,26 @@ const Banner = () => {
     const booksAuthor = ["Carole A Lee", "Carole A Lee", "Carole A Lee"];
 
     return (
-        <section className="pt-[30px] pb-[30px] mr-md:pt-[80px] mr-lg:bg-[url('/assets/audiobook/banner-bg.png')] bg-cover bg-no-repeat bg-center mr-lg:mt-[-90px]">
+        <section className="pb-[30px] pt-[110px] mr-lg:pt-[80px] bg-[#2E2E2E] mr-lg:bg-[url('/assets/audiobook/banner-bg.png')] bg-cover bg-no-repeat bg-center mt-[-90px]">
             <div className="mr-container">
                 <div className="grid grid-cols-12 items-center">
                     <div className="col-span-12 mr-lg:col-span-6">
                         <div className="txt">
-                            <h1 className='text-[35px] mr-lg:text-[40px] mr-xl:text-[50px] leading-[45px] mr-xl:leading-[50px] mr-md:leading-[70px] secondary font-semibold mb-4'>We Provide Stunning <br className='mr-lg:block hidden' /> Audio Book Production</h1>
-                            <p className='text-[14px] mr-md:text-[16px] mr-xl:pr-[140px] pb-3'>Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency. </p>
+                            <h1 className='text-white text-[35px] mr-lg:text-[40px] mr-xl:text-[50px] leading-[45px] mr-xl:leading-[50px] mr-md:leading-[70px] secondary font-semibold mb-4'>We Provide Stunning <br className='mr-lg:block hidden' /> Audio Book Production</h1>
+                            <p className='text-white text-[14px] mr-md:text-[16px] mr-xl:pr-[140px] pb-3'>Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency. </p>
                         </div>
                         <div className="flex flex-wrap items-center justify-start mr-md:gap-4">
                             <div className="w-full mr-md:w-max">
                                 <MRCTA classes="mt-5 w-full !font-medium" animation="__animatedPing" text="Connect With Us!" />
                             </div>
                             <div className="w-full mr-md:w-max">
-                                <MRCTA classes="mt-5 w-full !border !border-black bg-transparent !text-black" animation="__animatedPing" text="Call Us Now!" />
+                                <MRCTA classes="mt-5 w-full !border !border-white bg-transparent !text-white" animation="__animatedPing" text="Call Us Now!" />
                             </div>
                         </div>
-                        <div className="flex pt-14 mr-lg:w-[80%]">
+                        <div className="flex pt-6 mr-lg:pt-9 mr-lg:w-[80%]">
                             <div className="image p-0">
-                                <Image src={logo1} alt='PSB' width={90} height={25} />
-                            </div>
-                            <div className="image p-0">
-                                <Image src={logo2} alt='PSB' width={135} height={25} />
-                            </div>
-                            <div className="image p-0">
-                                <Image src={logo3} alt='PSB' width={85} height={25} />
-                            </div>
-                            <div className="image p-0">
-                                <Image src={logo4} alt='PSB' width={135} height={25} />
-                            </div>
+                                <Image src={logo5} alt='PSB' />
+                            </div> 
                         </div>
                     </div>
                     <div className="col-span-12 mr-lg:col-span-6">
@@ -147,7 +133,7 @@ const Banner = () => {
                                                 {isPlaying ? <Image src={Pause} width={30} height={30} alt='BSP' /> : <Image src={play} alt='BSP' />}
                                             </button>
                                         </div>
-                                        <div className="songDetails mt-[-60px] mr-md:mt-[-200px] ml-[35px] mr-md:ml-[130px] mr-lg:ml-[30px] mr-xl:ml-[110px] z-[1] relative px-[20px] py-[20px] rounded-[15px] backdrop-blur-xl bg-[#737373]/80">
+                                        <div className="songDetails mt-[-60px] mr-md:mt-[-200px] mr-sm:ml-[35px] mr-md:ml-[130px] mr-lg:ml-[30px] mr-xl:ml-[110px] z-[1] relative px-[20px] py-[20px] rounded-[15px] backdrop-blur-xl bg-[#737373]/80">
                                             <div className="content">
                                                 <h3 className='secondary text-[20px] leading-[30px] font-medium text-white '>{booksTitle[index]}</h3>
                                                 <p className='text-[14px] text-[#8D8D8D] secondary'>{booksAuthor[index]}</p>

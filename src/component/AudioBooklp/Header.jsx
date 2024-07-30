@@ -76,7 +76,7 @@ const Header = () => {
                                         ['Genre', '#'],
                                     ].map(([title, url]) => (
                                         <li className='mb-4 mr-xl:mb-0'>
-                                            <Link href={url} className={`list mr-2xl:!text-black mr-xl:!text-black  mr-lg:!text-white md:!text-white sm:!text-white text-black xs:!text-white mr-2xl:text-[15px] mr-xl:text-[15px] mr-lg:text-xl mr-md:text-xl mr-sm:text-xl xs:text-[20px] font-[400]`}>{title}</Link>
+                                            <Link href={url} className={`list !text-white mr-2xl:text-[15px] mr-xl:text-[15px] mr-lg:text-xl mr-md:text-xl mr-sm:text-xl xs:text-[20px] font-[400]`}>{title}</Link>
                                         </li>
                                     ))}
                                     {[
@@ -84,7 +84,7 @@ const Header = () => {
                                         ['Publication', '#testimonials'],
                                     ].map(([title, url]) => (
                                         <li className='mb-4 mr-xl:mb-0'>
-                                            <Link href={url} className={`list mr-lg:!text-white md:!text-white sm:!text-white text-black xs:!text-white mr-2xl:text-[15px] mr-xl:text-[15px] mr-lg:text-xl mr-md:text-xl mr-sm:text-xl xs:text-[20px] font-[400]`}>{title}</Link>
+                                            <Link href={url} className={`list !text-white mr-2xl:text-[15px] mr-xl:text-[15px] mr-lg:text-xl mr-md:text-xl mr-sm:text-xl xs:text-[20px] font-[400]`}>{title}</Link>
                                         </li>
                                     ))}
                                     {[
@@ -105,7 +105,7 @@ const Header = () => {
                             </nav>
                             <div className="flex items-center mr-2xl:hidden mr-xl:hidden mr-lg:block md:block xs:block sm:block z:-1">
                                 <button
-                                    className={`text-black mr-lg:text-white text-4xl font-bold opacity-70 hover:opacity-100 duration-300 ${menuOpen ? '&times;' : ''
+                                    className={`text-white text-4xl font-bold opacity-70 hover:opacity-100 duration-300 ${menuOpen ? '&times;' : ''
                                         }`}
                                     onClick={toggleMenu}
                                 >
