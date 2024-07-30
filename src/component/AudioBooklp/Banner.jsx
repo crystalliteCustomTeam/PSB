@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 // Images 
 import logo5 from "media/assets/audiobook/banner-5.svg"
 import Book1 from "media/assets/audiobook/banner-book1.svg"
-import Book2 from "media/assets/audiobook/banner-book2.svg" 
+import Book2 from "media/assets/audiobook/banner-book2.svg"
 import Book4 from "media/assets/audiobook/banner-book4.svg"
 import Prev from "media/assets/audiobook/prev.png"
 import Next from "media/assets/audiobook/next.png"
@@ -102,12 +102,14 @@ const Banner = () => {
                 <div className="grid grid-cols-12 items-center">
                     <div className="col-span-12 mr-lg:col-span-6">
                         <div className="txt">
-                            <h1 className='text-white text-[35px] mr-lg:text-[40px] mr-xl:text-[50px] leading-[45px] mr-xl:leading-[50px] mr-md:leading-[70px] secondary font-semibold mb-4'>We Provide Stunning <br className='mr-lg:block hidden' /> Audio Book Production</h1>
-                            <p className='text-white text-[14px] mr-md:text-[16px] mr-xl:pr-[140px] pb-3'>Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency. </p>
+                            <h1 className='text-white text-[35px] mr-lg:text-[40px] mr-xl:text-[50px] leading-[45px] mr-xl:leading-[60px] mr-md:leading-[70px] secondary font-semibold mb-4'>Give Your Manuscript <br className='mr-lg:block hidden' />a Voice With Premium Audiobook Services!</h1>
+                            <p className='text-white text-[14px] mr-md:text-[16px] mr-xl:pr-[140px] pb-3'>
+                                With <b>67%</b> of listeners "reading" more through audiobooks, it's time to make your books accessible and move beyond traditional text. Grow your readership by narrating your book with <b>great-sounding audio</b> and enjoy the <b>highest royalty rates</b> with our premium audiobook services!
+                            </p>
                         </div>
                         <div className="flex flex-wrap items-center justify-start mr-md:gap-4">
                             <div className="w-full mr-md:w-max">
-                                <MRCTA classes="mt-5 w-full !font-medium" animation="__animatedPing" text="Connect With Us!" />
+                                <MRCTA classes="mt-5 w-full !font-medium" animation="__animatedPing" text="Let’s Chat!" />
                             </div>
                             <div className="w-full mr-md:w-max">
                                 <MRCTA classes="mt-5 w-full !border !border-white bg-transparent !text-white" animation="__animatedPing" text="Call Us Now!" />
@@ -116,7 +118,7 @@ const Banner = () => {
                         <div className="flex pt-6 mr-lg:pt-9 mr-lg:w-[80%]">
                             <div className="image p-0">
                                 <Image src={logo5} alt='PSB' />
-                            </div> 
+                            </div>
                         </div>
                     </div>
                     <div className="col-span-12 mr-lg:col-span-6">

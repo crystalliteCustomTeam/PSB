@@ -12,9 +12,7 @@ import Stars from "media/book-marketing-company/stars.png"
 
 const Testimonials = ({
     title,
-    desc,
-    isBadges,
-    isAudioArrows,
+    desc, 
     data
 }) => {
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "center" }, [ClassNames()])
@@ -37,7 +35,7 @@ const Testimonials = ({
                             <div className={`${styles.embla__container}`}>
                                 {data?.map(([title, aboutClient, clientImage, desc], i) => (
                                     <div key={i} className={`${styles.embla__slide} embla__slide mr-md:py-10 py-5`}>
-                                        <div className='__card bg-[#F3F3F3] mr-md:py-[50px] py-[30px] px-[25px] rounded-3xl'>
+                                        <div className='__card bg-[#F3F3F3] mr-md:py-[50px] py-[30px] px-[25px] rounded-3xl h-full'>
                                             <div className='flex items-center justify-between border-b border-[#C9C9C9] pb-4'>
                                                 <div>
                                                     <Image src={Stars} alt='stars' className='block' />
@@ -48,7 +46,7 @@ const Testimonials = ({
                                                     <Image src={clientImage} alt='client' className='block mx-auto' />
                                                 </div>
                                             </div>
-                                            <p className='mr-md:text-[20px] min-h-[160px] text-base leading-normal font-medium mt-4'>{desc}</p>
+                                            <p className='mr-md:text-[20px] min-h-[180px] text-base leading-normal font-medium mt-4'>{desc}</p>
                                         </div>
                                     </div>
                                 ))

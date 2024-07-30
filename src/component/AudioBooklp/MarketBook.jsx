@@ -10,10 +10,10 @@ import Axios from "axios";
 import formParticle from "media/assets/audiobook/form-particle.png"
 
 const MarketBook = ({
-    title = "How We Market Your Book?",
-    desc = "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency. Cost-effectiveness. Consumer-centric—the crudity of book marketing, delivered! Simplifying the harsh process of book marketing. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency. Cost-effectiveness. Consumer-centric—the crudity of book marketing, delivered! Simplifying the harsh process of book marketing.",
-    formTitle = "Request A <span class='text-[#40BEE2]'>Free</span> Quote",
-    formDesc = "Cost-effectiveness. Consumer-centric—the crudity of <br class='mr-lg:block hidden' /> book marketing, delivered!</p>"
+    title = "Who Should Consider Publishing an Audiobook?",
+    desc = "Authors of both fiction and non-fiction should consider publishing an audiobook to extend their reach to the largest audience possible. If you're comfortable behind the mic, narrate your own story with our guidance for a personal touch. If not, we can provide a professional narrator to bring your book to life. Stay on the cutting edge of technology and enhance accessibility for your readers. Publishing an audiobook helps you connect with more listeners and ensures your book is available in the most popular formats.",
+    formTitle = "Get Your <span class='text-[#40BEE2]'>Free </span> Audiobook Quote!",
+    formDesc = "Get an estimate for turning your manuscript into an<br class='mr-lg:block hidden' /> engaging audiobook"
 }) => {
 
     // ===============
@@ -173,7 +173,7 @@ const MarketBook = ({
                 <div className='grid grid-cols-12 items-center gap-y-5'>
                     <div className='col-span-12 mr-lg:col-span-6'>
                         <div className="txt">
-                            <h2 className='text-[25px] mr-md:text-[30px] mr-lg:text-[40px] font-[600] mr-md:leading-[70px] secondary pb-2'>{title}</h2>
+                            <h2 className='text-[25px] mr-md:text-[30px] mr-lg:text-[40px] font-[600] leading-[35px] mr-md:leading-[40px] mr-lg:leading-[50px] secondary pb-3'>{title}</h2>
                             <p className='text-[14px] mr-md:text-[16px] leading-[26px] font-[300] secondary pb-4 mr-xl:mr-5 mr-xl:pr-5 mr-md:text-left text-justify'>{desc}</p>
                             <div className='pb-3'>
                                 <div className="w-full mr-md:w-max">
@@ -217,7 +217,7 @@ const MarketBook = ({
                             <div className="image absolute top-0 left-[-32px]">
                                 <Image src={formParticle} alt='PSB' />
                             </div>
-                            <h3 className='text-center text-[23px] mr-md:text-[30px] leading-[40px] mr-md:leading-[70px] secondary font-[600]' dangerouslySetInnerHTML={{ __html: formTitle }} />
+                            <h3 className='text-center text-[23px] mr-md:text-[30px] leading-[30px] mr-md:leading-[40px] secondary font-[600] mb-3' dangerouslySetInnerHTML={{ __html: formTitle }} />
                             <p className='text-center text-[14px] mr-md:text-[16px] secondary mr-md:leading-[25px] pb-8' dangerouslySetInnerHTML={{ __html: formDesc }} />
                             <form onSubmit={handleSubmit} className='relative z-[999]'>
                                 <input type="text" required name="name" placeholder='Full Name *' onkeypress="return /[a-z]/i.test(event.key)" className='text-[#000000] text-[14px] secondary leading-[20px] bg-[#F3F3F3] h-[60px] w-full rounded-[6px] px-4 mb-4 focus:outline-0' />

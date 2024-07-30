@@ -54,8 +54,8 @@ const AudioBooks = () => {
                     <div className="col-span-12">
                         <div className="flex-col mr-lg:flex-row flex items-center justify-between pb-5">
                             <div className="txt">
-                                <h2 className='text-[25px] mr-md:text-[30px] mr-lg:text-[40px] font-[600] mr-md:leading-[70px] secondary pb-2'>Discover the Best Audio Books</h2>
-                                <p className='text-[14px] mr-md:text-[16px] leading-[26px] font-[300] secondary mr-lg:pb-4 mr-xl:mr-5 mr-xl:pr-5'>Our seasoned marketing professionals expertly employ advanced, effective techniques to boost <br className='mr-lg:block hidden' /> your literal presence. Our seasoned marketing professionals expertly employ advanced,</p>
+                                <h2 className='text-[25px] mr-md:text-[30px] mr-lg:text-[40px] font-[600] mr-md:leading-[70px] secondary pb-2'>Listen to Our Audiobook Creations</h2>
+                                <p className='text-[14px] mr-md:text-[16px] leading-[26px] font-[300] secondary mr-lg:pb-4 mr-xl:mr-5 mr-xl:pr-5'>Enjoy samples of top-quality audiobooks from successful authors and enhance your listening experience with our expertly produced titles.</p>
                             </div>
                             <div className="btn mr-auto mr-lg:mr-0 mr-lg:ml-auto block">
                                 <div className="w-full mr-md:w-max">
@@ -76,11 +76,11 @@ const AudioBooks = () => {
                                     <p className="secondary text-[15px] mr-lg:text-[18px] leading-[26px] mr-lg:leading-[50px] font-[300] text-[#818181] flex align-items-center gap-x-2 mr-md:gap-x-4 relative mr-md:before:content-[''] mr-md:before:absolute mr-md:before:bg-[#6DDEFF] mr-md:before:w-[9px] mr-md:before:h-[9px] mr-md:before:rounded-full mr-md:before:top-[50%] mr-md:before:translate-y-[-50%] mr-md:before:left-[-45%]">30 min</p>
                                     <p className="secondary text-[15px] mr-lg:text-[18px] leading-[26px] mr-lg:leading-[50px] font-[300] text-[#818181] flex align-items-center gap-x-2 mr-md:gap-x-4 relative mr-md:before:content-[''] mr-md:before:absolute mr-md:before:bg-[#6DDEFF] mr-md:before:w-[9px] mr-md:before:h-[9px] mr-md:before:rounded-full mr-md:before:top-[50%] mr-md:before:translate-y-[-50%] mr-md:before:left-[-45%]">Episode 08</p>
                                 </div>
-                                <h3 className='text-[25px] leading-[45px] font-semibold pb-2'>Dance Two Hearts</h3>
-                                <p className='text-[14px] mr-lg:text-[16px] leading-[26px] font-[300] secondary mr-lg:pb-2 mr-xl:mr-5 mr-xl:pr-5'>Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency. Cost effectiveness.</p>
+                                <h3 className='text-[25px] leading-[45px] font-semibold pb-2'>Whispers in the Wind</h3>
+                                <p className='text-[14px] mr-lg:text-[16px] leading-[26px] font-[300] secondary mr-lg:pb-2 mr-xl:mr-5 mr-xl:pr-5'>A haunting mystery that follows detective Laura Carter as she unravels secrets in a small town, where every whisper could be the key to solving a chilling murder.</p>
                                 <div className="btn">
                                     <div className="w-full mr-md:w-max">
-                                        <MRCTA classes="mt-5 w-full !font-[300] secondary" animation="__animatedPing" text="Connect With Us!" />
+                                        <MRCTA classes="mt-5 w-full !font-[300] secondary" animation="__animatedPing" text="Let’s Connect!" />
                                     </div>
                                 </div>
                             </div>
@@ -104,11 +104,11 @@ const AudioBooks = () => {
                                     <p className="secondary text-[15px] mr-lg:text-[18px] leading-[26px] mr-lg:leading-[50px] font-[300] text-[#818181] flex align-items-center gap-x-2 mr-md:gap-x-4 relative mr-md:before:content-[''] mr-md:before:absolute mr-md:before:bg-[#6DDEFF] mr-md:before:w-[9px] mr-md:before:h-[9px] mr-md:before:rounded-full mr-md:before:top-[50%] mr-md:before:translate-y-[-50%] mr-md:before:left-[-45%]">30 min</p>
                                     <p className="secondary text-[15px] mr-lg:text-[18px] leading-[26px] mr-lg:leading-[50px] font-[300] text-[#818181] flex align-items-center gap-x-2 mr-md:gap-x-4 relative mr-md:before:content-[''] mr-md:before:absolute mr-md:before:bg-[#6DDEFF] mr-md:before:w-[9px] mr-md:before:h-[9px] mr-md:before:rounded-full mr-md:before:top-[50%] mr-md:before:translate-y-[-50%] mr-md:before:left-[-45%]">Episode 08</p>
                                 </div>
-                                <h3 className='text-[25px] leading-[45px] font-semibold pb-2'>The Haunting Of Blackwood House</h3>
-                                <p className='text-[14px] mr-lg:text-[16px] leading-[26px] font-[300] secondary mr-lg:pb-2 mr-xl:mr-5 mr-xl:pr-5'>Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency. Cost effectiveness.</p>
+                                <h3 className='text-[25px] leading-[45px] font-semibold pb-2'>Rise of the Phoenix</h3>
+                                <p className='text-[14px] mr-lg:text-[16px] leading-[26px] font-[300] secondary mr-lg:pb-2 mr-xl:mr-5 mr-xl:pr-5'>An epic fantasy adventure where young mage Elara embarks on a perilous journey to revive the mythical Phoenix, battling dark forces and uncovering her true destiny along the way.</p>
                                 <div className="btn">
                                     <div className="w-full mr-md:w-max">
-                                        <MRCTA classes="mt-5 w-full !font-[300] secondary" animation="__animatedPing" text="Connect With Us!" />
+                                        <MRCTA classes="mt-5 w-full !font-[300] secondary" animation="__animatedPing" text="Let’s Connect!" />
                                     </div>
                                 </div>
                             </div>
@@ -132,11 +132,11 @@ const AudioBooks = () => {
                                     <p className="secondary text-[15px] mr-lg:text-[18px] leading-[26px] mr-lg:leading-[50px] font-[300] text-[#818181] flex align-items-center gap-x-2 mr-md:gap-x-4 relative mr-md:before:content-[''] mr-md:before:absolute mr-md:before:bg-[#6DDEFF] mr-md:before:w-[9px] mr-md:before:h-[9px] mr-md:before:rounded-full mr-md:before:top-[50%] mr-md:before:translate-y-[-50%] mr-md:before:left-[-45%]">30 min</p>
                                     <p className="secondary text-[15px] mr-lg:text-[18px] leading-[26px] mr-lg:leading-[50px] font-[300] text-[#818181] flex align-items-center gap-x-2 mr-md:gap-x-4 relative mr-md:before:content-[''] mr-md:before:absolute mr-md:before:bg-[#6DDEFF] mr-md:before:w-[9px] mr-md:before:h-[9px] mr-md:before:rounded-full mr-md:before:top-[50%] mr-md:before:translate-y-[-50%] mr-md:before:left-[-45%]">Episode 08</p>
                                 </div>
-                                <h3 className='text-[25px] leading-[45px] font-semibold pb-2'>The Story Of A Lifetime</h3>
-                                <p className='text-[14px] mr-lg:text-[16px] leading-[26px] font-[300] secondary mr-lg:pb-2 mr-xl:mr-5 mr-xl:pr-5'>Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency. Cost effectiveness.</p>
+                                <h3 className='text-[25px] leading-[45px] font-semibold pb-2'>The Silent Witness</h3>
+                                <p className='text-[14px] mr-lg:text-[16px] leading-[26px] font-[300] secondary mr-lg:pb-2 mr-xl:mr-5 mr-xl:pr-5'>A gripping true crime novel that delves into the mind of a lone survivor of a brutal attack, whose silent testimony holds the power to bring a dangerous criminal to justice.</p>
                                 <div className="btn">
                                     <div className="w-full mr-md:w-max">
-                                        <MRCTA classes="mt-5 w-full !font-[300] secondary" animation="__animatedPing" text="Connect With Us!" />
+                                        <MRCTA classes="mt-5 w-full !font-[300] secondary" animation="__animatedPing" text="Let’s Connect!" />
                                     </div>
                                 </div>
                             </div>
