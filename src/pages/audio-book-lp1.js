@@ -44,8 +44,7 @@ const autoBookLp = () => {
         ["Miguel Waters", " Marketing Director at LitWave Media", Icon16, "Their team turned our latest release into an engaging audiobook. The combination of top-notch recording equipment and expert narrators delivered a product that exceeded our expectations. Our audience loves it!"],
         ["Aron McCoy", "Founder of BookBuzz Inc.", Icon17, "Working with their audiobook production service was a fantastic experience. They handled everything from voice casting to final edits, making the process stress-free. The finished audiobook has received rave reviews from our readers."],
     ];
-    {/* Testimonials Section Content*/ }
-    {/* MarketingProcess Section Content*/ }
+    {/* Testimonials Section Content*/ } 
     {/* FAQS Section Content */ }
     const faqsContent = [
         ["What formats do you offer for audiobooks?", "We provide audiobooks in formats like MP3, M4B, and WAV, making them compatible with major platforms such as Audible, Apple Books, and Google Play.."],

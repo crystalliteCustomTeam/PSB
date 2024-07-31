@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { useEffect, useState, useRef } from 'react'
 import Image from 'next/image'
-import Logo from "media/assets/images/logo.png"
+import Logo from "media/our-reviews/bspWhiteLogo.svg"
 import TelIcon from "media/assets/sikander/telicon.png"
 const Header = () => {
     const [showSubMenu, setShowSubMenu] = useState(true);
@@ -53,7 +53,7 @@ const Header = () => {
     return (
         <>
             {/* <TOPHEADER1 /> */}
-            <div className={`font-secondary px-0 sm:!px-2 xs:!px-2 pt-0 transition-all duration-1000 ease-in-out ${isIdle ? '!-top-full' : ' '}`}>
+            <div className={`font-secondary px-0 sm:!px-2 xs:!px-2 pt-0 transition-all duration-1000 ease-in-out ${isSticky ? 'fixed top-0 left-0 right-0 z-50 shadow-lg bg-[#2E2E2E]' : 'bg-transparent'} ${isIdle ? '!-top-full' : ' '}`}>
                 <header className="bg-transparent relative z-30 py-5">
                     <div className="mr-container">
                         <div className="items-center justify-between gap-x-4 flex grid-cols-2 grid-rows-1">
@@ -71,28 +71,20 @@ const Header = () => {
                                     </li>
                                     {[
                                         ['Home', '#'],
-                                        ['About', '#'],
-                                        ['Writing Services', '#'],
-                                        ['Genre', '#'],
+                                        ['Services', '#'],
+                                        ['Process', '#'],
+                                        ['Portfolio', '#'],
                                     ].map(([title, url]) => (
                                         <li className='mb-4 mr-xl:mb-0'>
                                             <Link href={url} className={`list !text-white mr-2xl:text-[15px] mr-xl:text-[15px] mr-lg:text-xl mr-md:text-xl mr-sm:text-xl xs:text-[20px] font-[400]`}>{title}</Link>
                                         </li>
                                     ))}
                                     {[
-                                        ['Marketing', '#services'],
-                                        ['Publication', '#testimonials'],
+                                        ['Testimonials', '#services'],
+                                        ['Contact', '#testimonials'],
                                     ].map(([title, url]) => (
                                         <li className='mb-4 mr-xl:mb-0'>
                                             <Link href={url} className={`list !text-white mr-2xl:text-[15px] mr-xl:text-[15px] mr-lg:text-xl mr-md:text-xl mr-sm:text-xl xs:text-[20px] font-[400]`}>{title}</Link>
-                                        </li>
-                                    ))}
-                                    {[
-                                        ['Printing', '#process'],
-                                        ['Cover Design', '#contact'],
-                                    ].map(([title, url]) => (
-                                        <li className='mb-4 mr-xl:mb-0'>
-                                            <Link href={url} className={`list mr-lg:!text-white md:!text-white sm:!text-white text-black xs:!text-white mr-2xl:text-[15px] mr-xl:text-[15px] mr-lg:text-xl mr-md:text-xl mr-sm:text-xl xs:text-[20px] font-[400]`}>{title}</Link>
                                         </li>
                                     ))}
                                     <li className='block sm:hidden xs:hidden'>
