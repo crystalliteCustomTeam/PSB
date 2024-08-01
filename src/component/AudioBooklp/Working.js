@@ -35,10 +35,11 @@ const Working = ({ title, desc }) => {
                             <p className="mr-md:text-[16px] text-sm leading-normal font-normal mr-lg:pr-[40px] pb-4" dangerouslySetInnerHTML={{ __html: desc }} />
                             <div className="flex flex-wrap items-center justify-start mr-md:gap-4">
                                 <div className="w-full mr-md:w-max">
-                                    <MRCTA classes="mt-5 w-full !font-medium" animation="__animatedPing" text="Connect With Us!" />
+                                    <MRCTA link='javascript:$zopim.livechat.window.show();'
+                                        classes="mt-5 w-full !font-medium" animation="__animatedPing" text="Connect With Us!" />
                                 </div>
                                 <div className="w-full mr-md:w-max">
-                                    <MRCTA classes="mt-5 w-full !border !border-black bg-transparent !text-black" animation="__animatedPing" text="Call Us Now!" />
+                                    <MRCTA link='tel:800-781-9093' classes="mt-5 w-full !border !border-black bg-transparent !text-black" animation="__animatedPing" text="Call Us Now!" />
                                 </div>
                             </div>
                         </div>

@@ -79,7 +79,7 @@ const autoBookLp = () => {
             {/* Services End */}
             {/* Testimonials Start */}
             <Testimonials
-                title="Client Testimonials"
+                title="Client <span class='text-[#40BEE2]'>Testimonials</span>"
                 desc="Hear from our satisfied authors about their experiences turning their books into captivating audiobooks with our services."
                 data={testimonialData}
             />
@@ -94,7 +94,7 @@ const autoBookLp = () => {
             {/* Consultation Section */}
             {/* MarketingProcess Section */}
             <MarketingProcess
-                title={`Our 5-Step Audiobook Creation Process`}
+                title={`Our 5-Step <span class="text-[#40BEE2]">Audiobook Creation</span> Process`}
                 desc={`We use a proven process to bring your book's voice to life. After recording and editing, we distribute your audiobook on popular platforms where audiobooks are sold.`}
                 items={accordionContent}
                 booksImage={StreamlinedBooks}
@@ -112,7 +112,7 @@ const autoBookLp = () => {
             {/* StandOut Section */}
             {/* BrandLogos Section */}
             <Working
-                title={`Feature Your Audiobook on Popular Platforms!`}
+                title={`Feature Your Audiobook on <span class="text-[#40BEE2]">Popular Platforms!</span>`}
                 desc={`We spotlight your audiobook across major platforms including Audible, ChirpBooks, Apple Audiobooks, Scribd, and Google Play. Using strategic placements, we boost visibility and drive listener engagement, helping your audiobook reach a broad and engaged audience`}
             />
             {/* BrandLogos Section */}

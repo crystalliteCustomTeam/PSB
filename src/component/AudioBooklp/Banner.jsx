@@ -102,17 +102,17 @@ const Banner = () => {
                 <div className="grid grid-cols-12 items-center">
                     <div className="col-span-12 mr-lg:col-span-6">
                         <div className="txt">
-                            <h1 className='text-white text-[35px] mr-lg:text-[40px] mr-xl:text-[50px] leading-[45px] mr-xl:leading-[60px] mr-md:leading-[70px] secondary font-semibold mb-4'>Give Your Manuscript <br className='mr-lg:block hidden' />a Voice With Premium Audiobook Services!</h1>
+                            <h1 className='text-white text-[35px] mr-lg:text-[40px] mr-xl:text-[50px] leading-[45px] mr-xl:leading-[60px] mr-md:leading-[70px] secondary font-semibold mb-4'>Give Your Manuscript <br className='mr-lg:block hidden' />a Voice With Premium <span className='text-[#40BEE2]'>Audiobook Services!</span></h1>
                             <p className='text-white text-[14px] mr-md:text-[16px] mr-xl:pr-[140px] pb-3'>
                                 With <b>67%</b> of listeners "reading" more through audiobooks, it's time to make your books accessible and move beyond traditional text. Grow your readership by narrating your book with <b>great-sounding audio</b> and enjoy the <b>highest royalty rates</b> with our premium audiobook services!
                             </p>
                         </div>
                         <div className="flex flex-wrap items-center justify-start mr-md:gap-4">
                             <div className="w-full mr-md:w-max">
-                                <MRCTA classes="mt-5 w-full !font-medium" animation="__animatedPing" text="Let’s Chat!" />
+                                <MRCTA link='javascript:$zopim.livechat.window.show();' classes="mt-5 w-full !font-medium" animation="__animatedPing" text="Let’s Chat!" />
                             </div>
                             <div className="w-full mr-md:w-max">
-                                <MRCTA classes="mt-5 w-full !border !border-white bg-transparent !text-white" animation="__animatedPing" text="Call Us Now!" />
+                                <MRCTA link='tel:800-781-9093' classes="mt-5 w-full !border !border-white bg-transparent !text-white" animation="__animatedPing" text="Call Us Now!" />
                             </div>
                         </div>
                         <div className="flex pt-6 mr-lg:pt-9 mr-lg:w-[80%]">

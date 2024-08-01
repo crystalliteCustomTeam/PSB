@@ -45,16 +45,16 @@ const ChooseAudio = () => {
                     <div className="col-span-12">
                         <div className="flex-col mr-lg:flex-row flex items-center justify-between pb-10">
                             <div className="txt">
-                                <h2 className='text-[25px] mr-md:text-[30px] mr-lg:text-[40px] font-[600] leading-[35px] mr-md:leading-[40px] mr-lg:leading-[50px] secondary pb-2'>Why Choose Us For Audiobook <br className='mr-xl:block hidden' /> Services?</h2>
+                                <h2 className='text-[25px] mr-md:text-[30px] mr-lg:text-[40px] font-[600] leading-[35px] mr-md:leading-[40px] mr-lg:leading-[50px] secondary pb-2'>Why Choose Us For <span class="text-[#40BEE2]">Audiobook <br className='mr-xl:block hidden' /> Services?</span></h2>
                                 <p className='text-[14px] mr-md:text-[16px] leading-[26px] font-[300] secondary mr-lg:pb-4 mr-xl:mr-5 mr-xl:pr-5'>We turn your ideas into engaging storytelling, connecting effortlessly with listeners through our <br className='mr-xl:block hidden' /> skilled narrators and expert production</p>
                             </div>
                             <div className="btn mr-auto mr-lg:mr-0 mr-lg:ml-auto block">
                                 <div className="flex flex-wrap items-center justify-start mr-md:gap-2">
                                     <div className="w-full mr-md:w-max">
-                                        <MRCTA classes="mt-5 w-full !font-medium" animation="__animatedPing" text="Connect With Us!" />
+                                        <MRCTA link='javascript:$zopim.livechat.window.show();' classes="mt-5 w-full !font-medium" animation="__animatedPing" text="Connect With Us!" />
                                     </div>
                                     <div className="w-full mr-md:w-max">
-                                        <MRCTA classes="mr-xl:mt-5 w-full !border-2 !border-black bg-transparent !text-black" animation="__animatedPing" text="Call Us Now!" />
+                                        <MRCTA link='tel:800-781-9093' classes="mr-xl:mt-5 w-full !border-2 !border-black bg-transparent !text-black" animation="__animatedPing" text="Call Us Now!" />
                                     </div>
                                 </div>
                             </div>

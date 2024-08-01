@@ -54,7 +54,7 @@ const AudioBooks = () => {
                     <div className="col-span-12">
                         <div className="flex-col mr-lg:flex-row flex items-center justify-between pb-5">
                             <div className="txt">
-                                <h2 className='text-[25px] mr-md:text-[30px] mr-lg:text-[40px] font-[600] mr-md:leading-[70px] secondary pb-2'>Listen to Our Audiobook Creations</h2>
+                                <h2 className='text-[25px] mr-md:text-[30px] mr-lg:text-[40px] font-[600] mr-md:leading-[70px] secondary pb-2'>Listen to Our <span className='text-[#40BEE2]'> Audiobook Creations</span></h2>
                                 <p className='text-[14px] mr-md:text-[16px] leading-[26px] font-[300] secondary mr-lg:pb-4 mr-xl:mr-5 mr-xl:pr-5'>Enjoy samples of top-quality audiobooks from successful authors and enhance your listening experience with our expertly produced titles.</p>
                             </div>
                             <div className="btn mr-auto mr-lg:mr-0 mr-lg:ml-auto block">
@@ -80,7 +80,7 @@ const AudioBooks = () => {
                                 <p className='text-[14px] mr-lg:text-[16px] leading-[26px] font-[300] secondary mr-lg:pb-2 mr-xl:mr-5 mr-xl:pr-5'>A haunting mystery that follows detective Laura Carter as she unravels secrets in a small town, where every whisper could be the key to solving a chilling murder.</p>
                                 <div className="btn">
                                     <div className="w-full mr-md:w-max">
-                                        <MRCTA classes="mt-5 w-full !font-[300] secondary" animation="__animatedPing" text="Let’s Connect!" />
+                                        <MRCTA link='javascript:$zopim.livechat.window.show();' classes="mt-5 w-full !font-[300] secondary" animation="__animatedPing" text="Let’s Connect!" />
                                     </div>
                                 </div>
                             </div>
@@ -108,7 +108,7 @@ const AudioBooks = () => {
                                 <p className='text-[14px] mr-lg:text-[16px] leading-[26px] font-[300] secondary mr-lg:pb-2 mr-xl:mr-5 mr-xl:pr-5'>An epic fantasy adventure where young mage Elara embarks on a perilous journey to revive the mythical Phoenix, battling dark forces and uncovering her true destiny along the way.</p>
                                 <div className="btn">
                                     <div className="w-full mr-md:w-max">
-                                        <MRCTA classes="mt-5 w-full !font-[300] secondary" animation="__animatedPing" text="Let’s Connect!" />
+                                        <MRCTA link='javascript:$zopim.livechat.window.show();' classes="mt-5 w-full !font-[300] secondary" animation="__animatedPing" text="Let’s Connect!" />
                                     </div>
                                 </div>
                             </div>
@@ -136,7 +136,7 @@ const AudioBooks = () => {
                                 <p className='text-[14px] mr-lg:text-[16px] leading-[26px] font-[300] secondary mr-lg:pb-2 mr-xl:mr-5 mr-xl:pr-5'>A gripping true crime novel that delves into the mind of a lone survivor of a brutal attack, whose silent testimony holds the power to bring a dangerous criminal to justice.</p>
                                 <div className="btn">
                                     <div className="w-full mr-md:w-max">
-                                        <MRCTA classes="mt-5 w-full !font-[300] secondary" animation="__animatedPing" text="Let’s Connect!" />
+                                        <MRCTA link='javascript:$zopim.livechat.window.show();' classes="mt-5 w-full !font-[300] secondary" animation="__animatedPing" text="Let’s Connect!" />
                                     </div>
                                 </div>
                             </div>

@@ -10,7 +10,7 @@ import Axios from "axios";
 import formParticle from "media/assets/audiobook/form-particle.png"
 
 const MarketBook = ({
-    title = "Who Should Consider Publishing an Audiobook?",
+    title = <>Who Should Consider Publishing an <span className='text-[#40BEE2]'> Audiobook?</span></>,
     desc = "Authors of both fiction and non-fiction should consider publishing an audiobook to extend their reach to the largest audience possible. If you're comfortable behind the mic, narrate your own story with our guidance for a personal touch. If not, we can provide a professional narrator to bring your book to life. Stay on the cutting edge of technology and enhance accessibility for your readers. Publishing an audiobook helps you connect with more listeners and ensures your book is available in the most popular formats.",
     formTitle = "Get Your <span class='text-[#40BEE2]'>Free </span> Audiobook Quote!",
     formDesc = "Get an estimate for turning your manuscript into an<br class='mr-lg:block hidden' /> engaging audiobook"
@@ -177,7 +177,7 @@ const MarketBook = ({
                             <p className='text-[14px] mr-md:text-[16px] leading-[26px] font-[300] secondary pb-4 mr-xl:mr-5 mr-xl:pr-5 mr-md:text-left text-justify'>{desc}</p>
                             <div className='pb-3'>
                                 <div className="w-full mr-md:w-max">
-                                    <MRCTA classes="mt-5 w-full !font-medium secondary" handle="onclick='parent.LC_API.open_chat_window();return false;'" animation="__animatedPing" text="Let’s Connect!" />
+                                    <MRCTA link='javascript:$zopim.livechat.window.show();' classes="mt-5 w-full !font-medium secondary" handle="onclick='parent.LC_API.open_chat_window();return false;'" animation="__animatedPing" text="Let’s Connect!" />
                                 </div>
                             </div>
                             <div className='flex flex-wrap align-items-center gap-y-4 gap-x-5 mr-md:gap-x-0 justify-center mr-md:justify-between mt-5 pt-5'>
