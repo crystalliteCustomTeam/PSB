@@ -59,7 +59,7 @@ const AudioBooks = () => {
                             </div>
                             <div className="btn mr-auto mr-lg:mr-0 mr-lg:ml-auto block">
                                 <div className="w-full mr-md:w-max">
-                                    <MRCTA classes="mt-5 w-full !px-12 !font-medium secondary" handle="onclick='parent.LC_API.open_chat_window();return false;'" animation="__animatedPing" text="View All" />
+                                    <MRCTA link="tel:8007819093" classes="mt-5 w-full !px-12 !font-medium secondary" animation="__animatedPing" text="Call Us Now" />
                                 </div>
                             </div>
                         </div>
@@ -71,11 +71,11 @@ const AudioBooks = () => {
                                 </Link> */}
                             </div>
                             <div className="content w-full mr-md:w-[70%] mr-lg:w-[65%]">
-                                <div className="flex items-center gap-x-14">
+                                {/* <div className="flex items-center gap-x-14">
                                     <p className='secondary text-[15px] mr-lg:text-[18px] leading-[26px] mr-lg:leading-[50px] font-[300] text-[#818181]'>Podcastermaster</p>
                                     <p className="secondary text-[15px] mr-lg:text-[18px] leading-[26px] mr-lg:leading-[50px] font-[300] text-[#818181] flex align-items-center gap-x-2 mr-md:gap-x-4 relative mr-md:before:content-[''] mr-md:before:absolute mr-md:before:bg-[#6DDEFF] mr-md:before:w-[9px] mr-md:before:h-[9px] mr-md:before:rounded-full mr-md:before:top-[50%] mr-md:before:translate-y-[-50%] mr-md:before:left-[-45%]">30 min</p>
                                     <p className="secondary text-[15px] mr-lg:text-[18px] leading-[26px] mr-lg:leading-[50px] font-[300] text-[#818181] flex align-items-center gap-x-2 mr-md:gap-x-4 relative mr-md:before:content-[''] mr-md:before:absolute mr-md:before:bg-[#6DDEFF] mr-md:before:w-[9px] mr-md:before:h-[9px] mr-md:before:rounded-full mr-md:before:top-[50%] mr-md:before:translate-y-[-50%] mr-md:before:left-[-45%]">Episode 08</p>
-                                </div>
+                                </div> */}
                                 <h3 className='text-[25px] leading-[45px] font-semibold pb-2'>Whispers in the Wind</h3>
                                 <p className='text-[14px] mr-lg:text-[16px] leading-[26px] font-[300] secondary mr-lg:pb-2 mr-xl:mr-5 mr-xl:pr-5'>A haunting mystery that follows detective Laura Carter as she unravels secrets in a small town, where every whisper could be the key to solving a chilling murder.</p>
                                 <div className="btn">
@@ -99,11 +99,11 @@ const AudioBooks = () => {
                                 </Link> */}
                             </div>
                             <div className="content w-full mr-md:w-[70%] mr-lg:w-[65%]">
-                                <div className="flex items-center gap-x-14">
+                                {/* <div className="flex items-center gap-x-14">
                                     <p className='secondary text-[15px] mr-lg:text-[18px] leading-[26px] mr-lg:leading-[50px] font-[300] text-[#818181]'>Podcastermaster</p>
                                     <p className="secondary text-[15px] mr-lg:text-[18px] leading-[26px] mr-lg:leading-[50px] font-[300] text-[#818181] flex align-items-center gap-x-2 mr-md:gap-x-4 relative mr-md:before:content-[''] mr-md:before:absolute mr-md:before:bg-[#6DDEFF] mr-md:before:w-[9px] mr-md:before:h-[9px] mr-md:before:rounded-full mr-md:before:top-[50%] mr-md:before:translate-y-[-50%] mr-md:before:left-[-45%]">30 min</p>
                                     <p className="secondary text-[15px] mr-lg:text-[18px] leading-[26px] mr-lg:leading-[50px] font-[300] text-[#818181] flex align-items-center gap-x-2 mr-md:gap-x-4 relative mr-md:before:content-[''] mr-md:before:absolute mr-md:before:bg-[#6DDEFF] mr-md:before:w-[9px] mr-md:before:h-[9px] mr-md:before:rounded-full mr-md:before:top-[50%] mr-md:before:translate-y-[-50%] mr-md:before:left-[-45%]">Episode 08</p>
-                                </div>
+                                </div> */}
                                 <h3 className='text-[25px] leading-[45px] font-semibold pb-2'>Rise of the Phoenix</h3>
                                 <p className='text-[14px] mr-lg:text-[16px] leading-[26px] font-[300] secondary mr-lg:pb-2 mr-xl:mr-5 mr-xl:pr-5'>An epic fantasy adventure where young mage Elara embarks on a perilous journey to revive the mythical Phoenix, battling dark forces and uncovering her true destiny along the way.</p>
                                 <div className="btn">
@@ -127,11 +127,11 @@ const AudioBooks = () => {
                                 </Link> */}
                             </div>
                             <div className="content w-full mr-md:w-[70%] mr-lg:w-[65%]">
-                                <div className="flex items-center gap-x-14">
+                                {/* <div className="flex items-center gap-x-14">
                                     <p className='secondary text-[15px] mr-lg:text-[18px] leading-[26px] mr-lg:leading-[50px] font-[300] text-[#818181]'>Podcastermaster</p>
                                     <p className="secondary text-[15px] mr-lg:text-[18px] leading-[26px] mr-lg:leading-[50px] font-[300] text-[#818181] flex align-items-center gap-x-2 mr-md:gap-x-4 relative mr-md:before:content-[''] mr-md:before:absolute mr-md:before:bg-[#6DDEFF] mr-md:before:w-[9px] mr-md:before:h-[9px] mr-md:before:rounded-full mr-md:before:top-[50%] mr-md:before:translate-y-[-50%] mr-md:before:left-[-45%]">30 min</p>
                                     <p className="secondary text-[15px] mr-lg:text-[18px] leading-[26px] mr-lg:leading-[50px] font-[300] text-[#818181] flex align-items-center gap-x-2 mr-md:gap-x-4 relative mr-md:before:content-[''] mr-md:before:absolute mr-md:before:bg-[#6DDEFF] mr-md:before:w-[9px] mr-md:before:h-[9px] mr-md:before:rounded-full mr-md:before:top-[50%] mr-md:before:translate-y-[-50%] mr-md:before:left-[-45%]">Episode 08</p>
-                                </div>
+                                </div> */}
                                 <h3 className='text-[25px] leading-[45px] font-semibold pb-2'>The Silent Witness</h3>
                                 <p className='text-[14px] mr-lg:text-[16px] leading-[26px] font-[300] secondary mr-lg:pb-2 mr-xl:mr-5 mr-xl:pr-5'>A gripping true crime novel that delves into the mind of a lone survivor of a brutal attack, whose silent testimony holds the power to bring a dangerous criminal to justice.</p>
                                 <div className="btn">

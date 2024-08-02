@@ -71,7 +71,7 @@ const ChooseAudio = () => {
                                         </div>
                                         <div className="btn pt-4">
                                             <Link href="javascript:;" onClick={() => { parent.LC_API.open_chat_window(); return false; }} className='text-[16px] leading-[25px] secondary font-[500] flex items-center group-hover:duration-700 duration-700 group-hover:ease-in-out ease-in-out group-hover:text-white'>
-                                                <span className='mr-4'>More Information</span>
+                                                <span className='mr-4'>Let's Talk</span>
                                                 <Image src={Arrow} alt='PSB' className='!m-0 h-auto duration-700 group-hover:duration-700 group-hover:ease-in-out ease-in-out group-hover:invert group-hover:brightness-100' width={22} height={11} />
                                             </Link>
                                         </div>
@@ -90,7 +90,7 @@ const ChooseAudio = () => {
                                         </div>
                                         <div className="btn pt-4">
                                             <Link href="javascript:;" onClick={() => { parent.LC_API.open_chat_window(); return false; }} className='text-[16px] leading-[25px] secondary font-[500] flex items-center group-hover:duration-700 duration-700 group-hover:ease-in-out ease-in-out group-hover:text-white'>
-                                                <span className='mr-4'>More Information</span>
+                                                <span className='mr-4'>Let's Talk</span>
                                                 <Image src={Arrow} alt='PSB' className='!m-0 h-auto duration-700 group-hover:duration-700 group-hover:ease-in-out ease-in-out group-hover:invert group-hover:brightness-100' width={22} height={11} />
                                             </Link>
                                         </div>
@@ -109,7 +109,7 @@ const ChooseAudio = () => {
                                         </div>
                                         <div className="btn pt-4">
                                             <Link href="javascript:;" onClick={() => { parent.LC_API.open_chat_window(); return false; }} className='text-[16px] leading-[25px] secondary font-[500] flex items-center group-hover:duration-700 duration-700 group-hover:ease-in-out ease-in-out group-hover:text-white'>
-                                                <span className='mr-4'>More Information</span>
+                                                <span className='mr-4'>Let's Talk</span>
                                                 <Image src={Arrow} alt='PSB' className='!m-0 h-auto duration-700 group-hover:duration-700 group-hover:ease-in-out ease-in-out group-hover:invert group-hover:brightness-100' width={22} height={11} />
                                             </Link>
                                         </div>
@@ -127,7 +127,7 @@ const ChooseAudio = () => {
                                         </div>
                                         <div className="btn pt-4">
                                             <Link href="javascript:;" onClick={() => { parent.LC_API.open_chat_window(); return false; }} className='text-[16px] leading-[25px] secondary font-[500] flex items-center group-hover:duration-700 duration-700 group-hover:ease-in-out ease-in-out group-hover:text-white'>
-                                                <span className='mr-4'>More Information</span>
+                                                <span className='mr-4'>Let's Talk</span>
                                                 <Image src={Arrow} alt='PSB' className='!m-0 h-auto duration-700 group-hover:duration-700 group-hover:ease-in-out ease-in-out group-hover:invert group-hover:brightness-100' width={22} height={11} />
                                             </Link>
                                         </div>
@@ -145,7 +145,7 @@ const ChooseAudio = () => {
                                         </div>
                                         <div className="btn pt-4">
                                             <Link href="javascript:;" onClick={() => { parent.LC_API.open_chat_window(); return false; }} className='text-[16px] leading-[25px] secondary font-[500] flex items-center group-hover:duration-700 duration-700 group-hover:ease-in-out ease-in-out group-hover:text-white'>
-                                                <span className='mr-4'>More Information</span>
+                                                <span className='mr-4'>Let's Talk</span>
                                                 <Image src={Arrow} alt='PSB' className='!m-0 h-auto duration-700 group-hover:duration-700 group-hover:ease-in-out ease-in-out group-hover:invert group-hover:brightness-100' width={22} height={11} />
                                             </Link>
                                         </div>
