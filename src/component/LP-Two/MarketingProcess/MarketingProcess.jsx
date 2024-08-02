@@ -41,12 +41,12 @@ const MarketingProcess = ({ items, title, desc, booksImage }) => {
                                                         {desc}
                                                     </p>
                                                 )}
-                                                {openIndex === index && (
-                                                    <MRCTA text="Connect With Us!" classes='__animatedPing mt-5 hover:bg-black' handle="onclick='parent.LC_API.open_chat_window();return false;'" />
-                                                )}
                                             </div>
                                         </button>
                                     </div>
+                                    {openIndex === index && (
+                                        <MRCTA text="Connect With Us!" classes='__animatedPing mt-5 hover:bg-black mr-md:ms-16' handle="onclick='parent.LC_API.open_chat_window();return false;'" />
+                                    )}
                                 </div>
                             ))}
                         </div>

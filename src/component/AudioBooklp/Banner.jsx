@@ -109,7 +109,7 @@ const Banner = () => {
                         </div>
                         <div className="flex flex-wrap items-center justify-start mr-md:gap-4">
                             <div className="w-full mr-md:w-max">
-                                <MRCTA link='javascript:$zopim.livechat.window.show();' classes="mt-5 w-full !font-medium" animation="__animatedPing" text="Let’s Chat!" />
+                                <MRCTA link='javascript:;' handle="onclick='parent.LC_API.open_chat_window();return false;'" classes="mt-5 w-full !font-medium" animation="__animatedPing" text="Let’s Chat!" />
                             </div>
                             <div className="w-full mr-md:w-max">
                                 <MRCTA link='tel:800-781-9093' classes="mt-5 w-full !border !border-white bg-transparent !text-white" animation="__animatedPing" text="Call Us Now!" />

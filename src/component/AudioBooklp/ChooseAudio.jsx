@@ -51,7 +51,7 @@ const ChooseAudio = () => {
                             <div className="btn mr-auto mr-lg:mr-0 mr-lg:ml-auto block">
                                 <div className="flex flex-wrap items-center justify-start mr-md:gap-2">
                                     <div className="w-full mr-md:w-max">
-                                        <MRCTA link='javascript:$zopim.livechat.window.show();' classes="mt-5 w-full !font-medium" animation="__animatedPing" text="Connect With Us!" />
+                                        <MRCTA link='javascript:;' handle="onclick='parent.LC_API.open_chat_window();return false;'" classes="mt-5 w-full !font-medium" animation="__animatedPing" text="Connect With Us!" />
                                     </div>
                                     <div className="w-full mr-md:w-max">
                                         <MRCTA link='tel:800-781-9093' classes="mr-xl:mt-5 w-full !border-2 !border-black bg-transparent !text-black" animation="__animatedPing" text="Call Us Now!" />
@@ -70,7 +70,7 @@ const ChooseAudio = () => {
                                             <p className='group-hover:duration-700 duration-700 group-hover:ease-in-out ease-in-out group-hover:text-white text-[14px] mr-lg:text-[16px] leading-[26px] font-[300] secondary mr-lg:pb-2'>We deliver 100% original narration with solo, duet, and multicast options. Our experienced audiobook actors use soothing voices to enhance any genre.</p>
                                         </div>
                                         <div className="btn pt-4">
-                                            <Link href="javascript:;" className='text-[16px] leading-[25px] secondary font-[500] flex items-center group-hover:duration-700 duration-700 group-hover:ease-in-out ease-in-out group-hover:text-white'>
+                                            <Link href="javascript:;" onClick={() => { parent.LC_API.open_chat_window(); return false; }} className='text-[16px] leading-[25px] secondary font-[500] flex items-center group-hover:duration-700 duration-700 group-hover:ease-in-out ease-in-out group-hover:text-white'>
                                                 <span className='mr-4'>More Information</span>
                                                 <Image src={Arrow} alt='PSB' className='!m-0 h-auto duration-700 group-hover:duration-700 group-hover:ease-in-out ease-in-out group-hover:invert group-hover:brightness-100' width={22} height={11} />
                                             </Link>
@@ -89,7 +89,7 @@ const ChooseAudio = () => {
                                             <p className='group-hover:duration-700 duration-700 group-hover:ease-in-out ease-in-out group-hover:text-white text-[14px] mr-lg:text-[16px] leading-[26px] font-[300] secondary mr-lg:pb-2'>Our narrators bring years of experience and a result-oriented mindset. They adapt to all kinds of books, achieving the best version of your audiobook.</p>
                                         </div>
                                         <div className="btn pt-4">
-                                            <Link href="javascript:;" className='text-[16px] leading-[25px] secondary font-[500] flex items-center group-hover:duration-700 duration-700 group-hover:ease-in-out ease-in-out group-hover:text-white'>
+                                            <Link href="javascript:;" onClick={() => { parent.LC_API.open_chat_window(); return false; }} className='text-[16px] leading-[25px] secondary font-[500] flex items-center group-hover:duration-700 duration-700 group-hover:ease-in-out ease-in-out group-hover:text-white'>
                                                 <span className='mr-4'>More Information</span>
                                                 <Image src={Arrow} alt='PSB' className='!m-0 h-auto duration-700 group-hover:duration-700 group-hover:ease-in-out ease-in-out group-hover:invert group-hover:brightness-100' width={22} height={11} />
                                             </Link>
@@ -108,7 +108,7 @@ const ChooseAudio = () => {
                                             <p className='group-hover:duration-700 duration-700 group-hover:ease-in-out ease-in-out group-hover:text-white text-[14px] mr-lg:text-[16px] leading-[26px] font-[300] secondary mr-lg:pb-2'>We offer unlimited audiobook revisions to achieve the best result. Our focus is on delivering a final product that perfectly meets your vision.</p>
                                         </div>
                                         <div className="btn pt-4">
-                                            <Link href="javascript:;" className='text-[16px] leading-[25px] secondary font-[500] flex items-center group-hover:duration-700 duration-700 group-hover:ease-in-out ease-in-out group-hover:text-white'>
+                                            <Link href="javascript:;" onClick={() => { parent.LC_API.open_chat_window(); return false; }} className='text-[16px] leading-[25px] secondary font-[500] flex items-center group-hover:duration-700 duration-700 group-hover:ease-in-out ease-in-out group-hover:text-white'>
                                                 <span className='mr-4'>More Information</span>
                                                 <Image src={Arrow} alt='PSB' className='!m-0 h-auto duration-700 group-hover:duration-700 group-hover:ease-in-out ease-in-out group-hover:invert group-hover:brightness-100' width={22} height={11} />
                                             </Link>
@@ -126,7 +126,7 @@ const ChooseAudio = () => {
                                             <p className='group-hover:duration-700 duration-700 group-hover:ease-in-out ease-in-out group-hover:text-white text-[14px] mr-lg:text-[16px] leading-[26px] font-[300] secondary mr-lg:pb-2'>Our narrators use a precision-driven approach, refining every detail to deliver top-notch quality. This commitment ensures your audiobook meets the highest standards.</p>
                                         </div>
                                         <div className="btn pt-4">
-                                            <Link href="javascript:;" className='text-[16px] leading-[25px] secondary font-[500] flex items-center group-hover:duration-700 duration-700 group-hover:ease-in-out ease-in-out group-hover:text-white'>
+                                            <Link href="javascript:;" onClick={() => { parent.LC_API.open_chat_window(); return false; }} className='text-[16px] leading-[25px] secondary font-[500] flex items-center group-hover:duration-700 duration-700 group-hover:ease-in-out ease-in-out group-hover:text-white'>
                                                 <span className='mr-4'>More Information</span>
                                                 <Image src={Arrow} alt='PSB' className='!m-0 h-auto duration-700 group-hover:duration-700 group-hover:ease-in-out ease-in-out group-hover:invert group-hover:brightness-100' width={22} height={11} />
                                             </Link>
@@ -144,7 +144,7 @@ const ChooseAudio = () => {
                                             <p className='group-hover:duration-700 duration-700 group-hover:ease-in-out ease-in-out group-hover:text-white text-[14px] mr-lg:text-[16px] leading-[26px] font-[300] secondary mr-lg:pb-2'>We deliver 100% original narration with solo, duet, and multicast options. Our experienced audiobook actors use soothing voices to enhance any genre.</p>
                                         </div>
                                         <div className="btn pt-4">
-                                            <Link href="javascript:;" className='text-[16px] leading-[25px] secondary font-[500] flex items-center group-hover:duration-700 duration-700 group-hover:ease-in-out ease-in-out group-hover:text-white'>
+                                            <Link href="javascript:;" onClick={() => { parent.LC_API.open_chat_window(); return false; }} className='text-[16px] leading-[25px] secondary font-[500] flex items-center group-hover:duration-700 duration-700 group-hover:ease-in-out ease-in-out group-hover:text-white'>
                                                 <span className='mr-4'>More Information</span>
                                                 <Image src={Arrow} alt='PSB' className='!m-0 h-auto duration-700 group-hover:duration-700 group-hover:ease-in-out ease-in-out group-hover:invert group-hover:brightness-100' width={22} height={11} />
                                             </Link>

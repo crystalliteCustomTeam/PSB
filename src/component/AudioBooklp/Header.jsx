@@ -71,17 +71,17 @@ const Header = () => {
                                     </li>
                                     {[
                                         ['Home', '#'],
-                                        ['Services', '#'],
-                                        ['Process', '#'],
-                                        ['Portfolio', '#'],
+                                        ['Services', '#services'],
+                                        ['Process', '#process'],
+                                        ['Portfolio', '#portfolio'],
                                     ].map(([title, url]) => (
                                         <li className='mb-4 mr-xl:mb-0'>
                                             <Link href={url} className={`list !text-white mr-2xl:text-[15px] mr-xl:text-[15px] mr-lg:text-xl mr-md:text-xl mr-sm:text-xl xs:text-[20px] font-[400]`}>{title}</Link>
                                         </li>
                                     ))}
                                     {[
-                                        ['Testimonials', '#services'],
-                                        ['Contact', '#testimonials'],
+                                        ['Testimonials', '#testimonials'],
+                                        ['Contact', '#contact'],
                                     ].map(([title, url]) => (
                                         <li className='mb-4 mr-xl:mb-0'>
                                             <Link href={url} className={`list !text-white mr-2xl:text-[15px] mr-xl:text-[15px] mr-lg:text-xl mr-md:text-xl mr-sm:text-xl xs:text-[20px] font-[400]`}>{title}</Link>

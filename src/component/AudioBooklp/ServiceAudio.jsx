@@ -40,7 +40,7 @@ const ServiceAudio = () => {
         ]
     };
     return (
-        <section className='pt-[80px] mr-lg:pb-[100px]'>
+        <section id="services" className='pt-[80px] mr-lg:pb-[100px]'>
             <div className="mr-container">
                 <div className="grid grid-cols-12">
                     <div className="col-span-12">
@@ -63,7 +63,7 @@ const ServiceAudio = () => {
                                         </div>
                                         <div className="btn pt-3">
                                             <div className="w-full mr-md:w-max">
-                                                <Link href="javascript:$zopim.livechat.window.show();" className='border-2 border-black rounded-[6px] bg-transparent h-[45px] w-[175px] flex items-center justify-center duration-700 group-hover:duration-700 group-hover:ease-in-out ease-in-out group-hover:bg-[#000] group-hover:border-0 group-hover:text-white text-[16px] leading-[19px] secondary font-[300]'>
+                                                <Link href="javascript:;" onClick={() => { parent.LC_API.open_chat_window(); return false; }} className='border-2 border-black rounded-[6px] bg-transparent h-[45px] w-[175px] flex items-center justify-center duration-700 group-hover:duration-700 group-hover:ease-in-out ease-in-out group-hover:bg-[#000] group-hover:border-0 group-hover:text-white text-[16px] leading-[19px] secondary font-[300]'>
                                                     Let's Talk
                                                 </Link>
                                             </div>
@@ -85,7 +85,7 @@ const ServiceAudio = () => {
                                         </div>
                                         <div className="btn pt-3">
                                             <div className="w-full mr-md:w-max">
-                                                <Link href="javascript:$zopim.livechat.window.show();" className='border-2 border-black rounded-[6px] bg-transparent h-[45px] w-[175px] flex items-center justify-center duration-700 group-hover:duration-700 group-hover:ease-in-out ease-in-out group-hover:bg-[#000] group-hover:border-0 group-hover:text-white text-[16px] leading-[19px] secondary font-[300]'>
+                                                <Link href="javascript:;" onClick={() => { parent.LC_API.open_chat_window(); return false; }} className='border-2 border-black rounded-[6px] bg-transparent h-[45px] w-[175px] flex items-center justify-center duration-700 group-hover:duration-700 group-hover:ease-in-out ease-in-out group-hover:bg-[#000] group-hover:border-0 group-hover:text-white text-[16px] leading-[19px] secondary font-[300]'>
                                                     Let's Talk
                                                 </Link>
                                             </div>
@@ -107,7 +107,7 @@ const ServiceAudio = () => {
                                         </div>
                                         <div className="btn pt-3">
                                             <div className="w-full mr-md:w-max">
-                                                <Link href="javascript:$zopim.livechat.window.show();" className='border-2 border-black rounded-[6px] bg-transparent h-[45px] w-[175px] flex items-center justify-center duration-700 group-hover:duration-700 group-hover:ease-in-out ease-in-out group-hover:bg-[#000] group-hover:border-0 group-hover:text-white text-[16px] leading-[19px] secondary font-[300]'>
+                                                <Link href="javascript:;" onClick={() => { parent.LC_API.open_chat_window(); return false; }} className='border-2 border-black rounded-[6px] bg-transparent h-[45px] w-[175px] flex items-center justify-center duration-700 group-hover:duration-700 group-hover:ease-in-out ease-in-out group-hover:bg-[#000] group-hover:border-0 group-hover:text-white text-[16px] leading-[19px] secondary font-[300]'>
                                                     Let's Talk
                                                 </Link>
                                             </div>
@@ -129,7 +129,7 @@ const ServiceAudio = () => {
                                         </div>
                                         <div className="btn pt-3">
                                             <div className="w-full mr-md:w-max">
-                                                <Link href="javascript:$zopim.livechat.window.show();" className='border-2 border-black rounded-[6px] bg-transparent h-[45px] w-[175px] flex items-center justify-center duration-700 group-hover:duration-700 group-hover:ease-in-out ease-in-out group-hover:bg-[#000] group-hover:border-0 group-hover:text-white text-[16px] leading-[19px] secondary font-[300]'>
+                                                <Link href="javascript:;" onClick={() => { parent.LC_API.open_chat_window(); return false; }} className='border-2 border-black rounded-[6px] bg-transparent h-[45px] w-[175px] flex items-center justify-center duration-700 group-hover:duration-700 group-hover:ease-in-out ease-in-out group-hover:bg-[#000] group-hover:border-0 group-hover:text-white text-[16px] leading-[19px] secondary font-[300]'>
                                                     Let's Talk
                                                 </Link>
                                             </div>
@@ -151,7 +151,7 @@ const ServiceAudio = () => {
                                         </div>
                                         <div className="btn pt-3">
                                             <div className="w-full mr-md:w-max">
-                                                <Link href="javascript:$zopim.livechat.window.show();" className='border-2 border-black rounded-[6px] bg-transparent h-[45px] w-[175px] flex items-center justify-center duration-700 group-hover:duration-700 group-hover:ease-in-out ease-in-out group-hover:bg-[#000] group-hover:border-0 group-hover:text-white text-[16px] leading-[19px] secondary font-[300]'>
+                                                <Link href="javascript:;" onClick={() => { parent.LC_API.open_chat_window(); return false; }} className='border-2 border-black rounded-[6px] bg-transparent h-[45px] w-[175px] flex items-center justify-center duration-700 group-hover:duration-700 group-hover:ease-in-out ease-in-out group-hover:bg-[#000] group-hover:border-0 group-hover:text-white text-[16px] leading-[19px] secondary font-[300]'>
                                                     Let's Talk
                                                 </Link>
                                             </div>
@@ -173,7 +173,7 @@ const ServiceAudio = () => {
                                         </div>
                                         <div className="btn pt-3">
                                             <div className="w-full mr-md:w-max">
-                                                <Link href="javascript:$zopim.livechat.window.show();" className='border-2 border-black rounded-[6px] bg-transparent h-[45px] w-[175px] flex items-center justify-center duration-700 group-hover:duration-700 group-hover:ease-in-out ease-in-out group-hover:bg-[#000] group-hover:border-0 group-hover:text-white text-[16px] leading-[19px] secondary font-[300]'>
+                                                <Link href="javascript:;" onClick={() => { parent.LC_API.open_chat_window(); return false; }} className='border-2 border-black rounded-[6px] bg-transparent h-[45px] w-[175px] flex items-center justify-center duration-700 group-hover:duration-700 group-hover:ease-in-out ease-in-out group-hover:bg-[#000] group-hover:border-0 group-hover:text-white text-[16px] leading-[19px] secondary font-[300]'>
                                                     Let's Talk
                                                 </Link>
                                             </div>
@@ -195,7 +195,7 @@ const ServiceAudio = () => {
                                         </div>
                                         <div className="btn pt-3">
                                             <div className="w-full mr-md:w-max">
-                                                <Link href="javascript:$zopim.livechat.window.show();" className='border-2 border-black rounded-[6px] bg-transparent h-[45px] w-[175px] flex items-center justify-center duration-700 group-hover:duration-700 group-hover:ease-in-out ease-in-out group-hover:bg-[#000] group-hover:border-0 group-hover:text-white text-[16px] leading-[19px] secondary font-[300]'>
+                                                <Link href="javascript:;" onClick={() => { parent.LC_API.open_chat_window(); return false; }} className='border-2 border-black rounded-[6px] bg-transparent h-[45px] w-[175px] flex items-center justify-center duration-700 group-hover:duration-700 group-hover:ease-in-out ease-in-out group-hover:bg-[#000] group-hover:border-0 group-hover:text-white text-[16px] leading-[19px] secondary font-[300]'>
                                                     Let's Talk
                                                 </Link>
                                             </div>
@@ -217,7 +217,7 @@ const ServiceAudio = () => {
                                         </div>
                                         <div className="btn pt-3">
                                             <div className="w-full mr-md:w-max">
-                                                <Link href="javascript:$zopim.livechat.window.show();" className='border-2 border-black rounded-[6px] bg-transparent h-[45px] w-[175px] flex items-center justify-center duration-700 group-hover:duration-700 group-hover:ease-in-out ease-in-out group-hover:bg-[#000] group-hover:border-0 group-hover:text-white text-[16px] leading-[19px] secondary font-[300]'>
+                                                <Link href="javascript:;" onClick={() => { parent.LC_API.open_chat_window(); return false; }} className='border-2 border-black rounded-[6px] bg-transparent h-[45px] w-[175px] flex items-center justify-center duration-700 group-hover:duration-700 group-hover:ease-in-out ease-in-out group-hover:bg-[#000] group-hover:border-0 group-hover:text-white text-[16px] leading-[19px] secondary font-[300]'>
                                                     Let's Talk
                                                 </Link>
                                             </div>
@@ -239,7 +239,7 @@ const ServiceAudio = () => {
                                         </div>
                                         <div className="btn pt-3">
                                             <div className="w-full mr-md:w-max">
-                                                <Link href="javascript:$zopim.livechat.window.show();" className='border-2 border-black rounded-[6px] bg-transparent h-[45px] w-[175px] flex items-center justify-center duration-700 group-hover:duration-700 group-hover:ease-in-out ease-in-out group-hover:bg-[#000] group-hover:border-0 group-hover:text-white text-[16px] leading-[19px] secondary font-[300]'>
+                                                <Link href="javascript:;" onClick={() => { parent.LC_API.open_chat_window(); return false; }} className='border-2 border-black rounded-[6px] bg-transparent h-[45px] w-[175px] flex items-center justify-center duration-700 group-hover:duration-700 group-hover:ease-in-out ease-in-out group-hover:bg-[#000] group-hover:border-0 group-hover:text-white text-[16px] leading-[19px] secondary font-[300]'>
                                                     Let's Talk
                                                 </Link>
                                             </div>
@@ -262,7 +262,7 @@ const ServiceAudio = () => {
                                         </div>
                                         <div className="btn pt-3">
                                             <div className="w-full mr-md:w-max">
-                                                <Link href="javascript:$zopim.livechat.window.show();" className='border-2 border-black rounded-[6px] bg-transparent h-[45px] w-[175px] flex items-center justify-center duration-700 group-hover:duration-700 group-hover:ease-in-out ease-in-out group-hover:bg-[#000] group-hover:border-0 group-hover:text-white text-[16px] leading-[19px] secondary font-[300]'>
+                                                <Link href="javascript:;" onClick={() => { parent.LC_API.open_chat_window(); return false; }} className='border-2 border-black rounded-[6px] bg-transparent h-[45px] w-[175px] flex items-center justify-center duration-700 group-hover:duration-700 group-hover:ease-in-out ease-in-out group-hover:bg-[#000] group-hover:border-0 group-hover:text-white text-[16px] leading-[19px] secondary font-[300]'>
                                                     Let's Talk
                                                 </Link>
                                             </div>
