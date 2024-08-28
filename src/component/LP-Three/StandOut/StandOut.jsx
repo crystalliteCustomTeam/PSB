@@ -11,7 +11,7 @@ const StandOut = () => {
                     <div className="grid grid-cols-12 items-center mr-lg:gap-x-5 gap-5">
                         <div className="mr-2xl:col-span-5 mr-lg:col-span-6 col-span-12">
                             <div className="text-white mr-sm:text-start text-justify">
-                                <h2 className="mr-2xl:text-[55px] mr-xl:text-[50px] mr-lg:text-[40px] mr-md:text-[30px] text-[25px] leading-tight font-semibold mb-3">Convert Your Story Into Stunning Illustrations!</h2>
+                                <h2 className=" mr-xl:text-[47px] mr-lg:text-[40px] mr-md:text-[30px] text-[25px] leading-tight font-semibold mb-3">Create Stunning Children's Book Illustrations Now!</h2>
                                 <p className="mr-md:text-base text-sm leading-normal font-normal">Obsessed with detail, we've delivered over 1,500+ projects flawlessly. For authors, we’re an extension of your creative vision. For artists, we’re a home. For your book project, we are everything!</p>
                                 <MRCTA text="Let’s Talk" handle="onclick='parent.LC_API.open_chat_window();return false;'" classes="__animatedPing mt-5 !rounded-full hover:bg-transparent hover:border-white" />
                             </div>
