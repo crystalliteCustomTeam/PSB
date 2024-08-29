@@ -28,6 +28,7 @@ export default function App({ Component, pageProps }) {
           || router.pathname == "/audiobook-production-services"
           || router.pathname == "/book-marketing-company"
           || router.pathname == "/case-studies" || router.pathname == "/book-illustration-services"
+          || router.pathname == "/children-book-publishing-lp"
           || router.pathname == "/lp/book-publishing-company"
           || router.pathname == "/blogs"
           || router.pathname == "/lp/book-marketing-company"
@@ -38,6 +39,7 @@ export default function App({ Component, pageProps }) {
           || router.pathname == "/audiobook-production-services"
           || router.pathname == "/lp/book-publishing-company" 
           || router.pathname == "/book-illustration-services" 
+          || router.pathname == "/children-book-publishing-lp" 
           || router.pathname == "/lp/book-marketing-company" 
           ? "" : <Footer1 />}
       </main>
