@@ -883,50 +883,35 @@ header a:hover {
 
 /* Audio Banner Slider End */
 
-/* Audio Banner Start */
+/* Children Client Slider Start */
 
-/* Audio Banner End */
-
-/* ===================== Media Queries ===================== */
-
-/* @media only screen and (max-width: 1999px) {
-
-   .audiobannerSlider .slick-prev,
-   .audiobannerSlider .slick-next {
-      bottom: 25%;
-   }
+.childrenClientSlider .slick-list {
+   padding: 100px 0;
 }
 
-@media only screen and (max-width: 1799px) {
-
-   .audiobannerSlider .slick-prev,
-   .audiobannerSlider .slick-next {
-      bottom: 17%;
-   }
+.childrenClientSlider .slick-prev:before {
+   content: url(../../public/children-book-lp/left-arrow.png);
 }
 
-@media only screen and (max-width: 1699px) {
+.childrenClientSlider .slick-next:before {
+   content: url(../../public/children-book-lp/right-arrow.png);
+}
 
-   .audiobannerSlider .slick-prev,
-   .audiobannerSlider .slick-next {
-      bottom: 10%;
-   }
-} */
+.childrenClientSlider .slick-prev {
+   left: 30px;
+}
+
+.childrenClientSlider .slick-next {
+   right: 30px;
+}
+
+/* Children Client Slider End */
 
 @media screen and (min-width: 1600px) {
    .mainclass .colo {
       width: 55%;
    }
 }
-
-/* @media only screen and (max-width: 1399px) {
-
-   .audiobannerSlider .slick-prev,
-   .audiobannerSlider .slick-next {
-      top: inherit;
-      bottom: 10%;
-   }
-} */
 
 @media screen and (max-width: 1299px) {
    .contact {
@@ -1015,11 +1000,34 @@ header a:hover {
    header a:hover {
       color: white;
    }
+
+   .childrenClientSlider .slick-prev {
+      left: -30px;
+   }
+
+   .childrenClientSlider .slick-next {
+      right: -30px;
+   }
+
+   .childrenClientSlider .slick-prev {
+      left: 40%;
+   }
+
+   .childrenClientSlider .slick-next {
+      right: 40%;
+   }
+
+   .childrenClientSlider .slick-prev,
+   .childrenClientSlider .slick-next {
+      top: inherit;
+      bottom: 10px;
+   }
+
 }
 
 /* ===================== */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
    .font-14 {
       font-size: 12px;
    }
@@ -1135,16 +1143,22 @@ header a:hover {
       margin-left: inherit !important;
    }
 
+   .childrenClientSlider .slick-list {
+      padding: 45px 0;
+   }
+
+   .childrenClientSlider .slick-prev,
+   .childrenClientSlider .slick-next {
+      top: inherit;
+      bottom: -20px;
+   }
+
 }
 
 @media screen and (min-width: 992px) {
    footer .slick-slider {
       display: none !important;
    }
-
-   /* header a:hover {
-      color: inherit !important;
-   } */
 }
 
 header .group:hover .group-hover\:opacity-100 {

@@ -9,11 +9,11 @@ import Book3 from "media/children-book-lp/hero-book-3.png"
 const Hero = () => {
     return (
         <section className="font-sans">
-            <div className="relative z-10 pt-[100px] pb-[50px]">
+            <div className="relative z-10 pt-[130px] pb-[50px]">
                 <Image src={Banner} alt="heroBanner" fill={true} className='z-[-1] object-cover mr-lg:object-center mt-[-10px]' /> 
                 <div className="mr-container">
                     <div className="mr-sm:text-center text-justify text-white mr-2xl:w-[70%] mr-lg:w-[75%] w-full mx-auto ">
-                        <h1 className="mr-2xl:text-[50px] mr-lg:text-[40px] mr-md:text-[30px] text-[25px] mb-3 leading-normal font-semibold">Turn Your <span className="text-[#40BEE2] font-normal">Children's Story</span> into a Beloved Classic with Premier Publishing <span className="text-[#40BEE2] font-normal">Services</span></h1>
+                        <h1 className="mr-2xl:text-[50px] mr-lg:text-[40px] mr-md:text-[30px] text-[25px] mb-3 leading-[35px] mr-md:leading-[40px] mr-lg:leading-[60px] mr-2xl:leading-[70px] font-semibold">Turn Your <span className="text-[#40BEE2] font-normal">Children's Story</span> into a Beloved Classic with Premier Publishing <span className="text-[#40BEE2] font-normal">Services</span></h1>
                         <p className="mr-md:text-base text-sm font-normal leading-normal">Unlock the potential of your children's story with our expert publishing services, designed to captivate young readers and create lasting memories. From vibrant illustrations to seamless distribution, we turn your manuscript into a cherished classic that stands the test of time.</p>
                         <div className="grid grid-cols-1 mr-sm:flex justify-center mr-sm:gap-x-5 gap-5 mt-5 mr-2xl:mt-8">
                             <MRCTA text="Connect With Us!" handle="onclick='parent.LC_API.open_chat_window();return false;'" classes="__animatedPing !rounded-[6px] hover:bg-transparent hover:border-white" />
