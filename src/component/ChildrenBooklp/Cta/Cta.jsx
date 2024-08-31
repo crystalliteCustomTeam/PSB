@@ -178,7 +178,7 @@ export default function Cta({
                 />
               </div>
 
-              <div className="p-3 mr-lg:w-[50%] w-full mr-lg:ml-auto mx-auto">
+              <div className="p-3 mr-lg:w-[50%] w-full mr-lg:ml-auto">
                 <div className="flex flex-col gap-3 items-start justify-start w-full mx-auto mb-10 text-white">
                   <h3 className="mr-lg:text-[30px] mr-sm:text-[30px] text-[25px] leading-normal font-semibold text-left" dangerouslySetInnerHTML={{__html: title}} />
                   <p className="text-left mr-md:text-[16px] text-[14px] leading-normal" dangerouslySetInnerHTML={{__html: desc}} />
