@@ -1,4 +1,4 @@
-import { Header, Hero, PublishAuthor, PublishBook } from '@/component/ChildrenBooklp'
+import { Cta, Header, Hero, Portfolio, PublishAuthor, PublishBook, Tabs, WorkingWithUs } from '@/component/ChildrenBooklp'
 import React from 'react'
 
 const ChildrenBookServicesLP = () => {
@@ -8,6 +8,11 @@ const ChildrenBookServicesLP = () => {
             <Hero />
             <PublishBook/>
             <PublishAuthor/>
+            <Portfolio/>
+            <Tabs/>
+            <Cta/>
+            <WorkingWithUs/>
+            
         </>
     )
 }
