@@ -20,7 +20,7 @@ const OurCaseStudy = () => {
                         <h2 className='mr-lg:text-[40px] mr-md:text-[30px] text-[25px] font-semibold leading-normal mb-3 text-center text-white'>
                             <span className='text-[#40BEE2] font-normal'>Our</span> Casestudy's
                         </h2>
-                        <p className='mr-md:text-base text-sm font-normal leading-normal text-white text-center mr-lg:w-9/12 mr-xl:w-6/12 mx-auto '>Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced</p>
+                        <p className='mr-md:text-base text-sm font-normal leading-normal text-white text-center mr-lg:w-9/12 mr-2xl:w-6/12 mx-auto '>Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced</p>
                     </div>
                     <div className="col-span-12 mt-6 mr-lg:mt-16 relative">
                         <CaseStudiesSlider />

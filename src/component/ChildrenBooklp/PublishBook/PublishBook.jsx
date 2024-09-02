@@ -161,7 +161,7 @@ export default function PublishBook({
         <div className="mr-container">
           <div className="flex flex-col gap-3 items-center justify-center mr-xl:w-[90%] w-full mx-auto mb-10">
             <h3 className="mr-lg:text-[40px] mr-sm:text-[30px] text-[25px] leading-normal font-semibold text-center" dangerouslySetInnerHTML={{__html: title}} />
-            <p className="text-center mr-md:text-[16px] text-[14px] leading-normal" dangerouslySetInnerHTML={{__html: desc}} />
+            <p className="text-center mr-2xl:text-[16px] text-sm leading-normal" dangerouslySetInnerHTML={{__html: desc}} />
           </div>
           <div className="bg-[#40BEE2] mr-xl:p-[50px] p-[30px] rounded-xl mr-lg:w-[90%] w-full mx-auto">
             <form className="" autoComplete="off">

@@ -39,7 +39,7 @@ export default function PublishAuthor({
                 width={1000}
                 height={500}
                 quality={100}
-                className=" absolute z-50 mr-xl:w-[230px] mr-lg:w-[180px] mr-md:w-[150px] mr-xl:h-[220px] h-[200px] top-[6%] left-[-5%] bottom-0 "
+                className=" absolute z-10 mr-xl:w-[230px] mr-lg:w-[180px] mr-md:w-[150px] mr-xl:h-[220px] h-[200px] top-[6%] left-[-5%] bottom-0 "
               />
               <Image
                 src={ctaImg}
@@ -47,7 +47,7 @@ export default function PublishAuthor({
                 width={1000}
                 height={500}
                 quality={100}
-                className=" mr-md:absolute z-50 mr-xl:w-[230px] mr-lg:w-[180px] mr-md:w-[150px] mr-xl:h-[220px] h-[200px] right-[-5%] bottom-[0%] "
+                className=" mr-md:absolute z-10 mr-xl:w-[230px] mr-lg:w-[180px] mr-md:w-[150px] mr-xl:h-[220px] h-[200px] right-[-5%] bottom-[0%] "
               />
             </div>
           </div>
