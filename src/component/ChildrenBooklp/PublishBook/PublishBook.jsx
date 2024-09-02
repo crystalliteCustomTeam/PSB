@@ -1,5 +1,6 @@
 import {useEffect, useState} from "react";
 import Router, {useRouter} from "next/router";
+import { MRCTA, MRCTAGroup } from "@/component";
 
 export default function PublishBook({
   title = "How We <span class='text-[#40BEE2] font-medium'> Publish </span> Your Book?",
@@ -157,7 +158,7 @@ export default function PublishBook({
   return (
     <section>
       <div className="mr-lg:py-[70px] py-[50px]">
-        <div className="container">
+        <div className="mr-container">
           <div className="flex flex-col gap-3 items-center justify-center mr-xl:w-[90%] w-full mx-auto mb-10">
             <h3 className="mr-lg:text-[40px] mr-sm:text-[30px] text-[25px] leading-normal font-semibold text-center" dangerouslySetInnerHTML={{__html: title}} />
             <p className="text-center mr-md:text-[16px] text-[14px] leading-normal" dangerouslySetInnerHTML={{__html: desc}} />
@@ -206,9 +207,9 @@ export default function PublishBook({
                 </div>
               </div>
               <div className="flex items-center justify-center">
-                <button type="submit" className="mr-md:w-[50%] w-full block h-[50px] text-center text-[16px] text-white bg-black font-semibold px-10 rounded-lg">
-                Request A Free Quote 
-                </button>
+             
+              <MRCTA text="Request A Free Quote" type="submit" handle="" classes="!w-full __animatedPing !rounded-[6px] hover:bg-white hover:border-white hover:text-black !bg-[#161616] mr-md:!px-36" />
+                
               </div>
             </form>
           </div>

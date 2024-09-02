@@ -12,7 +12,7 @@ const OurCaseStudy = () => {
         { desc: "Family and Brotherhood: Explore the deep bonds that extend beyond blood, shaping identities in the midst of conflict." }
     ];
     return (
-        <section className='pt-[50px] mr-lg:pt-[80px] pb-[40px] relative mt-[100px]'>
+        <section className='py-[50px] mr-lg:py-[80px] relative '>
             <Image src={caseBg} alt='Casestudy' fill={true} className='object-center object-cover' />
             <div className="mr-container relative z-10">
                 <div className="grid grid-cols-12">

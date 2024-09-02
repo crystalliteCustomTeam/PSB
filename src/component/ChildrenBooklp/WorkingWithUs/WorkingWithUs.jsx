@@ -16,6 +16,7 @@ import Client10 from "media/children-book-lp/clients/entrepreneur.png";
 import Client11 from "media/children-book-lp/clients/forbes.png";
 import Client12 from "media/children-book-lp/clients/huffpost.png";
 import Link from "next/link";
+import {MRCTA} from "@/component";
 
 export default function WorkingWithUs({
   title = "Just By <span class='text-[#40BEE2] font-medium'> Working </span> With Us.",
@@ -24,7 +25,7 @@ export default function WorkingWithUs({
   return (
     <section>
       <div className="mr-lg:py-[40px] py-[30px]">
-        <div className="container">
+        <div className="mr-container">
           <div className="flex flex-col items-center justify-center gap-3 mb-8">
             <h3 className="mr-lg:text-[40px] mr-md:text-[30px] text-[25px] font-semibold leading-normal text-center" dangerouslySetInnerHTML={{__html: title}} />
             <p className="mr-xl:w-[60%] mr-lg:w-[80%] w-full mx-auto text-center mr-lg:text-[16px] text-[12px]" dangerouslySetInnerHTML={{__html: desc}} />
@@ -41,16 +42,9 @@ export default function WorkingWithUs({
                 </div>
               ))}
             </AutoScrollSlider>
-            <div className="flex mr-md:flex-row flex-col items-center justify-center gap-x-5 gap-y-3 mt-5">
-              <Link
-                href="/"
-                className="bg-[#40BEE2] hover:bg-transparent border-[1px] border-transparent hover:border-[#40BEE2] text-white hover:text-[#40BEE2] h-[45px] items-center py-2 px-8 rounded-md flex justify-center mr-md:w-max w-full"
-              >
-                Connect With Us!
-              </Link>
-              <Link href="/" className="bg-[#161616] hover:bg-[#40BEE2] text-white h-[45px] items-center py-2 px-8 rounded-md flex justify-center mr-md:w-max w-full">
-                Call Us! Now
-              </Link>
+            <div className="grid grid-cols-1 mr-sm:flex  justify-center mr-sm:gap-x-5 gap-3 mt-5 mr-lg:mt-10">
+              <MRCTA text="Connect With Us!" handle="onclick='parent.LC_API.open_chat_window();return false;'" classes="__animatedPing !rounded-[6px] hover:bg-transparent hover:border-white" />
+              <MRCTA text="Call Us Now!" link="tel:800-781-9093" classes="__animatedPing !rounded-[6px] bg-transparent !border-0 hover:bg-black !bg-[#161616] !text-white hover:border-black" />
             </div>
           </div>
         </div>

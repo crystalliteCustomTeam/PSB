@@ -169,7 +169,7 @@ const BookPublished = () => {
                 <div className="grid grid-cols-12 gap-y-7 gap-x-4 mr-xl:gap-x-0 items-center">
                     <div className="col-span-12 mr-lg:col-span-6">
                         <div className='mr-3xl:w-11/12'>
-                            <h2 className='mr-lg:text-[40px] mr-md:text-[30px] text-[25px] font-semibold leading-normal text-black mr-2xl:pr-20'>Published <span className='text-[#40BEE2] font-normal'>10,000+</span> Great Books
+                            <h2 className='mr-xl:text-[40px] mr-lg:text-[30px] text-[25px] font-semibold leading-normal text-black mr-2xl:pr-20'>Published <span className='text-[#40BEE2] font-normal'>10,000+</span> Great Books
                                 <span className='text-[#40BEE2] font-normal'> Out</span> There! Yours Is <span className='text-[#40BEE2] font-normal'>Next!</span></h2>
                             <p className='mr-md:text-[16px] text-sm font-normal leading-[25px] text-black pt-6'>Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish.</p>
                             <p className='mr-md:text-[16px] text-sm font-normal leading-[25px] text-black pt-6 pb-6'>Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish.</p>

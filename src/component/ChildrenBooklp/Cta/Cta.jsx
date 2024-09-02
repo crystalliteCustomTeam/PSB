@@ -159,7 +159,7 @@ export default function Cta({
   return (
     <section className="">
       <div className="mr-lg:py-[70px] mr-md:py-[50px] py-[20px] ">
-        <div className="container ">
+        <div className="mr-container ">
           <div className="relative z-10 mr-lg:w-[90%] w-full mx-auto items-center mr-md:py-[70px] py-[30px]">
             <Image
               src={backgroundImg}

@@ -26,13 +26,7 @@ const ChildrenBookServicesLP = () => {
             <ChooseOur />
             <BookPublished />
             <Faqs items={faqsContent} />
-            
-            
-            
-            
-            
-            
-            
+           
         </>
     )
 }
