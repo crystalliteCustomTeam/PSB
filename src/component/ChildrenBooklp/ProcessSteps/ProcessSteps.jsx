@@ -33,11 +33,13 @@ const ProcessSteps = () => {
             title: "Publishing"
         },
     ]
-    const [selectedImageId, setSelectedImageId] = useState('');
+
+
     const [currentStep, setCurrentStep] = useState(0);
-    const totalSteps = 8;
+    const totalSteps = processData.length;
+
     const handlePrev = () => {
-        setCurrentStep(currentStep - 1);
+        setCurrentStep(currentStep + 1);
     };
     return (
         <section className='pt-[50px] mr-lg:pt-[80px] pb-[50px] mr-lg:pb-[80px]'>
@@ -50,20 +52,22 @@ const ProcessSteps = () => {
                 </div>
                 <div className="grid grid-cols-2 mr-md:grid-cols-5 justify-center gap-5 pb-4">
                     {processData.map((process, index) => (
-                        <div key={index}>
+                        <div key={index} onClick={() => handlePrev(index)}>
                             <div className="image">
                                 <Image src={process.processImage} alt='Process' className='mx-auto w-6/12 mr-md:w-auto' />
                             </div>
-                            <div className={`progress relative pt-2 mr-md:pt-7 pb-6 mr-md:pb-10 ${index < processData.length - 1
-                                ? `${index <= currentStep ? 'before:bg-[#40BEE2]' : 'before:bg-[#EFEFEF]'} mr-md:before:content-[''] mr-md:before:absolute mr-md:before:top-[32px] mr-md:before:right-[-52%] mr-md:before:w-[97%] mr-md:before:h-[5px]`
-                                : ''
-                                }`}>
-                                <div className={`absolute top-[24%] left-0 right-0 mx-auto w-[20px] mr-md:w-[35px] h-[20px] mr-md:h-[35px] rounded-full ${index <= currentStep ? 'bg-transparent' : 'bg-[#EFEFEF]'}`}>
-                                    {index <= currentStep ? <Image src={TickImage} alt='Tick Image' /> :
-                                        <span className={`w-[10px] mr-md:w-[16px] h-[10px] mr-md:h-[16px] mx-auto bg-[#CECECE] rounded-full absolute top-[50%] translate-y-[-50%] left-0 right-0`}></span>
-                                    }
+                            {currentStep < totalSteps - 0 && (
+                                <div className={`progress relative pt-2 mr-md:pt-7 pb-6 mr-md:pb-10 ${index < totalSteps - 1
+                                    ? `${index <= currentStep ? 'before:bg-[#40BEE2]' : 'before:bg-[#EFEFEF]'} mr-md:before:content-[''] mr-md:before:absolute mr-md:before:top-[32px] mr-md:before:right-[-52%] mr-md:before:w-[97%] mr-md:before:h-[5px]`
+                                    : ''
+                                    }`}>
+                                    <div className={`absolute top-[24%] left-0 right-0 mx-auto w-[20px] mr-md:w-[35px] h-[20px] mr-md:h-[35px] rounded-full ${index <= currentStep ? 'bg-transparent' : 'bg-[#EFEFEF]'}`}>
+                                        {index <= currentStep ? <Image src={TickImage} alt='Tick Image' /> :
+                                            <span className={`w-[10px] mr-md:w-[16px] h-[10px] mr-md:h-[16px] mx-auto bg-[#CECECE] rounded-full absolute top-[50%] translate-y-[-50%] left-0 right-0`}></span>
+                                        }
+                                    </div>
                                 </div>
-                            </div>
+                            )}
                             <div className="txt">
                                 <p className={`text-[16px] mr-xl:text-[20px] leading-[20px] mr-xl:leading-[30px] font-medium text-center ${index <= currentStep ? 'text-black' : 'text-gray-500'}`}>{process.title}</p>
                             </div>
