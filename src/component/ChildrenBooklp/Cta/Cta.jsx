@@ -183,7 +183,7 @@ export default function Cta({
                 <p className="text-left mr-md:text-[16px] mr-md:leading-[25px] text-[14px] leading-normal pr-5" dangerouslySetInnerHTML={{ __html: desc }} />
               </div>
               <div className="mx-auto">
-                <form className="" autoComplete="off">
+                <form onSubmit={handleSubmit}>
                   <div className="grid mr-md:grid-cols-2 grid-cols-1 mr-xl:gap-5 gap-3 mb-5 mr-lg:mb-6 items-center">
                     <div>
                       <input
@@ -192,7 +192,7 @@ export default function Cta({
                         name="name"
                         placeholder="Full Name *"
                         onkeypress="return /[a-z]/i.test(event.key)"
-                        className="placeholder:text-[#fff] outline-none text-black font-normal text-[15px] leading-[25px] block w-full h-[55px] pl-5 border-[#fff] rounded-[6px] bg-[#27A4C9] shadow-sm"
+                        className="placeholder:text-[#fff] outline-none text-white font-normal text-[15px] leading-[25px] block w-full h-[55px] pl-5 border-[#fff] rounded-[6px] bg-[#27A4C9] shadow-sm"
                       />
                     </div>
                     <div>
@@ -201,7 +201,7 @@ export default function Cta({
                         required
                         name="email"
                         placeholder="Email *"
-                        className="placeholder:text-[#fff] outline-none text-black font-normal text-[15px] leading-[25px] block w-full h-[55px] pl-5 border-[#fff] rounded-[6px] bg-[#27A4C9] shadow-sm"
+                        className="placeholder:text-[#fff] outline-none text-white font-normal text-[15px] leading-[25px] block w-full h-[55px] pl-5 border-[#fff] rounded-[6px] bg-[#27A4C9] shadow-sm"
                       />
                     </div>
                     <div>
@@ -212,7 +212,7 @@ export default function Cta({
                         pattern="[0-9]*"
                         name="phone"
                         placeholder="Phone *"
-                        className="placeholder:text-[#fff] outline-none text-black font-normal text-[15px] leading-[25px] block w-full h-[55px] pl-5 border-[#fff] rounded-[6px] bg-[#27A4C9] shadow-sm"
+                        className="placeholder:text-[#fff] outline-none text-white font-normal text-[15px] leading-[25px] block w-full h-[55px] pl-5 border-[#fff] rounded-[6px] bg-[#27A4C9] shadow-sm"
                         required
                       />
                     </div>
@@ -221,13 +221,13 @@ export default function Cta({
                         id="message"
                         name="comments"
                         placeholder="Requirements"
-                        className="placeholder:text-[#fff] outline-none text-black font-normal text-[15px] leading-[25px] block w-full h-[55px] pl-5 pt-4 border-[#fff] rounded-[6px] bg-[#27A4C9] shadow-sm resize-none"
+                        className="placeholder:text-[#fff] outline-none text-white font-normal text-[15px] leading-[25px] block w-full h-[55px] pl-5 pt-4 border-[#fff] rounded-[6px] bg-[#27A4C9] shadow-sm resize-none"
                       ></textarea>
                     </div>
                   </div>
                   <div className="flex items-center justify-center">
                     <button type="submit" className="w-full block h-[50px] text-center text-[16px] text-white bg-black font-semibold px-10 rounded-[6px]">
-                      Get Free Consultation
+                      {score}
                     </button>
                   </div>
                 </form>

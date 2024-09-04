@@ -7,7 +7,7 @@ export default function PublishBook({
   desc = "Our publishing process begins with a thorough review of your manuscript, ensuring it meets the highest standards. We then work closely with you on editing, design, and illustrations to bring your vision to life. Finally, we handle all aspects of printing and distribution, making your book available to readers worldwide.",
 }) {
   const [ip, setIP] = useState("");
-  const [score, setScore] = useState("Submit");
+  const [score, setScore] = useState("Request A Free Quote");
   const [pagenewurl, setPagenewurl] = useState("");
   const router = useRouter();
   const currentRoute = router.pathname;
@@ -161,11 +161,11 @@ export default function PublishBook({
         <div className="mr-container">
           <div className="flex flex-col gap-3 items-center justify-center mr-xl:w-[90%] w-full mx-auto mb-10">
             <h3 className="mr-lg:text-[40px] mr-sm:text-[30px] text-[25px] leading-normal font-semibold text-center" dangerouslySetInnerHTML={{ __html: title }} />
-            <p className="text-center mr-2xl:text-[16px] text-sm leading-normal" dangerouslySetInnerHTML={{ __html: desc }} />
+            <p className="mr-md:text-base text-sm font-normal leading-normal text-black text-center mr-lg:w-11/12 mx-auto" dangerouslySetInnerHTML={{ __html: desc }} />
           </div>
           <div className="bg-[#40BEE2] mr-xl:p-[50px] py-[30px] px-[20px] mr-sm:p-[30px] rounded-xl mr-lg:w-[90%] w-full mx-auto">
-            <form className="" autoComplete="off">
-              <div className="grid mr-md:grid-cols-2 grid-cols-1 mr-xl:gap-5 gap-3 mb-5 items-center">
+            <form onSubmit={handleSubmit}>
+              <div className="grid mr-md:grid-cols-2 grid-cols-1 mr-xl:gap-5 gap-3 mb-5 mr-lg:mb-7 items-center">
                 <div>
                   <input
                     type="text"
@@ -173,7 +173,7 @@ export default function PublishBook({
                     name="name"
                     placeholder="Full Name *"
                     onkeypress="return /[a-z]/i.test(event.key)"
-                    className="placeholder:text-[#fff] outline-none text-black font-normal text-[15px] leading-[25px] block w-full h-[60px] pl-5 border-[#fff] rounded-lg bg-[#27A4C9] shadow-sm"
+                    className="placeholder:text-[#fff] outline-none text-white font-normal text-[15px] leading-[25px] block w-full h-[60px] pl-5 border-[#fff] rounded-lg bg-[#27A4C9] shadow-sm"
                   />
                 </div>
                 <div>
@@ -182,7 +182,7 @@ export default function PublishBook({
                     required
                     name="email"
                     placeholder="Email *"
-                    className="placeholder:text-[#fff] outline-none text-black font-normal text-[15px] leading-[25px] block w-full h-[60px] pl-5 border-[#fff] rounded-lg bg-[#27A4C9] shadow-sm"
+                    className="placeholder:text-[#fff] outline-none text-white font-normal text-[15px] leading-[25px] block w-full h-[60px] pl-5 border-[#fff] rounded-lg bg-[#27A4C9] shadow-sm"
                   />
                 </div>
                 <div>
@@ -193,7 +193,7 @@ export default function PublishBook({
                     pattern="[0-9]*"
                     name="phone"
                     placeholder="Phone *"
-                    className="placeholder:text-[#fff] outline-none text-black font-normal text-[15px] leading-[25px] block w-full h-[60px] pl-5 border-[#fff] rounded-lg bg-[#27A4C9] shadow-sm"
+                    className="placeholder:text-[#fff] outline-none text-white font-normal text-[15px] leading-[25px] block w-full h-[60px] pl-5 border-[#fff] rounded-lg bg-[#27A4C9] shadow-sm"
                     required
                   />
                 </div>
@@ -202,13 +202,13 @@ export default function PublishBook({
                     id="message"
                     name="comments"
                     placeholder="Message"
-                    className="placeholder:text-[#fff] outline-none text-black font-normal text-[15px] leading-[25px] block w-full h-[60px] pl-5 pt-4 border-[#fff] rounded-lg bg-[#27A4C9] shadow-sm resize-none"
+                    className="placeholder:text-[#fff] outline-none text-white font-normal text-[15px] leading-[25px] block w-full h-[60px] pl-5 pt-4 border-[#fff] rounded-lg bg-[#27A4C9] shadow-sm resize-none"
                   ></textarea>
                 </div>
               </div>
               <div className="flex items-center justify-center w-full">
                 <div className="w-full flex items-center justify-center">
-                  <button className="w-full mr-lg:w-max h-[50px]  text-white flex items-center font-sans font-semibold justify-center border-2 transition-all border-transparent __animatedPing !rounded-[6px] hover:bg-white hover:border-white hover:text-black !bg-[#161616] mr-lg:!px-36">Request A Free Quote</button>
+                  <button className="w-full mr-lg:w-max h-[50px]  text-white flex items-center font-sans font-semibold justify-center border-2 transition-all border-transparent __animatedPing !rounded-[6px] hover:bg-white hover:border-white hover:text-white !bg-[#161616] mr-lg:!px-36">{score}</button>
                 </div>
               </div>
             </form>
