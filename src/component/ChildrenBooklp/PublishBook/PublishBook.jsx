@@ -1,5 +1,5 @@
-import {useEffect, useState} from "react";
-import Router, {useRouter} from "next/router";
+import { useEffect, useState } from "react";
+import Router, { useRouter } from "next/router";
 import { MRCTA, MRCTAGroup } from "@/component";
 
 export default function PublishBook({
@@ -160,10 +160,10 @@ export default function PublishBook({
       <div className="mr-lg:py-[70px] py-[50px]">
         <div className="mr-container">
           <div className="flex flex-col gap-3 items-center justify-center mr-xl:w-[90%] w-full mx-auto mb-10">
-            <h3 className="mr-lg:text-[40px] mr-sm:text-[30px] text-[25px] leading-normal font-semibold text-center" dangerouslySetInnerHTML={{__html: title}} />
-            <p className="text-center mr-2xl:text-[16px] text-sm leading-normal" dangerouslySetInnerHTML={{__html: desc}} />
+            <h3 className="mr-lg:text-[40px] mr-sm:text-[30px] text-[25px] leading-normal font-semibold text-center" dangerouslySetInnerHTML={{ __html: title }} />
+            <p className="text-center mr-2xl:text-[16px] text-sm leading-normal" dangerouslySetInnerHTML={{ __html: desc }} />
           </div>
-          <div className="bg-[#40BEE2] mr-xl:p-[50px] p-[30px] rounded-xl mr-lg:w-[90%] w-full mx-auto">
+          <div className="bg-[#40BEE2] mr-xl:p-[50px] py-[30px] px-[20px] mr-sm:p-[30px] rounded-xl mr-lg:w-[90%] w-full mx-auto">
             <form className="" autoComplete="off">
               <div className="grid mr-md:grid-cols-2 grid-cols-1 mr-xl:gap-5 gap-3 mb-5 items-center">
                 <div>
@@ -206,10 +206,10 @@ export default function PublishBook({
                   ></textarea>
                 </div>
               </div>
-              <div className="flex items-center justify-center">
-             
-              <MRCTA text="Request A Free Quote" type="submit" handle="" classes="!w-full __animatedPing !rounded-[6px] hover:bg-white hover:border-white hover:text-black !bg-[#161616] mr-md:!px-36" />
-                
+              <div className="flex items-center justify-center w-full">
+                <div className="w-full flex items-center justify-center">
+                  <button className="w-full mr-lg:w-max h-[50px]  text-white flex items-center font-sans font-semibold justify-center border-2 transition-all border-transparent __animatedPing !rounded-[6px] hover:bg-white hover:border-white hover:text-black !bg-[#161616] mr-lg:!px-36">Request A Free Quote</button>
+                </div>
               </div>
             </form>
           </div>

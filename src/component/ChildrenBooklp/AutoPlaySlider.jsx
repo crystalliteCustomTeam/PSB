@@ -6,7 +6,7 @@ import Autoplay from "embla-carousel-autoplay"
 // Components
 import { PrevButton, NextButton, usePrevNextButtons } from "./SliderArrows"
 
-export default function AutoPlaySlider({ wrapperClasses = " ", options,  arrows = true, arrowsCss = " ", EmblaBtn="" ,flexClasses="", children}) {
+export default function AutoPlaySlider({ wrapperClasses = " ", options, arrows = true, arrowsCss = " ", EmblaBtn = "", flexClasses = "", children }) {
     const plugins = [
         ClassNames(),
         Autoplay({ delay: 3000, stopOnFocusIn: false, stopOnInteraction: false })
@@ -27,7 +27,7 @@ export default function AutoPlaySlider({ wrapperClasses = " ", options,  arrows 
                     {children}
                 </div>
             </div>
-            {arrows && <div className={`flex justify-center gap-5 mt-5 ${EmblaBtn}`}>
+            {arrows && <div className={`flex justify-between w-4/12 mr-sm:w-2/12 mx-auto mt-5 absolute bottom-[-55px] mr-2xl:bottom-[-60px] left-0 right-0 ${EmblaBtn}`}>
                 <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} css={arrowsCss} />
                 <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} css={arrowsCss} />
             </div>}

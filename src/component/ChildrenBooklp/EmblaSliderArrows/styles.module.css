@@ -48,14 +48,14 @@
       position: absolute;
       top: inherit;
       bottom: -30px;
-      left: 45%;
+      left: 40%;
     }
 
     .embla__button__next {
       position: absolute;
       top: inherit;
       bottom: -30px;
-      right: 45%;
+      right: 35%;
     }
   }
 

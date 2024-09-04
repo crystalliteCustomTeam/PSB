@@ -55,7 +55,7 @@ const ChooseOur = () => {
                         </div>
                     </div>
                 </div>
-                <div className="grid grid-cols-1 mr-sm:flex justify-center mr-sm:gap-x-5 gap-5 mt-5 mr-lg:mt-16">
+                <div className="grid grid-cols-1 mr-sm:flex justify-center mr-sm:gap-x-5 gap-5 mt-8 mr-lg:mt-16">
                     <MRCTA text="Connect With Us!" handle="onclick='parent.LC_API.open_chat_window();return false;'" classes="__animatedPing !rounded-[6px]" />
                     <MRCTA text="Call Us Now!" link="tel:800-781-9093" classes="__animatedPing !rounded-[6px] !bg-[#161616] !border-0 hover:bg-black text-white hover:border-black" />
                 </div>

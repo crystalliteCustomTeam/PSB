@@ -44,7 +44,7 @@ const PublishingServices = () => {
     return (
         <section className='relative pt-[50px] mr-lg:pt-[80px] pb-[50px] mr-lg:pb-[80px]'>
             <Image src={PublishBg} alt='Casestudy' fill={true} className='object-center object-cover -z-10' />
-            <div className="absolute left-0 top-[60px] mr-sm:block hidden">
+            <div className="absolute left-0 top-[60px] mr-lg:block hidden">
                 <Image src={PublishParticle} alt='BSP' />
             </div>
             <div className="mr-container relative">
@@ -74,7 +74,7 @@ const PublishingServices = () => {
                         </div>
                     ))}
                 </div>
-                <div className="grid grid-cols-1 mr-sm:flex justify-center mr-sm:gap-x-5 gap-5 mt-5 mr-lg:mt-10">
+                <div className="grid grid-cols-1 mr-sm:flex justify-center mr-sm:gap-x-5 gap-5 mt-7 mr-lg:mt-10">
                     <MRCTA text="Connect With Us!" handle="onclick='parent.LC_API.open_chat_window();return false;'" classes="__animatedPing !rounded-[6px] hover:bg-transparent hover:border-white" />
                     <MRCTA text="Call Us Now!" link="tel:800-781-9093" classes="__animatedPing !rounded-[6px] bg-transparent !border-0 hover:bg-black !bg-white !text-black hover:border-black" />
                 </div>
