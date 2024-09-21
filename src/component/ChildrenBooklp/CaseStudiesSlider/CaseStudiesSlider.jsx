@@ -3,10 +3,14 @@ import { NextButton, PrevButton, usePrevNextButtons } from '../EmblaSliderArrows
 import styles from "./styles.module.css"
 import Image from 'next/image'
 // Images
-import Book1 from "media/children-book-lp/hero-book-4.svg"
 import Star from "media/children-book-lp/star.svg"
+import Book1 from "media/children-book-lp/hero-book-4.svg"
+import Book2 from "media/children-book-lp/hero-book-5.svg"
+import Book3 from "media/children-book-lp/hero-book-6.svg"
+import Book4 from "media/children-book-lp/hero-book-7.svg"
+import Book5 from "media/children-book-lp/hero-book-8.svg"
 
-const CaseStudiesSlider = () => { 
+const CaseStudiesSlider = () => {
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "center" })
     const {
         prevBtnDisabled,
@@ -16,7 +20,7 @@ const CaseStudiesSlider = () => {
     } = usePrevNextButtons(emblaApi);
     const sliderData = [
         {
-            title: <>In Your <span class='font-normal text-[#40BEE2]'>Own</span> Back Yard</>,
+            title: <>In Your <span class='font-bold text-[#40BEE2]'>Own</span> Back Yard</>,
             desc: 'Bonds of Blood" explores the unbreakable ties forged in the heat of battle and the sacrifices made in the name of loyalty and family. This gripping narrative delves into the complex relationships that define both war and survival.',
             number: "01",
             lidescs: [
@@ -27,7 +31,7 @@ const CaseStudiesSlider = () => {
             image: Book1,
         },
         {
-            title: <>In Your <span class='font-normal text-[#40BEE2]'>Own</span> Back Yard</>,
+            title: <>Adventures Of <span class='font-bold text-[#40BEE2]'>Brave </span> Guys</>,
             desc: 'Bonds of Blood" explores the unbreakable ties forged in the heat of battle and the sacrifices made in the name of loyalty and family. This gripping narrative delves into the complex relationships that define both war and survival.',
             number: "02",
             lidescs: [
@@ -35,7 +39,40 @@ const CaseStudiesSlider = () => {
                 { desc: "Sacrifice and Survival: Witness the personal costs of war as characters grapple with life-altering decisions." },
                 { desc: "Family and Brotherhood: Explore the deep bonds that extend beyond blood, shaping identities in the midst of conflict." }
             ],
-            image: Book1,
+            image: Book2,
+        },
+        {
+            title: <>Tiny  <span class='font-bold text-[#40BEE2]'>Girl Born</span> From A Flower</>,
+            desc: 'Bonds of Blood" explores the unbreakable ties forged in the heat of battle and the sacrifices made in the name of loyalty and family. This gripping narrative delves into the complex relationships that define both war and survival.',
+            number: "03",
+            lidescs: [
+                { desc: "Unyielding Loyalty: Discover the powerful connections that drive soldiers to protect one another against all odds." },
+                { desc: "Sacrifice and Survival: Witness the personal costs of war as characters grapple with life-altering decisions." },
+                { desc: "Family and Brotherhood: Explore the deep bonds that extend beyond blood, shaping identities in the midst of conflict." }
+            ],
+            image: Book3,
+        },
+        {
+            title: <>Around  <span class='font-bold text-[#40BEE2]'>The </span> World</>,
+            desc: 'Bonds of Blood" explores the unbreakable ties forged in the heat of battle and the sacrifices made in the name of loyalty and family. This gripping narrative delves into the complex relationships that define both war and survival.',
+            number: "04",
+            lidescs: [
+                { desc: "Unyielding Loyalty: Discover the powerful connections that drive soldiers to protect one another against all odds." },
+                { desc: "Sacrifice and Survival: Witness the personal costs of war as characters grapple with life-altering decisions." },
+                { desc: "Family and Brotherhood: Explore the deep bonds that extend beyond blood, shaping identities in the midst of conflict." }
+            ],
+            image: Book4,
+        },
+        {
+            title: <><span class='font-bold text-[#40BEE2]'>Jack </span> & <span class='font-bold text-[#40BEE2]'> Bean </span>  The Stalk</>,
+            desc: 'Bonds of Blood" explores the unbreakable ties forged in the heat of battle and the sacrifices made in the name of loyalty and family. This gripping narrative delves into the complex relationships that define both war and survival.',
+            number: "05",
+            lidescs: [
+                { desc: "Unyielding Loyalty: Discover the powerful connections that drive soldiers to protect one another against all odds." },
+                { desc: "Sacrifice and Survival: Witness the personal costs of war as characters grapple with life-altering decisions." },
+                { desc: "Family and Brotherhood: Explore the deep bonds that extend beyond blood, shaping identities in the midst of conflict." }
+            ],
+            image: Book5,
         },
     ]
     return (
@@ -48,7 +85,7 @@ const CaseStudiesSlider = () => {
                                 <div className={`grid grid-cols-12 gap-5`}>
                                     <div className="mr-lg:block hidden col-span-12 mr-lg:col-span-4">
                                         <div className="bg-[#40BEE2] pt-10 pb-7 px-0 rounded-[15px] mr-xl:w-9/12 ml-auto">
-                                            <Image src={Book1} alt='Book' className='mx-auto shadow-2xl' />
+                                            <Image src={e.image} alt='Book' className='mx-auto shadow-2xl' />
                                             <div className="flex items-center justify-center gap-2 pt-4">
                                                 <Image src={Star} alt='Star' className='w-[25px] h-[25px]' />
                                                 <Image src={Star} alt='Star' className='w-[25px] h-[25px]' />
@@ -61,7 +98,7 @@ const CaseStudiesSlider = () => {
                                     <div className="col-span-12 mr-lg:col-span-8">
                                         <div className='bg-[#282828] px-4 mr-lg:px-9 py-9 mr-md:py-6 rounded-[15px] h-full flex items-center justify-center mr-xl:w-11/12 relative'>
                                             <div className="number absolute top-[15px] mr-md:top-[20px] right-[20px] mr-md:right-[40px]">
-                                                <p className='text-[13px] mr-md:text-[16px] text-[#8D8D8D] leading-normal'><span className='text-[#40BEE2]'>{e.number}</span> / 02</p>
+                                                <p className='text-[13px] mr-md:text-[16px] text-[#8D8D8D] leading-normal'><span className='text-[#40BEE2]'>{e.number}</span> / 05</p>
                                             </div>
                                             <div>
                                                 <h3 className='text-[25px] mr-lg:text-[30px] leading-normal text-white font-semibold mb-3'>{e.title}</h3>

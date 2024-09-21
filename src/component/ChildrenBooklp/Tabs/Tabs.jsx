@@ -1,11 +1,16 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { MRCTA } from "@/component";
 
 // media
-import Ingramspark from "media/children-book-lp/IngramSpark.png";
 import Arrow from "media/children-book-lp/arrow.png";
-import { MRCTA } from "@/component";
+import Ingramspark from "media/children-book-lp/IngramSpark.svg";
+import Lulu from "media/children-book-lp/lulu.svg";
+import Walmart from "media/children-book-lp/walmart.svg";
+import Amazon from "media/children-book-lp/amazon.svg";
+import AppleBooks from "media/children-book-lp/apple-books.svg";
+import Google from "media/children-book-lp/google.svg";
 
 const tabsList = [
   ["Ingramspark Publishing", 1],
@@ -27,35 +32,35 @@ const tabData = {
 
     description:
       "Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish. <br/> <br/> Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish. Take Your Readers On A Thrilling Journey With Our Action Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish.",
-    image: Ingramspark,
+    image: Lulu,
   },
   3: {
-    title: "Walmart",
+    title: "<span class='text-[#40BEE2] font-medium'>Walm</span>art",
 
     description:
       "Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish. <br/> <br/> Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish. Take Your Readers On A Thrilling Journey With Our Action Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish.",
-    image: Ingramspark,
+    image: Walmart,
   },
   4: {
     title: "<span class='text-[#40BEE2] font-medium'>Amazon</span> KDP",
 
     description:
       "Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish. <br/> <br/> Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish. Take Your Readers On A Thrilling Journey With Our Action Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish.",
-    image: Ingramspark,
+    image: Amazon,
   },
   5: {
     title: "<span class='text-[#40BEE2] font-medium'>Apple</span> Books",
 
     description:
       "Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish. <br/> <br/> Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish. Take Your Readers On A Thrilling Journey With Our Action Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish.",
-    image: Ingramspark,
+    image: AppleBooks,
   },
   6: {
     title: "<span class='text-[#40BEE2] font-medium'>Google</span> Books",
 
     description:
       "Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish. <br/> <br/> Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish. Take Your Readers On A Thrilling Journey With Our Action Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish.",
-    image: Ingramspark,
+    image: Google,
   },
 };
 
@@ -105,10 +110,9 @@ export default function Tabs({
                 <h6 className="mr-lg:text-[30px] text-[20px] font-primary font-semibold text-[#40BEE2]">
                   {tabData[activeTab].subtitle}
                 </h6>
-                <div className="flex mr-md:flex-row flex-col-reverse items-center justify-start gap-x-5 mr-lg:gap-x-9 relative mr-xl:w-8/12 mr-xl:mb-2">
-                  <h3 className="mr-lg:text-[30px] mr-md:text-[20px] text-[25px] font-primary mr-md:leading-[40px] font-semibold mb-5" dangerouslySetInnerHTML={{ __html: tabData[activeTab].title }} />
-                  <span className="w-[2px] h-[30px] bg-[#DBDBDB] mr-md:block hidden absolute left-[30px] right-0 top-[5px] mx-auto"></span>
-                  <Image src={tabData[activeTab].image} quality={95} className="mr-md:w-[180px] w-[200px] h-auto mr-md:mr-auto mr-xs:mx-auto mb-3" alt={tabData[activeTab].subtitle} />
+                <div className="flex mr-md:flex-row flex-col-reverse items-center justify-start gap-x-5 mr-lg:gap-x-9 relative mr-xl:w-8/12 mb-5">
+                  <h3 className="mr-lg:text-[30px] mr-md:text-[20px] text-[25px] font-primary mr-md:leading-[40px] font-semibold relative mr-md:before:content-[''] mr-md:before:absolute mr-md:before:h-[30px] mr-md:before:w-[2px] mr-md:before:right-[-18px] mr-md:before:top-[2px] mr-md:before:translate-y-[2px] mr-md:before:bg-[#DBDBDB]" dangerouslySetInnerHTML={{ __html: tabData[activeTab].title }} />
+                  <Image src={tabData[activeTab].image} quality={95} className="mr-md:mr-auto mr-xs:mx-auto" alt={tabData[activeTab].subtitle} />
                 </div>
 
                 <p className="mr-lg:text-[16px] text-[12px] mr-lg:leading-[25px] font-normal leading-normal mr-lg:pr-10" dangerouslySetInnerHTML={{ __html: tabData[activeTab].description }} />

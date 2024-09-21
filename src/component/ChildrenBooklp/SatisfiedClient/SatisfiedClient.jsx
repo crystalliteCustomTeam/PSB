@@ -12,7 +12,17 @@ import PublishParticle from "media/children-book-lp/publishParticle.svg"
 import googleReview from "media/children-book-lp/google-review-new.svg"
 import trustpilot from "media/children-book-lp/trustpilot-review-new.svg"
 import Client1 from "media/children-book-lp/client-1.svg"
-import Star from "media/children-book-lp/star.svg"
+import Client2 from "media/children-book-lp/client-2.svg"
+import Client3 from "media/children-book-lp/client-3.svg"
+import Client4 from "media/children-book-lp/client-4.svg"
+import Client5 from "media/children-book-lp/client-5.svg"
+import Client6 from "media/children-book-lp/client-6.svg"
+import Client7 from "media/children-book-lp/client-7.svg"
+import Star from "media/children-book-lp/cl-review1.svg"
+import Star1 from "media/children-book-lp/cl-review2.svg"
+import Star2 from "media/children-book-lp/cl-review3.svg"
+import Star3 from "media/children-book-lp/cl-review4.svg"
+import Star4 from "media/children-book-lp/cl-review5.svg"
 
 const SatisfiedClient = () => {
     const sliderData = [
@@ -21,24 +31,46 @@ const SatisfiedClient = () => {
             clientName: 'Jason Taylor -',
             clientLocation: 'Las Vegas, Nevada',
             clientImage: Client1,
+            star: Star,
+            reviews: "4.7",
+        },
+        {
+            desc: 'Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish.',
+            clientName: 'Jason Taylor -',
+            clientLocation: 'Las Vegas, Nevada',
+            clientImage: Client2,
+            star: Star1,
+            reviews: "4.9",
         },
         {
             desc: 'Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish.',
             clientName: 'Jason Taylor -',
             clientLocation: 'Las Vegas, Nevada',
             clientImage: Client1,
+            star: Star2,
+            reviews: "4.8",
         },
         {
             desc: 'Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish.',
             clientName: 'Jason Taylor -',
             clientLocation: 'Las Vegas, Nevada',
-            clientImage: Client1,
+            clientImage: Client3,
+            star: Star3,
+            reviews: "4.7",
+        },
+        {
+            desc: 'Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish.',
+            clientName: 'Jason Taylor -',
+            clientLocation: 'Las Vegas, Nevada',
+            clientImage: Client4,
+            star: Star4,
+            reviews: "4.9",
         },
     ]
     // Slider Setting
     const clientSlider = {
         arrows: true,
-        autoplay: true, 
+        autoplay: true,
         autoplaySpeed: 3000,
         slidesToShow: 1,
         fade: true,
@@ -64,8 +96,8 @@ const SatisfiedClient = () => {
                         </div>
 
                         <div className="flex items-center justify-between gap-5 mr-lg:w-10/12 mt-12">
-                            <Image src={googleReview} alt='Google Review' className='w-[35%] mr-sm:w-auto'/>
-                            <Image src={trustpilot} alt='Trustpilot' className='w-[35%] mr-sm:w-auto'/>
+                            <Image src={googleReview} alt='Google Review' className='w-[35%] mr-sm:w-auto' />
+                            <Image src={trustpilot} alt='Trustpilot' className='w-[35%] mr-sm:w-auto' />
                         </div>
                     </div>
                     <div className="col-span-12 mr-lg:col-span-6">
@@ -79,7 +111,7 @@ const SatisfiedClient = () => {
                                         <div className="bg-[#40BEE2] py-7 px-7 rounded-b-[15px] flex items-center justify-between">
                                             <div className='flex items-center gap-x-4'>
                                                 <div>
-                                                    <Image src={data.clientImage} alt='CLient 1' />
+                                                    <Image src={data.clientImage} alt='CLient 1' className='w-[43px] h-[43px]' />
                                                 </div>
                                                 <div>
                                                     <h6 className='text-white text-[18px] leading-[24px] font-normal'>{data.clientName}</h6>
@@ -87,8 +119,8 @@ const SatisfiedClient = () => {
                                                 </div>
                                             </div>
                                             <div className='flex items-end space-x-1'>
-                                                <Image src={Star} alt='BSP' className='invert-[1] brightness-0' />
-                                                <span className='text-white text-[11px] font-bold mt-[10px]'>4.7</span>
+                                                <Image src={data.star} alt='BSP' />
+                                                <span className='text-white text-[11px] font-bold mt-[10px]'>{data.reviews}</span>
                                             </div>
                                         </div>
                                     </div>
