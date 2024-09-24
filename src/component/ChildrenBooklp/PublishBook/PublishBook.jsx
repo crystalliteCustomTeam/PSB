@@ -3,8 +3,8 @@ import Router, { useRouter } from "next/router";
 import { MRCTA, MRCTAGroup } from "@/component";
 
 export default function PublishBook({
-  title = "How We <span class='text-[#40BEE2] font-medium'> Publish </span> Your Book?",
-  desc = "Our publishing process begins with a thorough review of your manuscript, ensuring it meets the highest standards. We then work closely with you on editing, design, and illustrations to bring your vision to life. Finally, we handle all aspects of printing and distribution, making your book available to readers worldwide.",
+  title = "Your <span class='text-[#40BEE2] font-medium'> Trusted Partner </span> In Children's Book Publishing",
+  desc = "No experience in book publishing? Clueless about how to get the perfect cover art for your children’s book? Well, our kid book publishers have got you covered. We’ve helped more than 12000 authors successfully publish their books, and we’re ready to help you next. Just bring your story to us, and let us take care of everything.",
 }) {
   const [ip, setIP] = useState("");
   const [score, setScore] = useState("Request A Free Quote");

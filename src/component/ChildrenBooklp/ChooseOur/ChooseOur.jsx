@@ -22,36 +22,36 @@ const ChooseOur = () => {
                 <div className="grid grid-cols-12">
                     <div className="col-span-12">
                         <h2 className='mr-lg:text-[40px] mr-md:text-[30px] text-[25px] font-semibold leading-normal mb-3 text-center text-black'>Why <span className='text-[#40BEE2] font-normal'>Choose</span> Our Book <span className='text-[#40BEE2] font-normal'>Publishing</span> Company?</h2>
-                        <p className='mr-md:text-base text-sm font-normal leading-normal text-black text-center mr-lg:w-11/12 mr-xl:w-8/12 mx-auto pb-8 mr-xl:pb-20'>Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency.</p>
+                        <p className='mr-md:text-base text-sm font-normal leading-normal text-black text-center mr-lg:w-11/12 mr-xl:w-8/12 mx-auto pb-8 mr-xl:pb-20'>We pride ourselves on providing top-notch quality publishing services, putting your vision, timelines, and satisfaction first. Our team of professionals does everything with passion and dedication to ensure each book is published at the highest standards that will make your publishing journey smooth and rewarding.</p>
                     </div>
                 </div>
                 <div className="grid grid-cols-12 gap-4 mr-lg:gap-0">
                     <div className="col-span-12 mr-md:col-span-6 mr-lg:col-span-3">
-                        <div className="card px-3 mr-2xl:px-5 py-5 mr-2xl:py-10 duration-700 ease-in-out hover:bg-white border-2 mr-lg:border-r-0 rounded-r-[15px] mr-lg:rounded-r-[0px] rounded-l-[15px] border-[#40BEE2]">
+                        <div className="card h-full px-3 mr-2xl:px-5 py-5 mr-2xl:py-10 duration-700 ease-in-out hover:bg-white border-2 mr-lg:border-r-0 rounded-r-[15px] mr-lg:rounded-r-[0px] rounded-l-[15px] border-[#40BEE2]">
                             <Image src={Choose1} alt='Services' className='mx-auto' />
-                            <h3 className='text-[20px] leading-[30px] font-medium text-center py-6'>Timely Delivery</h3>
-                            <p className='mr-md:text-base text-sm font-normal leading-normal text-center pb-8'>Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence.</p>
+                            <h3 className='text-[20px] leading-[30px] font-medium text-center py-6'>Creative Freedom</h3>
+                            <p className='mr-md:text-base text-sm font-normal leading-normal text-center pb-8'>Maintain complete creative control over your manuscript, cover design, and final product.</p>
                         </div>
                     </div>
                     <div className="col-span-12 mr-md:col-span-6 mr-lg:col-span-3">
-                        <div className="card px-3 mr-2xl:px-5 py-5 mr-2xl:py-10 duration-700 ease-in-out hover:bg-white border-2 mr-lg:border-r-0 rounded-l-[15px] mr-lg:rounded-l-[0px] rounded-r-[15px] mr-lg:rounded-r-[0px] border-[#40BEE2]">
+                        <div className="card h-full px-3 mr-2xl:px-5 py-5 mr-2xl:py-10 duration-700 ease-in-out hover:bg-white border-2 mr-lg:border-r-0 rounded-l-[15px] mr-lg:rounded-l-[0px] rounded-r-[15px] mr-lg:rounded-r-[0px] border-[#40BEE2]">
                             <Image src={Choose2} alt='Services' className='mx-auto' />
-                            <h3 className='text-[20px] leading-[30px] font-medium text-center py-6'>Timely Delivery</h3>
-                            <p className='mr-md:text-base text-sm font-normal leading-normal text-center pb-8'>Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence.</p>
+                            <h3 className='text-[20px] leading-[30px] font-medium text-center py-6'>Wide Distribution</h3>
+                            <p className='mr-md:text-base text-sm font-normal leading-normal text-center pb-8'>Get your book on every major platform, from bookstores to online retailers, ensuring it reaches a global audience.</p>
                         </div>
                     </div>
                     <div className="col-span-12 mr-md:col-span-6 mr-lg:col-span-3">
-                        <div className="card px-3 mr-2xl:px-5 py-5 mr-2xl:py-10 duration-700 ease-in-out hover:bg-white border-2 mr-lg:border-r-0 rounded-l-[15px] mr-lg:rounded-l-[0px] rounded-r-[15px] mr-lg:rounded-r-[0px] border-[#40BEE2]">
+                        <div className="card h-full px-3 mr-2xl:px-5 py-5 mr-2xl:py-10 duration-700 ease-in-out hover:bg-white border-2 mr-lg:border-r-0 rounded-l-[15px] mr-lg:rounded-l-[0px] rounded-r-[15px] mr-lg:rounded-r-[0px] border-[#40BEE2]">
                             <Image src={Choose3} alt='Services' className='mx-auto' />
-                            <h3 className='text-[20px] leading-[30px] font-medium text-center py-6'>Customer Satisfaction</h3>
-                            <p className='mr-md:text-base text-sm font-normal leading-normal text-center pb-8'>Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence.</p>
+                            <h3 className='text-[20px] leading-[30px] font-medium text-center py-6'>Quality Assurance</h3>
+                            <p className='mr-md:text-base text-sm font-normal leading-normal text-center pb-8'>We ensure that your book looks and reads beautifully, from editing to print, ensuring a professional finish.</p>
                         </div>
                     </div>
                     <div className="col-span-12 mr-md:col-span-6 mr-lg:col-span-3">
-                        <div className="card px-3 mr-2xl:px-5 py-5 mr-2xl:py-10 duration-700 ease-in-out hover:bg-white border-2 border-[#40BEE2] rounded-l-[15px] mr-lg:rounded-l-[0px] rounded-r-[15px]">
+                        <div className="card h-full px-3 mr-2xl:px-5 py-5 mr-2xl:py-10 duration-700 ease-in-out hover:bg-white border-2 border-[#40BEE2] rounded-l-[15px] mr-lg:rounded-l-[0px] rounded-r-[15px]">
                             <Image src={Choose4} alt='Services' className='mx-auto' />
                             <h3 className='text-[20px] leading-[30px] font-medium text-center py-6'>100% Ownership</h3>
-                            <p className='mr-md:text-base text-sm font-normal leading-normal text-center pb-8'>Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence.</p>
+                            <p className='mr-md:text-base text-sm font-normal leading-normal text-center pb-8'>When you publish with us, you retain 100% ownership of your book. Every creative decision remains in your hands.</p>
                         </div>
                     </div>
                 </div>

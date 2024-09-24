@@ -10,7 +10,7 @@ import Process5 from "media/children-book-lp/process-5.svg"
 import TickImage from "media/children-book-lp/tick-image.svg"
 import { MRCTA } from '@/component'
 
-const ProcessSteps = () => {
+const   ProcessSteps = () => {
     const processData = [
         {
             processImage: Process1,
@@ -50,8 +50,8 @@ const ProcessSteps = () => {
             <div className="mr-container">
                 <div className="grid grid-cols-12">
                     <div className="col-span-12">
-                        <h2 className='mr-lg:text-[40px] mr-md:text-[30px] text-[25px] font-semibold leading-normal mb-3 text-center text-black'>Our <span className='text-[#40BEE2] font-normal'>5-Step</span> Process Of Self Book <span className='text-[#40BEE2] font-normal'>Publishing</span> Company!</h2>
-                        <p className='mr-md:text-base text-sm font-normal leading-normal text-black text-center mr-lg:w-11/12 mr-xl:w-8/12 mx-auto pb-8 mr-xl:pb-14'>Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency.</p>
+                        <h2 className='mr-lg:text-[40px] mr-md:text-[30px] text-[25px] font-semibold leading-normal mb-3 text-center text-black'>How <span className='text-[#40BEE2] font-normal'>We Work</span> As A Children’s Book <span className='text-[#40BEE2] font-normal'>Publishing</span> Company!</h2>
+                        <p className='mr-md:text-base text-sm font-normal leading-normal text-black text-center mr-lg:w-11/12 mr-xl:w-8/12 mx-auto pb-8 mr-xl:pb-14'>Our proven 5-step process paves the way to self-publishing success. From refining your story to launching it worldwide, we do everything with great care and professionalism.</p>
                     </div>
                 </div> 
                 <div className="grid grid-cols-2 mr-md:grid-cols-5 justify-center gap-5 pb-4">

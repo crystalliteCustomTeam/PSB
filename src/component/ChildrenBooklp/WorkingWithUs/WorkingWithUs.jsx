@@ -18,14 +18,14 @@ import Client12 from "media/children-book-lp/clients/work-12.svg";
 import { MRCTA } from "@/component";
 
 export default function WorkingWithUs({
-  title = "Just By <span class='text-[#40BEE2] font-normal'> Working </span> With Us.",
-  desc = "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced",
+  title = "Publish Your Book with <span class='text-[#40BEE2] font-normal'> Unmatched Media </span> Exposure",
+  desc = "Ready to leave your mark? Reach out today as we make your book stand out with professional publishing services and unparalleled media exposure!",
 }) {
   return (
     <section className="pt-[50px] mr-lg:pt-[80px] pb-[50px] mr-lg:pb-[80px]">
       <div className="flex flex-col items-center justify-center gap-3 mb-8">
         <h2 className="mr-lg:text-[40px] mr-md:text-[30px] text-[25px] font-semibold leading-normal text-center text-black" dangerouslySetInnerHTML={{ __html: title }} />
-        <p className="mr-md:text-base text-sm font-normal leading-normal text-black text-center mr-lg:w-11/12 mr-xl:w-6/12 mx-auto pb-4" dangerouslySetInnerHTML={{ __html: desc }} />
+        <p className="mr-md:text-base text-sm font-normal leading-normal text-black text-center mr-lg:w-11/12 mr-xl:w-7/12 mx-auto pb-4" dangerouslySetInnerHTML={{ __html: desc }} />
       </div>
       <div>
         <AutoScrollSlider options={{ align: "center" }} wrapperClasses="mt-10 mb-10" direction="forward">

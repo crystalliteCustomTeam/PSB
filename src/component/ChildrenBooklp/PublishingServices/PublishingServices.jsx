@@ -12,17 +12,17 @@ const PublishingServices = () => {
     const cardData = [
         {
             title: "Print-On-Demand Publishing",
-            desc: "Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish. Take Your Readers On A Thrilling Journey With Our Action And Adventure Book",
+            desc: "Print-on-demand (POD) publishing means your book is only printed when a reader orders a copy. You provide us with your completed manuscript, and we’ll set it up so that whenever someone orders your book, it gets printed and shipped directly to them. You’ll have full control over the design and layout of your book. ",
             image: BlueParticle
         },
         {
-            title: "Vanity Publishing",
-            desc: "Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish. Take Your Readers On A Thrilling Journey With Our Action And Adventure Book",
+            title: "Vanity Book Publishing Service",
+            desc: "Our Vanity Publishing service offers professional assistance at every step, from editing and cover design to printing and distribution. You’ll also have full creative control, allowing you to make the final decisions on how your book looks and reads. Once published, your book will be available for purchase.",
             image: WhiteParticle
         },
         {
             title: "Self-Publishing",
-            desc: "Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish. Take Your Readers On A Thrilling Journey With Our Action And Adventure Book",
+            desc: "When you choose our self-publishing services, we help you with professional editing, cover design, formatting, and even marketing support, and you’ll have the freedom to decide how your book looks, where it’s sold, and at what price. Plus, with self-publishing, you keep more of your royalties, as you aren’t sharing them with a traditional publisher.",
             image: BlueParticle
         },
         {
@@ -32,12 +32,12 @@ const PublishingServices = () => {
         },
         {
             title: "Hybrid Publishing",
-            desc: "Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish. Take Your Readers On A Thrilling Journey With Our Action And Adventure Book",
+            desc: "Hybrid publishing service is ideal for those who want to share the publishing costs but still need professional support to bring their book to life. We’ll work with you to edit and refine your manuscript, create a stunning cover, and distribute your book to both online and physical retailers.",
             image: BlueParticle
         },
         {
             title: "E-Book Publishing",
-            desc: "Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish. Take Your Readers On A Thrilling Journey With Our Action And Adventure Book",
+            desc: "Our e-book publishing service helps you format your manuscript into a digital book that’s compatible with all major platforms, including Amazon Kindle, Apple Books, and Google Play. We’ll assist you through the process of creating a well-structured, visually appealing e-book that offers a smooth reading experience.",
             image: WhiteParticle
         },
     ]
@@ -54,9 +54,9 @@ const PublishingServices = () => {
                 <div className="grid grid-cols-12">
                     <div className="col-span-12">
                         <h2 className='mr-lg:text-[40px] mr-md:text-[30px] text-[25px] font-semibold leading-normal mb-3 text-center text-white'>
-                            Types Of <span className='text-[#40BEE2] font-normal'>Publishing </span> Services We Offer
+                        Comprehensive <span className='text-[#40BEE2] font-normal'>Children's Book </span> Publishing Services
                         </h2>
-                        <p className='mr-md:text-base text-sm font-normal leading-normal text-white text-center mr-lg:w-9/12 mr-xl:w-6/12 mx-auto pb-8 mr-xl:pb-14'>Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced</p>
+                        <p className='mr-md:text-base text-sm font-normal leading-normal text-white text-center mr-lg:w-9/12 mr-xl:w-7/12 mx-auto pb-8 mr-xl:pb-14'>Our services cover everything from professional editing and custom illustrations to full-scale book publishing and global distribution. Publish a kid book with us and, we will ensure your book reaches its full potential and captivates young readers worldwide. </p>
                     </div>
                 </div>
                 <div className="grid grid-cols-12 mr-sm:gap-x-7 gap-y-12">

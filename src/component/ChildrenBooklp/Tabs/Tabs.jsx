@@ -22,51 +22,47 @@ const tabsList = [
 ];
 const tabData = {
   1: {
-    title: "<span class='text-[#40BEE2] font-normal'>Ingramspark </span> Publishing",
-    description:
-      "Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish. <br/> <br/> Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish. Take Your Readers On A Thrilling Journey With Our Action Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish.",
+    title: "<span class='text-[#40BEE2] font-normal'>IngramSpark </span> Publishing",
+    description: "IngramSpark is one of the top platforms for independent authors, making your book available to retailers worldwide, including major stores like Amazon, Barnes & Noble, and more.It provides you with control over your book pricing, distribution, and royalties, making it a great choice for authors who want broad reach while maintaining control over their work.<br /> <br /> We provide publishing services for IngramSpark through which you can distribute your books to any reader anywhere in the world.Our team guides you through every step of the process in IngramSpark publishing, from preparing your manuscript to ensuring it meets the platform's requirements. We help you set up your book for print-on-demand, so you can sell your book without any upfront printing costs or inventory management.",
     image: Ingramspark,
   },
   2: {
     title: "<span class='text-[#40BEE2] font-medium'>Lulu Book </span> Publishing",
 
-    description:
-      "Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish. <br/> <br/> Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish. Take Your Readers On A Thrilling Journey With Our Action Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish.",
+    description: "Lulu is an excellent site for authors who wish to self-publish their book in an uncomplicated and flexible way. You are allowed to publish your print books and e-books in different types of book formats on Lulu, such as hardcover, paperback, or electronic format. <br /><br /> We make it simple for you to get started with Lulu.Our book publishing team will guide you through each step, from preparing your manuscript to formatting your book and setting up your account on Lulu.Lulu also offers print - on - demand services, so your book is printed only when ordered, saving you the hassle of inventory management and reducing upfront costs.Your published book may be routed to key online retailers like Amazon and Barnes & Noble, enabling you to reach readers in every part of the globe.",
     image: Lulu,
   },
   3: {
-    title: "<span class='text-[#40BEE2] font-medium'>Walm</span>art",
+    title: "<span class='text-[#40BEE2] font-medium'>Walmart </span>Publishing",
 
-    description:
-      "Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish. <br/> <br/> Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish. Take Your Readers On A Thrilling Journey With Our Action Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish.",
+    description: "Publishing with Walmart makes perfect sense for authors seeking to sell books directly to readers in one of the biggest marketplaces in the world. Walmart Marketplace is an opportunity to reach out to millions of people in the United States and beyond. <br /><br /> Our Walmart publishing services, help you get your book listed on their platform, ensuring it’s available to a wide range of readers.We handle everything from setting up your account to formatting your manuscript according to Walmart’s requirements.Whether you want to sell your book in print or as an e - book, we’ll ensure it’s optimized for the platform.Publishing your book through Walmart opens up very large markets both in print and digital formats.",
     image: Walmart,
   },
   4: {
-    title: "<span class='text-[#40BEE2] font-medium'>Amazon</span> KDP",
+    title: "<span class='text-[#40BEE2] font-medium'>Amazon KDP</span> Publishing",
 
     description:
-      "Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish. <br/> <br/> Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish. Take Your Readers On A Thrilling Journey With Our Action Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish.",
+      "Amazon KDP is the most popular in the world for self - publishing.You can publish your e - book and print book, both, on this platform, and it grants you access to millions of readers from Amazon.We can make your book go live in front of readers on Amazon KDP without wasting even a single minute of your time. < br /> <br /> Our team of book publishers takes you through each step of the KDP publishing process, from manuscript formatting to producing a professionally designed cover.Amazon KDP does print - on - demand, so you will not have to worry about upfront printing costs.Plus, you have full control over pricing and royalties, and Amazon pays those directly to you.With our expertise, you’ll have everything you need to publish your book and start selling on the world’s largest online marketplace.",
     image: Amazon,
   },
   5: {
     title: "<span class='text-[#40BEE2] font-medium'>Apple</span> Books",
 
-    description:
-      "Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish. <br/> <br/> Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish. Take Your Readers On A Thrilling Journey With Our Action Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish.",
+    description: "Apple Books is an amazing publishing channel, giving authors a direct guarantee of access to readers of Apple devices worldwide. From first-time author to seasoned writer, Apple Books is one of the best options for reaching a global tech-savvy readership. <br /><br />Using our Apple Books publishing services, we help you in your journey of creating and publishing an e - book that's perfectly formatted for Apple's platform—thereby assuring you that your book will be available for millions of iPad, iPhone, and Mac users.We walk you through manuscript preparation, cover design that captures the spirit of your story, and formatting of your e - book to create a look that is professional and easy to read on Apple devices.Apple Books also puts you in charge of the book's pricing, and you get a royalty for every sale.",
     image: AppleBooks,
   },
   6: {
     title: "<span class='text-[#40BEE2] font-medium'>Google</span> Books",
 
     description:
-      "Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish. <br/> <br/> Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish. Take Your Readers On A Thrilling Journey With Our Action Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish.",
+      "Google Books is a great opportunity to publish your book and make it accessible to readers all over the world. Your work will be found through Google's vast network and can be bought with ease; thus, readers will have an easy time finding your book using Google Search and Google Play. <br /><br />We will format your manuscript to satisfy the requirements of Google, so that your book looks phenomenal on every digital device. Whether publishing an e-book or a print book, we'll do all the techy stuff to get your book up and ready for distribution through Google. You will also have the freedom to set your own pricing and receive royalties from each sale. With Google Books, publishing will let you reach millions of readers worldwide with your book.",
     image: Google,
   },
 };
 
 export default function Tabs({
-  title = "Diverse Book <span class='text-[#40BEE2] font-normal'> Promo </span> Methods",
-  desc = "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced",
+  title = "Customized  <span class='text-[#40BEE2] font-normal'> Book Publishing Solutions </span> For Every Platform",
+  desc = "We provide customized publishing solutions for authors writing childrens books, tailored to fit their specific needs. Our children book publication services make the publishing process easy, professional, and seamless, helping you bring your book to life across multiple platforms.",
 }) {
   const [activeTab, setActiveTab] = useState(1);
 
@@ -118,8 +114,8 @@ export default function Tabs({
                 <p className="mr-lg:text-[16px] text-[12px] mr-lg:leading-[25px] font-normal leading-normal mr-lg:pr-10" dangerouslySetInnerHTML={{ __html: tabData[activeTab].description }} />
 
                 <div className="grid grid-cols-1 mr-sm:flex mr-md:justify-start justify-center mr-sm:gap-x-5 gap-5 mt-5 mr-lg:mt-10">
-                  <MRCTA text="Connect With Us!" handle="onclick='parent.LC_API.open_chat_window();return false;'" classes="__animatedPing !rounded-[6px] hover:bg-transparent hover:text-black hover:border-black" />
-                  <MRCTA text="Call Us Now!" link="tel:800-781-9093" classes="__animatedPing !rounded-[6px] bg-transparent !border-0 hover:bg-black !bg-[#161616] !text-white hover:border-black" />
+                  <MRCTA text="Talk To An Expert" handle="onclick='parent.LC_API.open_chat_window();return false;'" classes="__animatedPing !rounded-[6px] hover:bg-transparent hover:text-black hover:border-black" />
+                  <MRCTA text="Call Us Now" link="tel:800-781-9093" classes="__animatedPing !rounded-[6px] bg-transparent !border-0 hover:bg-black !bg-[#161616] !text-white hover:border-black" />
                 </div>
 
               </div>

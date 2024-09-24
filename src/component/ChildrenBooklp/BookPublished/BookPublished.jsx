@@ -169,10 +169,10 @@ const BookPublished = () => {
                 <div className="grid grid-cols-12 gap-y-7 gap-x-4 mr-xl:gap-x-0 items-center">
                     <div className="col-span-12 mr-lg:col-span-6">
                         <div className='mr-3xl:w-11/12'>
-                            <h2 className='mr-xl:text-[40px] mr-lg:text-[30px] text-[25px] font-semibold leading-normal text-black mr-2xl:pr-20'>Published <span className='text-[#40BEE2] font-normal'>10,000+</span> Great Books
-                                <span className='text-[#40BEE2] font-normal'> Out</span> There! Yours Is <span className='text-[#40BEE2] font-normal'>Next!</span></h2>
-                            <p className='mr-md:text-[16px] text-sm font-normal leading-[25px] text-black pt-6'>Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish.</p>
-                            <p className='mr-md:text-[16px] text-sm font-normal leading-[25px] text-black pt-6 pb-6'>Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish.</p>
+                            <h2 className='mr-xl:text-[40px] mr-lg:text-[30px] text-[25px] font-semibold leading-normal text-black mr-2xl:pr-20'>We’ve Published  <span className='text-[#40BEE2] font-normal'>12000+</span> Children’s Books
+                                <span className='text-[#40BEE2] font-normal'> with Heart</span> </h2>
+                            <p className='mr-md:text-[16px] text-sm font-normal leading-[25px] text-black pt-6'>Your story can be the next best-selling with our expert publishing services. From picture books to chapter books, we offer everything from stunning illustration and hardcover options to easy-to-share digital formats. Our goal is to make sure your book looks beautiful and is available across all major platforms, reaching readers around the world.</p>
+                            <p className='mr-md:text-[16px] text-sm font-normal leading-[25px] text-black pt-6 pb-6'>We guarantee to provide you with the best children's book publishing services, ensuring that every detail goes perfect, from formatting your manuscript to creating the perfect cover. With us, you are joining a family of authors who trusted us to bring their stories to life professionally and passionately.</p>
                             <div className="bg-[#40BEE2] rounded-[15px] flex flex-col gap-6 py-4 mr-xl:py-8 px-6">
                                 <Link href="mailto:info@bestsellingpublisher.com" className='flex items-center gap-x-3'>
                                     <Image src={Email} alt='BSP' className='w-[20px] h-[20px] mr-md:w-auto mr-md:h-auto' />

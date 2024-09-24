@@ -1,15 +1,14 @@
-import Image from "next/image";
+import Image from "next/image"; 
 import React from "react";
+import { MRCTA } from "@/component";
 
 // Media
 import backgroundImg from "media/children-book-lp/background_img1.png";
 import ctaImg from "media/children-book-lp/cta1.png";
 
-import Link from "next/link";
-import { MRCTA, MRCTAGroup } from "@/component";
 export default function PublishAuthor({
-  title = "Become A Published Author Now",
-  desc = " Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques",
+  title = "Publish Your Children's Book Now!",
+  desc = "We help you publish a beautiful, durable hardcover book with full-color printing, providing you with a professional, retail-ready result. Everything you need to publish a children’s book is right here!",
 }) {
   return (
     <section className="py-[50px] mr-lg:py-[80px] relative ">
@@ -28,8 +27,8 @@ export default function PublishAuthor({
             <p className="mr-lg:w-[70%] w-full mx-auto text-[16px] leading-normal text-center" dangerouslySetInnerHTML={{ __html: desc }} />
           </div>
           <div className="grid grid-cols-1 mr-sm:flex mr-md:justify-center justify-center mr-sm:gap-x-5 gap-3 mt-5 mr-lg:mt-10 px-5">
-            <MRCTA text="Connect With Us!" handle="onclick='parent.LC_API.open_chat_window();return false;'" classes="__animatedPing !rounded-[6px] hover:bg-transparent !bg-[#161616] hover:border-white" />
-            <MRCTA text="Call Us Now!" link="tel:800-781-9093" classes="__animatedPing !rounded-[6px] bg-transparent !border-0 hover:bg-black !bg-white !text-[#161616] hover:border-black" />
+            <MRCTA text=" Get A Free Quote" handle="onclick='parent.LC_API.open_chat_window();return false;'" classes="__animatedPing !rounded-[6px] hover:bg-transparent !bg-[#161616] hover:border-white" />
+            <MRCTA text="Connect With Us" link="tel:800-781-9093" classes="__animatedPing !rounded-[6px] bg-transparent !border-0 hover:bg-black !bg-white !text-[#161616] hover:border-black" />
           </div>
           <div className="mr-lg:block hidden">
             <Image

@@ -19,10 +19,8 @@ const Faqs = ({ items }) => {
                 <div className="mr-container">
                     <div className="grid grid-cols-12 mr-lg:gap-x-10 mr-xl:gap-x-20 items-center">
                         <div className="col-span-12 mr-lg:col-span-6">
-                            <h2 className='mr-xl:text-[40px] mr-lg:text-[30px] text-[25px] font-semibold leading-normal text-white'>Frequently <span className='text-[#40BEE2] font-normal'> Asked</span> Questions</h2>
-                            <p className='mr-md:text-[18px] text-sm font-normal leading-normal text-white pt-6 pb-6 mr-md:pb-12'>Our Frequently Asked Questions section provides quick answers to common
-                                queries about our services. It's designed to help you find the information you
-                                need easily, saving you time and ensuring clarity.</p>
+                            <h2 className='mr-xl:text-[40px] mr-lg:text-[30px] text-[25px] font-semibold leading-normal text-white'>FAQs</h2>
+                            <p className='mr-md:text-[18px] text-sm font-normal leading-normal text-white pt-6 pb-6 mr-md:pb-12'>Do you have questions about publishing your children’s book? We’ve gathered answers to the most common questions to guide you through the process with ease. Our FAQ section is here to help make your publishing experience stress-free and successful.</p>
                             <div>
                                 <Image src={FaqsBook} alt='BSP' className='mr-lg:block hidden' />
                             </div>

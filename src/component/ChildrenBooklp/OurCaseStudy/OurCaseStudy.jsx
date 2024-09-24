@@ -18,9 +18,9 @@ const OurCaseStudy = () => {
                 <div className="grid grid-cols-12">
                     <div className="col-span-12">
                         <h2 className='mr-lg:text-[40px] mr-md:text-[30px] text-[25px] font-semibold leading-normal mb-3 text-center text-white'>
-                            <span className='text-[#40BEE2] font-normal'>Our</span> Casestudy's
+                            <span className='text-[#40BEE2] font-normal'>Case </span> Studies
                         </h2>
-                        <p className='mr-md:text-base text-sm font-normal leading-normal text-white text-center mr-lg:w-9/12 mr-2xl:w-6/12 mx-auto '>Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced</p>
+                        <p className='mr-md:text-base text-sm font-normal leading-normal text-white text-center mr-lg:w-9/12 mr-2xl:w-6/12 mx-auto '>Every children’s book has a story behind the story — the dream of an author who wants to inspire young readers. Our case studies celebrate these authors’ journeys, from their first draft to a beautifully published book. </p>
                     </div>
                     <div className="col-span-12 mt-6 mr-lg:mt-16 relative">
                         <CaseStudiesSlider />

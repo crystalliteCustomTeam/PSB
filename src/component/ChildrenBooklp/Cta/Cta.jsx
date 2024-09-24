@@ -5,8 +5,8 @@ import React from "react";
 import backgroundImg from "media/children-book-lp/background_img2.png";
 import CTAImg from "media/children-book-lp/Cta-Image.png";
 export default function Cta({
-  title = `Let's Turn Your Book Into A <span class="font-normal">Best Seller</span>`,
-  desc = "Are You Facing Complications Regarding Book Publishing? Break Free From The Challenges Of Book Publishing With The Help ",
+  title = `Become A Published Best-Selling <span class="font-normal">Author</span>`,
+  desc = "Publish with us, and sell your book everywhere. Our expert publishers for children's books are skilled at getting your book into the hands of readers worldwide. ",
 }) {
   const [ip, setIP] = useState("");
   const [score, setScore] = useState("Get Free Consultation");
@@ -180,7 +180,7 @@ export default function Cta({
             <div className="py-3 pr-5 mr-sm:pr-7 mr-xl:pr-14 pl-5 mr-sm:pl-7 mr-lg:pl-3 mr-lg:w-[53%] mr-xl:w-[50%] w-full mr-lg:ml-auto">
               <div className="flex flex-col gap-3 items-start justify-start w-full mx-auto mb-8 text-white">
                 <h2 className="mr-lg:text-[40px] mr-md:text-[30px] text-[25px] font-semibold leading-normal mr-lg:leading-[55px] text-left text-white mr-2xl:w-10/12" dangerouslySetInnerHTML={{ __html: title }} />
-                <p className="text-left mr-md:text-[16px] mr-md:leading-[25px] text-[14px] leading-normal pr-5" dangerouslySetInnerHTML={{ __html: desc }} />
+                <p className="text-left mr-md:text-[16px] mr-md:leading-[25px] text-[14px] leading-normal" dangerouslySetInnerHTML={{ __html: desc }} />
               </div>
               <div className="mx-auto">
                 <form onSubmit={handleSubmit}>

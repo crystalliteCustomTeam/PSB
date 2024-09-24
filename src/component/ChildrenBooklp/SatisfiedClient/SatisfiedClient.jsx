@@ -27,50 +27,42 @@ import Star4 from "media/children-book-lp/cl-review5.svg"
 const SatisfiedClient = () => {
     const sliderData = [
         {
-            desc: 'Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish.',
-            clientName: 'Jason Taylor -',
-            clientLocation: 'Las Vegas, Nevada',
+            desc: "I couldn't believe how seamlessly it all went through! From inception to completion, every stage was dealt with professionally. My book turned out just the way I had envisioned.",
+            clientName: 'Liora,',
+            clientLocation: "Children's Book Author",
             clientImage: Client1,
             star: Star,
             reviews: "4.7",
         },
         {
-            desc: 'Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish.',
-            clientName: 'Jason Taylor -',
-            clientLocation: 'Las Vegas, Nevada',
+            desc: 'Thank you so much for such a beautiful book! The entire process was easy. Moreover, I got a lot of suggestions that turned out to be really helpful.',
+            clientName: 'Evander,',
+            clientLocation: 'First-Time Author',
             clientImage: Client2,
             star: Star1,
             reviews: "4.9",
         },
         {
-            desc: 'Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish.',
-            clientName: 'Jason Taylor -',
-            clientLocation: 'Las Vegas, Nevada',
+            desc: 'The publishing service is fantastic, actually one of the best that I have dealt with. It really has exceeded my expectations. The print quality is really top-notch, and people comment on just how professional my book looks!',
+            clientName: 'Zephyr,',
+            clientLocation: 'Self-Published Author',
             clientImage: Client1,
             star: Star2,
             reviews: "4.8",
         },
         {
-            desc: 'Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish.',
-            clientName: 'Jason Taylor -',
-            clientLocation: 'Las Vegas, Nevada',
+            desc: 'From formatting to final print, everything went smoothly. Your support made all the difference, and I am just thrilled with the final product!',
+            clientName: 'Talia,',
+            clientLocation: 'Creator of Picture Book',
             clientImage: Client3,
             star: Star3,
             reviews: "4.7",
-        },
-        {
-            desc: 'Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish.',
-            clientName: 'Jason Taylor -',
-            clientLocation: 'Las Vegas, Nevada',
-            clientImage: Client4,
-            star: Star4,
-            reviews: "4.9",
-        },
+        }
     ]
     // Slider Setting
     const clientSlider = {
         arrows: true,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 3000,
         slidesToShow: 1,
         fade: true,
@@ -88,11 +80,11 @@ const SatisfiedClient = () => {
                 <div className="grid grid-cols-12 items-center">
                     <div className="col-span-12 mr-lg:col-span-6">
                         <h2 className='mr-lg:text-[40px] mr-md:text-[30px] text-[25px] font-semibold leading-normal mb-3 text-white'>
-                            Satisfied <span className='text-[#40BEE2] font-normal'>Client's</span>
+                            Our <span className='text-[#40BEE2] font-normal'>Happy </span> Clients
                         </h2>
-                        <p className='mr-md:text-base text-sm font-normal leading-normal text-white pb-8'>Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced</p>
+                        <p className='mr-md:text-base text-sm font-normal leading-normal text-white pb-8'>We have helped more than 12,000 children's book authors bring their stories alive. Our kids book publishing company has recognized as one of the most experienced service providers in the industry</p>
                         <div className="btn">
-                            <MRCTA text="Connect With Us!" handle="onclick='parent.LC_API.open_chat_window();return false;'" classes="__animatedPing !rounded-[6px] hover:bg-transparent hover:border-white" />
+                            <MRCTA text="Connect With Us Now" handle="onclick='parent.LC_API.open_chat_window();return false;'" classes="__animatedPing !rounded-[6px] hover:bg-transparent hover:border-white" />
                         </div>
 
                         <div className="flex items-center justify-between gap-5 mr-lg:w-10/12 mt-12">
@@ -104,8 +96,8 @@ const SatisfiedClient = () => {
                         <Slider {...clientSlider} className='childrenClientSlider'>
                             {sliderData.map((data, index) => (
                                 <div key={index}>
-                                    <div className="card mr-lg:w-10/12 mr-xl:w-8/12 mr-2xl:w-7/12 mx-auto p-4 mr-sm:p-7 relative before:content-[''] before:absolute before:top-[25px] mr-sm:before:top-[25px] mr-lg:before:top-[20px] before:left-[50%] before:translate-x-[-50%] before:h-[86%] mr-lg:before:h-[425px] before:w-[93%] mr-lg:before:w-[350px] before:mx-auto before:bg-[#454545d8] before:z-[-1] before:rounded-[15px] before:rotate-[-5deg] mr-lg:before:rotate-[-8deg] after:content-[''] after:absolute after:top-[25px] mr-sm:after:top-[25px] mr-lg:after:top-[20px] after:left-[50%] after:translate-x-[-50%] after:h-[86%] mr-lg:after:h-[420px] after:w-[93%] mr-lg:after:w-[350px] after:mx-auto after:bg-[#454545] after:z-[-1] after:rounded-[15px] after:rotate-[5deg] mr-lg:after:rotate-[8deg]">
-                                        <div className="bg-white pt-5 pb-10 min-h-[180px] mr-lg:min-h-[300px] px-5 rounded-t-[15px]">
+                                    <div className="card mr-lg:w-10/12 mr-xl:w-8/12 mr-2xl:w-7/12 mx-auto p-4 mr-sm:p-7 relative before:content-[''] before:absolute before:top-[25px] mr-sm:before:top-[25px] mr-lg:before:top-[18px] before:left-[50%] before:translate-x-[-50%] before:h-[80%] mr-lg:before:h-[395px] before:w-[93%] mr-lg:before:w-[350px] before:mx-auto before:bg-[#454545d8] before:z-[-1] before:rounded-[15px] before:rotate-[-5deg] mr-lg:before:rotate-[-6deg] after:content-[''] after:absolute after:top-[25px] mr-sm:after:top-[25px] mr-lg:after:top-[18px] after:left-[50%] after:translate-x-[-50%] after:h-[80%] mr-lg:after:h-[390px] after:w-[93%] mr-lg:after:w-[350px] after:mx-auto after:bg-[#454545] after:z-[-1] after:rounded-[15px] after:rotate-[5deg] mr-lg:after:rotate-[6deg]">
+                                        <div className="bg-white pt-5 pb-10 min-h-[180px] mr-lg:min-h-[270px] px-5 rounded-t-[15px]">
                                             <p className='text-[18px] leading-[35px] font-normal mr-sm:pr-[20px]'>{data.desc}</p>
                                         </div>
                                         <div className="bg-[#40BEE2] py-7 px-7 rounded-b-[15px] flex items-center justify-between">

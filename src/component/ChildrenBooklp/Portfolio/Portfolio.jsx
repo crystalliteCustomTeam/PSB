@@ -15,8 +15,8 @@ import Portfolio9 from "media/children-book-lp/portfolio/img9.svg";
 import Portfolio10 from "media/children-book-lp/portfolio/img10.svg";
 
 export default function Portfolio({
-  title = "Our <span class='text-[#40BEE2] font-normal'>Genre</span> Portfolio",
-  desc = "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced",
+  title = "Creating Magic Across <span class='text-[#40BEE2] font-normal'>Every Genre</span>",
+  desc = "Every author that we have ever worked with has brought a unique and beautiful story to the table, and we're honored to have been part of their publishing journey.",
 }) {
   return (
     <section className="pt-[20px] pb-[90px] mr-lg:pt-[30px] mr-lg:pb-[110px] mr-2xl:pb-[140px] relative ">

@@ -31,13 +31,13 @@ const CaseStudiesSlider = () => {
             image: Book1,
         },
         {
-            title: <>Adventures Of <span class='font-bold text-[#40BEE2]'>Brave </span> Guys</>,
-            desc: 'Bonds of Blood" explores the unbreakable ties forged in the heat of battle and the sacrifices made in the name of loyalty and family. This gripping narrative delves into the complex relationships that define both war and survival.',
+            title: <>Adventure of  <span class='font-bold text-[#40BEE2]'>Brave </span> Guys</>,
+            desc: "Adventure of Brave Guys became a reality with our help. Our team of children's publishers guided the author through the entire process, from manuscript to distribution. Now, the magical story is inspiring readers worldwide",
             number: "02",
             lidescs: [
-                { desc: "Unyielding Loyalty: Discover the powerful connections that drive soldiers to protect one another against all odds." },
-                { desc: "Sacrifice and Survival: Witness the personal costs of war as characters grapple with life-altering decisions." },
-                { desc: "Family and Brotherhood: Explore the deep bonds that extend beyond blood, shaping identities in the midst of conflict." }
+                { desc: "We ensured the manuscript met professional publishing standards, offering feedback to enhance storytelling for young readers." },
+                { desc: "We connected with our talented illustrators who perfectly captured the magical essence of the island and its characters." },
+                { desc: "We helped publish the book on Amazon KDP, making the story available in print and digital formats." }
             ],
             image: Book2,
         },
@@ -54,12 +54,12 @@ const CaseStudiesSlider = () => {
         },
         {
             title: <>Around  <span class='font-bold text-[#40BEE2]'>The </span> World</>,
-            desc: 'Bonds of Blood" explores the unbreakable ties forged in the heat of battle and the sacrifices made in the name of loyalty and family. This gripping narrative delves into the complex relationships that define both war and survival.',
+            desc: 'In "Around The World," a whimsical tale unfolds as a young girl, discovers the world and his purpose in a realm of fairies. Navigating a vibrant world, she befriends enchanted creatures and faces challenges that test her courage. Ultimately, she learns that love and friendship can conquer all.',
             number: "04",
             lidescs: [
-                { desc: "Unyielding Loyalty: Discover the powerful connections that drive soldiers to protect one another against all odds." },
-                { desc: "Sacrifice and Survival: Witness the personal costs of war as characters grapple with life-altering decisions." },
-                { desc: "Family and Brotherhood: Explore the deep bonds that extend beyond blood, shaping identities in the midst of conflict." }
+                { desc: "We took care of everything, from formatting the manuscript and designing the cover to ensuring the book was ready for both print and digital platforms." },
+                { desc: "With our hands-on support, we helped navigate the challenges of publishing, offering guidance, creativity, and expertise at every step." },
+                { desc: "The book is now available on Lulu Publishing and Amazon KDP, reaching young readers around the world." }
             ],
             image: Book4,
         },
