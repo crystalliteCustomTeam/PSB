@@ -22,7 +22,7 @@ const fetchAPI = async (query) => {
             throw new Error('Failed to fetch API: ' + JSON.stringify(json.errors));
         }
 
-        return json.data.bsps;
+        return json.data;
     } catch (error) {
         console.error('Error fetching API:', error);
         throw new Error('API request failed: ' + error.message);
@@ -75,12 +75,13 @@ export const getPostList = async (endCursor = null, taxonomy = null) => {
     }`;
 
     const data = await fetchAPI(query);
-    return data.nodes;
+    return data.bsps.nodes;
+
 };
 
-export const getSinglePost = async (slug) => {
+export const getSinglePost = async (slug = "diy-vs-hiring-book-cover-designers-deciding-whats-best") => {
     const query = `{
-        bsps(id: "${slug}", idType: SLUG) {
+        bspBy(slug: "${slug}") {
             content(format: RENDERED)
             date
             excerpt(format: RENDERED)
@@ -119,5 +120,5 @@ export const getSinglePost = async (slug) => {
     }`;
 
     const data = await fetchAPI(query);
-    return data.nodes[0];
+    return data.bspBy
 };
