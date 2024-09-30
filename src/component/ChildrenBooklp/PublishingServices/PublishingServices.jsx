@@ -25,11 +25,6 @@ const PublishingServices = () => {
             desc: "When you choose our self-publishing services, we help you with professional editing, cover design, formatting, and even marketing support, and you’ll have the freedom to decide how your book looks, where it’s sold, and at what price. Plus, with self-publishing, you keep more of your royalties, as you aren’t sharing them with a traditional publisher.",
             image: BlueParticle
         },
-        // {
-        //     title: "Standard Publishing",
-        //     desc: "Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish. Take Your Readers On A Thrilling Journey With Our Action And Adventure Book",
-        //     image: WhiteParticle
-        // },
         {
             title: "Hybrid Publishing",
             desc: "Hybrid publishing service is ideal for those who want to share the publishing costs but still need professional support to bring their book to life. We’ll work with you to edit and refine your manuscript, create a stunning cover, and distribute your book to both online and physical retailers.",
@@ -59,16 +54,16 @@ const PublishingServices = () => {
                         <p className='mr-md:text-base text-sm font-normal leading-normal text-white text-center mr-lg:w-9/12 mr-xl:w-7/12 mx-auto pb-8 mr-xl:pb-14'>Our services cover everything from professional editing and custom illustrations to full-scale book publishing and global distribution. Publish a kid book with us and, we will ensure your book reaches its full potential and captivates young readers worldwide. </p>
                     </div>
                 </div>
-                <div className="grid grid-cols-12 mr-sm:gap-x-7 gap-y-12 justify-center mx-auto">
+                <div className="flex flex-wrap items-center justify-center mr-sm:gap-x-7 gap-y-12 ">
                     {cardData.map((data, index) => (
-                        <div className="col-span-12 mr-md:col-span-6 mr-lg:col-span-4" key={index}>
+                        <div className="col-span-12 mr-md:col-span-6 mr-lg:col-span-4 mr-md:w-[45%] mr-xl:w-[30%]" key={index}>
                             <div className="card">
                                 <div className="relative mb-4 py-7 mr-sm:py-9 mr-md:py-4 mr-xl:py-3 mr-2xl:py-2">
                                     <Image src={data.image} alt='Casestudy' fill={true} className='object-center object-contain mr-xs:object-cover -z-10' />
-                                    <h2 className='text-center text-[20px] font-semibold leading-[0px] mr-sm:leading-[30px] mr-xl:leading-[50px] mr-2xl:leading-[70px]'>{data.title}</h2>
+                                    <h2 className='text-center text-[18px] font-semibold leading-[0px] mr-sm:leading-[30px] mr-xl:leading-[50px] mr-2xl:leading-[70px]'>{data.title}</h2>
                                 </div>
                                 <div className="bg-[#282828] rounded-[15px] py-5 px-[15px] min-h-[200px] flex items-center justify-center">
-                                    <p className='text-center mr-md:text-[14px] text-sm font-normal leading-[25px] px-[6px] text-white'>{data.desc}</p>
+                                    <p className='text-center mr-xl:text-[14px] text-sm font-normal leading-[25px] px-[6px] text-white'>{data.desc}</p>
                                 </div>
                             </div>
                         </div>

@@ -28,7 +28,7 @@ const SatisfiedClient = () => {
     const sliderData = [
         {
             desc: "I couldn't believe how seamlessly it all went through! From inception to completion, every stage was dealt with professionally. My book turned out just the way I had envisioned.",
-            clientName: 'Liora,',
+            clientName: 'Liora',
             clientLocation: "Children's Book Author",
             clientImage: Client1,
             star: Star,
@@ -36,7 +36,7 @@ const SatisfiedClient = () => {
         },
         {
             desc: 'Thank you so much for such a beautiful book! The entire process was easy. Moreover, I got a lot of suggestions that turned out to be really helpful.',
-            clientName: 'Evander,',
+            clientName: 'Evander',
             clientLocation: 'First-Time Author',
             clientImage: Client2,
             star: Star1,
@@ -44,7 +44,7 @@ const SatisfiedClient = () => {
         },
         {
             desc: 'The publishing service is fantastic, actually one of the best that I have dealt with. It really has exceeded my expectations. The print quality is really top-notch, and people comment on just how professional my book looks!',
-            clientName: 'Zephyr,',
+            clientName: 'Zephyr',
             clientLocation: 'Self-Published Author',
             clientImage: Client1,
             star: Star2,
@@ -52,7 +52,7 @@ const SatisfiedClient = () => {
         },
         {
             desc: 'From formatting to final print, everything went smoothly. Your support made all the difference, and I am just thrilled with the final product!',
-            clientName: 'Talia,',
+            clientName: 'Talia',
             clientLocation: 'Creator of Picture Book',
             clientImage: Client3,
             star: Star3,
@@ -88,8 +88,8 @@ const SatisfiedClient = () => {
                         </div>
 
                         <div className="flex items-center justify-between gap-5 mr-lg:w-10/12 mt-12">
-                            <Image src={googleReview} alt='Google Review' className='w-[35%] mr-sm:w-auto' />
-                            <Image src={trustpilot} alt='Trustpilot' className='w-[35%] mr-sm:w-auto' />
+                            <Image src={googleReview} alt='Google Review' priority loading='eager' className='w-[35%] mr-sm:w-auto' />
+                            <Image src={trustpilot} alt='Trustpilot' priority loading='eager' className='w-[35%] mr-sm:w-auto' />
                         </div>
                     </div>
                     <div className="col-span-12 mr-lg:col-span-6">

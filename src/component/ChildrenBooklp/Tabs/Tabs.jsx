@@ -108,7 +108,7 @@ export default function Tabs({
                 </h6>
                 <div className="flex mr-md:flex-row flex-col-reverse items-center justify-start gap-x-5 mr-lg:gap-x-9 relative mr-xl:w-8/12 mb-5">
                   <h3 className="mr-lg:text-[30px] mr-md:text-[20px] text-[25px] font-primary mr-md:leading-[40px] font-semibold relative mr-md:before:content-[''] mr-md:before:absolute mr-md:before:h-[30px] mr-md:before:w-[2px] mr-md:before:right-[-18px] mr-md:before:top-[2px] mr-md:before:translate-y-[2px] mr-md:before:bg-[#DBDBDB]" dangerouslySetInnerHTML={{ __html: tabData[activeTab].title }} />
-                  <Image src={tabData[activeTab].image} quality={95} className="mr-md:mr-auto mr-xs:mx-auto" alt={tabData[activeTab].subtitle} />
+                  <Image src={tabData[activeTab].image} loading="eager" priority quality={95} className="mr-md:mr-auto mr-xs:mx-auto" alt={tabData[activeTab].subtitle} />
                 </div>
 
                 <p className="mr-lg:text-[16px] text-[12px] mr-lg:leading-[25px] font-normal leading-normal mr-lg:pr-10" dangerouslySetInnerHTML={{ __html: tabData[activeTab].description }} />
