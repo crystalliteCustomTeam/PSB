@@ -10,9 +10,8 @@ import Portfolio4 from "media/children-book-lp/portfolio/img4.svg";
 import Portfolio5 from "media/children-book-lp/portfolio/img5.svg";
 import Portfolio6 from "media/children-book-lp/portfolio/img6.svg";
 import Portfolio7 from "media/children-book-lp/portfolio/img7.svg";
-import Portfolio8 from "media/children-book-lp/portfolio/img8.svg";
-import Portfolio9 from "media/children-book-lp/portfolio/img9.svg";
-import Portfolio10 from "media/children-book-lp/portfolio/img10.svg";
+import Portfolio8 from "media/children-book-lp/portfolio/img8.svg"; 
+import Portfolio9 from "media/children-book-lp/portfolio/img10.svg";
 
 export default function Portfolio({
   title = "Creating Magic Across <span class='text-[#40BEE2] font-normal'>Every Genre</span>",
@@ -28,7 +27,7 @@ export default function Portfolio({
       </div>
       <div className="relative before:content-[''] before:absolute before:left-0 before:h-full mr-lg:before:w-[100px] mr-xl:before:w-[150px] mr-2xl:before:w-[170px] mr-3xl:before:w-[230px] before:top-[-10px] mr-xl:before:top-[-15px] before:bg-[#ffffff74] before:z-10 before:rounded-r-[10px] after:content-[''] after:absolute after:right-0 after:h-full mr-lg:after:w-[100px] mr-xl:after:w-[150px] mr-2xl:after:w-[170px] mr-3xl:after:w-[230px] after:top-[-10px] mr-xl:after:top-[-15px] after:bg-[#ffffff74] after:z-10 after:rounded-r-[10px]">
         <AutoPlaySlider arrows={true} options={{ align: "center" }} wrapperClasses="mt-3" direction="forward">
-          {[Portfolio1, Portfolio2, Portfolio3, Portfolio4, Portfolio5, Portfolio6, Portfolio7, Portfolio8, Portfolio9, Portfolio10].map((imgPortfolio, i) => (
+          {[Portfolio1, Portfolio2, Portfolio3, Portfolio4, Portfolio5, Portfolio6, Portfolio7, Portfolio8, Portfolio9].map((imgPortfolio, i) => (
             <div key={i} className="group shrink-0 mr-xl:basis-[25%] mr-lg:basis-[25%] mr-md:basis-[25%] mr-sm:basis-[40%] basis-[50%] min-w-0 pl-4  items-center flex">
               <div className="flex items-center">
                 <div className={``}>

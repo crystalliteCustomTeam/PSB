@@ -1,7 +1,13 @@
 import { BlogArticle, BlogFaqs, BlogNavigation, BlogShare } from '@/component/MRBlogs';
 import { useRouter } from 'next/router';
 import { getSinglePost, getPostList } from "../api/blogs/route";
-
+import styles from "@/component/MRBlogs/BlogArticles/InnerBanner.module.css"
+import { Col, Container, Row } from 'react-bootstrap';
+import Image from 'next/image';
+import Client from "media/blog-new/blog-client.png"
+import verified from "media/blog-new/blog-verify.png"
+import experience from "media/blog-new/experience.png"
+import 'bootstrap/dist/css/bootstrap.min.css';
 export async function getStaticProps({ params }) {
     try {
         const post = await getSinglePost(params.slug);
@@ -56,7 +62,7 @@ export default function Slug({ post }) {
                     <Row className="align-items-center">
                         <Col lg={6}>
                             <div className={styles.blogTopDes}>
-                                <h4>{post.categories.nodes[0]?.name}</h4>
+                                <h4>{post.bSPCategories.nodes[0]?.name}</h4>
                                 <h1 className='fontsfregular'>{post.title}</h1>
                                 {post.blogDescription?.topDescription && (
                                     <div dangerouslySetInnerHTML={{ __html: post.blogDescription.topDescription }}></div>
@@ -98,7 +104,7 @@ export default function Slug({ post }) {
                                     </div>
                                     <div className={styles.expertise}>
                                         <span className={`${styles.expertisePara} fontsfregular`}>EXPERTISE</span>
-                                        {post.author.node.userexperties.experties.map((experties, index) => (
+                                        {post.author.node?.userexperties?.experties.map((experties, index) => (
                                             <span key={index} className={`fontsfregular text-black ${styles.btn}`}>
                                                 {experties}
                                             </span>
@@ -116,7 +122,7 @@ export default function Slug({ post }) {
                         <Col lg={8}>
                             <BlogShare />
                             <div dangerouslySetInnerHTML={{ __html: post.content }}></div>
-                            <BlogFaqs faqData={post.blogDescription.faq} />
+                            {post?.blogDescription?.faq && <BlogFaqs faqData={post.blogDescription.faq} />}
                         </Col>
                         <Col lg={4}>
                             <BlogNavigation postData={post} />
