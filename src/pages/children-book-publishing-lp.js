@@ -1,4 +1,5 @@
 import { Cta, Header, Hero, Portfolio, PublishAuthor, PublishBook, Tabs, WorkingWithUs, Logos, OurCaseStudy, PublishingServices, SatisfiedClient, ProcessSteps, ChooseOur, BookPublished, Faqs } from '@/component/ChildrenBooklp'
+import Head from 'next/head';
 import React from 'react'
 
 const ChildrenBookServicesLP = () => {
@@ -12,6 +13,13 @@ const ChildrenBookServicesLP = () => {
     ];
     return (
         <>
+            {/* Head */}
+            <Head>
+                <meta name="robots" content="noindex" />
+                <title>Best Children’s Book Publishing Company For Every Author</title>
+                <meta name="description" content="Our top-tier children's book publishing services help you with book printing, cover design, Print On Demand, global distribution, and much more according to your needs." />
+            </Head>
+            {/* Head */}
             <Header />
             <Hero />
             <Logos />

@@ -25,11 +25,11 @@ const PublishingServices = () => {
             desc: "When you choose our self-publishing services, we help you with professional editing, cover design, formatting, and even marketing support, and you’ll have the freedom to decide how your book looks, where it’s sold, and at what price. Plus, with self-publishing, you keep more of your royalties, as you aren’t sharing them with a traditional publisher.",
             image: BlueParticle
         },
-        {
-            title: "Standard Publishing",
-            desc: "Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish. Take Your Readers On A Thrilling Journey With Our Action And Adventure Book",
-            image: WhiteParticle
-        },
+        // {
+        //     title: "Standard Publishing",
+        //     desc: "Take Your Readers On A Thrilling Journey With Our Action And Adventure Book Marketing Services. Our Team Will Create A Custom Marketing Plan That Reaches Your Target Audience And Keeps Them Engaged From Start To Finish. Take Your Readers On A Thrilling Journey With Our Action And Adventure Book",
+        //     image: WhiteParticle
+        // },
         {
             title: "Hybrid Publishing",
             desc: "Hybrid publishing service is ideal for those who want to share the publishing costs but still need professional support to bring their book to life. We’ll work with you to edit and refine your manuscript, create a stunning cover, and distribute your book to both online and physical retailers.",
@@ -59,7 +59,7 @@ const PublishingServices = () => {
                         <p className='mr-md:text-base text-sm font-normal leading-normal text-white text-center mr-lg:w-9/12 mr-xl:w-7/12 mx-auto pb-8 mr-xl:pb-14'>Our services cover everything from professional editing and custom illustrations to full-scale book publishing and global distribution. Publish a kid book with us and, we will ensure your book reaches its full potential and captivates young readers worldwide. </p>
                     </div>
                 </div>
-                <div className="grid grid-cols-12 mr-sm:gap-x-7 gap-y-12">
+                <div className="grid grid-cols-12 mr-sm:gap-x-7 gap-y-12 justify-center mx-auto">
                     {cardData.map((data, index) => (
                         <div className="col-span-12 mr-md:col-span-6 mr-lg:col-span-4" key={index}>
                             <div className="card">
