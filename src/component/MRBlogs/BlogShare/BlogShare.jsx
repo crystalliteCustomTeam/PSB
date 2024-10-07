@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { FacebookShareButton, TwitterShareButton, LinkedinShareButton } from 'react-share';
 // ===== CSS
-import styles from "./InnerBanner.module.css"
 // ===== Images
 import Share from "media/blog-new/shareIcon.png"
 import social1 from "media/blog-new/linkedin.png"
@@ -24,24 +23,24 @@ const BlogShare = () => {
     };
     return (
         <>
-            <ul className={`p-0 mb-4 ${styles.share}`}>
-                <li className={`d-flex align-items-center justify-content-center gap-3 ${styles.shareIcon}`} onClick={shareArticle}>
-                    <Image src={Share} alt='Bitswits' width={20} height={20} />
+            <ul className="flex items-center divide-x-2 mb-10">
+                <li className={`cursor-pointer flex items-center gap-5 rounded-[5px_0_0_5px] bg-[#DEDEDE] py-1 px-4 before:!hidden`} onClick={shareArticle}>
+                    <Image src={Share} alt='publishing' width={20} height={20} />
                     <p className='mb-0'>Share This Article</p>
                 </li>
-                <li className={`${styles.icons}`}>
-                    <LinkedinShareButton className="w-100 h-100" url="https://www.linkedin.com/">
-                        <Image src={social1} alt='Bitswits' width={20} height={20} />
+                <li className="before:!hidden bg-[#F3F3F3] mr-2xl:py-3 py-2 mr-2xl:h-[43px] h-[36px] px-5">
+                    <LinkedinShareButton url="https://www.linkedin.com/">
+                        <Image src={social1} alt='publishing' width={20} height={20} className="max-w-[15px] m-auto" />
                     </LinkedinShareButton>
                 </li>
-                <li className={`${styles.icons}`}>
-                    <TwitterShareButton className="w-100 h-100" url="https://twitter.com/">
-                        <Image src={social2} alt='Bitswits' width={25} height={20} />
+                <li className="before:!hidden bg-[#F3F3F3] mr-2xl:py-3 py-2 mr-2xl:h-[43px] h-[36px] px-5">
+                    <TwitterShareButton url="https://twitter.com/">
+                        <Image src={social2} alt='publishing' width={20} height={20} className="max-w-[15px] m-auto" />
                     </TwitterShareButton>
                 </li>
-                <li className={`${styles.icons}`}>
-                    <FacebookShareButton className="w-100 h-100" url="https://www.facebook.com/">
-                        <Image src={social3} alt='Bitswits' width={10} height={20} />
+                <li className="before:!hidden bg-[#F3F3F3] mr-2xl:py-3 py-2 mr-2xl:h-[43px] h-[36px] px-5 rounded-[0_5px_5px_0]">
+                    <FacebookShareButton url="https://www.facebook.com/">
+                        <Image src={social3} alt='publishing' width={20} height={20} className="max-w-[10px] m-auto" />
                     </FacebookShareButton>
                 </li>
             </ul>

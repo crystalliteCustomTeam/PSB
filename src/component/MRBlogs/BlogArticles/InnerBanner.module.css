@@ -7,7 +7,7 @@
   line-height: 22px;
   font-weight: 500;
   margin-bottom: 0;
-  color: #f32f53;
+  color: #40bee2;
 }
 
 .innerBannerSec h1 {
@@ -28,7 +28,6 @@
   font-size: 18px;
   line-height: 35px;
   font-weight: 300;
-  padding-right: 10px;
 }
 
 .blogdesc {
@@ -50,7 +49,7 @@
 }
 
 .innerBannerSec .name p span {
-  color: #f32f53;
+  color: #40bee2;
 }
 
 .innerBannerSec .verified {
@@ -251,7 +250,7 @@
   top: 13px;
   width: 8px;
   height: 8px;
-  background-color: #f32f53;
+  background-color: #40bee2;
   border-radius: 50px;
 }
 
@@ -285,7 +284,7 @@
 }
 
 .readSec .cardContent p:first-of-type {
-  color: #f32f53;
+  color: #40bee2;
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
@@ -419,20 +418,30 @@
 
 /*============ Media Queries ============*/
 
-@media only screen and (max-width: 1299px) {
+@media only screen and (max-width: 1399px) {
   .articleSec p {
     font-size: 15px;
     line-height: 28px;
   }
-
+  
   .articleSec .blockchain {
     padding: 40px 20px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .innerBannerSec h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .innerBannerSec p:first-of-type {
+    font-size: 16px;
+    line-height: 26px;
   }
 }
 
 @media only screen and (max-width: 991px) {
   .articleSec {
-    padding: 40px 0 0;
+    padding: 20px 0 0;
   }
 
   .innerBannerSec {
@@ -458,18 +467,42 @@
     font-size: 30px;
     line-height: 40px;
   }
-
+  
   .articleSec h2 {
-    font-size: 35px;
+    font-size: 25px;
+    line-height: 35px;
   }
-
+  
   .innerBannerSec p:first-of-type {
     font-size: 16px;
     line-height: 28px;
   }
-
+  
   .innerBannerSec .content ul {
     justify-content: center;
     gap: 20px 40px;
   }
+}
+@media only screen and (max-width: 575px) {
+    .innerBannerSec h1 {
+      font-size: 25px;
+      line-height: 40px;
+    }
+    .innerBannerSec table{
+      display: none;
+    }
+    .innerBannerSec table thead tr th,
+    .innerBannerSec table tbody tr td,
+    .innerBannerSec table tbody tr td span{
+      font-size: 14px !important;
+    }
+    .innerBannerSec p:first-of-type {
+      font-size: 14px;
+      line-height: 24px;
+    }
+    .readSec h2 {
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 40px;
+    }
 }

@@ -29,7 +29,7 @@
 
 .active {
   position: relative;
-  color: #f32f53;
+  color: #40bee2;
 }
 
 .active::before {
@@ -39,7 +39,7 @@
   height: 100%;
   top: 0px;
   left: -30px;
-  background: #f32f53;
+  background: #40bee2;
 }
 
 .mainHeading h3 {
@@ -99,7 +99,7 @@
 .articles ul li p {
   font-size: 16px;
   line-height: 21px;
-  color: #f32f53;
+  color: #40bee2;
 }
 
 .articles ul li h6 {
@@ -155,7 +155,7 @@
 
 @media only screen and (max-width: 991px) {
   .sidebar {
-    padding-top: 50px;
+    padding-top: 00px;
   }
 
   .services ul {
