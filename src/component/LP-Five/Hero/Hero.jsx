@@ -11,9 +11,14 @@ import Icon3 from "media/book-marketing-company/servicesIcons/18.svg"
 const Hero = ({ title, desc }) => {
     const [ip, setIP] = useState('');
     const getIPData = async () => {
-        const res = await Axios.get('https://ipwho.is/');
-        setIP(res.data);
-    }
+        try {
+            const res = await fetch('https://ipwho.is/');
+            const data = await res.json();
+            setIP(data);
+        } catch (error) {
+            console.error('Error fetching IP data:', error);
+        }
+    };
     useEffect(() => {
         getIPData()
     }, [])
@@ -49,7 +54,7 @@ const Hero = ({ title, desc }) => {
         console.log(JSONdata);
 
 
-        fetch('api/email/route', {
+        fetch('/api/email/route', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json, text/plain, */*',
