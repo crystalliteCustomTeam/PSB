@@ -12,27 +12,27 @@ import tel from "media/newBrandv2/call.png"
 const CountlessWriters = () => {
     const writers = [
         {
-            title: "Book Name",
+            title: "Dragon's Call",
             desc: 'We are known for our writing skills that help you attract multiple readers...',
             book: Writer1
         },
         {
-            title: "Book Name",
+            title: "Inside The Mind",
             desc: 'We are known for our writing skills that help you attract multiple readers...',
             book: Writer2
         },
         {
-            title: "Book Name",
+            title: "Echoes Of The Nebula",
             desc: 'We are known for our writing skills that help you attract multiple readers...',
             book: Writer3
         },
         {
-            title: "Book Name",
+            title: "The Case Of Vanishing Ruby",
             desc: 'We are known for our writing skills that help you attract multiple readers...',
             book: Writer4
         },
         {
-            title: "Book Name",
+            title: "Beneath The Willow Tree",
             desc: 'We are known for our writing skills that help you attract multiple readers...',
             book: Writer5
         },
@@ -54,8 +54,8 @@ const CountlessWriters = () => {
                             <div className="writerImage shadow-[2px_0px_22px_4px_rgba(0,0,0,0.523)]">
                                 <Image src={content.book} alt='Writer' className='object-cover w-full group-hover:scale-105 group-hover:duration-700 duration-700 ease-in-out' style={{ transformOrigin: 'bottom' }} />
                             </div>
-                            <div className="content text-center mr-md:text-left pt-3">
-                                <h3 className='text-[20px] mr-xl:text-[25px] font-semibold dm-serif'>{content.title}</h3>
+                            <div className="content text-center mr-md:text-left pt-5">
+                                <h3 className='text-[20px] mr-xl:text-[25px] leading-[30px] mr-xl:leading-[35px] font-semibold dm-serif mr-xl:h-[70px] mb-2'>{content.title}</h3>
                                 <p className='text-[14px] mr-xl:text-[16px] leading-[22px] mr-xl:leading-[24px] font-medium inter mr-2xl:pr-10'>{content.desc}</p>
                             </div>
                         </div>

@@ -23,7 +23,7 @@ import Avatar13 from "media/newBrandv2/avatar13.png"
 import Avatar14 from "media/newBrandv2/avatar14.png"
 const Success = () => {
   return (
-    <section className='relative pb-12 mr-lg:pb-20'>
+    <section className='relative mr-lg:pt-8 pb-12 mr-lg:pb-20'>
       <Image src={BackgroundImage} alt='Section Background' fill={true} className='object-cover object-center z-[-1]' />
       <div className="max-w-7xl mx-auto px-4 mr-md:px-8 mr-2xl:px-0">
         <div className="grid grid-cols-12">
