@@ -32,15 +32,17 @@ export default function App({ Component, pageProps }) {
           || router.pathname == "/lp/book-publishing-company"
           || router.pathname == "/blogs"
           || router.pathname == "/lp/book-marketing-company"
+          || router.pathname == "/booknewbrad-v2"
           ? "" : <Headernew />}
         {/* {loadScript ? <Component {...pageProps} /> : <Loader />} */}
         <Component {...pageProps} />
         {router.pathname == "/book-marketing-company"
           || router.pathname == "/audiobook-production-services"
-          || router.pathname == "/lp/book-publishing-company" 
-          || router.pathname == "/book-illustration-services" 
-          || router.pathname == "/children-book-publishing-lp" 
-          || router.pathname == "/lp/book-marketing-company" 
+          || router.pathname == "/lp/book-publishing-company"
+          || router.pathname == "/book-illustration-services"
+          || router.pathname == "/children-book-publishing-lp"
+          || router.pathname == "/lp/book-marketing-company"
+          || router.pathname == "/booknewbrad-v2"
           ? "" : <Footer1 />}
       </main>
       {loadScript && (
