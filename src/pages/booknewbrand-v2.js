@@ -10,6 +10,7 @@ import Success from '@/component/BookNewBrand/OurSuccess/Success'
 import BookFeatured from '@/component/BookNewBrand/BookFeatured/BookFeatured'
 import BookSeller from '@/component/BookNewBrand/BookSeller/BookSeller'
 import Faqs from '@/component/BookNewBrand/Faqs/Faqs'
+import Head from 'next/head'
 
 const booknewbrad = () => {
     const faqsContent = [
@@ -19,6 +20,10 @@ const booknewbrad = () => {
     ];
     return (
         <>
+            <Head>
+                <meta name="robots" content="noindex" />
+                <title>Book New Brand</title>
+            </Head>
             <Header />
             <Banner />
             <ProfessionalWriters />
