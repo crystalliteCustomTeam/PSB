@@ -55,8 +55,8 @@ const CountlessWriters = () => {
                                 <Image src={content.book} alt='Writer' className='object-cover w-full group-hover:scale-105 group-hover:duration-700 duration-700 ease-in-out' style={{ transformOrigin: 'bottom' }} />
                             </div>
                             <div className="content text-center mr-md:text-left pt-5">
-                                <h3 className='text-[20px] mr-xl:text-[25px] leading-[30px] mr-xl:leading-[35px] font-semibold dm-serif mr-xl:h-[70px] mb-2'>{content.title}</h3>
-                                <p className='text-[14px] mr-xl:text-[16px] leading-[22px] mr-xl:leading-[24px] font-medium inter mr-2xl:pr-10'>{content.desc}</p>
+                                <h3 className='text-[17px] mr-xl:text-[20px] leading-[27px] mr-xl:leading-[30px] font-semibold dm-serif mb-2 text-center'>{content.title}</h3>
+                                {/* <p className='text-[14px] mr-xl:text-[16px] leading-[22px] mr-xl:leading-[24px] font-medium inter mr-2xl:pr-10'>{content.desc}</p> */}
                             </div>
                         </div>
                     ))}
