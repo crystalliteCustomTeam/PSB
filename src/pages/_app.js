@@ -32,6 +32,7 @@ export default function App({ Component, pageProps }) {
           || router.pathname == "/lp/book-publishing-company"
           || router.pathname == "/blogs"
           || router.pathname == "/lp/book-marketing-company"
+          || router.pathname == "/booknewbrand-v2"
           || router.pathname == "/lp/book-marketing-lp"
           ? "" : <Headernew />}
         {/* {loadScript ? <Component {...pageProps} /> : <Loader />} */}
@@ -42,7 +43,6 @@ export default function App({ Component, pageProps }) {
           || router.pathname == "/book-illustration-services" 
           || router.pathname == "/children-book-publishing-lp" 
           || router.pathname == "/lp/book-marketing-company" 
-          || router.pathname == "/lp/book-marketing-lp" 
           ? "" : <Footer1 />}
       </main>
       {loadScript && (
