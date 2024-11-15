@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const { fontFamily } = require("tailwindcss/defaultTheme")
 module.exports = {
 
   content: [
@@ -45,6 +46,7 @@ module.exports = {
       fontFamily: {
         'sans': ['var(--font-sfprodisplay)', 'sans-serif'],
         'secondary': ['var(--font-sfprodisplay)', 'sans-serif'],
+        mono: ["var(--font-mono)", ...fontFamily.mono],
       },
       backgroundPosition: {
 
