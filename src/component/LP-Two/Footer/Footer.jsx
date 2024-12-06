@@ -11,7 +11,7 @@ const Footer = () => {
                             <span className="block">|</span>
                             <Link href="/privacy-policy" target="_blank">Privacy Policy</Link>
                         </div>
-                        <span className="block text-left">© 2024 - All Rights Reserved <Link href="https://bhaooinc.com/" target="_blank">Bhaoo INC</Link></span>
+                        <span className="block text-left">© 2024 - All Rights Reserved <Link href="https://bhaooinc.com/" target="_blank">Infiniti Media INC</Link></span>
                     </div>
                 </div>
             </div>

@@ -244,7 +244,7 @@ const NewFooter = () => {
                 </div>
             </footer>
             <div className="copyright bg-[#40BEE2] py-2">
-                <p className='text-[14px] text-white text-center'>© 2024 - All Rights Reserved <Link href={"https://bhaooinc.com/"} className='hover:text-black'>Bhaoo INC</Link></p>
+                <p className='text-[14px] text-white text-center'>© 2024 - All Rights Reserved <Link href={"https://bhaooinc.com/"} className='hover:text-black'>Infiniti Media INC</Link></p>
             </div>
         </>
     )

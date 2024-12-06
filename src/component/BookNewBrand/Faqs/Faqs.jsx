@@ -65,7 +65,7 @@ const Faqs = ({ items }) => {
                         <div className="col-span-12">
                             <div className="flex flex-wrap items-center justify-center gap-y-2 mr-md:justify-between">
                                 <div>
-                                    <p className='text-white text-[15px] font-[400] poppins'>© 2024 - All Rights Reserved Bhaoo INC</p>
+                                    <p className='text-white text-[15px] font-[400] poppins'>© 2024 - All Rights Reserved Infiniti Media INC</p>
                                 </div>
                                 <div className='flex items-center gap-x-8'>
                                     <Link href="#" className='text-white text-[15px] font-[400] poppins'>
