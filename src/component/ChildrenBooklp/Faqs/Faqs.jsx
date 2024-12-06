@@ -71,7 +71,7 @@ const Faqs = ({ items }) => {
                                     </Link>
                                 </div>
                                 <div>
-                                    <p className='text-white text-[15px]'>© 2024 - All Rights Reserved Bhaoo INC</p>
+                                    <p className='text-white text-[15px]'>© 2024 - All Rights Reserved Infiniti Media INC</p>
                                 </div>
                             </div>
                         </div>
