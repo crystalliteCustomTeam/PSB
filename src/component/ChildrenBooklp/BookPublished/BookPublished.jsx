@@ -184,7 +184,7 @@ const BookPublished = () => {
                                 </Link>
                                 <Link href="#" className='flex items-center gap-x-3'>
                                     <Image src={Location} alt='BSP' className='w-[20px] h-[20px] mr-md:w-auto mr-md:h-auto' />
-                                    <span className='text-[15px] mr-md:text-[18px] leading-[24px] text-white font-normal'>1001 Wilshire Boulevard #1176 Los Angeles, CA 90017</span>
+                                    <span className='text-[15px] mr-md:text-[18px] leading-[24px] text-white font-normal'>418 Broadway ste R Albany NY 12207 </span>
                                 </Link>
                             </div>
                         </div>
