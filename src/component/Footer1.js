@@ -260,7 +260,7 @@ const NewFooter = () => {
                           alt="Amazon Book Publishing "
                           className="min-h-[25px]object-contain xl:pt-0 pt-1"
                         />
-                        418 Broadway ste R Albany NY 12207
+                        1001 Wilshire Boulevard #1176 Los Angeles, CA 90017
                       </Link>
                     </li>
                   </ul>
