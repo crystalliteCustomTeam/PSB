@@ -180,7 +180,7 @@ const BookSeller = () => {
                                 </div>
                                 <Link href="#" className='flex items-center gap-2 text-[14px] mr-md:text-[15px] poppins font-[500]'>
                                     <Image src={Location} alt='Email Icon' className='w-[30px] h-[30px]' />
-                                    418 Broadway ste R Albany NY 12207
+                                    418 Broadway ste R Albany NY 12207 
                                 </Link>
                             </div>
                         </div>

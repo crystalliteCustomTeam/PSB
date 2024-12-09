@@ -118,7 +118,7 @@ const Footer = () => {
                                     </li>
                                     <li>
                                         <Link href="#" className={styles.LocIcon}>
-                                            418 Broadway ste R Albany NY 12207
+                                            418 Broadway ste R Albany NY 12207 
                                         </Link>
                                     </li>
                                 </ul>
