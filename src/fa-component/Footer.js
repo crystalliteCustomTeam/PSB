@@ -118,7 +118,7 @@ const Footer = () => {
                                     </li>
                                     <li>
                                         <Link href="#" className={styles.LocIcon}>
-                                            1001 Wilshire Boulevard #1176 Los Angeles, CA 90017
+                                            418 Broadway ste R Albany NY 12207
                                         </Link>
                                     </li>
                                 </ul>

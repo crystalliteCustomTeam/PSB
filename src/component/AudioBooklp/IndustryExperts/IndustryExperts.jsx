@@ -181,7 +181,7 @@ const IndustryExperts = ({ title, desc, descTwo, isContact, bannerBg }) => {
                                     </a>
                                     <a href="javascript:;" className="flex items-center gap-x-4 text-[14px] mr-md:text-[18px] secondary font-[300] mb-5">
                                         <Image src={Location} alt="PSB" width={20} height={20} />
-                                        <span>1001 Wilshire Boulevard #1176 Los Angeles, CA 90017</span>
+                                        <span>418 Broadway ste R Albany NY 12207</span>
                                     </a>
                                 </div>
                             ) : null}

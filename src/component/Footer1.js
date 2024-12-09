@@ -161,8 +161,7 @@ const NewFooter = () => {
                                         <li className='xl:pb-5 pb-3'>
                                             <Link href="javascript:;" className='flex items-start gap-x-2 text-[13px] font-[400] font-secondary xl:leading-[25px] leading-[20px]'>
                                                 <Image src={Location} alt='Amazon Book Publishing ' className='min-h-[25px]object-contain xl:pt-0 pt-1' />
-                                                1001 Wilshire Boulevard #1176
-                                                Los Angeles, CA 90017
+                                                418 Broadway ste R Albany NY 12207
                                             </Link>
                                         </li>
                                     </ul>
