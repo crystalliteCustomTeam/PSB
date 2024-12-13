@@ -17,6 +17,7 @@ import Email from "media/assets/sikander/email.png"
 import Location from "media/assets/sikander/location.png"
 import Payment1 from "media/assets/images/payment1.png"
 import Payment2 from "media/assets/images/payment2.png"
+import Payment3 from "media/assets/images/payment3.webp"
 import Slide1 from "media/assets/sikander/slide1.png"
 import Slide2 from "media/assets/sikander/slide2.png"
 import Slide3 from "media/assets/sikander/slide3.png"
@@ -260,7 +261,7 @@ const NewFooter = () => {
                           alt="Amazon Book Publishing "
                           className="min-h-[25px]object-contain xl:pt-0 pt-1"
                         />
-                        1001 Wilshire Boulevard #1176 Los Angeles, CA 90017
+                        2211 PRICE DR KILLEEN, TX 76542
                       </Link>
                     </li>
                   </ul>
@@ -272,7 +273,7 @@ const NewFooter = () => {
                     className="mb-3 sm:ml-auto lg:w-[70%] lg:ml-auto"
                   />
                   <Image
-                    src={Payment2}
+                    src={Payment3}
                     alt="Amazon Book Publishing"
                     className="sm:ml-auto lg:w-[70%] lg:ml-auto"
                   />

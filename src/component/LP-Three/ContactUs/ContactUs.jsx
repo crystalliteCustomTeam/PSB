@@ -177,9 +177,9 @@ const ContactUs = () => {
                                     <span className="block"><Image src={Call} alt="icons" width={20} height={20} /></span>
                                     <span className="block">(213) 556-3626 </span>
                                 </a>
-                                <a href="https://maps.app.goo.gl/DxyYMqYqyHg31jo39" target="_blank" className="flex items-center gap-x-3 mb-3">
+                                <a href="javascript:;" target="_blank" className="flex items-center gap-x-3 mb-3">
                                     <span className="block"><Image src={Location} alt="icons" width={20} height={20} /></span>
-                                    <span className="block">1001 Wilshire Boulevard #1176 Los Angeles, CA 90017 </span>
+                                    <span className="block">2211 PRICE DR KILLEEN, TX 76542 </span>
                                 </a>
                             </div>
                             <div className="flex mr-sm:flex-nowrap flex-wrap mr-sm:w-max mr-sm:gap-x-5 gap-5 items-center pt-6 border-t border-[#8A8A8A]">

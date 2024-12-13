@@ -13,6 +13,7 @@ import twiter from 'media/images/icons/twitter.png'
 import fb from 'media/images/icons/facebook.png'
 import payment1 from 'media/images/payment/payment.png'
 import payment2 from 'media/images/payment/payment1.png'
+import payment3 from 'media/images/payment/payment2.png'
 import award1 from 'media/images/clients/awards.png'
 import award2 from 'media/images/clients/awards2.png'
 import award3 from 'media/images/clients/awards3.png'
@@ -118,7 +119,7 @@ const Footer = () => {
                                     </li>
                                     <li>
                                         <Link href="#" className={styles.LocIcon}>
-                                            1001 Wilshire Boulevard #1176 Los Angeles, CA 90017 
+                                            2211 PRICE DR KILLEEN, TX 76542 
                                         </Link>
                                     </li>
                                 </ul>
@@ -131,7 +132,7 @@ const Footer = () => {
                                     alt='Best_Publisher'
                                 />
                                 <Image quality={100}    className='img-fluid'
-                                    src={payment2}
+                                    src={payment3}
                                     alt='Best_Publisher'
                                 />
                             </div>
