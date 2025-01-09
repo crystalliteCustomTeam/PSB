@@ -45,7 +45,7 @@ const MarketingProcess = ({ items, title, desc, booksImage }) => {
                                         </button>
                                     </div>
                                     {openIndex === index && (
-                                        <MRCTA text="Connect With Us!" classes='__animatedPing mt-5 hover:bg-black mr-md:ms-16' handle="onclick='parent.LC_API.open_chat_window();return false;'" />
+                                        <MRCTA text="Connect With Us!" classes='__animatedPing mt-5 hover:bg-black mr-md:ms-16' link="javascript:void(Tawk_API.toggle())" />
                                     )}
                                 </div>
                             ))}

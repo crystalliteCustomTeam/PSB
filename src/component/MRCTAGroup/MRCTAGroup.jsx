@@ -11,7 +11,7 @@ const MRCTAGroup = ({
             <MRCTA
                 text={text1}
                 classes="hover:bg-secondary-100"
-                handle="onclick='parent.LC_API.open_chat_window();return false;'"
+                link="javascript:void(Tawk_API.toggle())"
                 animation={animation}
             />
             <MRCTA

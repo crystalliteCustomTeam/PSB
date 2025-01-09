@@ -51,7 +51,7 @@ const ChooseAudio = () => {
                             <div className="btn mr-auto mr-lg:mr-0 mr-lg:ml-auto block">
                                 <div className="flex flex-wrap items-center justify-start mr-md:gap-2">
                                     <div className="w-full mr-md:w-max">
-                                        <MRCTA link='javascript:;' handle="onclick='parent.LC_API.open_chat_window();return false;'" classes="mt-5 w-full !font-medium" animation="__animatedPing" text="Connect With Us!" />
+                                        <MRCTA link='javascript:void(Tawk_API.toggle())' classes="mt-5 w-full !font-medium" animation="__animatedPing" text="Connect With Us!" />
                                     </div>
                                     <div className="w-full mr-md:w-max">
                                         <MRCTA link='tel:800-781-9093' classes="mr-xl:mt-5 w-full !border-2 !border-black bg-transparent !text-black" animation="__animatedPing" text="Call Us Now!" />

@@ -17,7 +17,7 @@ const Testimonials = ({
                             <div className='mr-sm:text-start text-justify'>
                                 <h2 className='mr-xl:text-[40px] text-[35px] leading-tight mb-3 font-semibold'>{title}</h2>
                                 <p className='text-base leading-normal font-normal'>{desc}</p>
-                                <MRCTA text="Leave A Reply!" handle="onclick='parent.LC_API.open_chat_window();return false;'" classes="__animatedPing hover:bg-transparent hover:border-black hover:text-[#000] mt-5" />
+                                <MRCTA text="Leave A Reply!" link="javascript:void(Tawk_API.toggle())" classes="__animatedPing hover:bg-transparent hover:border-black hover:text-[#000] mt-5" />
                                 <div className='mt-10'>
                                     <Image src={ReviewIcon} alt='icons' className='block mx-auto' draggable="false" />
                                 </div>

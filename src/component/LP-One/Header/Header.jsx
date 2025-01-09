@@ -59,7 +59,7 @@ const Header = () => {
                                     <CTA
                                         text="Live Chat"
                                         link="javascript:;"
-                                        handle="onclick='parent.LC_API.open_chat_window();return false;'"
+                                        link="javascript:void(Tawk_API.toggle())"
                                         imageCss="!w-[40px] !h-[40px]"
                                         icon="/images/icons/live-chat.svg"
                                     />
@@ -68,7 +68,7 @@ const Header = () => {
                                     <MRCTA
                                         text="Let's discuss"
                                         classes="hover:bg-secondary-100 rounded-[5px] !h-[45px]"
-                                        handle="onclick='parent.LC_API.open_chat_window();return false;'"
+                                        link="javascript:void(Tawk_API.toggle())"
                                     />
                                 </li>
                             </ul>

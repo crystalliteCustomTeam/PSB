@@ -36,7 +36,7 @@ const Working = ({ title, desc }) => {
                             <div className="flex flex-wrap items-center justify-start mr-md:gap-4">
                                 <div className="w-full mr-md:w-max">
                                     <MRCTA link='javascript:;'
-                                    handle="onclick='parent.LC_API.open_chat_window();return false;'"
+                                    link="javascript:void(Tawk_API.toggle())"
                                         classes="mt-5 w-full !font-medium" animation="__animatedPing" text="Connect With Us!" />
                                 </div>
                                 <div className="w-full mr-md:w-max">

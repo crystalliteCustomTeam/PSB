@@ -84,7 +84,7 @@ const SatisfiedClient = () => {
                         </h2>
                         <p className='mr-md:text-base text-sm font-normal leading-normal text-white pb-8'>We have helped more than 12,000 children's book authors bring their stories alive. Our kids book publishing company has recognized as one of the most experienced service providers in the industry</p>
                         <div className="btn">
-                            <MRCTA text="Connect With Us Now" handle="onclick='parent.LC_API.open_chat_window();return false;'" classes="__animatedPing !rounded-[6px] hover:bg-transparent hover:border-white" />
+                            <MRCTA text="Connect With Us Now" link="javascript:void(Tawk_API.toggle())" classes="__animatedPing !rounded-[6px] hover:bg-transparent hover:border-white" />
                         </div>
 
                         <div className="flex items-center justify-between gap-5 mr-lg:w-10/12 mt-12">

@@ -53,7 +53,7 @@ const MRContent1 = ({
                                                     <MRCTA
                                                         text="Connect with Us!"
                                                         classes="hover:bg-secondary-100 rounded-sm"
-                                                        handle="onclick='parent.LC_API.open_chat_window();return false;'"
+                                                        link="javascript:void(Tawk_API.toggle())"
                                                     />
                                                     <MRCTA
                                                         text="Call us NOW!"
@@ -67,7 +67,7 @@ const MRContent1 = ({
                                                     <MRCTA
                                                         text="Connect with Us!"
                                                         classes="hover:bg-white hover:text-black rounded-sm"
-                                                        handle="onclick='parent.LC_API.open_chat_window();return false;'"
+                                                        link="javascript:void(Tawk_API.toggle())"
                                                     />
                                                     <MRCTA
                                                         text="Call us NOW!"
@@ -84,7 +84,7 @@ const MRContent1 = ({
                                         <MRCTA
                                             text={ctaText}
                                             classes="hover:bg-white hover:!text-black rounded-sm mt-[16px]"
-                                            handle="onclick='parent.LC_API.open_chat_window();return false;'"
+                                            link="javascript:void(Tawk_API.toggle())"
                                         />
                                     )}
                                 </div>
@@ -115,7 +115,7 @@ const MRContent1 = ({
                                         <MRCTA
                                             text="Connect with Us!"
                                             classes="hover:bg-secondary-100 rounded-sm"
-                                            handle="onclick='parent.LC_API.open_chat_window();return false;'"
+                                            link="javascript:void(Tawk_API.toggle())"
                                         />
                                         <MRCTA
                                             text="Call us NOW!"
@@ -129,7 +129,7 @@ const MRContent1 = ({
                                         <MRCTA
                                             text="Connect with Us!"
                                             classes="hover:bg-white hover:text-black rounded-sm"
-                                            handle="onclick='parent.LC_API.open_chat_window();return false;'"
+                                            link="javascript:void(Tawk_API.toggle())"
                                         />
                                         <MRCTA
                                             text="Call us NOW!"
@@ -146,7 +146,7 @@ const MRContent1 = ({
                             <MRCTA
                                 text={ctaText}
                                 classes="hover:bg-white hover:!text-black rounded-sm mt-[16px]"
-                                handle="onclick='parent.LC_API.open_chat_window();return false;'"
+                                link="javascript:void(Tawk_API.toggle())"
                             />
                         )}
                         <div className={`${img1 ? "basis-full mr-lg:basis-1/2" : ""}`}>

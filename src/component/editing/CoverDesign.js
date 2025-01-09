@@ -68,7 +68,7 @@ const PublishingWorkMode = ({
                         <MRCTA
                             text="LET'S DISCUSS"
                             classes="hover:bg-secondary-100 rounded-sm"
-                            handle="onclick='parent.LC_API.open_chat_window();return false;'"
+                            link="javascript:void(Tawk_API.toggle())"
                         />
                         <MRCTA
                             text="800-781-9093"

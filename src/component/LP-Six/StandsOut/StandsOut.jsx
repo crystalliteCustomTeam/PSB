@@ -30,7 +30,7 @@ const StandsOut = () => {
             <MRCTA
               text="Get In Touch With Us"
               classes="hover:bg-[linear-gradient(270.25deg,_#0B0E1000_0.41%,_#51677600_0.13%)] bg-primary-100  !text-white text-[20px] leading-tight font-semibold !rounded-[50px] bg-[linear-gradient(270.25deg,_#0B0E10_15.41%,_#516776_79.13%)]"
-              handle="onclick='parent.LC_API.open_chat_window();return false;'"
+              link="javascript:void(Tawk_API.toggle())"
             />
           </div>
           <div className="grid grid-cols-12 gap-10 items-center pt-[70px]">

@@ -46,7 +46,7 @@ const IllustrationPackages = ({ packagesData }) => {
                                         <MRCTA
                                             text="Live Chat"
                                             classes="hover:bg-secondary-100 rounded-sm"
-                                            handle="onclick='parent.LC_API.open_chat_window();return false;'"
+                                            link="javascript:void(Tawk_API.toggle())"
                                         />
                                     </div>
                                 </div>

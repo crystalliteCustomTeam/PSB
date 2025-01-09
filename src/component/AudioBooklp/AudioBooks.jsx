@@ -80,7 +80,7 @@ const AudioBooks = () => {
                                 <p className='text-[14px] mr-lg:text-[16px] leading-[26px] font-[300] secondary mr-lg:pb-2 mr-xl:mr-5 mr-xl:pr-5'>A haunting mystery that follows detective Laura Carter as she unravels secrets in a small town, where every whisper could be the key to solving a chilling murder.</p>
                                 <div className="btn">
                                     <div className="w-full mr-md:w-max">
-                                        <MRCTA link='javascript:;' handle="onclick='parent.LC_API.open_chat_window();return false;'" classes="mt-5 w-full !font-[300] secondary" animation="__animatedPing" text="Let’s Connect!" />
+                                        <MRCTA link='javascript:void(Tawk_API.toggle())' classes="mt-5 w-full !font-[300] secondary" animation="__animatedPing" text="Let’s Connect!" />
                                     </div>
                                 </div>
                             </div>
@@ -108,7 +108,7 @@ const AudioBooks = () => {
                                 <p className='text-[14px] mr-lg:text-[16px] leading-[26px] font-[300] secondary mr-lg:pb-2 mr-xl:mr-5 mr-xl:pr-5'>An epic fantasy adventure where young mage Elara embarks on a perilous journey to revive the mythical Phoenix, battling dark forces and uncovering her true destiny along the way.</p>
                                 <div className="btn">
                                     <div className="w-full mr-md:w-max">
-                                        <MRCTA link='javascript:;' handle="onclick='parent.LC_API.open_chat_window();return false;'" classes="mt-5 w-full !font-[300] secondary" animation="__animatedPing" text="Let’s Connect!" />
+                                        <MRCTA link='javascript:void(Tawk_API.toggle())' classes="mt-5 w-full !font-[300] secondary" animation="__animatedPing" text="Let’s Connect!" />
                                     </div>
                                 </div>
                             </div>
@@ -136,7 +136,7 @@ const AudioBooks = () => {
                                 <p className='text-[14px] mr-lg:text-[16px] leading-[26px] font-[300] secondary mr-lg:pb-2 mr-xl:mr-5 mr-xl:pr-5'>A gripping true crime novel that delves into the mind of a lone survivor of a brutal attack, whose silent testimony holds the power to bring a dangerous criminal to justice.</p>
                                 <div className="btn">
                                     <div className="w-full mr-md:w-max">
-                                        <MRCTA link='javascript:;' handle="onclick='parent.LC_API.open_chat_window();return false;'" classes="mt-5 w-full !font-[300] secondary" animation="__animatedPing" text="Let’s Connect!" />
+                                        <MRCTA link='javascript:void(Tawk_API.toggle())' classes="mt-5 w-full !font-[300] secondary" animation="__animatedPing" text="Let’s Connect!" />
                                     </div>
                                 </div>
                             </div>

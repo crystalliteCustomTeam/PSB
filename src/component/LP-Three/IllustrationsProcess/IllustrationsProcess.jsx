@@ -16,7 +16,7 @@ const IllustrationsProcess = () => {
                             <h2 className="mr-lg:text-[40px] mr-md:text-[30px] text-[25px] font-semibold leading-tight mb-3">Our Book Illustrations Process</h2>
                             <p className="mr-md:text-base text-sm leading-normal font-normal">Experience the artistry that transforms your story into a visual masterpiece, enchanting children and creating lasting memories. Hire us to turn your book into an unforgettable emotional journey.</p>
                             <div className="grid grid-cols-1 mr-sm:flex mr-sm:gap-x-5 gap-5 mt-5">
-                                <MRCTA text="Get Free Consultation" handle="onclick='parent.LC_API.open_chat_window();return false;'" classes="__animatedPing !rounded-full hover:bg-transparent hover:border-black hover:text-[#000]" />
+                                <MRCTA text="Get Free Consultation" link="javascript:void(Tawk_API.toggle())" classes="__animatedPing !rounded-full hover:bg-transparent hover:border-black hover:text-[#000]" />
                                 <MRCTA text="Call Us Now" link="tel:800-781-9093"classes="__animatedPing !rounded-full bg-transparent !border-black !text-black hover:bg-black hover:!text-white hover:border-black" />
                             </div>
                             <Image src={ProcessSideImage} alt="illustrations" className="block relative mr-xl:right-40 mt-8 w-full" />

@@ -39,7 +39,7 @@ const Hero = () => {
                   <MRCTA
                     text="Get In Touch With Us"
                     classes="hover:bg-white !text-[#0B0E10] text-[20px] leading-tight font-semibold !rounded-full"
-                    handle="onclick='parent.LC_API.open_chat_window();return false;'"
+                    link="javascript:void(Tawk_API.toggle())"
                   />
                   <a
                     href="tel:800-781-9093"
