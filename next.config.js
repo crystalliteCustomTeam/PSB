@@ -5,7 +5,7 @@ const nextConfig = {
     remotePatterns: [
         {
             protocol: 'https',
-            hostname: 'inhouse.cryscampus.com',
+            hostname: 'inhouse.pulse-force.com',
             port: '',
             pathname: '/**',
         },
