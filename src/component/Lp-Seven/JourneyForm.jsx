@@ -1,8 +1,11 @@
+// Next
 import Image from "next/image"
+// React
 import { useRouter } from "next/navigation"
 import { useEffect, useState } from "react"
 // Media
 import SideImage from "media/lp-seven/form_img.png"
+// Axios
 import Axios from "axios"
 
 const services = [
@@ -284,7 +287,6 @@ const JourneyForm = () => {
                     required
                     name="name"
                     placeholder="Enter Full Name"
-                    onkeypress="return /[a-z]/i.test(event.key)"
                     className="block bg-[#fff] mr-md:text-base text-sm focus-visible:outline-black w-full rounded-full px-7 py-4 mb-4 shadow-[0_5px_5px_rgba(0,_0,_0,_0.2)] font-medium"
                   />
                   <input
@@ -296,7 +298,7 @@ const JourneyForm = () => {
                   />
                 </div>
                 <input
-                  type="tel"
+                  type="number"
                   minLength="10"
                   maxLength="13"
                   pattern="[0-9]*"
@@ -308,7 +310,9 @@ const JourneyForm = () => {
                 <button
                   type="submit"
                   disabled={score !== "Submit"}
-                  className="__animatedPing bg-[#8f181b] text-white w-full mt-8 mx-auto block rounded-[10px_10px_10px_0] py-3 hover:bg-black transition-all duration-300 ease-in-out"
+                  className={`__animatedPing bg-[#8f181b] text-white w-full mt-8 mx-auto block rounded-[10px_10px_10px_0] py-3 hover:bg-black transition-all duration-300 ease-in-out ${
+                    score !== "Submit" ? "bg-opacity-20" : "bg-opacity-100"
+                  }`}
                 >
                   {score}
                 </button>

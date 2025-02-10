@@ -3,6 +3,7 @@ import Image from "next/image"
 // Media
 import CheckIcon from "media/lp-seven/icons/check.png"
 import Banner from "media/lp-seven/book_banner.jpg"
+// Components
 import { CTA } from "./index"
 const Hero = () => {
   return (

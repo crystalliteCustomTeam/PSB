@@ -1,7 +1,10 @@
+// Next
+import Link from "next/link"
 import Image from "next/image"
+// Media
 import Mail from "media/lp-seven/icons/mail.png"
 import Logo from "media/assets/images/logo.png"
-import Link from "next/link"
+// Components
 import { CTA } from "./index"
 const Header = () => {
   return (
@@ -94,7 +97,7 @@ const Header = () => {
               <Image
                 quality={95}
                 src={Logo}
-                alt=" Best Selling Publisher Ghostwriting logo"
+                alt="Best Selling Publisher Ghostwriting logo"
                 width={180}
                 height={50}
                 priority={true}

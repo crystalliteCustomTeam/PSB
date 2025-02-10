@@ -9,6 +9,12 @@ const ClientsImage = dynamic(() => import("./ClientsImage"))
 const JourneyForm = dynamic(() => import("./JourneyForm"))
 const BestSellerBooks = dynamic(() => import("./BestSellerBooks"))
 const Packages = dynamic(() => import("./Packages"))
+const Testimonials = dynamic(() => import("./Testimonials"))
+const Process = dynamic(() => import("./Process"))
+const SelfPublishing = dynamic(() => import("./SelfPublishing"))
+const JourneyStart = dynamic(() => import("./JourneyStart"))
+const MadeEasy = dynamic(() => import("./MadeEasy"))
+const ContactForm = dynamic(() => import("./ContactForm"))
 const Footer = dynamic(() => import("./Footer"))
 
 export {
@@ -21,5 +27,11 @@ export {
   JourneyForm,
   BestSellerBooks,
   Packages,
+  Testimonials,
+  Process,
+  SelfPublishing,
+  JourneyStart,
+  MadeEasy,
+  ContactForm,
   Footer,
 }

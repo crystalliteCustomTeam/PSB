@@ -1,19 +1,23 @@
-import packageData from "media/lp-seven/data.json"
+// Next
 import Image from "next/image"
+// Packages JSON File
+import packageData from "media/lp-seven/data.json"
+// Media
 import CheckIcon from "media/lp-seven/icons/check_red.png"
 import BestSellerIcon from "media/lp-seven/icons/best.png"
+// Components
 import { CTA } from "./index"
 const Packages = () => {
   return (
     <section>
-      <div className="py-[80px]">
+      <div className="mr-md:py-[80px] py-[50px]">
         <div className="mr-container">
           <div className="text-center">
-            <h2 className="mr-lg:text-[34px] mr-md:text-[30px] text-[22px] leading-tight font-bold mb-[20px]">
+            <h2 className="mr-lg:text-[34px] mr-md:text-[30px] text-[22px] leading-tight font-bold mb-[30px]">
               BOOK PUBLISHING PACKAGES
             </h2>
           </div>
-          <div className="grid grid-cols-3 gap-5 max-w-[1100px] mx-auto">
+          <div className="grid mr-xl:grid-cols-3 mr-md:grid-cols-2 grid-cols-1 mr-md:gap-y-28 gap-y-20 gap-5 max-w-[1100px] mx-auto">
             {packageData.map((packageItem, i) => (
               <div
                 key={i}
@@ -23,7 +27,7 @@ const Packages = () => {
                   <Image
                     src={BestSellerIcon}
                     alt="Best Seller Icon"
-                    className="absolute w-[45%] -right-16 -top-28"
+                    className="absolute w-[45%] mr-md:-right-16 -right-6 -top-28"
                   />
                 )}
                 <h3 className="text-[25px] leading-tight font-bold mt-3 mb-5">
@@ -47,12 +51,16 @@ const Packages = () => {
                   ))}
                 </ul>
                 <div className="flex justify-center items-center gap-x-5 mt-10 mb-5">
-                  <CTA link="javascript:void(Tawk_API.toggle())" />
+                  <CTA
+                    link="javascript:void(Tawk_API.toggle())"
+                    css="group-hover:bg-white group-hover:border-white group-hover:!text-black"
+                  />
                   <CTA
                     text="Call Now"
                     link="tel:8007819093"
                     variant="secondary"
-                    svgClasses="border border-black rounded-full"
+                    css="group-hover:border-white group-hover:text-white"
+                    svgClasses="border border-black rounded-full group-hover:border-white"
                   />
                 </div>
               </div>

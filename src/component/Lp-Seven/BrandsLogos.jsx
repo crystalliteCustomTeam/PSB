@@ -6,6 +6,7 @@ import Logo2 from "media/lp-seven/logos/2.png"
 import Logo3 from "media/lp-seven/logos/3.png"
 import Logo4 from "media/lp-seven/logos/4.png"
 import Logo5 from "media/lp-seven/logos/5.png"
+// Components
 import { AutoScroll } from "./index"
 const BrandsLogos = () => {
   return (

@@ -2,11 +2,17 @@ import {
   BestSellerBooks,
   BrandsLogos,
   ClientsImage,
+  ContactForm,
   Footer,
   Header,
   Hero,
   JourneyForm,
+  JourneyStart,
+  MadeEasy,
   Packages,
+  Process,
+  SelfPublishing,
+  Testimonials,
 } from "@/component/Lp-Seven"
 
 export default function LpPublishing() {
@@ -19,6 +25,12 @@ export default function LpPublishing() {
       <JourneyForm />
       <BestSellerBooks />
       <Packages />
+      <Testimonials />
+      <Process />
+      <SelfPublishing />
+      <JourneyStart />
+      <MadeEasy/>
+      <ContactForm/>
       <Footer />
     </>
   )

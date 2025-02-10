@@ -1,3 +1,4 @@
+// Next
 import Image from "next/image"
 // Media
 import Clients from "media/lp-seven/clients.webp"
