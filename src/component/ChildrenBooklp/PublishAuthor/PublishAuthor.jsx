@@ -27,7 +27,7 @@ export default function PublishAuthor({
             <p className="mr-lg:w-[70%] w-full mx-auto text-[16px] leading-normal text-center" dangerouslySetInnerHTML={{ __html: desc }} />
           </div>
           <div className="grid grid-cols-1 mr-sm:flex mr-md:justify-center justify-center mr-sm:gap-x-5 gap-3 mt-5 mr-lg:mt-10 px-5">
-            <MRCTA text=" Get A Free Quote" link="javascript:void(Tawk_API.toggle())" classes="__animatedPing !rounded-[6px] hover:bg-transparent !bg-[#161616] hover:border-white" />
+            <MRCTA text=" Get A Free Quote" link="javascript:;" handle="parent.LC_API.open_chat_window();return false;" classes="__animatedPing !rounded-[6px] hover:bg-transparent !bg-[#161616] hover:border-white" />
             <MRCTA text="Connect With Us" link="tel:800-781-9093" classes="__animatedPing !rounded-[6px] bg-transparent !border-0 hover:bg-black !bg-white !text-[#161616] hover:border-black" />
           </div>
           <div className="mr-lg:block hidden">

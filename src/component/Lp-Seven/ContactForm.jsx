@@ -247,7 +247,7 @@ const ContactForm = () => {
                   </div>
                   <div className="mr-md:col-span-7 col-span-12 flex flex-wrap gap-y-5 gap-x-4">
                     <CTA
-                      link="javascript:void(Tawk_API.toggle())"
+                      link="javascript:;" handle="parent.LC_API.open_chat_window();return false;"
                       css="bg-white !text-black hover:bg-transparent hover:border-white hover:!text-white"
                     />
                     <CTA

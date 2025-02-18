@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }) {
   const [loadScript, setLoadScript] = useState(false)
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoadScript(true), 5000)
+    const timer = setTimeout(() => setLoadScript(true), 3000)
     return () => clearTimeout(timer)
   }, [])
   const router = useRouter()
@@ -61,39 +61,37 @@ export default function App({ Component, pageProps }) {
       </main>
       {loadScript && (
         <>
-          <Script>
+          <Script strategy="afterInteractive" id="tawk-to">
             {`
-        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-        (function() {
-          var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-          s1.async = true;
-          s1.src = 'https://embed.tawk.to/677dc97f49e2fd8dfe03fd14/1ih1lm789';
-          s1.charset = 'UTF-8';
-          s1.setAttribute('crossorigin', '*');
-          s0.parentNode.insertBefore(s1, s0);
-        })();
-        `}
+              window.__lc = window.__lc || {};
+              window.__lc.license = 19030650;
+              window.__lc.integration_name = "manual_onboarding";
+              window.__lc.product_name = "livechat";
+              ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
+            `}
           </Script>
           <Script id="chat-script-1">
             {`(function(w,d,s,l,i){
-        w[l] = w[l] || [];
-        w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
-        var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-WQT66SHZ');`}
+              w[l] = w[l] || [];
+              w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+              var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+              j.async = true;
+              j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+              f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-WQT66SHZ');`}
           </Script>
           <Script
             id="chat-script-2"
             src="https://www.googletagmanager.com/gtag/js?id=G-66Q1HF396Z"
           ></Script>
-          <Script id="chat-script-3">{`
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
-      gtag('config', 'G-66Q1HF396Z');
-    `}</Script>
+          <Script id="chat-script-3">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag() { dataLayer.push(arguments); }
+              gtag('js', new Date());
+              gtag('config', 'G-66Q1HF396Z');
+            `}
+          </Script>
           <noscript>
             <a
               href="https://embed.tawk.to/677dc97f49e2fd8dfe03fd14/1ih1lm789"

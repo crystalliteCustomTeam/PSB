@@ -51,7 +51,7 @@ const marketBook1 = () => {
                                         <MRCTA
                                             text="LET'S DISCUSS"
                                             classes="hover:bg-transparent hover:border-secondary-100 rounded-sm bg-secondary-100"
-                                            link="javascript:void(Tawk_API.toggle())"
+                                            link="javascript:;" handle="parent.LC_API.open_chat_window();return false;"
                                         />
                                         <MRCTA
                                             text="800-781-9093"

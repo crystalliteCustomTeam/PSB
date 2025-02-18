@@ -178,7 +178,7 @@ const Hero = () => {
                                     color="text-primary-100"
                                     classes="hover:bg-white hover:text-black rounded-sm bg-transparent"
                                     border="border-primary-100 hover:border-white"
-                                    link="javascript:void(Tawk_API.toggle())"
+                                    link="javascript:;" handle="parent.LC_API.open_chat_window();return false;"
                                 />
                                 <MRCTA
                                     text="Call us NOW!"

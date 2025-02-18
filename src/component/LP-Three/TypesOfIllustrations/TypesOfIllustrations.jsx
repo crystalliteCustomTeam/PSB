@@ -36,7 +36,7 @@ const TypesOfIllustrations = ({ tabs }) => {
                                 <h3 className="mr-md:text-[30px] text-[20px] leading-normal font-semibold text-[#000] mb-4">{title}</h3>
                                 <p className="mr-lg:text-base text-sm leading-normal font-normal">{desc}</p>
                                 <div className="grid grid-cols-1 mr-sm:flex flex-wrap mr-sm:gap-x-5 gap-5 mt-8">
-                                    <MRCTA text="Connect With Us!" link="javascript:void(Tawk_API.toggle())" classes="__animatedPing !rounded-full hover:bg-transparent hover:border-black hover:text-[#000]" />
+                                    <MRCTA text="Connect With Us!" link="javascript:;" handle="parent.LC_API.open_chat_window();return false;" classes="__animatedPing !rounded-full hover:bg-transparent hover:border-black hover:text-[#000]" />
                                     <MRCTA text="Call Us Now!" link="tel:800-781-9093" classes="__animatedPing !rounded-full bg-transparent !border-black !text-black hover:bg-black hover:!text-white hover:border-black" />
                                 </div>
                             </div>

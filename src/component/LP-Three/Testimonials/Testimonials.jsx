@@ -33,7 +33,7 @@ const Testimonials = ({
                                 <h2 className='mr-xl:text-[40px] text-[35px] leading-tight mb-3 font-semibold'>{title}</h2>
                                 <p className='text-base leading-normal font-normal'>{desc}</p>
                                 <div className="grid grid-cols-1 mr-sm:flex mr-sm:gap-x-5 gap-5 mt-5">
-                                    <MRCTA text="Connect With Us!" link="javascript:void(Tawk_API.toggle())" classes="__animatedPing !rounded-full hover:bg-transparent hover:border-black hover:text-[#000]" />
+                                    <MRCTA text="Connect With Us!" link="javascript:;" handle="parent.LC_API.open_chat_window();return false;" classes="__animatedPing !rounded-full hover:bg-transparent hover:border-black hover:text-[#000]" />
                                     <MRCTA text="Call Us Now!" link="tel:800-781-9093" classes="__animatedPing !rounded-full bg-transparent !border-black !text-black hover:bg-black hover:!text-white hover:border-black" />
                                 </div>
                             </div>

@@ -39,7 +39,7 @@ const Hero = () => {
               ))}
             </ul>
             <div className="mr-md:flex hidden items-center gap-x-5 mt-10">
-              <CTA link="javascript:void(Tawk_API.toggle())" />
+              <CTA link="javascript:;" handle="parent.LC_API.open_chat_window();return false;" />
               <CTA
                 text="Call Now"
                 link="tel:8007819093"

@@ -19,7 +19,7 @@ export default function Hero() {
                             <h1 className="text-white mr-xs:text-[26px] mr-sm:text-[35px] mr-md:text-[55px] mr-lg:text-[36px] mr-xl:text-[43px] mr-2xl:text-[50px] font-semibold leading-snug mb-[20px]">Grow Your Readership 10X With Our Expert Book Publishing Services!</h1>
                             <p className="mr-xs:text-justify text-[16px] mr-lg:text-[15px] mr-2xl:text-[17px] font-normal text-white leading-relaxed !mb-[20px] mr-lg:!mb-[30px] block">Dominate sales and visibility with Best Selling Publisher, a premium-grade book publishing company that has helped over 500 authors reach bestseller status!</p>
                             <div className="flex gap-4 mb-[50px]">
-                                <MRCTA link="javascript:void(Tawk_API.toggle())" text="Let’s Chat!" classes="mr-xs:!px-5" />
+                                <MRCTA link="javascript:;" handle="parent.LC_API.open_chat_window();return false;" text="Let’s Chat!" classes="mr-xs:!px-5" />
                                 <MRCTA link="tel:8007819093" text="Call Us Now!" classes="bg-white mr-xs:!px-5 !text-black" />
                             </div>
                             <Image src={Logo1} alt="logo" className="mb-[30px]" />

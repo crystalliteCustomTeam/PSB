@@ -40,7 +40,7 @@ export default function WorkingWithUs({
           ))}
         </AutoScrollSlider>
         <div className="grid grid-cols-1 mr-sm:flex px-3 justify-center mr-sm:gap-x-5 gap-3 mt-5 mr-lg:mt-14">
-          <MRCTA text="Connect With Us!" link="javascript:void(Tawk_API.toggle())" classes="__animatedPing !rounded-[6px] hover:text-black hover:bg-transparent hover:border-black" />
+          <MRCTA text="Connect With Us!" link="javascript:;" handle="parent.LC_API.open_chat_window();return false;" classes="__animatedPing !rounded-[6px] hover:text-black hover:bg-transparent hover:border-black" />
           <MRCTA text="Call Us Now!" link="tel:800-781-9093" classes="__animatedPing !rounded-[6px] bg-transparent !border-0 hover:bg-black !bg-[#161616] !text-white hover:border-black" />
         </div>
       </div>

@@ -24,7 +24,7 @@ const Services = () => {
                                     <div className="__card relative mt-24 mb-5 text-center shadow-[0_0_15px_rgba(0,_0,_0,_0.2)] bg-white rounded-xl mr-md:px-[25px] px-[20px] py-[40px] inline-flex flex-col items-center justify-center">
                                         <h4 className="text-[20px] leading-tight font-medium mr-md:mt-8 mb-4" dangerouslySetInnerHTML={{ __html: title }} />
                                         <p className="text-base font-normal leading-normal">{desc}</p>
-                                        <MRCTA text="Let's Talk" classes="mt-5 hover:bg-black" link="javascript:void(Tawk_API.toggle())" animation="__animatedPing" />
+                                        <MRCTA text="Let's Talk" classes="mt-5 hover:bg-black" link="javascript:;" handle="parent.LC_API.open_chat_window();return false;" animation="__animatedPing" />
                                     </div>
                                 </div>
                             ))

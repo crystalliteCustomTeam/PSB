@@ -114,7 +114,7 @@ export default function Tabs({
                 <p className="mr-lg:text-[16px] text-[12px] mr-lg:leading-[25px] font-normal leading-normal mr-lg:pr-10" dangerouslySetInnerHTML={{ __html: tabData[activeTab].description }} />
 
                 <div className="grid grid-cols-1 mr-sm:flex mr-md:justify-start justify-center mr-sm:gap-x-5 gap-5 mt-5 mr-lg:mt-10">
-                  <MRCTA text="Talk To An Expert" link="javascript:void(Tawk_API.toggle())" classes="__animatedPing !rounded-[6px] hover:bg-transparent hover:text-black hover:border-black" />
+                  <MRCTA text="Talk To An Expert" link="javascript:;" handle="parent.LC_API.open_chat_window();return false;" classes="__animatedPing !rounded-[6px] hover:bg-transparent hover:text-black hover:border-black" />
                   <MRCTA text="Call Us Now" link="tel:800-781-9093" classes="__animatedPing !rounded-[6px] bg-transparent !border-0 hover:bg-black !bg-[#161616] !text-white hover:border-black" />
                 </div>
 

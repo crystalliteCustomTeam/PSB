@@ -177,7 +177,7 @@ const MarketBook = ({
                             <p className='text-[14px] mr-md:text-[16px] leading-[26px] font-[300] secondary pb-4 mr-xl:mr-5 mr-xl:pr-5 mr-md:text-left text-justify'>{desc}</p>
                             <div className='pb-3'>
                                 <div className="w-full mr-md:w-max">
-                                    <MRCTA link='javascript:$zopim.livechat.window.show();' classes="mt-5 w-full !font-medium secondary" link="javascript:void(Tawk_API.toggle())" animation="__animatedPing" text="Let’s Connect!" />
+                                    <MRCTA link='javascript:$zopim.livechat.window.show();' classes="mt-5 w-full !font-medium secondary" link="javascript:;" handle="parent.LC_API.open_chat_window();return false;" animation="__animatedPing" text="Let’s Connect!" />
                                 </div>
                             </div>
                             <div className='flex flex-wrap align-items-center gap-y-4 gap-x-5 mr-md:gap-x-0 justify-center mr-md:justify-between mt-5 pt-5'>

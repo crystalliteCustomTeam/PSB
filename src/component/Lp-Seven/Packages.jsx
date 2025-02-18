@@ -52,7 +52,7 @@ const Packages = () => {
                 </ul>
                 <div className="flex justify-center items-center gap-x-5 mt-10 mb-5">
                   <CTA
-                    link="javascript:void(Tawk_API.toggle())"
+                    link="javascript:;" handle="parent.LC_API.open_chat_window();return false;"
                     css="group-hover:bg-white group-hover:border-white group-hover:!text-black"
                   />
                   <CTA

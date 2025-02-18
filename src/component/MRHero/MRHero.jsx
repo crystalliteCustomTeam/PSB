@@ -29,7 +29,7 @@ const MRHero = ({
                                     <MRCTA
                                         text="Start Your Publishing Journey Today"
                                         classes="hover:bg-secondary-100"
-                                        link="javascript:void(Tawk_API.toggle())"
+                                        link="javascript:;" handle="parent.LC_API.open_chat_window();return false;"
                                     />
                             }
                             {counter && <MRHeroCounter />}

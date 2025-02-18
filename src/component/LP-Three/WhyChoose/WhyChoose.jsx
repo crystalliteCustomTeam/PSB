@@ -38,7 +38,7 @@ const WhyChoose = () => {
                         }
                     </div>
                     <div className="grid grid-cols-1 mr-sm:flex justify-center mr-sm:gap-x-5 gap-5 mr-md:mt-16 mt-10">
-                        <MRCTA text="Connect With Us!" link="javascript:void(Tawk_API.toggle())" classes="__animatedPing !rounded-full hover:bg-transparent hover:border-white" />
+                        <MRCTA text="Connect With Us!" link="javascript:;" handle="parent.LC_API.open_chat_window();return false;" classes="__animatedPing !rounded-full hover:bg-transparent hover:border-white" />
                         <MRCTA text="Call Us Now!" link="tel:800-781-9093" classes="__animatedPing !rounded-full bg-transparent border-white hover:bg-black hover:border-black" />
                     </div>
                 </div>

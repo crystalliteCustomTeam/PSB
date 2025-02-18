@@ -40,7 +40,7 @@ const SelfPublishing = () => {
               </p>
               <div className="flex items-center gap-x-5 mt-5">
                 <CTA
-                  link="javascript:void(Tawk_API.toggle())"
+                  link="javascript:;" handle="parent.LC_API.open_chat_window();return false;"
                 />
                 <CTA
                   text="Call Now"

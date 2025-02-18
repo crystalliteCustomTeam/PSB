@@ -105,7 +105,7 @@ const Header = () => {
               />
             </Link>
             <div className="mr-md:flex hidden items-center gap-x-5">
-              <CTA link="javascript:void(Tawk_API.toggle())" />
+              <CTA link="javascript:;" handle="parent.LC_API.open_chat_window();return false;" />
               <CTA
                 text="+1 (800) 781-9093"
                 link="tel:8007819093"

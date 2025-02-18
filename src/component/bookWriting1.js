@@ -43,7 +43,7 @@ const bookWriting = (props) => {
                             <MRCTA
                                 text="LET'S DISCUSS"
                                 classes="hover:bg-transparent hover:border-secondary-100 hover:text-black rounded-sm bg-primary-100"
-                                link="javascript:void(Tawk_API.toggle())"
+                                link="javascript:;" handle="parent.LC_API.open_chat_window();return false;"
                             />
                             <MRCTA
                                 text="800-781-9093"

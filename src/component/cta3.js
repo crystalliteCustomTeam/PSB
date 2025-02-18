@@ -109,7 +109,7 @@ const YourComponent = ({
                     <MRCTA
                       text="Start Your Project Today!"
                       classes="hover:!bg-white hover:!text-black rounded-sm bg-black"
-                      link="javascript:void(Tawk_API.toggle())"
+                      link="javascript:;" handle="parent.LC_API.open_chat_window();return false;"
                     />
                     <MRCTA
                       text="Connect with Us!"

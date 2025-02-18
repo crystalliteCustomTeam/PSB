@@ -45,7 +45,7 @@ const MRCards = ({
                                                 cta && <MRCTA
                                                     text="Connect with Us!"
                                                     classes="hover:bg-secondary-100 rounded-sm mx-auto mt-[16px]"
-                                                    link="javascript:void(Tawk_API.toggle())"
+                                                    link="javascript:;" handle="parent.LC_API.open_chat_window();return false;"
                                                 />
                                             }
                                         </div>

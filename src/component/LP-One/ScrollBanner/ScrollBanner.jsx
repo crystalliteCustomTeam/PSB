@@ -108,7 +108,7 @@ const ScrollBanner = () => {
                         <MRCTA
                             text="Connect with Us!"
                             classes="hover:bg-secondary-100 mr-sm:mb-0 mb-5"
-                            link="javascript:void(Tawk_API.toggle())"
+                            link="javascript:;" handle="parent.LC_API.open_chat_window();return false;"
                         />
                         <MRCTA
                             text="Call us NOW!"
