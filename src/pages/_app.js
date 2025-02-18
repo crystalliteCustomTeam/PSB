@@ -71,16 +71,13 @@ export default function App({ Component, pageProps }) {
             `}
           </Script>
           <Script id="chat-script-1">
-            {`(function(w,d,s,l,i){
-              w[l] = w[l] || [];
-              w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
-              var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-              j.async = true;
-              j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-              f.parentNode.insertBefore(j, f);
-            })(window, document, 'script', 'dataLayer', 'GTM-WQT66SHZ');`}
+            {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-MPS5N2P3');`}
           </Script>
-          <Script
+          {/* <Script
             id="chat-script-2"
             src="https://www.googletagmanager.com/gtag/js?id=G-66Q1HF396Z"
           ></Script>
@@ -91,7 +88,15 @@ export default function App({ Component, pageProps }) {
               gtag('js', new Date());
               gtag('config', 'G-66Q1HF396Z');
             `}
-          </Script>
+          </Script> */}
+          <noscript>
+            <iframe
+              src="https://www.googletagmanager.com/ns.html?id=GTM-MPS5N2P3"
+              height="0"
+              width="0"
+              style="display:none;visibility:hidden"
+            ></iframe>
+          </noscript>
           <noscript>
             <a
               href="https://embed.tawk.to/677dc97f49e2fd8dfe03fd14/1ih1lm789"
