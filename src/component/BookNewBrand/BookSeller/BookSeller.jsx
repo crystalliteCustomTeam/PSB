@@ -175,7 +175,7 @@ const BookSeller = () => {
                                     </Link>
                                     <Link href="tel:(800) 781-9093" className='flex items-center gap-2 text-[14px] mr-md:text-[15px] poppins font-[500]'>
                                         <Image src={Teliphone} alt='Email Icon' className='w-[30px] h-[25px]' />
-                                        800-781-9093
+                                        855-666-6675
                                     </Link>
                                 </div>
                                 <Link href="#" className='flex items-center gap-2 text-[14px] mr-md:text-[15px] poppins font-[500]'>

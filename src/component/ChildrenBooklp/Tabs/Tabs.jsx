@@ -115,7 +115,7 @@ export default function Tabs({
 
                 <div className="grid grid-cols-1 mr-sm:flex mr-md:justify-start justify-center mr-sm:gap-x-5 gap-5 mt-5 mr-lg:mt-10">
                   <MRCTA text="Talk To An Expert" link="javascript:;" handle="parent.LC_API.open_chat_window();return false;" classes="__animatedPing !rounded-[6px] hover:bg-transparent hover:text-black hover:border-black" />
-                  <MRCTA text="Call Us Now" link="tel:800-781-9093" classes="__animatedPing !rounded-[6px] bg-transparent !border-0 hover:bg-black !bg-[#161616] !text-white hover:border-black" />
+                  <MRCTA text="Call Us Now" link="tel:855-666-6675" classes="__animatedPing !rounded-[6px] bg-transparent !border-0 hover:bg-black !bg-[#161616] !text-white hover:border-black" />
                 </div>
 
               </div>

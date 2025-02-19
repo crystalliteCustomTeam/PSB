@@ -17,7 +17,7 @@ const Hero = () => {
                         <p className="mr-2xl:text-[16px] text-sm font-normal leading-normal text-justify mr-sm:text-center">We love, love, LOVE children’s stories! Publish a children’s book with us, and we’ll bring your story to life with careful attention and a passion for storytelling. From simple picture books to cool chapter books, and everything in between we enjoy working on every kind of story for young readers.</p>
                         <div className="grid grid-cols-1 mr-sm:flex justify-center mr-sm:gap-x-5 gap-5 mt-5 mr-2xl:mt-8">
                             <MRCTA text="Connect With Us" link="javascript:;" handle="parent.LC_API.open_chat_window();return false;" classes="__animatedPing !rounded-[6px] hover:bg-transparent hover:border-white" />
-                            <MRCTA text="Talk To An Expert" link="tel:800-781-9093" classes="__animatedPing !rounded-[6px] bg-transparent !border-0 hover:bg-black !bg-white !text-black hover:border-black" />
+                            <MRCTA text="Talk To An Expert" link="tel:855-666-6675" classes="__animatedPing !rounded-[6px] bg-transparent !border-0 hover:bg-black !bg-white !text-black hover:border-black" />
                         </div>
                         <div className="flex items-center justify-center gap-3 mr-lg:gap-5 pt-7 mr-2xl:pt-12">
                             <div>

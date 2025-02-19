@@ -153,7 +153,7 @@ const LetUsHelpArticle = () => {
                         </Slider>
                     </div>
                     <div className='flex justify-center items-center gap-x-5 mt-10'>
-                        <a href="tel:800-781-9093" className='transition-all ease-in-out duration-500 py-2 text-base font-normal font-secondary text-white px-10 border-2 border-[#40BEE2] bg-[#40BEE2] rounded-md hover:bg-[#1d1d1f] hover:border-[#1d1d1f]' >Get Started</a>
+                        <a href="tel:855-666-6675" className='transition-all ease-in-out duration-500 py-2 text-base font-normal font-secondary text-white px-10 border-2 border-[#40BEE2] bg-[#40BEE2] rounded-md hover:bg-[#1d1d1f] hover:border-[#1d1d1f]' >Get Started</a>
                         <a onClick={openLiveChat} href="#" className='transition-all ease-in-out duration-500 py-2 text-base font-normal font-secondary text-black hover:text-white px-11 border-2 border-[#1d1d1f] bg-transparent rounded-md hover:bg-[#40BEE2] hover:border-[#40BEE2]' >Live Chat</a>
                     </div>
                 </div>

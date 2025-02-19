@@ -87,9 +87,9 @@ const Header = () => {
                 </ul>
                 <ul className='btn'>
                   <li className='mr-lg:!mb-0 !mb-3 block sm:hidden xs:hidden'>
-                    <Link href="tel:800-781-9093" className={`__animatedPing text-[15px] transition-all ease-in-out duration-300 group xs:text-[20px] font-secondary border-2 border-black bg-[#40BEE2] py-2 px-4 text-[#40BEE2] flex items-center gap-x-3 font-[500] hover:bg-transparent rounded-[6px] hover:border-2 hover:border-white`}>
+                    <Link href="tel:855-666-6675" className={`__animatedPing text-[15px] transition-all ease-in-out duration-300 group xs:text-[20px] font-secondary border-2 border-black bg-[#40BEE2] py-2 px-4 text-[#40BEE2] flex items-center gap-x-3 font-[500] hover:bg-transparent rounded-[6px] hover:border-2 hover:border-white`}>
                       <Image src={TelIcon} width={15} height={15} alt='Amazon Book Publishing' className='transition-all ease-in-out duration-300 brightness-0 invert' priority={true} />
-                      <span className=' text-white group-hover:!text-white'>800-781-9093</span>
+                      <span className=' text-white group-hover:!text-white'>855-666-6675</span>
                     </Link>
                   </li>
                 </ul>

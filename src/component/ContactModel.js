@@ -248,7 +248,7 @@ const Bloginner = () => {
                 </li>
                 <li className="mb-4 border-b-2 flex items-center gap-x-1 border-[#ffffff]">
                   <FontAwesomeIcon icon={faPhone} width={30} height={30} className="px-2" />
-                  <span className="block"><a href="tel:8007819093">(800) 781-9093</a></span>
+                  <span className="block"><a href="tel:8556666675">(800) 781-9093</a></span>
                 </li>
               </ul>
               <h3 className=" text-[20px] font-bold mt-3 text-white">Follow Us:</h3>

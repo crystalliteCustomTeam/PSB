@@ -57,7 +57,7 @@ const MRContent1 = ({
                                                     />
                                                     <MRCTA
                                                         text="Call us NOW!"
-                                                        link="tel:8007819093"
+                                                        link="tel:8556666675"
                                                         bg="bg-transparent"
                                                         color="text-primary-100"
                                                         border="border-primary-100 hover:!bg-primary-100 hover:border-transparent hover:text-white rounded-sm"
@@ -71,7 +71,7 @@ const MRContent1 = ({
                                                     />
                                                     <MRCTA
                                                         text="Call us NOW!"
-                                                        link="tel:8007819093"
+                                                        link="tel:8556666675"
                                                         bg="bg-transparent"
                                                         color="!text-white"
                                                         border="border-white hover:!bg-primary-100 hover:border-transparent rounded-sm"
@@ -119,7 +119,7 @@ const MRContent1 = ({
                                         />
                                         <MRCTA
                                             text="Call us NOW!"
-                                            link="tel:8007819093"
+                                            link="tel:8556666675"
                                             bg="bg-transparent"
                                             color="text-primary-100"
                                             border="border-primary-100 hover:!bg-primary-100 hover:border-transparent hover:text-white rounded-sm"
@@ -133,7 +133,7 @@ const MRContent1 = ({
                                         />
                                         <MRCTA
                                             text="Call us NOW!"
-                                            link="tel:8007819093"
+                                            link="tel:8556666675"
                                             bg="bg-transparent"
                                             color="!text-white"
                                             border="border-white hover:!bg-primary-100 hover:border-transparent rounded-sm"

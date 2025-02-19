@@ -17,7 +17,7 @@ const Slider1 = () => {
                     Which book writing service is your need? You will find everything you are <br className='lg:hidden block' /> looking for, from professional writers to top marketers
                     </p>
                     <div className='w-[30%] lg:w-[40%] md:w-[60%] sm:w-[70%] xs:w-[80%] mx-auto grid grid-cols-2 grid-rows-1 gap-6 xs:gap-3 py-5 relative'>
-                        <a href='tel:800-781-9093' className='bg-[#00C0E4] py-1 text-white border-[#00c0e4] border-[1px] hover:bg-white hover:border-solid hover:border-[1px] hover:text-[#1d1d1f] flex items-center justify-center text-center h-[40px]'>Get started</a>
+                        <a href='tel:855-666-6675' className='bg-[#00C0E4] py-1 text-white border-[#00c0e4] border-[1px] hover:bg-white hover:border-solid hover:border-[1px] hover:text-[#1d1d1f] flex items-center justify-center text-center h-[40px]'>Get started</a>
                         <a href='javascript:$zopim.livechat.window.show()' className='bg-[#1d1d1f] py-1 text-white border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#1d1d1f] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
                     </div>
                     <div className='mx-auto w-[70%] justify-center items-center text-center hover:-translate-y-1 hover:scale-105 duration-300'>

@@ -57,7 +57,7 @@ const ghostWriting = ({
           </ul>
           <div className='mx-auto py-3'>
             <div className='w-[30%] grid grid-cols-2 grid-rows-1 gap-x-6 py-5 relative md:w-[70%] sm:w-[100%] xs:w-[100%]'>
-              <a href="tel:800-781-9093" className='bg-[#00C0E4] py-1 text-white hover:bg-transparent hover:border-solid hover:border-[1px] hover:border-[#00C0E4] hover:transition-all hover:transform-gpu flex items-center justify-center text-center h-[40px]'>Talk to us!</a>
+              <a href="tel:855-666-6675" className='bg-[#00C0E4] py-1 text-white hover:bg-transparent hover:border-solid hover:border-[1px] hover:border-[#00C0E4] hover:transition-all hover:transform-gpu flex items-center justify-center text-center h-[40px]'>Talk to us!</a>
               <a onClick={openLiveChat} href="#" className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Let's Start!</a>
             </div>
           </div>

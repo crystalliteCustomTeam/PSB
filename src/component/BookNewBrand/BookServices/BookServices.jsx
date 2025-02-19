@@ -61,7 +61,7 @@ const BookServices = () => {
                             </Link>
                             <Link href="tel:(800) 781-9093" className='bg-[#131313] hover:bg-[#65c7e4] hover:duration-700 ease-in-out duration-70 rounded-full shadow-[0_10px_20px_0px_#0000001A] w-full mr-md:w-max h-[42px] px-4 mr-lg:px-6 flex items-center justify-center gap-2 text-white poppins uppercase text-[15px] font-[400]'>
                                 <Image src={tel} alt='Tel Icon' className='w-[18px] h-[18px]' />
-                                800-781-9093
+                                855-666-6675
                             </Link>
                         </div>
                     </div>

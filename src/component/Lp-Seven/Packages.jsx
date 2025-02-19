@@ -57,7 +57,7 @@ const Packages = () => {
                   />
                   <CTA
                     text="Call Now"
-                    link="tel:8007819093"
+                    link="tel:8556666675"
                     variant="secondary"
                     css="group-hover:border-white group-hover:text-white"
                     svgClasses="border border-black rounded-full group-hover:border-white"

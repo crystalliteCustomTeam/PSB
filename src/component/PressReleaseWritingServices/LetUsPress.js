@@ -37,7 +37,7 @@ const creativeGhostWriters = () => {
                                     <li className='flex border-b-2 border-solid items-center border-[#989898] py-3'><Image quality={95} src="/assets/images/newimg/color-check2.png" width={9} height={9} alt="Checkmark" className="h-[9px] w-[9px] mr-2 hover:invert-75" />PR Distribution</li>
                                 </ul>
                                 <div className='w-[50%] md:w-[50%] gap-x-5 grid grid-cols-2 grid-rows-1 py-5 md:py-1 sm:pt-10 sm:w-[80%] xs:w-[100%]'>
-                                    <a href="tel:800-781-9093" className='bg-[#00C0E4] py-1 text-white hover:bg-transparent hover:border-solid hover:border-[1px] hover:border-[#1d1d1f] hover:text-[#1d1d1f] hover:transition-all hover:transform-gpu flex items-center justify-center text-center h-[40px]'>Get Started</a>
+                                    <a href="tel:855-666-6675" className='bg-[#00C0E4] py-1 text-white hover:bg-transparent hover:border-solid hover:border-[1px] hover:border-[#1d1d1f] hover:text-[#1d1d1f] hover:transition-all hover:transform-gpu flex items-center justify-center text-center h-[40px]'>Get Started</a>
                                     <a href="#" onClick={openLiveChat} className='bg-[#1d1d1f] py-1 text-white border-solid border-[#1d1d1f] border-[1px] hover:bg-[#00C0E4] hover:text-[#fff] hover:border-[1px] hover:border-[#00C0E4] flex items-center justify-center text-center h-[40px]'>Live Chat</a>
                                 </div>
                             </div>

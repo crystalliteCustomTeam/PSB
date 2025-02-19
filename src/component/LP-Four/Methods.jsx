@@ -62,7 +62,7 @@ const Methods = () => {
                                 <p className="mr-lg:text-base text-sm mr-sm:text-start text-justify leading-normal font-normal" dangerouslySetInnerHTML={{ __html: desc }} />
                                 <div className="grid grid-cols-1 mr-sm:flex mr-sm:gap-x-5 gap-5 mt-8">
                                     <MRCTA text="Let’s Chat!" link="javascript:;" handle="parent.LC_API.open_chat_window();return false;" classes="__animatedPing hover:bg-transparent hover:border-black" />
-                                    <MRCTA text="Call Us Now!" link='tel:8007819093' classes="__animatedPing bg-white !border-black !text-black hover:bg-black hover:!text-white hover:border-black" />
+                                    <MRCTA text="Call Us Now!" link='tel:8556666675' classes="__animatedPing bg-white !border-black !text-black hover:bg-black hover:!text-white hover:border-black" />
                                 </div>
                             </div>
                             <div className='relative mr-md:block hidden'>

@@ -59,7 +59,7 @@ const AudioBooks = () => {
                             </div>
                             <div className="btn mr-auto mr-lg:mr-0 mr-lg:ml-auto block">
                                 <div className="w-full mr-md:w-max">
-                                    <MRCTA link="tel:8007819093" classes="mt-5 w-full !px-12 !font-medium secondary" animation="__animatedPing" text="Call Us Now" />
+                                    <MRCTA link="tel:8556666675" classes="mt-5 w-full !px-12 !font-medium secondary" animation="__animatedPing" text="Call Us Now" />
                                 </div>
                             </div>
                         </div>

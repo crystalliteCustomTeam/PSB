@@ -112,7 +112,7 @@ const Banner = () => {
                                 <MRCTA link='javascript:void(Tawk_API.toggle())' classes="mt-5 w-full !font-medium" animation="__animatedPing" text="Let’s Chat!" />
                             </div>
                             <div className="w-full mr-md:w-max">
-                                <MRCTA link='tel:800-781-9093' classes="mt-5 w-full !border !border-white bg-transparent !text-white" animation="__animatedPing" text="Call Us Now!" />
+                                <MRCTA link='tel:855-666-6675' classes="mt-5 w-full !border !border-white bg-transparent !text-white" animation="__animatedPing" text="Call Us Now!" />
                             </div>
                         </div>
                         <div className="flex pt-6 mr-lg:pt-9 mr-lg:w-[80%]">

@@ -87,8 +87,8 @@ const creativeGhostWriters = ({
                                     link="javascript:;" handle="parent.LC_API.open_chat_window();return false;"
                                 />
                                 <MRCTA
-                                    text="800-781-9093"
-                                    link="tel:8007819093"
+                                    text="855-666-6675"
+                                    link="tel:8556666675"
                                     bg="bg-transparent"
                                     color="text-primary-100"
                                     border="border-primary-100 hover:!bg-primary-100 hover:border-transparent hover:text-white rounded-sm"

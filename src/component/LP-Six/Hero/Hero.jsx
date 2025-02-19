@@ -42,7 +42,7 @@ const Hero = () => {
                     link="javascript:;" handle="parent.LC_API.open_chat_window();return false;"
                   />
                   <a
-                    href="tel:800-781-9093"
+                    href="tel:855-666-6675"
                     className="group w-full mr-md:w-max h-[50px] rounded-full bg-transparent hover:bg-white flex gap-2 items-center !px-10 font-sans font-semibold justify-center border-2 transition-all"
                   >
                     <Image
@@ -53,7 +53,7 @@ const Hero = () => {
                       className="block transition-all ease-in-out duration-300 brightness-100 invert group-hover:brightness-0 group-hover:invert-0"
                     />
                     <span className="block text-white font-semibold group-hover:!text-[#0B0E10]">
-                      800-781-9093
+                      855-666-6675
                     </span>
                   </a>
                 </div>

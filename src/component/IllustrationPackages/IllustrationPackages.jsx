@@ -38,7 +38,7 @@ const IllustrationPackages = ({ packagesData }) => {
                                     <div className="flex mr-2xl:justify-between justify-center mr-2xl:gap-0 mr-lg:gap-x-10 gap-x-5 items-center text-white mt-6">
                                         <MRCTA
                                             text="Order Now!"
-                                            link="tel:8007819093"
+                                            link="tel:8556666675"
                                             bg="bg-transparent"
                                             color="text-primary-100"
                                             border="border-primary-100 hover:!bg-primary-100 hover:border-transparent hover:text-white rounded-sm"

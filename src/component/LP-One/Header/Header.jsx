@@ -52,7 +52,7 @@ const Header = () => {
                                         text="(800)781-9093"
                                         icon="/images/icons/tell.svg"
                                         imageCss="!w-[35px] !h-[35px]"
-                                        link="tel:800-781-9093"
+                                        link="tel:855-666-6675"
                                     />
                                 </li>
                                 <li className="mr-md:block hidden">

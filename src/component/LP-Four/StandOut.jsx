@@ -15,7 +15,7 @@ const StandOut = ({ title, desc }) => {
                                 <p className="text-base font-normal leading-normal" dangerouslySetInnerHTML={{ __html: desc }} />
                                 <div className="grid grid-cols-1 mr-sm:flex mr-sm:gap-x-5 gap-5 mt-5">
                                     <MRCTA text="Let’s Chat!" classes="__animatedPing !bg-[#2E2E2E] text-white mr-lg:mt-6 hover:!bg-black hover:border-black hover:text-white" link="javascript:;" handle="parent.LC_API.open_chat_window();return false;" />
-                                    <MRCTA text="Call Us Now!" link="tel:8007819093" classes="__animatedPing bg-white !text-black mr-lg:mt-6 hover:bg-transparent hover:border-black hover:text-secondary-100" />
+                                    <MRCTA text="Call Us Now!" link="tel:8556666675" classes="__animatedPing bg-white !text-black mr-lg:mt-6 hover:bg-transparent hover:border-black hover:text-secondary-100" />
                                 </div>
                             </div>
                             <div className="mr-2xl:col-span-6 mr-xl:col-span-5 mr-lg:col-span-6 col-span-12">

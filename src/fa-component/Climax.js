@@ -44,7 +44,7 @@ const Climax = (props) => {
 
                                     <div className={`${styles.bttns} mt-4 mb-5 mb-md-0`}>
                                         <Link className='btns btnPrimary' href="#"> {props.btn1} </Link>
-                                        <Link className='btns btnSecondary' href="tel:800-781-9093"> {props.btn2} </Link>
+                                        <Link className='btns btnSecondary' href="tel:855-666-6675"> {props.btn2} </Link>
                                     </div>
                                 </div>
                             

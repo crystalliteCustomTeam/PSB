@@ -17,7 +17,7 @@ const MRCTAGroup = ({
             />
             <MRCTA
                 text={text2}
-                link="tel:8007819093"
+                link="tel:8556666675"
                 bg="bg-transparent"
                 color="text-primary-100"
                 border="border-primary-100 hover:!bg-primary-100 hover:border-transparent hover:text-white"

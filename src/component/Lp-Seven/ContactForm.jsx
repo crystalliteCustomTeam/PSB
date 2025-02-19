@@ -190,7 +190,7 @@ const ContactForm = () => {
               Write My Hot-Seller Book!
             </h2>
             <p className="mr-lg:text-base text-sm leading-normal font-normal">
-              Call us now at <a href="tel:+18007819093">+1 (800) 781-9093</a>{" "}
+              Call us now at <a href="tel:+18556666675">+1 (800) 781-9093</a>{" "}
               (toll-free) or start a conversation for further details of our
               services.
             </p>
@@ -252,7 +252,7 @@ const ContactForm = () => {
                     />
                     <CTA
                       text="Call Now"
-                      link="tel:8007819093"
+                      link="tel:8556666675"
                       css="bg-white !text-black hover:bg-transparent hover:border-white hover:!text-white"
                     />
                     <button

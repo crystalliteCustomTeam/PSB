@@ -36,7 +36,7 @@ const MadeEasy = () => {
                 />
                 <CTA
                   text="Call Now"
-                  link="tel:8007819093"
+                  link="tel:8556666675"
                   variant="secondary"
                   css="text-white border-white hover:bg-white group"
                   svgClasses="border border-white rounded-full group-hover:border-black"

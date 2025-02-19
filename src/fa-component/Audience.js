@@ -33,7 +33,7 @@ const Audience = () => {
                                     />
                                     <MRCTA
                                         text="Call us NOW!"
-                                        link="tel:8007819093"
+                                        link="tel:8556666675"
                                         bg="bg-transparent"
                                         color="!text-black"
                                         border="border-black hover:!bg-black hover:border-transparent rounded-sm hover:!text-white"

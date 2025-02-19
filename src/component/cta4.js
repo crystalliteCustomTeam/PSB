@@ -18,7 +18,7 @@ const cta4 = () => {
                 Are You Ready To Be on the <br className='block lg:hidden' /> List of Best-Selling Authors? <br className='block lg:hidden' /> <span className='inline-block bg-black text-white'>Let’s Work Together!</span>
               </h2>
               <div className='w-[60%] md:w-[90%] sm:w-[90%] xs:w-[100%] grid grid-cols-2 grid-rows-1 gap-6 py-5 relative'>
-                <a href='tel:800-781-9093' className='bg-[#1d1d1f] py-1 text-white hover:bg-white hover:border-solid hover:border-[1px] hover:text-[#1d1d1f] hover:transition-all text-center flex items-center justify-center h-[40px]'>Get started</a>
+                <a href='tel:855-666-6675' className='bg-[#1d1d1f] py-1 text-white hover:bg-white hover:border-solid hover:border-[1px] hover:text-[#1d1d1f] hover:transition-all text-center flex items-center justify-center h-[40px]'>Get started</a>
                 <a href='javascript:$zopim.livechat.window.show()' className='bg-transparent py-1 text-white border-[#1d1d1f] border-[1px] hover:bg-black hover:text-white hover:border-[1px] hover:border-[#00C0E4] text-center flex items-center justify-center h-[40px]'>Live Chat</a>
               </div>
             </div>

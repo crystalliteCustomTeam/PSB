@@ -104,7 +104,7 @@ const Header = () => {
                   ))}
                   <li>
                     <Link
-                      href="tel:800-781-9093"
+                      href="tel:855-666-6675"
                       className={`__animatedPing rounded-full text-[15px] transition-all ease-in-out duration-300 group xs:text-[20px] font-secondary border-2 border-[#40BEE2] bg-[#40BEE2] mt-5 py-2 px-5 text-[#0B0E10] mr-lg:hidden flex justify-center items-center gap-x-3 font-[500] hover:bg-[linear-gradient(270.56deg,_#0B0E10_9.88%,_#516776_91.55%)] `}
                     >
                       <Image
@@ -116,13 +116,13 @@ const Header = () => {
                         priority={true}
                       />
                       <span className=" text-[#0B0E10] font-semibold group-hover:!text-black">
-                        800-781-9093
+                        855-666-6675
                       </span>
                     </Link>
                   </li>
                 </ul>
                 <Link
-                  href="tel:800-781-9093"
+                  href="tel:855-666-6675"
                   className={`rounded-full text-[15px] transition-all ease-in-out duration-300 group xs:text-[20px] font-secondary border-2 border-[#40BEE2] bg-[#40BEE2] py-2 px-5 mr-lg:flex hidden items-center gap-x-3 font-[500] hover:bg-[linear-gradient(270.56deg,_#0B0E10_9.88%,_#516776_91.55%)] hover:!border-transparent`}
                 >
                   <Image
@@ -134,7 +134,7 @@ const Header = () => {
                     priority={true}
                   />
                   <span className=" text-[#0B0E10] font-semibold group-hover:!text-white">
-                    800-781-9093
+                    855-666-6675
                   </span>
                 </Link>
               </nav>

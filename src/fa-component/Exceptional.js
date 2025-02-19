@@ -89,7 +89,7 @@ const Exceptional = ({
                         ))}
                         {/* <div className={`${Bookshelf.bttns} dislpay-flex mt-5 justify-content-center`}>
                             <Link className='btns btnPrimary' onClick={openLiveChat} href="#">Let's discuss</Link>
-                            <Link className='btns btnSecondary' href="tel:800-781-9093">800-781-9093</Link>
+                            <Link className='btns btnSecondary' href="tel:855-666-6675">855-666-6675</Link>
                         </div> */}
                         <MRCTAGroup classes='justify-center mt-5'/>
                     </Row>

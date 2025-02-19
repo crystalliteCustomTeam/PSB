@@ -108,7 +108,7 @@ const Header = () => {
               <CTA link="javascript:;" handle="parent.LC_API.open_chat_window();return false;" />
               <CTA
                 text="+1 (800) 781-9093"
-                link="tel:8007819093"
+                link="tel:8556666675"
                 variant="secondary"
                 svgClasses="border border-black rounded-full"
               />

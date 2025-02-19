@@ -165,7 +165,7 @@ const PrivacyPolicy = () => {
                         </p>
                         <ul className="list-disc list-inside mb-5">
                             <li className="text-[16px] leading-[28px] text-[#212121] font-normal py-px">
-                                <span>Toll-Free number: <a href="tel:(800) 781-9093" className="font-medium text-primary-100">800-781-9093</a></span>
+                                <span>Toll-Free number: <a href="tel:(800) 781-9093" className="font-medium text-primary-100">855-666-6675</a></span>
                             </li>
                             <li className="text-[16px] leading-[28px] text-[#212121] font-normal">
                                 <span> E-mail: <a href="mailto:info@bestsellingpublisher.com" className="font-medium text-primary-100">info@bestsellingpublisher.com</a></span>

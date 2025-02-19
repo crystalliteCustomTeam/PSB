@@ -128,7 +128,7 @@ const Banner = (props) => {
                                 {props.discuss ?
                                     <div className={`${styles.bttns} mt-4`}>
                                         <Link onClick={openLiveChat} className='btns btnPrimary' href="#">{props.discuss}</Link>
-                                        <Link className='btns btnSecondary' href="tel:800-781-9093"> {props.homebannernum}</Link>
+                                        <Link className='btns btnSecondary' href="tel:855-666-6675"> {props.homebannernum}</Link>
                                     </div>
                                     :
                                     ''
@@ -136,7 +136,7 @@ const Banner = (props) => {
 
                                 {props.homebannernum2 ?
                                     <div className={`${styles.bttns} mt-3`}>
-                                        <Link className='btns btnSecondary' href="tel:800-781-9093"> {props.homebannernum2}</Link>
+                                        <Link className='btns btnSecondary' href="tel:855-666-6675"> {props.homebannernum2}</Link>
                                     </div>
                                     :
                                     ''

@@ -54,15 +54,15 @@ const marketBook1 = () => {
                                             link="javascript:;" handle="parent.LC_API.open_chat_window();return false;"
                                         />
                                         <MRCTA
-                                            text="800-781-9093"
-                                            link="tel:8007819093"
+                                            text="855-666-6675"
+                                            link="tel:8556666675"
                                             bg="bg-transparent"
                                             color="text-primary-100"
                                             border="border-secondary-100 hover:!bg-white hover:border-secodary hover:text-black rounded-sm text-secondary-100"
                                         />
                                     </div>
                                     {/* <div className='w-[55%] md:w-[60%] sm:w-[90%] xs:w-[100%] grid grid-cols-2 grid-rows-1 gap-x-6 py-5 relative'>
-                                        <a href='tel:800-781-9093' className='bg-[#00C0E4] py-1 text-white hover:bg-white hover:border-solid hover:border-[3px] hover:text-[#1d1d1f] hover:transition-all text-center flex items-center justify-center h-[40px]'>Get started</a>
+                                        <a href='tel:855-666-6675' className='bg-[#00C0E4] py-1 text-white hover:bg-white hover:border-solid hover:border-[3px] hover:text-[#1d1d1f] hover:transition-all text-center flex items-center justify-center h-[40px]'>Get started</a>
                                         <a href='javascript:$zopim.livechat.window.show()' className='bg-[#1d1d1f] py-1 text-white border-[#1d1d1f] border-[3px] hover:bg-[#00C0E4] hover:text-[#1d1d1f] hover:border-[2px] hover:border-[#00C0E4] text-center flex items-center justify-center h-[40px]'>Live Chat</a>
                                     </div> */}
                                 </div>
