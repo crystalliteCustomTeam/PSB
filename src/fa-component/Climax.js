@@ -10,7 +10,7 @@ const Climax = (props) => {
         <>
             <section className={styles.climaxFold}>
                 <Container fluid className='p-0'>
-                    <Row className={`${styles.climaxRow} justify-content-center align-items-center`}>
+                    <Row className={`${styles.climaxRow} justify-center items-center`}>
                         <Col lg={6}>
                            
                                 <div className={`${styles.climaxTxt} marginleft`}>

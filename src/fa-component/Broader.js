@@ -24,7 +24,7 @@ const Broader = ({
         <>
             <section className={styles.broaderFlod}>
                 <div className='mr-container px-md-4'>
-                    <Row className={`${styles.broaderRow} justify-content-center`}>
+                    <Row className={`${styles.broaderRow} justify-center`}>
                         <Col lg={6}>
 
                             <div className={`${styles.broaderTxt} marginleft`}>

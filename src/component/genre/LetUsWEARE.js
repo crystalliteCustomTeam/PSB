@@ -9,7 +9,7 @@ const TabNavigationGenre = () => {
         <>
             <section className="pt-[100px] md:py-20 sm:py-10 xs:py-10 font-secondary">
                 <div className="container max-w-7xl lg:max-w-6xl">
-                    <div className="text-center justify-content-center ">
+                    <div className="text-center justify-center ">
                         <h6 className='text-[30px] text-[#40BEE2] capitalize font-primary font-semibold'>Why we are exceptional </h6>
                         <h2 className='text-[40px] font-bold font-primary mb-2 lg:text-5xl py-3 md:text-4xl sm:text-3xl xs:text-4xl sm:py-5'>The Greatness of Our Team Cannot Be Understated</h2>
                         <p className="mr-2xl:w-[80%] mr-lg:w-[90%] mx-auto mr-md:text-center text-justify">

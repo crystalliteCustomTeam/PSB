@@ -5,7 +5,7 @@ const LetAboutUS = () => {
         <>
             <section className=" our-voice container max-w-7xl relative z-10 ">
                 <div>
-                    <div className=" text-center justify-content-center ">
+                    <div className=" text-center justify-center ">
                         <h6>WE ARE</h6>
                         <h2 className='text-[34px] font-bold capitalize xs:text-[28px]'>The Tree Companion In <br></br>Your Author&apos;s Journey</h2>
                         <p className='max-w-[90%] mx-auto my-5 text-[#05193c] font-normal text-[17px]'>

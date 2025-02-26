@@ -24,7 +24,7 @@ const PublishingNewComponent = ({
         <>
             <section className={`${styles.enlistedSlideWhite} ${bgImage} ${classes} `}>
                 <div className='mr-container px-md-5'>
-                    <Row className='justify-content-center'>
+                    <Row className='justify-center'>
                         <Col lg={10}>
                             <div className={`${styles.enlistedHead} text-center`}>
                                 <h4 className={`font-30 font-primary ${txtBlK} text-white`}> {subtitle}  </h4>

@@ -39,12 +39,12 @@ const Plans = () => {
         <>
             <section className={`${styles.plansFlod} bg-black`}>
                 <div className='mr-container px-5'>
-                    <Row className='align-items-center'>
+                    <Row className='items-center'>
                         <Col lg={12} className='m-auto'>
                             <Row className={`${styles.plansRow}`}>
                                 <Slider {...planslider}>
                                     <div>
-                                        <div className={`${styles.plans} flex gap-2 align-items-center justify-center`}>
+                                        <div className={`${styles.plans} flex gap-2 items-center justify-center`}>
                                             <Image quality={80}  className='img-fluid d-block !m-0'
                                                 src={rating}
                                                 alt='Best_Publisher'
@@ -55,7 +55,7 @@ const Plans = () => {
                                         </div>
                                     </div>
                                     <div>
-                                       <div className={`${styles.plans} flex gap-2 align-items-center justify-center`}>
+                                       <div className={`${styles.plans} flex gap-2 items-center justify-center`}>
                                             <Image quality={80}  className='img-fluid d-block !m-0'
                                                 src={globe}
                                                 alt='Best_Publisher'
@@ -66,7 +66,7 @@ const Plans = () => {
                                         </div>
                                     </div>
                                     <div>
-                                       <div className={`${styles.plans} flex gap-2 align-items-center justify-center`}>
+                                       <div className={`${styles.plans} flex gap-2 items-center justify-center`}>
                                             <Image quality={80}  className='img-fluid d-block !m-0'
                                                 src={project}
                                                 alt='Best_Publisher'
@@ -77,7 +77,7 @@ const Plans = () => {
                                         </div>
                                     </div>
                                     <div>
-                                       <div className={`${styles.plans} flex gap-2 align-items-center justify-center`}>
+                                       <div className={`${styles.plans} flex gap-2 items-center justify-center`}>
                                             <Image quality={80}  className='img-fluid d-block !m-0'
                                                 src={stamp}
                                                 alt='Best_Publisher'

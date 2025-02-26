@@ -19,7 +19,7 @@ const Audience = () => {
         <>
             <section className={`${styles.audienceFlod} bg-prime`}>
                 <div className='mr-container px-md-4'>
-                    <Row className={`${styles.audienceRow} justify-content-center align-items-center`}>
+                    <Row className={`${styles.audienceRow} justify-center items-center`}>
                         <Col lg={6} sm={12}>
                             <div className={styles.audienceTxt}>
                                 <h2 className='font-45 fw-300 font-primary txt-white mb-3'><span className='bg-black txt-white mt-2 p-1 font-45 fw-500 d-inline-block'>Amazon Publishing Services </span> <br /> That Helped 3000+ Authors Publish Their Books</h2>

@@ -18,7 +18,7 @@ const Dreams = () => {
         <>
             <section className={styles.dreamsFlod}>
                 <div className='mr-container pb-3 px-md-4'>
-                    <Row className='justify-content-center'>
+                    <Row className='justify-center'>
                         <Col lg={10}>
                             <div className={`${styles.dreamsHead} text-center`}>
                                 <h2 className='font-50 fw-800 font-primary txt-secondary mb-3'>Dreams Don’t Turn to Dust with Best Selling Publisher</h2>
@@ -26,7 +26,7 @@ const Dreams = () => {
                             </div>
                         </Col>
                         <Col lg={12} className='px-md-4'>
-                            <Row className={`${styles.dreamsRow} justify-content-center pt-5`}>
+                            <Row className={`${styles.dreamsRow} justify-center pt-5`}>
                                 <Col lg={4}>
                                     <div className={`${styles.dreamsCard} bg-gray text-center`}>
                                         <h3 className='font-26 fw-500 font-primary txt-secondary pb-2'>Top Notch Services </h3>

@@ -147,7 +147,7 @@ const Banner = (props) => {
                                     <div className={`${styles.count} mt-3 mainclass`}>
                                         <Row className={styles.counteRow}>
                                             <Col className='colo'>
-                                                <div className='d-flex align-items-center gap-3'>
+                                                <div className='flex items-center gap-3'>
                                                     <Image quality={100}  className='img-fluid'
                                                         src={alignicon}
                                                         alt='Best_Publisher'
@@ -159,7 +159,7 @@ const Banner = (props) => {
                                                 </div>
                                             </Col>
                                             <Col className='colo'>
-                                                <div className='d-flex align-items-center gap-3'>
+                                                <div className='flex items-center gap-3'>
                                                     <Image quality={100}  className='img-fluid'
                                                         src={authoricon}
                                                         alt='Best_Publisher'
@@ -171,7 +171,7 @@ const Banner = (props) => {
                                                 </div>
                                             </Col>
                                             <Col className='colo'>
-                                                <div className='d-flex align-items-center gap-3'>
+                                                <div className='flex items-center gap-3'>
                                                     <Image quality={100}  className='img-fluid'
                                                         src={cupicon}
                                                         alt='Best_Publisher'

@@ -74,15 +74,15 @@ const Tradition = ({
         <>
             <section className={`${styles.traditionFold} ${background} bg-no-repeat bg-cover ${BGclasses}`}>
                 <div className='mr-container px-md-5'>
-                    <Row className='justify-content-center'>
+                    <Row className='justify-center'>
 
                         <Col lg={12}>
                             <div className={`${styles.mockupsHead} text-center mb-5`}>
                                 <h6 className='text-[30px] text-[#40BEE2] font-semibold mb-3 sm:text-base xs:text-base font-primary'>{subtitle}</h6>
                                 <h2 className={`mr-lg:text-[45px] text-[30px] font-bold font-primary text-black mb-3 ${classes}`} dangerouslySetInnerHTML={{ __html: title }} />
                                 <p className={`text-[15px] font-secondary text-black ${classes}`}>{desc}</p>
-                                <div className='m-auto justify-content-center'>
-                                    <Image quality={90}  className='img-fluid justify-content-center'
+                                <div className='m-auto justify-center'>
+                                    <Image quality={90}  className='img-fluid justify-center'
                                         src={before}
                                         alt='Best_Publisher'
                                     />

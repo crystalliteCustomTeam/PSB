@@ -34,7 +34,7 @@ const Enlisted = ({
 
             <section className={styles.enlistedFlod}>
                 <div className='mr-container px-md-5'>
-                    <Row className='justify-content-center'>
+                    <Row className='justify-center'>
                         <Col lg={12}>
 
                             <div className={`${styles.enlistedHead} text-center`}>

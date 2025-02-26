@@ -79,7 +79,7 @@ const Enlisted = ({
                                 </div>
                             </div>
                             <MRCTAGroup classes='justify-center mt-5'/>
-                            {/* <div className='justify-content-center w-75 mx-auto'>
+                            {/* <div className='justify-center w-75 mx-auto'>
                                 <p className='py-3'>Best Selling Publisher brings your dream of book writing to life.</p>
                                 <div className={`${Bookshelf.bttns} dislpay-flex`}>
                                     <Link className='btns btnBlack' href="javascript:$zopim.livechat.window.show()">Let's discuss</Link>

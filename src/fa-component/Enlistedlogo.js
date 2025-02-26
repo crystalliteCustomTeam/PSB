@@ -49,7 +49,7 @@ const Enlistedlogo = () => {
     return (
         <>
             <Container className='mt-4'>
-                <Row className='justify-content-center'>
+                <Row className='justify-center'>
                     <Col md={12}>
 
                         <div className={`${styles.enlistedLogo} py-2`}>

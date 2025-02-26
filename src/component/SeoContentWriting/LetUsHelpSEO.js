@@ -62,7 +62,7 @@ const demandingSpecilaist = () => {
         <>
             <section className="py-[100px] sm:py-20">
                 <div className="container max-w-7xl font-secondary">
-                    <div className="text-center justify-content-center ">
+                    <div className="text-center justify-center ">
                         <h6 className='text-[30px] font-primary font-semibold text-[#40BEE2]'>Let Us Help You</h6>
                         <h2 className='text-[50px] font-primary font-bold xs:text-4xl mt-2'>What Sets Us Apart?</h2>
                         <p className='w-[80%] mx-auto my-3 text-[#05193c] xs:text-justify sm:w-[90%] xs:w-[90%]'>

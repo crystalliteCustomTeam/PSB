@@ -65,7 +65,7 @@ const demandingSpecilaist = ({
     return (
             <section className="mr-lg:py-[80px] mr-md:py-[60px] py-[40px]">
                 <div className="mr-container relative z-10 font-secondary">
-                    <div className="text-center justify-content-center mb-5 xs:px-2 ">
+                    <div className="text-center justify-center mb-5 xs:px-2 ">
                         <h6 className='mr-lg:text-[30px] text-[20px] font-primary text-[#40BEE2] mb-2 font-semibold'>Our Services Have Been Constantly Hailed as Remarkable</h6>
                         <h2 className='mr-xl:text-[50px] mr-lg:text-[40px] mr-md:text-3xl text-[25px] font-primary font-bold xs:leading-tight'>What Makes Us the Premier Choice in <br className='mr-xl:block hidden'/> Professional Ghostwriting?</h2>
                         <p className='mx-auto mt-3 mb-5 text-[#05193c] xs:text-justify sm:text-justify '>

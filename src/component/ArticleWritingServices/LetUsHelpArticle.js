@@ -66,7 +66,7 @@ const LetUsHelpArticle = () => {
         <>
             <section className="mr-lg:!py-[100px] mr-md:!py-[80px] py-[60px] relative">
                 <div className="mr-container relative z-10 font-secondary">
-                    <div className="text-center justify-content-center ">
+                    <div className="text-center justify-center ">
                         <h6 className='mr-md:text-3xl text-2xl text-[#40BEE2] font-semibold'>Our services are consistently praised for their excellence </h6>
                         <h2 className='mr-lg:text-[50px] mr-md:text-[40px] text-3xl leading-tight py-2 font-semibold xs:text-4xl'>Discover What Makes Us Stand Out From The Rest</h2>
                         <p className="mr-md:text-base text-sm mr-md:text-center text-justify leading-normal mr-2xl:w-[80%] mr-xl:w-[90%] mx-auto">

@@ -20,7 +20,7 @@ const Advice = () => {
         <>
             <section className={styles.adviceFlod}>
                 <div className='mr-container mr-md:py-10 mr-xs:py-5 px-4'>
-                    <Row className={`${styles.adviceRow} justify-content-center align-items-center`}>
+                    <Row className={`${styles.adviceRow} justify-center items-center`}>
                         <Col lg={6}>
 
                             <div className={styles.adviceImg}>

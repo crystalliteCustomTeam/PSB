@@ -64,7 +64,7 @@ const Exceptional = ({
                         <h2 className='font-50 fw-700 font-primary txt-secondary mb-3' dangerouslySetInnerHTML={{ __html: title }} />
                         <p className='font-15 font-secondary txt-secondary mb-5' dangerouslySetInnerHTML={{ __html: subtitle }} />
                     </div>
-                    <Row className={`${styles.dreamsRow} justify-content-center pt-4 pb-5 gy-4 gx-4 mr-xs:mx-3`}>
+                    <Row className={`${styles.dreamsRow} justify-center pt-4 pb-5 gy-4 gx-4 mr-xs:mx-3`}>
                         {data?.map((e, i) => (
                             <Col key={i} xl={4} lg={4} md={6} xxl={4} >
                                 <div className={`${styles.ExceptionalCard} bg-white text-left position-relative`}>
@@ -87,7 +87,7 @@ const Exceptional = ({
                                 </div>
                             </Col>
                         ))}
-                        {/* <div className={`${Bookshelf.bttns} dislpay-flex mt-5 justify-content-center`}>
+                        {/* <div className={`${Bookshelf.bttns} dislpay-flex mt-5 justify-center`}>
                             <Link className='btns btnPrimary' onClick={openLiveChat} href="#">Let's discuss</Link>
                             <Link className='btns btnSecondary' href="tel:855-666-6675">855-666-6675</Link>
                         </div> */}
