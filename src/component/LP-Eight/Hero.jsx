@@ -9,7 +9,7 @@ import HeroBanner from "media/book-promotion-marketing/banner.jpg"
 import SideImage from "media/book-promotion-marketing/bnr-side-img.png"
 import SortRight from "media/book-promotion-marketing/sort.png"
 // Components
-import { CTA } from "./index"
+import { CTA, Popup } from "./index"
 const Hero = () => {
   return (
     <section>
@@ -38,7 +38,7 @@ const Hero = () => {
                   media.
                 </p>
                 <div className="flex items-center gap-3 mt-5">
-                  <CTA link="tel:+18556666675" css={styles.heroCTA1} />
+                  <Popup ctaText="Get Started" css={styles.heroCTA1} />
                   <CTA
                     link="javascript:;"
                     handle="parent.LC_API.open_chat_window();return false"

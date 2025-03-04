@@ -69,10 +69,7 @@ const Pricing = () => {
           </div>
           <div className="grid mr-lg:grid-cols-3 mr-md:grid-cols-2 grid-cols-1 gap-8">
             {data?.packages.map((packageItem, i) => (
-              <div
-                key={i}
-                onMouseLeave={handleMouseLeave}
-              >
+              <div key={i} onMouseLeave={handleMouseLeave}>
                 <div
                   className={`${styles.card} ${
                     !isMobileView && i === activeIndex ? styles.active : ""
@@ -105,7 +102,7 @@ const Pricing = () => {
               </div>
             ))}
           </div>
-          </div>
+        </div>
       </div>
     </section>
   )

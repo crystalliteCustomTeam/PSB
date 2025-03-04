@@ -11,7 +11,7 @@ import Logo from "media/our-reviews/bspWhiteLogo.svg"
 import CommentIcon from "media/book-promotion-marketing/comment.png"
 import CallIcon from "media/book-promotion-marketing/call.png"
 // Components
-import { CTA } from "./index"
+import { CTA, Popup } from "./index"
 const BookPromotionHeader = () => {
   const [isScrolled, setIsScrolled] = useState(false)
 
@@ -71,7 +71,7 @@ const BookPromotionHeader = () => {
                     </a>
                   </li>
                   <li className="p-0 m-0 mr-lg:block hidden">
-                    <CTA text="Get A Free Quote" link="mailto:info(@)bestsellingpublisher(.)com"/>
+                    <Popup/>
                   </li>
                 </ul>
               </nav>

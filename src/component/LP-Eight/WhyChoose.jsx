@@ -6,7 +6,7 @@ import styles from "./styles/why-choose.module.css"
 import { Col, Container, Row } from "react-bootstrap"
 // Components
 import CTA from "./CTA"
-import { Autoplay } from "./index"
+import { Autoplay, Popup } from "./index"
 // Media
 import Banner from "media/book-promotion-marketing/why-choose-bg.jpg"
 import Icon1 from "media/book-promotion-marketing/why-choose/1.png"
@@ -48,40 +48,40 @@ const WhyChoose = () => {
       <div className={styles.root}>
         <Image src={Banner} alt="banner" className={styles.bannerImage} />
         <div className="mr-container">
-            <div className="grid grid-cols-12">
-              <div className="mr-lg:col-span-6 col-span-12">
-                <div className={styles.content}>
-                  <h2>Why Choose Our Services</h2>
-                  <p>
-                    So it's clear why getting media's attention and other book
-                    marketing tactics will make you stand out and increase your
-                    book sales, but the question remains — why choose us for
-                    your book promotion & marketing?
-                  </p>
-                  <div className="flex items-center gap-3 mt-2">
-                    <CTA link="tel:+18556666675" css={styles.whyChooseCTA1} />
-                    <CTA
-                      link="javascript:;"
-                      handle="parent.LC_API.open_chat_window();return false"
-                      text="Live Chat"
-                      css={styles.whyChooseCTA2}
-                    />
-                  </div>
+          <div className="grid grid-cols-12">
+            <div className="mr-lg:col-span-6 col-span-12">
+              <div className={styles.content}>
+                <h2>Why Choose Our Services</h2>
+                <p>
+                  So it's clear why getting media's attention and other book
+                  marketing tactics will make you stand out and increase your
+                  book sales, but the question remains — why choose us for your
+                  book promotion & marketing?
+                </p>
+                <div className="flex items-center gap-3 mt-2">
+                  <Popup ctaText="Get Started" css={styles.whyChooseCTA1} />
+                  <CTA
+                    link="javascript:;"
+                    handle="parent.LC_API.open_chat_window();return false"
+                    text="Live Chat"
+                    css={styles.whyChooseCTA2}
+                  />
                 </div>
               </div>
             </div>
-            <Autoplay arrows={false} dots={true} align="start">
-              {data?.map(([img, text, desc], i) => (
-                <div key={i} className={styles.slides}>
-                  <div className={styles.card}>
-                    <Image src={img} alt="icon" />
-                    <h3>{text}</h3>
-                    <p>{desc}</p>
-                  </div>
-                </div>
-              ))}
-            </Autoplay>
           </div>
+          <Autoplay arrows={false} dots={true} align="start">
+            {data?.map(([img, text, desc], i) => (
+              <div key={i} className={styles.slides}>
+                <div className={styles.card}>
+                  <Image src={img} alt="icon" />
+                  <h3>{text}</h3>
+                  <p>{desc}</p>
+                </div>
+              </div>
+            ))}
+          </Autoplay>
+        </div>
       </div>
     </section>
   )

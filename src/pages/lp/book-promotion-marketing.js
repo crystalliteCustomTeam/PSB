@@ -6,6 +6,7 @@ import {
   ContactForm,
   FrequentlyAskedQuestions,
   Hero,
+  Popup,
   Portfolio,
   Pricing,
   Process,
@@ -19,9 +20,13 @@ import Head from "next/head"
 const BookPromotionMarketing = () => {
   return (
     <>
-     <Head>
+      <Head>
         <title>Book Promotion Marketing - Best Selling Publisher</title>
-        <meta property="og:title" content="Join over 500 successful authors and achieve bestseller status with premium-grade book promotion services at Best Selling Publisher!" key="promotion" />
+        <meta
+          property="og:title"
+          content="Join over 500 successful authors and achieve bestseller status with premium-grade book promotion services at Best Selling Publisher!"
+          key="promotion"
+        />
       </Head>
       <BookPromotionHeader />
       <Hero />
@@ -33,7 +38,7 @@ const BookPromotionMarketing = () => {
       <Portfolio />
       <BrandLogos />
       <Process />
-      <ContactForm/>
+      <ContactForm />
       <FrequentlyAskedQuestions />
       <Reviews />
       <BookPromotionFooter />

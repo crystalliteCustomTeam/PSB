@@ -23,6 +23,7 @@ const Process = dynamic(() => import("./Process"))
 const ContactForm = dynamic(() => import("./ContactForm"))
 const FrequentlyAskedQuestions = dynamic(() => import("./FAQs"))
 const Reviews = dynamic(() => import("./Reviews"))
+const Popup = dynamic(() => import("./Popup"))
 
 export {
   CTA,
@@ -45,4 +46,5 @@ export {
   ContactForm,
   FrequentlyAskedQuestions,
   Reviews,
+  Popup,
 }
