@@ -59,7 +59,7 @@ const WhyChoose = () => {
                   book promotion & marketing?
                 </p>
                 <div className="flex items-center gap-3 mt-2">
-                  <Popup ctaText="Get Started" css={styles.whyChooseCTA1} />
+                  <CTA isPopup={true} text="Get Started" css={styles.whyChooseCTA1} />
                   <CTA
                     link="javascript:;"
                     handle="parent.LC_API.open_chat_window();return false"

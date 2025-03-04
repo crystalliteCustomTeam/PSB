@@ -60,7 +60,10 @@ const BookPromotionHeader = () => {
                   <li className="p-0 m-0">
                     <a
                       href="#"
-                      onClick={()=> {parent.LC_API.open_chat_window();return false;}}
+                      onClick={() => {
+                        parent.LC_API.open_chat_window()
+                        return false
+                      }}
                       className="text-decoration-none font-secondary inline-flex items-center gap-2 text-white"
                     >
                       <Image src={CommentIcon} alt="icon" />
@@ -71,7 +74,7 @@ const BookPromotionHeader = () => {
                     </a>
                   </li>
                   <li className="p-0 m-0 mr-lg:block hidden">
-                    <Popup/>
+                    <CTA text="Get A Free Quote" isPopup={true} />
                   </li>
                 </ul>
               </nav>

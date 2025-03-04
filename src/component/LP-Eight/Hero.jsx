@@ -38,7 +38,7 @@ const Hero = () => {
                   media.
                 </p>
                 <div className="flex items-center gap-3 mt-5">
-                  <Popup ctaText="Get Started" css={styles.heroCTA1} />
+                  <CTA isPopup={true} text="Get Started" css={styles.heroCTA1} />
                   <CTA
                     link="javascript:;"
                     handle="parent.LC_API.open_chat_window();return false"
