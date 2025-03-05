@@ -5,7 +5,6 @@ import Enlistedlogo from "@/fa-component/Enlistedlogo"
 import { MRHero, MRContact, MRContent2, MRContent1, MRCards } from "@/component"
 import Head from "next/head"
 import { Popup } from "@/component/LP-Eight"
-import { PopupProvider } from "@/component/LP-Eight/Popup/PopupContext"
 import ImageLogos from "media/images/banner/img2.webp"
 const ProfessionalGhostwriting = () => {
   const MRContent2Data = [
@@ -207,7 +206,6 @@ const ProfessionalGhostwriting = () => {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProduct) }}
         />
       </Head>
-      <PopupProvider>
         <MRHero
           title="Affordable and Professional  <br /> Ghostwriting Services"
           desc="Do you know how to make your content incredible? You team up with the experts! </br> Over the years, we have assisted innumerable authors who aspired to become the next best sellers. If you plan to be one of them, we are here for you."
@@ -277,7 +275,6 @@ const ProfessionalGhostwriting = () => {
         <Popup
           popupDesc={`HIRE <strong>TOP ghostwriters AT 85% OFF</strong> TO CREATE YOUR TIMELESS WORK`}
         />
-      </PopupProvider>
     </main>
   )
 }

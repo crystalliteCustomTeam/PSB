@@ -30,7 +30,7 @@ const Testimonials = ({
                     <div className='grid grid-cols-12 mr-lg:gap-x-5 gap-5 items-center'>
                         <div className='mr-lg:col-span-5 col-span-12'>
                             <div>
-                                <h2 className='mr-xl:text-[40px] text-[35px] leading-tight mb-3 font-semibold'>{title}</h2>
+                                <h2 className='mr-xl:text-[40px] mr-md:text-[35px] text-[30px] leading-tight mb-3 font-semibold'>{title}</h2>
                                 <p className='text-base leading-normal font-normal'>{desc}</p>
                                 <div className="grid grid-cols-1 mr-sm:flex mr-sm:gap-x-5 gap-5 mt-5">
                                     <MRCTA text="Connect With Us!" isPopup={true} classes="__animatedPing !rounded-full hover:bg-transparent hover:border-black hover:text-[#000]" />

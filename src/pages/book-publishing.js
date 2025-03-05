@@ -7,7 +7,6 @@ import PublishingNewComponent from "@/fa-component/PublishingNewComponent"
 import Enlistedlogo from "@/fa-component/Enlistedlogo"
 import { MRHero, MRContact, MRQuestioners, MRContent1 } from "@/component"
 import Head from "next/head"
-import { PopupProvider } from "@/component/LP-Eight/Popup/PopupContext"
 import { Popup } from "@/component/LP-Eight"
 
 const MRQuestionersData = [
@@ -141,7 +140,6 @@ const BookPublishing = () => {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProduct) }}
         />
       </Head>
-      <PopupProvider>
         <MRHero
           title="Publishing Your Amazing Book Swiftly And Aiding You In Bringing About Great Success"
           logos="images/banner/img2.png"
@@ -183,7 +181,6 @@ const BookPublishing = () => {
         <SwiperComponent />
         <MRContact />
         <Popup popupDesc={`HIRE <strong>TOP book publishers AT 85% OFF</strong> TO CREATE YOUR TIMELESS WORK`} />
-      </PopupProvider>
     </main>
   )
 }

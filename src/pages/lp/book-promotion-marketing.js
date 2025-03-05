@@ -15,13 +15,11 @@ import {
   Reviews,
   WhyChoose,
 } from "@/component/LP-Eight"
-import { PopupProvider } from "@/component/LP-Eight/Popup/PopupContext"
 import Head from "next/head"
 
 const BookPromotionMarketing = () => {
   return (
     <>
-      <PopupProvider>
         <Head>
           <title>Book Promotion Marketing - Best Selling Publisher</title>
           <meta
@@ -45,7 +43,6 @@ const BookPromotionMarketing = () => {
         <Reviews />
         <BookPromotionFooter />
         <Popup />
-      </PopupProvider>
     </>
   )
 }

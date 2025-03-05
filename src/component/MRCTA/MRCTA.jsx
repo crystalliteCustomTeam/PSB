@@ -18,7 +18,10 @@ const MRCTA = ({
 
   return isPopup ? (
     <div className="relative z-10">
-      <button onClick={openPopup} className={`w-full mr-md:w-max h-[50px] ${bg} ${color} rounded-md flex items-center !px-10 font-sans font-semibold justify-center border-2 transition-all ${border} ${animation} ${classes}`}>
+      <button
+        onClick={openPopup}
+        className={`w-full mr-md:w-max h-[50px] ${bg} ${color} rounded-md flex items-center !px-10 font-sans font-semibold justify-center border-2 transition-all ${border} ${animation} ${classes}`}
+      >
         {text}
       </button>
     </div>

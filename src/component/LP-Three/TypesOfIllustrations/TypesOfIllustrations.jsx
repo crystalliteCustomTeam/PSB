@@ -14,7 +14,7 @@ const TypesOfIllustrations = ({ tabs }) => {
                 <Image src={Ufo} alt="icons" className="absolute mr-lg:block hidden top-10 left-6 bottom-0 -z-10 w-[100px] h-auto object-cover" priority={true} />
                 <Image src={Satellite} alt="icons" className="absolute mr-lg:block hidden top-16 right-6 bottom-0 -z-10 w-[100px] h-auto object-cover" priority={true} />
                 <div className="mr-container">
-                    <div className="mr-sm:text-center text-justify mr-xl:w-[60%] mr-lg:w-[70%] mr-md:w-[90%] w-full mx-auto">
+                    <div className="mr-sm:text-center mr-xl:w-[60%] mr-lg:w-[70%] mr-md:w-[90%] w-full mx-auto">
                         <h2 className="mr-lg:text-[40px] mr-md:text-[30px] text-[25px] font-semibold leading-normal mb-3">Types of Children’s Book Illustrations</h2>
                         <p className="mr-md:text-base text-sm leading-normal font-normal">Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective</p>
                     </div>

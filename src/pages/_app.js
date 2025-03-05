@@ -8,7 +8,7 @@ import { SfProDisplay, primary, fontMono } from "@/configs/fonts"
 import Script from "next/script"
 import { useRouter } from "next/router"
 import Loader from "@/component/Loader/Loader"
-
+import { PopupProvider } from "@/component/LP-Eight/Popup/PopupContext"
 export default function App({ Component, pageProps }) {
   const [loadScript, setLoadScript] = useState(false)
 
@@ -47,7 +47,9 @@ export default function App({ Component, pageProps }) {
           <Headernew />
         )}
         {/* {loadScript ? <Component {...pageProps} /> : <Loader />} */}
-        <Component {...pageProps} />
+        <PopupProvider>
+          <Component {...pageProps} />
+        </PopupProvider>
         {router.pathname == "/book-marketing-company" ||
         router.pathname == "/audiobook-production-services" ||
         router.pathname == "/lp/book-publishing-company" ||

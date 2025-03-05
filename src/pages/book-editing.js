@@ -5,7 +5,6 @@ import Enlistedlogo from "@/fa-component/Enlistedlogo"
 import { MRHero, MRContact, MRContent1, MRCards } from "@/component"
 import PublishingNewComponent from "@/fa-component/PublishingNewComponent"
 import Head from "next/head"
-import { PopupProvider } from "@/component/LP-Eight/Popup/PopupContext"
 import { Popup } from "@/component/LP-Eight"
 
 const BookEditing = () => {
@@ -178,7 +177,6 @@ const BookEditing = () => {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProduct) }}
         />
       </Head>
-      <PopupProvider>
         <MRHero
           title="Craft the Perfect Narrative for Your Manuscript with our Expert Book Editing Services"
           desc="Do you feel your book can go from good to exceptional with some editing? <span class='h-3 block'></span>
@@ -246,7 +244,6 @@ const BookEditing = () => {
         <Popup
           popupDesc={`HIRE <strong>TOP book editors AT 85% OFF</strong> TO CREATE YOUR TIMELESS WORK`}
         />
-      </PopupProvider>
     </main>
   )
 }

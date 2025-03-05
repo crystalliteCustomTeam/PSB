@@ -21,7 +21,6 @@ import Book5 from "media/book-illustrations/portfolio/11.png"
 import Icon1 from "media/book-illustrations/google.png"
 import Icon2 from "media/book-illustrations/trustPilot.png"
 import { FAQS, Footer } from "@/component/LP-Two"
-import { PopupProvider } from "@/component/LP-Eight/Popup/PopupContext"
 import { Popup } from "@/component/LP-Eight"
 const BookIllustrationServices = () => {
   const tabContent = [
@@ -128,7 +127,6 @@ const BookIllustrationServices = () => {
           content="Enhance your story with our breathtaking children's book illustrations, featuring captivating art that delights young minds and sparks imagination!"
         />
       </Head>
-      <PopupProvider>
         <Header />
         <Hero />
         <Benifits
@@ -158,7 +156,6 @@ const BookIllustrationServices = () => {
         <Footer />
         {/* Footer Section */}
         <Popup popupDesc="HIRE <strong>TOP illustration services AT 85% OFF</strong> TO CREATE YOUR TIMELESS WORK" />
-      </PopupProvider>
     </>
   )
 }
