@@ -21,7 +21,7 @@ export default async function POST(req, res) {
       secure: true,
       auth: {
         user: "developer@infinitimediainc.com",
-        pass: "dgezdqflhifhyata",
+        pass: "hxxtyncrymffqtwm",
       },
     })
     const mailOptions = {
