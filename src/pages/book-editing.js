@@ -244,7 +244,7 @@ const BookEditing = () => {
         <SwiperComponents />
         <MRContact />
         <Popup
-          popupDesc={`HIRE <strong>TOP book editers AT 85% OFF</strong> TO CREATE YOUR TIMELESS WORK`}
+          popupDesc={`HIRE <strong>TOP book editors AT 85% OFF</strong> TO CREATE YOUR TIMELESS WORK`}
         />
       </PopupProvider>
     </main>

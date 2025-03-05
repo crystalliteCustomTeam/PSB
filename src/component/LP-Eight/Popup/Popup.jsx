@@ -198,8 +198,8 @@ export default function Popup({
             X
           </button>
           <div>
-            <h2 className="mr-md:text-[30px] text-[22px] border-l-[6px] border-primary-100 !text-black leading-tight font-extrabold ps-3 mb-3">
-              Activate Coupon Now!
+            <h2 className="mr-md:text-[30px] text-[20px] border-l-[6px] border-primary-100 !text-black leading-tight font-extrabold ps-3 mb-3">
+              Activate Your Coupon Now!
             </h2>
             <p
               className="text-[#333333] text-[14px] leading-normal font-normal max-w-[400px] uppercase"
