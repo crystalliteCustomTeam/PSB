@@ -40,7 +40,7 @@ const SelfPublishing = () => {
               </p>
               <div className="flex items-center gap-x-5 mt-5">
                 <CTA
-                  link="javascript:;" handle="parent.LC_API.open_chat_window();return false;"
+                  isPopup={true}
                 />
                 <CTA
                   text="Call Now"

@@ -39,7 +39,7 @@ const Hero = () => {
               ))}
             </ul>
             <div className="mr-md:flex hidden items-center gap-x-5 mt-10">
-              <CTA link="javascript:;" handle="parent.LC_API.open_chat_window();return false;" />
+              <CTA isPopup={true} />
               <CTA
                 text="Call Now"
                 link="tel:8556666675"

@@ -105,7 +105,7 @@ const Header = () => {
               />
             </Link>
             <div className="mr-md:flex hidden items-center gap-x-5">
-              <CTA link="javascript:;" handle="parent.LC_API.open_chat_window();return false;" />
+              <CTA isPopup={true} />
               <CTA
                 text="+1 (800) 781-9093"
                 link="tel:8556666675"

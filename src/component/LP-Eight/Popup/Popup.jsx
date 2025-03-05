@@ -1,39 +1,28 @@
 "use client"
 // React
-import { useEffect, useRef, useState, useContext } from "react"
+import { useEffect, useState, useContext } from "react"
 import { PopupContext } from "./PopupContext"
 // Next
 import { useRouter } from "next/navigation"
 import Image from "next/image"
-// GSAP
-import { useGSAP } from "@gsap/react"
 // Axios
 import Axios from "axios"
 // Media
-import BooksImage from "media/book-promotion-marketing/popup_book.png"
+import User from "media/book-promotion-marketing/icons/user.png"
+import Call from "media/book-promotion-marketing/icons/call.png"
+import PaperPlane from "media/book-promotion-marketing/icons/paper_plane.png"
+import Message from "media/book-promotion-marketing/icons/message.png"
 
-export default function Popup({ isOpen, onClose }) {
-  // const popupRef = useRef(null)
+export default function Popup({
+  popupDesc = `HIRE <strong>TOP promotion marketers AT 85% OFF</strong> TO CREATE YOUR TIMELESS WORK`
+}) {
   const [ip, setIP] = useState("")
-  const [score, setScore] = useState("Get Free Consultation")
+  const [score, setScore] = useState("Submit")
   const [pagenewurl, setPagenewurl] = useState("")
 
   const router = useRouter()
   const currentRoute = router.pathname
-
-  // const { contextSafe } = useGSAP()
-
-  // Effect to handle body overflow
-  // useEffect(() => {
-  //   if (isOpen) {
-  //     document.body.style.overflow = "hidden"
-  //   } else {
-  //     document.body.style.overflow = "auto"
-  //   }
-  //   return () => {
-  //     document.body.style.overflow = "auto"
-  //   }
-  // }, [isOpen])
+  const { isPopupOpen, closePopup } = useContext(PopupContext)
 
   //   Form Handler
   useEffect(() => {
@@ -184,80 +173,109 @@ export default function Popup({ isOpen, onClose }) {
   }
   //   Form Handler
 
-  const { isPopupOpen, closePopup } = useContext(PopupContext)
+  useEffect(() => {
+    if (isPopupOpen) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = "auto"
+    }
+    return () => {
+      document.body.style.overflow = "auto"
+    }
+  }, [isPopupOpen])
 
   if (!isPopupOpen) return null
-  
+  // Effect to handle body overflow
+
   return (
     <div className="mr-container">
       <div className="fixed w-full h-screen !z-[99999999999999999] inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center">
-        <div
-          // ref={popupRef}
-          className="relative !z-[99999999999999999] bg-white grid mr-xl:grid-cols-2 grid-cols-1 gap-x-5 mx-5 p-6 rounded-lg shadow-xl w-full max-w-[1000px]"
-        >
+        <div className="relative !z-[99999999999999999] bg-white grid grid-cols-1 gap-x-5 mx-5 p-[31px] border-b-[5px] border-[#53b8e0] rounded-[23px] shadow-xl w-full max-w-[500px]">
           <button
             onClick={closePopup}
-            className="absolute -right-4 border-4 shadow-md border-white -top-8 w-max h-max bg-red-500 text-xl font-semibold text-white px-4 py-2 rounded-full hover:bg-red-600 transition-colors"
+            className="absolute -right-4 border-4 shadow-md border-primary-100 -top-3 w-max h-max bg-white text-base font-semibold text-primary-100 px-[14px] py-2 rounded-full"
           >
             X
           </button>
           <div>
-            <h2 className="text-[30px] !text-black leading-tight !font-semibold !mb-2">
-              Let’s Get Started
+            <h2 className="text-[30px] border-l-[6px] border-primary-100 !text-black leading-tight font-extrabold ps-3 mb-3">
+              Activate Coupon Now
             </h2>
-            <p className="text-gray-400 text-[15px] leading-normal font-normal max-w-[400px]">
-              Call us on:{" "}
-              <a href="tel:+18556666675" className="text-primary-100 underline">
-                (855) 666 6675
-              </a>{" "}
-              or use the form below to start a conversation and show you how we
-              can help!
-            </p>
+            <p className="text-[#333333] text-[14px] leading-normal font-normal max-w-[400px] uppercase" dangerouslySetInnerHTML={{__html : popupDesc}} />
             <form onSubmit={handleSubmit} className="mt-5">
-              <input
-                type="text"
-                required
-                name="name"
-                placeholder="Full Name *"
-                className="block focus-visible:outline-[#40BEE2] !text-black w-full border-2 border-[#E1E1E1] rounded-lg px-4 py-3 mb-4 placeholder:text-[#B4B4B4] font-medium"
-              />
-              <input
-                type="email"
-                required
-                name="email"
-                placeholder="Email *"
-                className="block focus-visible:outline-[#40BEE2] !text-black w-full border-2 border-[#E1E1E1] rounded-lg px-4 py-3 mb-4 placeholder:text-[#B4B4B4] font-medium"
-              />
-              <input
-                type="tel"
-                minLength="10"
-                maxLength="13"
-                pattern="[0-9]*"
-                name="phone"
-                placeholder="Phone"
-                required
-                className="block focus-visible:outline-[#40BEE2] !text-black w-full border-2 border-[#E1E1E1] rounded-lg px-4 py-3 mb-4 placeholder:text-[#B4B4B4] font-medium"
-              />
-              <textarea
-                className="resize-none focus-visible:outline-[#40BEE2] !text-black w-full border-2 border-[#E1E1E1] rounded-lg px-4 pt-4 pb-10 mb-4 placeholder:text-[#B4B4B4]"
-                id="message"
-                name="comments"
-                placeholder="Comments.."
-              ></textarea>
+              <div className="flex items-center gap-2 !text-black w-full bg-[#fafafa] border-2 border-[#E1E1E1] rounded-lg px-3 py-3 mb-4 placeholder:text-[#B4B4B4] font-medium">
+                <label htmlFor="name" className="block shrink-0">
+                  <Image src={User} width={18} height={18} alt="icon" />
+                </label>
+                <input
+                  type="text"
+                  required
+                  name="name"
+                  id="name"
+                  placeholder="Full Name *"
+                  className="block focus-visible:outline-none w-max bg-transparent"
+                />
+              </div>
+              <div className="grid grid-cols-2 gap-x-5">
+                <div className="flex items-center gap-2 !text-black w-full bg-[#fafafa] border-2 border-[#E1E1E1] rounded-lg px-3 py-3 mb-4 placeholder:text-[#B4B4B4] font-medium">
+                  <label htmlFor="email" className="block shrink-0">
+                    <Image src={Message} width={18} height={18} alt="icon" />
+                  </label>
+                  <input
+                    type="email"
+                    required
+                    name="email"
+                    id="email"
+                    placeholder="Email *"
+                    className="block focus-visible:outline-none w-max bg-transparent"
+                  />
+                </div>
+                <div className="flex items-center gap-2 !text-black w-full bg-[#fafafa] border-2 border-[#E1E1E1] rounded-lg px-3 py-3 mb-4 placeholder:text-[#B4B4B4] font-medium">
+                  <label htmlFor="phone" className="block shrink-0">
+                    <Image src={Call} width={18} height={18} alt="icon" />
+                  </label>
+                  <input
+                    type="tel"
+                    minLength="10"
+                    maxLength="13"
+                    pattern="[0-9]*"
+                    name="phone"
+                    id="phone"
+                    placeholder="Phone"
+                    required
+                    className="block focus-visible:outline-none w-max bg-transparent"
+                  />
+                </div>
+              </div>
+              <div className="flex items-start gap-2 !text-black w-full bg-[#fafafa] border-2 border-[#E1E1E1] rounded-lg px-3 py-3 mb-4 placeholder:text-[#B4B4B4] font-medium">
+                <label htmlFor="message" className="block shrink-0">
+                  <Image src={PaperPlane} width={18} height={18} alt="icon" />
+                </label>
+                <textarea
+                  className="resize-none block focus-visible:outline-none w-full bg-transparent h-[100px]"
+                  id="message"
+                  name="comments"
+                  placeholder="Enter a brief description about your book"
+                ></textarea>
+              </div>
+              <div className="flex items-center gap-x-2 mb-5">
+                <input type="checkbox" name="checkbox" id="help" />
+                <label
+                  htmlFor="help"
+                  className="text-[10px] leading-relaxed font-extrabold"
+                >
+                  "By signing up, you consent to receive recurring autodialed
+                  EMAIL/SMS promotional messages. No purchase required. Reply
+                  HELP for help, STOP to end."
+                </label>
+              </div>
               <button
                 type="submit"
-                className="__animatedPing bg-[#40BEE2] hover:bg-primary-100 text-white w-full block rounded-lg py-3 transition-all duration-300 ease-in-out"
+                className="text-[18px] leading-tight font-semibold bg-[#5472b8] border border-[#5472b8] hover:bg-primary-100 text-white w-max block rounded-[3px] p-[16px_70px] transition-all duration-300 ease-in-out uppercase"
               >
                 {score}
               </button>
             </form>
-          </div>
-          <div>
-            <Image
-              src={BooksImage}
-              alt="books"
-              className="mr-xl:absolute mr-xl:bottom-0 mr-xl:-right-20 mr-xl:block hidden"
-            />
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import { createContext, useState } from "react";
 export const PopupContext = createContext();
 
 export const PopupProvider = ({ children }) => {
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [isPopupOpen, setIsPopupOpen] = useState(true);
 
   const openPopup = () => {
     setIsPopupOpen(true);
