@@ -29,7 +29,8 @@ const Tradition = ({
     background = "",
     txtColor = "",
     classes,
-    BGclasses
+    BGclasses,
+    isPopup=""
 }) => {
 
     let traditionslider = {
@@ -142,7 +143,7 @@ const Tradition = ({
                                 </Slider>
                             </div>
                         </Col>
-                        <MRCTAGroup classes="mt-5 justify-center" />
+                        <MRCTAGroup isPopup={isPopup} classes="mt-5 justify-center" />
                     </Row>
                 </div>
             </section>

@@ -157,7 +157,7 @@ const BookIllustrationServices = () => {
         {/* Footer Section */}
         <Footer />
         {/* Footer Section */}
-        <Popup />
+        <Popup popupDesc="HIRE <strong>TOP illustration services AT 85% OFF</strong> TO CREATE YOUR TIMELESS WORK" />
       </PopupProvider>
     </>
   )

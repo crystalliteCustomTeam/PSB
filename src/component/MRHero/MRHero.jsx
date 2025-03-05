@@ -12,6 +12,7 @@ const MRHero = ({
     counter = false,
     classes = "",
     groupCTA = true,
+    isPopup = "",
     beforeImg,
 }) => {
     return (
@@ -25,7 +26,7 @@ const MRHero = ({
                             {desc && <p className="text-[16px] font-sans font-normal leading-normal !mb-4 text-justify lg:text-left" dangerouslySetInnerHTML={{__html : desc}} />}
                             {
                                 groupCTA ?
-                                    <MRCTAGroup /> :
+                                    <MRCTAGroup isPopup={isPopup} /> :
                                     <MRCTA
                                         text="Start Your Publishing Journey Today"
                                         classes="hover:bg-secondary-100"

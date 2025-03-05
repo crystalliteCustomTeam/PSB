@@ -4,7 +4,8 @@ const MRQuestioners = ({
     subTitle,
     title,
     desc,
-    data
+    data,
+    isPopup="",
 }) => {
     return (
         <section>
@@ -46,7 +47,7 @@ const MRQuestioners = ({
                             <span className="block w-full h-[1px] bg-[#40BEE2]"></span>
                         </div>
                     </div>
-                    <MRCTAGroup classes="justify-center mt-5" />
+                    <MRCTAGroup isPopup={isPopup} classes="justify-center mt-5" />
                 </div>
             </div>
         </section>

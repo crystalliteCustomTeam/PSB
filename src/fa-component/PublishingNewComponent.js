@@ -12,7 +12,8 @@ const PublishingNewComponent = ({
     bgImage,
     classes = "",
     textBG,
-    txtBlK
+    txtBlK,
+    isPopup=""
 }) => {
     const openLiveChat = (e) => {
         e.preventDefault();
@@ -30,7 +31,7 @@ const PublishingNewComponent = ({
                                 <h4 className={`font-30 font-primary ${txtBlK} text-white`}> {subtitle}  </h4>
                                 <h2 className={`font-50 fw-500 font-primary ${txtBlK} text-white mb-3`}>{title}<br /> <span className={`${textBG}  color-white p-1 mt-2 d-block house`}> {desc}</span></h2>
                             </div>
-                            <MRCTAGroup classes='justify-center mt-4' />
+                            <MRCTAGroup isPopup={isPopup} classes='justify-center mt-4' />
                         </Col>
 
                     </Row>

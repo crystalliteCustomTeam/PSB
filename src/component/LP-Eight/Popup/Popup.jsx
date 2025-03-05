@@ -14,7 +14,7 @@ import PaperPlane from "media/book-promotion-marketing/icons/paper_plane.png"
 import Message from "media/book-promotion-marketing/icons/message.png"
 
 export default function Popup({
-  popupDesc = `HIRE <strong>TOP promotion marketers AT 85% OFF</strong> TO CREATE YOUR TIMELESS WORK`
+  popupDesc = `HIRE <strong>TOP promotion marketers AT 85% OFF</strong> TO CREATE YOUR TIMELESS WORK`,
 }) {
   const [ip, setIP] = useState("")
   const [score, setScore] = useState("Submit")
@@ -190,7 +190,7 @@ export default function Popup({
   return (
     <div className="mr-container">
       <div className="fixed w-full h-screen !z-[99999999999999999] inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center">
-        <div className="relative !z-[99999999999999999] bg-white grid grid-cols-1 gap-x-5 mx-5 p-[31px] border-b-[5px] border-[#53b8e0] rounded-[23px] shadow-xl w-full max-w-[500px]">
+        <div className="relative !z-[99999999999999999] bg-white grid grid-cols-1 gap-x-5 mx-5 mr-md:p-[31px] p-[25px] border-b-[5px] border-[#53b8e0] rounded-[23px] shadow-xl w-full max-w-[500px]">
           <button
             onClick={closePopup}
             className="absolute -right-4 border-4 shadow-md border-primary-100 -top-3 w-max h-max bg-white text-base font-semibold text-primary-100 px-[14px] py-2 rounded-full"
@@ -198,12 +198,15 @@ export default function Popup({
             X
           </button>
           <div>
-            <h2 className="text-[30px] border-l-[6px] border-primary-100 !text-black leading-tight font-extrabold ps-3 mb-3">
-              Activate Coupon Now
+            <h2 className="mr-md:text-[30px] text-[22px] border-l-[6px] border-primary-100 !text-black leading-tight font-extrabold ps-3 mb-3">
+              Activate Coupon Now!
             </h2>
-            <p className="text-[#333333] text-[14px] leading-normal font-normal max-w-[400px] uppercase" dangerouslySetInnerHTML={{__html : popupDesc}} />
+            <p
+              className="text-[#333333] text-[14px] leading-normal font-normal max-w-[400px] uppercase"
+              dangerouslySetInnerHTML={{ __html: popupDesc }}
+            />
             <form onSubmit={handleSubmit} className="mt-5">
-              <div className="flex items-center gap-2 !text-black w-full bg-[#fafafa] border-2 border-[#E1E1E1] rounded-lg px-3 py-3 mb-4 placeholder:text-[#B4B4B4] font-medium">
+              <div className="flex items-center gap-2 !text-black w-full bg-[#fafafa] border-2 border-[#E1E1E1] rounded-lg px-3 py-2 mb-4 placeholder:text-[#B4B4B4] font-medium">
                 <label htmlFor="name" className="block shrink-0">
                   <Image src={User} width={18} height={18} alt="icon" />
                 </label>
@@ -216,8 +219,8 @@ export default function Popup({
                   className="block focus-visible:outline-none w-max bg-transparent"
                 />
               </div>
-              <div className="grid grid-cols-2 gap-x-5">
-                <div className="flex items-center gap-2 !text-black w-full bg-[#fafafa] border-2 border-[#E1E1E1] rounded-lg px-3 py-3 mb-4 placeholder:text-[#B4B4B4] font-medium">
+              <div className="grid mr-md:grid-cols-2 grid-cols-1 gap-x-5">
+                <div className="flex items-center gap-2 !text-black w-full bg-[#fafafa] border-2 border-[#E1E1E1] rounded-lg px-3 py-2 mb-4 placeholder:text-[#B4B4B4] font-medium">
                   <label htmlFor="email" className="block shrink-0">
                     <Image src={Message} width={18} height={18} alt="icon" />
                   </label>
@@ -230,7 +233,7 @@ export default function Popup({
                     className="block focus-visible:outline-none w-max bg-transparent"
                   />
                 </div>
-                <div className="flex items-center gap-2 !text-black w-full bg-[#fafafa] border-2 border-[#E1E1E1] rounded-lg px-3 py-3 mb-4 placeholder:text-[#B4B4B4] font-medium">
+                <div className="flex items-center gap-2 !text-black w-full bg-[#fafafa] border-2 border-[#E1E1E1] rounded-lg px-3 py-2 mb-4 placeholder:text-[#B4B4B4] font-medium">
                   <label htmlFor="phone" className="block shrink-0">
                     <Image src={Call} width={18} height={18} alt="icon" />
                   </label>
@@ -247,18 +250,18 @@ export default function Popup({
                   />
                 </div>
               </div>
-              <div className="flex items-start gap-2 !text-black w-full bg-[#fafafa] border-2 border-[#E1E1E1] rounded-lg px-3 py-3 mb-4 placeholder:text-[#B4B4B4] font-medium">
+              <div className="flex items-start gap-2 !text-black w-full bg-[#fafafa] border-2 border-[#E1E1E1] rounded-lg px-3 py-2 mb-4 placeholder:text-[#B4B4B4] font-medium">
                 <label htmlFor="message" className="block shrink-0">
                   <Image src={PaperPlane} width={18} height={18} alt="icon" />
                 </label>
                 <textarea
-                  className="resize-none block focus-visible:outline-none w-full bg-transparent h-[100px]"
+                  className="block focus-visible:outline-none w-full bg-transparent mr-md:h-[100px] h-[80px]"
                   id="message"
                   name="comments"
                   placeholder="Enter a brief description about your book"
                 ></textarea>
               </div>
-              <div className="flex items-center gap-x-2 mb-5">
+              <div className="flex mr-md:items-center items-start gap-x-2 mb-5">
                 <input type="checkbox" name="checkbox" id="help" />
                 <label
                   htmlFor="help"
@@ -271,7 +274,7 @@ export default function Popup({
               </div>
               <button
                 type="submit"
-                className="text-[18px] leading-tight font-semibold bg-[#5472b8] border border-[#5472b8] hover:bg-primary-100 text-white w-max block rounded-[3px] p-[16px_70px] transition-all duration-300 ease-in-out uppercase"
+                className="mr-md:text-[18px] text-[16px] leading-tight font-semibold bg-[#5472b8] border border-[#5472b8] hover:bg-primary-100 text-white mr-md:w-max w-full block rounded-[3px] mr-md:p-[16px_70px] p-[16px_0] transition-all duration-300 ease-in-out uppercase"
               >
                 {score}
               </button>

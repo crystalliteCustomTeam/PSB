@@ -147,6 +147,7 @@ const BookPublishing = () => {
           logos="images/banner/img2.png"
           counter={true}
           groupCTA={true}
+          isPopup={true}
           classes="bg-right bg-center !py-[80px]"
           beforeImg="mr-md:before:bg-[url('../../public/ahsan/handsome-guy-study-library.webp')]"
         />
@@ -154,11 +155,13 @@ const BookPublishing = () => {
         <Tradition
           title="Proficient Books Publishers Services "
           desc="We Publish Books That Sell!"
+          isPopup={true}
         />
         <MRQuestioners
           subTitle="Be a Part of the Best Sellers’ Fraternity"
           title="Why Are We  The Best Book Publishing Company For You?"
           data={MRQuestionersData}
+          isPopup={true}
         />
         <PublishingNewComponent
           subtitle="Enlist Yourself with the All-Time Best "
@@ -167,17 +170,19 @@ const BookPublishing = () => {
           bgImage="bg-[url('../../public/ahsan/bg_black.webp')]"
           classes="bg-cover bg-no-repeat"
           textBG="bg-primary-100"
+          isPopup={true}
         />
         <MRContent1
           title="Where Your Words Could Change The World"
           desc="At Best Selling Publisher, we understand that book publishing can be a daunting task for authors. We are here to help you every step of the way, from start to finish. We have years of experience in the industry, and our team of experts is dedicated to helping you reach your publishing goals. We offer a variety of services to choose from, such as eBook publishing services, digital publishing services, and Amazon publishing services, so you can find the perfect fit for your needs. We are here to help you succeed! <span class='h-3 block'></span> We are the leading book publishers in the industry with the creative flair and dedication that you need. Whether you are looking for children's book publishers or science fiction publishers, we have you covered! We publish your dreams so call us today!"
           img1="/ahsan/spacious-bookstore.webp"
+          isPopup={true}
         />
         <BTM />
-        <CTA />
+        <CTA isPopup={true}/>
         <SwiperComponent />
         <MRContact />
-        <Popup />
+        <Popup popupDesc={`HIRE <strong>TOP book publishers AT 85% OFF</strong> TO CREATE YOUR TIMELESS WORK`} />
       </PopupProvider>
     </main>
   )

@@ -174,7 +174,7 @@ const ContactForm = ({ isContact = true }) => {
         <div className="py-[60px]">
           <div className="mr-container">
             <div className="grid mr-lg:grid-cols-12 grid-cols-1 mr-lg:gap-x-5 gap-10 items-center max-w-[1100px] mx-auto">
-              <div className="mr-2xl:col-span-6 mr-lg:col-span-7 text-white mr-sm:text-start text-justify">
+              <div className="mr-2xl:col-span-6 mr-lg:col-span-7 text-white">
                 <h2 className="mr-lg:text-[40px] mr-md:text-[30px] text-[25px] leading-tight font-medium mb-3">
                   Time to Play Big with Book Promotion Marketing That Dominates!
                 </h2>

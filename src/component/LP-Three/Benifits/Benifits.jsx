@@ -166,7 +166,7 @@ const Benifits = ({ title, desc }) => {
                             <div className="mr-lg:mb-0 mb-5 text-black">
                                 <h2 className="mr-lg:text-[40px] mr-md:text-[30px] text-[25px] font-medium leading-normal mb-2">{title}</h2>
                                 <p className="mr-md:text-base text-sm mr-sm:text-start text-justify font-normal leading-normal">{desc}</p>
-                                <MRCTA text="Get Free Consultation"  classes="bg-primary-100 !rounded-full mr-md:my-8 my-5 mr-md:text-base text-sm hover:bg-black hover:border-black" link="javascript:;" handle="parent.LC_API.open_chat_window();return false;" animation="__animatedPing" />
+                                <MRCTA text="Get Free Consultation"  classes="bg-primary-100 !rounded-full mr-md:my-8 my-5 mr-md:text-base text-sm hover:bg-black hover:border-black" isPopup={true} animation="__animatedPing" />
                                 <div className="mr-sm:grid mr-sm:grid-cols-12 flex flex-wrap justify-center 2xl:gap-x-4 mr-md:gap-2 gap-5 items-center">
                                     <span className="mr-sm:col-span-3 flex items-center mr-2xl:gap-x-2 gap-x-1">
                                         <h4 className="mr-2xl:text-[40px] mr-xl:text-[30px] mr-sm:text-[25px] text-lg font-bold leading-tight">10</h4>

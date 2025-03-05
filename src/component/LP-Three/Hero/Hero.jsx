@@ -13,7 +13,7 @@ const Hero = () => {
                         <h1 className="mr-xl:text-[50px] mr-lg:text-[40px] mr-md:text-[30px] text-[25px] mb-3 leading-normal font-semibold">See Your Story Spark Joy With Enchanting Children’s Book Illustrations!</h1>
                         <p className="mr-md:text-base text-sm font-normal leading-normal">Our children’s book illustrations are perfect for both ebooks and print. We capture the essence of your story and craft breathtaking visuals that dance off the page.</p>
                         <div className="grid grid-cols-1 mr-sm:flex justify-center mr-sm:gap-x-5 gap-5 mt-8">
-                            <MRCTA text="Connect With Us!" link="javascript:;" handle="parent.LC_API.open_chat_window();return false;" classes="__animatedPing !rounded-full hover:bg-transparent hover:border-white" />
+                            <MRCTA text="Connect With Us!" isPopup={true} classes="__animatedPing !rounded-full hover:bg-transparent hover:border-white" />
                             <MRCTA text="Call Us Now!" link="tel:855-666-6675" classes="__animatedPing !rounded-full bg-transparent border-white hover:bg-black hover:border-black" />
                         </div>
                     </div>

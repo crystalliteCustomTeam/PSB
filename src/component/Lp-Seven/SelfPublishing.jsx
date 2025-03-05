@@ -9,7 +9,7 @@ import Shape from "media/lp-seven/bubble-shape.png"
 const SelfPublishing = () => {
   return (
     <section>
-      <div className="relative z-10 mr-xl:pt-[150px] mr-xl:pb-[100px] mr-xl:py-0 mr-lg:py-[100px] mr-md:py-[80px] py-[40px] bg-white">
+      <div className="relative overflow-hidden z-10 mr-xl:pt-[150px] mr-xl:pb-[100px] mr-xl:py-0 mr-lg:py-[100px] mr-md:py-[80px] py-[40px] bg-white">
         <Image
           src={Shape}
           alt="shape"

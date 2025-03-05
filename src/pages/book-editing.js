@@ -1,5 +1,3 @@
-import WEARE from "@/component/editing/LetUsWEARE"
-import PWMODE from "@/component/editing/CoverDesign"
 import BTM from "@/component/bottomLogos"
 import CTA from "@/component/cta3"
 import SwiperComponents from "@/component/SwiperComponent"
@@ -189,6 +187,7 @@ const BookEditing = () => {
           counter={true}
           classes="bg-[#fefefe] !py-[80px]"
           beforeImg="mr-md:before:bg-[url('../../public/imageAR/night-laptop.png')]"
+          isPopup={true}
         />
         <Enlistedlogo />
         <MRContent1
@@ -205,6 +204,7 @@ const BookEditing = () => {
             "But you will always have the last say…",
           ]}
           direction="flex-row-reverse"
+          isPopup={true}
         />
         <PublishingNewComponent
           subtitle="Enlist Yourself with the All-Time Best "
@@ -213,6 +213,7 @@ const BookEditing = () => {
           bgImage="bg-[url('../../public/ahsan/bg_black.png')]"
           classes="bg-cover bg-no-repeat"
           textBG="bg-primary-100"
+          isPopup={true}
         />
         <MRCards
           subTitle="We tailor our services to give you"
@@ -222,12 +223,14 @@ const BookEditing = () => {
           cta={true}
           variant="steps"
           data={MRCardData}
+          isPopup={true}
         />
         <BTM />
         <CTA
           subtitle="What Are You Waiting For?"
           title="Let's Kickstart Your Project Today!"
           desc="Need help or have questions? Our friendly team is here to assist you during our business hours. We warmly invite you to reach out; your questions and needs always take center stage with us. Feel free to get in touch anytime."
+          isPopup={true}
         />
         <MRCards
           subTitle="We Pursue"
@@ -240,7 +243,9 @@ const BookEditing = () => {
         />
         <SwiperComponents />
         <MRContact />
-        <Popup />
+        <Popup
+          popupDesc={`HIRE <strong>TOP book editers AT 85% OFF</strong> TO CREATE YOUR TIMELESS WORK`}
+        />
       </PopupProvider>
     </main>
   )

@@ -1,22 +1,22 @@
 // PopupContext.js
-import { createContext, useState } from "react";
+import { createContext, useState } from "react"
 
-export const PopupContext = createContext();
+export const PopupContext = createContext()
 
 export const PopupProvider = ({ children }) => {
-  const [isPopupOpen, setIsPopupOpen] = useState(true);
+  const [isPopupOpen, setIsPopupOpen] = useState(false)
 
   const openPopup = () => {
-    setIsPopupOpen(true);
-  };
+    setIsPopupOpen(true)
+  }
 
   const closePopup = () => {
-    setIsPopupOpen(false);
-  };
+    setIsPopupOpen(false)
+  }
 
   return (
     <PopupContext.Provider value={{ isPopupOpen, openPopup, closePopup }}>
       {children}
     </PopupContext.Provider>
-  );
-};
+  )
+}

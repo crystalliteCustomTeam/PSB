@@ -215,6 +215,7 @@ const ProfessionalGhostwriting = () => {
           counter={true}
           classes="!py-[80px] bg-[#fefefe]"
           beforeImg="mr-md:before:bg-[url('../../public/imageAR/serious-man.webp')]"
+          isPopup={true}
         />
         <Enlistedlogo />
         <MRCards
@@ -225,6 +226,7 @@ const ProfessionalGhostwriting = () => {
           cta={true}
           variant="icons"
           data={MRCardData}
+          isPopup={true}
         />
         <MRContent1
           subTitle="Our Exceptional"
@@ -245,17 +247,20 @@ const ProfessionalGhostwriting = () => {
           ]}
           classes="bg-[url('../../public/imageAR/serviceBG.webp')]"
           theme="dark"
+          isPopup={true}
         />
         <MRContent2
           subTitle="Our Creative Ghostwriters,"
           title="Breathe Life into the Mundane"
           desc={`Our ghostwriters accentuate your ideas on a whole different level. Every project that we work on inevitably becomes a page-turner.`}
           data={MRContent2Data}
+          isPopup={true}
         />
         <CTA
           subtitle="Your Book, Our Expertise"
           title=" – Let's Collaborate!"
           desc="Need assistance or have inquiries? <span class='block h-3'></span> Our committed team is at your disposal during our operational hours, ready to assist you. We extend a warm invitation to engage with us; after all, your inquiries and requirements are consistently our foremost concern, aren't they?"
+          isPopup={true}
         />
         <BTM />
         <MRCards
@@ -269,7 +274,9 @@ const ProfessionalGhostwriting = () => {
         />
         <SwiperComponents />
         <MRContact />
-        <Popup />
+        <Popup
+          popupDesc={`HIRE <strong>TOP ghostwriters AT 85% OFF</strong> TO CREATE YOUR TIMELESS WORK`}
+        />
       </PopupProvider>
     </main>
   )
