@@ -29,10 +29,10 @@ export default function Portfolio() {
                 <button
                   key={index}
                   onClick={() => setActiveTab(index)}
-                  className={`mr-lg:p-[8px_26px] p-[8px_10px] font-medium transition-all ease-in-out duration-300 bg-transparent text-sm uppercase border border-[#547FBF] hover:bg-[#547FBF] hover:text-white ${
+                  className={`mr-lg:p-[8px_26px] p-[8px_10px] font-medium transition-all ease-in-out duration-300 text-sm uppercase border border-[#547FBF] hover:bg-[#547FBF] hover:text-white ${
                     activeTab === index
                       ? "bg-[#547FBF] text-white font-semibold"
-                      : "text-[#547FBF] font-medium "
+                      : "text-[#547FBF] bg-transparent font-medium "
                   } focus:outline-none`}
                 >
                   {tab.label}
