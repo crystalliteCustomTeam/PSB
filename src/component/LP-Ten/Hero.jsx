@@ -17,7 +17,7 @@ import { CTA } from "./index"
 export default function Hero() {
   return (
     <section>
-      <div className="relative z-10 mr-sm:pt-[150px] pt-[120px] pb-[70px]">
+      <div className="relative z-10 pt-[180px] pb-[70px]">
         <Image
           src={Banner}
           alt="banner"

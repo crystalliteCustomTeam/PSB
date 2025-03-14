@@ -10,7 +10,7 @@ import { CTA } from "./index"
 export default function Hero() {
   return (
     <section>
-      <div className="mr-sm:pt-[150px] pt-[120px] pb-[70px] border-[14px] border-[#f4ede7]">
+      <div className="pt-[150px] pb-[70px] border-[14px] border-[#f4ede7]">
         <div className="mr-container">
           <div className="grid mr-lg:grid-cols-2 grid-cols-1 gap-x-5 gap-y-8 items-center">
             <div className="max-w-[520px]">

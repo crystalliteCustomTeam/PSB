@@ -47,6 +47,13 @@ export default function Footer() {
             </div>
             <div className="mr-md:ms-auto">
               <a
+                href="tel:+18556666675"
+                className="text-decoration-none text-base leading-tight flex items-center gap-x-2 mb-5"
+              >
+                <Image src={CallIcon} alt="icon" className="shrink-0" />
+                <span>(855) 666-6675</span>
+              </a>
+              <a
                 href="tel:+12135563626"
                 className="text-decoration-none text-base leading-tight flex items-center gap-x-2 mb-5"
               >

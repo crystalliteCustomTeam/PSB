@@ -10,7 +10,7 @@ export default function Header() {
     <header>
       <div className="absolute z-20 w-full py-8">
         <div className="mr-container">
-          <div className="flex items-center mr-sm:justify-between justify-center">
+          <div className="flex flex-wrap gap-y-5 items-center mr-md:justify-between justify-center">
             <a href="#" className="text-decoration-none block">
               <Image
                 priority
@@ -21,7 +21,17 @@ export default function Header() {
                 height={50}
               ></Image>
             </a>
-            <CTA css="mr-sm:block hidden" />
+            <div className="flex flex-wrap gap-y-5 justify-center items-center gap-x-3">
+              <CTA
+                isPopup={false}
+                link="tel:+18556666675"
+                text="+1 (855) 666 6675"
+                css="mr-sm:!px-[42px] !px-3 mr-sm:!text-[15px] !text-[13px]"
+              />
+              <CTA
+              css="mr-sm:!px-[42px] !px-3 mr-sm:!text-[15px] !text-[13px]"
+               />
+            </div>
           </div>
         </div>
       </div>
