@@ -88,7 +88,7 @@ export default function App({ Component, pageProps }) {
               f.parentNode.insertBefore(j, f);
             })(window, document, 'script', 'dataLayer', 'GTM-WQT66SHZ');`}
           </Script>
-          <Script
+          {/* <Script
             id="chat-script-2"
             src="https://www.googletagmanager.com/gtag/js?id=G-66Q1HF396Z"
           ></Script>
@@ -98,6 +98,18 @@ export default function App({ Component, pageProps }) {
               function gtag() { dataLayer.push(arguments); }
               gtag('js', new Date());
               gtag('config', 'G-66Q1HF396Z');
+            `}
+          </Script> */}
+          <Script
+            id="chat-script-2"
+            src="https://www.googletagmanager.com/gtag/js?id=AW-11022581138"
+          ></Script>
+          <Script id="chat-script-3">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag() { dataLayer.push(arguments); }
+              gtag('js', new Date());
+              gtag('config', 'AW-11022581138');
             `}
           </Script>
           <Script id="chat-script-4">
