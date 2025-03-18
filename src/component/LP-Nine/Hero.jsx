@@ -7,7 +7,7 @@ import SideImage from "media/new-lp/lp1/lp-bn-img.jpg"
 // Components
 import { CTA } from "./index"
 
-export default function Hero() {
+export default function Hero({ description = "TOP GHOSTWRITERS AT 85% OFF" }) {
   return (
     <section>
       <div className="pt-[150px] pb-[70px] border-[14px] border-[#f4ede7]">
@@ -21,7 +21,7 @@ export default function Hero() {
               <h2 className="mr-md:text-[28px] mr-sm:text-[25px] text-[18px] leading-normal font-normal my-4">
                 HIRE{" "}
                 <span className="text-[#16beb5] font-bold">
-                  TOP GHOSTWRITERS AT 85% OFF{" "}
+                  {description}
                 </span>
                 TO CREATE YOUR TIMELESS WORK
               </h2>

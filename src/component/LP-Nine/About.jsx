@@ -6,7 +6,7 @@ import SideImage from "media/new-lp/lp1/awsome-img.jpg"
 // Components
 import { CTA } from "./index"
 
-export default function About() {
+export default function About({ description = "ghostwriters" }) {
   return (
     <section>
       <div className="py-[60px]">
@@ -21,7 +21,7 @@ export default function About() {
                 imagination. We, at Best Selling Publisher, will take that step
                 forward for you. Every story deserves to be told and heard.
                 Therefore, we invite you to experience the work of industry's
-                most professional yet extremely innovative ghostwriters, all
+                most professional yet extremely innovative {description}, all
                 under one roof. We have a track record of delivering thousands
                 of successful publications – meticulously written, edited,
                 designed and published. Many of the published works we have done

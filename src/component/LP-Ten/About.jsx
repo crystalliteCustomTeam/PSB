@@ -5,7 +5,7 @@ import CheckIcon from "media/new-lp/lp2/done_blue.png"
 // Components
 import { CTA } from "./index"
 
-export default function About() {
+export default function About({ description = "ghostwriters" }) {
   return (
     <section>
       <div className="py-[60px]">
@@ -20,7 +20,7 @@ export default function About() {
                 imagination. We, at Best Selling Publisher, will take that step
                 forward for you. Every story deserves to be told and heard.
                 Therefore, we invite you to experience the work of industry's
-                most professional yet extremely innovative ghostwriters, all
+                most professional yet extremely innovative {description}, all
                 under one roof.
               </p>
               <p className="text-[#9c9c9c] mr-md:text-[16px] text-[14px] leading-normal font-normal">

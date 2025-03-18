@@ -14,7 +14,7 @@ import LogoImage6 from "media/new-lp/lp2/logo-img6.png"
 // Components
 import { CTA } from "./index"
 
-export default function Hero() {
+export default function Hero({ description = "TOP GHOSTWRITERS AT 85% OFF" }) {
   return (
     <section>
       <div className="relative z-10 pt-[180px] pb-[70px]">
@@ -28,13 +28,11 @@ export default function Hero() {
             <div className="mx-auto text-center text-white">
               <CountdownTimer />
               <h1 className="mr-xl:text-[39px] mr-md:text-[35px] mr-sm:text-[30px] text-[23px] leading-tight font-semibold mt-5">
-                BECOME A BEST SELLING AUTHOR!
+                BECOME A NEWYORK TIMES BEST SELLING AUTHOR!
               </h1>
               <h2 className="mr-md:text-[28px] mr-sm:text-[25px] text-[18px] leading-normal font-normal my-4 max-w-[520px] mx-auto">
                 HIRE{" "}
-                <span className="text-[#53b5de] font-bold">
-                  TOP GHOSTWRITERS AT 85% OFF{" "}
-                </span>
+                <span className="text-[#53b5de] font-bold">{description}</span>
                 TO CREATE YOUR TIMELESS WORK
               </h2>
               <ul className="flex gap-x-5 gap-y-5 justify-center flex-wrap">
