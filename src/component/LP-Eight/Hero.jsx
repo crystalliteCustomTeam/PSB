@@ -6,7 +6,7 @@ import { Col, Container, Row } from "react-bootstrap"
 import styles from "./styles/hero.module.css"
 // Media
 import HeroBanner from "media/book-promotion-marketing/banner.jpg"
-import SideImage from "media/book-promotion-marketing/bnr-side-img.png"
+import SideImage from "media/book-promotion-marketing/banners/2.png"
 import SortRight from "media/book-promotion-marketing/sort.png"
 // Components
 import { CTA, Popup } from "./index"

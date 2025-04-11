@@ -17,8 +17,8 @@
   font-weight: 500;
 }
 .content p {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 1.5;
   padding: 0 0 10px;
   margin: 0;
   font-weight: 400;
@@ -51,7 +51,7 @@
   border-radius: 50px;
 }
 .card h4 {
-  font-size: 18px;
+  font-size: 24px;
   line-height: 28px;
   font-weight: 500;
   font-family: var(--font-secondary);
@@ -59,8 +59,8 @@
   margin: 0;
 }
 .card p {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 1.5;
   font-weight: 400;
 }
 @media screen and (max-width: 991px) {

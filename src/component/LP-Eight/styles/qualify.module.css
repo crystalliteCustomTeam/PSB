@@ -13,11 +13,11 @@
   margin: 0 auto;
 }
 .content p {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 1.5;
   padding: 0 0 10px;
   font-weight: 400;
-  max-width: 850px;
+  max-width: 900px;
   margin: 0 auto;
 }
 @media screen and (max-width: 991px) {
