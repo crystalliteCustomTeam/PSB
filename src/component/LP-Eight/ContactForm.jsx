@@ -184,7 +184,8 @@ const ContactForm = ({ isContact = true }) => {
                   Our team of experts uses proven strategies and innovative
                   techniques to boost your book's visibility and sales. We're
                   committed to helping you succeed and reach a wider audience. */}
-                  Ready to take your book to the next level? Contact Best Selling Publisher to discuss how our book marketing agency can assist you in reaching a broader audience and achieving your promotional objectives. Best Selling Publisher is committed to providing exceptional book promotion services, ensuring your work receives the attention it deserves.
+                  Ready to take your book to the next level? Contact Best Selling Publisher to discuss how our book marketing agency can assist you in reaching a broader audience and achieving your promotional objectives. Best Selling Publisher is committed to providing exceptional book promotion services, ensuring your work receives the attention it deserves. 
+                  
                 </p>
                 {isContact ? (
                   <div className="contacts">
