@@ -11,22 +11,26 @@ const Qualify = () => {
           <div className="grid grid-cols-1">
             <div>
               <div className={styles.content}>
-                <h2>Drive Awareness to Your Book and Author Platform</h2>
+                <h2>
+                  {/* Drive Awareness to Your Book and Author Platform */}
+                  Our Comprehensive Book Marketing Services
+                  </h2>
                 <p>
-                  Our book marketing services are tailored to your goals, your
+                  {/* Our book marketing services are tailored to your goals, your
                   genre, and your skill level. Whether you’re starting from
                   scratch or refining your current efforts, we’re here to guide
-                  you to better book promotion.
+                  you to better book promotion. */}
+                  At Best Selling Publisher, we specialize in delivering tailored book marketing solutions designed to meet your unique needs. Our team of experts collaborates closely with you to develop and execute strategies that ensure your book reaches its target audience effectively.
                 </p>
                 <p>
-                  Over the years, Ghost Book Writers has launched many USA
+                  {/* Over the years, Ghost Book Writers has launched many USA
                   Today, Wall Street Journal, Amazon, and Barnes & Noble
-                  bestsellers.
+                  bestsellers. */}
                 </p>
                 <p>
-                  We've partnered with some of the biggest independent, hybrid,
+                  {/* We've partnered with some of the biggest independent, hybrid,
                   and traditional publishers in the world and are fortunate
-                  enough to be able to work with amazing authors.
+                  enough to be able to work with amazing authors. */}
                 </p>
               </div>
             </div>

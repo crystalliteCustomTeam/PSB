@@ -17,31 +17,51 @@ import Icon5 from "media/book-promotion-marketing/why-choose/5.png"
 
 const WhyChoose = () => {
   const data = [
+    // [
+    //   Icon1,
+    //   "Personalized Service",
+    //   "We design a specific set of services for each unique author and book. Our experienced publicists take the time to research media contacts and reach out to them in a personalized manner, making all the difference.",
+    // ],
+    // [
+    //   Icon2,
+    //   "Extended Experience",
+    //   "Ghost Book Writers has no junior publicists. Every member of our team is experienced. Most of our publicists have been with us for over five years and many for over ten. This is rare in the book publicity industry.",
+    // ],
+    // [
+    //   Icon3,
+    //   "Team Approach",
+    //   "We often use two publicists on a campaign, alongside a Team Manager and Director of Publicity who are either involved or supervising every campaign. This is to ensure every campaign receives maximum attention.",
+    // ],
+    // [
+    //   Icon4,
+    //   "Campaigns Backup",
+    //   "If a publicist appointed on a particular campaign is unavailable for any reason, our team structure allows for a seamless transition to another publicist or manager already closely involved in the campaign.",
+    // ],
+    // [
+    //   Icon5,
+    //   "Creative Tactics",
+    //   "Ghost Book Writers employ unique book promotion strategies and tactics no other firm does, and our ability to make books and authors stand out from the crowd is well-known with both media and publishers.",
+    // ],
     [
-      Icon1,
-      "Personalized Service",
-      "We design a specific set of services for each unique author and book. Our experienced publicists take the time to research media contacts and reach out to them in a personalized manner, making all the difference.",
-    ],
-    [
-      Icon2,
-      "Extended Experience",
-      "Ghost Book Writers has no junior publicists. Every member of our team is experienced. Most of our publicists have been with us for over five years and many for over ten. This is rare in the book publicity industry.",
-    ],
-    [
-      Icon3,
-      "Team Approach",
-      "We often use two publicists on a campaign, alongside a Team Manager and Director of Publicity who are either involved or supervising every campaign. This is to ensure every campaign receives maximum attention.",
+      Icon5,
+      "Expertise",
+      "Our team comprises seasoned professionals with extensive experience in book marketing, ensuring effective strategies tailored to your goals."
     ],
     [
       Icon4,
-      "Campaigns Backup",
-      "If a publicist appointed on a particular campaign is unavailable for any reason, our team structure allows for a seamless transition to another publicist or manager already closely involved in the campaign.",
+      "Personalized Approach",
+      "We understand that each book is unique; thus, we customize our services to align with your vision and objectives."
     ],
     [
-      Icon5,
-      "Creative Tactics",
-      "Ghost Book Writers employ unique book promotion strategies and tactics no other firm does, and our ability to make books and authors stand out from the crowd is well-known with both media and publishers.",
+      Icon2,
+      "Proven Success",
+      "Our track record includes successfully promoting numerous bestsellers, demonstrating our capability to deliver results."
     ],
+    [
+      Icon3,
+      "Comprehensive Support",
+      "From initial concept to post-launch, we provide end-to-end support, guiding you through every step of the marketing process."
+    ]
   ]
   return (
     <section>
@@ -51,12 +71,13 @@ const WhyChoose = () => {
           <div className="grid grid-cols-12">
             <div className="mr-lg:col-span-6 col-span-12">
               <div className={styles.content}>
-                <h2>Why Choose Our Services</h2>
+                <h2>Why Choose Best Selling Publisher?</h2>
                 <p>
-                  So it's clear why getting media's attention and other book
+                  {/* So it's clear why getting media's attention and other book
                   marketing tactics will make you stand out and increase your
                   book sales, but the question remains — why choose us for your
-                  book promotion & marketing?
+                  book promotion & marketing? */}
+                  Investing in professional book marketing services is crucial for authors seeking to maximize their book's potential. Partner with Best Selling Publisher, a trusted book marketing company, to navigate the complexities of promotion and achieve your publishing goals.
                 </p>
                 <div className="flex items-center gap-3 mt-2">
                   <CTA isPopup={true} text="Get Started" css={styles.whyChooseCTA1} />

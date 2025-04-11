@@ -31,11 +31,12 @@ const Hero = () => {
                   Authors
                 </h2>
                 <p>
-                  The best promotion campaigns succeed because they are
+                  {/* The best promotion campaigns succeed because they are
                   carefully developed for individual authors and titles. It
                   means diving in and getting to know the work — at Ghost Book
                   Writers, we understand how to promote to both readers and
-                  media.
+                  media. */}
+                  Effective book promotion is essential for authors aiming to expand their readership and boost sales. Partnering with a professional book marketing agency can significantly enhance your book's visibility and success.
                 </p>
                 <div className="flex items-center gap-3 mt-5">
                   <CTA isPopup={true} text="Get Started" css={styles.heroCTA1} />

@@ -176,13 +176,15 @@ const ContactForm = ({ isContact = true }) => {
             <div className="grid mr-lg:grid-cols-12 grid-cols-1 mr-lg:gap-x-5 gap-10 items-center max-w-[1100px] mx-auto">
               <div className="mr-2xl:col-span-6 mr-lg:col-span-7 text-white">
                 <h2 className="mr-lg:text-[40px] mr-md:text-[30px] text-[25px] leading-tight font-medium mb-3">
-                  Time to Play Big with Book Promotion Marketing That Dominates!
+                  {/* Time to Play Big with Book Promotion Marketing That Dominates! */}
+                  Contact Us Today
                 </h2>
                 <p className="mr-md:text-base text-sm leading-normal font-normal pb-5">
-                  Best Selling Publisher knows how to make your book stand out.
+                  {/* Best Selling Publisher knows how to make your book stand out.
                   Our team of experts uses proven strategies and innovative
                   techniques to boost your book's visibility and sales. We're
-                  committed to helping you succeed and reach a wider audience.
+                  committed to helping you succeed and reach a wider audience. */}
+                  Ready to take your book to the next level? Contact Best Selling Publisher to discuss how our book marketing agency can assist you in reaching a broader audience and achieving your promotional objectives. Best Selling Publisher is committed to providing exceptional book promotion services, ensuring your work receives the attention it deserves.
                 </p>
                 {isContact ? (
                   <div className="contacts">

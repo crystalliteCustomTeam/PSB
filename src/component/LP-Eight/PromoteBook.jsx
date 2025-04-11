@@ -20,22 +20,22 @@ const PromoteBook = () => {
     [
       "Media Outreach",
       Book1,
-      "When media write or broadcast stories about your work and books, it improves credibility and sparks readers’ interest in discovering more.",
+      "We connect with journalists, bloggers, and influencers to secure coverage and reviews, enhancing your book's credibility and exposure.",
     ],
     [
-      "Social Media Visibility",
+      "Social Media Management",
       Book2,
-      "We post content that attracts followers and allows you as an author to communicate with your readers, building word-of-mouth for your work.",
+      "Our team crafts engaging content and manages your social media profiles to build a strong online presence and foster a community around your work.",
     ],
     [
-      "Appearances & Events",
+      "Event Planning and Promotion",
       Book3,
-      "Meeting people and getting your story out is highly effective. Holding book events makes your story memorable for readers and newsworthy.",
+      "From virtual book tours to live events, we organize and promote activities that generate buzz and connect you with your audience.",
     ],
     [
       "Author Branding",
       Book4,
-      "You can instill interest in your readers by doing well in appearances and interviews, you build relationships that spark interest and sales.",
+      "We assist in developing a compelling author brand that resonates with readers, establishing a lasting connection and encouraging loyalty.",
     ],
     [
       "Video Promotions",
@@ -53,9 +53,9 @@ const PromoteBook = () => {
       "Getting out and meeting people in-person is a great way to build relationships and interest; people like to read more from people they know.",
     ],
     [
-      "Paid Reviews",
+      "Review Acquisition",
       Book8,
-      "Because reviews can be critical drivers of reader interest, people publishing favorable opinions about your work can provide you a sales boost.",
+      "Leveraging our network, we facilitate the collection of authentic reviews from readers and influencers, building trust and encouraging sales.",
     ],
   ]
   return (
