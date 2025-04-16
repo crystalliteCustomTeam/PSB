@@ -5,11 +5,18 @@ import Audience from "@/fa-component/Audience";
 import Plans from "@/fa-component/Plans";
 import Enlistedlogo from "@/fa-component/Enlistedlogo";
 import SwiperComponents from "@/component/SwiperComponent";
-import { MRHero, MRContact, MRQuestioners, MRContent1, MRCards, MRVideoTestimonials } from "@/component";
+import {
+  MRHero,
+  MRContact,
+  MRQuestioners,
+  MRContent1,
+  MRCards,
+  MRVideoTestimonials,
+} from "@/component";
 import PublishingNewComponent from "@/fa-component/PublishingNewComponent";
 // Media
-import BannerImg from 'media/ahsan/home-banner-new.webp'
-import Logos from 'media/images/banner/img2.webp'
+import BannerImg from "media/ahsan/home-banner-new.webp";
+import Logos from "media/images/banner/img2.webp";
 
 const MRQuestionersData = [
   {
@@ -40,7 +47,8 @@ const MRQuestionersData = [
 const MRCardData = [
   {
     indexing: true,
-    classes: "bg-white shadow-lg px-3 rounded-lg relative pt-[40px] pb-[40px] mt-[40px] transition-all duration-300 ease-in-out hover:!bg-[#40BEE2] hover:!text-white",
+    classes:
+      "bg-white shadow-lg px-3 rounded-lg relative pt-[40px] pb-[40px] mt-[40px] transition-all duration-300 ease-in-out hover:!bg-[#40BEE2] hover:!text-white",
     cta: false,
     stepText: "",
     content: [
@@ -125,7 +133,8 @@ const Home = () => {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     name: "Best Selling Publisher",
-    image: "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+    image:
+      "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
     url: "https://bestsellingpublisher.com/",
     telephone: "(800) 781-9093",
     address: {
@@ -152,8 +161,10 @@ const Home = () => {
     "@context": "https://schema.org/",
     "@type": "Product",
     name: "Best Selling Publisher",
-    image: "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
-    description: "Best Selling Publisher can publish your book in no time as we are the leading book publishers in US",
+    image:
+      "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+    description:
+      "Best Selling Publisher can publish your book in no time as we are the leading book publishers in US",
     brand: {
       "@type": "Brand",
       name: "Best Selling Publisher",
@@ -167,27 +178,57 @@ const Home = () => {
   return (
     <main>
       <Head>
-        <title>Best Selling Publisher | Home Of Professional Book Publishing</title>
-        <meta name="description" content="Publishing best sellers has never been easier with us. We are the premium book publishers for hire. Visit our website!" />
-
+        <title>
+          Best Selling Publisher | Home Of Professional Book Publishing
+        </title>
+        <meta
+          name="description"
+          content="Publishing best sellers has never been easier with us. We are the premium book publishers for hire. Visit our website!"
+        />
+        <meta
+          name="google-site-verification"
+          content="JvslFJKbTY5v6Wk7ypm9zFYmzqP69kBHHynp99RWMLQ"
+        />
         <meta name="DC.title" content="Best Selling Publisher" />
         <meta name="geo.region" content="US" />
         <meta name="geo.position" content="39.78373;-100.445882" />
         <meta name="ICBM" content="39.78373, -100.445882" />
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        />
 
         <meta property="og:url" content="https://bestsellingpublisher.com" />
-        <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
+        <meta
+          property="og:image"
+          content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public"
+        />
 
         {/* canonical: */}
         <link rel="canonical" href="https://bestsellingpublisher.com" />
 
         {/* Schema */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaWebsite) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaCorporation) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProffesionalService) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProduct) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaWebsite) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(schemaCorporation),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(schemaProffesionalService),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProduct) }}
+        />
       </Head>
       <MRHero
         title={`Start Selling Your Books Worldwide With Best <br class="mr-xl:block hidden"/> Selling Publisher `}
@@ -198,9 +239,16 @@ const Home = () => {
         counter={true}
       />
       <Enlistedlogo />
-      <Tradition title="Celebrating Your Wins" desc="Discover how your publications can be glorious with Best Selling Publisher." />
+      <Tradition
+        title="Celebrating Your Wins"
+        desc="Discover how your publications can be glorious with Best Selling Publisher."
+      />
       <Audience />
-      <MRQuestioners subTitle="Time Again Folks, Do You Want to Be Our Next Happy Author?" title="Here’s Why We Are The Best Book Publishers For Hire" data={MRQuestionersData} />
+      <MRQuestioners
+        subTitle="Time Again Folks, Do You Want to Be Our Next Happy Author?"
+        title="Here’s Why We Are The Best Book Publishers For Hire"
+        data={MRQuestionersData}
+      />
       <PublishingNewComponent
         subtitle="Becoming the Next Best Seller has"
         title="Never Been Easier with "
@@ -243,7 +291,12 @@ const Home = () => {
         ]}
         img1="/images/flods/broader.png"
       />
-      <MRContent1 subTitle="Would you like to know a secret?" title="Less Is Never More for Us – It Can Be If You Want It to Be!" img1="/images/flods/advice.png" direction="flex-row-reverse" />
+      <MRContent1
+        subTitle="Would you like to know a secret?"
+        title="Less Is Never More for Us – It Can Be If You Want It to Be!"
+        img1="/images/flods/advice.png"
+        direction="flex-row-reverse"
+      />
       <Plans />
       <SwiperComponents />
       {/* Video Testimonials Section */}
