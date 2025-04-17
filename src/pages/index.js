@@ -187,7 +187,7 @@ const Home = () => {
         />
         <meta
           name="google-site-verification"
-          content="JvslFJKbTY5v6Wk7ypm9zFYmzqP69kBHHynp99RWMLQ"
+          content="xsimMs7zxe8r99xjQlDHSjHap86u9irM9JTHkI3xNpg"
         />
         <meta name="DC.title" content="Best Selling Publisher" />
         <meta name="geo.region" content="US" />
