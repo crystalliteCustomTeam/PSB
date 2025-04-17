@@ -185,10 +185,7 @@ const Home = () => {
           name="description"
           content="Publishing best sellers has never been easier with us. We are the premium book publishers for hire. Visit our website!"
         />
-        <meta
-          name="google-site-verification"
-          content="xsimMs7zxe8r99xjQlDHSjHap86u9irM9JTHkI3xNpg"
-        />
+     
         <meta name="DC.title" content="Best Selling Publisher" />
         <meta name="geo.region" content="US" />
         <meta name="geo.position" content="39.78373;-100.445882" />
