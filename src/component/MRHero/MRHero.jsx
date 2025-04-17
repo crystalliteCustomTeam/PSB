@@ -37,7 +37,7 @@ const MRHero = ({
                             {logos && <Image src={logos.src} className="!mt-4 pt-5  mr-lg:block hidden" alt="bestsellingpublisher"  />}
                         </div>
                         {containImg && <div className="mr-md:col-span-5 mr-lg:col-span-6 mr-lg:block hidden">
-                            <Image src={containImg.src}  className="block m-auto" quality={95} alt="bestsellingpublisher" priority/>
+                            <Image src={containImg.src}  className="block m-auto" quality={95} alt="Best Selling Publisher" priority/>
                            
                         </div>}
                         {(form || beforeImg) && <div className={`z-10 mr-md:col-span-5 mr-xs:mt-5 mr-sm:mt-5 mr-lg:col-span-6 bg-no-repeat ${beforeImg} before:bg-no-repeat before:absolute before:bg-cover before:w-[43%] mr-lg:before:w-[45%] mr-xl:before:w-[48%] before:h-full -z-10 before:right-0 before:bottom-0 before:top-0 before:opacity-25`}>
