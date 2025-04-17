@@ -319,7 +319,7 @@
 .readSec .cardBottom {
   padding: 25px 25px 10px;
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   gap: 10px;
 }
 

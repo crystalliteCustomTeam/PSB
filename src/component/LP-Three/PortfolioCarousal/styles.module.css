@@ -9,7 +9,7 @@
 .embla .embla__container {
     backface-visibility: hidden;
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     touch-action: pan-y pinch-zoom;
     margin-left: calc(var(--slide-spacing) * -1);
 }

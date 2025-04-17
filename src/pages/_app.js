@@ -23,8 +23,12 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" href="/images/favicon.svg" />
         <meta
           name="google-site-verification"
-          content="R28eoLjUYrldzCTVPJyB50E-zTd2cWaogKpJP3ycGFM"
+          content="xsimMs7zxe8r99xjQlDHSjHap86u9irM9JTHkI3xNpg"
         />
+        {/* <meta
+          name="google-site-verification"
+          content="R28eoLjUYrldzCTVPJyB50E-zTd2cWaogKpJP3ycGFM"
+        /> */}
       </Head>
       <main
         className={`${primary.className} ${SfProDisplay.variable} ${fontMono.variable} `}
