@@ -25,10 +25,10 @@ export default function App({ Component, pageProps }) {
           name="google-site-verification"
           content="xsimMs7zxe8r99xjQlDHSjHap86u9irM9JTHkI3xNpg"
         />
-        <meta
+        {/* <meta
           name="google-site-verification"
           content="R28eoLjUYrldzCTVPJyB50E-zTd2cWaogKpJP3ycGFM"
-        />
+        /> */}
       </Head>
       <main
         className={`${primary.className} ${SfProDisplay.variable} ${fontMono.variable} `}
