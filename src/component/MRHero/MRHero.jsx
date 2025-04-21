@@ -24,8 +24,7 @@ const MRHero = ({
                             {subTitle && <h1 className="text-[18px] uppercase leading-none font-sans font-semibold border-[3px] border-primary-100 text-secondary-100 w-max p-2 !mb-4">{subTitle}</h1>}
                             {title && subTitle ? <h2 className="text-[30px] mr-lg:text-[35px] mr-xl:text-[45px] mr-2xl:text-[40px] font-sans font-semibold leading-tight text-secondary-200 mb-4" dangerouslySetInnerHTML={{ __html: title }} /> : <h1 className="text-[30px] mr-lg:text-[35px] mr-xl:text-[40px] mr-2xl:text-[45px] font-sans font-bold leading-tight text-secondary-200 mb-4" dangerouslySetInnerHTML={{ __html: title }} />}
                             {desc && <p className="text-[16px] font-sans font-normal leading-normal !mb-4 text-justify lg:text-left" dangerouslySetInnerHTML={{__html : desc}} />}
-                            {
-                                groupCTA ?
+                            {groupCTA ?
                                     <MRCTAGroup isPopup={isPopup} /> :
                                     <MRCTA
                                         text="Start Your Publishing Journey Today"

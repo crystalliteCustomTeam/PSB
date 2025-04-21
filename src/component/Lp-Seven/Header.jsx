@@ -93,7 +93,7 @@ const Header = () => {
       <div className="bg-white py-5">
         <div className="mr-container">
           <div className="flex flex-wrap gap-y-5 gap-x-5 items-center mr-md:justify-between justify-center">
-            <Link href="/">
+            <Link href="#" >
               <Image
                 quality={95}
                 src={Logo}
@@ -105,7 +105,7 @@ const Header = () => {
               />
             </Link>
             <div className="mr-md:flex hidden items-center gap-x-5">
-              <CTA isPopup={true} />
+              <CTA   handle="parent.LC_API.open_chat_window();return false;" />
               <CTA
                 text="+1 (800) 781-9093"
                 link="tel:8556666675"

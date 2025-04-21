@@ -1,10 +1,11 @@
 // Next
-import Image from "next/image"
+import Image from "next/image";
 // Media
-import CheckIcon from "media/lp-seven/icons/check.png"
-import Banner from "media/lp-seven/book_banner.jpg"
+import CheckIcon from "media/lp-seven/icons/check.png";
+import Banner from "media/lp-seven/book_banner.jpg";
 // Components
-import { CTA } from "./index"
+import { CTA } from "./index";
+import { MRCTAGroup } from "@/component";
 const Hero = () => {
   return (
     <section>
@@ -39,7 +40,17 @@ const Hero = () => {
               ))}
             </ul>
             <div className="mr-md:flex hidden items-center gap-x-5 mt-10">
-              <CTA isPopup={true} />
+              <CTA   handle="parent.LC_API.open_chat_window();return false;"/>
+              {/* <div
+                dangerouslySetInnerHTML={{
+                  __html: `<a 
+      href="javascript:;" 
+      class="w-full mr-md:w-max h-[50px] rounded-md flex items-center !px-10 font-sans font-semibold justify-center border-2 transition-all" 
+      onclick="parent.LC_API.open_chat_window();return false;">
+        124
+    </a>`,
+                }}
+              /> */}
               <CTA
                 text="Call Now"
                 link="tel:8556666675"
@@ -51,7 +62,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
