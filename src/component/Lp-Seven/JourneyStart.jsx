@@ -55,7 +55,7 @@ const JourneyStart = () => {
                 ))}
               </ul>
               <div className="flex justify-center items-center gap-x-5 mr-md:mt-10 mt-8">
-                <CTA isPopup={true} />
+                <CTA   handle="parent.LC_API.open_chat_window();return false;" />
                 <CTA
                   text="Call Now"
                   link="tel:8556666675"
