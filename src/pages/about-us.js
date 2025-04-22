@@ -55,11 +55,11 @@ const about = () => {
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
 
-        <meta property="og:url" content="https://bestsellingpublisher.com/about-us" />
+        <meta property="og:url" content="https://www.bestsellingpublisher.com/about-us" />
         <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
 
         {/* canonical: */}
-        <link rel="canonical" href="https://bestsellingpublisher.com/about-us" />
+        <link rel="canonical" href="https://www.bestsellingpublisher.com/about-us" />
       </Head>
       <main>
         <MRHero

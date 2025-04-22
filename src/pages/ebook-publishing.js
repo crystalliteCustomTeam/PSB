@@ -47,7 +47,7 @@ const EbookPublishing = () => {
     "@context": "https://schema.org/",
     "@type": "WebSite",
     "name": "Ebook Publishing | Best Selling Publisher",
-    "url": "https://bestsellingpublisher.com/ebook-publishing",
+    "url": "https://www.bestsellingpublisher.com/ebook-publishing",
     "potentialAction": {
       "@type": "SearchAction",
       "target": "{search_term_string}",
@@ -58,15 +58,15 @@ const EbookPublishing = () => {
     "@context": "https://schema.org",
     "@type": "Corporation",
     "name": "Ebook Publishing Services | Best Selling Publisher",
-    "url": "https://bestsellingpublisher.com/ebook-publishing",
-    "logo": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png"
+    "url": "https://www.bestsellingpublisher.com/ebook-publishing",
+    "logo": "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png"
   }
   const schemaProffesionalService = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "Ebook Publishing Services | Best Selling Publisher",
-    "image": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
-    "url": "https://bestsellingpublisher.com/ebook-publishing",
+    "image": "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+    "url": "https://www.bestsellingpublisher.com/ebook-publishing",
     "telephone": "(800) 781-9093",
     "address": {
       "@type": "PostalAddress",
@@ -98,7 +98,7 @@ const EbookPublishing = () => {
     "@context": "https://schema.org/", 
     "@type": "Product", 
     "name": "Ebook Publishing Services | Best Selling Publisher",
-    "image": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+    "image": "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
     "description": "Hire the ebook publishing services and publish your masterpiece on your favourite platform",
     "brand": {
       "@type": "Brand",
@@ -121,11 +121,11 @@ const EbookPublishing = () => {
         <meta name="geo.region" content="US" />
         <meta name="geo.position" content="39.78373;-100.445882" />
         <meta name="ICBM" content="39.78373, -100.445882" />
-        <meta property="og:url" content="https://bestsellingpublisher.com/ebook-publishing" />
+        <meta property="og:url" content="https://www.bestsellingpublisher.com/ebook-publishing" />
         <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
 
         {/* canonical: */}
-        <link rel="canonical" href="https://bestsellingpublisher.com/ebook-publishing" />
+        <link rel="canonical" href="https://www.bestsellingpublisher.com/ebook-publishing" />
 
         {/* Schema */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaWebsite)}}/>

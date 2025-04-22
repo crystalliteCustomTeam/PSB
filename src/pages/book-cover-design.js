@@ -75,7 +75,7 @@ const BookCoverDesign = () => {
     "@context": "https://schema.org/",
     "@type": "WebSite",
     "name": "Book Cover Design Services | Best Selling Publisher",
-    "url": "https://bestsellingpublisher.com/book-cover-design",
+    "url": "https://www.bestsellingpublisher.com/book-cover-design",
     "potentialAction": {
       "@type": "SearchAction",
       "target": "{search_term_string}",
@@ -86,16 +86,16 @@ const BookCoverDesign = () => {
     "@context": "https://schema.org",
     "@type": "Corporation",
     "name": "Book Cover Design Services | Best Selling Publisher",
-    "url": "https://bestsellingpublisher.com/book-cover-design",
-    "logo": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png"
+    "url": "https://www.bestsellingpublisher.com/book-cover-design",
+    "logo": "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png"
   }
 
   const schemaProffesionalService = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "Book Cover Design Services | Best Selling Publisher",
-    "image": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
-    "url": "https://bestsellingpublisher.com/book-cover-design",
+    "image": "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+    "url": "https://www.bestsellingpublisher.com/book-cover-design",
     "telephone": "(800) 781-9093",
     "address": {
       "@type": "PostalAddress",
@@ -127,7 +127,7 @@ const BookCoverDesign = () => {
     "@context": "https://schema.org/",
     "@type": "Product",
     "name": "Book Cover Design Services | Best Selling Publisher",
-    "image": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+    "image": "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
     "description": "Design professional and top quality book covers with our book cover design services",
     "brand": {
       "@type": "Brand",
@@ -148,11 +148,11 @@ const BookCoverDesign = () => {
         <meta name="geo.region" content="US" />
         <meta name="geo.position" content="39.78373;-100.445882" />
         <meta name="ICBM" content="39.78373, -100.445882" />
-        <meta property="og:url" content="https://bestsellingpublisher.com/book-cover-design" />
+        <meta property="og:url" content="https://www.bestsellingpublisher.com/book-cover-design" />
         <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
 
         {/* canonical: */}
-        <link rel="canonical" href="https://bestsellingpublisher.com/book-cover-design" />
+        <link rel="canonical" href="https://www.bestsellingpublisher.com/book-cover-design" />
 
         {/* Schema */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaWebsite) }} />

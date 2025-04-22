@@ -96,7 +96,7 @@ const ProfessionalGhostwriting = () => {
     "@context": "https://schema.org/",
     "@type": "WebSite",
     name: "Ghostwriting Services | Best Selling Publisher",
-    url: "https://bestsellingpublisher.com/ghostwriting",
+    url: "https://www.bestsellingpublisher.com/ghostwriting",
     potentialAction: {
       "@type": "SearchAction",
       target: "{search_term_string}",
@@ -108,16 +108,16 @@ const ProfessionalGhostwriting = () => {
     "@context": "https://schema.org",
     "@type": "Corporation",
     name: "Ghostwriting Services | Best Selling Publisher",
-    url: "https://bestsellingpublisher.com/ghostwriting",
-    logo: "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+    url: "https://www.bestsellingpublisher.com/ghostwriting",
+    logo: "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
   }
   const schemaProffesionalService = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     name: "Ghostwriting Services | Best Selling Publisher",
     image:
-      "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
-    url: "https://bestsellingpublisher.com/ghostwriting",
+      "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+    url: "https://www.bestsellingpublisher.com/ghostwriting",
     telephone: "(800) 781-9093",
     address: {
       "@type": "PostalAddress",
@@ -144,7 +144,7 @@ const ProfessionalGhostwriting = () => {
     "@type": "Product",
     name: "Ghostwriting Services | Best Selling Publisher",
     image:
-      "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+      "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
     description:
       "Get your book written with our top-rated ghostwriters as you hire our ghostwriting services",
     brand: {
@@ -171,7 +171,7 @@ const ProfessionalGhostwriting = () => {
 
         <meta
           property="og:url"
-          content="https://bestsellingpublisher.com/ghostwriting"
+          content="https://www.bestsellingpublisher.com/ghostwriting"
         />
         <meta
           property="og:image"
@@ -181,7 +181,7 @@ const ProfessionalGhostwriting = () => {
         {/* canonical: */}
         <link
           rel="canonical"
-          href="https://bestsellingpublisher.com/ghostwriting"
+          href="https://www.bestsellingpublisher.com/ghostwriting"
         />
 
         {/* Schema */}

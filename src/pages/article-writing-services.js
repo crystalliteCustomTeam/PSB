@@ -98,7 +98,7 @@ const ArticleWritingServices = () => {
     "@context": "https://schema.org/",
     "@type": "WebSite",
     "name": "Article Writing Services | Best Selling Publisher",
-    "url": "https://bestsellingpublisher.com/article-writing-services",
+    "url": "https://www.bestsellingpublisher.com/article-writing-services",
     "potentialAction": {
       "@type": "SearchAction",
       "target": "{search_term_string}",
@@ -109,15 +109,15 @@ const ArticleWritingServices = () => {
     "@context": "https://schema.org",
     "@type": "Corporation",
     "name": "Article Writing Services | Best Selling Publisher",
-    "url": "https://bestsellingpublisher.com/article-writing-services",
-    "logo": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png"
+    "url": "https://www.bestsellingpublisher.com/article-writing-services",
+    "logo": "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png"
   }
   const schemaProffesionalService = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "Article Writing Services | Best Selling Publisher",
-    "image": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
-    "url": "https://bestsellingpublisher.com/article-writing-services",
+    "image": "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+    "url": "https://www.bestsellingpublisher.com/article-writing-services",
     "telephone": "(800) 781-9093",
     "address": {
       "@type": "PostalAddress",
@@ -149,7 +149,7 @@ const ArticleWritingServices = () => {
     "@context": "https://schema.org/", 
     "@type": "Product", 
     "name": "Article Writing Services | Best Selling Publisher",
-    "image": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+    "image": "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
     "description": "Discover our professional article writing services by hiring us today",
     "brand": {
       "@type": "Brand",
@@ -171,11 +171,11 @@ const ArticleWritingServices = () => {
         <meta name="geo.position" content="39.78373;-100.445882" />
         <meta name="ICBM" content="39.78373, -100.445882" />
 
-        <meta property="og:url" content="https://bestsellingpublisher.com/article-writing-services" />
+        <meta property="og:url" content="https://www.bestsellingpublisher.com/article-writing-services" />
         <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
 
         {/* canonical: */}
-        <link rel="canonical" href="https://bestsellingpublisher.com/article-writing-services" />
+        <link rel="canonical" href="https://www.bestsellingpublisher.com/article-writing-services" />
 
         {/* Schema */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schemaWebsite)}}/>
@@ -233,7 +233,7 @@ const ArticleWritingServices = () => {
       <CTA
         subtitle="It's Time to Kick Off Your Dream Project"
         title="Are You Ready to Start Publishing?"
-        desc="Our team is here for you if you want to start <a href='https://bestsellingpublisher.com/book-publishing'> book publishing</a>! Do you have questions or need assistance? Just reach out during our operational hours. We're always happy to help. Don't be shy – we'd love to hear from you!"
+        desc="Our team is here for you if you want to start <a href='https://www.bestsellingpublisher.com/book-publishing'> book publishing</a>! Do you have questions or need assistance? Just reach out during our operational hours. We're always happy to help. Don't be shy – we'd love to hear from you!"
       />
       <MRCards
         subTitle="We Pursue"

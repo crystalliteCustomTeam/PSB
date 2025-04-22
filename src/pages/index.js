@@ -58,7 +58,7 @@ const MRCardData = [
       },
       {
         title: "Amazon Book Publishing",
-        desc: `We specialize in <a href="https://bestsellingpublisher.com/amazon-book-publishing" rel="dofollow"> Amazon Publishing Services </a> to provide comprehensive support for authors looking to thrive in the competitive online marketplace. From formatting to optimization, we handle every aspect to ensure your book stands out and reaches its full potential on Amazon. With expertise in Kindle Direct Publishing (KDP) setup and keyword optimization, we maximize your book's reach and potential sales.`,
+        desc: `We specialize in <a href="https://www.bestsellingpublisher.com/amazon-book-publishing" rel="dofollow"> Amazon Publishing Services </a> to provide comprehensive support for authors looking to thrive in the competitive online marketplace. From formatting to optimization, we handle every aspect to ensure your book stands out and reaches its full potential on Amazon. With expertise in Kindle Direct Publishing (KDP) setup and keyword optimization, we maximize your book's reach and potential sales.`,
       },
       {
         title: "Book Editing and Publishing",
@@ -74,7 +74,7 @@ const MRCardData = [
       },
       {
         title: "Book Printing",
-        desc: `From paperback to hardcover, we offer many options to suit your needs in our <a href="https://bestsellingpublisher.com/book-printing" rel="dofollow">book printing services.</a> Using cutting-edge technology, we take pride in delivering top-grade printing quality to ensure every detail of your book is reproduced with clarity and precision.`,
+        desc: `From paperback to hardcover, we offer many options to suit your needs in our <a href="https://www.bestsellingpublisher.com/book-printing" rel="dofollow">book printing services.</a> Using cutting-edge technology, we take pride in delivering top-grade printing quality to ensure every detail of your book is reproduced with clarity and precision.`,
       },
     ],
   },
@@ -114,7 +114,7 @@ const Home = () => {
     "@context": "https://schema.org/",
     "@type": "WebSite",
     name: "Best Selling Publisher",
-    url: "https://bestsellingpublisher.com/",
+    url: "https://www.bestsellingpublisher.com/",
     potentialAction: {
       "@type": "SearchAction",
       target: "{search_term_string}",
@@ -125,8 +125,8 @@ const Home = () => {
     "@context": "https://schema.org",
     "@type": "Corporation",
     name: "Best Selling Publisher",
-    url: "https://bestsellingpublisher.com/",
-    logo: "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+    url: "https://www.bestsellingpublisher.com/",
+    logo: "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
   };
 
   const schemaProffesionalService = {
@@ -134,8 +134,8 @@ const Home = () => {
     "@type": "ProfessionalService",
     name: "Best Selling Publisher",
     image:
-      "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
-    url: "https://bestsellingpublisher.com/",
+      "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+    url: "https://www.bestsellingpublisher.com/",
     telephone: "(800) 781-9093",
     address: {
       "@type": "PostalAddress",
@@ -162,7 +162,7 @@ const Home = () => {
     "@type": "Product",
     name: "Best Selling Publisher",
     image:
-      "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+      "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
     description:
       "Best Selling Publisher can publish your book in no time as we are the leading book publishers in US",
     brand: {
@@ -196,14 +196,14 @@ const Home = () => {
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         />
 
-        <meta property="og:url" content="https://bestsellingpublisher.com" />
+        <meta property="og:url" content="https://www.bestsellingpublisher.com" />
         <meta
           property="og:image"
           content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public"
         />
 
         {/* canonical: */}
-        <link rel="canonical" href="https://bestsellingpublisher.com" />
+        <link rel="canonical" href="https://www.bestsellingpublisher.com" />
 
         {/* Schema */}
         <script

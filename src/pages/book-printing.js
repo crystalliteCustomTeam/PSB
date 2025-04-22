@@ -19,13 +19,13 @@ const BookPrinting = () => {
         {
           title: "Low Upfront Costs",
           textColor: "text-[#40BEE2]",
-          desc: "Looking for an affordable way to publish? We're so glad you found us! <span class='h-3 block'></span> At Best Selling Publisher, we're all about making <a href='https://bestsellingpublisher.com/book-publishing'> book publishing </a> accessible to everyone. That's why our services come with low upfront costs, perfect for aspiring authors and established writers. With transparent pricing and no hidden fees, you can start your publishing journey confidently, assured that you're getting outstanding value for every penny invested.",
+          desc: "Looking for an affordable way to publish? We're so glad you found us! <span class='h-3 block'></span> At Best Selling Publisher, we're all about making <a href='https://www.bestsellingpublisher.com/book-publishing'> book publishing </a> accessible to everyone. That's why our services come with low upfront costs, perfect for aspiring authors and established writers. With transparent pricing and no hidden fees, you can start your publishing journey confidently, assured that you're getting outstanding value for every penny invested.",
           minHeight: "overflow-y-scroll h-[130px]",
         },
         {
           title: "Complete Publishing Solution",
           textColor: "text-[#40BEE2]",
-          desc: "Do you want a publishing partner who's got your back every step of the way? <span class='h-3 block'></span> Best Selling Publisher is here with solutions crafted to meet all your needs. Our journey covers everything from <a href='https://bestsellingpublisher.com/book-editing'>book editing</a> and design to distribution and marketing, ensuring your book realizes its full potential. With a team of experts dedicated to your project, we walk you through the entire publishing process, offering personalized advice and support tailored just for you.",
+          desc: "Do you want a publishing partner who's got your back every step of the way? <span class='h-3 block'></span> Best Selling Publisher is here with solutions crafted to meet all your needs. Our journey covers everything from <a href='https://www.bestsellingpublisher.com/book-editing'>book editing</a> and design to distribution and marketing, ensuring your book realizes its full potential. With a team of experts dedicated to your project, we walk you through the entire publishing process, offering personalized advice and support tailored just for you.",
           minHeight: "overflow-y-scroll h-[130px]",
         },
         {
@@ -76,7 +76,7 @@ const BookPrinting = () => {
     "@context": "https://schema.org/",
     "@type": "WebSite",
     "name": "Book Printing Services | Best Selling Publisher",
-    "url": "https://bestsellingpublisher.com/book-printing",
+    "url": "https://www.bestsellingpublisher.com/book-printing",
     "potentialAction": {
       "@type": "SearchAction",
       "target": "{search_term_string}",
@@ -88,15 +88,15 @@ const BookPrinting = () => {
     "@context": "https://schema.org",
     "@type": "Corporation",
     "name": "Book Printing Services | Best Selling Publisher",
-    "url": "https://bestsellingpublisher.com/book-printing",
-    "logo": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png"
+    "url": "https://www.bestsellingpublisher.com/book-printing",
+    "logo": "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png"
   }
   const schemaProffesionalService = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "Book Printing Services | Best Selling Publisher",
-    "image": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
-    "url": "https://bestsellingpublisher.com/book-printing",
+    "image": "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+    "url": "https://www.bestsellingpublisher.com/book-printing",
     "telephone": "(800) 781-9093",
     "address": {
       "@type": "PostalAddress",
@@ -128,7 +128,7 @@ const BookPrinting = () => {
     "@context": "https://schema.org/", 
     "@type": "Product", 
     "name": "Book Printing Services | Best Selling Publisher",
-    "image": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+    "image": "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
     "description": "Get crystal clear and vivid colors of your book pages with our book printing services",
     "brand": {
       "@type": "Brand",
@@ -149,11 +149,11 @@ const BookPrinting = () => {
         <meta name="geo.region" content="US" />
         <meta name="geo.position" content="39.78373;-100.445882" />
         <meta name="ICBM" content="39.78373, -100.445882" />
-        <meta property="og:url" content="https://bestsellingpublisher.com/book-printing" />
+        <meta property="og:url" content="https://www.bestsellingpublisher.com/book-printing" />
         <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
 
         {/* canonical: */}
-        <link rel="canonical" href="https://bestsellingpublisher.com/book-printing" />
+        <link rel="canonical" href="https://www.bestsellingpublisher.com/book-printing" />
 
         {/* Schema */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaWebsite)}}/>
