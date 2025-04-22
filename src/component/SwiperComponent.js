@@ -155,7 +155,7 @@ const TestimonialsSlider = ({
                         height={80}
                         priority={true}/>
                       <div className="header">
-                        <h1 className="name">{testimonial.name}</h1>
+                        <div className="name">{testimonial.name}</div>
                       </div>
                       <div className="quote-container">
                         <p className="quote text-[9px]">{testimonial.quote}</p>
