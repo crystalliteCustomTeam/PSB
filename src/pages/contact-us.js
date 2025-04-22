@@ -42,11 +42,11 @@ const contact = () => {
           <title>Contact Us | Best Selling Publisher</title>
           <meta name="description" content="" />
 
-          <meta property="og:url" content="https://bestsellingpublisher.com/contact-us" />
+          <meta property="og:url" content="https://www.bestsellingpublisher.com/contact-us" />
           <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
 
           {/* canonical: */}
-          <link rel="canonical" href="https://bestsellingpublisher.com/contact-us" />
+          <link rel="canonical" href="https://www.bestsellingpublisher.com/contact-us" />
         </Head>
         <MRHero
           title="Witness Excellence By <br /> Working With The Top <br /> Industry Specialists"

@@ -104,7 +104,7 @@ const SEOContentWritingServices = () => {
     "@context": "https://schema.org/",
     "@type": "WebSite",
     "name": "SEO Content Writing Services | Best Selling Publisher",
-    "url": "https://bestsellingpublisher.com/seo-content-writing-services",
+    "url": "https://www.bestsellingpublisher.com/seo-content-writing-services",
     "potentialAction": {
       "@type": "SearchAction",
       "target": "{search_term_string}",
@@ -115,15 +115,15 @@ const SEOContentWritingServices = () => {
     "@context": "https://schema.org",
     "@type": "Corporation",
     "name": "SEO Content Writing Services | Best Selling Publisher",
-    "url": "https://bestsellingpublisher.com/seo-content-writing-services",
-    "logo": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png"
+    "url": "https://www.bestsellingpublisher.com/seo-content-writing-services",
+    "logo": "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png"
   }
   const schemaProffesionalService = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "SEO Content Writing Services | Best Selling Publisher",
-    "image": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
-    "url": "https://bestsellingpublisher.com/seo-content-writing-services",
+    "image": "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+    "url": "https://www.bestsellingpublisher.com/seo-content-writing-services",
     "telephone": "(800) 781-9093",
     "address": {
       "@type": "PostalAddress",
@@ -155,7 +155,7 @@ const SEOContentWritingServices = () => {
     "@context": "https://schema.org/", 
     "@type": "Product", 
     "name": "SEO Content Writing Services | Best Selling Publisher",
-    "image": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+    "image": "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
     "description": "If you want to write a professional website content then hire our SEO content writing services",
     "brand": {
       "@type": "Brand",
@@ -177,11 +177,11 @@ const SEOContentWritingServices = () => {
         <meta name="geo.region" content="US" />
         <meta name="geo.position" content="39.78373;-100.445882" />
         <meta name="ICBM" content="39.78373, -100.445882" />
-        <meta property="og:url" content="https://bestsellingpublisher.com/seo-content-writing-services" />
+        <meta property="og:url" content="https://www.bestsellingpublisher.com/seo-content-writing-services" />
         <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
 
         {/* canonical: */}
-        <link rel="canonical" href="https://bestsellingpublisher.com/seo-content-writing-services" />
+        <link rel="canonical" href="https://www.bestsellingpublisher.com/seo-content-writing-services" />
 
         {/* Schema */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaWebsite)}}/>

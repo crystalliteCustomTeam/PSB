@@ -33,7 +33,7 @@ const BookPublishing = () => {
     "@context": "https://schema.org/",
     "@type": "WebSite",
     name: "Book Publishing Services | Best Selling Publisher",
-    url: "https://bestsellingpublisher.com/book-publishing",
+    url: "https://www.bestsellingpublisher.com/book-publishing",
     potentialAction: {
       "@type": "SearchAction",
       target: "{search_term_string}",
@@ -44,8 +44,8 @@ const BookPublishing = () => {
     "@context": "https://schema.org",
     "@type": "Corporation",
     name: "Book Publishing Services | Best Selling Publisher",
-    url: "https://bestsellingpublisher.com/book-publishing",
-    logo: "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+    url: "https://www.bestsellingpublisher.com/book-publishing",
+    logo: "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
   }
 
   const schemaProffesionalService = {
@@ -53,8 +53,8 @@ const BookPublishing = () => {
     "@type": "ProfessionalService",
     name: "Book Publishing Services | Best Selling Publisher",
     image:
-      "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
-    url: "https://bestsellingpublisher.com/book-publishing",
+      "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+    url: "https://www.bestsellingpublisher.com/book-publishing",
     telephone: "(800) 781-9093",
     address: {
       "@type": "PostalAddress",
@@ -81,7 +81,7 @@ const BookPublishing = () => {
     "@type": "Product",
     name: "Book Publishing Services | Best Selling Publisher",
     image:
-      "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+      "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
     description:
       "Hire the best book publishers as our book publishing services can make your book the best seller",
     brand: {
@@ -105,7 +105,7 @@ const BookPublishing = () => {
 
         <meta
           property="og:url"
-          content="https://bestsellingpublisher.com/book-publishing"
+          content="https://www.bestsellingpublisher.com/book-publishing"
         />
         <meta
           property="og:image"
@@ -115,7 +115,7 @@ const BookPublishing = () => {
         {/* canonical: */}
         <link
           rel="canonical"
-          href="https://bestsellingpublisher.com/book-publishing"
+          href="https://www.bestsellingpublisher.com/book-publishing"
         />
 
         {/* Schema */}

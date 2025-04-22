@@ -13,7 +13,7 @@ const Genre = () => {
     "@context": "https://schema.org/",
     "@type": "WebSite",
     "name": "Genre | Best Selling Publisher",
-    "url": "https://bestsellingpublisher.com/genre",
+    "url": "https://www.bestsellingpublisher.com/genre",
     "potentialAction": {
       "@type": "SearchAction",
       "target": "{search_term_string}",
@@ -25,15 +25,15 @@ const Genre = () => {
     "@context": "https://schema.org",
     "@type": "Corporation",
     "name": "Genre | Best Selling Publisher",
-    "url": "https://bestsellingpublisher.com/genre",
-    "logo": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png"
+    "url": "https://www.bestsellingpublisher.com/genre",
+    "logo": "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png"
   }
   const schemaProffesionalService = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "Genre | Best Selling Publisher",
-    "image": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
-    "url": "https://bestsellingpublisher.com/genre",
+    "image": "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+    "url": "https://www.bestsellingpublisher.com/genre",
     "telephone": "(800) 781-9093",
     "address": {
       "@type": "PostalAddress",
@@ -65,7 +65,7 @@ const Genre = () => {
     "@context": "https://schema.org/", 
     "@type": "Product", 
     "name": "Genre | Best Selling Publisher",
-    "image": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+    "image": "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
     "description": "Discover the wide range of book genres that we publish and market",
     "brand": {
       "@type": "Brand",
@@ -88,11 +88,11 @@ const Genre = () => {
         <meta name="geo.position" content="39.78373;-100.445882" />
         <meta name="ICBM" content="39.78373, -100.445882" />
 
-        <meta property="og:url" content="https://bestsellingpublisher.com/genre" />
+        <meta property="og:url" content="https://www.bestsellingpublisher.com/genre" />
         <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
 
         {/* canonical: */}
-        <link rel="canonical" href="https://bestsellingpublisher.com/genre" />
+        <link rel="canonical" href="https://www.bestsellingpublisher.com/genre" />
         
         {/* Schema */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{__html : JSON.stringify(schemaWebsite)}}/>

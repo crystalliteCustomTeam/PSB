@@ -47,7 +47,7 @@ const BookMarketing = () => {
     "@context": "https://schema.org/",
     "@type": "WebSite",
     "name": "Book Marketing Services | Best Selling Publisher",
-    "url": "https://bestsellingpublisher.com/book-marketing",
+    "url": "https://www.bestsellingpublisher.com/book-marketing",
     "potentialAction": {
       "@type": "SearchAction",
       "target": "{search_term_string}",
@@ -58,15 +58,15 @@ const BookMarketing = () => {
     "@context": "https://schema.org",
     "@type": "Corporation",
     "name": "Book Marketing Services | Best Selling Publisher",
-    "url": "https://bestsellingpublisher.com/book-marketing",
-    "logo": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png"
+    "url": "https://www.bestsellingpublisher.com/book-marketing",
+    "logo": "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png"
   }
   const schemaProffesionalService = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "Book Marketing Services | Best Selling Publisher",
-    "image": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
-    "url": "https://bestsellingpublisher.com/book-marketing",
+    "image": "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+    "url": "https://www.bestsellingpublisher.com/book-marketing",
     "telephone": "(800) 781-9093",
     "address": {
       "@type": "PostalAddress",
@@ -98,7 +98,7 @@ const BookMarketing = () => {
     "@context": "https://schema.org/", 
     "@type": "Product", 
     "name": "Book Marketing Services | Best Selling Publisher",
-    "image": "https://bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+    "image": "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
     "description": "Market your book on Amazon and other platforms with our high quality book marketing services",
     "brand": {
       "@type": "Brand",
@@ -117,11 +117,11 @@ const BookMarketing = () => {
         <meta name="description" content="Experience the pinnacle of publishing services with the Best Book Publishing Company. With our commitment to quality, we guide every author toward success. Get started today!" />
         <meta name="robots" content="index, follow" />
 
-        <meta property="og:url" content="https://bestsellingpublisher.com/book-marketing" />
+        <meta property="og:url" content="https://www.bestsellingpublisher.com/book-marketing" />
         <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
 
         {/* canonical: */}
-        <link rel="canonical" href="https://bestsellingpublisher.com/book-marketing" />
+        <link rel="canonical" href="https://www.bestsellingpublisher.com/book-marketing" />
 
         {/* Schema */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaWebsite)}}/>

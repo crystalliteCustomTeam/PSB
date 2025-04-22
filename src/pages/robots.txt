@@ -1,4 +1,4 @@
 User-Agent: *
 Disallow:
 
-Sitemap: https://bestsellingpublisher.com/sitemap.xml
+Sitemap: https://www.bestsellingpublisher.com/sitemap.xml
