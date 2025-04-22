@@ -19,7 +19,7 @@ import XIcon from 'media/images/icons/x-icon.svg'
 const Bloginner = () => {
   // ===============
   const [ip, setIP] = useState('');
-  const [score, setScore] = useState('Submit Form');
+  const [score, setScore] = useState('Submit');
   const [pagenewurl, setPagenewurl] = useState('');
   const router = useRouter();
   const currentRoute = router.pathname;
@@ -58,7 +58,7 @@ const Bloginner = () => {
 
     const JSONdata = JSON.stringify(data);
 
-    setScore('Sending Data');
+    setScore('Processing...');
     console.log(JSONdata);
 
     try {
@@ -210,7 +210,7 @@ const Bloginner = () => {
                   type="email"
                   id="email"
                   name="email"
-                  className="p-3 bg-[#ededed] text-[#989898] border-b-2 border-[#fff] pb-2 w-full"
+                  className="p-3 bg-[#ededed] text-[#989898] border-b-2 border-[#fff] pb-2 w-1/2"
                   placeholder="Email"
                   required
                 />

@@ -58,7 +58,7 @@ const contact = () => {
           beforeImg="mr-md:before:bg-[url('../../public/imageAR/portrait-woman-customer-service-worker.png')] before:!opacity-100"
         />
         <Enlistedlogo />
-        <ContactModel></ContactModel>
+        <ContactModel />
         <BTM />
         <CTA />
         <MRCards
