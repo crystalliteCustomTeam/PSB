@@ -184,14 +184,14 @@ const RefundForm = () => {
           <div className="grid grid-cols-2">
             <div className={styles.refundTxt}>
               <h1 className="text-[30px] mr-lg:text-[35px] mr-xl:text-[40px] mr-2xl:text-[45px] font-sans font-bold leading-tight text-secondary-200 mb-4">
-                Refund Policy for Video Animation Studio
+                Refund Policy for Best Selling Publisher
               </h1>
               <p className="text-[16px] font-sans font-normal leading-normal !mb-5 text-justify lg:text-left">
-                Infiniti Media INC, aims to provide excellent service and ensure
-                customer satisfaction. Our refund and cancellation policies are
-                designed to protect both our clients and our company. Please
-                read through the following policy to understand how refund
-                requests are handled.
+                Best Selling Publisher, aims to provide excellent service and
+                ensure customer satisfaction. Our refund and cancellation
+                policies are designed to protect both our clients and our
+                company. Please read through the following policy to understand
+                how refund requests are handled.
               </p>
               <h3 className="text-[17px] mr-lg:text-[18px] mr-xl:text-[20px] mr-2xl:text-[25px] font-sans font-bold leading-tight text-secondary-200 mb-4">
                 General Refund Policy:
