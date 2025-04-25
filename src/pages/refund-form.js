@@ -45,7 +45,7 @@ const RefundForm = () => {
       refund_reason: e.target.refund_reason.value,
       comment: e.target.message.value,
       pageUrl: pagenewurl,
-      IP: `${ip.ip} - ${ip.country} - ${ip.city}`,
+      IP: ip.ip,
       currentdate: currentdate,
     };
 
@@ -79,7 +79,7 @@ const RefundForm = () => {
     };
 
     const bodyContent = JSON.stringify({
-      IP: `${ip.ip} - ${ip.country} - ${ip.city}`,
+      IP: ip.ip,
       Brand: "BEST SELLING PUBLISHER",
       Page: currentRoute,
       Date: currentdate,
