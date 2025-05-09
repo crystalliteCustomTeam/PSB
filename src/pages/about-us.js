@@ -1,27 +1,25 @@
-import React from 'react';
-import IM from '../component/impressiveWorks1';
-import BTM from '../component/bottomLogos';
-import CTA from '../component/cta3';
-import SwiperComponents from '../component/SwiperComponent'
-import LogoSliders from '../component/LogoSlider'
-import DM1 from '../component/demandingSpecilaist1'
-import BW1 from '../component/bookWriting1';
-import { MRCards, MRHero } from '@/component';
-import Head from 'next/head';
-
-
+import React from "react";
+import IM from "../component/impressiveWorks1";
+import BTM from "../component/bottomLogos";
+import CTA from "../component/cta3";
+import SwiperComponents from "../component/SwiperComponent";
+import LogoSliders from "../component/LogoSlider";
+import DM1 from "../component/demandingSpecilaist1";
+import BW1 from "../component/bookWriting1";
+import { MRCards, MRHero } from "@/component";
+import Head from "next/head";
 
 const about = () => {
-
   const openLiveChat = (e) => {
     e.preventDefault();
     if (window.LiveChatWidget) {
-      window.LiveChatWidget.call('maximize');
+      window.LiveChatWidget.call("maximize");
     }
   };
   const MRCardData2 = [
     {
-      classes: "bg-[#fff] shadow-lg mr-2xl:px-4 px-2 rounded-xl relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-left",
+      classes:
+        "bg-[#fff] shadow-lg mr-2xl:px-4 px-2 rounded-xl relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-left",
       stepText: "Step",
       indexing: true,
       content: [
@@ -45,21 +43,34 @@ const about = () => {
           title: "Publish & Distribute",
           desc: "Witness your book being published and reaching readers across the globe.",
         },
-      ]
-    }]
+      ],
+    },
+  ];
   return (
     <>
       <Head>
-        <title>Premier Book Publishing Assistance | Book Selling Publisher</title>
-        <meta name="description" content="From eBooks to audiobooks, we offer a wide range of publishing services tailored to meet your needs. Contact us today to get started on your project." />
+        <title>About Us - Best Selling Publisher</title>
+        <meta
+          name="description"
+          content="Get to know all about Best Selling Publisher and the amazing books that we have published and marketed so far. Connect with us and get a quote now!"
+        />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
 
-        <meta property="og:url" content="https://www.bestsellingpublisher.com/about-us" />
-        <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
+        <meta
+          property="og:url"
+          content="https://www.bestsellingpublisher.com/about-us"
+        />
+        <meta
+          property="og:image"
+          content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public"
+        />
 
         {/* canonical: */}
-        <link rel="canonical" href="https://www.bestsellingpublisher.com/about-us" />
+        <link
+          rel="canonical"
+          href="https://www.bestsellingpublisher.com/about-us"
+        />
       </Head>
       <main>
         <MRHero
@@ -72,15 +83,17 @@ const about = () => {
         />
         <LogoSliders />
         <IM
-          title='Every Project Is Treated Like a Work of Art'
+          title="Every Project Is Treated Like a Work of Art"
           desc={"We don't just think outside the box — we obliterate it."}
         />
         <DM1
-          title='Our Specialists Are Always in Demand'
-          desc={"Ever wondered what makes a story truly captivating?  It combines linguistic finesse, creative brilliance, and technical know-how perfectly. And guess what? Our team of writing experts has it all! From crafting compelling narratives to distilling complex information into accessible content, they're the wizards behind our communication success."}
+          title="Our Specialists Are Always in Demand"
+          desc={
+            "Ever wondered what makes a story truly captivating?  It combines linguistic finesse, creative brilliance, and technical know-how perfectly. And guess what? Our team of writing experts has it all! From crafting compelling narratives to distilling complex information into accessible content, they're the wizards behind our communication success."
+          }
         />
         <BW1
-          title='Let the Finest Writers Guide You!'
+          title="Let the Finest Writers Guide You!"
           desc={`How cool would it be to team up with the greatest literary minds?
           You'd get insider insights, hands-on guidance, and a huge boost in credibility for your book. They'll walk you through the publishing like a pro, ensuring your masterpiece gets the spotlight it deserves.`}
           descs={`Plus, having a well-known writer in your corner? That's a game-changer. 
@@ -100,11 +113,12 @@ const about = () => {
           gridsClasses="mr-xl:grid-cols-4 mr-lg:grid-cols-3 mr-sm:grid-cols-2 !gap-x-5"
           cta={false}
           variant="steps"
-          data={MRCardData2} />
+          data={MRCardData2}
+        />
         <SwiperComponents />
       </main>
     </>
-  )
-}
+  );
+};
 
-export default about
+export default about;

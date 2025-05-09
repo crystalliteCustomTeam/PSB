@@ -1,22 +1,22 @@
-import "@/styles/globals.css"
-import "@/styles/custom.css"
-import { useState, useEffect } from "react"
-import Head from "next/head"
-import Headernew from "@/component/Headernew"
-import Footer1 from "@/component/Footer1"
-import { SfProDisplay, primary, fontMono } from "@/configs/fonts"
-import Script from "next/script"
-import { useRouter } from "next/router"
-import Loader from "@/component/Loader/Loader"
-import { PopupProvider } from "@/component/LP-Eight/Popup/PopupContext"
+import "@/styles/globals.css";
+import "@/styles/custom.css";
+import { useState, useEffect } from "react";
+import Head from "next/head";
+import Headernew from "@/component/Headernew";
+import Footer1 from "@/component/Footer1";
+import { SfProDisplay, primary, fontMono } from "@/configs/fonts";
+import Script from "next/script";
+import { useRouter } from "next/router";
+import Loader from "@/component/Loader/Loader";
+import { PopupProvider } from "@/component/LP-Eight/Popup/PopupContext";
 export default function App({ Component, pageProps }) {
-  const [loadScript, setLoadScript] = useState(false)
+  const [loadScript, setLoadScript] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoadScript(true), 3000)
-    return () => clearTimeout(timer)
-  }, [])
-  const router = useRouter()
+    const timer = setTimeout(() => setLoadScript(true), 3000);
+    return () => clearTimeout(timer);
+  }, []);
+  const router = useRouter();
   return (
     <>
       <Head>
@@ -77,82 +77,69 @@ export default function App({ Component, pageProps }) {
       </main>
       {loadScript && (
         <>
-          <Script strategy="afterInteractive" id="tawk-to">
+          {/* LiveChat Script */}
+          <Script strategy="afterInteractive" id="livechat-script">
             {`
-              window.__lc = window.__lc || {};
-              window.__lc.license = 19030650;
-              window.__lc.integration_name = "manual_onboarding";
-              window.__lc.product_name = "livechat";
-              ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
-            `}
+          window.__lc = window.__lc || {};
+          window.__lc.license = 19030650;
+          window.__lc.integration_name = "manual_onboarding";
+          window.__lc.product_name = "livechat";
+          (function(n, t, c) {
+            function i(n) {
+              return e._h ? e._h.apply(null, n) : e._q.push(n);
+            }
+            var e = {
+              _q: [], _h: null, _v: "2.0",
+              on: function() { i(["on", c.call(arguments)]) },
+              once: function() { i(["once", c.call(arguments)]) },
+              off: function() { i(["off", c.call(arguments)]) },
+              get: function() {
+                if (!e._h) throw new Error("[LiveChatWidget] You can't use getters before load.");
+                return i(["get", c.call(arguments)]);
+              },
+              call: function() { i(["call", c.call(arguments)]) },
+              init: function() {
+                var n = t.createElement("script");
+                n.async = true;
+                n.type = "text/javascript";
+                n.src = "https://cdn.livechatinc.com/tracking.js";
+                t.head.appendChild(n);
+              }
+            };
+            !n.__lc.asyncInit && e.init();
+            n.LiveChatWidget = n.LiveChatWidget || e;
+          })(window, document, [].slice);
+        `}
           </Script>
-          <Script id="chat-script-1">
-            {`(function(w,d,s,l,i){
-              w[l] = w[l] || [];
-              w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
-              var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-              j.async = true;
-              j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-              f.parentNode.insertBefore(j, f);
-            })(window, document, 'script', 'dataLayer', 'GTM-WQT66SHZ');`}
-          </Script>
-          {/* <Script
-            id="chat-script-2"
-            src="https://www.googletagmanager.com/gtag/js?id=G-66Q1HF396Z"
-          ></Script>
-          <Script id="chat-script-3">
+
+          {/* Google Tag Manager Script */}
+          <Script strategy="afterInteractive" id="gtm-script">
             {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag() { dataLayer.push(arguments); }
-              gtag('js', new Date());
-              gtag('config', 'G-66Q1HF396Z');
-            `}
-          </Script> */}
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-MXL5ZHGD');
+        `}
+          </Script>
+
+          {/* Google Ads Script */}
           <Script
-            id="chat-script-2"
+            strategy="afterInteractive"
+            id="google-ads-script"
             src="https://www.googletagmanager.com/gtag/js?id=AW-11022581138"
-          ></Script>
-          <Script id="chat-script-3">
+          />
+
+          <Script strategy="afterInteractive" id="google-ads-config">
             {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag() { dataLayer.push(arguments); }
-              gtag('js', new Date());
-              gtag('config', 'AW-11022581138');
-            `}
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          gtag('js', new Date());
+          gtag('config', 'AW-11022581138');
+        `}
           </Script>
-          <Script id="chat-script-4">
-            {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-MPS5N2P3');`}
-          </Script>
-          <noscript>
-            <iframe
-              src="https://www.googletagmanager.com/ns.html?id=GTM-MPS5N2P3"
-              height="0"
-              width="0"
-              style="display:none;visibility:hidden"
-            ></iframe>
-          </noscript>
-          <noscript>
-            <a
-              href="https://embed.tawk.to/677dc97f49e2fd8dfe03fd14/1ih1lm789"
-              rel="nofollow"
-            >
-              Chat with us
-            </a>
-            , powered by{" "}
-            <a
-              href="https://www.tawk.to"
-              rel="noopener nofollow"
-              target="_blank"
-            >
-              Tawk.to
-            </a>
-          </noscript>
         </>
       )}
     </>
-  )
+  );
 }

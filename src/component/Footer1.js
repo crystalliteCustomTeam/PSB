@@ -1,33 +1,33 @@
-import Image from "next/image"
-import Link from "next/link"
-import React from "react"
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
 // Import Slick Slider
-import Slider from "react-slick"
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 // Images
-import Logo from "media/assets/images/logo.png"
-import Facebook from "media/images/icons/facebook.svg"
-import Instagram from "media/images/icons/instagram.svg"
-import XIcon from "media/images/icons/x-icon.svg"
-import Tel from "media/assets/sikander/telicon.png"
-import Email from "media/assets/sikander/email.png"
-import Location from "media/assets/sikander/location.png"
-import Payment1 from "media/assets/images/payment1.png"
-import Payment2 from "media/assets/images/payment2.png"
-import Payment3 from "media/assets/images/payment3.webp"
-import Slide1 from "media/assets/sikander/slide1.png"
-import Slide2 from "media/assets/sikander/slide2.png"
-import Slide3 from "media/assets/sikander/slide3.png"
-import Slide4 from "media/assets/sikander/slide4.png"
-import Slide5 from "media/assets/sikander/slide5.png"
-import Slide6 from "media/assets/sikander/slide6.png"
-import Slide7 from "media/assets/sikander/slide7.png"
-import Slide8 from "media/assets/sikander/slide8.png"
-import Slide9 from "media/assets/sikander/slide9.png"
-import Slide10 from "media/assets/sikander/slide10.png"
+import Logo from "media/assets/images/logo.png";
+import Facebook from "media/images/icons/facebook.svg";
+import Instagram from "media/images/icons/instagram.svg";
+import XIcon from "media/images/icons/x-icon.svg";
+import Tel from "media/assets/sikander/telicon.png";
+import Email from "media/assets/sikander/email.png";
+import Location from "media/assets/sikander/location.png";
+import Payment1 from "media/assets/images/payment1.png";
+import Payment2 from "media/assets/images/payment2.png";
+import Payment3 from "media/assets/images/payment3.webp";
+import Slide1 from "media/assets/sikander/slide1.png";
+import Slide2 from "media/assets/sikander/slide2.png";
+import Slide3 from "media/assets/sikander/slide3.png";
+import Slide4 from "media/assets/sikander/slide4.png";
+import Slide5 from "media/assets/sikander/slide5.png";
+import Slide6 from "media/assets/sikander/slide6.png";
+import Slide7 from "media/assets/sikander/slide7.png";
+import Slide8 from "media/assets/sikander/slide8.png";
+import Slide9 from "media/assets/sikander/slide9.png";
+import Slide10 from "media/assets/sikander/slide10.png";
 
 const NewFooter = () => {
   // Slider Setting
@@ -40,7 +40,7 @@ const NewFooter = () => {
     speed: 3000,
     slidesToShow: 3,
     slidesToScroll: 1,
-  }
+  };
 
   return (
     <>
@@ -130,14 +130,7 @@ const NewFooter = () => {
                         Home
                       </Link>
                     </li>
-                    <li>
-                      <Link
-                        href="javascript:;"
-                        className="text-[13px] font-[400] font-secondary xl:leading-[25px] leading-[15px]"
-                      >
-                        Pricing
-                      </Link>
-                    </li>
+
                     <li>
                       <a
                         href="javascript:;"
@@ -152,6 +145,14 @@ const NewFooter = () => {
                         className="text-[13px] font-[400] font-secondary xl:leading-[25px] leading-[15px]"
                       >
                         About
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/contact-us"
+                        className="text-[13px] font-[400] font-secondary xl:leading-[25px] leading-[15px]"
+                      >
+                        Contact
                       </Link>
                     </li>
                   </ul>
@@ -364,7 +365,7 @@ const NewFooter = () => {
         </p>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default NewFooter
+export default NewFooter;

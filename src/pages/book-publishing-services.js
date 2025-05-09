@@ -1,15 +1,16 @@
-import PWMODE from "@/component/ProcessWorkMode"
-import BTM from "@/component/bottomLogos"
-import CTA from "@/component/cta3"
-import SwiperComponents from "@/component/SwiperComponent"
-import { MRHero, MRContact, MRContent1, MRCards } from "@/component"
-import Enlistedlogo from "@/fa-component/Enlistedlogo"
-import Head from "next/head"
+import PWMODE from "@/component/ProcessWorkMode";
+import BTM from "@/component/bottomLogos";
+import CTA from "@/component/cta3";
+import SwiperComponents from "@/component/SwiperComponent";
+import { MRHero, MRContact, MRContent1, MRCards } from "@/component";
+import Enlistedlogo from "@/fa-component/Enlistedlogo";
+import Head from "next/head";
 
 const Publication = () => {
   const MRCardData = [
     {
-      classes: "bg-[#F2F2F2] shadow-lg px-3 rounded-lg relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-left",
+      classes:
+        "bg-[#F2F2F2] shadow-lg px-3 rounded-lg relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-left",
       cta: false,
       stepText: "Step",
       indexing: "true",
@@ -38,26 +39,37 @@ const Publication = () => {
           title: "Submitting It For Review",
           desc: "Now this is the final stage of the process when we submit it for review and ensure that all the tasks are completed and that your design is perfected. Our team will ensure your success.",
         },
-      ]
+      ],
     },
-  ]
+  ];
   return (
     <main>
       <Head>
-        <title>Publication | Best Book Publishing Company</title>
-        <meta name="description" content="Experience the pinnacle of publishing services with the Best Book Publishing Company. With our commitment to quality, we guide every author toward success. Get started today!" />
-        <meta name="robots" content="noindex, nofollow"/>
-        <meta property="og:url" content="https://www.bestsellingpublisher.com/publication" />
-        <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
+        <title>Book Publishing Services - [Sell 1000s Of Books]</title>
+        <meta
+          name="description"
+          content="We've helped authors publish over 10,000+ books online on all major publication platforms. Start your book publishing journey today!"
+        />
+        <meta
+          property="og:url"
+          content="https://www.bestsellingpublisher.com/book-publishing-services"
+        />
+        <meta
+          property="og:image"
+          content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public"
+        />
 
         {/* canonical: */}
-        <link rel="canonical" href="https://www.bestsellingpublisher.com/publication" />
+        <link
+          rel="canonical"
+          href="https://www.bestsellingpublisher.com/book-publishing-services"
+        />
       </Head>
       <MRHero
         subTitle="Awarded #1 Book Publishing Services"
         title="Transform Your Manuscript Into  A Bestseller With Premier Book Publishing Services"
         desc="Welcome to Best Selling Publisher, where your publishing dreams turn into reality. As a leading book publishing company, we specialize in bringing authors' visions to life and catapulting their works onto bestseller lists, including Amazon's coveted ranks.With our comprehensive book publishing services, from meticulous editing to bespoke marketing strategies, we're here to guide you every step of the way. Partner with us and see your book shine across the globe."
-        logos="images/banner/img2.png"
+        logos="/images/banner/img2.webp"
         counter={true}
         groupCTA={false}
         classes="bg-right bg-center !py-[80px]"
@@ -72,7 +84,7 @@ const Publication = () => {
           "<span class='text-primary-100 font-bold'>Expertise Across Genres:</span> Whether your masterpiece is fiction, non-fiction, or anything in between, our team of seasoned editors, designers, and marketing strategists bring your story to life, ensuring it resonates with your target audience.",
           "<span class='text-primary-100 font-bold'>Customized Publishing Plans:</span> Understanding that each book is unique, we offer personalized publishing services tailored to meet your specific needs. From Amazon book publishing to global distribution, we customize our approach to maximize your book's success.",
           "<span class='text-primary-100 font-bold'>Unparalleled Amazon Presence:</span> Leveraging our deep understanding of Amazon book publishing services, we optimize your book’s visibility and sales potential, helping you climb the ranks and achieve bestseller status.",
-          "<span class='text-primary-100 font-bold'>Comprehensive Marketing Support:</span> Our innovative marketing solutions extend your book's reach, engaging readers across multiple platforms and turning visibility into sustained success"
+          "<span class='text-primary-100 font-bold'>Comprehensive Marketing Support:</span> Our innovative marketing solutions extend your book's reach, engaging readers across multiple platforms and turning visibility into sustained success",
         ]}
         direction="flex-row-reverse"
       />
@@ -100,7 +112,7 @@ const Publication = () => {
       <SwiperComponents />
       <MRContact />
     </main>
-  )
-}
+  );
+};
 
-export default Publication
+export default Publication;
