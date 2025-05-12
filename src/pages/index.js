@@ -134,27 +134,36 @@ const Home = () => {
     "@type": "ProfessionalService",
     name: "Best Selling Publisher",
     image:
-      "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+      "https://www.bestsellingpublisher.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.1f749c62.png&w=384&q=95",
+    "@id": "",
     url: "https://www.bestsellingpublisher.com/",
-    telephone: "(800) 781-9093",
+    telephone: "855-666-6675",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "1001 Wilshire Boulevard #1176",
-      addressLocality: "Los Angeles",
-      addressRegion: "CA",
-      postalCode: "90017",
+      streetAddress: "2211 PRICE DR",
+      addressLocality: "Killeen",
+      addressRegion: "TX",
+      postalCode: "76542",
       addressCountry: "US",
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: 34.0518073,
-      longitude: -118.2613875,
+      latitude: 31.058447,
+      longitude: -97.73246,
     },
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "09:00",
-      closes: "17:00",
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+      ],
+      opens: "00:00",
+      closes: "23:59",
     },
   };
   const schemaProduct = {
@@ -185,7 +194,7 @@ const Home = () => {
           name="description"
           content="Publishing best sellers has never been easier with us. We are the premium book publishers for hire. Visit our website!"
         />
-     
+
         <meta name="DC.title" content="Best Selling Publisher" />
         <meta name="geo.region" content="US" />
         <meta name="geo.position" content="39.78373;-100.445882" />
@@ -196,7 +205,10 @@ const Home = () => {
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         />
 
-        <meta property="og:url" content="https://www.bestsellingpublisher.com" />
+        <meta
+          property="og:url"
+          content="https://www.bestsellingpublisher.com"
+        />
         <meta
           property="og:image"
           content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public"

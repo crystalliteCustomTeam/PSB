@@ -47,6 +47,48 @@ const AmazonPublishingFa = () => {
           rel="canonical"
           href="https://www.bestsellingpublisher.com/amazon-publishing-tx"
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ProfessionalService",
+              name: "Amazon Book Publishing in Texas",
+              image:
+                "https://www.bestsellingpublisher.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.1f749c62.png&w=384&q=95",
+              "@id": "",
+              url: "https://www.bestsellingpublisher.com/amazon-publishing-tx",
+              telephone: "855-666-6675",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "2211 PRICE DR",
+                addressLocality: "Killeen",
+                addressRegion: "TX",
+                postalCode: "76542",
+                addressCountry: "US",
+              },
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: 31.058447,
+                longitude: -97.73246,
+              },
+              openingHoursSpecification: {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                  "Sunday",
+                ],
+                opens: "00:00",
+                closes: "23:59",
+              },
+            }),
+          }}
+        />
       </Head>
       <MRHero
         title="Amazon Publishing Services Company To Make Your Book Available To Millions Of Readers!"

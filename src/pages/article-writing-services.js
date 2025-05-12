@@ -1,43 +1,50 @@
-import LHArticle from "@/component/ArticleWritingServices/LetUsHelpArticle"
-import GhostWriting from "@/component/ghostWritingServices/ghostWriting"
-import WMODE from "@/component/workMode1"
-import CTA from "@/component/cta3"
-import BTM from "@/component/bottomLogos"
-import SwiperComponents from "@/component/SwiperComponent"
-import Enlistedlogo from "@/fa-component/Enlistedlogo"
-import { MRHero, MRContact, MRContent2, MRContent1, MRCards } from "@/component"
-import Head from "next/head"
+import LHArticle from "@/component/ArticleWritingServices/LetUsHelpArticle";
+import GhostWriting from "@/component/ghostWritingServices/ghostWriting";
+import WMODE from "@/component/workMode1";
+import CTA from "@/component/cta3";
+import BTM from "@/component/bottomLogos";
+import SwiperComponents from "@/component/SwiperComponent";
+import Enlistedlogo from "@/fa-component/Enlistedlogo";
+import {
+  MRHero,
+  MRContact,
+  MRContent2,
+  MRContent1,
+  MRCards,
+} from "@/component";
+import Head from "next/head";
 
 const ArticleWritingServices = () => {
   const MRContent2Data = [
     {
       title: "Blog Articles",
-      desc: "Ensure your blog stays fresh and engaging with our dedicated blog articles. Collaborate with a skilled writer who understands your brand's voice, industry trends, and SEO strategies, driving continuous reader interest and loyalty."
+      desc: "Ensure your blog stays fresh and engaging with our dedicated blog articles. Collaborate with a skilled writer who understands your brand's voice, industry trends, and SEO strategies, driving continuous reader interest and loyalty.",
     },
     {
       title: "LinkedIn Articles",
-      desc: "Extend your brand's influence with LinkedIn articles. Our expert writers develop engaging content, showcasing your expertise and positioning your brand as a thought leader among industry professionals."
+      desc: "Extend your brand's influence with LinkedIn articles. Our expert writers develop engaging content, showcasing your expertise and positioning your brand as a thought leader among industry professionals.",
     },
     {
       title: "Guest Posts",
-      desc: "Enrich your blog with diverse perspectives and expert insights through engaging guest posts. Work with skilled writers to expand your content, captivating your audience with varied viewpoints. Seize the opportunity to widen your reach and enhance your platform with valuable guest contributions."
+      desc: "Enrich your blog with diverse perspectives and expert insights through engaging guest posts. Work with skilled writers to expand your content, captivating your audience with varied viewpoints. Seize the opportunity to widen your reach and enhance your platform with valuable guest contributions.",
     },
     {
       title: "Press Releases",
-      desc: "Press releases play a key role in brand communication during significant organizational changes like product launches or leadership transitions. Our team produces high-quality releases, strategically distributed through platforms like PRNewswire, enhancing your brand's presence and authority in the market, ensuring maximum visibility and impact."
+      desc: "Press releases play a key role in brand communication during significant organizational changes like product launches or leadership transitions. Our team produces high-quality releases, strategically distributed through platforms like PRNewswire, enhancing your brand's presence and authority in the market, ensuring maximum visibility and impact.",
     },
     {
       title: "Website Content",
-      desc: "Beyond blog articles, your website’s content should stand out. Our expert writers craft compelling language for product landing pages, evoke emotion for about and mission/values pages, and provide professional content for leadership pages - all optimized for UX and SEO, enhancing your online presence."
+      desc: "Beyond blog articles, your website’s content should stand out. Our expert writers craft compelling language for product landing pages, evoke emotion for about and mission/values pages, and provide professional content for leadership pages - all optimized for UX and SEO, enhancing your online presence.",
     },
     {
       title: "Micro Content",
-      desc: "Article writing isn’t limited to long-form pieces. As a diverse article writing company, our skilled editorial team is proficient at creating micro-content like ad copy or product descriptions. Additionally, our social media management offers concise yet impactful posts for platforms like Twitter and Facebook, ensuring your message resonates across various channels."
-    }
-  ]
+      desc: "Article writing isn’t limited to long-form pieces. As a diverse article writing company, our skilled editorial team is proficient at creating micro-content like ad copy or product descriptions. Additionally, our social media management offers concise yet impactful posts for platforms like Twitter and Facebook, ensuring your message resonates across various channels.",
+    },
+  ];
   const MRCardData = [
     {
-      classes: "bg-[#fff] shadow-lg px-3 rounded-lg relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-center",
+      classes:
+        "bg-[#fff] shadow-lg px-3 rounded-lg relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-center",
       content: [
         {
           icon: "",
@@ -63,11 +70,13 @@ const ArticleWritingServices = () => {
           icon: "",
           title: "Competitive </br>Pricing",
         },
-      ]
-    }]
+      ],
+    },
+  ];
   const MRCardData2 = [
     {
-      classes: "bg-[#fff] shadow-lg mr-2xl:px-4 px-2 rounded-xl relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-left",
+      classes:
+        "bg-[#fff] shadow-lg mr-2xl:px-4 px-2 rounded-xl relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-left",
       stepText: "Step",
       indexing: true,
       content: [
@@ -91,107 +100,141 @@ const ArticleWritingServices = () => {
           title: "Delivery",
           desc: "Receive polished articles promptly according to agreed-upon timelines.",
         },
-      ]
-    }]
+      ],
+    },
+  ];
 
   const schemaWebsite = {
     "@context": "https://schema.org/",
     "@type": "WebSite",
-    "name": "Article Writing Services | Best Selling Publisher",
-    "url": "https://www.bestsellingpublisher.com/article-writing-services",
-    "potentialAction": {
+    name: "Article Writing Services | Best Selling Publisher",
+    url: "https://www.bestsellingpublisher.com/article-writing-services",
+    potentialAction: {
       "@type": "SearchAction",
-      "target": "{search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  }
+      target: "{search_term_string}",
+      "query-input": "required name=search_term_string",
+    },
+  };
   const schemaCorporation = {
     "@context": "https://schema.org",
     "@type": "Corporation",
-    "name": "Article Writing Services | Best Selling Publisher",
-    "url": "https://www.bestsellingpublisher.com/article-writing-services",
-    "logo": "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png"
-  }
+    name: "Article Writing Services | Best Selling Publisher",
+    url: "https://www.bestsellingpublisher.com/article-writing-services",
+    logo: "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+  };
   const schemaProffesionalService = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    "name": "Article Writing Services | Best Selling Publisher",
-    "image": "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
-    "url": "https://www.bestsellingpublisher.com/article-writing-services",
-    "telephone": "(800) 781-9093",
-    "address": {
+    name: "Best Selling Publisher | Exceptional Article Writing Services",
+    image:
+      "https://www.bestsellingpublisher.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.1f749c62.png&w=384&q=95",
+    "@id": "",
+    url: "https://www.bestsellingpublisher.com/article-writing-services",
+    telephone: "855-666-6675",
+    address: {
       "@type": "PostalAddress",
-      "streetAddress": "1001 Wilshire Boulevard #1176",
-      "addressLocality": "Los Angeles",
-      "addressRegion": "CA",
-      "postalCode": "90017",
-      "addressCountry": "US"
+      streetAddress: "2211 PRICE DR",
+      addressLocality: "Killeen",
+      addressRegion: "TX",
+      postalCode: "76542",
+      addressCountry: "US",
     },
-    "geo": {
+    geo: {
       "@type": "GeoCoordinates",
-      "latitude": 34.0518073,
-      "longitude": -118.2613875
+      latitude: 31.058447,
+      longitude: -97.73246,
     },
-    "openingHoursSpecification": {
+    openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
+      dayOfWeek: [
         "Monday",
         "Tuesday",
         "Wednesday",
         "Thursday",
-        "Friday"
+        "Friday",
+        "Saturday",
+        "Sunday",
       ],
-      "opens": "09:00",
-      "closes": "17:00"
-    } 
-  }
-  const schemaProduct = {
-    "@context": "https://schema.org/", 
-    "@type": "Product", 
-    "name": "Article Writing Services | Best Selling Publisher",
-    "image": "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
-    "description": "Discover our professional article writing services by hiring us today",
-    "brand": {
-      "@type": "Brand",
-      "name": "Best Selling Publisher"
+      opens: "00:00",
+      closes: "23:59",
     },
-    "aggregateRating": {
+  };
+  const schemaProduct = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    name: "Article Writing Services | Best Selling Publisher",
+    image:
+      "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+    description:
+      "Discover our professional article writing services by hiring us today",
+    brand: {
+      "@type": "Brand",
+      name: "Best Selling Publisher",
+    },
+    aggregateRating: {
       "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "ratingCount": "1174"
-    }
-  }
+      ratingValue: "4.9",
+      ratingCount: "1174",
+    },
+  };
   return (
     <main>
       <Head>
-        <title>Best Selling Publisher | Exceptional Article Writing Services</title>
-        <meta name="description" content="At Best Selling Publisher, we take pride in our exceptional article writing services. Connect with us to start your publishing journey today!" />
+        <title>
+          Best Selling Publisher | Exceptional Article Writing Services
+        </title>
+        <meta
+          name="description"
+          content="At Best Selling Publisher, we take pride in our exceptional article writing services. Connect with us to start your publishing journey today!"
+        />
         <meta name="DC.title" content="Article Writing Services" />
         <meta name="geo.region" content="US" />
         <meta name="geo.position" content="39.78373;-100.445882" />
         <meta name="ICBM" content="39.78373, -100.445882" />
 
-        <meta property="og:url" content="https://www.bestsellingpublisher.com/article-writing-services" />
-        <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
+        <meta
+          property="og:url"
+          content="https://www.bestsellingpublisher.com/article-writing-services"
+        />
+        <meta
+          property="og:image"
+          content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public"
+        />
 
         {/* canonical: */}
-        <link rel="canonical" href="https://www.bestsellingpublisher.com/article-writing-services" />
+        <link
+          rel="canonical"
+          href="https://www.bestsellingpublisher.com/article-writing-services"
+        />
 
         {/* Schema */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schemaWebsite)}}/>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schemaCorporation)}}/>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schemaProffesionalService)}}/>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schemaProduct)}}/>
-
-
-
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaWebsite) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(schemaCorporation),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(schemaProffesionalService),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProduct) }}
+        />
       </Head>
       <MRHero
         title="Maximize Impact with Our Top-Rated Article Writing Services!"
         desc="Why settle for ordinary content? Stand out with engaging, SEO-friendly articles designed to captivate your audience, drive traffic, and convert visitors into loyal clients. Hire our #1 ranked article writers for resonant messaging and exceptional brand results!"
         logos="images/banner/img2.png"
         counter={true}
-        classes='!py-[80px] bg-[#FEFEFE]'
+        classes="!py-[80px] bg-[#FEFEFE]"
         beforeImg="before:mr-md:bg-[url('../../public/imageAR/business-woman-working.png')]"
       />
       <Enlistedlogo />
@@ -202,7 +245,8 @@ const ArticleWritingServices = () => {
         gridsClasses="mr-xl:grid-cols-3 mr-lg:grid-cols-3 mr-sm:grid-cols-2 !gap-x-8 mr-xl:w-[80%] mx-auto"
         cta={true}
         variant="icons"
-        data={MRCardData} />
+        data={MRCardData}
+      />
       <MRContent1
         subTitle="Our Exceptional"
         title="Article Writing Services"
@@ -218,7 +262,7 @@ const ArticleWritingServices = () => {
           "Editing and Proofreading",
           "Publishing, Marketing, and Promotions",
           "Creative Consultancy",
-          "Line and Developmental Editing"
+          "Line and Developmental Editing",
         ]}
         classes="bg-[url('../../public/imageAR/serviceBG.png')]"
         theme="dark"
@@ -242,13 +286,12 @@ const ArticleWritingServices = () => {
         gridsClasses="mr-xl:grid-cols-4 mr-lg:grid-cols-3 mr-sm:grid-cols-2"
         cta={false}
         variant="steps"
-        data={MRCardData2} />
-      <SwiperComponents />
-      <MRContact 
-      desc="We value your time and energy, which is why we're here to assist you in transforming your narrative into impeccably crafted articles. Simply fill out our form to connect with our expert article writers for hire."
+        data={MRCardData2}
       />
+      <SwiperComponents />
+      <MRContact desc="We value your time and energy, which is why we're here to assist you in transforming your narrative into impeccably crafted articles. Simply fill out our form to connect with our expert article writers for hire." />
     </main>
-  )
-}
+  );
+};
 
-export default ArticleWritingServices
+export default ArticleWritingServices;

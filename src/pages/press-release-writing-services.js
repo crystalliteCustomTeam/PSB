@@ -1,41 +1,48 @@
-import WMODE from "@/component/workMode1"
-import CTA from "@/component/cta3"
-import BTM from "@/component/bottomLogos"
-import SwiperComponents from "@/component/SwiperComponent"
-import Enlistedlogo from "@/fa-component/Enlistedlogo"
-import { MRHero, MRContact, MRContent2, MRContent1, MRCards } from "@/component"
-import Head from "next/head"
+import WMODE from "@/component/workMode1";
+import CTA from "@/component/cta3";
+import BTM from "@/component/bottomLogos";
+import SwiperComponents from "@/component/SwiperComponent";
+import Enlistedlogo from "@/fa-component/Enlistedlogo";
+import {
+  MRHero,
+  MRContact,
+  MRContent2,
+  MRContent1,
+  MRCards,
+} from "@/component";
+import Head from "next/head";
 
 const PressReleaseWritingServices = () => {
   const MRContent2Data = [
     {
       title: "Media Savvy Writers",
-      desc: "As a top-grade press release writing company, we have solid experience and understanding of what appeals to journalists, influencers, and target readers alike. Our team of media-savvy content writers is well-versed in writing press releases that stand amidst the noise."
+      desc: "As a top-grade press release writing company, we have solid experience and understanding of what appeals to journalists, influencers, and target readers alike. Our team of media-savvy content writers is well-versed in writing press releases that stand amidst the noise.",
     },
     {
       title: "Fast Turnaround",
-      desc: "Urgency is our specialty. Need your press release ASAP? No problem. Hire press release writer now and guarantee yourself a quick turnaround time, sometimes in just a matter of hours. "
+      desc: "Urgency is our specialty. Need your press release ASAP? No problem. Hire press release writer now and guarantee yourself a quick turnaround time, sometimes in just a matter of hours. ",
     },
     {
       title: "Powerful Messaging for Maximum Impact",
-      desc: "Writing a compelling narrative is our forte. We'll be working closely with you to fully comprehend your unique story and successfully express it to your target audience, increasing engagement and brand presence."
+      desc: "Writing a compelling narrative is our forte. We'll be working closely with you to fully comprehend your unique story and successfully express it to your target audience, increasing engagement and brand presence.",
     },
     {
       title: "Subject-Matter Expertise",
-      desc: "Our team provides extensive topical experience to each project, ensuring that your press releases are well-written and informative. From technology and finance to healthcare and beyond, we create content that has an enduring effect."
+      desc: "Our team provides extensive topical experience to each project, ensuring that your press releases are well-written and informative. From technology and finance to healthcare and beyond, we create content that has an enduring effect.",
     },
     {
       title: "Integration with Your PR Strategy",
-      desc: "We create press releases by becoming an integral part of your PR strategy. From brainstorming discussions to post-release data, our professional press release writers cover every step of the way to ensure a unified and impactful press release strategy."
+      desc: "We create press releases by becoming an integral part of your PR strategy. From brainstorming discussions to post-release data, our professional press release writers cover every step of the way to ensure a unified and impactful press release strategy.",
     },
     {
       title: "Impeccable Formatting, Every Time",
-      desc: "Don't worry about style guidelines. Whether you prefer AP Style, MLA Style, or The Chicago Manual of Style, our writers adhere to your specifications, delivering editor-approved content free from errors."
-    }
-  ]
+      desc: "Don't worry about style guidelines. Whether you prefer AP Style, MLA Style, or The Chicago Manual of Style, our writers adhere to your specifications, delivering editor-approved content free from errors.",
+    },
+  ];
   const MRCardData2 = [
     {
-      classes: "bg-[#fff] shadow-lg mr-2xl:px-4 px-2 rounded-xl relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-left",
+      classes:
+        "bg-[#fff] shadow-lg mr-2xl:px-4 px-2 rounded-xl relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-left",
       stepText: "Step",
       indexing: true,
       content: [
@@ -59,109 +66,140 @@ const PressReleaseWritingServices = () => {
           title: "Publish & Amplify",
           desc: "Your press release is strategically amplified for maximum impact.",
         },
-      ]
-    }]
+      ],
+    },
+  ];
 
-    const schemaWebsite = {
-      "@context": "https://schema.org/",
-      "@type": "WebSite",
-      "name": "Press Release Writing Services | Best Selling Publisher",
-      "url": "https://www.bestsellingpublisher.com/press-release-writing-services",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "{search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    }
+  const schemaWebsite = {
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    name: "Press Release Writing Services | Best Selling Publisher",
+    url: "https://www.bestsellingpublisher.com/press-release-writing-services",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: "{search_term_string}",
+      "query-input": "required name=search_term_string",
+    },
+  };
 
-    const schemaCorporation = {
-      "@context": "https://schema.org",
-      "@type": "Corporation",
-      "name": "Press Release Writing Services | Best Selling Publisher",
-      "url": "https://www.bestsellingpublisher.com/press-release-writing-services",
-      "logo": "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png"
-    }
+  const schemaCorporation = {
+    "@context": "https://schema.org",
+    "@type": "Corporation",
+    name: "Press Release Writing Services | Best Selling Publisher",
+    url: "https://www.bestsellingpublisher.com/press-release-writing-services",
+    logo: "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+  };
 
-    const schemaProffesionalService = {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Press Release Writing Services | Best Selling Publisher",
-      "image": "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
-      "url": "https://www.bestsellingpublisher.com/press-release-writing-services",
-      "telephone": "(800) 781-9093",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "1001 Wilshire Boulevard #1176",
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "postalCode": "90017",
-        "addressCountry": "US"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 34.0518073,
-        "longitude": -118.2613875
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
-        "opens": "09:00",
-        "closes": "17:00"
-      } 
-    }
-    const schemaProduct = {
-      "@context": "https://schema.org/", 
-      "@type": "Product", 
-      "name": "Press Release Writing Services | Best Selling Publisher",
-      "image": "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
-      "description": "Hire our press release writing services to get creative press releases that grabs reader attention",
-      "brand": {
-        "@type": "Brand",
-        "name": "Best Selling Publisher"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "ratingCount": "1174"
-      }
-    }
+  const schemaProffesionalService = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    name: "Press Release Writing Services | Best Selling Publisher",
+    image:
+      "https://www.bestsellingpublisher.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.1f749c62.png&w=384&q=95",
+    "@id": "",
+    url: "https://www.bestsellingpublisher.com/press-release-writing-services",
+    telephone: "855-666-6675",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "2211 PRICE DR",
+      addressLocality: "Killeen",
+      addressRegion: "TX",
+      postalCode: "76542",
+      addressCountry: "US",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 31.058447,
+      longitude: -97.73246,
+    },
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+      ],
+      opens: "00:00",
+      closes: "23:59",
+    },
+  };
+  const schemaProduct = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    name: "Press Release Writing Services | Best Selling Publisher",
+    image:
+      "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+    description:
+      "Hire our press release writing services to get creative press releases that grabs reader attention",
+    brand: {
+      "@type": "Brand",
+      name: "Best Selling Publisher",
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.9",
+      ratingCount: "1174",
+    },
+  };
   return (
     <main>
       <Head>
         <title>Press Release Writing Services | Best Selling Publisher</title>
-        <meta name="description" content="Looking for the best press release writing company? Our press release writers for hire can bring your press releases to life. Visit our website now." />
+        <meta
+          name="description"
+          content="Looking for the best press release writing company? Our press release writers for hire can bring your press releases to life. Visit our website now."
+        />
         <meta name="robots" content="index, follow" />
         <meta name="DC.title" content="Press Release Writing Services" />
         <meta name="geo.region" content="US" />
         <meta name="geo.position" content="39.78373;-100.445882" />
         <meta name="ICBM" content="39.78373, -100.445882" />
-        <meta property="og:url" content="https://www.bestsellingpublisher.com/press-release-writing-services" />
-        <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
+        <meta
+          property="og:url"
+          content="https://www.bestsellingpublisher.com/press-release-writing-services"
+        />
+        <meta
+          property="og:image"
+          content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public"
+        />
 
         {/* canonical: */}
-        <link rel="canonical" href="https://www.bestsellingpublisher.com/press-release-writing-services" />
+        <link
+          rel="canonical"
+          href="https://www.bestsellingpublisher.com/press-release-writing-services"
+        />
 
         {/* Schema */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaWebsite)}}/>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaCorporation)}}/>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaProffesionalService)}}/>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaProduct)}}/>
-
-
-
-
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaWebsite) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(schemaCorporation),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(schemaProffesionalService),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProduct) }}
+        />
       </Head>
       <MRHero
         title="Press Release Writing Services That Spark Conversation"
         desc="Put your brand in the spotlight with our press releases. Our team creates compelling press releases that capture attention, and engage journalists, online publishers, and search engines."
         logos="images/banner/img2.png"
-        classes='bg-[#fefefe] !py-[80px]'
+        classes="bg-[#fefefe] !py-[80px]"
         counter={true}
         beforeImg="mr-md:before:bg-[url('../../public/imageAR/newspaper-concept.png')]"
       />
@@ -176,7 +214,7 @@ const PressReleaseWritingServices = () => {
           "Issuewire",
           "Linking News",
           "Newswire",
-          "PR Distribution"
+          "PR Distribution",
         ]}
         direction="flex-row-reverse"
       />
@@ -195,7 +233,7 @@ const PressReleaseWritingServices = () => {
           "Capturing Your Brand’s Voice with Precision",
           "Professional Quality to Impress Media and Audience",
           "Easy Order Process with Detailed Customization Options",
-          "Timely Delivery of Press Releases Ready for Distribution"
+          "Timely Delivery of Press Releases Ready for Distribution",
         ]}
         classes="bg-[url('../../public/imageAR/serviceBG.png')]"
         theme="dark"
@@ -207,10 +245,10 @@ const PressReleaseWritingServices = () => {
         data={MRContent2Data}
       />
       <BTM />
-      <CTA 
-      subtitle="Cut Through The Noise" 
-      title="In The World of Press Release, Every Word Holds Sway" 
-      desc="We are aware of the significance of every word and the difference it could have for both audiences and stakeholders. We guarantee the genuine delivery of your message through appealing headlines and engaging material. Trust us to wield the power of words." 
+      <CTA
+        subtitle="Cut Through The Noise"
+        title="In The World of Press Release, Every Word Holds Sway"
+        desc="We are aware of the significance of every word and the difference it could have for both audiences and stakeholders. We guarantee the genuine delivery of your message through appealing headlines and engaging material. Trust us to wield the power of words."
       />
       <MRCards
         subTitle="We Pursue"
@@ -219,11 +257,18 @@ const PressReleaseWritingServices = () => {
         gridsClasses="mr-xl:grid-cols-4 mr-lg:grid-cols-3 mr-sm:grid-cols-2"
         cta={false}
         variant="steps"
-        data={MRCardData2} />
+        data={MRCardData2}
+      />
       <SwiperComponents />
-      <MRContact subTitle="Press Release Excellence " title="Got a Headline in Your Mind? Connect With Our Press Release Experts" desc="Whether it's a snappy tagline, a gripping headline, or an interesting premise, we have the experience and understanding to bring it to life as a polished press release" titleB="Write Your Success Story with Us! " descB="Contact us today for a free consultation and learn more about how our best press release content writing services can transform your message into a powerful narrative." />
+      <MRContact
+        subTitle="Press Release Excellence "
+        title="Got a Headline in Your Mind? Connect With Our Press Release Experts"
+        desc="Whether it's a snappy tagline, a gripping headline, or an interesting premise, we have the experience and understanding to bring it to life as a polished press release"
+        titleB="Write Your Success Story with Us! "
+        descB="Contact us today for a free consultation and learn more about how our best press release content writing services can transform your message into a powerful narrative."
+      />
     </main>
-  )
-}
+  );
+};
 
-export default PressReleaseWritingServices
+export default PressReleaseWritingServices;

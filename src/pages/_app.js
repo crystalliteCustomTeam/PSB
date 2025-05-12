@@ -25,10 +25,6 @@ export default function App({ Component, pageProps }) {
           name="google-site-verification"
           content="xsimMs7zxe8r99xjQlDHSjHap86u9irM9JTHkI3xNpg"
         />
-        {/* <meta
-          name="google-site-verification"
-          content="R28eoLjUYrldzCTVPJyB50E-zTd2cWaogKpJP3ycGFM"
-        /> */}
       </Head>
       <main
         className={`${primary.className} ${SfProDisplay.variable} ${fontMono.variable} `}
@@ -80,63 +76,63 @@ export default function App({ Component, pageProps }) {
           {/* LiveChat Script */}
           <Script strategy="afterInteractive" id="livechat-script">
             {`
-          window.__lc = window.__lc || {};
-          window.__lc.license = 19030650;
-          window.__lc.integration_name = "manual_onboarding";
-          window.__lc.product_name = "livechat";
-          (function(n, t, c) {
-            function i(n) {
-              return e._h ? e._h.apply(null, n) : e._q.push(n);
-            }
-            var e = {
-              _q: [], _h: null, _v: "2.0",
-              on: function() { i(["on", c.call(arguments)]) },
-              once: function() { i(["once", c.call(arguments)]) },
-              off: function() { i(["off", c.call(arguments)]) },
-              get: function() {
-                if (!e._h) throw new Error("[LiveChatWidget] You can't use getters before load.");
-                return i(["get", c.call(arguments)]);
-              },
-              call: function() { i(["call", c.call(arguments)]) },
-              init: function() {
-                var n = t.createElement("script");
-                n.async = true;
-                n.type = "text/javascript";
-                n.src = "https://cdn.livechatinc.com/tracking.js";
-                t.head.appendChild(n);
-              }
-            };
-            !n.__lc.asyncInit && e.init();
-            n.LiveChatWidget = n.LiveChatWidget || e;
-          })(window, document, [].slice);
-        `}
+              window.__lc = window.__lc || {};
+              window.__lc.license = 19030650;
+              window.__lc.integration_name = "manual_onboarding";
+              window.__lc.product_name = "livechat";
+              (function(n, t, c) {
+                function i(n) {
+                  return e._h ? e._h.apply(null, n) : e._q.push(n);
+                }
+                var e = {
+                  _q: [], _h: null, _v: "2.0",
+                  on: function() { i(["on", c.call(arguments)]) },
+                  once: function() { i(["once", c.call(arguments)]) },
+                  off: function() { i(["off", c.call(arguments)]) },
+                  get: function() {
+                    if (!e._h) throw new Error("[LiveChatWidget] You can't use getters before load.");
+                    return i(["get", c.call(arguments)]);
+                  },
+                  call: function() { i(["call", c.call(arguments)]) },
+                  init: function() {
+                    var n = t.createElement("script");
+                    n.async = true;
+                    n.type = "text/javascript";
+                    n.src = "https://cdn.livechatinc.com/tracking.js";
+                    t.head.appendChild(n);
+                  }
+                };
+                !n.__lc.asyncInit && e.init();
+                n.LiveChatWidget = n.LiveChatWidget || e;
+              })(window, document, [].slice);
+            `}
           </Script>
 
-          {/* Google Tag Manager Script */}
+          {/* Google Tag Manager */}
           <Script strategy="afterInteractive" id="gtm-script">
             {`
-          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-MXL5ZHGD');
-        `}
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-MXL5ZHGD');
+            `}
           </Script>
 
-          {/* Google Ads Script */}
+          {/* Google Ads */}
           <Script
             strategy="afterInteractive"
             id="google-ads-script"
             src="https://www.googletagmanager.com/gtag/js?id=AW-11022581138"
           />
-
           <Script strategy="afterInteractive" id="google-ads-config">
             {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag() { dataLayer.push(arguments); }
-          gtag('js', new Date());
-          gtag('config', 'AW-11022581138');
-        `}
+              window.dataLayer = window.dataLayer || [];
+              function gtag() { dataLayer.push(arguments); }
+              gtag('js', new Date());
+              gtag('config', 'AW-11022581138');
+              gtag('config', 'G-PK8EMGVCNL');
+            `}
           </Script>
         </>
       )}

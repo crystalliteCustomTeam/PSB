@@ -1,114 +1,145 @@
-import WEARE from "@/component/genre/LetUsWEARE"
-import MANUSCRIPT from "@/component/genre/manuscript"
-import BTM from "@/component/bottomLogos"
-import CTA from "@/component/cta3"
-import SwiperComponents from "@/component/SwiperComponent"
-import Enlistedlogo from "@/fa-component/Enlistedlogo"
-import { MRHero, MRContact } from "@/component"
-import PublishingNewComponent from "@/fa-component/PublishingNewComponent"
-import Head from "next/head"
+import WEARE from "@/component/genre/LetUsWEARE";
+import MANUSCRIPT from "@/component/genre/manuscript";
+import BTM from "@/component/bottomLogos";
+import CTA from "@/component/cta3";
+import SwiperComponents from "@/component/SwiperComponent";
+import Enlistedlogo from "@/fa-component/Enlistedlogo";
+import { MRHero, MRContact } from "@/component";
+import PublishingNewComponent from "@/fa-component/PublishingNewComponent";
+import Head from "next/head";
 
 const Genre = () => {
   const schemaWebsite = {
     "@context": "https://schema.org/",
     "@type": "WebSite",
-    "name": "Genre | Best Selling Publisher",
-    "url": "https://www.bestsellingpublisher.com/genre",
-    "potentialAction": {
+    name: "Genre | Best Selling Publisher",
+    url: "https://www.bestsellingpublisher.com/genre",
+    potentialAction: {
       "@type": "SearchAction",
-      "target": "{search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  }
+      target: "{search_term_string}",
+      "query-input": "required name=search_term_string",
+    },
+  };
 
   const schemaCorporation = {
     "@context": "https://schema.org",
     "@type": "Corporation",
-    "name": "Genre | Best Selling Publisher",
-    "url": "https://www.bestsellingpublisher.com/genre",
-    "logo": "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png"
-  }
+    name: "Genre | Best Selling Publisher",
+    url: "https://www.bestsellingpublisher.com/genre",
+    logo: "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+  };
   const schemaProffesionalService = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    "name": "Genre | Best Selling Publisher",
-    "image": "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
-    "url": "https://www.bestsellingpublisher.com/genre",
-    "telephone": "(800) 781-9093",
-    "address": {
+    name: "Genre | Best Selling Publisher",
+    image:
+      "https://www.bestsellingpublisher.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.1f749c62.png&w=384&q=95",
+    "@id": "",
+    url: "https://www.bestsellingpublisher.com/genre",
+    telephone: "855-666-6675",
+    address: {
       "@type": "PostalAddress",
-      "streetAddress": "1001 Wilshire Boulevard #1176",
-      "addressLocality": "Los Angeles",
-      "addressRegion": "CA",
-      "postalCode": "90017",
-      "addressCountry": "US"
+      streetAddress: "2211 PRICE DR",
+      addressLocality: "Killeen",
+      addressRegion: "TX",
+      postalCode: "76542",
+      addressCountry: "US",
     },
-    "geo": {
+    geo: {
       "@type": "GeoCoordinates",
-      "latitude": 34.0518073,
-      "longitude": -118.2613875
+      latitude: 31.058447,
+      longitude: -97.73246,
     },
-    "openingHoursSpecification": {
+    openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
+      dayOfWeek: [
         "Monday",
         "Tuesday",
         "Wednesday",
         "Thursday",
-        "Friday"
+        "Friday",
+        "Saturday",
+        "Sunday",
       ],
-      "opens": "09:00",
-      "closes": "17:00"
-    } 
-  }
-  const schemaProduct = {
-    "@context": "https://schema.org/", 
-    "@type": "Product", 
-    "name": "Genre | Best Selling Publisher",
-    "image": "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
-    "description": "Discover the wide range of book genres that we publish and market",
-    "brand": {
-      "@type": "Brand",
-      "name": "Best Selling Publisher"
+      opens: "00:00",
+      closes: "23:59",
     },
-    "aggregateRating": {
+  };
+  const schemaProduct = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    name: "Genre | Best Selling Publisher",
+    image:
+      "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+    description:
+      "Discover the wide range of book genres that we publish and market",
+    brand: {
+      "@type": "Brand",
+      name: "Best Selling Publisher",
+    },
+    aggregateRating: {
       "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "ratingCount": "1174"
-    }
-  }
+      ratingValue: "4.9",
+      ratingCount: "1174",
+    },
+  };
   return (
     <main>
       <Head>
         <title>Genre | Best Selling Publisher</title>
-        <meta name="description" content="Have you written an amazing fiction book? Or want to publish an autobiography. Explore our wide range of book genres and get your book published today." />
+        <meta
+          name="description"
+          content="Have you written an amazing fiction book? Or want to publish an autobiography. Explore our wide range of book genres and get your book published today."
+        />
         <meta name="robots" content="index, follow" />
         <meta name="DC.title" content="Book Genre" />
         <meta name="geo.region" content="US" />
         <meta name="geo.position" content="39.78373;-100.445882" />
         <meta name="ICBM" content="39.78373, -100.445882" />
 
-        <meta property="og:url" content="https://www.bestsellingpublisher.com/genre" />
-        <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
+        <meta
+          property="og:url"
+          content="https://www.bestsellingpublisher.com/genre"
+        />
+        <meta
+          property="og:image"
+          content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public"
+        />
 
         {/* canonical: */}
-        <link rel="canonical" href="https://www.bestsellingpublisher.com/genre" />
-        
+        <link
+          rel="canonical"
+          href="https://www.bestsellingpublisher.com/genre"
+        />
+
         {/* Schema */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html : JSON.stringify(schemaWebsite)}}/>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html : JSON.stringify(schemaCorporation)}}/>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html : JSON.stringify(schemaProffesionalService)}}/>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html : JSON.stringify(schemaProduct)}}/>
-
-
-
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaWebsite) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(schemaCorporation),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(schemaProffesionalService),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProduct) }}
+        />
       </Head>
       <MRHero
         title="Create Your Literary Legacy, Because Your Story Deserves the Best!"
         desc="Our mission as a company is to bring you literary success. We offer great content for every book genre, whether you need fiction book publishing services, autobiography, top-ranked memoirs publishing, or best children book publishing, we’ve covered it all!"
         logos="images/banner/img2.png"
         counter={true}
-        classes='bg-[#fefefe] !py-[80px]'
+        classes="bg-[#fefefe] !py-[80px]"
         beforeImg="mr-md:before:bg-[url('../../public/imageAR/books-library.png')]"
       />
       <Enlistedlogo />
@@ -125,12 +156,12 @@ const Genre = () => {
       <BTM />
       <CTA />
       <SwiperComponents />
-      <MRContact 
-      titleB="It's Time to Write Your Book!" 
-      descB={`Craft tales that transport, captivate, and <br class="hidden mr-sm:block" /> linger in minds with Best Selling Publisher!`}
-       />
+      <MRContact
+        titleB="It's Time to Write Your Book!"
+        descB={`Craft tales that transport, captivate, and <br class="hidden mr-sm:block" /> linger in minds with Best Selling Publisher!`}
+      />
     </main>
-  )
-}
+  );
+};
 
-export default Genre
+export default Genre;

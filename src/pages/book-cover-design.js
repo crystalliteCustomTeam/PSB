@@ -1,20 +1,21 @@
-import WEARE from "@/component/CoverDesign/LetUsWEARE"
-import BTM from "@/component/bottomLogos"
-import CTA from "@/component/cta3"
-import BOOKCOVERS from "@/component/CoverDesign/BookCovers"
-import TAbNAVIGATION from "@/component/CoverDesign/TabNavigateCovers"
-import WORKON from "@/component/CoverDesign/ProcessWorkMode"
-import SwiperComponents from "@/component/SwiperComponent"
-import Enlistedlogo from "@/fa-component/Enlistedlogo"
-import { MRHero, MRContact, MRContent1, MRCards } from "@/component"
-import OurComprehensive from "@/component/OurComprehensive"
-import PublishingNewComponent from "@/fa-component/PublishingNewComponent"
-import Head from "next/head"
+import WEARE from "@/component/CoverDesign/LetUsWEARE";
+import BTM from "@/component/bottomLogos";
+import CTA from "@/component/cta3";
+import BOOKCOVERS from "@/component/CoverDesign/BookCovers";
+import TAbNAVIGATION from "@/component/CoverDesign/TabNavigateCovers";
+import WORKON from "@/component/CoverDesign/ProcessWorkMode";
+import SwiperComponents from "@/component/SwiperComponent";
+import Enlistedlogo from "@/fa-component/Enlistedlogo";
+import { MRHero, MRContact, MRContent1, MRCards } from "@/component";
+import OurComprehensive from "@/component/OurComprehensive";
+import PublishingNewComponent from "@/fa-component/PublishingNewComponent";
+import Head from "next/head";
 
 const BookCoverDesign = () => {
   const MRCardData = [
     {
-      classes: "bg-[#fff] shadow-lg px-3 rounded-lg relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-left",
+      classes:
+        "bg-[#fff] shadow-lg px-3 rounded-lg relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-left",
       cta: false,
       stepText: false,
       indexing: false,
@@ -39,12 +40,13 @@ const BookCoverDesign = () => {
           textColor: "text-[#40BEE2]",
           desc: "Your book needs to make a splash, both in hand and on screen. That’s why we're careful about every pixel and print detail in your book cover design. As a top-grade book cover design company, our commitment to mastering print and digital mediums means your story gets the spotlight it deserves everywhere your readers are.",
         },
-      ]
+      ],
     },
-  ]
+  ];
   const MRCardData2 = [
     {
-      classes: "bg-[#fff] shadow-lg mr-2xl:px-4 px-2 rounded-xl relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-left",
+      classes:
+        "bg-[#fff] shadow-lg mr-2xl:px-4 px-2 rounded-xl relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-left",
       stepText: "Step",
       indexing: true,
       content: [
@@ -68,104 +70,139 @@ const BookCoverDesign = () => {
           title: "Publish & Distribute",
           desc: "The book cover is ready to integrate into your publishing platform.",
         },
-      ]
-    }]
+      ],
+    },
+  ];
 
   const schemaWebsite = {
     "@context": "https://schema.org/",
     "@type": "WebSite",
-    "name": "Book Cover Design Services | Best Selling Publisher",
-    "url": "https://www.bestsellingpublisher.com/book-cover-design",
-    "potentialAction": {
+    name: "Book Cover Design Services | Best Selling Publisher",
+    url: "https://www.bestsellingpublisher.com/book-cover-design",
+    potentialAction: {
       "@type": "SearchAction",
-      "target": "{search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  }
+      target: "{search_term_string}",
+      "query-input": "required name=search_term_string",
+    },
+  };
   const schemaCorporation = {
     "@context": "https://schema.org",
     "@type": "Corporation",
-    "name": "Book Cover Design Services | Best Selling Publisher",
-    "url": "https://www.bestsellingpublisher.com/book-cover-design",
-    "logo": "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png"
-  }
+    name: "Book Cover Design Services | Best Selling Publisher",
+    url: "https://www.bestsellingpublisher.com/book-cover-design",
+    logo: "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+  };
 
   const schemaProffesionalService = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    "name": "Book Cover Design Services | Best Selling Publisher",
-    "image": "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
-    "url": "https://www.bestsellingpublisher.com/book-cover-design",
-    "telephone": "(800) 781-9093",
-    "address": {
+    name: "Book Cover Design Services | Best Selling Publisher",
+    image:
+      "https://www.bestsellingpublisher.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.1f749c62.png&w=384&q=95",
+    "@id": "",
+    url: "https://www.bestsellingpublisher.com/book-cover-design",
+    telephone: "855-666-6675",
+    address: {
       "@type": "PostalAddress",
-      "streetAddress": "1001 Wilshire Boulevard #1176",
-      "addressLocality": "Los Angeles",
-      "addressRegion": "CA",
-      "postalCode": "90017",
-      "addressCountry": "US"
+      streetAddress: "2211 PRICE DR",
+      addressLocality: "Killeen",
+      addressRegion: "TX",
+      postalCode: "76542",
+      addressCountry: "US",
     },
-    "geo": {
+    geo: {
       "@type": "GeoCoordinates",
-      "latitude": 34.0518073,
-      "longitude": -118.2613875
+      latitude: 31.058447,
+      longitude: -97.73246,
     },
-    "openingHoursSpecification": {
+    openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
+      dayOfWeek: [
         "Monday",
         "Tuesday",
         "Wednesday",
         "Thursday",
-        "Friday"
+        "Friday",
+        "Saturday",
+        "Sunday",
       ],
-      "opens": "09:00",
-      "closes": "17:00"
-    }
-  }
+      opens: "00:00",
+      closes: "23:59",
+    },
+  };
   const schemaProduct = {
     "@context": "https://schema.org/",
     "@type": "Product",
-    "name": "Book Cover Design Services | Best Selling Publisher",
-    "image": "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
-    "description": "Design professional and top quality book covers with our book cover design services",
-    "brand": {
+    name: "Book Cover Design Services | Best Selling Publisher",
+    image:
+      "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+    description:
+      "Design professional and top quality book covers with our book cover design services",
+    brand: {
       "@type": "Brand",
-      "name": "Best Selling Publisher"
+      name: "Best Selling Publisher",
     },
-    "aggregateRating": {
+    aggregateRating: {
       "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "ratingCount": "1174"
-    }
-  }
+      ratingValue: "4.9",
+      ratingCount: "1174",
+    },
+  };
   return (
     <main>
       <Head>
         <title>Book Cover Design Services | Best Selling Publisher</title>
-        <meta name="description" content="Looking to design custom book covers for your literary masterpieces? Look no further, contact our book cover design company right now. " />
+        <meta
+          name="description"
+          content="Looking to design custom book covers for your literary masterpieces? Look no further, contact our book cover design company right now. "
+        />
         <meta name="DC.title" content="Book Cover Design Services" />
         <meta name="geo.region" content="US" />
         <meta name="geo.position" content="39.78373;-100.445882" />
         <meta name="ICBM" content="39.78373, -100.445882" />
-        <meta property="og:url" content="https://www.bestsellingpublisher.com/book-cover-design" />
-        <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
+        <meta
+          property="og:url"
+          content="https://www.bestsellingpublisher.com/book-cover-design"
+        />
+        <meta
+          property="og:image"
+          content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public"
+        />
 
         {/* canonical: */}
-        <link rel="canonical" href="https://www.bestsellingpublisher.com/book-cover-design" />
+        <link
+          rel="canonical"
+          href="https://www.bestsellingpublisher.com/book-cover-design"
+        />
 
         {/* Schema */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaWebsite) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaCorporation) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProffesionalService) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProduct) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaWebsite) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(schemaCorporation),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(schemaProffesionalService),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProduct) }}
+        />
       </Head>
       <MRHero
         title="Covers that Let You Judge a Book"
         desc="First impressions matter BIG TIME! Do you want to make a great first impression of your book?
         At Best Selling Publisher, we believe the success of your book starts with its cover. Our goal is to create the most attractive cover designs, turning your manuscript into a visual standout that commands attention. Let's start this creative process together."
         logos="images/banner/img2.png"
-        classes='!py-[80px] bg-[#fefefe]'
+        classes="!py-[80px] bg-[#fefefe]"
         beforeImg="mr-md:before:bg-[url('../../public/imageAR/world-book-day.png')]"
         counter={true}
       />
@@ -181,7 +218,7 @@ const BookCoverDesign = () => {
           "We retain your concept and offer immaculate embellishment.",
           "Customer satisfaction is our top priority.",
           "Complete ownership over the final book cover.",
-          "24/7 assistance for all your queries and concerns."
+          "24/7 assistance for all your queries and concerns.",
         ]}
         direction="flex-row-reverse"
       />
@@ -221,16 +258,18 @@ const BookCoverDesign = () => {
         gridsClasses="mr-xl:grid-cols-4 mr-lg:grid-cols-3 mr-sm:grid-cols-2"
         cta={false}
         variant="steps"
-        data={MRCardData2} />
+        data={MRCardData2}
+      />
       <SwiperComponents />
       <MRContact
-        subTitle="Discuss Your Story" title="And We Will Craft a Stunning Cover to Match Its Magic"
+        subTitle="Discuss Your Story"
+        title="And We Will Craft a Stunning Cover to Match Its Magic"
         desc="We value your time and energy, which is why we're here to help you transform your narrative with our professional book cover designers for hire!"
         titleB="Time to Turn Ideas into Reality"
         descB={`With our expert design team, your book's <br class="hidden mr-sm:block" /> cover is just the beginning of its journey.`}
       />
     </main>
-  )
-}
+  );
+};
 
-export default BookCoverDesign
+export default BookCoverDesign;

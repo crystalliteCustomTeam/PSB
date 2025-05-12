@@ -1,42 +1,49 @@
-import LHArticle from "@/component/WebCopywritingServices/LetUsHelpWeb"
-import CTA from "@/component/cta3"
-import BTM from "@/component/bottomLogos"
-import SwiperComponents from "@/component/SwiperComponent"
-import WMODE from "@/component/workMode1"
-import Enlistedlogo from "@/fa-component/Enlistedlogo"
-import { MRHero, MRContact, MRContent2, MRContent1, MRCards } from "@/component"
-import Head from "next/head"
+import LHArticle from "@/component/WebCopywritingServices/LetUsHelpWeb";
+import CTA from "@/component/cta3";
+import BTM from "@/component/bottomLogos";
+import SwiperComponents from "@/component/SwiperComponent";
+import WMODE from "@/component/workMode1";
+import Enlistedlogo from "@/fa-component/Enlistedlogo";
+import {
+  MRHero,
+  MRContact,
+  MRContent2,
+  MRContent1,
+  MRCards,
+} from "@/component";
+import Head from "next/head";
 
 const WebCopywritingServices = () => {
   const MRContent2Data = [
     {
       title: "Creating Captivating Author Brand",
-      desc: "Every author who wants to be great needs a strong brand identity. We'll help you write an interesting author description that shows off your style and personality and connects with readers, pulling them into your world."
+      desc: "Every author who wants to be great needs a strong brand identity. We'll help you write an interesting author description that shows off your style and personality and connects with readers, pulling them into your world.",
     },
     {
       title: "Engaging Website Content",
-      desc: "We'll write blog posts about authors and website copy that shows off your brand's values. This will show off your knowledge and build a community of loyal readers."
+      desc: "We'll write blog posts about authors and website copy that shows off your brand's values. This will show off your knowledge and build a community of loyal readers.",
     },
     {
       title: "Optimizing Online Presence",
-      desc: "Our team will help you come up with targeted keywords and meta descriptions that will make sure that people looking for websites or books in your field can find yours online."
+      desc: "Our team will help you come up with targeted keywords and meta descriptions that will make sure that people looking for websites or books in your field can find yours online.",
     },
     {
       title: "Targeted Landing Pages",
-      desc: "We'll make specific landing pages that get people interested in your website and help you make sales, whether it's for a pre-order campaign or a new book release."
+      desc: "We'll make specific landing pages that get people interested in your website and help you make sales, whether it's for a pre-order campaign or a new book release.",
     },
     {
       title: "Interesting Author Bios",
-      desc: "We'll use the author's past, awards, and writing style to create stories that make readers feel like they know the people who wrote the books."
+      desc: "We'll use the author's past, awards, and writing style to create stories that make readers feel like they know the people who wrote the books.",
     },
     {
       title: "Interesting Book Descriptions",
-      desc: "We avoid writing dry synopses. Our copywriters write descriptions that make people want to read more. These descriptions hit on the emotional core of your books, show off their unique selling points, and make people want to read the story inside."
-    }
-  ]
+      desc: "We avoid writing dry synopses. Our copywriters write descriptions that make people want to read more. These descriptions hit on the emotional core of your books, show off their unique selling points, and make people want to read the story inside.",
+    },
+  ];
   const MRCardData = [
     {
-      classes: "bg-[#fff] shadow-lg px-3 rounded-lg relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-center",
+      classes:
+        "bg-[#fff] shadow-lg px-3 rounded-lg relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-center",
       content: [
         {
           icon: "",
@@ -62,11 +69,13 @@ const WebCopywritingServices = () => {
           icon: "",
           title: "Creative, Out-Of-The- </br> Box Taglines",
         },
-      ]
-    }]
+      ],
+    },
+  ];
   const MRCardData2 = [
     {
-      classes: "bg-[#fff] shadow-lg mr-2xl:px-4 px-2 rounded-xl relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-left",
+      classes:
+        "bg-[#fff] shadow-lg mr-2xl:px-4 px-2 rounded-xl relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-left",
       stepText: "Step",
       indexing: true,
       content: [
@@ -90,108 +99,140 @@ const WebCopywritingServices = () => {
           title: "Publish & Distribute",
           desc: "The copy is ready to integrate into your website.",
         },
-      ]
-    }]
-    const schemaWebsite = {
-      "@context": "https://schema.org/",
-      "@type": "WebSite",
-      "name": "Web Copywriting Services | Best Selling Publisher",
-      "url": "https://www.bestsellingpublisher.com/web-copywriting-services",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "{search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    }
+      ],
+    },
+  ];
+  const schemaWebsite = {
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    name: "Web Copywriting Services | Best Selling Publisher",
+    url: "https://www.bestsellingpublisher.com/web-copywriting-services",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: "{search_term_string}",
+      "query-input": "required name=search_term_string",
+    },
+  };
 
-    const schemaCorporation = {
-      "@context": "https://schema.org",
-      "@type": "Corporation",
-      "name": "Web Copywriting Services | Best Selling Publisher",
-      "url": "https://www.bestsellingpublisher.com/web-copywriting-services",
-      "logo": "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png"
-    }
+  const schemaCorporation = {
+    "@context": "https://schema.org",
+    "@type": "Corporation",
+    name: "Web Copywriting Services | Best Selling Publisher",
+    url: "https://www.bestsellingpublisher.com/web-copywriting-services",
+    logo: "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+  };
 
-    const schemaProffesionalService = {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Web Copywriting Services | Best Selling Publisher",
-      "image": "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
-      "url": "https://www.bestsellingpublisher.com/web-copywriting-services",
-      "telephone": "(800) 781-9093",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "1001 Wilshire Boulevard #1176",
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "postalCode": "90017",
-        "addressCountry": "US"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 34.0518073,
-        "longitude": -118.2613875
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
-        "opens": "09:00",
-        "closes": "17:00"
-      } 
-    }
+  const schemaProffesionalService = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    name: "Web Copywriting Services | Best Selling Publisher",
+    image:
+      "https://www.bestsellingpublisher.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.1f749c62.png&w=384&q=95",
+    "@id": "",
+    url: "https://www.bestsellingpublisher.com/web-copywriting-services",
+    telephone: "855-666-6675",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "2211 PRICE DR",
+      addressLocality: "Killeen",
+      addressRegion: "TX",
+      postalCode: "76542",
+      addressCountry: "US",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 31.058447,
+      longitude: -97.73246,
+    },
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+      ],
+      opens: "00:00",
+      closes: "23:59",
+    },
+  };
 
-    const schemaProduct = {
-      "@context": "https://schema.org/", 
-      "@type": "Product", 
-      "name": "Web Copywriting Services | Best Selling Publisher",
-      "image": "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
-      "description": "Get the best quality of web copies written with our web copywriting services",
-      "brand": {
-        "@type": "Brand",
-        "name": "Best Selling Publisher"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "ratingCount": "1174"
-      }
-    }
+  const schemaProduct = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    name: "Web Copywriting Services | Best Selling Publisher",
+    image:
+      "https://www.bestsellingpublisher.com/_next/static/media/logo.1f749c62.png",
+    description:
+      "Get the best quality of web copies written with our web copywriting services",
+    brand: {
+      "@type": "Brand",
+      name: "Best Selling Publisher",
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.9",
+      ratingCount: "1174",
+    },
+  };
   return (
     <main>
       <Head>
         <title>Web Copywriting Services | Best Selling Publisher</title>
-        <meta name="description" content="At Best Selling Publisher, we write the best web copies with our web copywriting services. Hire the best web copywriters by contacting us today!" />
+        <meta
+          name="description"
+          content="At Best Selling Publisher, we write the best web copies with our web copywriting services. Hire the best web copywriters by contacting us today!"
+        />
         <meta name="robots" content="index, follow" />
         <meta name="DC.title" content="Web Copywriting Services" />
         <meta name="geo.region" content="US" />
         <meta name="geo.position" content="39.78373;-100.445882" />
         <meta name="ICBM" content="39.78373, -100.445882" />
-        <meta property="og:url" content="https://www.bestsellingpublisher.com/web-copywriting-services" />
-        <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public" />
+        <meta
+          property="og:url"
+          content="https://www.bestsellingpublisher.com/web-copywriting-services"
+        />
+        <meta
+          property="og:image"
+          content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/1694b409-a46e-4bc7-7a4c-4be4438e3f00/public"
+        />
 
         {/* canonical: */}
-        <link rel="canonical" href="https://www.bestsellingpublisher.com/web-copywriting-services" />
+        <link
+          rel="canonical"
+          href="https://www.bestsellingpublisher.com/web-copywriting-services"
+        />
 
         {/* Schema */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaWebsite)}}/>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaCorporation)}}/>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaProffesionalService)}}/>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(schemaProduct)}}/>
-
-
-
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaWebsite) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(schemaCorporation),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(schemaProffesionalService),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaProduct) }}
+        />
       </Head>
       <MRHero
         title="Develop Your Brand With The Skills And Expertise of Our Web Copywriters"
         desc="Best Selling Publisher offers the professional web copywriting services, aimed at enhancing your website to drive sales and maximize ROI"
         logos="images/banner/img2.png"
-        classes='bg-[#FEFEFE] !py-[80px]'
+        classes="bg-[#FEFEFE] !py-[80px]"
         beforeImg="mr-md:before:bg-[url('../../public/imageAR/front-laptop-keyboard.png')]"
         counter={true}
       />
@@ -210,7 +251,8 @@ const WebCopywritingServices = () => {
         gridsClasses="mr-xl:grid-cols-3 mr-lg:grid-cols-3 mr-sm:grid-cols-2 !gap-x-8 mr-xl:w-[80%] mx-auto"
         cta={true}
         variant="icons"
-        data={MRCardData} />
+        data={MRCardData}
+      />
       <MRContent1
         subTitle="Our Comprehensive"
         title="Web Copywriting Services"
@@ -226,7 +268,7 @@ const WebCopywritingServices = () => {
           "Review And Analysis",
           "Copy Editing",
           "Developmental Editing",
-          "Line Editing"
+          "Line Editing",
         ]}
         classes="bg-[url('../../public/imageAR/serviceBG.png')]"
         theme="dark"
@@ -238,10 +280,10 @@ const WebCopywritingServices = () => {
         data={MRContent2Data}
       />
       <BTM />
-      <CTA 
-      subtitle="Get a Free Quote Now!"
-      title="Create Compelling Web Copy & Boost Your Online Presence"
-      desc="Our dedicated team of professional web copywriters are available to discuss your project and answer your questions. Connect with us today – we're here to help you achieve your online goals."
+      <CTA
+        subtitle="Get a Free Quote Now!"
+        title="Create Compelling Web Copy & Boost Your Online Presence"
+        desc="Our dedicated team of professional web copywriters are available to discuss your project and answer your questions. Connect with us today – we're here to help you achieve your online goals."
       />
       <MRCards
         subTitle="We Pursue"
@@ -250,16 +292,17 @@ const WebCopywritingServices = () => {
         gridsClasses="mr-xl:grid-cols-4 mr-lg:grid-cols-3 mr-sm:grid-cols-2"
         cta={false}
         variant="steps"
-        data={MRCardData2} />
+        data={MRCardData2}
+      />
       <SwiperComponents />
-      <MRContact 
-      title="Ready to Discover Your Potential? Let Our Expert Copywriters Bring Your Vision to Life!"
-      desc="Our collaborative approach begins with an open discussion where you can share your goals, target audience, and any initial ideas you might have. So what are you waiting for? Just fill out the form and let’s get started!"
-      titleB="Write Your Success Story with Us! "
-      descB={`Contact us today for a free consultation and learn <br class="hidden mr-sm:block" /> more about how our web copywriting services can <br class="hidden mr-sm:block" /> transform your online presence.`}
+      <MRContact
+        title="Ready to Discover Your Potential? Let Our Expert Copywriters Bring Your Vision to Life!"
+        desc="Our collaborative approach begins with an open discussion where you can share your goals, target audience, and any initial ideas you might have. So what are you waiting for? Just fill out the form and let’s get started!"
+        titleB="Write Your Success Story with Us! "
+        descB={`Contact us today for a free consultation and learn <br class="hidden mr-sm:block" /> more about how our web copywriting services can <br class="hidden mr-sm:block" /> transform your online presence.`}
       />
     </main>
-  )
-}
+  );
+};
 
-export default WebCopywritingServices
+export default WebCopywritingServices;
