@@ -39,6 +39,10 @@ const ChildrenIllustrationFa = () => {
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         />
+        <link
+          rel="canonical"
+          href="https://www.bestsellingpublisher.com/children-Illustration-tx"
+        />
       </Head>
       <MRHero
         title="Pinnacle Publishing For Children's Illustration Books"

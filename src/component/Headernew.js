@@ -1,30 +1,30 @@
-import Link from "next/link"
-import React, { useState } from "react"
-import Image from "next/image"
-import TOPHEADER1 from "./topHeader1"
+import Link from "next/link";
+import React, { useState } from "react";
+import Image from "next/image";
+import TOPHEADER1 from "./topHeader1";
 
-import Logo from "media/assets/images/logo.png"
-import TelIcon from "media/assets/sikander/telicon.png"
-import Ghostwriting from "media/assets/images/newimg/ghostwriting.png"
-import SeoWriting from "media/assets/images/newimg/SEO-Writing.png"
-import ArticleWriting from "media/assets/images/newimg/Article-Writing.png"
-import MagazineWriting from "media/assets/images/newimg/magazine-writing.png"
-import WebCopyWriting from "media/assets/images/newimg/Web-Copy-Writing.png"
-import PressRelease from "media/assets/images/newimg/Press-Release.png"
-import ScriptWriting from "media/assets/images/newimg/Script-Writing.png"
-import BookEditing from "media/assets/images/newimg/book-editing.svg"
+import Logo from "media/assets/images/logo.png";
+import TelIcon from "media/assets/sikander/telicon.png";
+import Ghostwriting from "media/assets/images/newimg/ghostwriting.png";
+import SeoWriting from "media/assets/images/newimg/SEO-Writing.png";
+import ArticleWriting from "media/assets/images/newimg/Article-Writing.png";
+import MagazineWriting from "media/assets/images/newimg/magazine-writing.png";
+import WebCopyWriting from "media/assets/images/newimg/Web-Copy-Writing.png";
+import PressRelease from "media/assets/images/newimg/Press-Release.png";
+import ScriptWriting from "media/assets/images/newimg/Script-Writing.png";
+import BookEditing from "media/assets/images/newimg/book-editing.svg";
 const Header = () => {
-  const [showSubMenu, setShowSubMenu] = useState(true)
-  const [menuOpen, setMenuOpen] = useState(true) // Set to false initially
+  const [showSubMenu, setShowSubMenu] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(true); // Set to false initially
 
   // Function to toggle submenu visibility
   const toggleSubMenu = () => {
-    setShowSubMenu((prevShowSubMenu) => !prevShowSubMenu)
-  }
+    setShowSubMenu((prevShowSubMenu) => !prevShowSubMenu);
+  };
 
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen)
-  }
+    setMenuOpen(!menuOpen);
+  };
   return (
     <>
       {/* <TOPHEADER1 /> */}
@@ -269,7 +269,7 @@ const Header = () => {
                   {[
                     ["Genre", "/genre"],
                     ["Marketing", "/book-marketing"],
-                    ["Publication", "/publication"],
+                    ["Publication", "/book-publishing-services"],
                     ["Printing", "/book-printing"],
                     ["Cover Design", "/book-cover-design"],
                     ["Case Studies", "/case-studies"],
@@ -322,7 +322,7 @@ const Header = () => {
         </header>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

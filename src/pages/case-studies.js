@@ -41,9 +41,7 @@ const OurReviews = () => {
     <main>
       {/* Head */}
       <Head>
-        <title>
-          Book Marketing & Publishing Reviews - Best Selling Publisher
-        </title>
+        <title>Book Marketing & Publishing Case Studies</title>
         <meta
           name="description"
           content="Read our book marketing & publishing case studies to know how we published & marketed thousands of ebooks online with proficient techniques."

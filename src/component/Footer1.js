@@ -173,7 +173,7 @@ const NewFooter = () => {
 
                     <li>
                       <Link
-                        href="/digital-book-publishing-fa"
+                        href="/digital-book-publishing-tx"
                         className="text-[13px] font-[400] font-secondary xl:leading-[25px] leading-[15px]"
                       >
                         Digital Book Publishing
@@ -181,7 +181,7 @@ const NewFooter = () => {
                     </li>
                     <li>
                       <Link
-                        href="/amazon-publishing-fa"
+                        href="/amazon-publishing-tx"
                         className="text-[13px] font-[400] font-secondary xl:leading-[25px] leading-[15px]"
                       >
                         Amazon Publishing
@@ -189,7 +189,7 @@ const NewFooter = () => {
                     </li>
                     <li>
                       <Link
-                        href="/self-publishing-fa"
+                        href="/self-publishing-tx"
                         className="text-[13px] font-[400] font-secondary xl:leading-[25px] leading-[15px]"
                       >
                         Self Publishing
@@ -197,7 +197,7 @@ const NewFooter = () => {
                     </li>
                     <li>
                       <Link
-                        href="/children-Illustration-fa"
+                        href="/children-Illustration-tx"
                         className="text-[13px] font-[400] font-secondary xl:leading-[25px] leading-[15px]"
                       >
                         Children Illustration

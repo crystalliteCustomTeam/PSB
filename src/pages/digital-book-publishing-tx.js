@@ -39,6 +39,10 @@ const DigitalBookPublishingFa = () => {
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         />
+        <link
+          rel="canonical"
+          href="https://www.bestsellingpublisher.com/digital-book-publishing-tx"
+        />
       </Head>
       <MRHero
         title="Digital Book Publishing Services To Help You Get Your Book Into The Hands Of Interested Readers!"
