@@ -121,7 +121,6 @@ const TestimonialsSlider = ({
             <p className="text-lg mb-3 mx-auto text-[16px] xs:text-[15px]">
               {desc}
             </p>
-
           </div>
         </div>
         <swiper-container
@@ -140,20 +139,22 @@ const TestimonialsSlider = ({
                 <div>
                   <div className="w-[90%] m-auto pt-10">
                     <div className="card testimonialscard">
-                      <Image quality={95}
+                      <Image
+                        quality={95}
                         src="/images/newimg/trust.png"
                         width={80}
                         height={80}
                         className="mb-2"
-
                         priority
                       />
-                      <Image quality={95}
+                      <Image
+                        quality={95}
                         src={testimonial.avatar}
                         alt={testimonial.name}
                         width={80}
                         height={80}
-                        priority={true}/>
+                        priority={true}
+                      />
                       <div className="header">
                         <div className="name">{testimonial.name}</div>
                       </div>

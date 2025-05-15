@@ -1,6 +1,6 @@
 import Head from "next/head";
 import style from "@/styles/singleblog.module.css";
-import { BlogData } from "@/pages/blogsdata/data/data";
+import { BlogData } from "@/blogsdata/data/data";
 import Image from "next/image";
 
 export async function getStaticPaths() {
