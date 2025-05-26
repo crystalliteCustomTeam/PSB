@@ -145,6 +145,11 @@ const Footer = () => {
                       2211 PRICE DR KILLEEN, TX 76542
                     </Link>
                   </li>
+                  <li>
+                    <Link href="#" className={styles.LocIcon}>
+                      445 S.Figueroa Street, Los Angeles, CA 90071
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </Col>
