@@ -265,6 +265,19 @@ const NewFooter = () => {
                         2211 PRICE DR KILLEEN, TX 76542
                       </Link>
                     </li>
+                    <li className="xl:pb-5 pb-3">
+                      <Link
+                        href="javascript:;"
+                        className="flex items-start gap-x-2 text-[13px] font-[400] font-secondary xl:leading-[25px] leading-[20px]"
+                      >
+                        <Image
+                          src={Location}
+                          alt="Amazon Book Publishing "
+                          className="min-h-[25px]object-contain xl:pt-0 pt-1"
+                        />
+                        445 S.Figueroa Street, Los Angeles, CA 90071
+                      </Link>
+                    </li>
                   </ul>
                 </div>
                 <div className="xs:col-span-12 col-span-3 payment_method">
