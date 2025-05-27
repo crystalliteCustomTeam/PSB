@@ -145,6 +145,7 @@ const Footer = () => {
                       445 S.Figueroa Street, Los Angeles, CA 90071
                     </Link>
                   </li>
+                 
                 </ul>
               </div>
             </Col>
