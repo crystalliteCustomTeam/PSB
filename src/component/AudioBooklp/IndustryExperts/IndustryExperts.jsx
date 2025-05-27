@@ -181,7 +181,7 @@ const IndustryExperts = ({ title, desc, descTwo, isContact, bannerBg }) => {
                                     </a>
                                     <a href="javascript:;" className="flex items-center gap-x-4 text-[14px] mr-md:text-[18px] secondary font-[300] mb-5">
                                         <Image src={Location} alt="PSB" width={20} height={20} />
-                                        <span>2211 PRICE DR KILLEEN, TX 76542 </span>
+                                        <span>445 S.Figueroa Street, Los Angeles, CA 90071 </span>
                                     </a>
                                 </div>
                             ) : null}

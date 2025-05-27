@@ -179,7 +179,7 @@ const ContactUs = () => {
                                 </a>
                                 <a href="javascript:;" target="_blank" className="flex items-center gap-x-3 mb-3">
                                     <span className="block"><Image src={Location} alt="icons" width={20} height={20} /></span>
-                                    <span className="block">2211 PRICE DR KILLEEN, TX 76542 </span>
+                                    <span className="block">445 S.Figueroa Street, Los Angeles, CA 90071 </span>
                                 </a>
                             </div>
                             <div className="flex mr-sm:flex-nowrap flex-wrap mr-sm:w-max mr-sm:gap-x-5 gap-5 items-center pt-6 border-t border-[#8A8A8A]">
@@ -187,7 +187,7 @@ const ContactUs = () => {
                                 <div>
                                     <h5 className="text-[#40BEE2] mr-md:text-[20px] text-lg leading-normal font-bold mb-3">Make Your Book a Visual Delight with Illustrations!</h5>
                                     <p className="text-base leading-normal font-normal">We create beautiful illustrations that make your book visually <br className="mr-sm:block hidden" />
-                                    captivating, focusing on quality and creativity.</p>
+                                        captivating, focusing on quality and creativity.</p>
                                 </div>
                             </div>
                         </div>

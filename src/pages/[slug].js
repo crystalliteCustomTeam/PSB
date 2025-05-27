@@ -3,6 +3,12 @@ import style from "@/styles/singleblog.module.css";
 import { BlogData } from "@/blogsdata/data/data";
 import Image from "next/image";
 
+export function generateStaticParams() {
+  return BlogData.map((post) => ({
+    slug: post.slug,
+  }));
+}
+
 export async function getStaticPaths() {
   const paths = BlogData.map((post) => ({
     params: { slug: post.slug },
