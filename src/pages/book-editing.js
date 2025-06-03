@@ -6,7 +6,7 @@ import { MRHero, MRContact, MRContent1, MRCards } from "@/component";
 import PublishingNewComponent from "@/fa-component/PublishingNewComponent";
 import Head from "next/head";
 import { Popup } from "@/component/LP-Eight";
-
+import Logos from "media/images/banner/img2.webp";
 const BookEditing = () => {
   const MRCardData = [
     {
@@ -190,7 +190,7 @@ const BookEditing = () => {
         title="Craft the Perfect Narrative for Your Manuscript with our Expert Book Editing Services"
         desc="Do you feel your book can go from good to exceptional with some editing? <span class='h-3 block'></span>
         At Best Selling Publisher, we believe every manuscript holds the potential to become a masterpiece. Our book editing services are designed to refine your writing, ensuring each page resonates with your readers. With a track record of transforming over 400 million words for 100+ authors, our expertise is your gateway to publishing success."
-        logos="images/banner/img2.png"
+        logos={Logos}
         counter={true}
         classes="bg-[#fefefe] !py-[80px]"
         beforeImg="mr-md:before:bg-[url('../../public/imageAR/night-laptop.png')]"

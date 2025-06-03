@@ -15,7 +15,7 @@ import {
 } from "@/component";
 import PublishingNewComponent from "@/fa-component/PublishingNewComponent";
 // Media
-import BannerImg from "media/ahsan/home-banner-new.webp";
+import BannerImg from "media/ahsan/homeBanner.webp";
 import Logos from "media/images/banner/img2.webp";
 
 const MRQuestionersData = [

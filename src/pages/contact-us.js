@@ -6,6 +6,7 @@ import Enlistedlogo from "@/fa-component/Enlistedlogo";
 import ContactModel from "../component/ContactModel";
 import { MRCards, MRHero } from "@/component";
 import Head from "next/head";
+import Logos from "media/images/banner/img2.webp";
 const contact = () => {
   const MRCardData2 = [
     {
@@ -65,7 +66,7 @@ const contact = () => {
         <MRHero
           title="Witness Excellence By <br /> Working With The Top <br /> Industry Specialists"
           desc="Your dream of becoming a successful author is our mission. So, don’t hold back; get ahold of us today."
-          logos="images/banner/img2.png"
+          logos={Logos}
           form={false}
           counter={true}
           classes="!py-[80px] bg-[#fefefe] bg-right bg-center"

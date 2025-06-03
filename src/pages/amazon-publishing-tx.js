@@ -6,7 +6,7 @@ import BTM from "@/component/bottomLogos";
 import CTA from "@/component/cta3";
 import PublishingNewComponent from "@/fa-component/PublishingNewComponent";
 import { MRHero, MRContact, MRQuestioners, MRContent1 } from "@/component";
-
+import Logos from "media/images/banner/img2.webp";
 const AmazonPublishingFa = () => {
   const MRQuestionersData = [
     {
@@ -92,7 +92,7 @@ const AmazonPublishingFa = () => {
       </Head>
       <MRHero
         title="Amazon Publishing Services Company To Make Your Book Available To Millions Of Readers!"
-        logos="images/banner/img2.png"
+        logos={Logos}
         counter={true}
         classes="bg-right bg-center !py-[80px]"
         beforeImg="mr-md:before:bg-[url('../../public/ahsan/amazon-publishing-banner.png')]"

@@ -1,25 +1,28 @@
-import WS from "@/component/writingservices"
-import BTM from "@/component/bottomLogos"
-import WMODE1 from "@/component/workMode1"
-import CTA3 from "@/component/cta3"
-import SwiperComponents from "@/component/SwiperComponent"
-import { MRContact, MRContent1, MRHero } from "@/component"
-import Enlistedlogo from "@/fa-component/Enlistedlogo"
-import Tradition from "@/fa-component/Tradition"
-import PublishingNewComponent from "@/fa-component/PublishingNewComponent"
-import Head from "next/head"
-
+import WS from "@/component/writingservices";
+import BTM from "@/component/bottomLogos";
+import WMODE1 from "@/component/workMode1";
+import CTA3 from "@/component/cta3";
+import SwiperComponents from "@/component/SwiperComponent";
+import { MRContact, MRContent1, MRHero } from "@/component";
+import Enlistedlogo from "@/fa-component/Enlistedlogo";
+import Tradition from "@/fa-component/Tradition";
+import PublishingNewComponent from "@/fa-component/PublishingNewComponent";
+import Head from "next/head";
+import Logos from "media/images/banner/img2.webp";
 const BarnettGhostwriting = () => {
   return (
     <main>
       <Head>
         <title>Barnett Ghostwriting | Best Book Publishing Company</title>
-        <meta name="description" content="Experience the pinnacle of publishing services with the Best Book Publishing Company. With our commitment to quality, we guide every author toward success. Get started today!" />
+        <meta
+          name="description"
+          content="Experience the pinnacle of publishing services with the Best Book Publishing Company. With our commitment to quality, we guide every author toward success. Get started today!"
+        />
       </Head>
       <MRHero
         title="Your Source For Superior Book Writing!"
         desc="Which book writing service is your need? You will find everything you are looking for, from professional writers to top marketers"
-        logos="images/banner/img2.png"
+        logos={Logos}
         counter={true}
         classes="bg-right bg-center !py-[80px]"
         beforeImg="mr-md:before:bg-[url('../../public/ahsan/barnett-ghostwriting.png')]"
@@ -42,7 +45,7 @@ const BarnettGhostwriting = () => {
           "Book Formatting",
           "Book Publishing",
           "Video Trailer",
-          "Book Marketing"
+          "Book Marketing",
         ]}
       />
       <Tradition
@@ -60,7 +63,7 @@ const BarnettGhostwriting = () => {
         list={[
           "Being Published On All Online Platforms, Such As Kindle.",
           "Fast And Affordable Self-Publishing.",
-          "Additions, Revisions, And Re-Editions!"
+          "Additions, Revisions, And Re-Editions!",
         ]}
         listClasses="grid-cols-1"
         img1="/assets/images/newimg/industry-section.png"
@@ -81,7 +84,7 @@ const BarnettGhostwriting = () => {
           "Book Translation",
           "Marketing Consultation",
           "Amazong Marketing",
-          "Barnes & Noble Nook Edition"
+          "Barnes & Noble Nook Edition",
         ]}
         direction="flex-row-reverse"
         img1="/ahsan/spacious-bookstore-interior.png"
@@ -103,29 +106,29 @@ const BarnettGhostwriting = () => {
           {
             steps: "Step 01",
             heading: "Submit Your Manuscript",
-            desc: "After making up your mind about working with us, you place your order."
+            desc: "After making up your mind about working with us, you place your order.",
           },
           {
             steps: "Step 02",
             heading: "Edit & Design",
-            desc: "We refine your text and design your book's cover."
+            desc: "We refine your text and design your book's cover.",
           },
           {
             steps: "Step 03",
             heading: "Review & Approve",
-            desc: "You review our work and give the green light."
+            desc: "You review our work and give the green light.",
           },
           {
             steps: "Step 04",
             heading: "Publish & Distribute",
-            desc: "Your book is published and distributed on schedule."
-          }
+            desc: "Your book is published and distributed on schedule.",
+          },
         ]}
       />
       <SwiperComponents />
       <MRContact />
     </main>
-  )
-}
+  );
+};
 
-export default BarnettGhostwriting
+export default BarnettGhostwriting;

@@ -8,7 +8,7 @@ import Enlistedlogo from "@/fa-component/Enlistedlogo";
 import { MRHero, MRContact, MRQuestioners, MRContent1 } from "@/component";
 import Head from "next/head";
 import { Popup } from "@/component/LP-Eight";
-
+import Logos from "media/images/banner/img2.webp";
 const MRQuestionersData = [
   {
     title: "What Are Book Publishing Services?",
@@ -142,7 +142,7 @@ const BookPublishing = () => {
       </Head>
       <MRHero
         title="Publishing Your Amazing Book Swiftly And Aiding You In Bringing About Great Success"
-        logos="images/banner/img2.png"
+        logos={Logos}
         counter={true}
         groupCTA={true}
         isPopup={true}

@@ -6,7 +6,7 @@ import BTM from "@/component/bottomLogos";
 import CTA from "@/component/cta3";
 import PublishingNewComponent from "@/fa-component/PublishingNewComponent";
 import { MRHero, MRContact, MRQuestioners, MRContent1 } from "@/component";
-
+import Logos from "media/images/banner/img2.webp";
 const MRQuestionersData = [
   {
     title: "What Is Self Publishing?",
@@ -85,7 +85,7 @@ const SelfPublishingFa = () => {
       </Head>
       <MRHero
         title="Best Self Publishing Services - <br /> Your One-Stop Solution For <br /> Self Publishing Success!"
-        logos="images/banner/img2.png"
+        logos={Logos}
         counter={true}
         classes="bg-right bg-center !py-[80px]"
         beforeImg="mr-md:before:bg-[url('../../public/ahsan/night-reading-book-home.png')]"

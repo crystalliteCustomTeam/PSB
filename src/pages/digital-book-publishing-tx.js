@@ -6,7 +6,7 @@ import BTM from "@/component/bottomLogos";
 import CTA from "@/component/cta3";
 import PublishingNewComponent from "@/fa-component/PublishingNewComponent";
 import { MRHero, MRContact, MRQuestioners, MRContent1 } from "@/component";
-
+import Logos from "media/images/banner/img2.webp";
 const MRQuestionersData = [
   {
     title: "You'll Save Time:",
@@ -88,7 +88,7 @@ const DigitalBookPublishingFa = () => {
       </Head>
       <MRHero
         title="Digital Book Publishing Services To Help You Get Your Book Into The Hands Of Interested Readers!"
-        logos="images/banner/img2.png"
+        logos={Logos}
         counter={true}
         classes="bg-right bg-center !py-[80px]"
         beforeImg="mr-md:before:bg-[url('../../public/ahsan/front-view-beutiful-woman-working.png')]"

@@ -6,7 +6,7 @@ import BTM from "@/component/bottomLogos";
 import CTA from "@/component/cta3";
 import PublishingNewComponent from "@/fa-component/PublishingNewComponent";
 import { MRHero, MRContact, MRQuestioners, MRContent1 } from "@/component";
-
+import Logos from "media/images/banner/img2.webp";
 const MRQuestionersData = [
   {
     title: "Ebooks Are Cheaper To Produce Than Print Books.",
@@ -173,7 +173,7 @@ const EbookPublishing = () => {
       <MRHero
         title="Create The Best-Selling eBooks With Our Ebook Publishing Services!"
         desc="Hire the best eBook publisher to create your next best-seller! Best Selling Publisher guarantees professional formatting, eye-catching design, and wide distribution to maximize your book's visibility and sales potential. "
-        logos="images/banner/img2.png"
+        logos={Logos}
         counter={true}
         classes="bg-right bg-center !py-[80px]"
         beforeImg="mr-md:before:bg-[url('../../public/ahsan/woman-reading-book-side-view.png')]"

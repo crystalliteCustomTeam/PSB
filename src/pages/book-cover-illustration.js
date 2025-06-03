@@ -1,21 +1,22 @@
-import Head from "next/head"
-import Tradition from "@/fa-component/Tradition"
-import Enlistedlogo from "@/fa-component/Enlistedlogo"
-import SwiperComponent from "@/component/SwiperComponent"
-import BTM from "@/component/bottomLogos"
-import CTA from "@/component/cta3"
-import PublishingNewComponent from "@/fa-component/PublishingNewComponent"
-import { MRHero, MRContact, MRCards, MRContent1 } from "@/component"
-import Sales from "media/ahsan/sales.png"
-import Compatibility from "media/ahsan/compatibility.png"
-import UniqueIllustrations from "media/ahsan/device-compatibility.png"
-import EasyUpload from "media/ahsan/easyuploadCover.png"
-import BestFriendMarco from "media/ahsan/bestFriendMarco.png"
-import IllustrationPackages from "@/component/IllustrationPackages/IllustrationPackages"
-
+import Head from "next/head";
+import Tradition from "@/fa-component/Tradition";
+import Enlistedlogo from "@/fa-component/Enlistedlogo";
+import SwiperComponent from "@/component/SwiperComponent";
+import BTM from "@/component/bottomLogos";
+import CTA from "@/component/cta3";
+import PublishingNewComponent from "@/fa-component/PublishingNewComponent";
+import { MRHero, MRContact, MRCards, MRContent1 } from "@/component";
+import Sales from "media/ahsan/sales.png";
+import Compatibility from "media/ahsan/compatibility.png";
+import UniqueIllustrations from "media/ahsan/device-compatibility.png";
+import EasyUpload from "media/ahsan/easyuploadCover.png";
+import BestFriendMarco from "media/ahsan/bestFriendMarco.png";
+import IllustrationPackages from "@/component/IllustrationPackages/IllustrationPackages";
+import Logos from "media/images/banner/img2.webp";
 const MRCardData = [
   {
-    classes: "bg-[#fff] shadow-lg px-3 rounded-2xl relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#40BEE2] hover:!text-white text-center",
+    classes:
+      "bg-[#fff] shadow-lg px-3 rounded-2xl relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#40BEE2] hover:!text-white text-center",
     content: [
       {
         icon: Sales,
@@ -32,13 +33,14 @@ const MRCardData = [
       {
         icon: UniqueIllustrations,
         title: "Unique <br/> Illustrations",
-      }
-    ]
-  }
-]
+      },
+    ],
+  },
+];
 const MRCardData2 = [
   {
-    classes: "bg-[#fff] shadow-lg mr-2xl:!px-5 mr-md:!px-4 px-3 rounded-xl relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-left",
+    classes:
+      "bg-[#fff] shadow-lg mr-2xl:!px-5 mr-md:!px-4 px-3 rounded-xl relative py-[40px] mr-lg:mt-[30px] mr-md:mt-[20px] mt-[16px]  transition-all duration-300 ease-in-out group hover:!bg-[#000] hover:!text-white text-left",
     stepText: "Step",
     indexing: true,
     content: [
@@ -56,10 +58,10 @@ const MRCardData2 = [
         textColor: "text-[#40BEE2] group-hover:text-white",
         title: "Final Delivery",
         desc: "After we've finalized the design and got the designed approved by you, we then commence our final phase to provide you with the print-ready professional PDF files and finally, send you the complete formats and high-quality final files.",
-      }
-    ]
-  }
-]
+      },
+    ],
+  },
+];
 
 const BookCoverIllustration = () => {
   const packagesData = [
@@ -72,7 +74,7 @@ const BookCoverIllustration = () => {
         "Up To Two Characters",
         "Background",
         "Extra Characters - $15 Each",
-      ]
+      ],
     },
     {
       title: "Full Page Illustration",
@@ -83,7 +85,7 @@ const BookCoverIllustration = () => {
         "Up To Three Characters",
         "Detailed Background",
         "Extra Characters - $15 Each",
-      ]
+      ],
     },
     {
       title: "Spread Illustration",
@@ -94,19 +96,22 @@ const BookCoverIllustration = () => {
         "Up To Six Characters",
         "Detailed Background",
         "Extra Characters - $15 Each",
-      ]
+      ],
     },
-  ]
+  ];
   return (
     <main>
       <Head>
         <title>Book Cover Illustration | Best Book Publishing Company</title>
-        <meta name="description" content="Experience the pinnacle of publishing services with the Best Book Publishing Company. With our commitment to quality, we guide every author toward success. Get started today!" />
+        <meta
+          name="description"
+          content="Experience the pinnacle of publishing services with the Best Book Publishing Company. With our commitment to quality, we guide every author toward success. Get started today!"
+        />
       </Head>
       <MRHero
         title="Book Cover Illustration Services"
         desc="Achieve more with our top-of-the-line book cover illustration services that make your books visually appealing and irresistible."
-        logos="images/banner/img2.png"
+        logos={Logos}
         counter={true}
         classes="bg-right bg-center !py-[80px]"
         beforeImg="mr-md:before:bg-[url('../../public/ahsan/bookCoverillustration1.png')]"
@@ -135,7 +140,7 @@ const BookCoverIllustration = () => {
           "<span class='text-[#00c0e4] font-bold'>Qualified Illustrators: </span>Every Work Of Our Client Is Catered By An Experienced Professional To Ensure That The Work Is Perfect.",
           "<span class='text-[#00c0e4] font-bold'>Quickest Turnarounds: </span>Late Delivery Of Services Is Something That Puts Customers Off, And We Never Let That Happen. We Always Deliver On Time!",
           "<span class='text-[#00c0e4] font-bold'>Satisfaction Guaranteed: </span>Our Experts Present You With Numerous Illustrations And Revise The Approved Ones Until You’re Fully Satisfied.",
-          "<span class='text-[#00c0e4] font-bold'>Unlimited Revisions: </span>We Offer Unlimited Quick Revisions To Ensure That The Final Draft Lives Up To Our Client's Expectations."
+          "<span class='text-[#00c0e4] font-bold'>Unlimited Revisions: </span>We Offer Unlimited Quick Revisions To Ensure That The Final Draft Lives Up To Our Client's Expectations.",
         ]}
         listClasses="grid grid-cols-2 gap-3"
         img1={BestFriendMarco}
@@ -162,11 +167,9 @@ const BookCoverIllustration = () => {
         data={MRCardData2}
       />
       <SwiperComponent />
-      <MRContact
-        BGimage="before:!bg-[url('../../public/ahsan/bookCoverssBGStory.png')]"
-      />
+      <MRContact BGimage="before:!bg-[url('../../public/ahsan/bookCoverssBGStory.png')]" />
     </main>
-  )
-}
+  );
+};
 
-export default BookCoverIllustration
+export default BookCoverIllustration;

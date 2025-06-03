@@ -20,7 +20,7 @@ import Documentary from "media/imageAR/Documentary.png";
 import Story from "media/imageAR/Story.png";
 import Manuscript from "media/imageAR/Manuscript.png";
 import Content from "media/imageAR/Content.png";
-
+import Logos from "media/images/banner/img2.webp";
 const ScriptWritingServices = () => {
   const MRContent2Data = [
     {
@@ -241,7 +241,7 @@ const ScriptWritingServices = () => {
       <MRHero
         title="Capture Your Audience’s Imagination with Professional Script Writing Services"
         desc="Our team of skilled script writers intimately understand the profound impact of storytelling. We recognize that every word, every scene, and every character holds the potential to captivate your audience. Join the ranks of satisfied clients who’ve entrusted us to develop captivating scripts!"
-        logos="images/banner/img2.png"
+        logos={Logos}
         classes="bg-[#fefefe] !py-[80px]"
         beforeImg="mr-md:before:bg-[url('../../public/imageAR/notebook.png')]"
         counter={true}
