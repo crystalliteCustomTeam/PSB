@@ -263,7 +263,7 @@ const NewFooter = () => {
                           alt="Amazon Book Publishing "
                           className="min-h-[25px]object-contain xl:pt-0 pt-1"
                         />
-                        445 S.Figueroa Street, Los Angeles, CA 90071
+                        9518 Mykawa Road, Houston, TX 77048
                       </Link>
                     </li>
                   </ul>
