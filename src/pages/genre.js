@@ -7,7 +7,7 @@ import Enlistedlogo from "@/fa-component/Enlistedlogo";
 import { MRHero, MRContact } from "@/component";
 import PublishingNewComponent from "@/fa-component/PublishingNewComponent";
 import Head from "next/head";
-
+import Logos from "media/images/banner/img2.webp";
 const Genre = () => {
   const schemaWebsite = {
     "@context": "https://schema.org/",
@@ -137,11 +137,12 @@ const Genre = () => {
       <MRHero
         title="Create Your Literary Legacy, Because Your Story Deserves the Best!"
         desc="Our mission as a company is to bring you literary success. We offer great content for every book genre, whether you need fiction book publishing services, autobiography, top-ranked memoirs publishing, or best children book publishing, we’ve covered it all!"
-        logos="images/banner/img2.png"
+        logos={Logos}
         counter={true}
         classes="bg-[#fefefe] !py-[80px]"
         beforeImg="mr-md:before:bg-[url('../../public/imageAR/books-library.png')]"
       />
+
       <Enlistedlogo />
       <WEARE />
       <PublishingNewComponent

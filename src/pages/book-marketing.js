@@ -6,7 +6,7 @@ import Enlistedlogo from "@/fa-component/Enlistedlogo";
 import { MRHero, MRContact, MRContent1, MRCards } from "@/component";
 import TabNavigation from "@/component/marketing/TabNavigation";
 import Head from "next/head";
-
+import Logos from "media/images/banner/img2.webp";
 const BookMarketing = () => {
   const MRCardData = [
     {
@@ -167,7 +167,7 @@ const BookMarketing = () => {
       <MRHero
         title="Providing Professional Online Book Marketing Services"
         desc="We will strategically promote your books online to optimize sales and secure the well-deserved exposure your work deserves."
-        logos="images/banner/img2.png"
+        logos={Logos}
         counter={true}
         classes="bg-right bg-center !py-[80px]"
         beforeImg="mr-md:before:bg-[url('../../public/ahsan/young-beautiful-woman.png')]"

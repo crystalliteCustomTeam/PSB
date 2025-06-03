@@ -10,7 +10,7 @@ import { MRHero, MRContact, MRContent1, MRCards } from "@/component";
 import OurComprehensive from "@/component/OurComprehensive";
 import PublishingNewComponent from "@/fa-component/PublishingNewComponent";
 import Head from "next/head";
-
+import Logos from "media/images/banner/img2.webp";
 const BookCoverDesign = () => {
   const MRCardData = [
     {
@@ -201,7 +201,7 @@ const BookCoverDesign = () => {
         title="Covers that Let You Judge a Book"
         desc="First impressions matter BIG TIME! Do you want to make a great first impression of your book?
         At Best Selling Publisher, we believe the success of your book starts with its cover. Our goal is to create the most attractive cover designs, turning your manuscript into a visual standout that commands attention. Let's start this creative process together."
-        logos="images/banner/img2.png"
+        logos={Logos}
         classes="!py-[80px] bg-[#fefefe]"
         beforeImg="mr-md:before:bg-[url('../../public/imageAR/world-book-day.png')]"
         counter={true}

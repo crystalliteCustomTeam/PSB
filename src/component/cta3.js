@@ -1,21 +1,21 @@
-import React, { useEffect } from "react"
-import { gsap } from "gsap"
-import ScrollTrigger from "gsap/dist/ScrollTrigger"
-import Image from "next/image"
-import Mockup1 from "media/images/book-mockup/bg/1.webp"
-import Mockup2 from "media/images/book-mockup/bg/2.webp"
-import Mockup3 from "media/images/book-mockup/bg/3.webp"
-import Mockup4 from "media/images/book-mockup/bg/4.webp"
-import Mockup5 from "media/images/book-mockup/bg/5.webp"
-import Mockup6 from "media/images/book-mockup/bg/6.webp"
-import Mockup7 from "media/images/book-mockup/bg/7.webp"
-import Mockup8 from "media/images/book-mockup/bg/8.webp"
-import Mockup9 from "media/images/book-mockup/bg/9.webp"
-import Mockup10 from "media/images/book-mockup/bg/10.webp"
-import Mockup11 from "media/images/book-mockup/bg/11.webp"
-import Mockup12 from "media/images/book-mockup/bg/12.webp"
-import Logoss from "media/ahsan/logoss.png"
-import { MRCTA } from "@/component"
+import React, { useEffect } from "react";
+import { gsap } from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import Image from "next/image";
+import Mockup1 from "media/images/book-mockup/bg/new/Book-01.webp";
+import Mockup2 from "media/images/book-mockup/bg/new/Book-02.webp";
+import Mockup4 from "media/images/book-mockup/bg/new/Book-04.webp";
+import Mockup5 from "media/images/book-mockup/bg/new/Book-05.webp";
+import Mockup6 from "media/images/book-mockup/bg/new/Book-06.webp";
+import Mockup7 from "media/images/book-mockup/bg/new/Book-07.webp";
+import Mockup8 from "media/images/book-mockup/bg/new/Book-08.webp";
+import Mockup9 from "media/images/book-mockup/bg/new/Book-09.webp";
+import Mockup10 from "media/images/book-mockup/bg/new/Book-10.webp";
+import Mockup11 from "media/images/book-mockup/bg/new/Book-01.webp";
+import Mockup12 from "media/images/book-mockup/bg/new/Book-02.webp";
+
+import Logoss from "media/ahsan/logoss.png";
+import { MRCTA } from "@/component";
 const YourComponent = ({
   subtitle = "Don’t Hesitate To Contact Us!",
   title = `Start Your Bestseller <br class="mr-2xl:block hidden"/> Journey—Publish With Us Today!`,
@@ -23,34 +23,34 @@ const YourComponent = ({
   isPopup = "",
 }) => {
   const openLiveChat = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     if (window.LiveChatWidget) {
-      window.LiveChatWidget.call("maximize")
+      window.LiveChatWidget.call("maximize");
     }
-  }
+  };
 
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger)
+    gsap.registerPlugin(ScrollTrigger);
 
-    const additionalY = { val: 0 }
-    let additionalYAnim
-    let offset = 0
+    const additionalY = { val: 0 };
+    let additionalYAnim;
+    let offset = 0;
 
-    const cols = gsap.utils.toArray(".col")
+    const cols = gsap.utils.toArray(".col");
 
     cols.forEach((col, i) => {
-      const images = col.childNodes
+      const images = col.childNodes;
 
       // DUPLICATE IMAGES FOR LOOP
       images.forEach((image) => {
-        var clone = image.cloneNode(true)
-        col.appendChild(clone)
-      })
+        var clone = image.cloneNode(true);
+        col.appendChild(clone);
+      });
 
       // SET ANIMATION
       images.forEach((item) => {
-        let columnHeight = item.parentElement.clientHeight
-        let direction = i % 2 !== 0 ? "+=" : "-=" // Change direction for odd columns
+        let columnHeight = item.parentElement.clientHeight;
+        let direction = i % 2 !== 0 ? "+=" : "-="; // Change direction for odd columns
 
         gsap.to(item, {
           y: direction + Number(columnHeight / 2),
@@ -60,39 +60,39 @@ const YourComponent = ({
           modifiers: {
             y: gsap.utils.unitize((y) => {
               if (direction === "+=") {
-                offset += additionalY.val
-                y = (parseFloat(y) - offset) % (columnHeight * 0.5)
+                offset += additionalY.val;
+                y = (parseFloat(y) - offset) % (columnHeight * 0.5);
               } else {
-                offset += additionalY.val
-                y = (parseFloat(y) + offset) % -Number(columnHeight * 0.5)
+                offset += additionalY.val;
+                y = (parseFloat(y) + offset) % -Number(columnHeight * 0.5);
               }
 
-              return y
+              return y;
             }),
           },
-        })
-      })
-    })
+        });
+      });
+    });
 
     const imagesScrollerTrigger = ScrollTrigger.create({
       trigger: ".section",
       start: "top 50%",
       end: "bottom 50%",
       onUpdate: function (self) {
-        const velocity = self.getVelocity()
+        const velocity = self.getVelocity();
         if (velocity > 0) {
-          if (additionalYAnim) additionalYAnim.kill()
-          additionalY.val = -velocity / 2000
-          additionalYAnim = gsap.to(additionalY, { val: 0 })
+          if (additionalYAnim) additionalYAnim.kill();
+          additionalY.val = -velocity / 2000;
+          additionalYAnim = gsap.to(additionalY, { val: 0 });
         }
         if (velocity < 0) {
-          if (additionalYAnim) additionalYAnim.kill()
-          additionalY.val = -velocity / 3000
-          additionalYAnim = gsap.to(additionalY, { val: 0 })
+          if (additionalYAnim) additionalYAnim.kill();
+          additionalY.val = -velocity / 3000;
+          additionalYAnim = gsap.to(additionalY, { val: 0 });
         }
       },
-    })
-  }, [])
+    });
+  }, []);
   return (
     <>
       <section className="section-container11 relative w-full overflow-hidden focus:scroll-auto ">
@@ -284,7 +284,7 @@ const YourComponent = ({
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default YourComponent
+export default YourComponent;

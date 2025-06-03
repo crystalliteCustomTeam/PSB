@@ -20,6 +20,8 @@ import Search from "media/imageAR/search.png";
 import Analyse from "media/imageAR/analyse.png";
 import Optimization from "media/imageAR/optimization.png";
 import Linking from "media/imageAR/linking.png";
+import Logos from "media/images/banner/img2.webp";
+
 const MRContent2Data = [
   {
     title: "Blog Posts",
@@ -235,7 +237,7 @@ const SEOContentWritingServices = () => {
       <MRHero
         title="Increase Your Brand Image Through Top-Rated SEO Content Writing Services"
         desc="Create SEO-optimized content that converts and attracts more organic search traffic to boost your online visibility and credibility."
-        logos="images/banner/img2.png"
+        logos={Logos}
         classes="bg-[#fefefe] !py-[80px]"
         beforeImg="mr-md:before:bg-[url('../../public/imageAR/seo-search-engine.png')]"
         counter={true}

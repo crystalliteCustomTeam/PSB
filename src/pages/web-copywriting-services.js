@@ -12,7 +12,7 @@ import {
   MRCards,
 } from "@/component";
 import Head from "next/head";
-
+import Logos from "media/images/banner/img2.webp";
 const WebCopywritingServices = () => {
   const MRContent2Data = [
     {
@@ -231,7 +231,7 @@ const WebCopywritingServices = () => {
       <MRHero
         title="Develop Your Brand With The Skills And Expertise of Our Web Copywriters"
         desc="Best Selling Publisher offers the professional web copywriting services, aimed at enhancing your website to drive sales and maximize ROI"
-        logos="images/banner/img2.png"
+        logos={Logos}
         classes="bg-[#FEFEFE] !py-[80px]"
         beforeImg="mr-md:before:bg-[url('../../public/imageAR/front-laptop-keyboard.png')]"
         counter={true}

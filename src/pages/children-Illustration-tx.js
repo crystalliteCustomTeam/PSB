@@ -6,7 +6,7 @@ import BTM from "@/component/bottomLogos";
 import CTA from "@/component/cta3";
 import PublishingNewComponent from "@/fa-component/PublishingNewComponent";
 import { MRHero, MRContact, MRQuestioners, MRContent1 } from "@/component";
-
+import Logos from "media/images/banner/img2.webp";
 const MRQuestionersData = [
   {
     title: "What Is Self Publishing?",
@@ -88,7 +88,7 @@ const ChildrenIllustrationFa = () => {
       </Head>
       <MRHero
         title="Pinnacle Publishing For Children's Illustration Books"
-        logos="images/banner/img2.png"
+        logos={Logos}
         counter={true}
         classes="bg-right bg-center !py-[80px]"
         beforeImg="mr-md:before:bg-[url('../../public/ahsan/rendering-cartoon-fantasy-scene-illustration.png')]"

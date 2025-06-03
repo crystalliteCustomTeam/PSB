@@ -20,6 +20,8 @@ import Profile from "media/imageAR/Profile.png";
 import Service from "media/imageAR/Service.png";
 import Articles from "media/imageAR/Articles.png";
 import Informative from "media/imageAR/Informative.png";
+import Logos from "media/images/banner/img2.webp";
+
 const MagazineWriting = () => {
   const MRContent2Data = [
     {
@@ -235,7 +237,7 @@ const MagazineWriting = () => {
       <MRHero
         title="Our Professional Magazine Writers Bring It All Altogether"
         desc="Attracting the reader at the first step can be tricky, but our expert writers effortlessly bring all the content together, instantly hooking your readers from the very first sentence."
-        logos="images/banner/img2.png"
+        logos={Logos}
         classes="bg-[#fefefe] !py-[80px]"
         beforeImg="mr-md:before:bg-[url('../../public/imageAR/magazine.png')]"
         counter={true}

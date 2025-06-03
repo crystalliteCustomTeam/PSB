@@ -13,7 +13,7 @@ import {
   MRCards,
 } from "@/component";
 import Head from "next/head";
-
+import Logos from "media/images/banner/img2.webp";
 const ArticleWritingServices = () => {
   const MRContent2Data = [
     {
@@ -232,7 +232,7 @@ const ArticleWritingServices = () => {
       <MRHero
         title="Maximize Impact with Our Top-Rated Article Writing Services!"
         desc="Why settle for ordinary content? Stand out with engaging, SEO-friendly articles designed to captivate your audience, drive traffic, and convert visitors into loyal clients. Hire our #1 ranked article writers for resonant messaging and exceptional brand results!"
-        logos="images/banner/img2.png"
+        logos={Logos}
         counter={true}
         classes="!py-[80px] bg-[#FEFEFE]"
         beforeImg="before:mr-md:bg-[url('../../public/imageAR/business-woman-working.png')]"

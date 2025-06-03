@@ -11,7 +11,7 @@ import {
   MRCards,
 } from "@/component";
 import Head from "next/head";
-
+import Logos from "media/images/banner/img2.webp";
 const PressReleaseWritingServices = () => {
   const MRContent2Data = [
     {
@@ -198,7 +198,7 @@ const PressReleaseWritingServices = () => {
       <MRHero
         title="Press Release Writing Services That Spark Conversation"
         desc="Put your brand in the spotlight with our press releases. Our team creates compelling press releases that capture attention, and engage journalists, online publishers, and search engines."
-        logos="images/banner/img2.png"
+        logos={Logos}
         classes="bg-[#fefefe] !py-[80px]"
         counter={true}
         beforeImg="mr-md:before:bg-[url('../../public/imageAR/newspaper-concept.png')]"

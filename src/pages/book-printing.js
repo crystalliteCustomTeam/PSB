@@ -7,7 +7,7 @@ import Enlistedlogo from "@/fa-component/Enlistedlogo";
 import { MRHero, MRContact, MRCards } from "@/component";
 import PublishingNewComponent from "@/fa-component/PublishingNewComponent";
 import Head from "next/head";
-
+import Logos from "media/images/banner/img2.webp";
 const BookPrinting = () => {
   const MRCardData = [
     {
@@ -203,7 +203,7 @@ const BookPrinting = () => {
       <MRHero
         title="Take Your Book From Manuscript To Masterpiece with Our Book Printing Services"
         desc="Don't you want your book to leap off the page? <span class='h-3 block'></span> At Best Selling Publisher, our printing services are unmatched in quality and precision, making sure every single page bursts to life with vivid colors and crystal-clear detail."
-        logos="images/banner/img2.png"
+        logos={Logos}
         counter={true}
         classes="bg-right bg-center !py-[80px]"
         beforeImg="mr-md:before:bg-[url('../../public/imageAR/bookstore-with-bookshelf.png')]"
