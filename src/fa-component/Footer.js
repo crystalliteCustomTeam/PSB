@@ -142,7 +142,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link href="#" className={styles.LocIcon}>
-                      445 S.Figueroa Street, Los Angeles, CA 90071
+                      9518 Mykawa Road, Houston, TX 77048
                     </Link>
                   </li>
                  
