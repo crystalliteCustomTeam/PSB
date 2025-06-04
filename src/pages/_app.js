@@ -40,6 +40,7 @@ export default function App({ Component, pageProps }) {
         router.pathname == "/lp/book-marketing-company" ||
         router.pathname == "/booknewbrand-v2" ||
         router.pathname == "/lp-publishing" ||
+        router.pathname == "/lp-publishing-2" ||
         router.pathname == "/lp/book-promotion-marketing" ||
         router.pathname == "/lp/lp1" ||
         router.pathname == "/lp/lp2" ||
@@ -65,7 +66,8 @@ export default function App({ Component, pageProps }) {
         router.pathname == "/lp/lp2" ||
         router.pathname == "/lp/lp3" ||
         router.pathname == "/lp/lp4" ||
-        router.pathname == "/lp-publishing" ? (
+        router.pathname == "/lp-publishing" ||
+        router.pathname == "/lp-publishing-2" ? (
           ""
         ) : (
           <Footer1 />
