@@ -58,10 +58,11 @@ const MarketBook = ({
         const JSONdata = JSON.stringify(data);
 
         setScore('Sending Data');
-        console.log(JSONdata);
+
+
 
         try {
-            const res = await fetch('api/email/route', {
+            const res = await fetch('/api/email/route', {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json, text/plain, */*',
@@ -103,66 +104,9 @@ const MarketBook = ({
             console.error('Error sending to SheetDB:', error);
         }
 
-        const myHeaders = new Headers();
-        myHeaders.append('Content-Type', 'application/json');
+        
 
-        const raw = JSON.stringify({
-            fields: [
-                {
-                    objectTypeId: '0-1',
-                    name: 'email',
-                    value: e.target.email.value
-                },
-                {
-                    objectTypeId: '0-1',
-                    name: 'firstname',
-                    value: e.target.name.value
-                },
-                {
-                    objectTypeId: '0-1',
-                    name: 'phone',
-                    value: e.target.phone.value
-                },
-                {
-                    objectTypeId: '0-1',
-                    name: 'message',
-                    value: e.target.comments.value
-                }
-            ],
-            context: {
-                ipAddress: ip.IPv4,
-                pageUri: pagenewurl,
-                pageName: pagenewurl
-            },
-            legalConsentOptions: {
-                consent: {
-                    consentToProcess: true,
-                    text: 'I agree to allow Example Company to store and process my personal data.',
-                    communications: [
-                        {
-                            value: true,
-                            subscriptionTypeId: 999,
-                            text: 'I agree to receive marketing communications from Example Company.'
-                        }
-                    ]
-                }
-            }
-        });
-
-        const requestOptions = {
-            method: 'POST',
-            headers: myHeaders,
-            body: raw,
-            redirect: 'follow'
-        };
-
-        try {
-            const response = await fetch('https://api.hsforms.com/submissions/v3/integration/submit/46656315/524aec68-a41e-4446-87d5-416ce22cfde6', requestOptions);
-            const result = await response.text();
-            console.log(result);
-        } catch (error) {
-            console.error('Error submitting to HubSpot:', error);
-        }
+        
 
         router.push('/ThankYou');
     };
