@@ -36,11 +36,11 @@ export const usePrevNextButtons = (emblaApi, onButtonClick) => {
     }
 }
 export const PrevButton = (props) => {
-    const { children, ...restProps } = props
+    const { colorChange, children, ...restProps } = props
 
     return (
         <button
-            className={`${styles.embla__button} ${styles.embla__button__prev}`}
+            className={`${styles.embla__button} ${styles.embla__button__prev} ${colorChange ? styles.colorChange : ''}`}
             type="button"
             {...restProps}
         >
@@ -55,11 +55,11 @@ export const PrevButton = (props) => {
     )
 }
 export const NextButton = (props) => {
-    const { children, ...restProps } = props
+    const { colorChange, children, ...restProps } = props
 
     return (
         <button
-            className={`${styles.embla__button} ${styles.embla__button__next}`}
+            className={`${styles.embla__button} ${styles.embla__button__next} ${colorChange ? styles.colorChange : ''}`}
             type="button"
             {...restProps}
         >

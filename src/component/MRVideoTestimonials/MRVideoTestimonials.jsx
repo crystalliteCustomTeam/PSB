@@ -17,7 +17,8 @@ const MRVideoTestimonials = (
     {
         subtitle = "Book Reviews",
         title = "Let’s hear what they have to say!",
-        desc = "We have been delivering top-notch services to our clients, which has established us as one of the most trusted book writing, publishing and marketing company in the eyes of every author out there!"
+        desc = "We have been delivering top-notch services to our clients, which has established us as one of the most trusted book writing, publishing and marketing company in the eyes of every author out there!",
+        colorChange
     }
 ) => {
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
@@ -91,7 +92,12 @@ const MRVideoTestimonials = (
             <div className='relative mr-lg:py-[80px] mr-md:py-[60px] py-[40px]'>
                 <div className="mr-container">
                     <div className="mr-sm:text-center text-justify">
-                        <span className="block mr-lg:text-[30px] mr-md:text-[25px] text-xl leading-tight font-semibold text-primary-100">{subtitle}</span>
+                        <span
+                            className={`block mr-lg:text-[30px] mr-md:text-[25px] text-xl leading-tight font-semibold ${colorChange ? "text-[#8f181b]" : "text-primary-100"
+                                }`}
+                        >
+                            {subtitle}
+                        </span>
                         <h2 className="mr-xl:text-[45px] mr-lg:text-[40px] mr-md:text-[30px] text-[25px] leading-tight font-semibold mt-2 mb-3">{title}</h2>
                         <p className="mr-md:text-base text-sm mr-lg:w-[70%] mx-auto leading-tight font-normal">{desc}</p>
                     </div>
@@ -101,7 +107,7 @@ const MRVideoTestimonials = (
                                 {sectionVisible ? ( // Conditionally render videos
                                     testimonialsData.map(([iframe, desc, img, name], i) => (
                                         <div className={`${styles.embla__slide}`} key={i}>
-                                            <div className='rounded-[20px] border-[#C4C4C4] border overflow-hidden shadow-md'>
+                                            <div className={`rounded-[20px] border-[#C4C4C4] border overflow-hidden shadow-md ${colorChange ? styles.colorChange : ''}`}>
                                                 <div dangerouslySetInnerHTML={{ __html: iframe }} />
                                                 <div className='py-[30px] px-[25px] '>
                                                     <p className='text-[16px] leading-normal font-normal mr-2xl:min-h-[145px] mr-xl:min-h-[168px] mr-lg:min-h-[215px] mr-md:min-h-[170px] mr-sm:min-h-[120px] min-h-[195px]'>{desc}</p>
@@ -144,17 +150,19 @@ const MRVideoTestimonials = (
                                 <PrevButton
                                     onClick={onPrevButtonClick}
                                     disabled={prevBtnDisabled}
+                                    colorChange={colorChange}
                                 />
                                 <NextButton
                                     onClick={onNextButtonClick}
                                     disabled={nextBtnDisabled}
+                                    colorChange={colorChange}
                                 />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     );
 }
 

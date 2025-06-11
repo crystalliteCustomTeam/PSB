@@ -16,6 +16,9 @@ import {
   CtaSection,
 } from "@/component/Lp-Seven-2";
 import { Popup } from "@/component/LP-Eight";
+
+import { MRVideoTestimonials } from "@/component";
+
 export default function LpPublishing() {
   return (
     <>
@@ -26,8 +29,11 @@ export default function LpPublishing() {
       <JourneyForm />
       <BestSellerBooks />
       <CtaSection />
-      <Packages />
-      <Testimonials />
+      {/* <Packages />
+      <Testimonials /> */}
+      {/* Video Testimonials Section */}
+      <MRVideoTestimonials colorChange={true} />
+      {/* Video Testimonials Section */}
       <Process />
       <SelfPublishing />
       <JourneyStart />
