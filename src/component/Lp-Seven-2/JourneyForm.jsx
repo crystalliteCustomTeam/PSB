@@ -4,7 +4,7 @@ import Image from "next/image"
 import { useRouter } from "next/navigation"
 import { useEffect, useState } from "react"
 // Media
-import SideImage from "media/lp-seven/form_img.png"
+import SideImage from "media/lp-seven/form_img.webp"
 // Axios
 import Axios from "axios"
 
@@ -310,9 +310,8 @@ const JourneyForm = () => {
                 <button
                   type="submit"
                   disabled={score !== "Submit"}
-                  className={`__animatedPing bg-[#8f181b] text-white w-full mt-8 mx-auto block rounded-[10px_10px_10px_0] py-3 hover:bg-black transition-all duration-300 ease-in-out ${
-                    score !== "Submit" ? "bg-opacity-20" : "bg-opacity-100"
-                  }`}
+                  className={`__animatedPing bg-[#8f181b] text-white w-full mt-8 mx-auto block rounded-[10px_10px_10px_0] py-3 hover:bg-black transition-all duration-300 ease-in-out ${score !== "Submit" ? "bg-opacity-20" : "bg-opacity-100"
+                    }`}
                 >
                   {score}
                 </button>

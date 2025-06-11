@@ -1350,3 +1350,19 @@ header .group:hover .group-hover\:visible {
 .player .vp-video-wrapper .vp-preview-cover {
   background-image: inherit !important;
 }
+.arrowIcon {
+  position: relative;
+  margin-left: 20px;
+}
+.arrowIcon::after {
+  content: "";
+  background: #8f181b;
+  width: 8px;
+  height: 8px;
+  display: block;
+  border-radius: 100%;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translate(0px, -50%);
+}

@@ -32,8 +32,7 @@ const Hero = () => {
                 "10 Printed paperbacks shipped down to your doorstep",
               ].map((e, i) => (
                 <li key={i} className="flex items-start gap-x-2">
-                  <Image src={CheckIcon} alt="icon" />
-                  <span className="block text-black mr-lg:text-[19px] mr-md:text-[16px] text-[14px] leading-tight mb-2">
+                  <span className="arrowIcon block text-black mr-lg:text-[19px] mr-md:text-[16px] text-[14px] leading-tight mb-2">
                     {e}
                   </span>
                 </li>
