@@ -1,12 +1,27 @@
-// Next
+"use client";
 import Image from "next/image"
-// Media
+import { useEffect } from "react";
 import Book1 from "media/lp-seven-2/books/image01.webp"
 import Book2 from "media/lp-seven-2/books/image02.webp"
 import Book3 from "media/lp-seven-2/books/image03.webp"
 import Book4 from "media/lp-seven-2/books/image04.webp"
-import Link from "next/link"
+
 const BestSellerBooks = () => {
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.LC_API) {
+      window.LC_API.on_after_load = function () {
+        console.log("LiveChat API Ready");
+      };
+    }
+  }, []);
+
+  const handleChatOpen = () => {
+    if (typeof window !== "undefined" && window.LC_API) {
+      window.LC_API.open_chat_window();
+    } else {
+      console.warn("LiveChat API not loaded");
+    }
+  };
   const bookData = [
     {
       title: "Macmurphy",
@@ -16,7 +31,6 @@ const BestSellerBooks = () => {
         "Born just west of the Bayou in Lafourche Parish in south Louisiana, Amos Jonah Garrison suffered abuse and neglect throughout his childhood. By the time he was eighteen, he had endured harsh beatings from his stepfather and emotional neglect from his mother, herself a victim of her husband’s anger.",
       agent: "LUKE",
       editor: "TRAVIS",
-      amazonLink: "#",
     },
     {
       title: "Gemini In Twain",
@@ -26,7 +40,6 @@ const BestSellerBooks = () => {
         "Jackson Corona was a good boy, had good grades and was socially accepted. However, his awkwardness appeared when trying to speak to girls.",
       agent: "Cliff Martin",
       editor: "BRIAN",
-      amazonLink: "#",
     },
     {
       title: "Legacy Of Love, Inspiration And Timeless Wisdom",
@@ -36,7 +49,6 @@ const BestSellerBooks = () => {
         "This book is about life and not death. This book is about how our corrupt government gives tax subsidies to the death industry...",
       agent: "Cliff Martin",
       editor: "JOHN",
-      amazonLink: "#",
     },
     {
       title: "Mrs. Endurance The Single Wife",
@@ -46,7 +58,6 @@ const BestSellerBooks = () => {
         "A children's bedtime story for early readers, kindergartners and 1st graders with a moral lesson: A read aloud tale for children about acceptance.",
       agent: "NANCY",
       editor: "CHARLES",
-      amazonLink: "#",
     },
   ]
   return (
@@ -93,13 +104,10 @@ const BestSellerBooks = () => {
                   <p className="hidden group-hover:block mr-md:text-[17px] text-[14px] leading-normal font-medium mb-3">
                     {book.description}
                   </p>
-                  <Link
-                    href={book.amazonLink}
-                    target="_blank"
-                    className="hidden group-hover:inline-block text-base font-medium border-b border-[#8f181b] my-4"
-                  >
-                    View on Amazon
-                  </Link>
+                  <div onClick={handleChatOpen} className="hidden group-hover:inline-block text-base font-medium border-b border-[#8f181b] my-4 cursor-pointer ">
+                    Chat Now
+                  </div>
+
                   <table className="table w-full transition-all ease-in-out duration-500 group-hover:hidden">
                     <tbody>
                       <tr>
