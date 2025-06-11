@@ -1366,3 +1366,91 @@ header .group:hover .group-hover\:visible {
   top: 50%;
   transform: translate(0px, -50%);
 }
+.bgBanner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.bannerImage {
+  padding: 50px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bannerImage .bannerCotainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bannerImage .bannerCotainer .BanenrContent {
+  flex: 0 0 50%;
+}
+.bannerImage .bannerCotainer .imageBanner {
+  flex: 0 0 50%;
+}
+.bannerImage .bannerCotainer .imageBanner img {
+  height: 450px;
+  width: auto;
+  text-align: center;
+  margin: auto;
+}
+@media only screen and (min-width: 1300px) and (max-width: 1600px) {
+  .bannerImage {
+    padding: 50px 0;
+  }
+  .bannerImage .bannerCotainer .imageBanner img {
+    height: 420px;
+  }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1299px) {
+  .bannerImage {
+    padding: 50px 0;
+  }
+  .bannerImage .bannerCotainer .imageBanner img {
+    height: 380px;
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 1099px) {
+  .bannerImage {
+    padding: 40px 0;
+  }
+  .bannerImage .bannerCotainer .imageBanner img {
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 899px) {
+  .bannerImage {
+    padding: 40px 0;
+  }
+  .bannerImage .bannerCotainer .imageBanner img {
+    height: 350px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .bannerImage {
+    padding: 40px 0;
+  }
+  .bannerImage .bannerCotainer .imageBanner img {
+    height: 350px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .bannerImage {
+    padding: 25px 0;
+  }
+  .bannerImage .bannerCotainer {
+    flex-wrap: wrap;
+  }
+  .bannerImage .bannerCotainer .BanenrContent {
+    flex: 0 0 100%;
+  }
+  .bannerImage .bannerCotainer .imageBanner {
+    flex: 0 0 100%;
+  }
+  .bannerImage .bannerCotainer .imageBanner img {
+    height: 300px;
+    margin-top: 30px;
+    width: auto;
+  }
+}
