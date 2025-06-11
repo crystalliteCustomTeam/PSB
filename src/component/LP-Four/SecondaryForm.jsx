@@ -55,7 +55,7 @@ export default function SecondaryForm() {
         console.log(JSONdata);
 
         try {
-            const res = await fetch('api/email/route', {
+            const res = await fetch('/api/email/route', {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json, text/plain, */*',

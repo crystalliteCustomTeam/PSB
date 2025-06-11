@@ -25,7 +25,7 @@ export default function CaseStudies() {
                         Our Casestudy's
                     </h2>
                     <p className="text-[16px] leading-relaxed font-normal mr-md:max-w-[80%] mr-lg:max-w-[60%] mr-2xl:max-w-[50%] mx-auto">
-                    Check out our case studies to see how we've turned authors into bestsellers with our expert publishing and marketing strategies.
+                        Check out our case studies to see how we've turned authors into bestsellers with our expert publishing and marketing strategies.
                     </p>
                 </div>
                 <AutoPlaySlider wrapperClasses="mt-[50px]">

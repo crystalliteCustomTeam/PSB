@@ -104,9 +104,9 @@ const MarketBook = ({
             console.error('Error sending to SheetDB:', error);
         }
 
-        
 
-        
+
+
 
         router.push('/ThankYou');
     };
