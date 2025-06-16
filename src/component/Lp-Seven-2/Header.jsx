@@ -22,7 +22,7 @@ const Header = () => {
                 info@bestsellingpublisher.com
               </span>
             </a>
-            <ul className="grid grid-cols-3 gap-x-3">
+            {/* <ul className="grid grid-cols-3 gap-x-3">
               <li className="flex items-center justify-center w-[40px] h-[37px] bg-white rounded-full">
                 <a href="https://www.linkedin.com/" target="_blank">
                   <svg
@@ -86,7 +86,7 @@ const Header = () => {
                   </svg>
                 </a>
               </li>
-            </ul>
+            </ul> */}
           </div>
         </div>
       </div>

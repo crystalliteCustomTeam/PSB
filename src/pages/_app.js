@@ -121,7 +121,7 @@ export default function App({ Component, pageProps }) {
             `}
           </Script>
 
-          {/* Google Ads */}
+          {/* Google Ads Script */}
           <Script
             strategy="afterInteractive"
             id="google-ads-script"

@@ -13,8 +13,8 @@ import {
   Process,
   SelfPublishing,
   Testimonials,
-} from "@/component/Lp-Seven"
-import { Popup } from "@/component/LP-Eight"
+} from "@/component/Lp-Seven";
+import { Popup } from "@/component/LP-Eight";
 export default function LpPublishing() {
   return (
     <>
@@ -29,10 +29,12 @@ export default function LpPublishing() {
       <Process />
       <SelfPublishing />
       <JourneyStart />
-      <MadeEasy/>
-      <ContactForm/>
+      <MadeEasy />
+      <ContactForm />
       <Footer />
-      <Popup popupDesc={`HIRE <strong>TOP Publishers AT 85% OFF</strong> TO CREATE YOUR TIMELESS WORK`} />
+      <Popup
+        popupDesc={`HIRE <strong>TOP Publishers AT 85% OFF</strong> TO CREATE YOUR TIMELESS WORK`}
+      />
     </>
-  )
+  );
 }
