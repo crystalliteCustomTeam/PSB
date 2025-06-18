@@ -1,6 +1,6 @@
 // Next
 import Head from "next/head"
-
+import Script from "next/script"
 // Components
 import { Popup } from "@/component/LP-Eight"
 import {
@@ -15,6 +15,7 @@ import {
   Portfolio,
   Reviews,
 } from "@/component/LP-Nine"
+
 
 const LandingPage1 = () => {
   return (

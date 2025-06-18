@@ -6,7 +6,8 @@ import {
   Services,
   StandsOut,
 } from "@/component/LP-Six";
-import { Head } from "next/document";
+import Head from "next/head";
+import Script from "next/script";
 
 const BookMarketingLp = () => {
   return (

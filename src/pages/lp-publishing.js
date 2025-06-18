@@ -16,6 +16,7 @@ import {
 } from "@/component/Lp-Seven";
 import { Popup } from "@/component/LP-Eight";
 import Head from "next/head";
+import Script from "next/script";
 export default function LpPublishing() {
   return (
     <>

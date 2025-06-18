@@ -20,6 +20,7 @@ import Icon2 from "media/book-illustrations/trustPilot.png";
 // Marketing Image
 import StreamlinedBooks from "media/lp-four/streamlinedBooks.png";
 import Head from "next/head";
+import Script from "next/script";
 export default function LPFour() {
   {
     /* Testimonials Section Content*/

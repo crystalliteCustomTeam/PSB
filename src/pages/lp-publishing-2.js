@@ -19,6 +19,7 @@ import { Popup } from "@/component/LP-Eight";
 
 import { MRVideoTestimonials } from "@/component";
 import Head from "next/head";
+import Script from "next/script";
 
 export default function LpPublishing() {
   return (

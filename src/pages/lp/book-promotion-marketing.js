@@ -16,6 +16,7 @@ import {
   WhyChoose,
 } from "@/component/LP-Eight";
 import Head from "next/head";
+import Script from "next/script";
 
 const BookPromotionMarketing = () => {
   return (

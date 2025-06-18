@@ -18,6 +18,7 @@ import {
   Footer,
 } from "@/component/LP-Two";
 import Head from "next/head";
+import Script from "next/script";
 // Services Icons
 import Icon1 from "media/book-marketing-company/servicesIcons/1.svg";
 import Icon2 from "media/book-marketing-company/servicesIcons/2.svg";
