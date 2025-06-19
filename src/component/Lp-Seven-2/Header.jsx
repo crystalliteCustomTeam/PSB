@@ -107,7 +107,7 @@ const Header = () => {
             <div className="mr-md:flex hidden items-center gap-x-5">
               <CTA handle="parent.LC_API.open_chat_window();return false;" />
               <CTA
-                text="+855-666-6675"
+                text="855-666-6675"
                 link="tel:8556666675"
                 variant="secondary"
                 svgClasses="border border-black rounded-full"
