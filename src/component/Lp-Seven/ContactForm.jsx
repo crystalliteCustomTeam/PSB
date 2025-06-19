@@ -190,7 +190,7 @@ const ContactForm = () => {
               Write My Hot-Seller Book!
             </h2>
             <p className="mr-lg:text-base text-sm leading-normal font-normal">
-              Call us now at <a href="tel:+18556666675">+1 (800) 781-9093</a>{" "}
+              Call us now at <a href="tel:+18556666675">855-666-6675</a>{" "}
               (toll-free) or start a conversation for further details of our
               services.
             </p>
@@ -258,9 +258,8 @@ const ContactForm = () => {
                     <button
                       type="submit"
                       disabled={score !== "Submit"}
-                      className={`__animatedPing group bg-[#8f181b] border border-white text-white w-max flex items-center gap-x-2 justify-center rounded-[10px_10px_10px_0] p-[10px_20px] hover:bg-white hover:text-black transition-all duration-300 ease-in-out ${
-                        score !== "Submit" ? "bg-opacity-20" : "bg-opacity-100"
-                      }`}
+                      className={`__animatedPing group bg-[#8f181b] border border-white text-white w-max flex items-center gap-x-2 justify-center rounded-[10px_10px_10px_0] p-[10px_20px] hover:bg-white hover:text-black transition-all duration-300 ease-in-out ${score !== "Submit" ? "bg-opacity-20" : "bg-opacity-100"
+                        }`}
                     >
                       <span>{score}</span>
                       <svg

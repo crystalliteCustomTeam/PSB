@@ -190,7 +190,7 @@ const ContactForm = () => {
               Write My Hot-Seller Book!
             </h2>
             <p className="mr-lg:text-base text-sm leading-normal font-normal">
-              Call us now at <a href="tel:+18556666675">+1 (800) 781-9093</a>{" "}
+              Call us now at <a href="tel:+18556666675">855-666-6675</a>{" "}
               (toll-free) or start a conversation for further details of our
               services.
             </p>
