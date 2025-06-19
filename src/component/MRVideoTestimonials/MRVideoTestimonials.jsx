@@ -12,6 +12,7 @@ import Avater2 from "media/imageAR/avater/2.png";
 import Avater3 from "media/imageAR/avater/3.png";
 import Avater4 from "media/imageAR/avater/4.png";
 import Avater5 from "media/imageAR/avater/5.png";
+import Avater6 from "media/imageAR/avater/6.webp";
 
 const MRVideoTestimonials = (
     {
@@ -84,6 +85,10 @@ const MRVideoTestimonials = (
         [`<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/969194554?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="A Heartfelt Thank You to Our Valued Customers _ Best Selling Publisher"></iframe></div>`,
             "As an entrepreneur, I wanted to pen my journey but never had the time. Best Selling Publisher’s writing and editing team captured my voice and my passion for business in the book. The final manuscript really felt like my story. ",
             Avater5,
+            "Max"],
+        [`<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/progressive_redirect/playback/1094744787/rendition/1080p/file.mp4?loc=external&log_user=0&signature=5d95680aa29c6b7e453b83c16d5773809e74cc7a0f050fe43138fd4a2e3c965a" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="A Heartfelt Thank You to Our Valued Customers _ Best Selling Publisher"></iframe></div>`,
+            "I just want to say that working with Best selling Publisher was an absolute delight. As a first-time author, their team guided me through every step—from designing a cover that captured my story to making the entire publishing process smooth and stress-free.",
+            Avater6,
             "Max"]
     ];
 
@@ -112,7 +117,7 @@ const MRVideoTestimonials = (
                                                 <div className='py-[30px] px-[25px] '>
                                                     <p className='text-[16px] leading-normal font-normal mr-2xl:min-h-[145px] mr-xl:min-h-[168px] mr-lg:min-h-[215px] mr-md:min-h-[170px] mr-sm:min-h-[120px] min-h-[195px]'>{desc}</p>
                                                     <div className='flex items-center gap-x-5 mr-2xl:mt-4 mt-4'>
-                                                        <Image src={img} alt='client' className='block' />
+                                                        <Image src={img} alt='client' className={`${styles.imgBox} block`} />
                                                         <div>
                                                             <h4 className='text-2xl font-semibold leading-tight text-[#000]'>{name}</h4>
                                                         </div>
@@ -132,8 +137,8 @@ const MRVideoTestimonials = (
                                                 </div>
                                                 <div className='py-[30px] px-[25px] '>
                                                     <p className='text-[16px] leading-normal font-normal mr-2xl:min-h-[145px] mr-xl:min-h-[168px] mr-lg:min-h-[215px] mr-md:min-h-[170px] mr-sm:min-h-[120px] min-h-[195px]'></p>
-                                                    <div className='flex items-center gap-x-5 mr-2xl:mt-4 mt-4'>
-                                                        <Image src={img} alt='client' className='block' />
+                                                    <div className='flex items-center gap-x-5 mr-2xl:mt-4 mt-4 '>
+                                                        <Image src={img} alt='client' className={`${styles.imgBox} block`} />
                                                         <div>
                                                             <h4 className='text-2xl font-semibold leading-tight text-[#000]'>{name}</h4>
                                                         </div>

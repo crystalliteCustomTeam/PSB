@@ -42,6 +42,9 @@
   gap: 5.6rem;
   align-items: baseline;
 }
+.embla .embla__slide .imgBox {
+  border-radius: 100%;
+}
 
 @media screen and (max-width: 575px) {
   .embla .embla__buttons {
